@@ -1,7 +1,3 @@
----
-coverY: 0
----
-
 # 👋 Welcome to the AppFlowy wiki!
 
 ## Welcome aboard!
