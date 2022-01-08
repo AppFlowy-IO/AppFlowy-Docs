@@ -1,4 +1,4 @@
-# Submitting your first Pull Request
+# ✅ Submitting your first Pull Request
 
 ## Thank you for helping out!
 

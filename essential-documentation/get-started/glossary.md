@@ -1,0 +1,3 @@
+# 🥑 Glossary
+
+## Basic Terms & Concepts

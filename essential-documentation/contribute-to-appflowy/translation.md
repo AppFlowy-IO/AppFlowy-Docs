@@ -1,4 +1,4 @@
-# Translation
+# 📙 Translate AppFlowy
 
 You can help Appflowy in supporting various languages by contributing. Follow the steps below sequentially to contribute translations.
 

@@ -1,4 +1,4 @@
-# Building on Windows
+# 🪟 Building on Windows
 
 ### How to build on Windows, please follow these simple steps.
 

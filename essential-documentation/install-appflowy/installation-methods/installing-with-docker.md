@@ -1,4 +1,4 @@
-# Installing with Docker
+# 🐳 Docker
 
 A simple way of running AppFlowy is with the use of a Docker container. And we have one for you!
 

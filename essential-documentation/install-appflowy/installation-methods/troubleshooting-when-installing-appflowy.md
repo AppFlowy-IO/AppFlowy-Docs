@@ -1,4 +1,10 @@
-# Troubleshooting when installing AppFlowy
+---
+description: >-
+  This page documents a collection of resources to help you troubleshoot an
+  AppFlowy installation.
+---
+
+# 🔑 Troubleshooting
 
 ### 1. Error: Not found: 'dart:ffi'
 

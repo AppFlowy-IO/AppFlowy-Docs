@@ -1,6 +1,6 @@
-# UI Design System Documentation
+# Brand
 
-\[\[https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/appflowy-logo-black.svg|alt=The Open Source Alternative to Notion]]
+WIP
 
 ## Appflowy.io User Interface Design Guidelines
 
