@@ -27,7 +27,7 @@
       * [Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system/domain-driven-design.md)
   * [Translate AppFlowy](essential-documentation/contribute-to-appflowy/translation.md)
 
-## 🎨 (WIP) Design Documentation
+## (WIP) Design Documentation
 
 * [Brand](wip-design-documentation/ui-design-system-documentation.md)
 * [Product](wip-design-documentation/product.md)
