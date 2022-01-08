@@ -37,4 +37,4 @@
 ## Build in Public
 
 * [Community To-Dos](build-in-public/community-to-dos/README.md)
-  * [January](build-in-public/community-to-dos/january.md)
+  * [1⃣ January](build-in-public/community-to-dos/january.md)

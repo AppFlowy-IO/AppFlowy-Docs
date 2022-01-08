@@ -1,4 +1,4 @@
-# January
+# 1⃣ January
 
 Short-term actions
 
@@ -6,8 +6,15 @@ Short-term actions
 * [ ] "hot fix" branch [Nathan Foo](https://app.gitbook.com/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")
 * [ ] documentations
   * [x] clean up&#x20;
-  * [ ] design the outline
-  * [ ] fill in more contents
+  * [x] design the outline
+  * [ ] fill in more contents [MikeWallaceDev](https://app.gitbook.com/u/vYWthqaW7lYHUJAqBoOC6ZjynaF2 "mention")
+    * [ ] Install AppFlowy:
+      * [ ] Requirements (the page exists)
+    * [ ] Get started:&#x20;
+      * [ ] Merge Request Workflow
+      * [ ] Code Review Guidelines
+      * [ ] Style Guides
+    * [ ] Resolve CI issues
   * [ ] review
 * [ ] code base clean up
 * [ ] contributor T-shirt [annie](https://app.gitbook.com/u/qoQRIIZL5Deho0MNu0F3QpwsZF72 "mention")
