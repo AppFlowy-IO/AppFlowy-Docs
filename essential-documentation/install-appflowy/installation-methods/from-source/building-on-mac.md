@@ -1,4 +1,4 @@
-# 🍏 Building on Mac
+# Building on Mac
 
 ## How to build on MacOS, please follow these simple steps.
 

@@ -1,4 +1,4 @@
-# ➡ Get started
+# Get started
 
 Hello, and welcome! Whether you are trying to report a bug, proposing a feature request, thinking about getting involved in the project, or submitting a patch, this document is for you! It intends to be both an entry point for newcomers to AppFlowy's community (with various backgrounds), and a guide/reference for contributors.
 

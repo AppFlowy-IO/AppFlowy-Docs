@@ -1,4 +1,4 @@
-# 💯 From source
+# From source
 
 The following instructions have been known to work.
 

@@ -1,4 +1,4 @@
-# ⬇ Installation methods
+# Installation methods
 
 Before you install AppFlowy, be sure to review the [system requirements](https://app.gitbook.com/o/IHfa17qNq2j7xRHMJFoU/s/vs4LQcuzr0JR34ApS5sM/c/ByEufCzB2NBgKC1qAfuI/install-appflowy/requirements).&#x20;
 

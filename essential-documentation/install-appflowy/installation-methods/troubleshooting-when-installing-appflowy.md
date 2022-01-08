@@ -4,7 +4,7 @@ description: >-
   AppFlowy installation.
 ---
 
-# 🔑 Troubleshooting
+# Troubleshooting
 
 ### 1. Error: Not found: 'dart:ffi'
 

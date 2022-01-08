@@ -1,4 +1,4 @@
-# 👋 Welcome to AppFlowy
+# Welcome to AppFlowy
 
 AppFlowy is an open-source Notion alternative. You are in charge of your data and customizations.
 

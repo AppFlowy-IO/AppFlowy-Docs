@@ -1,3 +1,3 @@
-# 🥑 Glossary
+# Glossary
 
 ## Basic Terms & Concepts

@@ -4,7 +4,7 @@ description: >-
   the minimum requirements needed to install and use AppFlowy.
 ---
 
-# 🔒 Requirements
+# Requirements
 
 ## Operating Systems
 

@@ -1,4 +1,4 @@
-# ❓ How to get help
+# How to get help
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# 🔗 Building on Linux
+# Building on Linux
 
 ## How to build on Linux, please follow these simple steps.
 

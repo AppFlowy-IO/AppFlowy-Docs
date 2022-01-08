@@ -33,8 +33,3 @@
 * [Product](wip-design-documentation/product.md)
 * [Research](wip-design-documentation/research.md)
 * [Accessibility](wip-design-documentation/accessibility.md)
-
-## Build in Public
-
-* [Community To-Dos](build-in-public/community-to-dos/README.md)
-  * [1⃣ January](build-in-public/community-to-dos/january.md)

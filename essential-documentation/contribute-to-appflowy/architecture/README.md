@@ -1,3 +1,3 @@
-# 🐶 Architecture
+# Architecture
 
 WIP

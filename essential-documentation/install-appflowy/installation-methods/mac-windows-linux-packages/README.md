@@ -1,4 +1,4 @@
-# 📥 Mac / Windows / Linux Packages
+# Mac / Windows / Linux Packages
 
 Download AppFlowy and use it right away:
 
