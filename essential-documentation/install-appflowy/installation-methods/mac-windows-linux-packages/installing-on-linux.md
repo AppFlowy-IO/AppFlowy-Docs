@@ -39,32 +39,43 @@ cd AppFlowy
 
 ### Optional steps to add AppFlowy to your system menu
 
+{% hint style="danger" %}
+The current documentation may be out of sync with the development.&#x20;
+
+* If your icon file is named `flowylogo.svg` **** please rename it to `app_flowy.svg`
+* Your appflowy.desktop file should have the line `Icon=app_flowy`
+{% endhint %}
+
 Adding an application to Linux's system menu requires some extra steps. In the steps below we assume that you have extracted the archive file into the `/opt/` directory and that your present working directory is `/opt/AppFlowy`.
 
 #### Add a Linux desktop file to your system
 
-* Copy the temporary Linux desktop file to a usable Linux desktop file.
+* Copy the temporary Linux desktop file to a usable Linux desktop file. Notice the underscore in app\_flowy.
 
 ```shell
-cp appflowy.desktop.temp appflowy.desktop
+cp appflowy.desktop.temp app_flowy.desktop
 ```
 
-* Edit the `appflowy.desktop` file so that it points to the correct files.
+* Edit the `appflowy.desktop` file so that it points to the correct file.
 
 ```shell
-Icon=[CHANGE_THIS]/AppFlowy/flowy_logo.svg
 Exec=[CHANGE_THIS]/AppFlowy/app_flowy
 ```
 
-becomes
+becomes (if you installed in /opt)
 
 ```shell
-Icon=/opt/AppFlowy/flowy_logo.svg
 Exec=/opt/AppFlowy/app_flowy
 ```
 
 * Move the desktop file so that Linux will pick it up
 
 ```shell
-mv appflowy.desktop ~/.local/share/applications/.
+mv app_flowy.desktop ~/.local/share/applications/.
+```
+
+* Last but not least, copy the icon file so the system will pick it up.
+
+```
+cp app_flowy.svg ~/.icons/.
 ```
