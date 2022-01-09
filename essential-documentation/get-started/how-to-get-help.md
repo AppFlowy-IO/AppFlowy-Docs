@@ -10,7 +10,7 @@ To deliver an effortless onboarding experience, we've put together a list of res
 
 What you are looking at - the AppFlowy Essential Documentation - is likely one of the best resources to start with. This wiki provides a wide range of instructions and how-tos for AppFlowy. Even if you don't have a specific question, this is a great place to start on your journey with AppFlowy. And we encourage you to continue to check it out as we are continuously updating and adding new documentation.
 
-## Ask Community
+## Ask The Community
 
 We encourage to join our community to make AppFlowy a world-class open-source project!
 
