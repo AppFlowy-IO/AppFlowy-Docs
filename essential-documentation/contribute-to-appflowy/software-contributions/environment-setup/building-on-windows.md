@@ -138,7 +138,7 @@ cd app_flowy/product/0.0.2/windows/Debug/AppFlowy
 1. Open the app\_flowy folder located at xx/appflowy/frontend/app\_flowy with VS Code.
 2. Go to the Run and Debug tab and then click the run button.
 
-![](../../../../.gitbook/assets/image.png)
+![](<../../../../.gitbook/assets/image (1).png>)
 
 ## Building in release mode
 

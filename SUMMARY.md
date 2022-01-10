@@ -24,6 +24,7 @@
     * [Environment Setup](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/README.md)
       * [🐧 Building on Linux](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-linux.md)
       * [🪟 Building on Windows](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-windows.md)
+      * [🍎 Building on MacOS](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-macos.md)
     * [Flutter Coding Conventions](essential-documentation/contribute-to-appflowy/software-contributions/flutter-coding-conventions.md)
     * [Rust Coding Conventions](essential-documentation/contribute-to-appflowy/software-contributions/rust-coding-conventions.md)
     * [Submitting your first Pull Request](essential-documentation/contribute-to-appflowy/software-contributions/submitting-your-first-pull-request.md)
