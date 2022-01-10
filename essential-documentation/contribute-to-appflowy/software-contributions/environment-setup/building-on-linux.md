@@ -1,4 +1,4 @@
-# 🐧 Building on Lin
+# 🐧 Building on Linux
 
 **Note:**
 
@@ -16,8 +16,6 @@
 * If you encounter any issues, have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
 ## Step 1: Install your build environment
-
-***
 
 There's no point continuing if this doesn't work for you, so lets start here before you even download the code. Feel free to ask questions on our Discord so that we may refine this document and make the process as easy as possible for you.
 
@@ -96,7 +94,7 @@ flutter doctor
 Clone the source code from our Github project.
 
 {% hint style="info" %}
-However, you should fork the code instead if you wish to submit patches. You'll find information on that in [Submitting your first Pull Request](../submitting-your-first-pull-request.md)
+You should fork the code instead if you wish to submit patches. You'll find information on that in [Submitting your first Pull Request](../submitting-your-first-pull-request.md)
 {% endhint %}
 
 ```shell
