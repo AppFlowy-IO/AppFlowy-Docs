@@ -13,6 +13,8 @@
 * Both Windows `cmd` and `powershell` can be used for running commands.
 * If you encounter any issues, please have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
+##
+
 ## Step 1: Get the source code
 
 {% hint style="info" %}
@@ -23,7 +25,7 @@ You should fork the code instead if you wish to submit patches. You'll find info
 git clone https://github.com/AppFlowy-IO/appflowy.git
 ```
 
-## Step 2: Build AppFlowy (Flutter GUI application)
+## Step 2: Install your build environment
 
 * Install Visual Studio 2022 build tools. Download from [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
   * In section "All Downloads" => "Tools for Visual Studio 2022" => "Build Tools for Visual Studio 2022".
@@ -70,6 +72,8 @@ cargo install --force cargo-make
 cargo install --force duckscript_cli
 ```
 
+## Step 3: Build AppFlowy (Flutter GUI application)
+
 * Check prerequisites
 
 ```shell
@@ -100,7 +104,7 @@ cargo make --profile production-windows-x86 flowy-sdk-release
 {% endtab %}
 {% endtabs %}
 
-1. Build AppFlowy
+* Build AppFlowy
 
 {% tabs %}
 {% tab title="Development" %}
@@ -116,7 +120,7 @@ cargo make -p production-windows-x86 appflowy-windows
 {% endtab %}
 {% endtabs %}
 
-## Step 3: Run the application
+## Step 4: Run the application
 
 ```bash
 cd app_flowy/product/0.0.2/windows/Debug/AppFlowy
@@ -131,7 +135,7 @@ cd app_flowy/product/0.0.2/windows/Debug/AppFlowy
 
 `export DISPLAY=localhost:10`
 
-## Step 4 : Edit and run the application
+## Step 5: Edit and run the application
 
 \[VS Code]
 
