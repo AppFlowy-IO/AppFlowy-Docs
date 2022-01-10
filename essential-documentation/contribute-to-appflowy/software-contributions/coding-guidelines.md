@@ -4,7 +4,53 @@ description: >-
   easily search for "@@@" to find them.
 ---
 
-# Flutter Coding Conventions
+# Coding Guidelines
+
+## General Coding Conventions
+
+The concentions in this section apply to all languages and scripts used in the AppFlowy project. You will find specifications for each language below, if applicable.
+
+### Formatting
+
+Instead, formatting should be done using ./x.py fmt. It's a good habit to run ./x.py fmt before every commit, as this reduces conflicts later.
+
+#### Copyright notice
+
+In the past, files began with a copyright and license notice. Please omit this notice for new files licensed under the standard terms (dual MIT/Apache-2.0).
+
+#### Line length&#x20;
+
+Lines should be at most 120 characters. It's even better if you can keep things to 80.
+
+**Ignoring the line length limit.** Sometimes – in particular for tests – it can be necessary to exempt yourself from this limit. In that case, you can add a comment towards the top of the file like so:
+
+### Coding for correctness&#x20;
+
+Beyond formatting, there are a few other tips that are worth following.
+
+#### Prefer exhaustive matches&#x20;
+
+Using \_ in a match is convenient, but it means that when new variants are added to the enum, they may not get handled correctly. Ask yourself: if a new variant were added to this enum, what's the chance that it would want to use the \_ code, versus having some other treatment? Unless the answer is "low", then prefer an exhaustive match. (The same advice applies to if let and while let, which are effectively tests for a single variant.)
+
+#### Use "TODO" comments for things you don't want to forget
+
+As a useful tool to yourself, you can insert a // TODO comment for something that you want to get back to **before** you submit your PR:
+
+```
+fn do_something() {
+  if something_else {
+    unimplemented!(); // TODO write this
+  } 
+} 
+```
+
+These are very practical and you can see a list of them in the VS Code 'Problems' tab.
+
+![](<../../../.gitbook/assets/image (1).png>)
+
+The CI scripts will report a TODO comment as an error. You must remove all TODO comments before submitting a PR.
+
+__
 
 ### _Naming conventions_ <a href="#7a56" id="7a56"></a>
 
@@ -40,6 +86,87 @@ final urlScheme = RegExp(‘^([a-z]+):’);
 void sum(int testValue) {…}
 ```
 
+### _Variables_ <a href="#5dc0" id="5dc0"></a>
+
+_@@@ We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
+
+#### _Specify types for class members_ <a href="#5dc0" id="5dc0"></a>
+
+_Always specify the type of a member when it’s value type is known. Avoid using `var` when possible._
+
+```
+int item = 10;
+final User user = User();
+String name = ‘pooja’;
+const int timeOut = 20;
+```
+
+```
+sum(int testValue) { // …}
+```
+
+### _Variables_ <a href="#2233" id="2233"></a>
+
+DO follow a consistent rule for var and final on local variables. Most local variables shouldn’t have type annotations and should be declared using just var or final. There are two rules in wide use for when to use one or the other:
+
+Use final for local variables that are not reassigned and var for those that are.
+
+Use var for all local variables, even ones that aren’t reassigned. Never use final for locals. (Using final for fields and top-level variables is still encouraged, of course.)
+
+Either rule is acceptable, but pick one and apply it consistently throughout your code. That way when a reader sees var, they know whether it means that the variable is assigned later in the function.
+
+### _Use Cascade Notation @@@I think this applies to both Rust and Dart_ <a href="#405d" id="405d"></a>
+
+__[_Cascade notation_](https://flutterbyexample.com/lesson/cascade-notation) _allows you to perform a sequence of operations on the same object. It saves your number of steps and needs for a temporary variable._
+
+```
+Demo d1 = new Demo();
+Demo d2 = new Demo();
+
+// Don't - Without Cascade Notation
+d1.setA(20);
+d1.setB(30);
+d1.showVal();
+
+
+// Do - With Cascade Notation
+d2..setA(10)
+  ..setB(15)
+  ..showVal();
+```
+
+### _Use expression function bodies @@@I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
+
+_For functions that contain just one expression, you can use an expression function. The `=>` (arrow) notation is used for expression functions._
+
+```
+num get x => center.x;
+
+set x(num value) => center = Point(value, center.y);
+```
+
+### _**Utilities**_
+
+_Place reusable functions in a class, so it's easy to access them. Also, For Dialog components, if you are using a package to wrap their logic with your own custom widget, so it would be easy to change the package if necessary later._
+
+### _Remove Unused Resources_ <a href="#e66f" id="e66f"></a>
+
+_Especially when you are ready to push your changes, you’ll need to remove resources that aren't used in the application. These could be image assets, for example. Removing unused resources and compressing images will help us reduce the size of the application._
+
+### _Maintain hard-coded values, strings, colors in a separate file_ <a href="#bb17" id="bb17"></a>
+
+_Create a separate file to store strings, colors, constants. so it’s easy to access them._
+
+![colors.dart](https://miro.medium.com/max/624/1\*1K-AKulR7k8bQzyoWQOguA.png)
+
+## _Rust Coding Conventions_ <a href="#7a56" id="7a56"></a>
+
+### Using crates from crates.io&#x20;
+
+It is allowed to use crates from crates.io, though external dependencies should not be added gratuitously. All such crates must have a suitably permissive license.
+
+## _Flutter/Dart Coding Conventions_
+
 ### _Strings_ <a href="#2233" id="2233"></a>
 
 * _PREFER using interpolation to compose strings and values._\
@@ -60,38 +187,7 @@ void sum(int testValue) {…}
 'Hello, ' + name + '! You are ' + (year - birth).toString() + ' years old.';
 ```
 
-### _Variables_ <a href="#5dc0" id="5dc0"></a>
-
-_@@@ We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
-
-#### _Specify types for class members_ <a href="#5dc0" id="5dc0"></a>
-
-_Always specify the type of a member when it’s value type is known. Avoid using `var` when possible._
-
-```
-int item = 10;
-final User user = User();
-String name = ‘pooja’;
-const int timeOut = 20;
-```
-
-### __ <a href="#2e62" id="2e62"></a>
-
-```
-d sum(int testValue) { // …}
-```
-
-### _Variables_ <a href="#2233" id="2233"></a>
-
-DO follow a consistent rule for var and final on local variables. Most local variables shouldn’t have type annotations and should be declared using just var or final. There are two rules in wide use for when to use one or the other:
-
-Use final for local variables that are not reassigned and var for those that are.
-
-Use var for all local variables, even ones that aren’t reassigned. Never use final for locals. (Using final for fields and top-level variables is still encouraged, of course.)
-
-Either rule is acceptable, but pick one and apply it consistently throughout your code. That way when a reader sees var, they know whether it means that the variable is assigned later in the function.
-
-### _DON’T use `new`_ <a href="#2e62" id="2e62"></a>
+### _Don't use `new`_ <a href="#2e62" id="2e62"></a>
 
 > _Dart 2 makes the `new` keyword optional. Even in Dart 1, its meaning was never clear because factory constructors mean a `new` invocation may still not actually return a new object._
 >
@@ -151,36 +247,6 @@ Widget getText(BuildContext context) {
 }
 ```
 
-### _Use Cascade Notation_ <a href="#405d" id="405d"></a>
-
-__[_Cascade notation_](https://flutterbyexample.com/lesson/cascade-notation) _allows you to perform a sequence of operations on the same object. It saves your number of steps and needs for a temporary variable._
-
-```
-Demo d1 = new Demo();
-Demo d2 = new Demo();
-
-// Don't - Without Cascade Notation
-d1.setA(20);
-d1.setB(30);
-d1.showVal();
-
-
-// Do - With Cascade Notation
-d2..setA(10)
-  ..setB(15)
-  ..showVal();
-```
-
-### _Use expression function bodies_ <a href="#2998" id="2998"></a>
-
-_For functions that contain just one expression, you can use an expression function. The `=>` (arrow) notation is used for expression functions._
-
-```
-num get x => center.x;
-
-set x(num value) => center = Point(value, center.y);
-```
-
 ### _**Avoid large widget trees**_
 
 _Split your code into smaller widgets instead. Dividing your code into small reusable widgets not only promotes its reusability but also its readability._
@@ -194,10 +260,6 @@ itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
  ),
 ```
 
-### _**Utilities**_
-
-_Place reusable functions in a class, so it's easy to access them. Also, For Dialog components, if you are using a package to wrap their logic with your own custom widget, so it would be easy to change the package if necessary later._
-
 ### _Const Widgets_ <a href="#44fa" id="44fa"></a>
 
 _Whenever you have widgets that don’t change when the state changes, you should declare them as constants. This will prevent them from being rebuilt, hence improving performance._
@@ -205,10 +267,6 @@ _Whenever you have widgets that don’t change when the state changes, you shoul
 _This is similar to caching widgets that won’t get rebuilt. Some of the widgets that can be declared as `const` include `Text`, `Padding`, and `Icons`, to mention a few. If the widgets contain dynamic information, they shouldn’t be declared as constants._
 
 ![Usage of const](https://miro.medium.com/max/553/1\*IdXs5sjANVB\_1g41D9vUug.png)
-
-### _Remove Unused Resources_ <a href="#e66f" id="e66f"></a>
-
-_Especially when you are ready to push your changes, you’ll need to remove resources that aren't used in the application. These could be image assets, for example. Removing unused resources and compressing images will help us reduce the size of the application._
 
 ### _Use Trailing Commas_ <a href="#8e4e" id="8e4e"></a>
 
@@ -240,12 +298,6 @@ _@@@ Is there a VS Code version o this? More importantly, what's our procedure? 
 _Plugin for checking the latest Pub packages versions. It will automatically run inspection in your pubspec.yaml file to check all dependencies and compare versions with the latest versions from the Pub package repository. The highlighted ones need an update._
 
 ![pubspec.yaml](https://miro.medium.com/max/449/1\*qo0FSOOqHH-Zva8D-UAYvw.png)
-
-### _Maintain hard-coded values, strings, colors in a separate file_ <a href="#bb17" id="bb17"></a>
-
-_Create a separate dart file to store strings, colors, constants. so it’s easy to access them._
-
-![colors.dart](https://miro.medium.com/max/624/1\*1K-AKulR7k8bQzyoWQOguA.png)
 
 ### _Custom Error Screen: handle “RED SCREEN OF DEATH”_ <a href="#8dad" id="8dad"></a>
 
@@ -282,3 +334,5 @@ void main() {
   ));
 }
 ```
+
+## __ <a href="#7a56" id="7a56"></a>

@@ -14,12 +14,12 @@ In order to start developing you will need to setup your environment. We have se
 
 ## Coding Conventions
 
-{% content-ref url="flutter-coding-conventions.md" %}
-[flutter-coding-conventions.md](flutter-coding-conventions.md)
+{% content-ref url="coding-guidelines.md" %}
+[coding-guidelines.md](coding-guidelines.md)
 {% endcontent-ref %}
 
-{% content-ref url="rust-coding-conventions.md" %}
-[rust-coding-conventions.md](rust-coding-conventions.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Architecture documentation
