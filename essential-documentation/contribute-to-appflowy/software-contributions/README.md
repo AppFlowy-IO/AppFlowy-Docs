@@ -1,18 +1,14 @@
-# Software Contributions
+# 💻 Software Contributions
 
 Welcome to the AppFlowy software development documentation. Here you will find all of the ressources that you need to start developping on the AppFlowy project.
 
 
 
-The following instructions have been known to work.
-
-**Use caution when you deviate** from this guide.
-
-*
+These pages will guide you through the stages of setting up your development environment, connecting to our code base, learning how to code for AppFlowy and finally submitting code to the project.
 
 ## Environment setup
 
-In order to start developing you will need to setup your environment. We have setup instructions for Mac, Windows, Linux, as well as with a Docker container:
+In order to start developing you will need to setup your environment. We have setup instructions for Linux, MacOS, and Windows.
 
 {% content-ref url="environment-setup/building-on-linux.md" %}
 [building-on-linux.md](environment-setup/building-on-linux.md)
@@ -22,8 +18,8 @@ In order to start developing you will need to setup your environment. We have se
 [building-on-macos.md](environment-setup/building-on-macos.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="environment-setup/building-on-windows.md" %}
+[building-on-windows.md](environment-setup/building-on-windows.md)
 {% endcontent-ref %}
 
 ## Coding Conventions

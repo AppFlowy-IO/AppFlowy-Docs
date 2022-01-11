@@ -1,4 +1,4 @@
-# Submitting your first Pull Request
+# ⤴ Submitting your first Pull Request
 
 ## Thank you for helping out!
 
@@ -122,6 +122,14 @@ If there is more description or discussion about the pull request than what fits
 If the pull request fixes an issue, you should add "fixes #180" (replace 180 with the actual issue number) in the pull request description. This exact format, "fixes #180" is important, as it will cause Github to automatically close the issue when the pull request is merged.
 
 Your PR is now sent to AppFlowy where we will review your code and supply with you with any comments and suggestions that have to be applied to your code in order for it to be merged in the AppFlowy project.
+
+### All PRs must be peer reviewed
+
+Every PR that is submitted will be reviewed by one or more AppFlowy maintainers. This is to ensure that there aren't any typos or mishaps in the code as the benefits of code review are widely accepted as a quality improvement and control strategy. Peer review contributes a measure of quality control practices to software development by allowing teams to review their development artifacts early and often. Open source software projects such as AppFlowy know this first hand! As we deal with the constraints presented by tight budgets and constantly rotating staff of developers all based in different time zones. We consistently experience the development challenges exacerbated by geographically dispersed and virtual teams. In our situation, the ability to review our code collaboratively breaks down the silos of isolation and helps everyone better understand the state of the project.
+
+### Keep the main branch prestine
+
+AppFlowy is a Continuous Integgration project which means that the anyone can clone the HEAD of the main branch at any time and the application must be in working order. Therefore, the main branch must never be in an error state, it must always be deployable and in running order. A PR that does not pass the CI tests as well as peer review will not be merged into the main branch.&#x20;
 
 ### React to Pull Requests comments
 

@@ -4,7 +4,7 @@ description: >-
   easily search for "@@@" to find them.
 ---
 
-# Coding Guidelines
+# 🦮 Coding Guidelines
 
 ## General Coding Conventions
 
@@ -34,7 +34,9 @@ Using \_ in a match is convenient, but it means that when new variants are added
 
 #### Use "TODO" comments for things you don't want to forget
 
-As a useful tool to yourself, you can insert a // TODO comment for something that you want to get back to **before** you submit your PR:
+TODOs are a very useful tool to remind yourself of bits while working on a feature. We recommend that you insert a TODO comment for something that you want to get back to **before** you submit your PR.
+
+TODOs are to be used locally while working on a feature and must be dealt with and removed before checking in the code.
 
 ```
 fn do_something() {
@@ -47,10 +49,6 @@ fn do_something() {
 These are very practical and you can see a list of them in the VS Code 'Problems' tab.
 
 ![](<../../../.gitbook/assets/image (1).png>)
-
-The CI scripts will report a TODO comment as an error. You must remove all TODO comments before submitting a PR.
-
-__
 
 ### _Naming conventions_ <a href="#7a56" id="7a56"></a>
 
@@ -88,7 +86,7 @@ void sum(int testValue) {…}
 
 ### _Variables_ <a href="#5dc0" id="5dc0"></a>
 
-_@@@ We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
+_@@@_ [Nathan Foo](https://app.gitbook.com/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
 
 #### _Specify types for class members_ <a href="#5dc0" id="5dc0"></a>
 
@@ -135,7 +133,7 @@ d2..setA(10)
   ..showVal();
 ```
 
-### _Use expression function bodies @@@I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
+### _Use expression function bodies @@@_ [Nathan Foo](https://app.gitbook.com/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
 
 _For functions that contain just one expression, you can use an expression function. The `=>` (arrow) notation is used for expression functions._
 
