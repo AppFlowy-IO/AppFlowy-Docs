@@ -26,8 +26,8 @@ In order to start developing you will need to setup your environment. We have se
 
 ## Coding Conventions
 
-{% content-ref url="flutter-coding-conventions.md" %}
-[flutter-coding-conventions.md](flutter-coding-conventions.md)
+{% content-ref url="style-guides.md" %}
+[style-guides.md](style-guides.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

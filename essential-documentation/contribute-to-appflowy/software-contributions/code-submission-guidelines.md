@@ -18,7 +18,7 @@ Make PRs as soon as possible. In an open source project, we all depend on each o
 
 ## Before pushing your code
 
-Before creating your Pull Request you must ensure that your code adheres to the [flutter-coding-conventions.md](flutter-coding-conventions.md "mention").
+Before creating your Pull Request you must ensure that your code adheres to the [style-guides.md](style-guides.md "mention").
 
 ### No warnings
 
