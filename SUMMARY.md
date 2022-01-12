@@ -3,7 +3,7 @@
 ## Essential documentation
 
 * [⭐ Start here](README.md)
-  * [Welcome to AppFlowy](essential-documentation/start-here/welcome-to-appflowy.md)
+  * [Welcome to AppFlowy Docs](essential-documentation/start-here/welcome-to-appflowy.md)
   * [How to get help](essential-documentation/start-here/how-to-get-help.md)
   * [Glossary](essential-documentation/start-here/glossary.md)
 * [🛠 Install AppFlowy](essential-documentation/install-appflowy/README.md)

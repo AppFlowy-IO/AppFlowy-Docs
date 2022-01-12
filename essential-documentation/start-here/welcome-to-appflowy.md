@@ -1,41 +1,46 @@
-# Welcome to AppFlowy
+# Welcome to AppFlowy Docs
 
-AppFlowy is the first open-source Notion alternative. You are in charge of your data and customizations.
+AppFlowy is the first open-source Notion alternative. You are in charge of your data and customizations. Here you can access the complete documentation for AppFlowy.
 
-### Built for teams that need more control and flexibility
+![](<../../.gitbook/assets/image (2).png>)
 
-#### 100% data control
+### Overview
 
-* You can host AppFlowy wherever you want; no vendor lock-in.
+| Essential Documentation                              | Popular Topics                                                                                                                       |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| ``[Install AppFlowy](../install-appflowy/)           | [How we built AppFlowy with Flutter and Rust](../contribute-to-appflowy/architecture/how-we-built-appflowy-with-flutter-and-rust.md) |
+| [Contribute to AppFlowy](../contribute-to-appflowy/) | [Translate AppFlowy](../contribute-to-appflowy/translation.md)                                                                       |
 
-#### Unlimited customizations
 
-* Design and modify AppFlowy your way with an open core codebase.
 
-#### One codebase supporting multiple platforms
 
-* AppFlowy is built with Flutter and Rust. What does this mean? Faster development, better native experience, and more reliable performance.
 
-### Built for individuals who care about data security and mobile experience
+{% hint style="info" %}
+**Help & Feedback**
 
-#### 100% control of your data
+****
 
-* Download and install AppFlowy on your local machine. You own and control your personal data.
+**Docs**
 
-#### Extensively extensible
+Edit [**AppFlowy Docs**](https://github.com/AppFlowy-IO/docs) to fix an error or add an improvement in a merge request.\
+[**Create an issue**](https://github.com/AppFlowy-IO/docs/issues) to suggest an improvement to our Docs.\
 
-* For those with no coding experience, AppFlowy enables you to create apps that suit your needs. It's built on a community-driven toolbox, including templates, plugins, themes, and more.
 
-#### Truely native experience
+**Product**
 
-* Faster, more stable with support for offline mode. It's also better integrated with different devices. Moreover, AppFlowy enables users to access features and possibilities not available on the web.
+[Propose functionality](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) by submitting a feature request.\
+[Join our Discord channel](https://discord.gg/9Q2xaN37tV) to help shape new features.
 
-### Community for hackers | Community for creators | Community for builders
+****
 
-#### Let’s democratize the knowledge and wheels of making complex workplace collaboration tools
+**Get Help**
 
-* It takes tremendous resources and expertise to build a great collaborative productivity tool. Don’t reinvent the wheel, let’s create the best open-source building blocks as infra to power others.
+Ask on the [forum](https://github.com/AppFlowy-IO/appflowy/discussions/new)
 
-#### We collaboratively create apps that suit others’ needs by developing a versatile toolbox of plugins, templates, and more
+Join [Discord](https://discord.gg/9Q2xaN37tV) to get quick support
 
-* Join us to build a toolbox that empowers anyone to create their own system - play and tweak without a glass ceiling on what’s possible.
+Email support@appflowy.io for specific problems
+{% endhint %}
+
+
+
