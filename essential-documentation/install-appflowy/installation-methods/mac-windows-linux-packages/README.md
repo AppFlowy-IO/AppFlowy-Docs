@@ -2,8 +2,8 @@
 
 Download AppFlowy and use it right away:
 
-{% embed url="https://github.com/AppFlowy-IO/appflowy/releases" %}
-AppFlowy's GitHub Repo
-{% endembed %}
+[https://github.com/AppFlowy-IO/appflowy/releases](https://github.com/AppFlowy-IO/appflowy/releases)
+
+
 
 For Linux users, please also refer to [Installing on Linux ](installing-on-linux.md)for optional steps.&#x20;
