@@ -1,6 +1,6 @@
 # From source
 
-You can also build AppFlowy directly from the source code if you like. Maybe you want to suite it to your needs, or maybe you want to contribute your talents to the project.
+You can also build AppFlowy directly from the source code if you like. Maybe you want to suit it to your needs, or maybe you want to contribute your talents to the project.
 
 You can find instructions for the supported operating systems :&#x20;
 

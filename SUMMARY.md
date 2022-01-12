@@ -22,7 +22,7 @@
       * [🐧 Building on Linux](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-linux.md)
       * [🍎 Building on MacOS](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-macos.md)
       * [🪟 Building on Windows](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-windows.md)
-    * [🔄 Setting Up Your Repositories](essential-documentation/contribute-to-appflowy/software-contributions/setting-up-your-repositories.md)
+    * [Setting Up Your Repositories](essential-documentation/contribute-to-appflowy/software-contributions/setting-up-your-repositories.md)
     * [🦮 Coding Guidelines](essential-documentation/contribute-to-appflowy/software-contributions/flutter-coding-conventions.md)
     * [🔬 Code Submission Guidelines](essential-documentation/contribute-to-appflowy/software-contributions/code-submission-guidelines.md)
     * [⤴ Submitting your first Pull Request](essential-documentation/contribute-to-appflowy/software-contributions/submitting-your-first-pull-request.md)

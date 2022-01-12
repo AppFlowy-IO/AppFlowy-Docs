@@ -1,10 +1,12 @@
 # 💻 Software Contributions
 
-Welcome to the AppFlowy software development documentation. Here you will find all of the ressources that you need to start developping on the AppFlowy project.
+Welcome to the AppFlowy software development documentation. Here you will find all of the resources that you need to start developing on the AppFlowy project.
 
 
 
 These pages will guide you through the stages of setting up your development environment, connecting to our code base, learning how to code for AppFlowy and finally submitting code to the project.
+
+
 
 ## Environment setup
 

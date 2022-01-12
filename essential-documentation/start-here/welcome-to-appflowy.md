@@ -1,6 +1,6 @@
 # Welcome to AppFlowy
 
-AppFlowy is an open-source Notion alternative. You are in charge of your data and customizations.
+AppFlowy is the first open-source Notion alternative. You are in charge of your data and customizations.
 
 ### Built for teams that need more control and flexibility
 
