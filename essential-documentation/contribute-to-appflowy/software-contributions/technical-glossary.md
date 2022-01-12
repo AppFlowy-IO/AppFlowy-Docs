@@ -2,7 +2,7 @@
 
 This glossary is where you will find definitions to the technical terms that are used in AppFlowy's code and technical documentation.
 
-If you are looking for the terms used in the application, or in the user documentation you find them in the user [Glossary](../../start-here/glossary.md).
+If you are looking for the terms used in the application, or in the user documentation you find them in the user [Glossary](broken-reference).
 
 ## A
 

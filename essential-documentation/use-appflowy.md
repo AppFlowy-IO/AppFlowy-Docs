@@ -1,3 +1,0 @@
-# 💜 Use AppFlowy
-
-WIP
