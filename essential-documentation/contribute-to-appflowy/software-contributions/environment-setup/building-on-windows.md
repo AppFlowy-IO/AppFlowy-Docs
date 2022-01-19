@@ -38,6 +38,12 @@ git clone https://github.com/AppFlowy-IO/appflowy.git
 flutter channel stable
 ```
 
+* Enable the specified platform first if you don't enable it before and then select the desktop device.
+
+```
+flutter config --enable-windows-desktop
+```
+
 * Fix any problems reported by flutter doctor
 
 ```shell
