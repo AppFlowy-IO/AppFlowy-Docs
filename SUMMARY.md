@@ -31,9 +31,9 @@
       * [Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system/domain-driven-design.md)
   * [Translate AppFlowy](essential-documentation/contribute-to-appflowy/translation.md)
 
-## (WIP) Design Documentation
+## Design Documentation
 
-* [Brand](wip-design-documentation/ui-design-system-documentation.md)
-* [Product](wip-design-documentation/product.md)
-* [Research](wip-design-documentation/research.md)
-* [Accessibility](wip-design-documentation/accessibility.md)
+* [Brand](design-documentation/ui-design-system-documentation.md)
+* [Product](design-documentation/product.md)
+* [Research](design-documentation/research.md)
+* [Accessibility](design-documentation/accessibility.md)
