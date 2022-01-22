@@ -21,7 +21,7 @@ Here are the terms that are used when talking about git repositories.
 
 Working on an open source project can get a little complicated for new users. There are 3 code repositories that are involved in the process: AppFlowy's repo, Your GitHub fork, and your cloned repository on your local computer. You can see the location and links between these repositories in the following diagram :
 
-\[\[https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/cloned\_repository.png|alt=Cloned Repository img]]
+![](https://github.com/AppFlowy-IO/appflowy/raw/main/doc/imgs/cloned\_repository.png)
 
 ## Initial Project setup
 
@@ -57,6 +57,6 @@ git remote add upstream https://github.com/AppFlowy-IO/appflowy.git
 
 The AppFlowy project repo is now referred to as "upstream" Your GitHub project is now referred to as "origin"
 
-\[\[https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/add\_remote\_repository.png|alt=Add Remote Repository img]]
+![](https://github.com/AppFlowy-IO/appflowy/raw/main/doc/imgs/add\_remote\_repository.png)
 
 You're all setup! Now, it's time to start working on some code!

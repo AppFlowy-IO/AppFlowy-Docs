@@ -13,8 +13,6 @@
 * Both Windows `cmd` and `powershell` can be used for running commands.
 * If you encounter any issues, please have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
-##
-
 ## Step 1: Get the source code
 
 {% hint style="info" %}

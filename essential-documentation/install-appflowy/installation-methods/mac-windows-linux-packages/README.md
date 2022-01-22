@@ -1,5 +1,13 @@
 # Mac / Windows / Linux Packages
 
+## Mac Install
+
+```
+brew install appflowy
+```
+
+## Packages
+
 Download AppFlowy and use it right away:
 
 [https://github.com/AppFlowy-IO/appflowy/releases](https://github.com/AppFlowy-IO/appflowy/releases)

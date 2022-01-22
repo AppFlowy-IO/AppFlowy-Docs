@@ -21,7 +21,7 @@ Guidelines to ensure that font choices across all screens are consistent while b
 
 Appflowy uses two typefaces by default. Poppins, which can be found on Google Fonts, and SF Mono for code snippets.
 
-\[\[https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/Typography Styles.svg|alt=Appflowy.io typography styles]]
+![](https://github.com/AppFlowy-IO/appflowy/raw/main/doc/imgs/Typography%20Styles.svg)
 
 #### [Poppins](https://fonts.google.com/specimen/Poppins#about)
 
@@ -61,7 +61,7 @@ Can be found at Apple's website. If you're on Windows or Linux, you can find the
 
 Color helps create a usable and accessible interface that is a consistent experience through all interactions of our product. Appflowy.io's color system includes two color modes by default, light and dark. Colors are named within a theme for the functions performed within the product. They are easily editable and allows for a solid foundation of accessibility for anyone trying to create their own unique color theme for Appflowy.io
 
-\[\[https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/darkmode - lightmode.svg|alt=Dark mode and light mode difference]]
+![](https://github.com/AppFlowy-IO/appflowy/raw/main/doc/imgs/darkmode%20-%20lightmode.svg)
 
 ### Specifications
 

@@ -14,4 +14,4 @@ Outline:
 1. Layers architecture 1.1 Domain-driven design 1.2 Layers definition 1.3 Flutter values
 2. AppFlowy Frontend 2.1. Modules 2.2. The Core Module
 
-Read our article and share it with your buddies: https://blog-appflowy.ghost.io/tech-design-flutter-rust/>
+Read our article and share it with your buddies: [https://blog-appflowy.ghost.io/tech-design-flutter-rust](https://blog-appflowy.ghost.io/tech-design-flutter-rust)
