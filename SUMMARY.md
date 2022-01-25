@@ -4,7 +4,7 @@
 
 * [⭐ Start here](README.md)
   * [Welcome to AppFlowy Docs](essential-documentation/start-here/welcome-to-appflowy.md)
-  * [How to get help](essential-documentation/start-here/how-to-get-help.md)
+  * [How to get help](essential-documentation/get-started/how-to-get-help.md)
 * [🛠 Install AppFlowy](essential-documentation/install-appflowy/README.md)
   * [Requirements](essential-documentation/install-appflowy/requirements.md)
   * [Installation methods](essential-documentation/install-appflowy/installation-methods/README.md)
