@@ -1,8 +1,8 @@
-# Domain Driven Design
+# 🍔 Domain Driven Design
 
-For many architects, the process of data modeling is driven by intuition. However, there are well-formulated methodologies for approaching it more formally. I recommend the [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven\_design) and choose it as AppFlowy architecture.
+For many architects, the process of data modeling is driven by intuition. However, there are well-formulated methodologies for approaching it more formally. I recommend [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven\_design) and choose it as AppFlowy architecture.
 
-### Layered architecture
+## :boom: Layered architecture
 
 The most common architecture pattern is the layered architecture pattern, known as the n-tier architecture pattern. Partition the software into `layers` to reduce the complexity. Each layer of the layered architecture pattern has a specific role and responsibility.`DDD` consists of four layers.
 
@@ -66,7 +66,7 @@ As you see, the `Complexity` and `Abstraction` of these layers are depicted in t
                                                            Complexity
 ```
 
-#### Data Model
+### Data Model
 
 DDD classifies data as referenceable objects, or entities, and non-referenceable objects, or value objects. Let's introduce some DDD terminology.
 
@@ -141,11 +141,11 @@ class AuthRepository implements AuthInterface {
 
 > More often than not, the repository interface can be divided into sub-repository in order to reduce the complexity.
 
-#### Relation
+### Relation
 
 The diagram below is a navigational map. It shows the patterns that form the building blocks of Domain Driven Design and how they relate to each other.&#x20;
 
-### Operation Flow
+## Operation Flow
 
 ```
        presentation       │          Application                      domain                        Infrastructure

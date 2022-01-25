@@ -8,6 +8,10 @@
 
 ## **Step 1: Get the source code**
 
+{% hint style="warning" %}
+You should fork the code instead if you wish to submit patches. You'll find information on that in **** [setting-up-your-repositories.md](../setting-up-your-repositories.md "mention")****
+{% endhint %}
+
 ```shell
 git clone https://github.com/AppFlowy-IO/appflowy.git
 ```

@@ -27,8 +27,9 @@
     * [Technical Glossary](essential-documentation/contribute-to-appflowy/software-contributions/technical-glossary.md)
   * [Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [How we built Appflowy with Flutter and Rust](essential-documentation/contribute-to-appflowy/architecture/how-we-built-appflowy-with-flutter-and-rust.md)
-    * [AppFlowy - Event Driven System](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system/README.md)
-      * [Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system/domain-driven-design.md)
+    * [🥳 Event Driven System](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system/README.md)
+      * [🍔 Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system/domain-driven-design.md)
+    * [Editor](essential-documentation/contribute-to-appflowy/architecture/editor.md)
   * [Translate AppFlowy](essential-documentation/contribute-to-appflowy/translation.md)
 
 ## Design Documentation

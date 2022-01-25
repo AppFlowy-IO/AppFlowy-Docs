@@ -1,11 +1,6 @@
-# AppFlowy - Event Driven System
+# 🥳 Event Driven System
 
-* Goals of the System
-* Some Design Considerations
-* High Level Design
-* Component Design
-
-## Goals of the System
+## :dart: Goals of the System
 
 The AppFlowy project is an attempt to build a high performance application. Here are the top-level requirements for our system.
 
@@ -14,13 +9,13 @@ The AppFlowy project is an attempt to build a high performance application. Here
 3. **Reliability.**
 4. **Safety.**
 
-## Some Design Considerations
+## :thinking: Some Design Considerations
 
-## High Level Design
+## :scroll: High Level Design
 
-## Component Design
+## 📚 Component Design
 
-### Event Dispatch
+### 📙 Event Dispatch
 
 ```
                         Frontend                                                     FLowySDK

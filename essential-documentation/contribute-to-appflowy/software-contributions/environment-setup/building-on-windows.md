@@ -1,22 +1,19 @@
 # 🪟 Building on Windows
 
-**Note:**
+**Notes:**
 
 * The following steps are verified on
   * [x] Windows 10 X86\_64
   * [ ] Windows 10 arm64
   * [ ] Windows 11 X86\_64
   * [ ] Windows 11 arm64
-
-**Note:**
-
 * Both Windows `cmd` and `powershell` can be used for running commands.
 * If you encounter any issues, please have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
 ## Step 1: Get the source code
 
-{% hint style="info" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in [Submitting your first Pull Request](../submitting-your-first-pull-request.md)
+{% hint style="warning" %}
+You should fork the code instead if you wish to submit patches. You'll find information on that in [setting-up-your-repositories.md](../setting-up-your-repositories.md "mention")&#x20;
 {% endhint %}
 
 ```shell
