@@ -8,7 +8,7 @@ AppFlowy is the first open-source Notion alternative. You are in charge of your 
 
 | Essential Documentation                              | Popular Topics                                                                                                                       |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| ``[Install AppFlowy](../install-appflowy/)           | [How we built AppFlowy with Flutter and Rust](../contribute-to-appflowy/architecture/how-we-built-appflowy-with-flutter-and-rust.md) |
+| [Install AppFlowy](../install-appflowy/)           | [How we built AppFlowy with Flutter and Rust](../contribute-to-appflowy/architecture/how-we-built-appflowy-with-flutter-and-rust.md) |
 | [Contribute to AppFlowy](../contribute-to-appflowy/) | [Translate AppFlowy](../contribute-to-appflowy/translation.md)                                                                       |
 
 
