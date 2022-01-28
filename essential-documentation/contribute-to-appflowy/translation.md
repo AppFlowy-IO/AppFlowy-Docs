@@ -2,7 +2,7 @@
 
 You can help Appflowy in supporting various languages by contributing. Follow the steps below sequentially to contribute translations.
 
-### Steps to modify an existing translation
+## Steps to modify an existing translation
 
 Translation files are located in : `frontend/app_flowy/assets/translations/`
 
@@ -11,7 +11,7 @@ Translation files are located in : `frontend/app_flowy/assets/translations/`
 3. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
 4. Verify that the translation has changed appropriately by compiling and running the app.
 
-### Steps to add new language
+## Steps to add new language
 
 **NOTE: Translation files SHOULD be** `json` **files named in the format** `<lang_code>-<country_code>.json` **or just** `<lang_code>.json`**. eg:**`en.json`**,** `en-UK.json`
 
@@ -24,9 +24,24 @@ Translation files are located in : `frontend/app_flowy/assets/translations/`
 ```dart
 runApp(
   EasyLocalization(
-      supportedLocales: const [Locale('en'), Locale('zh_CN')],  // <---- Add locale to this list
+      supportedLocales: const [Locale('en'), Locale('zh', 'CN')],  // <---- Add locale to this list
       path: 'assets/translations',
       fallbackLocale: const Locale('en'),
       child: app),
 );    
+```
+
+## How to test your changes
+
+You can set the displayed language manually by temporarily adding 'startLocale' to your code. Remember to remove this test line before submitting your changes.
+
+```dart
+runApp(
+  EasyLocalization(
+      supportedLocales: const [Locale('en'), Locale('zh', 'CN')],
+      path: 'assets/translations',
+      fallbackLocale: const Locale('en'),
+      startLocale: const Locale('zh', 'CN'),   // <---- Display app in Chinese
+      child: app),
+);
 ```
