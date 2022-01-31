@@ -1,0 +1,23 @@
+@startuml DDDLayeredArchitecture
+title DDD - Layered Architecture
+top to bottom direction
+skinparam linetype ortho
+
+node "Front End (Flutter)" {
+    component Presentation as "Presentation Layer" #DDDDDD
+}
+
+node "Back End (Rust)" {
+    component Application as "Application Layer" #DDDDDD
+    component Domain as "Domain Layer" #DDDDDD
+    component Infrastructure as "Infrastructure Layer" #DDDDDD 
+}
+
+database "Database"
+
+Presentation ..> Application
+Application ..> Domain
+Application ..> Infrastructure
+Domain <.. Infrastructure
+Infrastructure ..> Database
+@enduml

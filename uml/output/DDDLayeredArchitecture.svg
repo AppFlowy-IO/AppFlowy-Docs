@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="587px" preserveAspectRatio="none" style="width:246px;height:587px;" version="1.1" viewBox="0 0 246 587" width="246px" zoomAndPan="magnify"><defs><filter height="300%" id="fn0f4g1z9evc0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="231" x="2" y="19.2419">DDD - Layered Architecture</text><!--MD5=[565b0b3f8e80a87f13a21f60c9535543]
+cluster Front End (Flutter)--><polygon fill="#FFFFFF" filter="url(#fn0f4g1z9evc0)" points="17.5,40.5158,27.5,30.5158,222.5,30.5158,222.5,128.5158,212.5,138.5158,17.5,138.5158,17.5,40.5158" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="212.5" x2="222.5" y1="40.5158" y2="30.5158"/><line style="stroke:#000000;stroke-width:1.5;" x1="17.5" x2="212.5" y1="40.5158" y2="40.5158"/><line style="stroke:#000000;stroke-width:1.5;" x1="212.5" x2="212.5" y1="40.5158" y2="138.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="51.5" y="58.4818">Front End (Flutter)</text><!--MD5=[9d8550c059aec087c7b9d3d925822974]
+cluster Back End (Rust)--><polygon fill="#FFFFFF" filter="url(#fn0f4g1z9evc0)" points="21.5,172.5158,31.5,162.5158,229.5,162.5158,229.5,478.5158,219.5,488.5158,21.5,488.5158,21.5,172.5158" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="219.5" x2="229.5" y1="172.5158" y2="162.5158"/><line style="stroke:#000000;stroke-width:1.5;" x1="21.5" x2="219.5" y1="172.5158" y2="172.5158"/><line style="stroke:#000000;stroke-width:1.5;" x1="219.5" x2="219.5" y1="172.5158" y2="488.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108" x="67.5" y="190.4818">Back End (Rust)</text><!--MD5=[0bc3b4033a8c08deb7c547c6a6941838]
+entity Presentation--><rect fill="#DDDDDD" filter="url(#fn0f4g1z9evc0)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="165" x="37" y="73.5158"/><rect fill="#DDDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="182" y="78.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="180" y="80.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="180" y="84.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="52" y="108.4818">Presentation Layer</text><!--MD5=[e5b7da8fa23ec8cac7d321a34f6e9ee1]
+entity Application--><rect fill="#DDDDDD" filter="url(#fn0f4g1z9evc0)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="156" x="41.5" y="205.5158"/><rect fill="#DDDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="177.5" y="210.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="175.5" y="212.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="175.5" y="216.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="56.5" y="240.4818">Application Layer</text><!--MD5=[2fb3fc8e03cad589fa238654c03a9f58]
+entity Domain--><rect fill="#DDDDDD" filter="url(#fn0f4g1z9evc0)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="132" x="40.5" y="314.5158"/><rect fill="#DDDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="152.5" y="319.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="150.5" y="321.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="150.5" y="325.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="55.5" y="349.4818">Domain Layer</text><!--MD5=[625fed884dd9f0f64d754593d4b59540]
+entity Infrastructure--><rect fill="#DDDDDD" filter="url(#fn0f4g1z9evc0)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="175" x="38" y="423.5158"/><rect fill="#DDDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="193" y="428.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="191" y="430.5158"/><rect fill="#DDDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="191" y="434.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="53" y="458.4818">Infrastructure Layer</text><!--MD5=[fa1e3283224feb76407c84b7e90ed808]
+entity Database--><path d="M84,542.5158 C84,532.5158 125.5,532.5158 125.5,532.5158 C125.5,532.5158 167,532.5158 167,542.5158 L167,570.5838 C167,580.5838 125.5,580.5838 125.5,580.5838 C125.5,580.5838 84,580.5838 84,570.5838 L84,542.5158 " fill="#FEFECE" filter="url(#fn0f4g1z9evc0)" style="stroke:#000000;stroke-width:1.5;"/><path d="M84,542.5158 C84,552.5158 125.5,552.5158 125.5,552.5158 C125.5,552.5158 167,552.5158 167,542.5158 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="94" y="571.4818">Database</text><!--MD5=[670efb1a0156c3f5eed0c2ba056620eb]
+link Presentation to Application--><path d="M119.5,122.5358 C119.5,122.5358 119.5,200.1758 119.5,200.1758 " fill="none" id="Presentation-to-Application" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="119.5,205.1758,123.5,196.1758,119.5,200.1758,115.5,196.1758,119.5,205.1758" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[31a8011ae9e62fa2c80ea31701489b76]
+link Application to Domain--><path d="M107,254.7458 C107,254.7458 107,309.3758 107,309.3758 " fill="none" id="Application-to-Domain" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="107,314.3758,111,305.3758,107,309.3758,103,305.3758,107,314.3758" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7704df2bdc97cbb63801c3fb30b0cbe9]
+link Application to Infrastructure--><path d="M185,254.5958 C185,254.5958 185,418.1858 185,418.1858 " fill="none" id="Application-to-Infrastructure" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="185,423.1858,189,414.1858,185,418.1858,181,414.1858,185,423.1858" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[073eb197ee12ef35908486e38d0d452c]
+reverse link Domain to Infrastructure--><path d="M106.5,368.7458 C106.5,368.7458 106.5,423.3758 106.5,423.3758 " fill="none" id="Domain-backto-Infrastructure" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="106.5,363.7458,102.5,372.7458,106.5,368.7458,110.5,372.7458,106.5,363.7458" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3b1617aac94115c40fe8eb733c85617c]
+link Infrastructure to Database--><path d="M125.5,472.6358 C125.5,472.6358 125.5,527.3658 125.5,527.3658 " fill="none" id="Infrastructure-to-Database" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="125.5,532.3658,129.5,523.3658,125.5,527.3658,121.5,523.3658,125.5,532.3658" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4f4df22f37f39fd94416fee225b1f8f3]
+@startuml DDDLayeredArchitecture
+title DDD - Layered Architecture
+top to bottom direction
+skinparam linetype ortho
+
+node "Front End (Flutter)" {
+    component Presentation as "Presentation Layer" #DDDDDD
+}
+
+node "Back End (Rust)" {
+    component Application as "Application Layer" #DDDDDD
+    component Domain as "Domain Layer" #DDDDDD
+    component Infrastructure as "Infrastructure Layer" #DDDDDD 
+}
+
+database "Database"
+
+Presentation ..> Application
+Application ..> Domain
+Application ..> Infrastructure
+Domain <.. Infrastructure
+Infrastructure ..> Database
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 05:25:05 EST 2021)
+(MIT source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CA
+--></g></svg>
