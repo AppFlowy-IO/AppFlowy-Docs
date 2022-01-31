@@ -22,12 +22,12 @@ In order to start developing you will need to setup your environment. We have se
 
 ## Coding Conventions
 
-{% content-ref url="style-guides.md" %}
-[style-guides.md](style-guides.md)
+{% content-ref url="submitting-code/style-guides.md" %}
+[style-guides.md](submitting-code/style-guides.md)
 {% endcontent-ref %}
 
-{% content-ref url="code-submission-guidelines.md" %}
-[code-submission-guidelines.md](code-submission-guidelines.md)
+{% content-ref url="submitting-code/code-submission-guidelines.md" %}
+[code-submission-guidelines.md](submitting-code/code-submission-guidelines.md)
 {% endcontent-ref %}
 
 ## Architecture documentation
@@ -44,6 +44,6 @@ In order to start developing you will need to setup your environment. We have se
 [translation.md](../translation.md)
 {% endcontent-ref %}
 
-{% content-ref url="submitting-your-first-pull-request.md" %}
-[submitting-your-first-pull-request.md](submitting-your-first-pull-request.md)
+{% content-ref url="submitting-code/submitting-your-first-pull-request.md" %}
+[submitting-your-first-pull-request.md](submitting-code/submitting-your-first-pull-request.md)
 {% endcontent-ref %}

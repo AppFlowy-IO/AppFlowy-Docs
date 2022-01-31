@@ -66,7 +66,7 @@ These steps are identical on all operating systems.
 * Step 1: cd into docker-buildfiles
 
 ```
-cd ./appflowy/doc/docker-buildfiles
+cd ./frontend/scripts/docker-buildfiles
 ```
 
 * Step 2: Provide access of appflowy to X session

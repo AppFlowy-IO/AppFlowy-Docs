@@ -4,7 +4,7 @@ description: >-
   easily search for "@@@" to find them.
 ---
 
-# 🦮 Coding Guidelines
+# 🦮 Style Guides
 
 ## General Coding Conventions
 
@@ -48,7 +48,7 @@ fn do_something() {
 
 These are very practical and you can see a list of them in the VS Code 'Problems' tab.
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../../.gitbook/assets/image (1).png>)
 
 ### _Naming conventions_ <a href="#7a56" id="7a56"></a>
 

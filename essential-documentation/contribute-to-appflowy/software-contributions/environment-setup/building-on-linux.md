@@ -91,7 +91,7 @@ flutter doctor
 Clone the source code from our Github project.
 
 {% hint style="warning" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in  [Submitting your first Pull Request](../submitting-your-first-pull-request.md)
+You should fork the code instead if you wish to submit patches. You'll find information on that in  [Submitting your first Pull Request](../submitting-code/submitting-your-first-pull-request.md)
 {% endhint %}
 
 ```shell
