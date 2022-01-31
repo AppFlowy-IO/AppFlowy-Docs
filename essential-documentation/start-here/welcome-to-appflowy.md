@@ -6,10 +6,10 @@ AppFlowy is the first open-source Notion alternative. You are in charge of your 
 
 ### Overview
 
-| Essential Documentation                              | Popular Topics                                                                                                                       |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [Install AppFlowy](../install-appflowy/)             | [How we built AppFlowy with Flutter and Rust](../contribute-to-appflowy/architecture/how-we-built-appflowy-with-flutter-and-rust.md) |
-| [Contribute to AppFlowy](../contribute-to-appflowy/) | [Translate AppFlowy](../contribute-to-appflowy/translation.md)                                                                       |
+| Essential Documentation                                        | Popular Topics                                                       |
+| -------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [install-appflowy](../install-appflowy/ "mention")             | [architecture](../contribute-to-appflowy/architecture/ "mention")    |
+| [contribute-to-appflowy](../contribute-to-appflowy/ "mention") | [translation.md](../contribute-to-appflowy/translation.md "mention") |
 
 
 
@@ -39,7 +39,7 @@ Ask on the [forum](https://github.com/AppFlowy-IO/appflowy/discussions/new)
 
 Join [Discord](https://discord.gg/9Q2xaN37tV) to get quick support
 
-Email support@appflowy.io for specific problems
+Email [support@appflowy.io](mailto:support@appflowy.io) for specific problems
 {% endhint %}
 
 

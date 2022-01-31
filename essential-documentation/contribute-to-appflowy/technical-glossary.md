@@ -1,4 +1,4 @@
-# Technical Glossary
+# 📚 Technical Glossary
 
 This glossary is where you will find definitions to the technical terms that are used in AppFlowy's code and technical documentation.
 
