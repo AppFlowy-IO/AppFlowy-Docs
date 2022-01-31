@@ -31,20 +31,10 @@ Here is the event flow:
 
 The event flow will be discussed in two parts: the frontend implemented in flutter and the FlowySDK implemented in Rust.
 
-#### FlowySDK
+### :technologist: FlowySDK
 
 #### Frontend
 
 The Frontend follows the DDD design pattern, you can recap from [domain-driven-design.md](domain-driven-design.md "mention")
 
-```
-    ┌──────┐        ┌────┐        ┌──────────────┐
-    │Widget│──1────▶│Bloc│──2────▶│ Repository A │─3──┐
-    └──────┘        └────┘        └──────────────┘    │
-                                  ┌──────────────┐    │     ┌───────┐
-                                  │ Repository B │────┼────▶│ Event │
-                                  └──────────────┘    │     └───────┘
-                                  ┌──────────────┐    │
-                                  │ Repository C │────┘
-                                  └──────────────┘
-```
+![file : eventdispatchfrontend.wsd](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/EventDispatchFrontend.svg)
