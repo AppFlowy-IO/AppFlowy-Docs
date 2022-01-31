@@ -35,7 +35,7 @@ The event flow will be discussed in two parts: the frontend implemented in flutt
 
 #### Frontend
 
-The Frontend follows the DDD design pattern, you can recap from \[\[Domain Driven Design]]
+The Frontend follows the DDD design pattern, you can recap from [domain-driven-design.md](domain-driven-design.md "mention")
 
 ```
     ┌──────┐        ┌────┐        ┌──────────────┐
