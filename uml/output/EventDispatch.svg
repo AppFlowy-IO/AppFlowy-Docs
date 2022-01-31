@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="310px" preserveAspectRatio="none" style="width:1459px;height:310px;" version="1.1" viewBox="0 0 1459 310" width="1459px" zoomAndPan="magnify"><defs><filter height="300%" id="f1q8sqqxfeog6b" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="127" x="659.5" y="19.2419">Event Dispatch</text><!--MD5=[fca8240bc233c06068545f9c8883ae88]
+cluster Frontend--><polygon fill="#DDDDDD" filter="url(#f1q8sqqxfeog6b)" points="16,31.1178,86,31.1178,93,56.1857,775,56.1857,775,303.1178,16,303.1178,16,31.1178" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="93" y1="56.1857" y2="56.1857"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="64" x="20" y="48.0838">Frontend</text><!--MD5=[8383391ef75c7ac261c4a5d81dd80ef1]
+cluster FlowySdk--><polygon fill="#DDDDDD" filter="url(#f1q8sqqxfeog6b)" points="808,31.1178,881,31.1178,888,56.1857,1442,56.1857,1442,303.1178,808,303.1178,808,31.1178" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="808" x2="888" y1="56.1857" y2="56.1857"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="67" x="812" y="48.0838">FlowySdk</text><!--MD5=[d7ef85a9d9ac667c73e3acd53ce70e4c]
+entity Widget_A--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="101" x="33.5" y="69.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="114.5" y="74.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="112.5" y="76.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="112.5" y="80.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="48.5" y="104.5838">Widget A</text><!--MD5=[8043f4ccc7f3715571633e9caf8bdf1e]
+entity Widget_B--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="101" x="33.5" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="114.5" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="112.5" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="112.5" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="48.5" y="188.5838">Widget B</text><!--MD5=[f1a735a69fb3679354447c50d76ccc61]
+entity Widget_C--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="104" x="32" y="237.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="116" y="242.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="114" y="244.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="114" y="248.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="47" y="272.5838">Widget ...</text><!--MD5=[7ee372614b5c979897b7cc55177a5dab]
+entity Bloc_A--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="81" x="206.5" y="69.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="267.5" y="74.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="265.5" y="76.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="265.5" y="80.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="221.5" y="104.5838">Bloc A</text><!--MD5=[23745280882acb1b0a45fdcbf8439228]
+entity Bloc_B--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="81" x="206.5" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="267.5" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="265.5" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="265.5" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="221.5" y="188.5838">Bloc B</text><!--MD5=[3926e8de46034ad62dbfb36d72ca562f]
+entity Bloc_C--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="84" x="205" y="237.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="269" y="242.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="267" y="244.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="267" y="248.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="220" y="272.5838">Bloc ...</text><!--MD5=[edccc82bdba4a765388b0a1a4a8815e4]
+entity Repository_A--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="124" x="359.5" y="69.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="463.5" y="74.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="461.5" y="76.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="461.5" y="80.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="374.5" y="104.5838">Repository A</text><!--MD5=[2983a4d64c3053f4add7931ac11feaae]
+entity Repository_B--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="124" x="359.5" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="463.5" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="461.5" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="461.5" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="374.5" y="188.5838">Repository B</text><!--MD5=[72b01dd6b57dd83cbdc6ef3a2a8f138e]
+entity Repository_C--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="127" x="358" y="237.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="465" y="242.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="463" y="244.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="463" y="248.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="373" y="272.5838">Repository ...</text><!--MD5=[25c537ba92e2d55b711bbb50575381f2]
+entity Event--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="77" x="554" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="611" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="609" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="609" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="569" y="188.5838">Event</text><!--MD5=[78e0d1133500ea5a75200a919f68dfaf]
+entity FFI_Frontend--><rect fill="#FFDDDD" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="59" x="700" y="153.6178"/><rect fill="#FFDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="739" y="158.6178"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="737" y="160.6178"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="737" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="19" x="715" y="188.5838">FFI</text><!--MD5=[179e2604d0e0114e09ff0fc2b2cdbe9a]
+entity FFI_Backend--><rect fill="#FFDDDD" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="59" x="824" y="153.6178"/><rect fill="#FFDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="863" y="158.6178"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="861" y="160.6178"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="861" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="19" x="839" y="188.5838">FFI</text><!--MD5=[8438b603195005c18d5011c1879083f4]
+entity Dispatcher--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="113" x="952" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1045" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1043" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1043" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="967" y="188.5838">Dispatcher</text><!--MD5=[c6bebc56b85847022b80e566853ce414]
+entity Module_C--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="103" x="1134.5" y="237.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1217.5" y="242.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1215.5" y="244.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1215.5" y="248.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="1149.5" y="272.5838">Module ..</text><!--MD5=[c650022bd608279ce35cb43d3311dcf0]
+entity Module_B--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="104" x="1134" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1218" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1216" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1216" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="1149" y="188.5838">Module B</text><!--MD5=[fc493e3577618d38670513b02ed5e2ad]
+entity Module_A--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="104" x="1134" y="69.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1218" y="74.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1216" y="76.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1216" y="80.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="1149" y="104.5838">Module A</text><!--MD5=[c3e835015fc3f11f0f9b832e1de95f45]
+entity Handler_A3--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="119" x="1307" y="237.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1406" y="242.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1404" y="244.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1404" y="248.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="1322" y="272.5838">Handler A...</text><!--MD5=[1e521b996e4bf702559f80a47d03ff5a]
+entity Handler_A2--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="115" x="1309" y="153.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1404" y="158.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1402" y="160.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1402" y="164.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="1324" y="188.5838">Handler A2</text><!--MD5=[cf0b2fde4fdfa39578647cb0cb0a7a7e]
+entity Handler_A1--><rect fill="#FEFECE" filter="url(#f1q8sqqxfeog6b)" height="49.0679" style="stroke:#A80036;stroke-width:1.5;" width="115" x="1309" y="69.6178"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1404" y="74.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1402" y="76.6178"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1402" y="80.6178"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="1324" y="104.5838">Handler A1</text><!--MD5=[b46ba78c5f87270e525c39160c627c7a]
+link Widget_C to Bloc_C--><path d="M136.02,262.1178 C136.02,262.1178 199.98,262.1178 199.98,262.1178 " fill="none" id="Widget_C-to-Bloc_C" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="204.98,262.1178,195.98,258.1178,199.98,262.1178,195.98,266.1178,204.98,262.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="167" y="248.0148">1</text><!--MD5=[964089debe077d5a1c654df144517010]
+link Widget_B to Bloc_B--><path d="M134.68,178.1178 C134.68,178.1178 201.43,178.1178 201.43,178.1178 " fill="none" id="Widget_B-to-Bloc_B" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="206.43,178.1178,197.43,174.1178,201.43,178.1178,197.43,182.1178,206.43,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="167" y="174.0148">1</text><!--MD5=[d1ffce7798d6440ed66bcedb4a29100e]
+link Widget_A to Bloc_A--><path d="M134.68,94.1178 C134.68,94.1178 201.43,94.1178 201.43,94.1178 " fill="none" id="Widget_A-to-Bloc_A" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="206.43,94.1178,197.43,90.1178,201.43,94.1178,197.43,98.1178,206.43,94.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="167" y="90.0148">1</text><!--MD5=[fbc8550b83207e801224e9f859945b90]
+link Bloc_C to Repository_C--><path d="M289.24,262.1178 C289.24,262.1178 352.84,262.1178 352.84,262.1178 " fill="none" id="Bloc_C-to-Repository_C" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="357.84,262.1178,348.84,258.1178,352.84,262.1178,348.84,266.1178,357.84,262.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="320" y="248.0148">2</text><!--MD5=[d1dd2b855cb4b278530073b1cc51754c]
+link Bloc_B to Repository_B--><path d="M287.91,178.1178 C287.91,178.1178 354.31,178.1178 354.31,178.1178 " fill="none" id="Bloc_B-to-Repository_B" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="359.31,178.1178,350.31,174.1178,354.31,178.1178,350.31,182.1178,359.31,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="320" y="174.0148">2</text><!--MD5=[bc7fcfe031050f0c738f014899853aea]
+link Bloc_A to Repository_A--><path d="M287.91,94.1178 C287.91,94.1178 354.31,94.1178 354.31,94.1178 " fill="none" id="Bloc_A-to-Repository_A" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="359.31,94.1178,350.31,90.1178,354.31,94.1178,350.31,98.1178,359.31,94.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="320" y="90.0148">2</text><!--MD5=[41797c523d084fbb1b4966755f99687a]
+link Repository_C to Event--><path d="M485.36,253.9478 C534.12,253.9478 593,253.9478 593,253.9478 C593,253.9478 593,207.9478 593,207.9478 " fill="none" id="Repository_C-to-Event" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="593,202.9478,589,211.9478,593,207.9478,597,211.9478,593,202.9478" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="516" y="240.0148">3</text><!--MD5=[c51debf464bc92490ffd06d40aea4ac9]
+link Repository_B to Event--><path d="M483.72,178.1178 C483.72,178.1178 548.95,178.1178 548.95,178.1178 " fill="none" id="Repository_B-to-Event" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="553.95,178.1178,544.95,174.1178,548.95,178.1178,544.95,182.1178,553.95,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="516" y="174.0148">3</text><!--MD5=[a2327e234285c5d887e7883eb9e74710]
+link Repository_A to Event--><path d="M483.9,85.9478 C532.94,85.9478 593,85.9478 593,85.9478 C593,85.9478 593,148.4178 593,148.4178 " fill="none" id="Repository_A-to-Event" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="593,153.4178,597,144.4178,593,148.4178,589,144.4178,593,153.4178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="516" y="103.0148">3</text><!--MD5=[5acce26503de499afc81274fc3e6f000]
+link Event to FFI_Frontend--><path d="M631.03,178.1178 C631.03,178.1178 694.94,178.1178 694.94,178.1178 " fill="none" id="Event-to-FFI_Frontend" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="699.94,178.1178,690.94,174.1178,694.94,178.1178,690.94,182.1178,699.94,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="662" y="174.0148">4</text><!--MD5=[4de8113ca68441e6ab054604d393395d]
+link FFI_Frontend to FFI_Backend--><path d="M764.2,178.1178 C764.2,178.1178 818.61,178.1178 818.61,178.1178 " fill="none" id="FFI_Frontend-FFI_Backend" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="823.61,178.1178,814.61,174.1178,818.61,178.1178,814.61,182.1178,823.61,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="759.2,178.1178,768.2,182.1178,764.2,178.1178,768.2,174.1178,759.2,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4995e94678fa022b3b0236d8d155fc5d]
+link FFI_Backend to Dispatcher--><path d="M883.02,178.1178 C883.02,178.1178 946.78,178.1178 946.78,178.1178 " fill="none" id="FFI_Backend-to-Dispatcher" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="951.78,178.1178,942.78,174.1178,946.78,178.1178,942.78,182.1178,951.78,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="914" y="174.0148">5</text><!--MD5=[6dd3b7f7c66a1990096cf821edf432e2]
+link Dispatcher to Module_A--><path d="M1009,153.2878 C1009,131.1678 1009,102.2878 1009,102.2878 C1009,102.2878 1128.85,102.2878 1128.85,102.2878 " fill="none" id="Dispatcher-to-Module_A" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1133.85,102.2878,1124.85,98.2878,1128.85,102.2878,1124.85,106.2878,1133.85,102.2878" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1096" y="103.0148">6</text><!--MD5=[89cccf275e6a3d7ac55b9bb517bb93b1]
+link Dispatcher to Module_B--><path d="M1065.15,178.1178 C1065.15,178.1178 1128.8,178.1178 1128.8,178.1178 " fill="none" id="Dispatcher-to-Module_B" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1133.8,178.1178,1124.8,174.1178,1128.8,178.1178,1124.8,182.1178,1133.8,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1096" y="174.0148">6</text><!--MD5=[2baa1f87b62f387c2e3e451d79d73674]
+link Dispatcher to Module_C--><path d="M1009,202.8178 C1009,230.1178 1009,270.2878 1009,270.2878 C1009,270.2878 1129.33,270.2878 1129.33,270.2878 " fill="none" id="Dispatcher-to-Module_C" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1134.33,270.2878,1125.33,266.2878,1129.33,270.2878,1125.33,274.2878,1134.33,270.2878" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1096" y="240.0148">6</text><!--MD5=[64825a0cb6d1ff24e262de1747a09135]
+link Module_A to Handler_A1--><path d="M1238.21,81.8678 C1238.21,81.8678 1303.71,81.8678 1303.71,81.8678 " fill="none" id="Module_A-to-Handler_A1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1308.71,81.8678,1299.71,77.8678,1303.71,81.8678,1299.71,85.8678,1308.71,81.8678" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1269" y="90.0148">7</text><!--MD5=[4c3059b4e00961490e14aeaddb77c1d2]
+link Module_A to Handler_A2--><path d="M1238.16,94.1178 C1261.56,94.1178 1284,94.1178 1284,94.1178 C1284,94.1178 1284,178.1178 1284,178.1178 C1284,178.1178 1303.75,178.1178 1303.75,178.1178 " fill="none" id="Module_A-to-Handler_A2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1308.75,178.1178,1299.75,174.1178,1303.75,178.1178,1299.75,182.1178,1308.75,178.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1269" y="162.0148">7</text><!--MD5=[ac0ec7b3228ef94cdf9abe24aac7d67b]
+link Module_A to Handler_A3--><path d="M1238.09,106.3678 C1250.89,106.3678 1261,106.3678 1261,106.3678 C1261,106.3678 1261,262.1178 1261,262.1178 C1261,262.1178 1301.97,262.1178 1301.97,262.1178 " fill="none" id="Module_A-to-Handler_A3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1306.97,262.1178,1297.97,258.1178,1301.97,262.1178,1297.97,266.1178,1306.97,262.1178" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1269" y="228.0148">7</text><!--MD5=[727ea636bb780b8964c21ca70407b8ef]
+@startuml EventDispatch
+title Event Dispatch
+left to right direction
+' skinparam linetype polyline
+skinparam linetype ortho
+
+' scale 2
+
+
+
+package "Frontend" #DDDDDD {
+    component Widget_A as "Widget A"
+    component Widget_B as "Widget B"
+    component Widget_C as "Widget ..."
+    component Bloc_A as "Bloc A"
+    component Bloc_B as "Bloc B"
+    component Bloc_C as "Bloc ..."
+    component Repository_A as "Repository A"
+    component Repository_B as "Repository B"
+    component Repository_C as "Repository ..."
+    component Event
+    component FFI_Frontend as "FFI" #FFDDDD
+}
+
+
+package "FlowySdk" #DDDDDD {
+    component FFI_Backend as "FFI" #FFDDDD
+    component Dispatcher
+    component Module_C as "Module .."
+    component Module_B as "Module B"
+    component Module_A as "Module A"
+    component Handler_A3 as "Handler A..."
+    component Handler_A2 as "Handler A2"
+    component Handler_A1 as "Handler A1"
+}
+
+Widget_C - -> Bloc_C : 1
+Widget_B - -> Bloc_B : 1
+Widget_A - -> Bloc_A : 1
+Bloc_C  - -> Repository_C : 2
+Bloc_B  - -> Repository_B : 2
+Bloc_A  - -> Repository_A : 2
+Repository_C - -> Event : 3
+Repository_B - -> Event : 3
+Repository_A - -> Event : 3
+
+Event - -> FFI_Frontend : 4
+FFI_Frontend <- -> FFI_Backend
+FFI_Backend - -> Dispatcher : 5
+
+Dispatcher - -> Module_A : 6
+Dispatcher - -> Module_B : 6
+Dispatcher - -> Module_C : 6
+Module_A - -> Handler_A1 : 7
+Module_A - -> Handler_A2 : 7
+Module_A - -> Handler_A3 : 7
+@enduml
+
+@startuml EventDispatch
+title Event Dispatch
+left to right direction
+skinparam linetype ortho
+
+
+
+
+package "Frontend" #DDDDDD {
+    component Widget_A as "Widget A"
+    component Widget_B as "Widget B"
+    component Widget_C as "Widget ..."
+    component Bloc_A as "Bloc A"
+    component Bloc_B as "Bloc B"
+    component Bloc_C as "Bloc ..."
+    component Repository_A as "Repository A"
+    component Repository_B as "Repository B"
+    component Repository_C as "Repository ..."
+    component Event
+    component FFI_Frontend as "FFI" #FFDDDD
+}
+
+
+package "FlowySdk" #DDDDDD {
+    component FFI_Backend as "FFI" #FFDDDD
+    component Dispatcher
+    component Module_C as "Module .."
+    component Module_B as "Module B"
+    component Module_A as "Module A"
+    component Handler_A3 as "Handler A..."
+    component Handler_A2 as "Handler A2"
+    component Handler_A1 as "Handler A1"
+}
+
+Widget_C - -> Bloc_C : 1
+Widget_B - -> Bloc_B : 1
+Widget_A - -> Bloc_A : 1
+Bloc_C  - -> Repository_C : 2
+Bloc_B  - -> Repository_B : 2
+Bloc_A  - -> Repository_A : 2
+Repository_C - -> Event : 3
+Repository_B - -> Event : 3
+Repository_A - -> Event : 3
+
+Event - -> FFI_Frontend : 4
+FFI_Frontend <- -> FFI_Backend
+FFI_Backend - -> Dispatcher : 5
+
+Dispatcher - -> Module_A : 6
+Dispatcher - -> Module_B : 6
+Dispatcher - -> Module_C : 6
+Module_A - -> Handler_A1 : 7
+Module_A - -> Handler_A2 : 7
+Module_A - -> Handler_A3 : 7
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 05:25:05 EST 2021)
+(MIT source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CA
+--></g></svg>

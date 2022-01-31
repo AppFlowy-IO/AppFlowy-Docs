@@ -1,0 +1,57 @@
+@startuml EventDispatch
+title Event Dispatch
+left to right direction
+' skinparam linetype polyline
+skinparam linetype ortho
+
+' scale 2
+
+
+
+package "Frontend" #DDDDDD {
+    component Widget_A as "Widget A"
+    component Widget_B as "Widget B"
+    component Widget_C as "Widget ..."
+    component Bloc_A as "Bloc A"
+    component Bloc_B as "Bloc B"
+    component Bloc_C as "Bloc ..."
+    component Repository_A as "Repository A"
+    component Repository_B as "Repository B"
+    component Repository_C as "Repository ..."
+    component Event
+    component FFI_Frontend as "FFI" #FFDDDD
+}
+
+
+package "FlowySdk" #DDDDDD {
+    component FFI_Backend as "FFI" #FFDDDD
+    component Dispatcher
+    component Module_C as "Module .."
+    component Module_B as "Module B"
+    component Module_A as "Module A"
+    component Handler_A3 as "Handler A..."
+    component Handler_A2 as "Handler A2"
+    component Handler_A1 as "Handler A1"
+}
+
+Widget_C --> Bloc_C : 1
+Widget_B --> Bloc_B : 1
+Widget_A --> Bloc_A : 1
+Bloc_C  --> Repository_C : 2
+Bloc_B  --> Repository_B : 2
+Bloc_A  --> Repository_A : 2
+Repository_C --> Event : 3
+Repository_B --> Event : 3
+Repository_A --> Event : 3
+
+Event --> FFI_Frontend : 4
+FFI_Frontend <--> FFI_Backend
+FFI_Backend --> Dispatcher : 5
+
+Dispatcher --> Module_A : 6
+Dispatcher --> Module_B : 6
+Dispatcher --> Module_C : 6
+Module_A --> Handler_A1 : 7
+Module_A --> Handler_A2 : 7
+Module_A --> Handler_A3 : 7
+@enduml
