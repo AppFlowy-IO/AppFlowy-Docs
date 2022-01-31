@@ -1,7 +1,8 @@
-@startuml EventDispatch
-title Event Dispatch
+@startuml EventDispatchFrontend
+title Event Dispatch - Frontend
 left to right direction
 skinparam linetype ortho
+
 
 package "Frontend" #DDDDDD {
     component Widget_A as "Widget A"
@@ -17,17 +18,6 @@ package "Frontend" #DDDDDD {
     component FFI_Frontend as "FFI" #FFDDDD
 }
 
-package "FlowySdk" #DDDDDD {
-    component FFI_Backend as "FFI" #FFDDDD
-    component Dispatcher
-    component Module_C as "Module .."
-    component Module_B as "Module B"
-    component Module_A as "Module A"
-    component Handler_A3 as "Handler A..."
-    component Handler_A2 as "Handler A2"
-    component Handler_A1 as "Handler A1"
-}
-
 Widget_C --> Bloc_C : 1
 Widget_B --> Bloc_B : 1
 Widget_A --> Bloc_A : 1
@@ -39,13 +29,4 @@ Repository_B --> Event : 3
 Repository_A --> Event : 3
 
 Event --> FFI_Frontend : 4
-FFI_Frontend <--> FFI_Backend
-FFI_Backend --> Dispatcher : 5
-
-Dispatcher --> Module_A : 6
-Dispatcher --> Module_B : 6
-Dispatcher --> Module_C : 6
-Module_A --> Handler_A1 : 7
-Module_A --> Handler_A2 : 7
-Module_A --> Handler_A3 : 7
 @enduml
