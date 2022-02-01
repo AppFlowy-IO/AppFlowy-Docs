@@ -25,12 +25,12 @@
       * [🦮 Style Guides](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/style-guides.md)
       * [🔬 Code Submission Guidelines](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/code-submission-guidelines.md)
       * [⤴ Submitting your first Pull Request](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/submitting-your-first-pull-request.md)
-  * [📚 Technical Glossary](essential-documentation/contribute-to-appflowy/technical-glossary.md)
+    * [☎ Translate AppFlowy](essential-documentation/contribute-to-appflowy/software-contributions/translation.md)
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [🍔 Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/domain-driven-design.md)
     * [🥳 Event Driven System](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system.md)
     * [✏ Editor](essential-documentation/contribute-to-appflowy/architecture/editor.md)
-  * [☎ Translate AppFlowy](essential-documentation/contribute-to-appflowy/translation.md)
+  * [📚 Technical Glossary](essential-documentation/contribute-to-appflowy/technical-glossary.md)
 
 ## Design Documentation
 

@@ -40,8 +40,8 @@ In order to start developing you will need to setup your environment. We have se
 
 ## How-tos
 
-{% content-ref url="../translation.md" %}
-[translation.md](../translation.md)
+{% content-ref url="translation.md" %}
+[translation.md](translation.md)
 {% endcontent-ref %}
 
 {% content-ref url="submitting-code/submitting-your-first-pull-request.md" %}
