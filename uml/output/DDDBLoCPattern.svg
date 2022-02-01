@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="248px" preserveAspectRatio="none" style="width:240px;height:248px;background:#FFFFFF;" version="1.1" viewBox="0 0 240 248" width="240px" zoomAndPan="magnify"><defs><filter height="300%" id="f10pejdn0qkso3" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="166" x="34.5" y="31.2419">DDD - BLoC Pattern</text><rect fill="#DDDDDD" height="198.2539" style="stroke:#A80036;stroke-width:1.0;" width="92" x="59" y="44.5158"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="86" x="62" y="58.4129">Presentation</text><rect fill="#AAAAAA" height="198.2539" style="stroke:#A80036;stroke-width:1.0;" width="81" x="153" y="44.5158"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="75" x="156" y="58.4129">Application</text><rect fill="#FFFFFF" filter="url(#f10pejdn0qkso3)" height="72.412" style="stroke:#A80036;stroke-width:1.0;" width="10" x="100" y="120.2898"/><rect fill="#FFFFFF" filter="url(#f10pejdn0qkso3)" height="31.706" style="stroke:#A80036;stroke-width:1.0;" width="10" x="188.5" y="151.9958"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="29" x2="29" y1="104.2898" y2="201.7018"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="105" x2="105" y1="104.2898" y2="201.7018"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="193.5" x2="193.5" y1="104.2898" y2="201.7018"/><rect fill="#FEFECE" filter="url(#f10pejdn0qkso3)" height="33.0679" style="stroke:#A80036;stroke-width:1.5;" width="44" x="5" y="66.2219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="12" y="88.1878">user</text><rect fill="#FEFECE" filter="url(#f10pejdn0qkso3)" height="33.0679" style="stroke:#A80036;stroke-width:1.5;" width="44" x="5" y="200.7018"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="12" y="222.6677">user</text><rect fill="#FEFECE" filter="url(#f10pejdn0qkso3)" height="33.0679" style="stroke:#A80036;stroke-width:1.5;" width="62" x="72" y="66.2219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="79" y="88.1878">Widget</text><rect fill="#FEFECE" filter="url(#f10pejdn0qkso3)" height="33.0679" style="stroke:#A80036;stroke-width:1.5;" width="62" x="72" y="200.7018"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="79" y="222.6677">Widget</text><rect fill="#FEFECE" filter="url(#f10pejdn0qkso3)" height="33.0679" style="stroke:#A80036;stroke-width:1.5;" width="42" x="170.5" y="66.2219"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="177.5" y="88.1878">Bloc</text><rect fill="#FEFECE" filter="url(#f10pejdn0qkso3)" height="33.0679" style="stroke:#A80036;stroke-width:1.5;" width="42" x="170.5" y="200.7018"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="177.5" y="222.6677">Bloc</text><rect fill="#FFFFFF" filter="url(#f10pejdn0qkso3)" height="72.412" style="stroke:#A80036;stroke-width:1.0;" width="10" x="100" y="120.2898"/><rect fill="#FFFFFF" filter="url(#f10pejdn0qkso3)" height="31.706" style="stroke:#A80036;stroke-width:1.0;" width="10" x="188.5" y="151.9958"/><polygon fill="#A80036" points="88,116.2898,98,120.2898,88,124.2898,92,120.2898" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="29" x2="94" y1="120.2898" y2="120.2898"/><polygon fill="#A80036" points="176.5,147.9958,186.5,151.9958,176.5,155.9958,180.5,151.9958" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="110" x2="182.5" y1="151.9958" y2="151.9958"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="117" y="146.1868">Event</text><polygon fill="#A80036" points="121,179.7018,111,183.7018,121,187.7018,117,183.7018" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="115" x2="192.5" y1="183.7018" y2="183.7018"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="127" y="177.8928">State</text><!--MD5=[fdcabae596e3a9fc51d880ed571b32dc]
+@startuml DDDBLoCPattern
+participant user
+box "Presentation" #DDDDDD
+participant Widget
+end box
+box "Application" #AAAAAA
+participant Bloc
+end box
+
+title DDD - BLoC Pattern
+user -> Widget
+activate Widget
+
+Widget -> Bloc:Event
+activate Bloc
+
+Bloc -> Widget: State
+deactivate Bloc
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 11:16:42 EST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CA
+--></g></svg>
