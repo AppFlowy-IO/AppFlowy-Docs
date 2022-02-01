@@ -159,12 +159,14 @@ interaction    │          │ └──────▲────────
 ```
 
 1. Widget accepts user interaction and translates the interactions into specific Events. The events will be sent to the Application layer, handled by the specific `bloc`. The `bloc` sends the states changed by the events back to the widget, and finally the `Widget` updates the UI according to the state. The pattern is depicted in this diagram. (More about the flutter [bloc](https://bloclibrary.dev/#/coreconcepts?id=bloc))
-   * ![](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/DDDBLoCPattern.svg)
+   
+   ![](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/DDDBLoCPattern.svg)
 2. The `bloc` processes the events using the services provided by the `Domain` layer.
    1. Convert DTO (Data Transfer Object) to domain model and Domain Model to DTO.
    2. Domain model is the place where all your business logic, business validation and business behaviors will be implemented. The Aggregate Roots, Entities and Value Objects will help to achieve the business logic.
 3. Calling repositories to perform additional operations. The repositories interfaces are declared in the `Domain` layer and are implemented in the `Infrastructure` layer. You can reimplement the repository interface with different languages, such as `Rust`, `C++` or `Dart`. etc.
-   * ![](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/DDDRepositoryImplementsInterface.svg)
+
+   ![](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/DDDRepositoryImplementsInterface.svg)
 4. The responsibility of [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) is to maintain a list of objects affected by a business transaction and coordinates the writing out of changes and the resolution of concurrency problems((No intermediate state)). If any one persistence service fails, the whole transaction will be failed so, roll back operation will be called to put the object back in initial state.
 5. Handling operations (INSERT, UPDATE and DELETE) with SQLite to persis the data.
 6. Saving or querying the data in the cloud to finish the operation.
