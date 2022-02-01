@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="290px" preserveAspectRatio="none" style="width:350px;height:290px;background:#FFFFFF;" version="1.1" viewBox="0 0 350 290" width="350px" zoomAndPan="magnify"><defs><filter height="300%" id="fromuukrh62qv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="335" x="2" y="19.2419">DDD - Repository Implements Interface</text><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><rect fill="#FFFFFF" filter="url(#fromuukrh62qv)" height="245" style="stroke:#000000;stroke-width:1.5;" width="146" x="9" y="31.5158"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.5;" width="15" x="135" y="36.5158"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.5;" width="4" x="133" y="38.5158"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.5;" width="4" x="133" y="42.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="55" y="59.4818">Domain</text><!--MD5=[9ddaf8ee8bcae11a9a9232f969198262]
+cluster Infrastructure--><rect fill="#FFFFFF" filter="url(#fromuukrh62qv)" height="245" style="stroke:#000000;stroke-width:1.5;" width="153" x="183" y="31.5158"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.5;" width="15" x="316" y="36.5158"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.5;" width="4" x="314" y="38.5158"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.5;" width="4" x="314" y="42.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="97" x="211" y="59.4818">Infrastructure</text><!--MD5=[17e524f11340f97eaa6e8f09ee98dae2]
+class IAuthentication--><rect codeLine="6" fill="#FEFECE" filter="url(#fromuukrh62qv)" height="77.9638" id="IAuthentication" style="stroke:#A80036;stroke-width:1.5;" width="114" x="25" y="69.5158"/><ellipse cx="40" cy="85.5158" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M42.5625,92.0158 L37.0469,92.0158 L37.0469,90.5471 L38.5156,89.8752 L38.5156,82.0158 L37.0469,81.344 L37.0469,79.8752 L42.5625,79.8752 L42.5625,81.344 L41.0938,82.0158 L41.0938,89.8752 L42.5625,90.5471 L42.5625,92.0158 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="54" y="90.1719">IAuthentication</text><line style="stroke:#A80036;stroke-width:1.5;" x1="26" x2="138" y1="101.5158" y2="101.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="26" x2="138" y1="109.5158" y2="109.5158"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="31" y="125.2748">login();</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="44" x="31" y="140.2566">logout();</text><!--MD5=[065ef51c0b83ac26c2e8b4ca504d0938]
+class IInterface--><rect codeLine="11" fill="#FEFECE" filter="url(#fromuukrh62qv)" height="77.9638" id="IInterface" style="stroke:#A80036;stroke-width:1.5;" width="84" x="40" y="182.5158"/><ellipse cx="55" cy="198.5158" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M57.5625,205.0158 L52.0469,205.0158 L52.0469,203.5471 L53.5156,202.8752 L53.5156,195.0158 L52.0469,194.344 L52.0469,192.8752 L57.5625,192.8752 L57.5625,194.344 L56.0938,195.0158 L56.0938,202.8752 L57.5625,203.5471 L57.5625,205.0158 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="52" x="69" y="203.1719">IInterface</text><line style="stroke:#A80036;stroke-width:1.5;" x1="41" x2="123" y1="214.5158" y2="214.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="41" x2="123" y1="222.5158" y2="222.5158"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="46" y="238.2748">methodA();</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="46" y="253.2566">methodB();</text><!--MD5=[a139e992f8a77546bf37c14edd197f06]
+class Authentication--><rect codeLine="18" fill="#FEFECE" filter="url(#fromuukrh62qv)" height="77.9638" id="Authentication" style="stroke:#A80036;stroke-width:1.5;" width="113" x="203" y="69.5158"/><ellipse cx="218" cy="85.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M217.6875,81.844 Q216.2031,81.844 215.4219,82.9533 Q214.6406,84.0627 214.6406,85.9846 Q214.6406,87.9221 215.3594,88.9846 Q216.0781,90.0471 217.6875,90.0471 Q218.4219,90.0471 219.1563,89.8752 Q219.9063,89.7033 220.7813,89.3908 L220.7813,91.5627 Q219.9688,91.8752 219.1875,92.0315 Q218.4063,92.1877 217.4375,92.1877 Q215.5781,92.1877 214.3594,91.4221 Q213.1406,90.6408 212.5625,89.2346 Q211.9844,87.8283 211.9844,85.969 Q211.9844,84.1252 212.6406,82.719 Q213.3125,81.3127 214.5781,80.5158 Q215.8438,79.7033 217.6875,79.7033 Q218.5781,79.7033 219.4844,79.9377 Q220.4063,80.1721 221.2344,80.5627 L220.4063,82.6565 Q219.7188,82.3283 219.0313,82.094 Q218.3438,81.844 217.6875,81.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="232" y="90.1719">Authentication</text><line style="stroke:#A80036;stroke-width:1.5;" x1="204" x2="315" y1="101.5158" y2="101.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="204" x2="315" y1="109.5158" y2="109.5158"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="209" y="125.2748">login() {...};</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="209" y="140.2566">logout() {...};</text><!--MD5=[62157b509973564ddc878c05b423c99e]
+class Implementation--><rect codeLine="23" fill="#FEFECE" filter="url(#fromuukrh62qv)" height="77.9638" id="Implementation" style="stroke:#A80036;stroke-width:1.5;" width="121" x="199" y="182.5158"/><ellipse cx="214" cy="198.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M213.6875,194.844 Q212.2031,194.844 211.4219,195.9533 Q210.6406,197.0627 210.6406,198.9846 Q210.6406,200.9221 211.3594,201.9846 Q212.0781,203.0471 213.6875,203.0471 Q214.4219,203.0471 215.1563,202.8752 Q215.9063,202.7033 216.7813,202.3908 L216.7813,204.5627 Q215.9688,204.8752 215.1875,205.0315 Q214.4063,205.1877 213.4375,205.1877 Q211.5781,205.1877 210.3594,204.4221 Q209.1406,203.6408 208.5625,202.2346 Q207.9844,200.8283 207.9844,198.969 Q207.9844,197.1252 208.6406,195.719 Q209.3125,194.3127 210.5781,193.5158 Q211.8438,192.7033 213.6875,192.7033 Q214.5781,192.7033 215.4844,192.9377 Q216.4063,193.1721 217.2344,193.5627 L216.4063,195.6565 Q215.7188,195.3283 215.0313,195.094 Q214.3438,194.844 213.6875,194.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="89" x="228" y="203.1719">Implementation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="200" x2="319" y1="214.5158" y2="214.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="200" x2="319" y1="222.5158" y2="222.5158"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="205" y="238.2748">methodA() {...};</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="205" y="253.2566">methodB() {...};</text><!--MD5=[293cadbb5b60e9f3d3c719df463068c0]
+reverse link IAuthentication to Authentication--><path codeLine="29" d="M159.14,108.5158 C159.14,108.5158 202.77,108.5158 202.77,108.5158 " fill="none" id="IAuthentication-backto-Authentication" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="159.14,115.5158,139.14,108.5158,159.14,101.5158,159.14,115.5158" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b7e901467bb84c322182f39a5af0ffea]
+reverse link IInterface to Implementation--><path codeLine="30" d="M144.07,221.5158 C144.07,221.5158 198.92,221.5158 198.92,221.5158 " fill="none" id="IInterface-backto-Implementation" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="144.07,228.5158,124.07,221.5158,144.06,214.5158,144.07,228.5158" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[10aefb02aea2baf13eb4d54af2ed857c]
+@startuml DDDRepositoryImplementsInterface
+title DDD - Repository Implements Interface
+left to right direction
+skinparam linetype ortho
+
+component Domain {
+    interface IAuthentication {
+        login();
+        logout();
+    }
+
+    interface IInterface {
+        methodA();
+        methodB();
+    }
+}
+
+component Infrastructure {
+    class Authentication {
+        login() {...};
+        logout() {...};
+    }
+
+    class Implementation {
+        methodA() {...};
+        methodB() {...};
+    }
+}
+
+IAuthentication <|.. Authentication
+IInterface <|.. Implementation
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 11:16:42 EST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CA
+--></g></svg>
