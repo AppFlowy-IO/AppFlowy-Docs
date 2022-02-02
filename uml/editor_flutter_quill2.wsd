@@ -7,7 +7,8 @@ skinparam shadowing false
 title Editor2 (FlutterQuill)
 
 skinparam package {
-    BorderColor white
+    BorderColor transparent
+    BackgroundColor transparent
 }
 
 package "" <<Rectangle>>  {
