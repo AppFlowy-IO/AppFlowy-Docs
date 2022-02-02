@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="533px" preserveAspectRatio="none" style="width:709px;height:533px;background:#FFFFFF;" version="1.1" viewBox="0 0 709 533" width="709px" zoomAndPan="magnify"><defs><filter height="300%" id="fxg1t5twfwiz6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="162" x="267" y="19.2419">Editor (FlutterQuill)</text><!--MD5=[e6f8570423150b0f6490596dcd3953c3]
+cluster Widget--><rect fill="#FFFFFF" filter="url(#fxg1t5twfwiz6)" height="432" style="stroke:#000000;stroke-width:1.5;" width="204" x="7" y="89.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="50" x="84" y="106.4818">Widget</text><!--MD5=[5cc559e2b8ff7dffb891303ab43f4eff]
+cluster Element--><rect fill="#FFFFFF" filter="url(#fxg1t5twfwiz6)" height="301" style="stroke:#000000;stroke-width:1.5;" width="202" x="243" y="81.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="315.5" y="98.4818">Element</text><!--MD5=[9071a258566780d208d8e67874087dc7]
+cluster RenderObject--><rect fill="#FFFFFF" filter="url(#fxg1t5twfwiz6)" height="467" style="stroke:#000000;stroke-width:1.5;" width="212" x="485" y="31.5158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="544" y="48.4818">RenderObject</text><!--MD5=[089dc3e67100ed4d497fe4cec0bffe8a]
+class RenderObjectWidget--><rect codeLine="8" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="RenderObjectWidget" style="stroke:#A80036;stroke-width:1.5;" width="147" x="35.5" y="127.5158"/><ellipse cx="50.5" cy="143.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M50.1875,139.844 Q48.7031,139.844 47.9219,140.9533 Q47.1406,142.0627 47.1406,143.9846 Q47.1406,145.9221 47.8594,146.9846 Q48.5781,148.0471 50.1875,148.0471 Q50.9219,148.0471 51.6563,147.8752 Q52.4063,147.7033 53.2813,147.3908 L53.2813,149.5627 Q52.4688,149.8752 51.6875,150.0315 Q50.9063,150.1877 49.9375,150.1877 Q48.0781,150.1877 46.8594,149.4221 Q45.6406,148.6408 45.0625,147.2346 Q44.4844,145.8283 44.4844,143.969 Q44.4844,142.1252 45.1406,140.719 Q45.8125,139.3127 47.0781,138.5158 Q48.3438,137.7033 50.1875,137.7033 Q51.0781,137.7033 51.9844,137.9377 Q52.9063,138.1721 53.7344,138.5627 L52.9063,140.6565 Q52.2188,140.3283 51.5313,140.094 Q50.8438,139.844 50.1875,139.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="115" x="64.5" y="148.1719">RenderObjectWidget</text><line style="stroke:#A80036;stroke-width:1.5;" x1="36.5" x2="181.5" y1="159.5158" y2="159.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="36.5" x2="181.5" y1="167.5158" y2="167.5158"/><!--MD5=[167c99efd071c87abfd9771b6c7d4912]
+class EditableTextLine--><rect codeLine="9" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="EditableTextLine" style="stroke:#A80036;stroke-width:1.5;" width="124" x="47" y="210.5158"/><ellipse cx="62" cy="226.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M61.6875,222.844 Q60.2031,222.844 59.4219,223.9533 Q58.6406,225.0627 58.6406,226.9846 Q58.6406,228.9221 59.3594,229.9846 Q60.0781,231.0471 61.6875,231.0471 Q62.4219,231.0471 63.1563,230.8752 Q63.9063,230.7033 64.7813,230.3908 L64.7813,232.5627 Q63.9688,232.8752 63.1875,233.0315 Q62.4063,233.1877 61.4375,233.1877 Q59.5781,233.1877 58.3594,232.4221 Q57.1406,231.6408 56.5625,230.2346 Q55.9844,228.8283 55.9844,226.969 Q55.9844,225.1252 56.6406,223.719 Q57.3125,222.3127 58.5781,221.5158 Q59.8438,220.7033 61.6875,220.7033 Q62.5781,220.7033 63.4844,220.9377 Q64.4063,221.1721 65.2344,221.5627 L64.4063,223.6565 Q63.7188,223.3283 63.0313,223.094 Q62.3438,222.844 61.6875,222.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="76" y="231.1719">EditableTextLine</text><line style="stroke:#A80036;stroke-width:1.5;" x1="48" x2="170" y1="242.5158" y2="242.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="48" x2="170" y1="250.5158" y2="250.5158"/><!--MD5=[f0ccd831ddcdf42e20af10171975d45e]
+class TextLine--><rect codeLine="10" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="TextLine" style="stroke:#A80036;stroke-width:1.5;" width="79" x="69.5" y="293.5158"/><ellipse cx="84.5" cy="309.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M84.1875,305.844 Q82.7031,305.844 81.9219,306.9533 Q81.1406,308.0627 81.1406,309.9846 Q81.1406,311.9221 81.8594,312.9846 Q82.5781,314.0471 84.1875,314.0471 Q84.9219,314.0471 85.6563,313.8752 Q86.4063,313.7033 87.2813,313.3908 L87.2813,315.5627 Q86.4688,315.8752 85.6875,316.0315 Q84.9063,316.1877 83.9375,316.1877 Q82.0781,316.1877 80.8594,315.4221 Q79.6406,314.6408 79.0625,313.2346 Q78.4844,311.8283 78.4844,309.969 Q78.4844,308.1252 79.1406,306.719 Q79.8125,305.3127 81.0781,304.5158 Q82.3438,303.7033 84.1875,303.7033 Q85.0781,303.7033 85.9844,303.9377 Q86.9063,304.1721 87.7344,304.5627 L86.9063,306.6565 Q86.2188,306.3283 85.5313,306.094 Q84.8438,305.844 84.1875,305.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="98.5" y="314.1719">TextLine</text><line style="stroke:#A80036;stroke-width:1.5;" x1="70.5" x2="147.5" y1="325.5158" y2="325.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="70.5" x2="147.5" y1="333.5158" y2="333.5158"/><!--MD5=[736dfa021baaf4f381c9890dd397bfe9]
+class Line--><rect codeLine="11" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="Line" style="stroke:#A80036;stroke-width:1.5;" width="55" x="81.5" y="376.5158"/><ellipse cx="96.5" cy="392.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M96.1875,388.844 Q94.7031,388.844 93.9219,389.9533 Q93.1406,391.0627 93.1406,392.9846 Q93.1406,394.9221 93.8594,395.9846 Q94.5781,397.0471 96.1875,397.0471 Q96.9219,397.0471 97.6563,396.8752 Q98.4063,396.7033 99.2813,396.3908 L99.2813,398.5627 Q98.4688,398.8752 97.6875,399.0315 Q96.9063,399.1877 95.9375,399.1877 Q94.0781,399.1877 92.8594,398.4221 Q91.6406,397.6408 91.0625,396.2346 Q90.4844,394.8283 90.4844,392.969 Q90.4844,391.1252 91.1406,389.719 Q91.8125,388.3127 93.0781,387.5158 Q94.3438,386.7033 96.1875,386.7033 Q97.0781,386.7033 97.9844,386.9377 Q98.9063,387.1721 99.7344,387.5627 L98.9063,389.6565 Q98.2188,389.3283 97.5313,389.094 Q96.8438,388.844 96.1875,388.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="23" x="110.5" y="397.1719">Line</text><line style="stroke:#A80036;stroke-width:1.5;" x1="82.5" x2="135.5" y1="408.5158" y2="408.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="82.5" x2="135.5" y1="416.5158" y2="416.5158"/><path d="M23,460.0158 L23,505.4279 L195,505.4279 L195,470.0158 L185,460.0158 L23,460.0158 " fill="#FBFB77" filter="url(#fxg1t5twfwiz6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M185,460.0158 L185,470.0158 L195,470.0158 L185,460.0158 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="29" y="478.9129">Widget : holds the config</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="29" y="496.6189">for a piece of UI.</text><!--MD5=[30d38b5903f98602566e7624fcf30a86]
+class _TextLineElement--><rect codeLine="21" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="_TextLineElement" style="stroke:#A80036;stroke-width:1.5;" width="130" x="279" y="127.5158"/><ellipse cx="294" cy="143.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M293.6875,139.844 Q292.2031,139.844 291.4219,140.9533 Q290.6406,142.0627 290.6406,143.9846 Q290.6406,145.9221 291.3594,146.9846 Q292.0781,148.0471 293.6875,148.0471 Q294.4219,148.0471 295.1563,147.8752 Q295.9063,147.7033 296.7813,147.3908 L296.7813,149.5627 Q295.9688,149.8752 295.1875,150.0315 Q294.4063,150.1877 293.4375,150.1877 Q291.5781,150.1877 290.3594,149.4221 Q289.1406,148.6408 288.5625,147.2346 Q287.9844,145.8283 287.9844,143.969 Q287.9844,142.1252 288.6406,140.719 Q289.3125,139.3127 290.5781,138.5158 Q291.8438,137.7033 293.6875,137.7033 Q294.5781,137.7033 295.4844,137.9377 Q296.4063,138.1721 297.2344,138.5627 L296.4063,140.6565 Q295.7188,140.3283 295.0313,140.094 Q294.3438,139.844 293.6875,139.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="98" x="308" y="148.1719">_TextLineElement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="280" x2="408" y1="159.5158" y2="159.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="280" x2="408" y1="167.5158" y2="167.5158"/><!--MD5=[72ccbd122063691850dae35210a9468c]
+class RenderObjectElement--><rect codeLine="22" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="RenderObjectElement" style="stroke:#A80036;stroke-width:1.5;" width="154" x="267" y="210.5158"/><ellipse cx="282" cy="226.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M281.6875,222.844 Q280.2031,222.844 279.4219,223.9533 Q278.6406,225.0627 278.6406,226.9846 Q278.6406,228.9221 279.3594,229.9846 Q280.0781,231.0471 281.6875,231.0471 Q282.4219,231.0471 283.1563,230.8752 Q283.9063,230.7033 284.7813,230.3908 L284.7813,232.5627 Q283.9688,232.8752 283.1875,233.0315 Q282.4063,233.1877 281.4375,233.1877 Q279.5781,233.1877 278.3594,232.4221 Q277.1406,231.6408 276.5625,230.2346 Q275.9844,228.8283 275.9844,226.969 Q275.9844,225.1252 276.6406,223.719 Q277.3125,222.3127 278.5781,221.5158 Q279.8438,220.7033 281.6875,220.7033 Q282.5781,220.7033 283.4844,220.9377 Q284.4063,221.1721 285.2344,221.5627 L284.4063,223.6565 Q283.7188,223.3283 283.0313,223.094 Q282.3438,222.844 281.6875,222.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="122" x="296" y="231.1719">RenderObjectElement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="268" x2="420" y1="242.5158" y2="242.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="268" x2="420" y1="250.5158" y2="250.5158"/><path d="M271.5,294.0158 L271.5,339.4279 L416.5,339.4279 L416.5,304.0158 L406.5,294.0158 L271.5,294.0158 " fill="#FBFB77" filter="url(#fxg1t5twfwiz6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M406.5,294.0158 L406.5,304.0158 L416.5,304.0158 L406.5,294.0158 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="277.5" y="312.9129">Represents an actual</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="277.5" y="330.6189">piece of UI.</text><!--MD5=[73f5184fc80715db37fa2098d1b11c85]
+class RenderEditableTextLine--><rect codeLine="32" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="RenderEditableTextLine" style="stroke:#A80036;stroke-width:1.5;" width="164" x="509" y="77.5158"/><ellipse cx="524" cy="93.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M523.6875,89.844 Q522.2031,89.844 521.4219,90.9533 Q520.6406,92.0627 520.6406,93.9846 Q520.6406,95.9221 521.3594,96.9846 Q522.0781,98.0471 523.6875,98.0471 Q524.4219,98.0471 525.1563,97.8752 Q525.9063,97.7033 526.7813,97.3908 L526.7813,99.5627 Q525.9688,99.8752 525.1875,100.0315 Q524.4063,100.1877 523.4375,100.1877 Q521.5781,100.1877 520.3594,99.4221 Q519.1406,98.6408 518.5625,97.2346 Q517.9844,95.8283 517.9844,93.969 Q517.9844,92.1252 518.6406,90.719 Q519.3125,89.3127 520.5781,88.5158 Q521.8438,87.7033 523.6875,87.7033 Q524.5781,87.7033 525.4844,87.9377 Q526.4063,88.1721 527.2344,88.5627 L526.4063,90.6565 Q525.7188,90.3283 525.0313,90.094 Q524.3438,89.844 523.6875,89.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="538" y="98.1719">RenderEditableTextLine</text><line style="stroke:#A80036;stroke-width:1.5;" x1="510" x2="672" y1="109.5158" y2="109.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="510" x2="672" y1="117.5158" y2="117.5158"/><!--MD5=[d33806c1e7bb14c86aee54f08da32beb]
+class RenderEditableBox--><rect codeLine="33" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="RenderEditableBox" style="stroke:#A80036;stroke-width:1.5;" width="138" x="522" y="160.5158"/><ellipse cx="537" cy="176.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M536.6875,172.844 Q535.2031,172.844 534.4219,173.9533 Q533.6406,175.0627 533.6406,176.9846 Q533.6406,178.9221 534.3594,179.9846 Q535.0781,181.0471 536.6875,181.0471 Q537.4219,181.0471 538.1563,180.8752 Q538.9063,180.7033 539.7813,180.3908 L539.7813,182.5627 Q538.9688,182.8752 538.1875,183.0315 Q537.4063,183.1877 536.4375,183.1877 Q534.5781,183.1877 533.3594,182.4221 Q532.1406,181.6408 531.5625,180.2346 Q530.9844,178.8283 530.9844,176.969 Q530.9844,175.1252 531.6406,173.719 Q532.3125,172.3127 533.5781,171.5158 Q534.8438,170.7033 536.6875,170.7033 Q537.5781,170.7033 538.4844,170.9377 Q539.4063,171.1721 540.2344,171.5627 L539.4063,173.6565 Q538.7188,173.3283 538.0313,173.094 Q537.3438,172.844 536.6875,172.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="106" x="551" y="181.1719">RenderEditableBox</text><line style="stroke:#A80036;stroke-width:1.5;" x1="523" x2="659" y1="192.5158" y2="192.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="523" x2="659" y1="200.5158" y2="200.5158"/><!--MD5=[ce3878a4dd53db390bf0143150e5448a]
+class RenderBox--><rect codeLine="34" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="RenderBox" style="stroke:#A80036;stroke-width:1.5;" width="93" x="544.5" y="243.5158"/><ellipse cx="559.5" cy="259.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M559.1875,255.844 Q557.7031,255.844 556.9219,256.9533 Q556.1406,258.0627 556.1406,259.9846 Q556.1406,261.9221 556.8594,262.9846 Q557.5781,264.0471 559.1875,264.0471 Q559.9219,264.0471 560.6563,263.8752 Q561.4063,263.7033 562.2813,263.3908 L562.2813,265.5627 Q561.4688,265.8752 560.6875,266.0315 Q559.9063,266.1877 558.9375,266.1877 Q557.0781,266.1877 555.8594,265.4221 Q554.6406,264.6408 554.0625,263.2346 Q553.4844,261.8283 553.4844,259.969 Q553.4844,258.1252 554.1406,256.719 Q554.8125,255.3127 556.0781,254.5158 Q557.3438,253.7033 559.1875,253.7033 Q560.0781,253.7033 560.9844,253.9377 Q561.9063,254.1721 562.7344,254.5627 L561.9063,256.6565 Q561.2188,256.3283 560.5313,256.094 Q559.8438,255.844 559.1875,255.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="61" x="573.5" y="264.1719">RenderBox</text><line style="stroke:#A80036;stroke-width:1.5;" x1="545.5" x2="636.5" y1="275.5158" y2="275.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="545.5" x2="636.5" y1="283.5158" y2="283.5158"/><!--MD5=[6defc18ab47af6f55ad0f138f68de6ed]
+class RenderObjectClass--><rect codeLine="35" fill="#FEFECE" filter="url(#fxg1t5twfwiz6)" height="48" id="RenderObjectClass" style="stroke:#A80036;stroke-width:1.5;" width="108" x="537" y="326.5158"/><ellipse cx="552" cy="342.5158" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M551.6875,338.844 Q550.2031,338.844 549.4219,339.9533 Q548.6406,341.0627 548.6406,342.9846 Q548.6406,344.9221 549.3594,345.9846 Q550.0781,347.0471 551.6875,347.0471 Q552.4219,347.0471 553.1563,346.8752 Q553.9063,346.7033 554.7813,346.3908 L554.7813,348.5627 Q553.9688,348.8752 553.1875,349.0315 Q552.4063,349.1877 551.4375,349.1877 Q549.5781,349.1877 548.3594,348.4221 Q547.1406,347.6408 546.5625,346.2346 Q545.9844,344.8283 545.9844,342.969 Q545.9844,341.1252 546.6406,339.719 Q547.3125,338.3127 548.5781,337.5158 Q549.8438,336.7033 551.6875,336.7033 Q552.5781,336.7033 553.4844,336.9377 Q554.4063,337.1721 555.2344,337.5627 L554.4063,339.6565 Q553.7188,339.3283 553.0313,339.094 Q552.3438,338.844 551.6875,338.844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="76" x="566" y="347.1719">RenderObject</text><line style="stroke:#A80036;stroke-width:1.5;" x1="538" x2="644" y1="358.5158" y2="358.5158"/><line style="stroke:#A80036;stroke-width:1.5;" x1="538" x2="644" y1="366.5158" y2="366.5158"/><path d="M517.5,410.0158 L517.5,455.4279 L664.5,455.4279 L664.5,420.0158 L654.5,410.0158 L517.5,410.0158 " fill="#FBFB77" filter="url(#fxg1t5twfwiz6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M654.5,410.0158 L654.5,420.0158 L664.5,420.0158 L654.5,410.0158 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="523.5" y="428.9129">Layout, size, painting</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="101" x="523.5" y="446.6189">and compositing</text><!--MD5=[8aa50402b633adc8f1e7ad30348e3e2f]
+link Element to RenderObject--><!--MD5=[74717b21ab1ad0faea4ba81a4d63cb9f]
+link EditableTextLine to RenderObjectWidget--><path codeLine="45" d="M109,210.5058 C109,210.5058 109,180.7558 109,180.7558 " fill="none" id="EditableTextLine-to-RenderObjectWidget" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="109,175.7558,105,184.7558,109,180.7558,113,184.7558,109,175.7558" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e7b350208364bdab37ebeee2e8fbd379]
+reverse link TextLine to EditableTextLine--><path codeLine="46" d="M109,288.5058 C109,288.5058 109,258.7558 109,258.7558 " fill="none" id="TextLine-backto-EditableTextLine" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="109,293.5058,113,284.5058,109,288.5058,105,284.5058,109,293.5058" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d7ee2fc33dd527b84c98230e6ad55467]
+reverse link Line to EditableTextLine--><path codeLine="47" d="M141.59,393.2658 C141.59,393.2658 160,393.2658 160,393.2658 C160,393.2658 160,303.0358 160,258.6258 " fill="none" id="Line-backto-EditableTextLine" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="136.59,393.2658,145.59,397.2658,141.59,393.2658,145.59,389.2658,136.59,393.2658" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[da2974bdd84feb64c93d09f8b836e2cf]
+reverse link RenderObjectWidget to _TextLineElement--><path codeLine="49" d="M187.71,151.5158 C187.71,151.5158 278.9,151.5158 278.9,151.5158 " fill="none" id="RenderObjectWidget-backto-_TextLineElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="182.71,151.5158,191.71,155.5158,187.71,151.5158,191.71,147.5158,182.71,151.5158" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a9739e9d2fb47a0390d4baae8d59555b]
+reverse link RenderObjectElement to _TextLineElement--><path codeLine="50" d="M344,205.5058 C344,205.5058 344,175.7558 344,175.7558 " fill="none" id="RenderObjectElement-backto-_TextLineElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="344,210.5058,348,201.5058,344,205.5058,340,201.5058,344,210.5058" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[29b7feeec51159af1575d257ec590243]
+link _TextLineElement to RenderEditableTextLine--><path codeLine="51" d="M409.24,144.0158 C457.18,144.0158 514,144.0158 514,144.0158 C514,144.0158 514,130.7458 514,130.7458 " fill="none" id="_TextLineElement-to-RenderEditableTextLine" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="514,125.7458,510,134.7458,514,130.7458,518,134.7458,514,125.7458" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fe92cde44afa1dbf1e94d1635899d44d]
+reverse link RenderEditableBox to RenderEditableTextLine--><path codeLine="54" d="M591,155.5058 C591,155.5058 591,125.7558 591,125.7558 " fill="none" id="RenderEditableBox-backto-RenderEditableTextLine" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="591,160.5058,595,151.5058,591,155.5058,587,151.5058,591,160.5058" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3a9ae606b5c66d756cfee946e662c441]
+reverse link RenderBox to RenderEditableBox--><path codeLine="55" d="M591,238.5058 C591,238.5058 591,208.7558 591,208.7558 " fill="none" id="RenderBox-backto-RenderEditableBox" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="591,243.5058,595,234.5058,591,238.5058,587,234.5058,591,243.5058" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5e59d47e6527e10db8cff4db67319b4a]
+reverse link RenderObjectClass to RenderBox--><path codeLine="56" d="M591,321.5058 C591,321.5058 591,291.7558 591,291.7558 " fill="none" id="RenderObjectClass-backto-RenderBox" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="591,326.5058,595,317.5058,591,321.5058,587,317.5058,591,326.5058" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8e18b12ec2665ab557da465931101e9b]
+@startuml EditorFlutterQuill
+
+left to right direction
+skinparam linetype ortho
+
+title Editor (FlutterQuill)
+
+package Widget <<Rectangle>> {
+    class RenderObjectWidget
+    class EditableTextLine
+    class TextLine
+    class Line
+
+    note as N3
+    Widget : holds the config 
+    for a piece of UI.
+    end note
+}
+
+
+package Element <<Rectangle>> {
+    class _TextLineElement
+    class RenderObjectElement
+    
+    note as N1
+    Represents an actual
+    piece of UI.
+    end note
+}
+
+
+package RenderObject <<Rectangle>>  {
+    class RenderEditableTextLine
+    class RenderEditableBox
+    class RenderBox
+    class RenderObjectClass as "RenderObject"
+
+    note as N2
+    Layout, size, painting
+    and compositing
+    end note
+}
+
+Element -[hidden]-> RenderObject
+
+EditableTextLine -> RenderObjectWidget
+EditableTextLine -left> TextLine
+EditableTextLine -left> Line
+
+RenderObjectWidget <- - _TextLineElement
+_TextLineElement -left> RenderObjectElement
+_TextLineElement -> RenderEditableTextLine
+' RenderEditableTextLine <-right- _TextLineElement
+
+RenderEditableTextLine -left> RenderEditableBox
+RenderEditableBox -left> RenderBox
+RenderBox -left> RenderObjectClass
+
+@enduml
+
+@startuml EditorFlutterQuill
+
+left to right direction
+skinparam linetype ortho
+
+title Editor (FlutterQuill)
+
+package Widget <<Rectangle>> {
+    class RenderObjectWidget
+    class EditableTextLine
+    class TextLine
+    class Line
+
+    note as N3
+    Widget : holds the config 
+    for a piece of UI.
+    end note
+}
+
+
+package Element <<Rectangle>> {
+    class _TextLineElement
+    class RenderObjectElement
+    
+    note as N1
+    Represents an actual
+    piece of UI.
+    end note
+}
+
+
+package RenderObject <<Rectangle>>  {
+    class RenderEditableTextLine
+    class RenderEditableBox
+    class RenderBox
+    class RenderObjectClass as "RenderObject"
+
+    note as N2
+    Layout, size, painting
+    and compositing
+    end note
+}
+
+Element -[hidden]-> RenderObject
+
+EditableTextLine -> RenderObjectWidget
+EditableTextLine -left> TextLine
+EditableTextLine -left> Line
+
+RenderObjectWidget <- - _TextLineElement
+_TextLineElement -left> RenderObjectElement
+_TextLineElement -> RenderEditableTextLine
+
+RenderEditableTextLine -left> RenderEditableBox
+RenderEditableBox -left> RenderBox
+RenderBox -left> RenderObjectClass
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 11:16:42 EST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CA
+--></g></svg>

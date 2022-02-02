@@ -1,0 +1,43 @@
+@startuml EditorFlutterQuill2
+
+left to right direction
+skinparam linetype ortho
+
+title Editor2 (FlutterQuill)
+
+skinparam package {
+    BorderColor white
+    ShadowColor white
+}
+
+package "" <<Rectangle>> {
+
+    class _didChangeTextEditingValue
+    class _onChangeTextEditingValue
+    class _showCaretOnScreen
+    class ConfigCursorTimer as "Config Cursor Timer"
+
+}
+
+package "" <<Rectangle>> {
+    class QuillController
+    class RenderState
+}
+
+
+RawGestureDetector --> RenderEditor
+RenderEditor --> QuillController
+RawEditorStateTextInputClientMixin --> QuillController
+RawEditorStateKeyboardMixin --> QuillController
+
+QuillController -->"2. notify change" RenderState
+RenderState -->"listen" QuillController
+
+RenderState --> _didChangeTextEditingValue
+_didChangeTextEditingValue -left-> _onChangeTextEditingValue
+_onChangeTextEditingValue -left-> _showCaretOnScreen
+_showCaretOnScreen -left->ConfigCursorTimer
+
+
+
+@enduml
