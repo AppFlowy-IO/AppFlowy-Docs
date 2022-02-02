@@ -21,13 +21,13 @@ There's no point continuing if this doesn't work for you, so lets start here bef
 {% tabs %}
 {% tab title="Ubuntu" %}
 ```bash
-sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip
+sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip protobuf-compiler
 ```
 {% endtab %}
 
 {% tab title="Arch" %}
 ```bash
-yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
+yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip protobuf-compiler
 ```
 {% endtab %}
 {% endtabs %}
