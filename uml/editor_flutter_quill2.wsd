@@ -2,15 +2,15 @@
 
 left to right direction
 skinparam linetype ortho
+skinparam shadowing false
 
 title Editor2 (FlutterQuill)
 
 skinparam package {
     BorderColor white
-    ShadowColor white
 }
 
-package "" <<Rectangle>> {
+package "" <<Rectangle>>  {
 
     class _didChangeTextEditingValue
     class _onChangeTextEditingValue
@@ -19,7 +19,7 @@ package "" <<Rectangle>> {
 
 }
 
-package "" <<Rectangle>> {
+package "" <<Rectangle>>  {
     class QuillController
     class RenderState
 }

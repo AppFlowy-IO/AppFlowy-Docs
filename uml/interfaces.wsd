@@ -1,0 +1,97 @@
+@startuml Interfaces
+left to right direction
+package "Presentation Layer" as "Presentation" #DDDDDD {
+}
+
+package "Application Layer" as "Application" #DDDDDD {
+    abstract class SignInEvent {
+        const factory SignInEvent.signedInWithUserEmailAndPassword() = SignedInWithUserEmailAndPassword;
+        const factory SignInEvent.emailChanged(String email) = EmailChanged;
+        const factory SignInEvent.passwordChanged(String password) = PasswordChanged;
+    }
+
+    abstract class EmailChanged implements SignInEvent {
+        String get email
+    }
+
+    abstract class SignedInWithUserEmailAndPassword implements SignInEvent {    }
+
+    abstract class PasswordChanged implements SignInEvent {
+        String get password
+    }
+
+    abstract class SignInState {
+    }
+
+}
+
+package "Domain Layer" as "Domain" #DDDDDD{
+    abstract class  IAuth {
+        Future<Either<UserProfile, UserError>> signIn(String? email, String? password);
+        Future<Either<UserProfile, UserError>> signUp(String? name, String? password, String? email);
+        Future<Either<Unit, UserError>> signOut();
+    }
+    abstract class IAuthRouter {
+        void pushWelcomeScreen(BuildContext context, UserProfile userProfile);
+        void pushSignUpScreen(BuildContext context);
+        void pushForgetPasswordScreen(BuildContext context);
+        void pushHomeScreen(BuildContext context, UserProfile profile, CurrentWorkspaceSetting workspaceSetting);
+    }
+    abstract class IUser {
+        UserProfile get user;
+        Future<Either<UserProfile, UserError>> fetchUserProfile(String userId);
+        Future<Either<List<Workspace>, WorkspaceError>> fetchWorkspaces();
+        Future<Either<Unit, WorkspaceError>> deleteWorkspace(String workspaceId);
+        Future<Either<Unit, UserError>> signOut();
+        Future<Either<Unit, UserError>> initUser();
+    }
+    abstract class IUserListener {
+        void start();
+
+        PublishNotifier<UserProfileUpdatedNotifierValue> get profileUpdatedNotifier;
+        PublishNotifier<AuthNotifierValue> get authDidChangedNotifier;
+        PublishNotifier<WorkspaceUpdatedNotifierValue> get workspaceUpdatedNotifier;
+
+        Future<void> stop();
+
+    }
+    abstract class IView {
+        View get view;
+        Future<Either<Unit, WorkspaceError>> delete();
+        Future<Either<View, WorkspaceError>> rename(String newName);
+        Future<Either<Unit, WorkspaceError>> duplicate();
+    }
+    abstract class IViewListener {
+        void start();
+        PublishNotifier<UpdateNotifierValue> get updatedNotifier;
+        PublishNotifier<DeleteNotifierValue> get deletedNotifier;
+        PublishNotifier<RestoreNotifierValue> get restoredNotifier;
+        Future<void> stop();
+    }
+
+    abstract class IApp {
+        Future<Either<List<View>, WorkspaceError>> getViews();
+        Future<Either<View, WorkspaceError>> createView({required String name, String? desc, required ViewType viewType});
+        Future<Either<Unit, WorkspaceError>> delete();
+        Future<Either<Unit, WorkspaceError>> rename(String newName);
+    }
+
+    abstract class IAppListener {
+        void start({AppViewsChangeCallback? viewsChangeCallback, AppUpdatedCallback? updatedCallback});
+        Future<void> stop();
+    }
+}
+
+package "Infrastructure" #DDDDDD {
+}
+
+package "FlowySdk" #DDDDDD {
+}
+
+
+Presentation +-[hidden]- Application
+Application +-[hidden]- Domain
+Domain +-[hidden]- Infrastructure
+Infrastructure +-[hidden]- FlowySdk
+
+@enduml

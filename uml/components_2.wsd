@@ -1,0 +1,129 @@
+
+@startuml offline
+Title Single CPU (Desktop/Phone)
+
+
+node "computer" {
+    interface "Protobuf Serializer" as ProtobufSerializer
+    interface "Protobuf Deserializer" as ProtobufDeserializer
+    cloud "Protobuf" as protobuf
+    [Application(Dart)] as application
+    [Dispatcher(Dart)] as dispatcher_dart
+    [FFI (Dart)] as FFI #FFDDDD 
+    [Dispatcher (Rust)] as dispatcher_rust #FFDDDD 
+    [Domain (Rust)] as domain
+    [Repository (Rust)] as repository
+    [FirestoreClient (Rust)] as firestoreClient
+    [SQLiteClient(Rust)] as sqliteClient
+    [GitClient(Rust)] as gitClient
+
+
+    [Presentation(Flutter)] --> application
+    application --> dispatcher_dart
+    dispatcher_dart --> ProtobufSerializer
+    domain --> repository
+    repository --> firestoreClient
+    repository --> sqliteClient
+    repository --> gitClient
+    FFI --> ProtobufDeserializer
+    dispatcher_rust ..> ProtobufDeserializer
+    dispatcher_rust --> domain
+    FFI ..> ProtobufSerializer
+    protobuf .. ProtobufSerializer
+    protobuf .. ProtobufDeserializer
+}
+
+node "Firestore" {
+    database FirestoreDb
+    firestoreClient --> FirestoreDb
+}
+
+node "SQLite" {
+    database SQLiteDB
+    sqliteClient --> SQLiteDB
+}
+
+node "Git" {
+    database GitDb
+    gitClient --> GitDb
+}
+
+@enduml
+
+
+
+
+@startuml Online
+Title Multiple CPUs (Desktop/Phone/Browser <-> Server)
+
+cloud "http"
+cloud "web_socket"
+
+node "Computer A" {
+    interface "Protobuf Serializer" as ProtobufSerializer
+    interface "Protobuf Deserializer" as ProtobufDeserializer
+    cloud "Protobuf" as protobuf
+    [Application(Dart)] as application
+    [Dispatcher(Dart)] as dispatcher_dart
+    [FFI (Dart)] as FFI #FFDDDD 
+    [Dispatcher (Rust)] as dispatcher_rust #FFDDDD 
+    [Domain (Rust)] as domain
+    [Repository (Rust)] as repository
+    [FirestoreClient (Rust)] as firestoreClient
+    [SQLiteClient(Rust)] as sqliteClient
+		[HttpClient(Rust)] as httpClient #FB006D 
+		[WebSocketClient(Rust)] as wsClient #FB006D 
+    [GitClient(Rust)] as gitClient
+
+
+    [Presentation(Flutter)] --> application
+    application --> dispatcher_dart
+    dispatcher_dart --> ProtobufSerializer
+    domain --> repository
+		domain --> httpClient
+		domain --> wsClient
+    repository --> firestoreClient
+    repository --> sqliteClient
+    repository --> gitClient
+		httpClient --> http
+		wsClient --> web_socket
+    FFI --> ProtobufDeserializer
+    dispatcher_rust ..> ProtobufDeserializer
+    dispatcher_rust --> domain
+    FFI ..> ProtobufSerializer
+    protobuf .. ProtobufSerializer
+    protobuf .. ProtobufDeserializer
+}
+
+node "Firestore" {
+    database FirestoreDb
+    firestoreClient --> FirestoreDb
+}
+
+node "SQLite" {
+    database SQLiteDB
+    sqliteClient --> SQLiteDB
+}
+
+node "Git" {
+    database GitDb
+    gitClient --> GitDb
+}
+
+
+node "HTTP Server" {
+    interface "Protobuf Deserializer" as ProtobufDeserializer
+    [HttpService (Rust)] as httpService
+	  [WebSocket (Rust)] as wsService
+		[Collaborate (Rust)] as collaborate
+	
+    httpService --> http
+		wsService -->	web_socket
+}
+
+
+node "Postgres" {
+    database PostgresDb
+    httpService --> PostgresDb
+}
+@enduml

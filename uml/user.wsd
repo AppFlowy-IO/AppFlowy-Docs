@@ -1,0 +1,102 @@
+@startuml UserBlock
+!include interfaces.wsd
+title User Class Diagram
+scale 2
+
+
+package "Presentation Layer" as "Presentation" #DDDDDD {
+    class SplashScreen {}
+    class SignInScreen {
+        IAuthRouter
+    }
+
+    class SignUpScreen {
+        IAuthRouter
+    }
+
+    class WelcomeScreen {
+        UserRepo
+    }
+}
+
+package "Application Layer" as "Application" #DDDDDD {
+    class SignInBlock {
+        Stream<ViewState> mapEventToState(ViewEvent event) async*
+    }
+
+}
+
+package "Domain Layer" as "Domain" {
+    class  NewUser {
+        UserProfile profile;
+        String workspaceId;
+    }
+}
+
+package "Infrastructure" {
+    class AuthImpl extends IAuth {
+        AuthRepository repo;
+    }
+    class UserRepo {}
+    class AuthRepository{}
+    class WorkspaceNotificationParser extends NotificationParser
+    class UserNotificationParser extends NotificationParser
+    class IUserImpl {}
+    class IUserListenerImpl {}
+
+    class NotificationParser<T, E> {
+        String? id;
+        void Function(T, Either<Uint8List, E>) callback;
+        T? Function(int) tyParser;
+        E Function(Uint8List) errorParser;
+        void parse(SubscribeObject subject) {}
+    }
+
+}
+
+package "FlowySdk" {
+    class UserProfile
+    class UserEventSignIn {
+        SignInRequest request;
+        Future<Either<UserProfile, UserError>> send()
+    }
+    class SignInRequest{}
+    class UserEvent {}
+    class Dispatch {
+        static Future<Either<Uint8List, Uint8List>> asyncRequest(FFIRequest request)
+    }
+}
+
+
+
+SignInScreen o--IAuthRouter
+SignInBlock o-- IAuth
+SignInBlock o-- SignInState
+SignInBlock o-- SignInEvent
+UserRepo o-- UserProfile
+IUserImpl --|> IUser
+IUserImpl o-- UserRepo
+AuthImpl o-- AuthRepository
+AuthRepository o-- UserProfile
+IUserListenerImpl --|> IUserListener
+IUserListenerImpl o-- WorkspaceNotificationParser
+IUserListenerImpl o-- UserNotificationParser
+IUserListenerImpl o-- UserProfile
+UserEventSignIn o-- SignInRequest
+@enduml
+
+
+@startuml SequenceSignInUser
+actor User
+SingInScreen  -> LoginButton
+LoginButton -> SignInBlock: [SignedInWithUserEmailAndPassword]
+SignInBlock -> IAuthImpl: signIn
+IAuthImpl -> AuthRepository: signIn
+AuthRepository -> UserEventSignIn: request
+UserEventSignIn -> Dispath: request
+UserEventSignIn <- Dispath: UserProfile
+AuthRepository <- UserEventSignIn: request
+IAuthImpl <- AuthRepository
+SignInBlock <- IAuth: signIgn Response
+SingInScreen  <- SignInBlock
+@enduml

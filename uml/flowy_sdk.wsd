@@ -1,0 +1,5 @@
+@startuml
+package FlowySdk #229922{
+    class App {}
+    }
+@enduml
