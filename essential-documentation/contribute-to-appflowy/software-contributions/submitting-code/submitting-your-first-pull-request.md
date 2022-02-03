@@ -4,7 +4,7 @@
 
 So you want to contribute to AppFlowy, that's awesome! Thank you and welcome to the team!
 
-At this point you have already forked the AppFlowy and cloned it to your local machine as described in the [Setting Up Your Repositories](../environment-setup/setting-up-your-repositories.md) document. You've looked at the code, but you haven't made any changes. Now, you want to do some work!
+At this point you have already forked the AppFlowy and cloned it to your local machine as described in the [Setting Up Your Repositories](setting-up-your-repositories.md) document. You've looked at the code, but you haven't made any changes. Now, you want to do some work!
 
 ## A complete flow of the PR process
 
