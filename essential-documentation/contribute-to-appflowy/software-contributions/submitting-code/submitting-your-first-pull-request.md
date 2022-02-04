@@ -97,6 +97,28 @@ git push origin fix_setup_page_180
 
 #### Return to Work on your code :)
 
+### Commit message guidelines
+We use [commitlint](https://commitlint.js.org/#/./?id=getting-started) to check the commit message style.
+You could follow the [instructions](https://commitlint.js.org/#/guides-local-setup) to install `commitlint` in local. Install `commitlint` in local
+enable you to check the commit message is valid or not why you type `git commit xxx`.
+> There is no need to configure the commitlint and add the hooks because it was done.
+
+**macOS**:
+1. npm install --save-dev @commitlint/{cli,config-conventional}
+2. npm install husky --save-dev
+3. npx husky install
+
+
+Commit message consists of `type`:`subject`
+* type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
+* subject is the commit message
+
+**For example:**
+* fix: do something
+* feat: do something
+* ci: do something
+* refactor: do something
+
 ### Push commits to your repository
 
 When you have completed your code changes, you can now push your code to your origin repository.
