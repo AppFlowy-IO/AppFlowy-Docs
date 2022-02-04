@@ -21,27 +21,43 @@ Translation files are located in : `frontend/app_flowy/assets/translations/`
 4. Open the `frontend/app_flowy/lib/startup/tasks/application_widget.dart` file.
 5. In the `AppWidgetTask` class, add the locale of the language you just created (eg: `Locale('en', 'IN')`, `Locale('en')`) to the `supportedLocales` List :
 
-```dart
-runApp(
-  EasyLocalization(
-      supportedLocales: const [Locale('en'), Locale('zh', 'CN')],  // <---- Add locale to this list
-      path: 'assets/translations',
-      fallbackLocale: const Locale('en'),
-      child: app),
-);    
-```
+    ```dart
+    runApp(
+      EasyLocalization(
+        supportedLocales: const [Locale('en'), Locale('zh', 'CN')],  // <---- Add locale to this list
+        path: 'assets/translations',
+        fallbackLocale: const Locale('en'),
+        child: app),
+    );    
+    ```
+6. Add the name of your language, in your native tongue, to the list of language names in `appflowy/frontend/app_flowy/packages/flowy_infra/lib/language.dart`
+    ```dart
+    String languageFromLocale(Locale locale) {
+      switch (locale.languageCode) {
+        // Most often used
+        case "en":
+          return "English";
+        case "zh":
+          return "简体中文";
+
+        // Then in alphabetical order
+        case "de":
+          return "Deutsch";
+        case "es":
+          return "Español";
+        case "fr":
+          return "Français";
+
+                               // <- add your language here.
+
+        // If not found then the language code will be displayed
+        default:
+          return locale.languageCode;
+      }
+    }
+    ```
+
 
 ## How to test your changes
 
-You can set the displayed language manually by temporarily adding 'startLocale' to your code. Remember to remove this test line before submitting your changes.
-
-```dart
-runApp(
-  EasyLocalization(
-      supportedLocales: const [Locale('en'), Locale('zh', 'CN')],
-      path: 'assets/translations',
-      fallbackLocale: const Locale('en'),
-      startLocale: const Locale('zh', 'CN'),   // <---- Display app in Chinese
-      child: app),
-);
-```
+Once your language is added to the language picker, you can simply choose it.
