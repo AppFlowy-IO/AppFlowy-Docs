@@ -119,6 +119,9 @@ Commit message consists of `type`:`subject`
 * ci: do something
 * refactor: do something
 
+> You could use [git rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) to alter the commit message if you have multiple commit messages.
+
+
 ### Push commits to your repository
 
 When you have completed your code changes, you can now push your code to your origin repository.
