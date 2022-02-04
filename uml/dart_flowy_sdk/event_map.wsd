@@ -1,0 +1,81 @@
+@startuml FlowySDK Protocol Buffer
+title Protocol Buffer
+left to right direction
+skinparam linetype ortho
+
+package "Frontend" #DDDDDD {
+    component Repository_A as "Repository A"
+    component Event
+    component FFI_Frontend as "FFI" #FFDDDD
+}
+
+package "FlowySDK" #DDDDDD {
+    component FFI_Backend as "FFI" #FFDDDD
+    component Dispatcher
+    component Module_A as "Module A"
+    component Handler_A1 as "Handler A1"
+}
+
+Repository_A --> Event : 1
+Event --> FFI_Frontend : 2
+FFI_Frontend <--> FFI_Backend
+FFI_Backend --> Dispatcher : 3
+
+Dispatcher --> Module_A : 4
+Module_A --> Handler_A1 : 5
+@enduml
+
+@startmindmap FlowyTool-Event
+title FlowyTool Event CodeGen Process
+*[#Orange]: File: A.rs
+<code>
+enum FolderEvent {
+    #[event(input = "ExportRequest", output = "ExportData")]
+    ExportDocument = 0,
+}
+</code>
+;
+**_ 1. Run script
+***[#lightblue]: File: code_gen.dart
+<code>
+class FolderEventExportDocument {
+    Future<Either<ExportData, FlowyError>> send() {
+        xxx
+    }
+}
+</code>
+;
+@endmindmap
+
+
+
+
+@startmindmap FlowyTool-PB
+title FlowyTool PB CodeGen Process
+*[#Orange]: File: share.rs
+<code>
+struct ExportData {
+    #[pb(index = 1)]
+    pub data: String,
+
+    #[pb(index = 2)]
+    pub export_type: ExportType,
+}
+</code>
+;
+**_ 1.Run script
+***[#lightblue]: File: share.proto
+<code>
+message ExportData {
+    string data = 1,
+    ExportType export_type = 2,
+}
+</code>
+;
+****_ 2-1.PB CodeGen(Dart)
+*****[#lightgreen] share.pb.dart
+****_ 2-2.PB CodeGen(Rust)
+*****[#lightgreen] share.rs
+@endmindmap
+
+
