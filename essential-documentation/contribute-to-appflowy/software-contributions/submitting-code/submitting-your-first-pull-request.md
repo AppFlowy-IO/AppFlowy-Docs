@@ -101,6 +101,9 @@ git push origin fix_setup_page_180
 We use [commitlint](https://commitlint.js.org/#/./?id=getting-started) to check the commit message style.
 You could follow the [instructions](https://commitlint.js.org/#/guides-local-setup) to install `commitlint` in local. Install `commitlint` in local
 enable you to check the commit message is valid or not why you type `git commit xxx`.
+
+> Don't install commitlint in appflowy working directory. You should install it to your working directory otherwise you may add lots of files. For example, the package.json and node_modules folder.
+>
 > There is no need to configure the commitlint and add the hooks because it was done.
 
 **macOS**:
