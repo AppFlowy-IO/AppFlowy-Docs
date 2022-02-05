@@ -98,31 +98,29 @@ git push origin fix_setup_page_180
 #### Return to Work on your code :)
 
 ### Commit message guidelines
-We use [commitlint](https://commitlint.js.org/#/./?id=getting-started) to check the commit message style.
-You could follow the [instructions](https://commitlint.js.org/#/guides-local-setup) to install `commitlint` in local. Install `commitlint` in local
-enable you to check the commit message is valid or not why you type `git commit xxx`.
+1. Install commitlint
 
-> Don't install commitlint in appflowy working directory. You should install it to your working directory otherwise you may add lots of files. For example, the package.json and node_modules folder.
->
-> There is no need to configure the commitlint and add the hooks because it was done.
+    We use [commitlint](https://commitlint.js.org/#/./?id=getting-started) to check the commit message style. If you want to use commitlint on local, follow these two steps.
 
-**macOS**:
-1. npm install --save-dev @commitlint/{cli,config-conventional}
-2. npm install husky --save-dev
-3. npx husky install
+    1. install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
+    2. Go to the project root directory: /appflowy, run **`cargo make install-commitlint`**
 
+    or you can install it manually.
 
-Commit message consists of `type`:`subject`
-* type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
-* subject is the commit message
+2. Commit message
 
-**For example:**
-* fix: do something
-* feat: do something
-* ci: do something
-* refactor: do something
+    The commit message consists of `type`:`subject`
+    * type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
+    * subject is the commit message
 
-> You could use [git rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) to alter the commit message if you have multiple commit messages.
+    **For example:**
+    * git commit -m "fix: do something"
+    * git commit -m "feat: do something"
+    * git commit -m "refactor: do something"
+
+3. Alter commit message
+
+    You could use [git rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) to alter the commit message if you have multiple commit messages.
 
 
 ### Push commits to your repository
