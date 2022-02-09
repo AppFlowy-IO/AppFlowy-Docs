@@ -81,13 +81,10 @@ cargo install --force duckscript_cli
 cargo make flowy_dev
 ```
 
-* \[Optional] Generate protobuf for dart (if you wish to modify the shared-lib's entities)
+* Install protobuf tool
 
-```shell
-# Need to download protoc tools and add it's bin folder into PATH env var.
-# Download protoc from https://github.com/protocolbuffers/protobuf/releases. The latest one is protoc-3.19.1-win64.zip
-cargo make -p development-windows pb
-```
+  Need to download protoc tools and add it's bin folder into PATH env var.
+  Download protoc from https://github.com/protocolbuffers/protobuf/releases. The latest one is protoc-3.19.1-win64.zip
 
 * \[Optional] Build flowy-sdk (dart-ffi), step 10 covers this step
 

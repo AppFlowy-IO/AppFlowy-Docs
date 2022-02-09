@@ -32,23 +32,6 @@ yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 {% endtab %}
 {% endtabs %}
 
-* If you need to work on protobufs only (usually not the case)
-
-{% tabs %}
-{% tab title="Ubuntu" %}
-```bash
-sudo apt-get install protobuf-compiler
-```
-{% endtab %}
-
-{% tab title="Arch" %}
-```bash
-# optional, for generating protobuf in step 8 only
-#(Caution: protobuf does not work on Arch at the moment.)
-#yay -S protobuf-compiler
-```
-{% endtab %}
-{% endtabs %}
 
 * Install rust on Linux
 
@@ -124,13 +107,6 @@ cargo install --force duckscript_cli
 cargo make flowy_dev
 ```
 
-*   \[Optional] Generate protobuf for dart (if you wish to modify the shared-lib's entities)
-
-    * Caution : Not working on Arch Linux yet Make sure to install protobuf-compiler at first. See step 1
-
-    ```shell
-    cargo make -p development-linux-x86 pb
-    ```
 * \[Optional] Build flowy-sdk-dev (dart-ffi)
 
 {% tabs %}
