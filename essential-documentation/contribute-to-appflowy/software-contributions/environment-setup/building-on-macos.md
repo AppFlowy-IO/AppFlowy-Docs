@@ -27,20 +27,9 @@ cd appflowy/frontend
 ```
 
 ```shell
-make install_rust
+make flowy_dev
 ```
 
-```shell
-source $HOME/.cargo/env
-```
-
-```shell
-make install_cargo_make
-```
-
-```shell
-cargo make install_targets
-```
 
 > FYI, AppFlowy uses [https://github.com/sagiegurari/cargo-make](https://github.com/sagiegurari/cargo-make) to construct the build scripts
 
