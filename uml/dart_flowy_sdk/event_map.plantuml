@@ -1,33 +1,28 @@
-@startuml FlowySDK Protocol Buffer
-title Protocol Buffer
+@startuml FlowySDKProtocolBuffer
 left to right direction
 skinparam linetype ortho
 
-package "Frontend" #DDDDDD {
+package "Front-end (Flutter)" #DDDDDD {
     component Repository_A as "Repository A"
-    component Event
     component FFI_Frontend as "FFI" #FFDDDD
 }
 
-package "FlowySDK" #DDDDDD {
+package "Back-end (Rust)" #DDDDDD {
     component FFI_Backend as "FFI" #FFDDDD
     component Dispatcher
     component Module_A as "Module A"
-    component Handler_A1 as "Handler A1"
 }
 
-Repository_A --> Event : 1
-Event --> FFI_Frontend : 2
-FFI_Frontend <--> FFI_Backend
-FFI_Backend --> Dispatcher : 3
+Repository_A ...> FFI_Frontend : Event
+FFI_Frontend <---> FFI_Backend : Protobuf
+FFI_Backend --> Dispatcher
+Dispatcher --> Module_A
 
-Dispatcher --> Module_A : 4
-Module_A --> Handler_A1 : 5
 @enduml
 
 @startmindmap FlowyTool-Event
 title FlowyTool Event CodeGen Process
-*[#Orange]: File: A.rs
+*[#Orange]:
 <code>
 enum FolderEvent {
     #[event(input = "ExportRequest", output = "ExportData")]
