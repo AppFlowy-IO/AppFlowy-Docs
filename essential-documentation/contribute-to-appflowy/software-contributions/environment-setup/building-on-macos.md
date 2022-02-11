@@ -27,7 +27,7 @@ cd appflowy/frontend
 ```
 
 ```shell
-make flowy_dev
+make flowy_dev_install
 ```
 
 
