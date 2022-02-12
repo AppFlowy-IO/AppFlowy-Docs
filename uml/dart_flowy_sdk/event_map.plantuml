@@ -1,76 +1,109 @@
-@startuml FlowySDKProtocolBuffer
+@startuml FlowySDK
+title FFI
 left to right direction
-skinparam linetype ortho
+skinparam linetype polyline
 
 package "Front-end (Flutter)" #DDDDDD {
-    component Repository_A as "Repository A"
+    component Repository_A as "Repository"
     component FFI_Frontend as "FFI" #FFDDDD
 }
 
 package "Back-end (Rust)" #DDDDDD {
     component FFI_Backend as "FFI" #FFDDDD
     component Dispatcher
-    component Module_A as "Module A"
+    component Module
 }
 
-Repository_A ...> FFI_Frontend : Event
-FFI_Frontend <---> FFI_Backend : Protobuf
-FFI_Backend --> Dispatcher
-Dispatcher --> Module_A
-
+Repository_A ..> FFI_Frontend : 1.Event + Protobuf
+FFI_Frontend --> FFI_Backend : 2.Bytes
+FFI_Backend --> Dispatcher : 3.Event + Protobuf
+Dispatcher --> Module: 4.Protobuf
 @enduml
 
-@startmindmap FlowyTool-Event
-title FlowyTool Event CodeGen Process
-*[#Orange]:
-<code>
-enum FolderEvent {
-    #[event(input = "ExportRequest", output = "ExportData")]
-    ExportDocument = 0,
+
+@startuml FlowySDK
+title Protobuf Code Generation
+left to right direction
+skinparam linetype polyline
+'skinparam monochrome reverse
+
+frame Step_1 {
+    node "Event" #DDDDDD {
+        file EventSource as "event.rs" #FFDDDD
+        file EventCodeGen as "build.rs" #FFDDDD
+        file EventDefine as "event.proto" #FFDDDD
+    }
+    note left of EventSource
+    enum FolderEvent {
+        #[event(input = "ExportRequest", output = "ExportData")]
+        ExportDocument = 0,
+    }
+    end note
+
+    node "Protobuf" #DDDDDD {
+        file PBSource as "share.rs" #FFDDDD
+        file PBCodeGen as "build.rs" #FFDDDD
+        file PBDefine as "share.proto" #FFDDDD
+    }
+    note left of PBSource
+    struct ExportData {
+        #[pb(index = 1)]
+        pub data: String,
+
+        #[pb(index = 2)]
+        pub export_type: ExportType,
+    }
+    end note
+
+    EventSource -> EventCodeGen
+        EventCodeGen -> EventDefine
+        PBSource -> PBCodeGen
+        PBCodeGen -> PBDefine
 }
-</code>
-;
-**_ 1. Run script
-***[#lightblue]: File: code_gen.dart
-<code>
-class FolderEventExportDocument {
-    Future<Either<ExportData, FlowyError>> send() {
-        xxx
+
+frame Step_2 {
+    node "Build.rs" #DDDDDD {
+        component Builder as "Protoc Compiler" #F7931E
     }
 }
-</code>
-;
-@endmindmap
 
 
+frame Step_3 {
+    component Protobuf_Files_Dart as "Protobuf Files" #DDDDDD {
+        file dart_event as "share_event.pb.dart" #FFDDDD
+        file dart_pb as "share.pb.dart" #FFDDDD
+    }
 
-
-@startmindmap FlowyTool-PB
-title FlowyTool PB CodeGen Process
-*[#Orange]: File: share.rs
-<code>
-struct ExportData {
-    #[pb(index = 1)]
-    pub data: String,
-
-    #[pb(index = 2)]
-    pub export_type: ExportType,
+    component Protobuf_Files_Rust as "Protobuf Files" #DDDDDD {
+        file rust_event as "share_event.rs" #FFDDDD
+        file rust_pb as "share.rs" #FFDDDD
+    }
 }
-</code>
-;
-**_ 1.Run script
-***[#lightblue]: File: share.proto
-<code>
-message ExportData {
-    string data = 1,
-    ExportType export_type = 2,
+package "Front-end (Flutter)" #DDDDDD {
+    component Repository
 }
-</code>
-;
-****_ 2-1.PB CodeGen(Dart)
-*****[#lightgreen] share.pb.dart
-****_ 2-2.PB CodeGen(Rust)
-*****[#lightgreen] share.rs
-@endmindmap
+
+package "Back-end (Rust)" #DDDDDD {
+    component Module
+}
+
+
+EventDefine -[#blue]-> Builder
+PBDefine -[#blue]-> Builder
+
+Builder -[#DarkGreen]-> dart_event
+Builder -[#DarkGreen]-> dart_pb
+Builder -[#DarkGreen]-> rust_event
+Builder -[#DarkGreen]-> rust_pb
+
+Repository -[bold]up-> dart_event
+Repository -[bold]up-> dart_pb
+
+Module -[bold]up-> rust_event
+Module -[bold]up-> rust_pb
+@enduml
+
+
+
 
 
