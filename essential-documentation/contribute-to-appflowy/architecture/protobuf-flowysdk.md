@@ -1,17 +1,11 @@
 # Protobuf-FlowySDK
 
-## Exchange Data
-The article introduces how AppFlowy uses protobuf buffer. AppFlowy front-end written in Flutter and the back-end written in Rust,
-they exchange data through the FFI. Look at the picture shown below.
-
-
+The article introduces how AppFlowy uses protobuf buffer to exchange the data between Dart and Rust. The pattern as
+shown below:
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-FFI.svg)
 
-1. Front-end's repository triggers the event with the Protobuf.
-2. Front-end's FFI serializes the protobuf to bytes and sends the event and bytes to the back-end side.
-3. Back-end's FFI deserializes the bytes to the protobuf and passes the event and protobuf to Dispatcher.
-4. Dispatcher sends the protobuf to the module that can handle the event.
-
+Front-end written in Dart and Back-end written in Rust, they communicate with each other using the protocol buffer.
+Let's dig into the details.
 
 ## Generate Process
 Let's introduce the generating process that consists of three parts.
@@ -75,14 +69,15 @@ These files are located in "`the-corresponding-crate/src/protobuf`".
 
 
 ### Part Four
-The class, FolderEventExportDocument, is automatically generated in Dart side using the AST from `Part One`. The function `export_handler` will
+The class, FolderEventExportDocument, is automatically generated in the Dart side using the AST from `Part One`. The function `export_handler` will
 get called when the `ExportDocument` event happened. The calling route as the picture shown below.
 
-1. Repository call `send()` function of `FolderEventExportDocument`.
-2. Serialize the event and the data to bytes.
-3. The bytes were sent through the FFI.
-4. The bytes deserialize into the corresponding event and data.
-5. Module's export_handler get called with the event and data.
+1. Repository calls `send()` function of `FolderEventExportDocument`.
+2. Front-end's FFI serializes the event and the data to bytes.
+3. The bytes were sent to Back-end.
+4. Back-end's FFI deserializes the bytes into the corresponding event and data.
+5. The dispatcher sends the data to the module that can register as the event handler.
+6. Module's export_handler function gets called with the event and data.
 
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf_Communication.svg)
 
