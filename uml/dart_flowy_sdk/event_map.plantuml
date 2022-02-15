@@ -27,11 +27,11 @@ left to right direction
 skinparam linetype polyline
 'skinparam monochrome reverse
 
-frame Step_1 {
+frame Part_One {
     node "Event" #DDDDDD {
-        file EventSource as "event.rs" #FFDDDD
+        file EventSource as "event_map.rs" #FFDDDD
         file EventCodeGen as "build.rs" #FFDDDD
-        file EventDefine as "event.proto" #FFDDDD
+        file EventDefine as "event_map.proto" #FFDDDD
     }
     note left of EventSource
     enum FolderEvent {
@@ -61,32 +61,34 @@ frame Step_1 {
         PBCodeGen -> PBDefine
 }
 
-frame Step_2 {
+frame Part_Two {
     node "Build.rs" #DDDDDD {
         component Builder as "Protoc Compiler" #F7931E
     }
 }
 
 
-frame Step_3 {
+frame Part_Three {
     component Protobuf_Files_Dart as "Protobuf Files" #DDDDDD {
-        file dart_event as "share_event.pb.dart" #FFDDDD
+        file dart_event as "event_map.pb.dart" #FFDDDD
         file dart_pb as "share.pb.dart" #FFDDDD
     }
 
     component Protobuf_Files_Rust as "Protobuf Files" #DDDDDD {
-        file rust_event as "share_event.rs" #FFDDDD
+        file rust_event as "event_map.rs" #FFDDDD
         file rust_pb as "share.rs" #FFDDDD
     }
 }
-package "Front-end (Flutter)" #DDDDDD {
-    component Repository
-}
 
-package "Back-end (Rust)" #DDDDDD {
-    component Module
-}
+frame Part_Four {
+    package "Front-end (Flutter)" #DDDDDD {
+        component Repository
+    }
 
+    package "Back-end (Rust)" #DDDDDD {
+        component Module
+    }
+}
 
 EventDefine -[#blue]-> Builder
 PBDefine -[#blue]-> Builder
@@ -101,6 +103,23 @@ Repository -[bold]up-> dart_pb
 
 Module -[bold]up-> rust_event
 Module -[bold]up-> rust_pb
+Repository -> Module
+note right of Repository
+class FolderEventExportDocument {
+    Future<Either<ExportData, FlowyError>> send() {
+        ...
+    }
+}
+end note
+
+note right of Module
+pub(crate) async fn export_handler(
+    data: Data<ExportRequest>,
+    controller: Unit<Arc<ViewController>>,
+) -> DataResult<ExportData, FlowyError> {
+    ...
+}
+end note
 @enduml
 
 
