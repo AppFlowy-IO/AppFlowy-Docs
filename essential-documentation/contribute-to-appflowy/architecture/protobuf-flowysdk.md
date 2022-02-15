@@ -2,6 +2,7 @@
 
 The article introduces how AppFlowy uses protobuf buffer to exchange the data between Dart and Rust. The pattern as
 shown below:
+
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-FFI.svg)
 
 Front-end written in Dart and Back-end written in Rust, they communicate with each other using the protocol buffer.
