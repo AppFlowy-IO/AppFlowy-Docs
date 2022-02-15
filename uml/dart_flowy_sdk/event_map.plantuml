@@ -143,10 +143,6 @@ Repository --> FFI_Frontend: 2. Serialize Event + ExportRequest
 FFI_Frontend --> FFI_Backend: 3.Bytes
 FFI_Backend --> Module: 4: Deserialize Event + ExportRequest
 Module --> Module : 5. call export_handler function
-
-'Module -[#green,dashed]> FFI_Backend
-'FFI_Backend -[#green,dashed]> FFI_Frontend
-'FFI_Frontend --> Repository
 @enduml
 
 
