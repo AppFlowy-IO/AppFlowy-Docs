@@ -73,12 +73,12 @@ These files are located in "`the-corresponding-crate/src/protobuf`".
 The class, FolderEventExportDocument, is automatically generated in the Dart side using the AST from `Part One`. The function `export_handler` will
 get called when the `ExportDocument` event happened. The calling route as the picture shown below.
 
-1. Repository calls `send()` function of `FolderEventExportDocument`.
-2. Front-end's FFI serializes the event and the data to bytes.
+1. Repository constructs the `FolderEventExportDocument` class, and call `send()` function.
+2. Front-end's FFI serializes the event and the `ExportRequest` to bytes.
 3. The bytes were sent to Back-end.
-4. Back-end's FFI deserializes the bytes into the corresponding event and data.
-5. The dispatcher sends the data to the module that can register as the event handler.
-6. Module's export_handler function gets called with the event and data.
+4. Back-end's FFI deserializes the bytes into the corresponding `event` and `ExportRequest`.
+5. The dispatcher sends the `ExportRequest` to the module that registers as the event handler.
+6. Module's `export_handler` function gets called with the event and data.
 
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf_Communication.svg)
 

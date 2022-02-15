@@ -126,6 +126,7 @@ rectangle {
 
     package "Back-end (Rust)" #DDDDDD {
         component Module
+        component Dispatcher as "Dispatcher" #FFDDDD
         component FFI_Backend as "FFI" #FFDDDD
     }
     note left of Module
@@ -138,11 +139,12 @@ rectangle {
     end note
 }
 
-Repository --> Repository: 1.call send()
-Repository --> FFI_Frontend: 2. Serialize Event + ExportRequest
+Repository --> Repository: 1.ExportRequest
+Repository --> FFI_Frontend: 2. Event + ExportRequest
 FFI_Frontend --> FFI_Backend: 3.Bytes
-FFI_Backend --> Module: 4: Deserialize Event + ExportRequest
-Module --> Module : 5. call export_handler function
+FFI_Backend --> Dispatcher: 4: Event + ExportRequest
+Dispatcher --> Module: 5.ExportRequest
+Module --> Module : 6. call export_handler
 @enduml
 
 
