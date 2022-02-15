@@ -2,8 +2,9 @@
 
 ## Exchange Data
 The article introduces how AppFlowy uses protobuf buffer. AppFlowy front-end written in Flutter and the back-end written in Rust,
-they exchange data through the FFI. Look at the picture shown below,
-<img src="https://raw.githubusercontent.com/AppFlowy-IO/docs/feat/pb/uml/output/FlowySDK-FFI.svg" width="1000" />
+they exchange data through the FFI. Look at the picture shown below.
+
+<img src="https://raw.githubusercontent.com/AppFlowy-IO/docs/feat/pb/uml/output/FlowySDK-FFI.svg" width="2000" />
 
 1. Front-end's repository triggers the event with the Protobuf.
 2. Front-end's FFI serializes the protobuf to bytes and sends the event and bytes to the back-end side.
@@ -73,7 +74,7 @@ These files are located in "`the-corresponding-crate/src/protobuf`".
 
 
 ### Part Four
-
+![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/feat/pb/uml/output/FlowySDK-Protobuf_Communication.svg)
 WIP
 
 

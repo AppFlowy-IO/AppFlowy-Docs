@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="629px" preserveAspectRatio="none" style="width:717px;height:629px;background:#FFFFFF;" version="1.1" viewBox="0 0 717 629" width="717px" zoomAndPan="magnify"><defs><filter height="300%" id="fwxlodrd6z7fv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="218" x="243" y="17.4023">Protobuf Communication</text><rect fill="#FFFFFF" filter="url(#fwxlodrd6z7fv)" height="589.5" style="stroke:#000000;stroke-width:1.5;" width="698" x="7" y="28.1992"/><!--MD5=[b24267d2964530fde97dbe32f532d632]
+cluster Front-end (Flutter)--><polygon fill="#DDDDDD" filter="url(#fwxlodrd6z7fv)" points="388,52.1992,530,52.1992,537,74.6875,672,74.6875,672,292.6992,388,292.6992,388,52.1992" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="388" x2="537" y1="74.6875" y2="74.6875"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="136" x="392" y="67.7344">Front-end (Flutter)</text><!--MD5=[dda78dbc42a958268ede67472bfec7a7]
+cluster Back-end (Rust)--><polygon fill="#DDDDDD" filter="url(#fwxlodrd6z7fv)" points="333,341.6992,455,341.6992,462,364.1875,681,364.1875,681,589.6992,333,589.6992,333,341.6992" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="333" x2="462" y1="364.1875" y2="364.1875"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="116" x="337" y="357.2344">Back-end (Rust)</text><path d="M23.5,66.6992 L23.5,153.252 A0,0 0 0 0 23.5,153.252 L370.5,153.252 A0,0 0 0 0 370.5,153.252 L370.5,114.1992 L405.26,110.1992 L370.5,106.1992 L370.5,76.6992 L360.5,66.6992 L23.5,66.6992 A0,0 0 0 0 23.5,66.6992 " fill="#FBFB77" filter="url(#fwxlodrd6z7fv)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M360.5,66.6992 L360.5,76.6992 L370.5,76.6992 L360.5,66.6992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="223" x="29.5" y="84.2676">class FolderEventExportDocument {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="45.5" y="99.5781">Future&lt;Either&lt;ExportData, FlowyError&gt;&gt; send() {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="61.5" y="114.8887">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="45.5" y="130.1992">}</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="29.5" y="145.5098">}</text><path d="M23.5,499.6992 L23.5,601.5625 A0,0 0 0 0 23.5,601.5625 L314.5,601.5625 A0,0 0 0 0 314.5,601.5625 L314.5,554.6992 L349.5,550.6992 L314.5,546.6992 L314.5,509.6992 L304.5,499.6992 L23.5,499.6992 A0,0 0 0 0 23.5,499.6992 " fill="#FBFB77" filter="url(#fwxlodrd6z7fv)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M304.5,499.6992 L304.5,509.6992 L314.5,509.6992 L304.5,499.6992 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="223" x="29.5" y="517.2676">pub(crate) async fn export_handler(</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="45.5" y="532.5781">data: Data&lt;ExportRequest&gt;,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="45.5" y="547.8887">controller: Unit&lt;Arc&lt;ViewController&gt;&gt;,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="270" x="29.5" y="563.1992">) -&gt; DataResult&lt;ExportData, FlowyError&gt; {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="45.5" y="578.5098">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="29.5" y="593.8203">}</text><!--MD5=[4e260e4024c27e03c495c33059d2b5ff]
+entity Repository--><rect fill="#FEFECE" filter="url(#fwxlodrd6z7fv)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="113" x="405.5" y="87.1992"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="498.5" y="92.1992"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="496.5" y="94.1992"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="496.5" y="98.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="420.5" y="120.7344">Repository</text><!--MD5=[78e0d1133500ea5a75200a919f68dfaf]
+entity FFI_Frontend--><rect fill="#FFDDDD" filter="url(#fwxlodrd6z7fv)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="60" x="406" y="230.6992"/><rect fill="#FFDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="446" y="235.6992"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="444" y="237.6992"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="444" y="241.6992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="421" y="264.2344">FFI</text><!--MD5=[32a6d3b508021f5875dd65aaa7b12f72]
+entity Module--><rect fill="#FEFECE" filter="url(#fwxlodrd6z7fv)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="91" x="349.5" y="527.6992"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="420.5" y="532.6992"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="418.5" y="534.6992"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="418.5" y="538.6992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="364.5" y="561.2344">Module</text><!--MD5=[179e2604d0e0114e09ff0fc2b2cdbe9a]
+entity FFI_Backend--><rect fill="#FFDDDD" filter="url(#fwxlodrd6z7fv)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="60" x="394" y="376.6992"/><rect fill="#FFDDDD" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="434" y="381.6992"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="432" y="383.6992"/><rect fill="#FFDDDD" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="432" y="387.6992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="409" y="410.2344">FFI</text><!--MD5=[a2160a1f3fca2f537bfc003f6f9e328a]
+link Repository to Repository--><path d="M518.74,94.8292 C538.01,94.7492 553.5,99.8692 553.5,110.1992 C553.5,119.5592 540.78,124.6492 524.05,125.4592 " fill="none" id="Repository-to-Repository" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="518.74,125.5692,527.8291,129.3625,523.7387,125.455,527.6462,121.3646,518.74,125.5692" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="559.5" y="115.2676">1.call send()</text><!--MD5=[38d973180e405282d57257eaaecfdf7c]
+link Repository to FFI_Frontend--><path d="M457.94,133.3092 C453.39,158.0892 446,198.2892 441.07,225.0992 " fill="none" id="Repository-to-FFI_Frontend" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="440.12,230.2792,445.6987,222.1627,441.0345,225.3636,437.8337,220.6994,440.12,230.2792" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="215" x="449" y="197.2676">2. Serialize Event + ExportRequest</text><!--MD5=[4de8113ca68441e6ab054604d393395d]
+link FFI_Frontend to FFI_Backend--><path d="M434.15,276.8792 C432.04,302.1792 428.59,343.5592 426.31,370.9692 " fill="none" id="FFI_Frontend-to-FFI_Backend" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="425.87,376.2492,430.6015,367.6114,426.284,371.2664,422.629,366.9489,425.87,376.2492" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="432" y="322.2676">3.Bytes</text><!--MD5=[175a3fca11b12829f2a9fb8f2fc30fa8]
+link FFI_Backend to Module--><path d="M419.66,423.0092 C414.51,449.4492 405.93,493.5192 400.37,522.0892 " fill="none" id="FFI_Backend-to-Module" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="399.37,527.2392,405.0212,519.173,400.3286,522.332,397.1696,517.6393,399.37,527.2392" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="232" x="414" y="466.2676">4: Deserialize Event + ExportRequest</text><!--MD5=[99490c0f37cc8245679cd82b45289fb2]
+link Module to Module--><path d="M440.52,534.3492 C459.45,533.2192 475.5,538.6692 475.5,550.6992 C475.5,561.5992 462.32,567.0992 445.75,567.1992 " fill="none" id="Module-to-Module" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="440.52,567.0492,449.4142,571.2792,445.5183,567.1777,449.6198,563.2819,440.52,567.0492" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="194" x="481.5" y="555.7676">5. call export_handler function</text><!--MD5=[ac318f5def19bdc289960f0db3c3dcfa]
+@startuml FlowySDK
+title Protobuf Communication
+top to bottom direction
+'skinparam linetype polyline
+
+rectangle {
+    package "Front-end (Flutter)" #DDDDDD {
+        component Repository
+        component FFI_Frontend as "FFI" #FFDDDD
+    }
+    note left of Repository
+    class FolderEventExportDocument {
+        Future<Either<ExportData, FlowyError>> send() {
+            ...
+        }
+    }
+    end note
+
+    package "Back-end (Rust)" #DDDDDD {
+        component Module
+        component FFI_Backend as "FFI" #FFDDDD
+    }
+    note left of Module
+    pub(crate) async fn export_handler(
+        data: Data<ExportRequest>,
+        controller: Unit<Arc<ViewController>>,
+    ) -> DataResult<ExportData, FlowyError> {
+        ...
+    }
+    end note
+}
+
+Repository - -> Repository: 1.call send()
+Repository - -> FFI_Frontend: 2. Serialize Event + ExportRequest
+FFI_Frontend - -> FFI_Backend: 3.Bytes
+FFI_Backend - -> Module: 4: Deserialize Event + ExportRequest
+Module - -> Module : 5. call export_handler function
+
+'Module -[#green,dashed]> FFI_Backend
+'FFI_Backend -[#green,dashed]> FFI_Frontend
+'FFI_Frontend - -> Repository
+@enduml
+
+@startuml FlowySDK
+title Protobuf Communication
+top to bottom direction
+
+rectangle {
+    package "Front-end (Flutter)" #DDDDDD {
+        component Repository
+        component FFI_Frontend as "FFI" #FFDDDD
+    }
+    note left of Repository
+    class FolderEventExportDocument {
+        Future<Either<ExportData, FlowyError>> send() {
+            ...
+        }
+    }
+    end note
+
+    package "Back-end (Rust)" #DDDDDD {
+        component Module
+        component FFI_Backend as "FFI" #FFDDDD
+    }
+    note left of Module
+    pub(crate) async fn export_handler(
+        data: Data<ExportRequest>,
+        controller: Unit<Arc<ViewController>>,
+    ) -> DataResult<ExportData, FlowyError> {
+        ...
+    }
+    end note
+}
+
+Repository - -> Repository: 1.call send()
+Repository - -> FFI_Frontend: 2. Serialize Event + ExportRequest
+FFI_Frontend - -> FFI_Backend: 3.Bytes
+FFI_Backend - -> Module: 4: Deserialize Event + ExportRequest
+Module - -> Module : 5. call export_handler function
+
+@enduml
+
+PlantUML version 1.2022.0(Wed Jan 12 00:16:42 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

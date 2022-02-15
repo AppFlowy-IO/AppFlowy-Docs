@@ -103,26 +103,51 @@ Repository -[bold]up-> dart_pb
 
 Module -[bold]up-> rust_event
 Module -[bold]up-> rust_pb
-Repository -> Module
-note right of Repository
-class FolderEventExportDocument {
-    Future<Either<ExportData, FlowyError>> send() {
-        ...
-    }
-}
-end note
-
-note right of Module
-pub(crate) async fn export_handler(
-    data: Data<ExportRequest>,
-    controller: Unit<Arc<ViewController>>,
-) -> DataResult<ExportData, FlowyError> {
-    ...
-}
-end note
 @enduml
 
 
+@startuml FlowySDK
+title Protobuf Communication
+top to bottom direction
+'skinparam linetype polyline
+
+rectangle {
+    package "Front-end (Flutter)" #DDDDDD {
+        component Repository
+        component FFI_Frontend as "FFI" #FFDDDD
+    }
+    note left of Repository
+    class FolderEventExportDocument {
+        Future<Either<ExportData, FlowyError>> send() {
+            ...
+        }
+    }
+    end note
+
+    package "Back-end (Rust)" #DDDDDD {
+        component Module
+        component FFI_Backend as "FFI" #FFDDDD
+    }
+    note left of Module
+    pub(crate) async fn export_handler(
+        data: Data<ExportRequest>,
+        controller: Unit<Arc<ViewController>>,
+    ) -> DataResult<ExportData, FlowyError> {
+        ...
+    }
+    end note
+}
+
+Repository --> Repository: 1.call send()
+Repository --> FFI_Frontend: 2. Serialize Event + ExportRequest
+FFI_Frontend --> FFI_Backend: 3.Bytes
+FFI_Backend --> Module: 4: Deserialize Event + ExportRequest
+Module --> Module : 5. call export_handler function
+
+'Module -[#green,dashed]> FFI_Backend
+'FFI_Backend -[#green,dashed]> FFI_Frontend
+'FFI_Frontend --> Repository
+@enduml
 
 
 
