@@ -32,6 +32,8 @@
     * [Event Driven System](essential-documentation/contribute-to-appflowy/architecture/appflowy-event-driven-system.md)
     * [Editor](essential-documentation/contribute-to-appflowy/architecture/editor.md)
   * [📚 Technical Glossary](essential-documentation/contribute-to-appflowy/technical-glossary.md)
+  * [🔢 GSoC](essential-documentation/contribute-to-appflowy/gsoc/README.md)
+    * [Application](essential-documentation/contribute-to-appflowy/gsoc/application.md)
 
 ## Design Documentation
 
