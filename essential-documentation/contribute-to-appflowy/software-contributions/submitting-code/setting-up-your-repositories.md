@@ -59,4 +59,13 @@ The AppFlowy project repo is now referred to as "upstream" Your GitHub project i
 
 ![](https://github.com/AppFlowy-IO/appflowy/raw/main/doc/imgs/add\_remote\_repository.png)
 
+4. Install pre-commit
+    * We use `pre-commit` for convenience during development. This will run basic style checks when you commit your changes.
+
+    ```
+    pip install pre-commit --user
+    pre-commit install
+    pre-commit install --hook-type commit-msg
+    ```
+
 You're all setup! Now, it's time to start working on some code!
