@@ -50,7 +50,7 @@ flutter doctor
   * Call rustup.exe from powershell or cmd
 
 ```shell
-.\rustup-init.exe --default-toolchain nightly --default-host x86_64-pc-windows-msvc -y
+.\rustup-init.exe --default-toolchain stable --default-host x86_64-pc-windows-msvc -y
 ```
 
 * Install cargo make
@@ -60,7 +60,7 @@ You probably need to re-open your terminal to get the `cargo` command in your PA
 {% endhint %}
 
 ```shell
-cd appflowy/frontend
+cd AppFlowy/frontend
 ```
 
 ```shell
@@ -80,13 +80,6 @@ cargo install --force duckscript_cli
 ```shell
 cargo make flowy_dev
 ```
-
-* Install protobuf tool
-
-  Need to download protoc tools and add it's bin folder into PATH env var.
-  Download protoc from https://github.com/protocolbuffers/protobuf/releases. The latest one is protoc-3.19.1-win64.zip
-
-* \[Optional] Build flowy-sdk (dart-ffi), step 10 covers this step
 
 {% tabs %}
 {% tab title="Development" %}
@@ -137,20 +130,20 @@ cd app_flowy/product/0.0.2/windows/Debug/AppFlowy
 
 \[VS Code]
 
-1. Open the app\_flowy folder located at xx/appflowy/frontend/app\_flowy with VS Code.
+1. Open the app\_flowy folder located at xx/AppFlowy/frontend/app\_flowy with VS Code.
 2. Go to the Run and Debug tab and then click the run button.
 
 ![](<../../../../.gitbook/assets/image (1) (1).png>)
 
 ## Building in release mode
 
-1. Go to the appflowy/frontend/ directory.
+1. Go to the AppFlowy/frontend/ directory.
 2. Run the following command to create the binary.
 
 ```bash
 cargo make --profile production-windows-x86 appflowy
 ```
 
-The scripts are located in the appflowy/frontend/Makefile.toml file.
+The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
-The resulting binary file is located in `appflowy/frontend/app_flowy/product/x.x.x/Windows/Release/AppFlowy/`.
+The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/Windows/Release/AppFlowy/`.

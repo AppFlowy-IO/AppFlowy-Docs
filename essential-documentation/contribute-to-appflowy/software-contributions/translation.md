@@ -30,7 +30,7 @@ Translation files are located in : `frontend/app_flowy/assets/translations/`
         child: app),
     );    
     ```
-6. Add the name of your language, in your native tongue, to the list of language names in `appflowy/frontend/app_flowy/packages/flowy_infra/lib/language.dart`
+6. Add the name of your language, in your native tongue, to the list of language names in `AppFlowy/frontend/app_flowy/packages/flowy_infra/lib/language.dart`
     ```dart
     String languageFromLocale(Locale locale) {
       switch (locale.languageCode) {

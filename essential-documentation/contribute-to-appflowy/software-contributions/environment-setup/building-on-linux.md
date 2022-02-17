@@ -86,7 +86,7 @@ git clone https://github.com/AppFlowy-IO/appflowy.git
 * Change to the frontend directory
 
 ```bash
-cd appflowy/frontend
+cd AppFlowy/frontend
 ```
 
 * Install cargo make
@@ -160,20 +160,20 @@ cd app_flowy/product/0.0.2/linux/Debug/AppFlowy
 
 \[VS Code]
 
-1. Open the app\_flowy folder located at xx/appflowy/frontend/app\_flowy with VS Code.
+1. Open the app\_flowy folder located at xx/AppFlowy/frontend/app\_flowy with VS Code.
 2. Go to the Run and Debug tab and then click the run button.
 
 ![](<../../../../.gitbook/assets/image (1) (1).png>)
 
 ## Building in release mode
 
-1. Go to the appflowy/frontend/ directory.
+1. Go to the AppFlowy/frontend/ directory.
 2. Run the following command to create the binary.
 
 ```bash
 cargo make --profile production-linux-x86 appflowy
 ```
 
-The scripts are located in the appflowy/frontend/Makefile.toml file.
+The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
-The resulting binary file is located in `appflowy/frontend/app_flowy/product/x.x.x/linux/Release/AppFlowy/`.
+The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/linux/Release/AppFlowy/`.

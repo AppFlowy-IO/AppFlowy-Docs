@@ -23,7 +23,7 @@ Skip install\_rust or install\_cargo\_make if you already installed it.
 {% endhint %}
 
 ```shell
-cd appflowy/frontend
+cd AppFlowy/frontend
 ```
 
 ```shell
@@ -50,7 +50,7 @@ flutter config --enable-macos-desktop
 
 ## **Step 4: Edit and run the application**
 
-* Open the `app_flowy` folder located at xx/appflowy/frontend with VS Code.
+* Open the `app_flowy` folder located at xx/AppFlowy/frontend with VS Code.
 * Go to the Run and Debug tab and then click the run button.
 
 ![](../../../../.gitbook/assets/image.png)
@@ -59,7 +59,7 @@ flutter config --enable-macos-desktop
 
 ## Building in release mode
 
-1. Go to the appflowy/frontend/ directory.
+1. Go to the AppFlowy/frontend/ directory.
 2. Run the following command to build the binary depending on your architecture.
 
 {% tabs %}
@@ -76,8 +76,8 @@ cargo make --profile production-mac-aarch64 appflowy
 {% endtab %}
 {% endtabs %}
 
-The scripts are located in the appflowy/frontend/Makefile.toml file.
+The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
-The resulting binary file is located in `appflowy/frontend/app_flowy/product/x.x.x/[OS]/Release/AppFlowy/`.
+The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/[OS]/Release/AppFlowy/`.
 
 * If you encounter any issues, have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
