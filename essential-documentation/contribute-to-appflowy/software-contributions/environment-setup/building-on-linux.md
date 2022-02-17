@@ -38,6 +38,7 @@ yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
+rustup toolchain install stable
 rustup default stable
 ```
 
