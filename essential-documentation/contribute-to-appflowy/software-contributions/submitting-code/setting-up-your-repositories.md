@@ -58,5 +58,21 @@ git remote add upstream https://github.com/AppFlowy-IO/appflowy.git
 The AppFlowy project repo is now referred to as "upstream" Your GitHub project is now referred to as "origin"
 
 ![](https://github.com/AppFlowy-IO/appflowy/raw/main/doc/imgs/add\_remote\_repository.png)
+4. Configure commitlint
+
+    * We use [commitlint](https://commitlint.js.org/#/./?id=getting-started) to check the commit message style. If you want to use commitlint on local, follow these two steps.
+    * Install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+    * Go to the project root directory: /appflowy, run **`cargo make install-commitlint`** or you can install it manually.
+    * The commit message consists of `type`:`subject`
+        * type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
+        * subject is the commit message
+
+    * For example:
+
+    ```shell
+    git commit -m "fix: do something"
+    git commit -m "feat: do something"
+    git commit -m "refactor: do something"
+    ```
 
 You're all setup! Now, it's time to start working on some code!

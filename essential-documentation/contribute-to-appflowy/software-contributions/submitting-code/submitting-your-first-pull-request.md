@@ -97,32 +97,6 @@ git push origin fix_setup_page_180
 
 #### Return to Work on your code :)
 
-### Commit message guidelines
-1. Install commitlint
-
-    We use [commitlint](https://commitlint.js.org/#/./?id=getting-started) to check the commit message style. If you want to use commitlint on local, follow these two steps.
-
-    1. install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
-    2. Go to the project root directory: /appflowy, run **`cargo make install-commitlint`**
-
-    or you can install it manually.
-
-2. Commit message
-
-    The commit message consists of `type`:`subject`
-    * type must be one of [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
-    * subject is the commit message
-
-    **For example:**
-    * git commit -m "fix: do something"
-    * git commit -m "feat: do something"
-    * git commit -m "refactor: do something"
-
-3. Alter commit message
-
-    You could use [git rebase](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) to alter the commit message if you have multiple commit messages.
-
-
 ### Push commits to your repository
 
 When you have completed your code changes, you can now push your code to your origin repository.
