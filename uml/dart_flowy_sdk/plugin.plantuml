@@ -1,0 +1,42 @@
+@startuml
+title Plugin System
+left to right direction
+skinparam linetype polyline
+
+package "Plugin-Sandbox"  #DDDDDD {
+    component [Plugin Script] as plugin_script #F7931E
+    component [Plugin Proxy] as plugin_proxy #F7931E
+    component [Plugin Service] as plugin_service #F7931E
+
+    node "Plugin Runner" as plugin_runner {
+       component [iOS] #0CA789
+       component [Android] #0CA789
+       component [Linux] #0CA789
+       component [macOS] #0CA789
+       component [Windows] #0CA789
+       component [Web] #0CA789
+    }
+}
+
+package Plugin-Host #DDDDDD {
+    package "Front-end (Flutter)" {
+        component [Plugin API] as plugin_api #F7931E
+        component [Plugin Repository] as plugin_repo #00B5FF
+    }
+
+    package "Back-end (Rust)" {
+        node "Plugin Module" as plugin_module #00B5FF {
+            component [Plugin Event] as plugin_event #00B5FF
+            component [Plugin Service] as plugin_rust_service #00B5FF
+        }
+    }
+}
+
+plugin_runner ..> plugin_service
+plugin_service .> plugin_script
+plugin_script .> plugin_proxy
+plugin_proxy ..> plugin_api
+plugin_api ..> plugin_repo
+plugin_repo ..> plugin_event : FFI
+plugin_event .> plugin_rust_service
+@enduml
