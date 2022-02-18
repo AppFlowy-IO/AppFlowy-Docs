@@ -1,4 +1,4 @@
-# 🍔 Domain Driven Design
+# Domain Driven Design
 
 For many architects, the process of data modeling is driven by intuition. However, there are well-formulated methodologies for approaching it more formally. We chose [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven\_design) for AppFlowy's architecture.
 

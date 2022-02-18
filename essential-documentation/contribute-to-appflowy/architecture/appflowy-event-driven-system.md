@@ -1,4 +1,4 @@
-# 🥳 Event Driven System
+# Event Driven System
 
 ## :dart: Goals of the System
 
