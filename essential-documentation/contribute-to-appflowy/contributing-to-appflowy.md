@@ -45,6 +45,33 @@ So you want to submit code, documentation, or graphical expertise? Welcome to th
   * (WIP: guidelines)
   * (WIP: Code Style)
 
+### Your First Codebase Contribution
+
+This section has a step-by-step guide to starting as an AppFlowy codebase contributor. Don’t worry if you make mistakes in your first contribution; no one gets it right the first time.
+
+* First, make an account on the [AppFlowy community server](https://discord.gg/9Q2xaN37tV), and pay attention to the community norms.
+* Set up your [AppFlowy development environment](software-contributions/environment-setup/), getting help [on the forum](https://github.com/AppFlowy-IO/appflowy/discussions) or in #general on [the community server](https://discord.gg/9Q2xaN37tV).
+* Familiarize yourself with using the development environment
+* Check out [How we built AppFlowy with Flutter and Rust](https://blog-appflowy.ghost.io/tech-design-flutter-rust/)
+* Read the [Submitting Code](software-contributions/submitting-code/) guide if you are new to GitHub or development in general
+* Now you are ready to pick your first issue
+
+#### Where to look for your first issue
+
+* You can look through issues tagged with the “good first issue for devs” label, which is used to indicate the issues that are especially approachable for new contributors.&#x20;
+* We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
+* In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
+
+#### Claim an issue
+
+* Post a comment to the issue thread that you would like to claim. @annieappflowy will assign you to the issue and label the issue as “in progress”.
+* New contributors can only claim one issue until their first pull request is merged. This is to encourage folks to finish ongoing work before starting something new.&#x20;
+
+#### Working on an issue
+
+* We encourage early pull requests for work in progress.&#x20;
+* It's normal and totally ok if your first PR takes you a while.&#x20;
+
 ## Sponsor
 
 Sponsoring is another great way to contribute to the community.
