@@ -38,6 +38,7 @@
     * [Contributor Guidance](essential-documentation/contribute-to-appflowy/gsoc/contributor-guidance.md)
     * [Proposal Template](essential-documentation/contribute-to-appflowy/gsoc/proposal-template.md)
   * [RFC](essential-documentation/contribute-to-appflowy/rfc/README.md)
+    * [Branch strategy](essential-documentation/contribute-to-appflowy/rfc/branch-strategy.md)
     * [Plugin System Design](essential-documentation/contribute-to-appflowy/rfc/plugin-system-design.md)
 
 ## Design Documentation
