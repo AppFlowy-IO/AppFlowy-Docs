@@ -60,7 +60,9 @@ Users write pages in AppFlowy. We’d like to have a search function for them to
 
 People should be able to share their best practices via templates with others. We’d like to enable users to quickly set up a page by using a template and get inspiration from community templates.&#x20;
 
-* Expected Outcome: A template center that allows users to view and clone a template into their workspace A system that allows people to propose a new template that can be added to the template center&#x20;
+* Expected Outcome:&#x20;
+  * A template center that allows users to view and clone a template into their workspace&#x20;
+  * A system that allows people to propose a new template that can be added to the template center&#x20;
 * Difficulty: Medium&#x20;
 * Skills Required: Flutter, Rust&#x20;
 * Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
@@ -97,7 +99,7 @@ We consider binary size as an important metric, although it is easy to overlook.
 
 It takes almost 20 minutes to build the AppFlowy release package. It would be nice if we can speed it up using GitHub cache or matrix.&#x20;
 
-* Expected Outcome: The cost of the time of the PR’s GitHub actions should be reduced&#x20;
+* Expected Outcome: the cost of the time of the PR’s GitHub actions should be reduced&#x20;
 * Difficulty: Easy/Medium
 * Skills Required: Flutter, Rust, GitHub API&#x20;
 * Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)&#x20;
@@ -108,9 +110,11 @@ It takes almost 20 minutes to build the AppFlowy release package. It would be ni
 
 **1. Tracing performance regressions**
 
-Performance could become a key differentiator for AppFlowy. We’d like to keep tracking it.To track it, we need to come up with a metric system. The system includes a set of metrics and a running process that collects results and persists them for analysis.&#x20;
+Performance could become a key differentiator for AppFlowy. We’d like to keep tracking it. To track it, we need to come up with a metric system. The system includes a set of metrics and a running process that collects results and persists them for analysis.&#x20;
 
-* Expected Outcome: A metric system that measures the performance of AppFlowy A working tool that collect results and persists them for analysis&#x20;
+* Expected Outcome:&#x20;
+  * A metric system that measures the performance of AppFlowy&#x20;
+  * A working tool that collect results and persists them for analysis&#x20;
 * Difficulty: Medium / High&#x20;
 * Skills Required: Rust&#x20;
 * Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong)
