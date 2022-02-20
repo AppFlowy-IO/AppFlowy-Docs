@@ -1,17 +1,5 @@
 # Application
 
-## Organization Description&#x20;
-
-Describe what it is your organization does. This information will also be included in the archive once the program has ended.
-
-https://www.appflowy.io/
-
-AppFlowy is an open-source no-code platform for your wikis, notes, tasks, and more, available for Windows, macOS, and Linux. It is built with Flutter and Rust. You are in charge of your data and customizations.
-
-AppFlowy started as an open-source side project built from the ground up by a single developer; afterward, it was maintained by a team of two. Since its GitHub launch in November 2021, it has accumulated more than 17,000 stars and 18,000 downloads. It also has fostered an engaged community of more than 1,000 builders.
-
-AppFlowy is built for teams and individuals that need more control and flexibility. You have 100% control of your data. You can host AppFlowy wherever you want: there’s no vendor lock-in. It offers unlimited customizations. You can design and modify AppFlowy your way with an open core codebase. It is built with Flutter and Rust. What does this mean? Faster development, a better native experience, and more reliable performance. Better still, we are community-driven. We work with our community to collaboratively create apps that suit others’ needs by developing a versatile toolbox of plugins, templates, and more. Join us as we build a toolbox that empowers anyone to create their own system. With us, you can play and tweak without a glass ceiling on what’s possible.
-
 ## Why does your organization want to participate in Google Summer of Code?
 
 Participating in Google Summer of Code (GSoC) is a great opportunity for us to develop AppFlowy’s community and give back to the broader open-source community. By providing a platform that connects contributors around the world to open source projects, GSoC will help us gain more exposure in the open-source community and identify and bring in new developers to our community. Meanwhile, we will help newbies integrate into the open-source world and make them more competitive in the job market by offering real-world software development opportunities, high-demand technology stack including Flutter and Rust, and effective mentorship from veteran developers.

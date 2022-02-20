@@ -1,0 +1,123 @@
+@startuml FlowySDK
+title Initialization
+[-> main
+main -> FlowyRunner ++ : Call run
+box " 1.InitRustSDKTask "
+FlowyRunner -> FlowySDK ++: initialize
+FlowySDK -> FlowySDK: Call init
+FlowySDK -> FlowyRunner --
+end box
+
+
+box " 2.InitAppWidgetTask "
+FlowyRunner -> ApplicationWidget ++: initialize
+ApplicationWidget -> ApplicationWidget: runApp
+ApplicationWidget -> FlowyRunner --
+end box
+
+
+box " 3.InitPlatformServiceTask "
+FlowyRunner -> NetworkListener ++: initialize
+NetworkListener -> NetworkListener: start
+NetworkListener -> FlowyRunner --
+end box
+
+@enduml
+
+
+
+
+@startuml FlowySDK
+title AppFlowy Application
+top to bottom direction
+skinparam linetype ortho
+
+package "Front-end (Flutter)"  {
+    node User as "User" #F7931E {
+        component [user_p] as "Presentation layer" #DDDDDD
+    }
+    node Folder as "Folder"  #00B5FF {
+        component [folder_p] as "Presentation layer" #DDDDDD
+    }
+}
+
+package "FlowySDK (Back-end)"  {
+    node Flowy_user as "User" #F7931E {
+        component [flowy_user_a] as "Application layer" #DDDDDD
+        component [flowy_user_d] as "Domain layer" #DDDDDD
+        component [flowy_user_i] as "Infrastructure layer" #DDDDDD
+    }
+    node Flowy_folder as "Folder" #00B5FF {
+        component [flowy_folder_a] as "Application layer" #DDDDDD
+        component [flowy_folder_d] as "Domain layer" #DDDDDD
+        component [flowy_folder_i] as "Infrastructure layer" #DDDDDD
+    }
+
+}
+
+folder_p ..> flowy_folder_a
+user_p ..> flowy_user_a
+
+flowy_folder_a ..> flowy_folder_d
+flowy_folder_a ..> flowy_folder_i
+flowy_folder_d <.. flowy_folder_i
+
+
+flowy_user_a ..> flowy_user_d
+flowy_user_a ..> flowy_user_i
+flowy_user_d <.. flowy_user_i
+
+@enduml
+
+@startuml FlowySDK
+title AppFlowy Application
+top to bottom direction
+skinparam linetype ortho
+
+package "Front-end (Flutter)"  {
+    node User as "User" #F7931E {
+        component [user_p] as "Presentation layer" #DDDDDD
+    }
+    node Folder as "Folder"  #00B5FF {
+        component [folder_p] as "Presentation layer" #DDDDDD
+    }
+    node FFI_Frontend as "FFI" #FB006D
+}
+
+
+package "Back-end (Rust)"  {
+    node FFI_Backend as "FFI" #FB006D
+
+    node flowy_dispatcher as "Dispatcher" {
+    }
+
+    node Flowy_user as "User" #F7931E {
+        component [flowy_user_a] as "Application layer" #DDDDDD
+        component [flowy_user_d] as "Domain layer" #DDDDDD
+        component [flowy_user_i] as "Infrastructure layer" #DDDDDD
+    }
+    node Flowy_folder as "Folder" #00B5FF {
+        component [flowy_folder_a] as "Application layer" #DDDDDD
+        component [flowy_folder_d] as "Domain layer" #DDDDDD
+        component [flowy_folder_i] as "Infrastructure layer" #DDDDDD
+    }
+}
+
+folder_p ..> FFI_Frontend : FolderEvent
+user_p ..> FFI_Frontend : UserEvent
+
+FFI_Frontend ..> FFI_Backend : Bytes
+FFI_Backend ..> flowy_dispatcher
+
+flowy_folder_a <.. flowy_dispatcher: FolderEvent
+flowy_user_a <.. flowy_dispatcher : UserEvent
+
+flowy_folder_a ..> flowy_folder_d
+flowy_folder_a ..> flowy_folder_i
+flowy_folder_d <.. flowy_folder_i
+
+
+flowy_user_a ..> flowy_user_d
+flowy_user_a ..> flowy_user_i
+flowy_user_d <.. flowy_user_i
+@enduml
