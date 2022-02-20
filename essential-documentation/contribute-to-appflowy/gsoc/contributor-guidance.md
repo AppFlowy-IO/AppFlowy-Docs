@@ -52,8 +52,8 @@ Calendars are a great way to visualize how things connect to certain dates from 
 Users write pages in AppFlowy. We’d like to have a search function for them to easily retrieve information from their wikis or notes.&#x20;
 
 * Expected Outcome: a search function that allows users to search pages based on keywords&#x20;
-* Difficulty: High Skills&#x20;
-* Required: Flutter, Rust&#x20;
+* Difficulty: High&#x20;
+* Skills Required: Flutter, Rust&#x20;
 * Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
 
 **3. Template**&#x20;
@@ -72,7 +72,8 @@ People should be able to share their best practices via templates with others. W
 Favoriting a page allows users to quickly access it without searching it or clicking through nesting pages.&#x20;
 
 * Expected Outcome: the user can favorite a page and access it via a “Favorites” section that resides in the navigation panel.&#x20;
-* Difficulty: Medium Skills Required: Flutter, Rust&#x20;
+* Difficulty: Medium&#x20;
+* Skills Required: Flutter, Rust&#x20;
 * Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)
 
 **5. Page history**&#x20;
@@ -80,8 +81,8 @@ Favoriting a page allows users to quickly access it without searching it or clic
 AppFlowy users might want to go back to a previous version of a page, and we’d like to enable page history so that they can do so.&#x20;
 
 * Expected Outcome: the user can restore a page to a previous version through “Page history”&#x20;
-* Difficulty: High Skills&#x20;
-* Required: Flutter, Rust&#x20;
+* Difficulty: High&#x20;
+* Skills Required: Flutter, Rust&#x20;
 * Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
 
 ### CI tools&#x20;
@@ -91,7 +92,7 @@ AppFlowy users might want to go back to a previous version of a page, and we’d
 We consider binary size as an important metric, although it is easy to overlook. We would like to create some GitHub integrations that would automatically do a release build of a new PR and report the difference in binary size between that PR and the current main branch.&#x20;
 
 * Expected Outcome: an easy-to-use tool to report binary size&#x20;
-* Difficulty: Easy/Medium
+* Difficulty: Easy / Medium
 * Skills Required: Flutter, Rust, GitHub API&#x20;
 * Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)
 
@@ -100,7 +101,7 @@ We consider binary size as an important metric, although it is easy to overlook.
 It takes almost 20 minutes to build the AppFlowy release package. It would be nice if we can speed it up using GitHub cache or matrix.&#x20;
 
 * Expected Outcome: the cost of the time of the PR’s GitHub actions should be reduced&#x20;
-* Difficulty: Easy/Medium
+* Difficulty: Easy / Medium
 * Skills Required: Flutter, Rust, GitHub API&#x20;
 * Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)&#x20;
 
