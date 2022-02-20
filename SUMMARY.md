@@ -36,6 +36,7 @@
   * [🔢 GSoC](essential-documentation/contribute-to-appflowy/gsoc/README.md)
     * [Application](essential-documentation/contribute-to-appflowy/gsoc/application.md)
     * [Contributor Guidance](essential-documentation/contribute-to-appflowy/gsoc/contributor-guidance.md)
+    * [Proposal Template](essential-documentation/contribute-to-appflowy/gsoc/proposal-template.md)
   * [RFC](essential-documentation/contribute-to-appflowy/rfc/README.md)
     * [Plugin System Design](essential-documentation/contribute-to-appflowy/rfc/plugin-system-design.md)
 
