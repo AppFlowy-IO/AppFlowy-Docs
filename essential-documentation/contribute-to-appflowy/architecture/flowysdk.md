@@ -10,8 +10,24 @@ FlowySDK works as the AppFlowy application Back-end. It will be initialized befo
    ```dart
     getIt<FlowySDK>().init(directory)
     ``` 
-4. `InitAppWidgetTask` initialize the `ApplicationWidget` and call `runApp` function.
-5. `InitPlatformServiceTask` start the `NetworkListener`.
+   The directory is different according to the IntegrationMode, which means running AppFlowy on
+   developing mode will not alter the data on release mode. 
+   1. IntegrationMode.release
+   ```dart
+    Directory documentsDir = await getApplicationDocumentsDirectory();
+    final directory = Directory('${documentsDir.path}/flowy')
+    ``` 
+   2. IntegrationMode.develop
+   ```dart
+    Directory documentsDir = await getApplicationDocumentsDirectory();
+    final directory = Directory('${documentsDir.path}/flowy_dev')
+    ``` 
+   3. IntegrationMode.test
+   ```dart
+    final directory = Directory("${Directory.current.path}/.sandbox")
+    ```
+5. `InitAppWidgetTask` initialize the `ApplicationWidget` and call `runApp` function.
+6. `InitPlatformServiceTask` start the `NetworkListener`.
 
 
 
