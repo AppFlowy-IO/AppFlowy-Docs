@@ -12,7 +12,7 @@ AppFlowy is built for teams and individuals that need more control and flexibili
 
 ## Getting Started&#x20;
 
-Please use our [first-time AppFlowy developer guide](https://github.com/annieappflowy) to get your AppFlowy development environment set up and find your first issue. If you have any trouble, please ask on our community channel.
+Please use our [first-time AppFlowy developer guide](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/contributing-to-appflowy#your-first-codebase-contribution) to get your AppFlowy development environment set up and find your first issue. If you have any trouble, please ask on our community channel.
 
 GSoC applicants are required to complete an issue tagged with the [“good first issue for devs” ](https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue%20for%20devs)in order to be selected. This requires you to get familiar with our codebase and demonstrates your interest in contributing to AppFlowy. Don’t worry if you make mistakes in your first contribution. Instead, please see it as a great opportunity to get involved in our community, receive feedback, and iterate your work - a flavor of doing GSoC with AppFlowy.
 
