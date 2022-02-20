@@ -1,4 +1,4 @@
-# FlowySDK (WIP)
+# FlowySDK
 
 FlowySDK works as the AppFlowy application Back-end. It will be initialized before the application launch. Check out the initialization sequence diagram shown below.
 
@@ -31,4 +31,4 @@ FlowySDK works as the AppFlowy application Back-end. It will be initialized befo
 
 
 
-
+typing... (WIP)
