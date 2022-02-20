@@ -58,7 +58,7 @@ This section has a step-by-step guide to starting as an AppFlowy codebase contri
 
 #### Where to look for your first issue
 
-* You can look through issues tagged with the “good first issue for devs” label, which is used to indicate the issues that are especially approachable for new contributors.&#x20;
+* You can look through issues tagged with the [“good first issue for devs”](https://github.com/AppFlowy-IO/AppFlowy/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue+for+devs%22) label, which is used to indicate the issues that are especially approachable for new contributors.&#x20;
 * We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
 * In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
 
