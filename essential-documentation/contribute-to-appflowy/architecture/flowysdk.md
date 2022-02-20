@@ -10,7 +10,7 @@ FlowySDK works as the AppFlowy application Back-end. It will be initialized befo
    ```dart
     getIt<FlowySDK>().init(directory)
     ``` 
-   The directory is different according to the IntegrationMode, which means running AppFlowy on
+   The directory is different according to the `IntegrationMode`, which means running AppFlowy on
    developing mode will not alter the data on release mode. 
    1. IntegrationMode.release
    ```dart
@@ -30,5 +30,5 @@ FlowySDK works as the AppFlowy application Back-end. It will be initialized befo
 6. `InitPlatformServiceTask` start the `NetworkListener`.
 
 
-
-typing... (WIP)
+## WIP
+typing...💬️
