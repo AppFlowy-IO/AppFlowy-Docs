@@ -31,7 +31,8 @@ We will establish upfront guidelines for mentors, set up a private communication
 
 * How we select GSoC mentors and contributors&#x20;
 * The schedule and format for GSoC contributor project updates&#x20;
-* Mentor time involvement per phase of GSoC Communication best practices Mentor administrative responsibilities&#x20;
+* Mentor time involvement per phase of GSoC Communication best practices&#x20;
+* Mentor administrative responsibilities&#x20;
 * Decision process for determining if a GSoC contributor should pass or fail
 
 We will reward and recognize good mentors&#x20;
