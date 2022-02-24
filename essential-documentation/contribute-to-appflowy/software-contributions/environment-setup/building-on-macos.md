@@ -50,8 +50,11 @@ flutter config --enable-macos-desktop
 
 ## **Step 4: Edit and run the application**
 
-* Open the `app_flowy` folder located at xx/AppFlowy/frontend with VS Code.
-* Go to the Run and Debug tab and then click the run button.
+1. Open the `app_flowy` folder located at xx/AppFlowy/frontend with VS Code.
+
+2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy_localization). Pressing ⇧⌘B or running Run Build Task from the global Terminal menu.
+
+3. Go to the Run and Debug tab and then click the run button.
 
 ![](../../../../.gitbook/assets/image.png)
 

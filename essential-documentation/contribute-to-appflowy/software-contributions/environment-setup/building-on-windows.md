@@ -131,7 +131,10 @@ cd app_flowy/product/0.0.2/windows/Debug/AppFlowy
 \[VS Code]
 
 1. Open the app\_flowy folder located at xx/AppFlowy/frontend/app\_flowy with VS Code.
-2. Go to the Run and Debug tab and then click the run button.
+
+2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy_localization). Pressing `Ctrl+Shift+B` or running Run Build Task from the global Terminal menu.
+
+3. Go to the Run and Debug tab and then click the run button.
 
 ![](<../../../../.gitbook/assets/image (1) (1).png>)
 
