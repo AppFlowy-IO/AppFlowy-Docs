@@ -1,27 +1,20 @@
-@startuml
-title Plugin System
+@startuml AppFlowy
+title Plugin Design
 left to right direction
 skinparam linetype polyline
 
 package "Plugin-Sandbox"  #DDDDDD {
-    component [Plugin Script] as plugin_script #F7931E
+    component [Plugin API] as plugin_api #F7931E
     component [Plugin Proxy] as plugin_proxy #F7931E
     component [Plugin Service] as plugin_service #F7931E
-
-    node "Plugin Runner" as plugin_runner {
-       component [iOS] #0CA789
-       component [Android] #0CA789
-       component [Linux] #0CA789
-       component [macOS] #0CA789
-       component [Windows] #0CA789
-       component [Web] #0CA789
-    }
+    component [Plugin Runner] as plugin_runner #F7931E
+    component [Plugin] as plugin #F7931E
 }
 
 package Plugin-Host #DDDDDD {
     package "Front-end (Flutter)" {
-        component [Plugin API] as plugin_api #F7931E
         component [Plugin Repository] as plugin_repo #00B5FF
+        component [Flowy Document] as document #00B5FF
     }
 
     package "Back-end (Rust)" {
@@ -33,10 +26,152 @@ package Plugin-Host #DDDDDD {
 }
 
 plugin_runner ..> plugin_service
-plugin_service .> plugin_script
-plugin_script .> plugin_proxy
-plugin_proxy ..> plugin_api
+plugin_service .> plugin
+plugin .> plugin_proxy
+plugin_proxy .> plugin_api
 plugin_api ..> plugin_repo
 plugin_repo ..> plugin_event : FFI
 plugin_event .> plugin_rust_service
+
+plugin --o document
+@enduml
+
+
+@startuml AppFlowy
+title Plugins
+left to right direction
+skinparam linetype polyline
+
+component FlowyDocument #00B5FF
+
+component FlutterQuillPlugin as text_plugin #0CA789 {
+}
+
+component GridPlugin as grid_plugin #0CA789 {
+}
+
+component CalendarPlugin as cal_plugin #0CA789 {
+}
+
+component KanbanPlugin as kanban_plugin #0CA789 {
+}
+
+component Plugin as plugin #F7931E {
+}
+
+plugin --o FlowyDocument
+
+text_plugin ..|> plugin
+grid_plugin ..|> plugin
+cal_plugin ..|> plugin
+kanban_plugin ..|> plugin
+@enduml
+
+
+@startuml AppFlowy
+title Plugin Classes
+left to right direction
+skinparam linetype polyline
+
+interface PluginAPI {
+   fn set_data(data: PluginData);
+   fn get_data() -> PluginData;
+}
+class PluginRepository
+class PluginProxy
+class PluginService
+class Plugin {
+}
+class FlutterQuillPlugin
+class GridQuillPlugin
+
+FlutterQuillPlugin --|> Plugin
+GridQuillPlugin --|> Plugin
+
+class PluginRunner
+class MacOSPluginRunner
+class iOSPluginRunner
+class WebPluginRunner
+
+MacOSPluginRunner --|> PluginRunner
+iOSPluginRunner --|> PluginRunner
+WebPluginRunner --|> PluginRunner
+
+PluginRunner -> PluginService
+PluginService -> Plugin
+Plugin -> PluginProxy
+PluginProxy -> PluginAPI
+PluginAPI <|.. PluginRepository
+
+
+
+
+
+
+@enduml
+
+
+@startuml
+node "Plugin Runner" as plugin_runner {
+   component [iOS] #F7931E
+   component [Android] #F7931E
+   component [Linux] #F7931E
+   component [macOS] #F7931E
+   component [Windows] #F7931E
+   component [Web] #F7931E
+}
+
+node Plugins #DDDDDD {
+    component "FlutterQuill" #FB006D
+    component "Kanban" #FB006D
+    component "Grid" #FB006D
+    component "Calendar" #FB006D
+}
+
+package FlowyDocument #00B5FF [
+        Plugin
+    ....
+        Plugin
+    ....
+        Plugin
+    ....
+        Plugin
+]
+
+@enduml
+
+
+@startuml AppFlowy
+title Plugin Design2
+left to right direction
+skinparam linetype polyline
+
+package "Front-end (Flutter)" #DDDDDD {
+    component [Plugin Repository] as plugin_repo #00B5FF
+    component [Flowy Document] as document #00B5FF
+    node "Plugin-Sandbox"  {
+        component [Plugin API] as plugin_api #F7931E
+        component [Plugin Proxy] as plugin_proxy #F7931E
+        component [Plugin Service] as plugin_service #F7931E
+        component [Plugin Runner] as plugin_runner #F7931E
+        component [Plugin] as plugin #F7931E
+    }
+}
+
+package "Back-end (Rust)" #DDDDDD {
+    node "Plugin Module" as plugin_module #00B5FF {
+        component [Plugin Event] as plugin_event #00B5FF
+        component [Plugin Service] as plugin_rust_service #00B5FF
+    }
+}
+
+plugin_runner ..> plugin_service
+plugin_service .> plugin
+plugin .> plugin_proxy
+plugin_proxy .> plugin_api
+plugin_api ..> plugin_repo
+plugin_repo ..> plugin_event : FFI
+plugin_event .> plugin_rust_service
+
+plugin --o document
 @enduml

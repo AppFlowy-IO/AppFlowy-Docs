@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="331px" preserveAspectRatio="none" style="width:533px;height:331px;background:#FFFFFF;" version="1.1" viewBox="0 0 533 331" width="533px" zoomAndPan="magnify"><defs><filter height="300%" id="f141hp7zmz800y" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="62" x="229" y="17.4023">Plugins</text><!--MD5=[354ff845666e62c55d6a01dcbd3c3501]
+entity text_plugin--><rect fill="#0CA789" filter="url(#f141hp7zmz800y)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="160" x="7" y="28.1992"/><rect fill="#0CA789" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="147" y="33.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="145" y="35.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="145" y="39.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="22" y="61.7344">FlutterQuillPlugin</text><!--MD5=[bfc9f4f387cc860078e12b0a9c964a54]
+entity grid_plugin--><rect fill="#0CA789" filter="url(#f141hp7zmz800y)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="112" x="31" y="109.1992"/><rect fill="#0CA789" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="123" y="114.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="121" y="116.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="121" y="120.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="46" y="142.7344">GridPlugin</text><!--MD5=[1ea022d9983d9969ffbc7735ad5b95f0]
+entity cal_plugin--><rect fill="#0CA789" filter="url(#f141hp7zmz800y)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="145" x="14.5" y="190.1992"/><rect fill="#0CA789" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="139.5" y="195.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="137.5" y="197.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="137.5" y="201.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="29.5" y="223.7344">CalendarPlugin</text><!--MD5=[ef198de94216d44355f4d255446cfbb2]
+entity kanban_plugin--><rect fill="#0CA789" filter="url(#f141hp7zmz800y)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="135" x="19.5" y="271.1992"/><rect fill="#0CA789" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="134.5" y="276.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="132.5" y="278.1992"/><rect fill="#0CA789" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="132.5" y="282.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="34.5" y="304.7344">KanbanPlugin</text><!--MD5=[8e6a9284dc1da0ef8b54fdd8dc5bfba7]
+entity plugin--><rect fill="#F7931E" filter="url(#f141hp7zmz800y)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="83" x="227" y="150.1992"/><rect fill="#F7931E" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="290" y="155.1992"/><rect fill="#F7931E" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="288" y="157.1992"/><rect fill="#F7931E" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="288" y="161.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="242" y="183.7344">Plugin</text><!--MD5=[4ae24e0d16fdec9c103c39efdfb8c337]
+entity FlowyDocument--><rect fill="#00B5FF" filter="url(#f141hp7zmz800y)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="149" x="370" y="150.1992"/><rect fill="#00B5FF" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="499" y="155.1992"/><rect fill="#00B5FF" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="497" y="157.1992"/><rect fill="#00B5FF" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="497" y="161.1992"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="385" y="183.7344">FlowyDocument</text><!--MD5=[7601e2b8e380f229fad17ad78a16ce14]
+link plugin to FlowyDocument--><path d="M310.3,173.1992 C324.32,173.1992 340.61,173.1992 356.88,173.1992 " fill="none" id="plugin-to-FlowyDocument" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="369.88,173.1992,363.88,169.1992,357.88,173.1992,363.88,177.1992,369.88,173.1992" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e40dbfe7a3c4a37114c03e1194494a56]
+link text_plugin to plugin--><path d="M133.5,74.2392 C151.06,83.1292 167,91.1992 167,91.1992 C167,91.1992 196.43,115.2092 223.44,137.2492 " fill="none" id="text_plugin-to-plugin" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="228.17,132.0692,239.24,150.1392,219.32,142.9192,228.17,132.0692" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[119d7410f784356dbb67f6e5e7928ea4]
+link grid_plugin to plugin--><path d="M143.32,144.8392 C163.56,149.4592 186.56,154.7092 207.21,159.4292 " fill="none" id="grid_plugin-to-plugin" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="208.96,152.6492,226.9,163.9292,205.84,166.2992,208.96,152.6492" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7f7c88a6e9420258d59038dbad2494a2]
+link cal_plugin to plugin--><path d="M159.72,197.2192 C175.43,193.7192 191.91,190.0492 207.12,186.6592 " fill="none" id="cal_plugin-to-plugin" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="205.84,179.7692,226.89,182.2492,208.89,193.4292,205.84,179.7692" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3aa0f2fe828db15cc20cc01071d4b7f1]
+link kanban_plugin to plugin--><path d="M132.58,271.0592 C150.5,261.7592 167,253.1992 167,253.1992 C167,253.1992 195.9,230.1892 222.71,208.8592 " fill="none" id="kanban_plugin-to-plugin" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="218.42,203.3192,238.43,196.3392,227.14,214.2692,218.42,203.3192" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3c6d15fa7d9a4d07ca9e5455419e5c04]
+@startuml AppFlowy
+title Plugins
+left to right direction
+skinparam linetype polyline
+
+component FlowyDocument #00B5FF
+
+component FlutterQuillPlugin as text_plugin #0CA789 {
+}
+
+component GridPlugin as grid_plugin #0CA789 {
+}
+
+component CalendarPlugin as cal_plugin #0CA789 {
+}
+
+component KanbanPlugin as kanban_plugin #0CA789 {
+}
+
+component Plugin as plugin #F7931E {
+}
+
+plugin - -o FlowyDocument
+
+text_plugin ..|> plugin
+grid_plugin ..|> plugin
+cal_plugin ..|> plugin
+kanban_plugin ..|> plugin
+@enduml
+
+PlantUML version 1.2022.0(Wed Jan 12 00:16:42 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
