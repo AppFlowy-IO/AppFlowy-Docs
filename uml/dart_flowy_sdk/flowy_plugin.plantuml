@@ -104,11 +104,86 @@ PluginProxy -> PluginAPI
 PluginAPI <|.. PluginRepository
 
 
-
-
-
-
 @enduml
+
+
+@startuml AppFlowy
+title document
+left to right direction
+'skinparam linetype ortho
+
+class DocumentBlockManager {}
+interface BlockCloudService {
+}
+
+class WebSocketDataReceiverMap {}
+interface RevisionWebSocket {}
+class BlockEditorHandlers {}
+interface DocumentUser {}
+class ClientBlockEditor {}
+
+DocumentBlockManager --> BlockCloudService
+DocumentBlockManager --> WebSocketDataReceiverMap
+DocumentBlockManager --> RevisionWebSocket
+DocumentBlockManager --> BlockEditorHandlers
+DocumentBlockManager --> DocumentUser
+
+BlockEditorHandlers "1" *-- "*" ClientBlockEditor
+BlockHttpCloudService .u.|> BlockCloudService
+LocalServer .u.|> BlockCloudService
+
+class RevisionManager {}
+class RevisionWebSocketManager {}
+class EditorCommandSender {}
+
+ClientBlockEditor --> RevisionManager
+ClientBlockEditor --> RevisionWebSocketManager
+ClientBlockEditor --> EditorCommandSender
+
+class RevisionPersistence {}
+interface RevisionWSDataIterator {}
+interface RevisionWSDataStream {}
+RevisionManager --> RevisionPersistence
+RevisionWebSocketManager --> RevisionWSDataIterator
+RevisionWebSocketManager --> RevisionWSDataStream
+RevisionWebSocketManager --> RevisionWebSocket
+
+FolderWSDataSink .u.|> RevisionWSDataIterator
+BlockWSDataSink .u.|> RevisionWSDataIterator
+FolderWSDataSink --> WSDataProvider
+BlockWSDataSink --> WSDataProvider
+
+BlockWebSocket .u.|> RevisionWebSocket
+FolderWebSocket .u.|> RevisionWebSocket
+
+
+BlockRevisionWSDataStream .u.|> RevisionWSDataStream
+FolderRevisionWSDataStream .U.|> RevisionWSDataStream
+BlockRevisionWSDataStream --> ConflictController
+FolderRevisionWSDataStream --> ConflictController
+
+interface ConflictResolver {}
+interface ConflictRevisionSink {}
+interface WSDataProviderDataSource {}
+ConflictController --> ConflictResolver
+ConflictController --> ConflictRevisionSink
+BlockConflictResolver .u.|> ConflictResolver
+FolderConflictResolver .u.|> ConflictResolver
+WSDataProvider .u.|> ConflictRevisionSink
+WSDataProvider -l-> WSDataProviderDataSource
+RevisionManager -r-|> WSDataProviderDataSource
+
+interface RevisionDiskCache {}
+class RevisionMemoryCache {}
+class SyncSequence {}
+RevisionPersistence -d-> RevisionDiskCache
+RevisionPersistence -d-> RevisionMemoryCache
+RevisionPersistence -d-> SyncSequence
+
+class SQLitePersistence {}
+SQLitePersistence .u.|> RevisionDiskCache
+@enduml
+
 
 
 @startuml
