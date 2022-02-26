@@ -155,7 +155,7 @@ Every PR that is submitted will be reviewed by one or more AppFlowy maintainers.
 
 ### Keep the main branch prestine
 
-AppFlowy is a Continuous Integgration project which means that the anyone can clone the HEAD of the main branch at any time and the application must be in working order. Therefore, the main branch must never be in an error state, it must always be deployable and in running order. A PR that does not pass the CI tests as well as peer review will not be merged into the main branch.&#x20;
+AppFlowy is a Continuous Integration project which means that the anyone can clone the HEAD of the main branch at any time and the application must be in working order. Therefore, the main branch must never be in an error state, it must always be deployable and in running order. A PR that does not pass the CI tests as well as peer review will not be merged into the main branch.&#x20;
 
 ### React to Pull Requests comments
 
@@ -210,4 +210,4 @@ That's it. The complete story of how to work on code in separate branches, updat
 
 We hope that you have fun working on AppFlowy and we look forward to working together with you.
 
-This document was heavily based on [this stack overflow article](https://stackoverflow.com/questions/20956154/whats-the-workflow-to-contribute-to-an-open-source-project-using-git-pull-reque)
+This document was heavily based on [this Stack Overflow article](https://stackoverflow.com/questions/20956154/whats-the-workflow-to-contribute-to-an-open-source-project-using-git-pull-reque)
