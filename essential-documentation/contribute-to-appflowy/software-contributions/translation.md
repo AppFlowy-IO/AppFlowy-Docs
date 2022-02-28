@@ -18,8 +18,8 @@ Translation files are located in : `frontend/app_flowy/assets/translations/`
 1. Add language key-value json file to `frontend/app_flowy/assets/translations/`. Refer `en.json` for format and keys.
 2. Run `flutter pub run easy_localization:generate -S assets/translations/`
 3. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
-4. Open the `frontend/app_flowy/lib/startup/tasks/application_widget.dart` file.
-5. In the `AppWidgetTask` class, add the locale of the language you just created (eg: `Locale('en', 'IN')`, `Locale('en')`) to the `supportedLocales` List :
+4. Open the `frontend/app_flowy/lib/startup/tasks/app_widget.dart` file.
+5. In the `InitAppWidgetTask` class, add the locale of the language you just created (eg: `Locale('en', 'IN')`, `Locale('en')`) to the `supportedLocales` List :
 
     ```dart
     runApp(
