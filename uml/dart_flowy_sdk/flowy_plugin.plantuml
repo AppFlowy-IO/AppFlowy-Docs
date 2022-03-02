@@ -108,45 +108,64 @@ PluginAPI <|.. PluginRepository
 
 
 @startuml AppFlowy
-title document
+title flowy-sync
 left to right direction
-'skinparam linetype ortho
 
-class DocumentBlockManager {}
+class BlockManager {}
 interface BlockCloudService {
 }
 
-class WebSocketDataReceiverMap {}
 interface RevisionWebSocket {}
-class BlockEditorHandlers {}
-interface DocumentUser {}
-class ClientBlockEditor {}
+class BlockEditors {}
+interface BlockUser {}
+class ClientBlockEditor #F7931E {}
+class ClientFolderEditor #00B5FF {}
 
-DocumentBlockManager --> BlockCloudService
-DocumentBlockManager --> WebSocketDataReceiverMap
-DocumentBlockManager --> RevisionWebSocket
-DocumentBlockManager --> BlockEditorHandlers
-DocumentBlockManager --> DocumentUser
+BlockManager --> BlockCloudService
+BlockManager --> RevisionWebSocket: own
+BlockManager --> BlockEditors
+BlockManager --> BlockUser
 
-BlockEditorHandlers "1" *-- "*" ClientBlockEditor
+BlockEditors "1" *-- "*" ClientBlockEditor
 BlockHttpCloudService .u.|> BlockCloudService
 LocalServer .u.|> BlockCloudService
+BlockUserImpl .u.|> BlockUser
+BlockUserImpl --> UserSession
 
 class RevisionManager {}
 class RevisionWebSocketManager {}
 class EditorCommandSender {}
-
+interface RevisionCloudService {}
 ClientBlockEditor --> RevisionManager
 ClientBlockEditor --> RevisionWebSocketManager
 ClientBlockEditor --> EditorCommandSender
 
+ClientFolderEditor --> RevisionManager
+ClientFolderEditor --> RevisionWebSocketManager
+
+RevisionManager ..> RevisionLoader
+RevisionLoader --> RevisionCloudService
+
 class RevisionPersistence {}
 interface RevisionWSDataIterator {}
 interface RevisionWSDataStream {}
+class FolderWSDataSink #00B5FF {}
+class FolderWebSocket #00B5FF {}
+class FolderRevisionWSDataStream #00B5FF {}
+class FolderConflictResolver #00B5FF {}
+class FolderRevisionCloudService #00B5FF
+
+class BlockWSDataSink #F7931E {}
+class BlockWebSocket #F7931E {}
+class BlockRevisionWSDataStream #F7931E {}
+class BlockConflictResolver #F7931E {}
+class BlockRevisionCloudService #F7931E
+
+
 RevisionManager --> RevisionPersistence
 RevisionWebSocketManager --> RevisionWSDataIterator
 RevisionWebSocketManager --> RevisionWSDataStream
-RevisionWebSocketManager --> RevisionWebSocket
+RevisionWebSocketManager -u-> RevisionWebSocket
 
 FolderWSDataSink .u.|> RevisionWSDataIterator
 BlockWSDataSink .u.|> RevisionWSDataIterator
@@ -156,6 +175,8 @@ BlockWSDataSink --> WSDataProvider
 BlockWebSocket .u.|> RevisionWebSocket
 FolderWebSocket .u.|> RevisionWebSocket
 
+BlockRevisionCloudService .u.|> RevisionCloudService
+FolderRevisionCloudService .u.|> RevisionCloudService
 
 BlockRevisionWSDataStream .u.|> RevisionWSDataStream
 FolderRevisionWSDataStream .U.|> RevisionWSDataStream
@@ -169,16 +190,16 @@ ConflictController --> ConflictResolver
 ConflictController --> ConflictRevisionSink
 BlockConflictResolver .u.|> ConflictResolver
 FolderConflictResolver .u.|> ConflictResolver
-WSDataProvider .u.|> ConflictRevisionSink
+WSDataProvider ..|> ConflictRevisionSink
 WSDataProvider -l-> WSDataProviderDataSource
-RevisionManager -r-|> WSDataProviderDataSource
+RevisionManager ..|> WSDataProviderDataSource
 
 interface RevisionDiskCache {}
 class RevisionMemoryCache {}
-class SyncSequence {}
+class RevisionSyncSequence {}
 RevisionPersistence -d-> RevisionDiskCache
 RevisionPersistence -d-> RevisionMemoryCache
-RevisionPersistence -d-> SyncSequence
+RevisionPersistence -d-> RevisionSyncSequence
 
 class SQLitePersistence {}
 SQLitePersistence .u.|> RevisionDiskCache
