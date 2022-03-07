@@ -2,8 +2,6 @@
 
 ## Project title&#x20;
 
-
-
 ### The problem&#x20;
 
 Clearly defining the problem is the most critical part of your solution. Describe the current state of the issue. Use supported materials such as screenshots and data if needed.
@@ -26,15 +24,15 @@ Include milestones with estimated completion dates. Include tasks associated wit
 
 ### Risks & Mitigation&#x20;
 
-List risks that may prevent you from successfully completing your project and your mitigation for each risk. Include other commitments you have during GSoC (job, internship, etc).
+List risks that may prevent you from successfully completing your project and your mitigation for each risk. Include other commitments you have during the program (job, internship, etc).
 
 ### Links to your accepted PRs for AppFlowy&#x20;
 
-GSoC applicants are required to complete an issue tagged with the “good first issue for devs” in order to be selected.
+The applicants are required to complete an issue tagged with the “good first issue for devs” in order to be selected.
 
 ### About me&#x20;
 
-Write a few sentences about yourself, your experience, and what makes you a good candidate. We would also like to know what other open source projects you have participated in the past. If you have not been involved in our community, you have the option to also include contact information for relevant references.
+Write a few sentences about yourself, your experience, and what makes you a good candidate. We would also like to know what other open source projects you have participated in the past.
 
 ### Contact information&#x20;
 

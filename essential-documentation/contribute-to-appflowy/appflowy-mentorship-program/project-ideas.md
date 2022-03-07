@@ -1,36 +1,4 @@
-# Contributor Guidance
-
-## About AppFlowy&#x20;
-
-https://www.appflowy.io/
-
-AppFlowy is an open-source no-code platform for your wikis, notes, tasks, and more, available for Windows, macOS, and Linux. It is built with Flutter and Rust. You are in charge of your data and customizations.
-
-AppFlowy started as an open-source side project built from the ground up by a single developer; afterward, it was maintained by a team of two. Since its GitHub launch in November 2021, it has accumulated more than 17,000 stars and 18,000 downloads. It also has fostered an engaged community of more than 1,000 builders.
-
-AppFlowy is built for teams and individuals that need more control and flexibility. You have 100% control of your data. You can host AppFlowy wherever you want: there’s no vendor lock-in. It offers unlimited customizations. You can design and modify AppFlowy your way with an open core codebase. It is built with Flutter and Rust. What does this mean? Faster development, a better native experience, and more reliable performance. Better still, we are community-driven. We work with our community to collaboratively create apps that suit others’ needs by developing a versatile toolbox of plugins, templates, and more. Join us as we build a toolbox that empowers anyone to create their own system. With us, you can play and tweak without a glass ceiling on what’s possible.
-
-## Getting Started&#x20;
-
-Please use our [first-time AppFlowy developer guide](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/contributing-to-appflowy#your-first-codebase-contribution) to get your AppFlowy development environment set up and find your first issue. If you have any trouble, please ask on our community channel.
-
-GSoC applicants are required to complete an issue tagged with the [“good first issue for devs” ](https://github.com/AppFlowy-IO/AppFlowy/labels/good%20first%20issue%20for%20devs)in order to be selected. This requires you to get familiar with our codebase and demonstrates your interest in contributing to AppFlowy. Don’t worry if you make mistakes in your first contribution. Instead, please see it as a great opportunity to get involved in our community, receive feedback, and iterate your work - a flavor of doing GSoC with AppFlowy.
-
-## Application Instructions&#x20;
-
-Once your PR for an issue tagged with the “good first issue for devs” is merged, you can start developing a specific project plan. We recommend discussing your ideas with the community on [Discord](https://discord.gg/9Q2xaN37tV).
-
-The GSoC 2022 application deadline is April 19, 2022. Please use the [suggested proposal template](proposal-template.md) when applying. Check out GSoC guides for more tips. You will need to do thorough research on the AppFlowy codebase, read documentation, and talk with potential mentors to put together a complete project proposal. It’s cool to come up with your own project idea as long as your idea falls under the umbrella of this year’s themes:&#x20;
-
-* Desktop features&#x20;
-* CI tools&#x20;
-* Tracing performance regressions
-
-Please get in touch with a mentor early on if you want to work on your own idea and make sure it is realistic and within the scope of AppFlowy. We also welcome applicants to work on one of our ideas. Please see [Project Ideas](contributor-guidance.md#project-ideas) for details.
-
-We expect applicants to be excited about gaining real-world software experience and learning practical skills such as problem-solving and asking well-formed questions. We also expect applicants to either have experience with the technologies relevant to their project or have strong general programming experience. We are happy to accept both student and non-student participants.
-
-## Project Ideas&#x20;
+# Project Ideas
 
 You might notice that the ideas listed are sometimes vague or incomplete. This is on purpose, as in real-world development, you often need to define the problem and scope your solution before coding officially begins. If you wish to submit a proposal based on these ideas, you are encouraged to contact the mentors on Discord and find out more about the particular suggestion you're looking at.&#x20;
 
@@ -119,10 +87,3 @@ Performance could become a key differentiator for AppFlowy. We’d like to keep 
 * Difficulty: Medium / High&#x20;
 * Skills Required: Rust&#x20;
 * Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong)
-
-## More info&#x20;
-
-* [AppFlowy’s official website](https://www.appflowy.io)
-* [GitHub](https://github.com/AppFlowy-IO/AppFlowy)
-* [Discord](https://discord.gg/9Q2xaN37tV)
-* [Twitter](https://twitter.com/appflowy)

@@ -1,5 +1,7 @@
 # Application
 
+**We are not accepted into GSoC 2022. If you are interested in participating in a mentorship program and contributing to AppFlowy as a newbie, please check out** [**AppFlowy Mentorship Program**](../appflowy-mentorship-program/contributor-guidance.md)****
+
 ## Why does your organization want to participate in Google Summer of Code?
 
 Participating in Google Summer of Code (GSoC) is a great opportunity for us to develop AppFlowy’s community and give back to the broader open-source community. By providing a platform that connects contributors around the world to open source projects, GSoC will help us gain more exposure in the open-source community and identify and bring in new developers to our community. Meanwhile, we will help newbies integrate into the open-source world and make them more competitive in the job market by offering real-world software development opportunities, high-demand technology stack including Flutter and Rust, and effective mentorship from veteran developers.
