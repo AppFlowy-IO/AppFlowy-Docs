@@ -1,6 +1,6 @@
 # Application
 
-**We are not accepted into GSoC 2022. If you are interested in participating in a mentorship program and contributing to AppFlowy as a newbie, please check out** [**AppFlowy Mentorship Program**](../appflowy-mentorship-program/contributor-guidance.md)****
+**We are not accepted into GSoC 2022. If you are interested in participating in a mentorship program and contributing to AppFlowy as a newbie, please check out** [**AppFlowy Mentorship Program**](contributor-guidance.md)****
 
 ## Why does your organization want to participate in Google Summer of Code?
 

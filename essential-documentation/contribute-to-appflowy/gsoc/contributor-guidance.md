@@ -45,7 +45,7 @@ You will need to do thorough research on the AppFlowy codebase, read documentati
 * CI tools&#x20;
 * Tracing performance regressions
 
-Please get in touch with a mentor early on if you want to work on your own idea and make sure it is realistic and within the scope of AppFlowy. We also welcome applicants to work on one of our ideas. Please see [project-ideas.md](project-ideas.md "mention") for details.
+Please get in touch with a mentor early on if you want to work on your own idea and make sure it is realistic and within the scope of AppFlowy. We also welcome applicants to work on one of our ideas. Please see [project-ideas.md](../appflowy-mentorship-program/project-ideas.md "mention") for details.
 
 We expect applicants to be excited about gaining real-world software experience and learning practical skills such as problem-solving and asking well-formed questions. We also expect applicants to either have experience with the technologies relevant to their project or have strong general programming experience. We are happy to accept both student and non-student participants.
 
