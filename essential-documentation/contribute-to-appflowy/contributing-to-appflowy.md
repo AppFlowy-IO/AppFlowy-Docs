@@ -61,10 +61,17 @@ This section has a step-by-step guide to starting as an AppFlowy codebase contri
 * You can look through issues tagged with the [“good first issue for devs”](https://github.com/AppFlowy-IO/AppFlowy/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue+for+devs%22) label, which is used to indicate the issues that are especially approachable for new contributors.&#x20;
 * We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
 * In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
+* If there is not already an issue covering the work you are interested in doing, then file a new issue to describe the problem/feature you are addressing.
 
 #### Claim an issue
 
-* Post a comment to the issue thread that you would like to claim. @annieappflowy will assign you to the issue and label the issue as “in progress”.
+* Post a comment to the issue thread that you would like to claim. Someone with Contributor access\<ANOTHER ROLE?> will assign you to the issue and label the issue as “in progress”, once triage is completed
+* Guidelines for Triage (For Contributors):
+  * Ensure that the title is meaningful, and edit if not
+  * If report is unclear, add a comment asking for required details and add the `waiting for user response` label
+  * If the issue describes something that was implemented/fixed in a later build, add a comment saying so and close the issue
+  * If you recognize that this issue is a duplicate, comment a link to the original issue and close this one
+  * Add appropriate labels to the issue and add the issue to the Project Board
 * New contributors can only claim one issue until their first pull request is merged. This is to encourage folks to finish ongoing work before starting something new.&#x20;
 
 #### Working on an issue
