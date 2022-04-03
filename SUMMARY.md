@@ -49,3 +49,7 @@
 * [Product](wip-design-documentation/product.md)
 * [Research](wip-design-documentation/research.md)
 * [Accessibility](wip-design-documentation/accessibility.md)
+
+## Handbook
+
+* [Values](handbook/values.md)
