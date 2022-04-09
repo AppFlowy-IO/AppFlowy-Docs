@@ -74,7 +74,7 @@ cargo install --force duckscript_cli
 ```
 
 
-## Step 5: Edit and run the application
+## Step 3: Edit and run the application
 
 \[VS Code]
 
