@@ -73,60 +73,8 @@ cargo install --force cargo-make
 cargo install --force duckscript_cli
 ```
 
-## Step 3: Build AppFlowy (Flutter GUI application)
 
-* Check prerequisites
-
-```shell
-cargo make flowy_dev
-```
-
-{% tabs %}
-{% tab title="Development" %}
-```
-cargo make --profile development-windows-x86 flowy-sdk-dev
-```
-{% endtab %}
-
-{% tab title="Production" %}
-```
-cargo make --profile production-windows-x86 flowy-sdk-release
-```
-{% endtab %}
-{% endtabs %}
-
-* Build AppFlowy
-
-{% tabs %}
-{% tab title="Development" %}
-```
-cargo make -p development-windows-x86 appflowy-windows-dev
-```
-{% endtab %}
-
-{% tab title="Production" %}
-```
-cargo make -p production-windows-x86 appflowy-windows
-```
-{% endtab %}
-{% endtabs %}
-
-## Step 4: Run the application
-
-```bash
-cd app_flowy/product/0.0.2/windows/Debug/AppFlowy
-```
-
-```shell
-./app_flowy
-```
-
-* If using a virtual machine
-  * Run Linux GUI application through x11 on windows (use MobaXterm) for instance:
-
-`export DISPLAY=localhost:10`
-
-## Step 5: Edit and run the application
+## Step 3: Edit and run the application
 
 \[VS Code]
 
@@ -150,3 +98,8 @@ cargo make --profile production-windows-x86 appflowy
 The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
 The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/Windows/Release/AppFlowy/`.
+
+If using a virtual machine
+  * Run Linux GUI application through x11 on windows (use MobaXterm) for instance:
+
+`export DISPLAY=localhost:10`
