@@ -35,6 +35,12 @@ We suggest you pick one that supports 4k. We would expect to spend $250 to $400 
 
 We offer a budget of $500 for ergonomic chairs and standing desks. The chair is likely to be the single most important element of your home office, so consider it an investment in your health, comfort, and productivity.
 
+
+
+### **Accessories**
+
+We offer a budget of $200 for keyboards, mice, laptop stands, and other items that complete a productive ergonomic setup at home.
+
 ## Unlimited time-off&#x20;
 
 Everyone in the team has unlimited and permissionless time-off. We encourage everyone to take time off to recharge with no approval needed from their managers. We hire the best people, and we care about results, not how long you work. That’s why we trust everyone to manage their own time and act in the best interest of our company.
