@@ -41,4 +41,4 @@ Everyone in the team has unlimited and permissionless time-off. We encourage eve
 
 ## Co-working&#x20;
 
-We understand that some people prefer to work in cafes or co-working spaces. We offer a budget of $100 per month towards coworking/cafe working or a WeWork/Regus pass.
+We understand that some people prefer to work in cafes or co-working spaces. We offer a budget of $100 per month towards coworking/cafe working, or a WeWork/Regus pass.
