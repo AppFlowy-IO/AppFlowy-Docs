@@ -53,3 +53,4 @@
 ## Handbook
 
 * [Values](handbook/values.md)
+* [Benefits](handbook/benefits.md)
