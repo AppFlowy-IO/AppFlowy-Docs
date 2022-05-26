@@ -1,0 +1,135 @@
+
+@startuml AppFlowy
+title Editor Classes
+left to right direction
+
+interface RevisionWebSocket {}
+class TextBlockEditor #F7931E {}
+class FolderEditor #00B5FF {}
+class GridEditor #FB006D
+class GridBlockMetaEditor #CEE741
+
+class RevisionManager {}
+class RevisionWebSocketManager {}
+interface RevisionCloudService {}
+TextBlockEditor --> RevisionManager
+TextBlockEditor --> RevisionWebSocketManager
+
+FolderEditor --> RevisionManager
+FolderEditor --> RevisionWebSocketManager
+
+GridEditor --> RevisionManager
+GridEditor --> RevisionWebSocketManager
+
+GridEditor -l-> GridBlockMetaEditor
+GridBlockMetaEditor --> RevisionManager
+GridBlockMetaEditor --> RevisionWebSocketManager
+
+RevisionManager ..> RevisionLoader
+RevisionLoader --> RevisionCloudService
+
+class RevisionPersistence {}
+interface RevisionWebSocketSink {}
+interface RevisionWSDataStream {}
+class FolderWSDataSink #00B5FF {}
+class FolderWebSocket #00B5FF {}
+class FolderRevisionWSDataStream #00B5FF {}
+class FolderConflictResolver #00B5FF {}
+class FolderRevisionCloudService #00B5FF
+
+class TextBlockWSDataSink #F7931E {}
+class TextBlockWebSocket #F7931E {}
+class TextBlockRevisionWSDataStream #F7931E {}
+class TextBlockConflictResolver #F7931E {}
+class TextBlockRevisionCloudService #F7931E
+
+class GridRevisionCloudService #FB006D
+
+class GridBlockMetaRevisionCloudService #CEE741
+
+
+RevisionManager --> RevisionPersistence
+RevisionWebSocketManager --> RevisionWebSocketSink
+RevisionWebSocketManager --> RevisionWSDataStream
+RevisionWebSocketManager --> RevisionWebSocket
+
+FolderWSDataSink .u.|> RevisionWebSocketSink
+TextBlockWSDataSink .u.|> RevisionWebSocketSink
+FolderWSDataSink --> WSDataProvider
+TextBlockWSDataSink --> WSDataProvider
+
+TextBlockWebSocket .u.|> RevisionWebSocket
+FolderWebSocket .u.|> RevisionWebSocket
+
+TextBlockRevisionCloudService .u.|> RevisionCloudService
+TextBlockRevisionWSDataStream .u.|> RevisionWSDataStream
+TextBlockRevisionWSDataStream --> ConflictController
+
+FolderRevisionCloudService .u.|> RevisionCloudService
+FolderRevisionWSDataStream .U.|> RevisionWSDataStream
+FolderRevisionWSDataStream --> ConflictController
+
+GridRevisionCloudService .u.|> RevisionCloudService
+
+GridBlockMetaRevisionCloudService .u.|> RevisionCloudService
+
+
+interface ConflictResolver {}
+interface ConflictRevisionSink {}
+interface WSDataProviderDataSource {}
+ConflictController --> ConflictResolver
+ConflictController --> ConflictRevisionSink
+TextBlockConflictResolver .u.|> ConflictResolver
+FolderConflictResolver .u.|> ConflictResolver
+WSDataProvider ..|> ConflictRevisionSink
+WSDataProvider -l-> WSDataProviderDataSource
+RevisionManager ..|> WSDataProviderDataSource
+
+interface RevisionDiskCache {}
+class RevisionMemoryCache {}
+class RevisionSyncSequence {}
+RevisionPersistence -d-> RevisionDiskCache
+RevisionPersistence -d-> RevisionMemoryCache
+RevisionPersistence -d-> RevisionSyncSequence
+
+class SQLiteFolderRevisionPersistence #00B5FF  {}
+SQLiteFolderRevisionPersistence .u.|> RevisionDiskCache
+
+class SQLiteTextBlockRevisionPersistence #F7931E {}
+SQLiteTextBlockRevisionPersistence .u.|> RevisionDiskCache
+
+class SQLiteGridRevisionPersistence #FB006D {}
+SQLiteGridRevisionPersistence .u.|> RevisionDiskCache
+
+class SQLiteGridBlockMetaRevisionPersistence #CEE741 {}
+SQLiteGridBlockMetaRevisionPersistence .u.|> RevisionDiskCache
+
+@enduml
+
+
+
+@startuml AppFlowy
+title Block Editor Classes
+left to right direction
+
+class BlockManager {}
+interface BlockCloudService {
+}
+
+interface RevisionWebSocket {}
+class BlockEditors {}
+interface BlockUser {}
+class TextBlockEditor #F7931E {}
+
+BlockManager --> BlockCloudService
+BlockManager --> RevisionWebSocket: own
+BlockManager --> BlockEditors
+BlockManager --> BlockUser
+
+BlockEditors "1" *-- "*" TextBlockEditor
+BlockHttpCloudService .u.|> BlockCloudService
+LocalServer .u.|> BlockCloudService
+BlockUserImpl .u.|> BlockUser
+BlockUserImpl --> UserSession
+
+@enduml

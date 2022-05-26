@@ -1,0 +1,25 @@
+@startuml AppFlowy
+title Grid Classes
+left to right direction
+
+GridManager "1" *-- "*" GridMetaEditor
+GridManager --> GridUser
+GridManager --> BlockIndexCache
+
+interface GridUser
+GridMetaEditor --> GridUser
+GridMetaEditor --> GridMetaPad
+GridMetaEditor --> RevisionManager
+GridMetaEditor ..> GridBlockManager
+GridMetaPad --> GridMeta
+GridMeta --> FieldMeta
+GridMeta --> GridBlockMeta
+
+GridBlockManager --> GridUser
+GridBlockManager --> BlockIndexCache
+GridBlockManager "1" *-- "*" GridBlockMetaEditor
+
+GridBlockMetaEditor --> GridBlockMetaPad
+GridBlockMetaEditor --> RevisionManager
+GridBlockMetaPad "1" *-- "*" RowMeta
+@enduml
