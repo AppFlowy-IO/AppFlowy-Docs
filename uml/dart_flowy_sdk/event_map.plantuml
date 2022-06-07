@@ -35,7 +35,7 @@ frame Part_One {
     }
     note left of EventSource
     enum FolderEvent {
-        #[event(input = "ExportRequest", output = "ExportData")]
+        #[event(input = "ExportPayload", output = "ExportData")]
         ExportDocument = 0,
     }
     end note
@@ -131,7 +131,7 @@ rectangle {
     }
     note left of Module
     pub(crate) async fn export_handler(
-        data: Data<ExportRequest>,
+        data: Data<ExportPayload>,
         controller: Unit<Arc<ViewController>>,
     ) -> DataResult<ExportData, FlowyError> {
         ...
@@ -139,11 +139,11 @@ rectangle {
     end note
 }
 
-Repository --> Repository: 1.ExportRequest
-Repository --> FFI_Frontend: 2. Event + ExportRequest
+Repository --> Repository: 1.ExportPayload
+Repository --> FFI_Frontend: 2. Event + ExportPayload
 FFI_Frontend --> FFI_Backend: 3.Bytes
-FFI_Backend --> Dispatcher: 4: Event + ExportRequest
-Dispatcher --> Module: 5.ExportRequest
+FFI_Backend --> Dispatcher: 4: Event + ExportPayload
+Dispatcher --> Module: 5.ExportPayload
 Module --> Module : 6. call export_handler
 @enduml
 
