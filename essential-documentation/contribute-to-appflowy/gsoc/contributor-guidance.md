@@ -51,7 +51,7 @@ We expect applicants to be excited about gaining real-world software experience 
 
 ## More info&#x20;
 
-* [AppFlowy’s official website](https://www.appflowy.io)
+* [AppFlowy’s official website](https://www.appflowy.io/)
 * [GitHub](https://github.com/AppFlowy-IO/AppFlowy)
 * [Discord](https://discord.gg/9Q2xaN37tV)
 * [Twitter](https://twitter.com/appflowy)
