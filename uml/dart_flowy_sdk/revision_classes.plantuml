@@ -3,75 +3,141 @@
 title Editor Classes
 left to right direction
 
-interface RevisionWebSocket {}
-class TextBlockEditor #F7931E {}
-class FolderEditor #00B5FF {}
-class GridEditor #FB006D
-class GridBlockMetaEditor #CEE741
-
-class RevisionManager {}
-class RevisionWebSocketManager {}
-interface RevisionCloudService {}
-TextBlockEditor --> RevisionManager
-TextBlockEditor --> RevisionWebSocketManager
-
-FolderEditor --> RevisionManager
-FolderEditor --> RevisionWebSocketManager
-
-GridEditor --> RevisionManager
-GridEditor --> RevisionWebSocketManager
-
-GridEditor -l-> GridBlockMetaEditor
-GridBlockMetaEditor --> RevisionManager
-GridBlockMetaEditor --> RevisionWebSocketManager
-
-RevisionManager ..> RevisionLoader
-RevisionLoader --> RevisionCloudService
-
-class RevisionPersistence {}
-interface RevisionWebSocketSink {}
-interface RevisionWSDataStream {}
-class FolderWSDataSink #00B5FF {}
-class FolderWebSocket #00B5FF {}
-class FolderRevisionWSDataStream #00B5FF {}
-class FolderConflictResolver #00B5FF {}
-class FolderRevisionCloudService #00B5FF
-
-class TextBlockWSDataSink #F7931E {}
-class TextBlockWebSocket #F7931E {}
-class TextBlockRevisionWSDataStream #F7931E {}
-class TextBlockConflictResolver #F7931E {}
-class TextBlockRevisionCloudService #F7931E
-
-class GridRevisionCloudService #FB006D
-
-class GridBlockMetaRevisionCloudService #CEE741
+'Revision
+'    classes
+    class RevisionManager {}
+    class RevisionWebSocketManager {}
+    class RevisionPersistence {}
+    class RevisionMemoryCache {}
+    class RevisionSyncSequence {}
 
 
-RevisionManager --> RevisionPersistence
-RevisionWebSocketManager --> RevisionWebSocketSink
-RevisionWebSocketManager --> RevisionWSDataStream
-RevisionWebSocketManager --> RevisionWebSocket
+'    interface
+    interface RevisionWebSocket {}
+    interface RevisionCloudService {}
+    interface RevisionWebSocketSink {}
+    interface RevisionWSDataStream {}
+    interface RevisionDiskCache {}
 
-FolderWSDataSink .u.|> RevisionWebSocketSink
-TextBlockWSDataSink .u.|> RevisionWebSocketSink
-FolderWSDataSink --> WSDataProvider
-TextBlockWSDataSink --> WSDataProvider
+'    interface impl
+    RevisionManager ..|> WSDataProviderDataSource
 
-TextBlockWebSocket .u.|> RevisionWebSocket
-FolderWebSocket .u.|> RevisionWebSocket
+'   websocket
+    RevisionWebSocketManager --> RevisionWebSocketSink
+    RevisionWebSocketManager --> RevisionWSDataStream
+    RevisionWebSocketManager --> RevisionWebSocket
 
-TextBlockRevisionCloudService .u.|> RevisionCloudService
-TextBlockRevisionWSDataStream .u.|> RevisionWSDataStream
-TextBlockRevisionWSDataStream --> ConflictController
+'   deps
+    RevisionManager ..> RevisionLoader
+    RevisionLoader --> RevisionCloudService
+    RevisionManager --> RevisionPersistence
+    RevisionPersistence -d-> RevisionDiskCache
+    RevisionPersistence -d-> RevisionMemoryCache
+    RevisionPersistence -d-> RevisionSyncSequence
 
-FolderRevisionCloudService .u.|> RevisionCloudService
-FolderRevisionWSDataStream .U.|> RevisionWSDataStream
-FolderRevisionWSDataStream --> ConflictController
+'Folder
+'    classes
+    class FolderEditor #00B5FF {}
+    class FolderWSDataSink #00B5FF {}
+    class FolderWebSocket #00B5FF {}
+    class FolderRevisionWSDataStream #00B5FF {}
+    class FolderConflictResolver #00B5FF {}
+    class FolderRevisionCloudService #00B5FF
+    class SQLiteFolderRevisionPersistence #00B5FF  {}
 
-GridRevisionCloudService .u.|> RevisionCloudService
+'   interface impl
+    SQLiteFolderRevisionPersistence .u.|> RevisionDiskCache
+    FolderConflictResolver .u.|> ConflictResolver
 
-GridBlockMetaRevisionCloudService .u.|> RevisionCloudService
+'    websocket
+    FolderRevisionWSDataStream .U.|> RevisionWSDataStream
+    FolderRevisionWSDataStream --> ConflictController
+    FolderWebSocket .u.|> RevisionWebSocket
+    FolderWSDataSink .u.|> RevisionWebSocketSink
+    FolderWSDataSink --> WSDataProvider
+
+'   deps
+    FolderEditor --> RevisionManager
+    FolderEditor --> RevisionWebSocketManager
+    FolderRevisionCloudService .u.|> RevisionCloudService
+
+'TextBlock
+'   classes
+    class TextBlockEditor #F7931E {}
+    class TextBlockWSDataSink #F7931E {}
+    class TextBlockWebSocket #F7931E {}
+    class TextBlockRevisionWSDataStream #F7931E {}
+    class TextBlockConflictResolver #F7931E {}
+    class TextBlockRevisionCloudService #F7931E
+    class SQLiteTextBlockRevisionPersistence #F7931E {}
+
+'   interface impl
+    SQLiteTextBlockRevisionPersistence .u.|> RevisionDiskCache
+    TextBlockConflictResolver .u.|> ConflictResolver
+
+'    websocket
+    TextBlockRevisionWSDataStream .u.|> RevisionWSDataStream
+    TextBlockRevisionWSDataStream --> ConflictController
+    TextBlockWebSocket .u.|> RevisionWebSocket
+    TextBlockWSDataSink .u.|> RevisionWebSocketSink
+    TextBlockWSDataSink --> WSDataProvider
+
+'   deps
+    TextBlockEditor --> RevisionManager
+    TextBlockEditor --> RevisionWebSocketManager
+    TextBlockRevisionCloudService .u.|> RevisionCloudService
+
+'Grid
+'   classes
+    class GridMetaEditor #FB006D
+    class GridBlockMetaEditor #CEE741
+    class GridRevisionCloudService #FB006D
+    class GridBlockMetaRevisionCloudService #CEE741
+    class SQLiteGridRevisionPersistence #FB006D {}
+    class SQLiteGridBlockMetaRevisionPersistence #CEE741 {}
+
+'   interface impl
+    SQLiteGridRevisionPersistence .u.|> RevisionDiskCache
+    SQLiteGridBlockMetaRevisionPersistence .u.|> RevisionDiskCache
+
+'   deps
+    GridMetaEditor --> RevisionManager
+    GridMetaEditor --> RevisionWebSocketManager
+    GridMetaEditor -l-> GridBlockMetaEditor
+    GridBlockMetaEditor --> RevisionManager
+    GridBlockMetaEditor --> RevisionWebSocketManager
+    GridRevisionCloudService .u.|> RevisionCloudService
+    GridBlockMetaRevisionCloudService .u.|> RevisionCloudService
+
+
+'History
+'   classes
+    class RevisionHistoryManager {}
+
+'   interface
+    interface RevisionHistoryDiskCache {}
+
+'   interface impl
+    SQLiteRevisionHistoryPersistence .u.|> RevisionHistoryDiskCache
+
+'   deps
+    RevisionManager ..> RevisionHistoryManager
+    RevisionHistoryManager ..> RevisionHistoryConfig
+    RevisionHistoryManager ..> RevisionHistoryDiskCache
+
+'Snapshot
+'   classes
+    class RevisionSnapshot {}
+'   interface
+    interface RevisionSnapshotDiskCache {}
+
+'   interface impl
+    SQLiteRevisionSnapshotPersistence .u.|> RevisionSnapshotDiskCache
+
+'   deps
+    RevisionManager ..> RevisionSnapshotManager
+    RevisionSnapshotManager ..> RevisionSnapshotConfig
+    RevisionSnapshotManager ..> RevisionSnapshotDiskCache
 
 
 interface ConflictResolver {}
@@ -79,31 +145,9 @@ interface ConflictRevisionSink {}
 interface WSDataProviderDataSource {}
 ConflictController --> ConflictResolver
 ConflictController --> ConflictRevisionSink
-TextBlockConflictResolver .u.|> ConflictResolver
-FolderConflictResolver .u.|> ConflictResolver
+
 WSDataProvider ..|> ConflictRevisionSink
 WSDataProvider -l-> WSDataProviderDataSource
-RevisionManager ..|> WSDataProviderDataSource
-
-interface RevisionDiskCache {}
-class RevisionMemoryCache {}
-class RevisionSyncSequence {}
-RevisionPersistence -d-> RevisionDiskCache
-RevisionPersistence -d-> RevisionMemoryCache
-RevisionPersistence -d-> RevisionSyncSequence
-
-class SQLiteFolderRevisionPersistence #00B5FF  {}
-SQLiteFolderRevisionPersistence .u.|> RevisionDiskCache
-
-class SQLiteTextBlockRevisionPersistence #F7931E {}
-SQLiteTextBlockRevisionPersistence .u.|> RevisionDiskCache
-
-class SQLiteGridRevisionPersistence #FB006D {}
-SQLiteGridRevisionPersistence .u.|> RevisionDiskCache
-
-class SQLiteGridBlockMetaRevisionPersistence #CEE741 {}
-SQLiteGridBlockMetaRevisionPersistence .u.|> RevisionDiskCache
-
 @enduml
 
 

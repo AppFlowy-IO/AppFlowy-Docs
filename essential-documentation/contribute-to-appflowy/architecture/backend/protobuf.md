@@ -154,5 +154,3 @@ get called when the `ExportDocument` event happened. The calling route as the pi
 
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf_Communication.svg)
 
-
-
