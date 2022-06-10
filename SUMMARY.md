@@ -25,6 +25,7 @@
       * [🦮 Style Guides](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/style-guides.md)
       * [🔬 Code Submission Guidelines](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/code-submission-guidelines.md)
       * [⤴ Submitting your first Pull Request](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/submitting-your-first-pull-request.md)
+    * [🔁 Launcher and Tasks](essential-documentation/contribute-to-appflowy/software-contributions/launcher-and-tasks.md)
     * [☎ Translate AppFlowy](essential-documentation/contribute-to-appflowy/software-contributions/translation.md)
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)

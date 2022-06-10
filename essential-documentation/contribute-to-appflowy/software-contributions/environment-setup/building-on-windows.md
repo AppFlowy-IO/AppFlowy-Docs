@@ -13,7 +13,7 @@
 ## Step 1: Get the source code
 
 {% hint style="warning" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in [setting-up-your-repositories.md](../submitting-code/setting-up-your-repositories.md "mention")&#x20;
+You should fork the code instead if you wish to submit patches. You'll find information on that in [setting-up-your-repositories.md](../submitting-code/setting-up-your-repositories.md "mention")
 {% endhint %}
 
 ```shell
@@ -73,18 +73,15 @@ cargo install --force cargo-make
 cargo install --force duckscript_cli
 ```
 
-
 ## Step 3: Edit and run the application
 
 \[VS Code]
 
 1. Open the app\_flowy folder located at xx/AppFlowy/frontend/app\_flowy with VS Code.
-
-2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy_localization). Pressing `Ctrl+Shift+B` or running Run Build Task from the global Terminal menu.
-
+2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy\_localization). Pressing `Ctrl+Shift+B` or running Run Build Task from the global Terminal menu.
 3. Go to the Run and Debug tab and then click the run button.
 
-![](<../../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1) (1).png>)
 
 ## Building in release mode
 
@@ -100,6 +97,7 @@ The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/Windows/Release/AppFlowy/`.
 
 If using a virtual machine
-  * Run Linux GUI application through x11 on windows (use MobaXterm) for instance:
+
+* Run Linux GUI application through x11 on windows (use MobaXterm) for instance:
 
 `export DISPLAY=localhost:10`

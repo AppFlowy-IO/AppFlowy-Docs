@@ -32,7 +32,6 @@ yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 {% endtab %}
 {% endtabs %}
 
-
 * Install rust on Linux
 
 ```bash
@@ -74,7 +73,7 @@ flutter doctor
 Clone the source code from our Github project.
 
 {% hint style="warning" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in  [Submitting your first Pull Request](../submitting-code/submitting-your-first-pull-request.md)
+You should fork the code instead if you wish to submit patches. You'll find information on that in [Submitting your first Pull Request](../submitting-code/submitting-your-first-pull-request.md)
 {% endhint %}
 
 ```shell
@@ -161,12 +160,10 @@ cd app_flowy/product/0.0.2/linux/Debug/AppFlowy
 \[VS Code]
 
 1. Open the app\_flowy folder located at xx/AppFlowy/frontend/app\_flowy with VS Code.
-
-2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy_localization). Pressing `Ctrl+Shift+B` or running Run Build Task from the global Terminal menu.
-
+2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy\_localization). Pressing `Ctrl+Shift+B` or running Run Build Task from the global Terminal menu.
 3. Go to the Run and Debug tab and then click the run button.
 
-![](<../../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1) (1).png>)
 
 ## Building in release mode
 
