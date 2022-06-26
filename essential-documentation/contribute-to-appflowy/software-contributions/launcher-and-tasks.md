@@ -8,7 +8,7 @@ A launch configuration is what is used when you type `F5` or `Ctrl-F5`to launch 
 
 You can select your prefered launch configuration by going to the `Run and Debug` tab in VS Code.
 
-![Ctrl-Shift-D to go to the Run and Debug tab](<../../../.gitbook/assets/image (3).png>)
+![Ctrl-Shift-D to go to the Run and Debug tab](<../../../.gitbook/assets/appflowy_task.png>)
 
 In order to make them easy to identify, all of AppFlowy's launch configurations are prefixed with "AF: ".
 
@@ -26,11 +26,11 @@ Launch configurations are defined in the `/frontend/.vscode/launch.json` file
 
 Tasks are be launched manually (although you are free to keybind them locally). You can see a list of all tasks available by initiating the command palette (`Ctrl-Shift-P`) and then typing "run task".&#x20;
 
-![Inititiate the command palette with Ctrl-Shift-P](../../../.gitbook/assets/image.png)
+![Inititiate the command palette with Ctrl-Shift-P](../../../.gitbook/assets/task_pannel.png)
 
 You can now type "AF:" to see a list of all AppFlowy provided tasks. Click on the desired task to trigger it.
 
-![The AppFlowy tasks](<../../../.gitbook/assets/image (4).png>)
+![The AppFlowy tasks](<../../../.gitbook/assets/task_select.png>)
 
 {% hint style="info" %}
 We recommend binding the `Alt-T key combination to the "Tasks: Run Task" command. This is done by initiating the command palette (Ctrl-Shift-P`) and then typing "`Open Keyboard Shortcuts`".
