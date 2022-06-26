@@ -20,7 +20,7 @@
       * [🐧 Building on Linux](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-linux.md)
       * [🍎 Building on MacOS](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-macos.md)
       * [🪟 Building on Windows](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/building-on-windows.md)
-      * [❓ Trouble shotting](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting.md)
+      * [❓ Troubleshooting](essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/troubleshooting.md)
     * [💛 Submitting Code](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/README.md)
       * [🏦 Setting Up Your Repositories](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/setting-up-your-repositories.md)
       * [🦮 Style Guides](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/style-guides.md)
