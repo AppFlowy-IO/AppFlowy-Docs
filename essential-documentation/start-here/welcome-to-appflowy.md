@@ -2,7 +2,7 @@
 
 AppFlowy is the first open-source Notion alternative. You are in charge of your data and customizations. Here you can access the complete documentation for AppFlowy.
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/main_page.png>)
 
 ### Overview
 

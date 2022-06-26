@@ -77,11 +77,11 @@ cargo install --force duckscript_cli
 
 \[VS Code]
 
-1. Open the app\_flowy folder located at xx/AppFlowy/frontend/app\_flowy with VS Code.
-2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy\_localization). Pressing `Ctrl+Shift+B` or running Run Build Task from the global Terminal menu.
-3. Go to the Run and Debug tab and then click the run button.
+1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
 
-![](<../../../../.gitbook/assets/image (1) (1) (1).png>)
+2. Go to the Run and Debug tab and then click AF: Clean + Rebuild All for the first time running.
+
+![img.png](../../../../.gitbook/assets/launch_appflowy.png)
 
 ## Building in release mode
 

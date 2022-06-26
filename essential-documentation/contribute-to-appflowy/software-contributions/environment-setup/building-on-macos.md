@@ -47,11 +47,11 @@ flutter config --enable-macos-desktop
 
 ## **Step 4: Edit and run the application**
 
-1. Open the `app_flowy` folder located at xx/AppFlowy/frontend with VS Code.
-2. Run "Code Gen" task that will generate the [freezed files](https://pub.dev/packages/freezed) and [language files](https://pub.dev/packages/easy\_localization). Pressing ⇧⌘B or running Run Build Task from the global Terminal menu.
-3. Go to the Run and Debug tab and then click the run button.
+1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
 
-![](<../../../../.gitbook/assets/image (1).png>)
+2. Go to the Run and Debug tab and then click AF: Clean + Rebuild All for the first time running.
+
+![img.png](../../../../.gitbook/assets/launch_appflowy.png)
 
 * Please also check the device selection, as of now AppFlowy only supports Desktop: ![device](https://user-images.githubusercontent.com/86001920/144546864-cebbf0c0-4eef-424e-93c7-e1e6b3a59669.png)
 
