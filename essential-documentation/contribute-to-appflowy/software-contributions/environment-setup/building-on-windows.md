@@ -83,6 +83,8 @@ cargo install --force duckscript_cli
 
 ![img.png](../../../../.gitbook/assets/launch_appflowy.png)
 
+If you encounter any issues, have a look at [Troubleshooting](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
+
 ## Building in release mode
 
 1. Go to the AppFlowy/frontend/ directory.

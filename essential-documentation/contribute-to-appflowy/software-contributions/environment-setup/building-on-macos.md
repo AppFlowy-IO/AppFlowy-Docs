@@ -55,6 +55,8 @@ flutter config --enable-macos-desktop
 
 * Please also check the device selection, as of now AppFlowy only supports Desktop: ![device](https://user-images.githubusercontent.com/86001920/144546864-cebbf0c0-4eef-424e-93c7-e1e6b3a59669.png)
 
+If you encounter any issues, have a look at [Troubleshooting](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
+
 ## Building in release mode
 
 1. Go to the AppFlowy/frontend/ directory.
@@ -78,4 +80,3 @@ The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
 The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/[OS]/Release/AppFlowy/`.
 
-* If you encounter any issues, have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
