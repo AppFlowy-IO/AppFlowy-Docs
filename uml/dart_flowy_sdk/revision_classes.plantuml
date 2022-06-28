@@ -1,6 +1,8 @@
 
 @startuml AppFlowy
 title Editor Classes
+skinparam classFontStyle Bold
+
 left to right direction
 
 'Revision
@@ -89,8 +91,8 @@ left to right direction
 
 'Grid
 '   classes
-    class GridMetaEditor #FB006D
-    class GridBlockMetaEditor #CEE741
+    class GridRevisionEditor #FB006D
+    class GridBlockRevisionEditor #CEE741
     class GridRevisionCloudService #FB006D
     class GridBlockMetaRevisionCloudService #CEE741
     class SQLiteGridRevisionPersistence #FB006D {}
@@ -101,11 +103,11 @@ left to right direction
     SQLiteGridBlockMetaRevisionPersistence .u.|> RevisionDiskCache
 
 '   deps
-    GridMetaEditor --> RevisionManager
-    GridMetaEditor --> RevisionWebSocketManager
-    GridMetaEditor -l-> GridBlockMetaEditor
-    GridBlockMetaEditor --> RevisionManager
-    GridBlockMetaEditor --> RevisionWebSocketManager
+    GridRevisionEditor --> RevisionManager
+    GridRevisionEditor --> RevisionWebSocketManager
+    GridRevisionEditor -l-> GridBlockRevisionEditor
+    GridBlockRevisionEditor --> RevisionManager
+    GridBlockRevisionEditor --> RevisionWebSocketManager
     GridRevisionCloudService .u.|> RevisionCloudService
     GridBlockMetaRevisionCloudService .u.|> RevisionCloudService
 

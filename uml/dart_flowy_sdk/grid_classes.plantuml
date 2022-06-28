@@ -1,25 +1,68 @@
 @startuml AppFlowy
-title Grid Classes
-left to right direction
+title Grid Structs
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
 
-GridManager "1" *-- "*" GridMetaEditor
+left to right direction
+class GridManager #FB006D
+GridManager "1" *-- "*" GridRevisionEditor
 GridManager --> GridUser
 GridManager --> BlockIndexCache
 
 interface GridUser
-GridMetaEditor --> GridUser
-GridMetaEditor --> GridMetaPad
-GridMetaEditor --> RevisionManager
-GridMetaEditor ..> GridBlockManager
-GridMetaPad --> GridMeta
-GridMeta --> FieldMeta
-GridMeta --> GridBlockMeta
 
-GridBlockManager --> GridUser
-GridBlockManager --> BlockIndexCache
-GridBlockManager "1" *-- "*" GridBlockMetaEditor
+'GridRevisionEditor
+class GridRevisionEditor #FFCE00
+GridRevisionEditor --> GridUser
+GridRevisionEditor --> GridRevisionPad
+GridRevisionEditor --> RevisionManager
+GridRevisionEditor --> GridBlockManager
+GridRevisionEditor --> GridTaskController
+GridRevisionPad --> GridRevision
+GridRevision --> FieldRevision
+GridRevision --> GridBlockMetaRevision
 
-GridBlockMetaEditor --> GridBlockMetaPad
-GridBlockMetaEditor --> RevisionManager
-GridBlockMetaPad "1" *-- "*" RowMeta
+'GridBlockManager
+class GridBlockManager #FB006D
+GridBlockManager -u-> GridUser
+GridBlockManager -u-> BlockIndexCache
+GridBlockManager "1" *-- "*" GridBlockRevisionEditor
+
+
+'GridBlockRevisionEditor
+class GridBlockRevisionEditor #FFCE00
+GridBlockRevisionEditor --> GridBlockRevisionPad
+GridBlockRevisionEditor -u-> RevisionManager
+GridBlockRevisionPad --> GridBlockRevision
+GridBlockRevision "1" *-- "*" RowRevision
+
+'GridTaskController
+interface GridTaskHandler
+class GridTaskController #00C8FF
+class GridTaskRunner {
+    task_rx
+}
+class GridTaskScheduler {
+    task_tx
+}
+GridTaskController --> GridSnapshotService
+GridTaskController --> GridFilterService
+GridTaskController --> GridTaskScheduler
+GridTaskController ..> GridTaskRunner
+
+GridTaskScheduler --> GridSnapshot
+GridTaskScheduler --> GridTaskQueue
+GridTaskScheduler --> GridTaskStore
+GridTaskScheduler --> ScheduleConfig
+GridTaskRunner "1" *--"*" GridTaskHandler
+GridSnapshotService ..|> GridTaskHandler
+GridFilterService ..|> GridTaskHandler
+
+GridTaskQueue --> TaskList
+TaskList --> PendingTask
+PendingTask --> TaskType
+
+GridTaskStore --> Task
+Task --> TaskContent
 @enduml
