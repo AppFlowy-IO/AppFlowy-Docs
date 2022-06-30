@@ -69,9 +69,9 @@ cargo make --profile production-mac-x86 appflowy
 ```
 {% endtab %}
 
-{% tab title="aarch64" %}
+{% tab title="arm64" %}
 ```shell
-cargo make --profile production-mac-aarch64 appflowy
+cargo make --profile production-mac-arm64 appflowy
 ```
 {% endtab %}
 {% endtabs %}
