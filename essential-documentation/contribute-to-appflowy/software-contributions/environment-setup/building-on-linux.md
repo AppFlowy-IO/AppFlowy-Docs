@@ -111,13 +111,13 @@ cargo make flowy_dev
 {% tabs %}
 {% tab title="Development" %}
 ```bash
-cargo make --profile development-linux-x86 flowy-sdk-dev
+cargo make --profile development-linux-x86_64 flowy-sdk-dev
 ```
 {% endtab %}
 
 {% tab title="Production" %}
 ```bash
-cargo make --profile production-linux-x86 flowy-sdk-release
+cargo make --profile production-linux-x86_64 flowy-sdk-release
 ```
 {% endtab %}
 {% endtabs %}
@@ -127,7 +127,7 @@ cargo make --profile production-linux-x86 flowy-sdk-release
 {% tabs %}
 {% tab title="Development" %}
 ```
-cargo make -p development-linux-x86 appflowy-linux-dev
+cargo make -p development-linux-x86_64 appflowy-linux-dev
 ```
 {% endtab %}
 
@@ -135,7 +135,7 @@ cargo make -p development-linux-x86 appflowy-linux-dev
 You'll find the binary in app\_flowy/product/linux/AppFlowy/
 
 ```bash
-cargo make -p production-linux-x86 appflowy-linux
+cargo make -p production-linux-x86_64 appflowy-linux
 ```
 {% endtab %}
 {% endtabs %}
@@ -160,10 +160,9 @@ cd app_flowy/product/0.0.2/linux/Debug/AppFlowy
 \[VS Code]
 
 1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
-
 2. Go to the Run and Debug tab and then click AF: Clean + Rebuild All for the first time running.
 
-![img.png](../../../../.gitbook/assets/launch_appflowy.png)
+![img.png](../../../../.gitbook/assets/launch\_appflowy.png)
 
 If you encounter any issues, have a look at [Troubleshooting](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
