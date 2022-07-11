@@ -37,6 +37,7 @@
       * [Revision](essential-documentation/contribute-to-appflowy/architecture/backend/revision.md)
       * [Event Driven System](essential-documentation/contribute-to-appflowy/architecture/backend/event-driven-system.md)
     * [Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/domain-driven-design.md)
+    * [Proposals](essential-documentation/contribute-to-appflowy/architecture/proposals.md)
   * [📚 Technical Glossary](essential-documentation/contribute-to-appflowy/technical-glossary.md)
   * [📔 AppFlowy Mentorship Program](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/README.md)
     * [Program Guidance](essential-documentation/contribute-to-appflowy/gsoc/contributor-guidance.md)
