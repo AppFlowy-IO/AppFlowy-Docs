@@ -9,6 +9,7 @@ class GridManager #FB006D
 GridManager "1" *-- "*" GridRevisionEditor
 GridManager --> GridUser
 GridManager --> BlockIndexCache
+GridManager --> GridTaskController
 
 interface GridUser
 
@@ -18,7 +19,6 @@ GridRevisionEditor --> GridUser
 GridRevisionEditor --> GridRevisionPad
 GridRevisionEditor --> RevisionManager
 GridRevisionEditor --> GridBlockManager
-GridRevisionEditor --> GridTaskController
 GridRevisionPad --> GridRevision
 GridRevision --> FieldRevision
 GridRevision --> GridBlockMetaRevision
