@@ -30,7 +30,7 @@
     * [☎ Translate AppFlowy](essential-documentation/contribute-to-appflowy/software-contributions/translation.md)
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
-      * [Editor](essential-documentation/contribute-to-appflowy/architecture/frontend/editor.md)
+      * [Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/grid.md)
     * [Backend](essential-documentation/contribute-to-appflowy/architecture/backend/README.md)
       * [Initialize](essential-documentation/contribute-to-appflowy/architecture/backend/initialize.md)
       * [Protobuf](essential-documentation/contribute-to-appflowy/architecture/backend/protobuf.md)
@@ -45,9 +45,6 @@
     * [Proposal Template](essential-documentation/contribute-to-appflowy/gsoc/proposal-template.md)
   * [🔢 GSoC](essential-documentation/contribute-to-appflowy/gsoc/README.md)
     * [Application](essential-documentation/contribute-to-appflowy/gsoc/application.md)
-  * [RFC](essential-documentation/contribute-to-appflowy/rfc/README.md)
-    * [Branch strategy](essential-documentation/contribute-to-appflowy/rfc/branch-strategy.md)
-    * [Plugin System Design](essential-documentation/contribute-to-appflowy/rfc/plugin-system-design.md)
 
 ## Design Documentation
 
