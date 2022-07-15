@@ -1,4 +1,67 @@
 
+@startuml Edit Field
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+interface IFieldContextLoader
+interface TypeOptionWidgetContext
+
+FieldEditor --> FieldEditorBloc
+FieldEditor --> FieldTypeOptionEditor
+
+'Context loader
+FieldEditorBloc --> IFieldContextLoader
+NewFieldContextLoader -u-|> IFieldContextLoader
+FieldContextLoader -u-|> IFieldContextLoader
+
+FieldTypeOptionEditor --> FieldTypeOptionEditBloc
+FieldTypeOptionEditBloc --> GridFieldContext
+GridFieldContext -u-> IFieldContextLoader
+
+'type option builder
+FieldTypeOptionEditor --> TypeOptionWidgetBuilder
+CheckboxTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+CheckboxTypeOptionWidgetBuilder --> CheckboxTypeOptionContext
+CheckboxTypeOptionContext --|> TypeOptionWidgetContext
+
+DateTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+DateTypeOptionWidgetBuilder --> DateTypeOptionContext
+DateTypeOptionContext --|> TypeOptionWidgetContext
+
+NumberTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+NumberTypeOptionWidgetBuilder --> NumberTypeOptionContext
+NumberTypeOptionContext --|> TypeOptionWidgetContext
+
+SingleSelectTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+SingleSelectTypeOptionWidgetBuilder --> SingleSelectTypeOptionContext
+SingleSelectTypeOptionContext --|> TypeOptionWidgetContext
+
+MultiSelectTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+MultiSelectTypeOptionWidgetBuilder --> MultiSelectTypeOptionContext
+MultiSelectTypeOptionContext --|> TypeOptionWidgetContext
+
+
+RichTextTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+RichTextTypeOptionWidgetBuilder --> RichTextTypeOptionContext
+RichTextTypeOptionContext --|> TypeOptionWidgetContext
+
+URLTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+URLTypeOptionWidgetBuilder -->URLTypeOptionContext
+URLTypeOptionContext --|> TypeOptionWidgetContext
+
+TypeOptionWidgetContext --> TypeOptionWidgetDataParser
+DateTypeOptionDataParser -u-|> TypeOptionWidgetDataParser
+MultiSelectTypeOptionWidgetDataParser -u-|> TypeOptionWidgetDataParser
+NumberTypeOptionWidgetDataParser -u-|> TypeOptionWidgetDataParser
+SingleSelectTypeOptionWidgetDataParser -u-|> TypeOptionWidgetDataParser
+CheckboxTypeOptionWidgetDataParser -u-|> TypeOptionWidgetDataParser
+RichTextTypeOptionWidgetDataParser -u-|> TypeOptionWidgetDataParser
+URLTypeOptionWidgetDataParser -u-|> TypeOptionWidgetDataParser
+@enduml
+
+
 @startuml SelectOption
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
@@ -8,6 +71,7 @@ left to right direction
 class SelectOptionService
 class SelectOptionCellEditorBloc
 
+SelectOptionCellEditor --> SelectOptionCellEditorBloc
 SelectOptionCellEditorBloc --> SelectOptionService
 SelectOptionCellEditorBloc --> GridSelectOptionCellController
 
