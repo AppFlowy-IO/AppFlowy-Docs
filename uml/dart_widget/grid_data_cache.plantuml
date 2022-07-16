@@ -9,6 +9,7 @@ GridBloc --> GridService
 GridBloc --> GridFieldCache: own
 @enduml
 
+
 @startuml block/row/cell relation
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
@@ -16,6 +17,10 @@ skinparam ActivityBorderColor DimGray
 left to right direction
 
 interface GridRowCacheFieldNotifier
+class GridFieldCache #B6FADC
+class GridBlockCache #B6FADC
+class GridRowCache #B6FADC
+class GridCellCache #B6FADC
 
 GridBloc --> GridService
 GridBloc --> GridFieldCache: own
