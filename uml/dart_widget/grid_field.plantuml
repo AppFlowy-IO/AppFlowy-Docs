@@ -13,14 +13,15 @@ FieldEditor --> FieldTypeOptionEditor
 
 'Context loader
 FieldEditorBloc --> IFieldTypeOptionLoader
+FieldEditorBloc --> TypeOptionDataController
 NewFieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 FieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 
 FieldTypeOptionEditor --> FieldTypeOptionEditBloc
-FieldTypeOptionEditBloc --> GridFieldContext
-GridFieldContext -u-> IFieldTypeOptionLoader
-
 FieldTypeOptionEditor --> TypeOptionWidgetContext
+FieldTypeOptionEditor --> TypeOptionDataController
+TypeOptionDataController -l-> IFieldTypeOptionLoader
+TypeOptionWidgetContext -l-> TypeOptionDataController
 @enduml
 
 @startuml Field Type Option Editor

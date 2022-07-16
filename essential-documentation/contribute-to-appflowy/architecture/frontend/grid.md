@@ -34,7 +34,15 @@ When you open a grid, the `GridBloc` will be initialized. Look at the diagram sh
 
 
 ## Field
-Field is represent as the column of the grid. The Field editor is used to edit the field.
+> Field is represent as the column of the grid.
+
+**FieldEditor**
+
+* Load the FieldTypeOptionData
+
+Different field has different FieldType, each FieldType
+> has different data, the FieldTypeOption. You can the corresponding parser to parse the generic FieldTypeOption.
+> The details will be discussed bellow.
 
 ![file : grid_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Editor.svg)
 
