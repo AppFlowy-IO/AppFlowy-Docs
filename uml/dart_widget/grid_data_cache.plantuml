@@ -1,0 +1,46 @@
+@startuml Grid
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+GridBloc "1" *-- "*" GridBlockCache: own
+GridBloc --> GridService
+GridBloc --> GridFieldCache: own
+@enduml
+
+@startuml block/row/cell relation
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+interface GridRowCacheFieldNotifier
+
+GridBloc --> GridService
+GridBloc --> GridFieldCache: own
+GridBloc "1" *-- "*" GridBlockCache: own
+
+GridBlockCache --> GridBlock
+
+'Row Cache
+GridBlockCache --> GridRowsCache : own
+GridRowsCache --> GridBlockChangeset
+GridRowsCache --> GridCellsCache: own
+GridRowsCache --> GridRowCacheFieldNotifier
+GridRowsCache "1" *-- "*" GridRow
+GridRow --> Row : raw row
+GridRow "1" o-- "*" Field
+
+
+'Cell Cache
+GridCellsCache "1" *-- "*" GridCell
+
+'Listener
+GridBlockCache --> GridBlockListener
+GridBlockListener "1" *-- "*" GridBlockChangeset
+
+GridRowCacheFieldNotifierImpl -u-> GridFieldCache
+GridRowCacheFieldNotifierImpl --|> GridRowCacheFieldNotifier
+
+@enduml
