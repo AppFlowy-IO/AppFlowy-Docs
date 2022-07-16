@@ -21,7 +21,10 @@ FieldTypeOptionEditor --> FieldTypeOptionEditBloc
 FieldTypeOptionEditor --> TypeOptionWidgetContext
 FieldTypeOptionEditor --> TypeOptionDataController
 TypeOptionDataController -l-> IFieldTypeOptionLoader
+
+'Context
 TypeOptionWidgetContext -l-> TypeOptionDataController
+TypeOptionWidgetContext --> TypeOptionDataParser
 @enduml
 
 @startuml Field Type Option Editor
@@ -31,6 +34,8 @@ skinparam ActivityBorderColor DimGray
 left to right direction
 
 interface TypeOptionWidgetContext
+
+TypeOptionWidgetContext --> TypeOptionDataController
 
 'type option builder
 FieldTypeOptionEditor --> TypeOptionWidgetBuilder
