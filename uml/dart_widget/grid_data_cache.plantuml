@@ -23,18 +23,23 @@ GridBloc "1" *-- "*" GridBlockCache: own
 
 GridBlockCache --> GridBlock
 
+'FieldCache
+GridFieldCache ..> GridFieldChangeset
+
+
 'Row Cache
-GridBlockCache --> GridRowsCache : own
-GridRowsCache --> GridBlockChangeset
-GridRowsCache --> GridCellsCache: own
-GridRowsCache --> GridRowCacheFieldNotifier
-GridRowsCache "1" *-- "*" GridRow
+GridBlockCache --> GridRowCache : own
+GridRowCache --> GridBlockChangeset
+GridRowCache --> GridCellCache: own
+GridRowCache --> GridRowCacheFieldNotifier
+GridRowCache "1" *-- "*" GridRow
 GridRow --> Row : raw row
 GridRow "1" o-- "*" Field
 
 
 'Cell Cache
-GridCellsCache "1" *-- "*" GridCell
+GridCellCache "1" *-- "*" GridCell
+GridCellCache --> GridCellCacheKey
 
 'Listener
 GridBlockCache --> GridBlockListener

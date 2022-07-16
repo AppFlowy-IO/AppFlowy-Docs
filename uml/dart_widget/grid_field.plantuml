@@ -5,20 +5,31 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-interface IFieldContextLoader
+interface IFieldTypeOptionLoader
 interface TypeOptionWidgetContext
 
 FieldEditor --> FieldEditorBloc
 FieldEditor --> FieldTypeOptionEditor
 
 'Context loader
-FieldEditorBloc --> IFieldContextLoader
-NewFieldContextLoader -u-|> IFieldContextLoader
-FieldContextLoader -u-|> IFieldContextLoader
+FieldEditorBloc --> IFieldTypeOptionLoader
+NewFieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
+FieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 
 FieldTypeOptionEditor --> FieldTypeOptionEditBloc
 FieldTypeOptionEditBloc --> GridFieldContext
-GridFieldContext -u-> IFieldContextLoader
+GridFieldContext -u-> IFieldTypeOptionLoader
+
+FieldTypeOptionEditor --> TypeOptionWidgetContext
+@enduml
+
+@startuml Field Type Option Editor
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+interface TypeOptionWidgetContext
 
 'type option builder
 FieldTypeOptionEditor --> TypeOptionWidgetBuilder

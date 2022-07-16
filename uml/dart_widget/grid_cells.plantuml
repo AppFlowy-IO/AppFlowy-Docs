@@ -61,7 +61,7 @@ SelectOptionCellDataParser -u-|> ICellDataParser
 URLCellDataParser -u-|> ICellDataParser
 
 'Cache
-IGridCellController --> GridCellsCache
+IGridCellController --> GridCellCache
 
 
 'Persistence
