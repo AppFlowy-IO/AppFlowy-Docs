@@ -1,0 +1,76 @@
+
+
+@startuml Grid Cell Builder
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+class SelectOptionService
+class SelectOptionCellEditorBloc
+interface IGridCellController
+
+GridCellBuilder --> SingleSelectCell
+GridCellBuilder --> DateCell
+GridCellBuilder --> GridURLCell
+
+'SingleSelectCell
+SingleSelectCell --> SelectOptionCellEditor
+SelectOptionCellEditor --> GridSelectOptionCellController
+SelectOptionCellEditor --> SelectOptionCellEditorBloc
+
+SelectOptionCellEditorBloc --> SelectOptionService
+SelectOptionCellEditorBloc -u-> GridSelectOptionCellController
+GridSelectOptionCellController --|> IGridCellController
+
+
+'DateCell
+DateCell --> DateCellEditor
+DateCellEditor --> GridDateCellController
+GridDateCellController --|> IGridCellController
+
+'URLCell
+GridURLCell --> URLCellEditor
+URLCellEditor --> GridURLCellController
+GridURLCellController --|> IGridCellController
+
+@enduml
+
+
+@startuml Grid Cell Controller
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+interface IGridCellDataPersistence
+interface IGridCellController
+interface ICellDataParser
+
+IGridCellController --> GridCellIdentifier
+IGridCellController --> CellListener
+
+'Data loader
+IGridCellController --> GridCellDataLoader
+GridCellDataLoader --> ICellDataParser
+
+'Data parser
+StringCellDataParser -u-|> ICellDataParser
+DateCellDataParser -u-|> ICellDataParser
+SelectOptionCellDataParser -u-|> ICellDataParser
+URLCellDataParser -u-|> ICellDataParser
+
+'Cache
+IGridCellController --> GridCellsCache
+
+
+'Persistence
+IGridCellController --> IGridCellDataPersistence
+DateCellDataPersistence -u-|> IGridCellDataPersistence
+CellDataPersistence -u-|> IGridCellDataPersistence
+
+
+'Field
+IGridCellController --> GridCellFieldNotifier
+
+@enduml
