@@ -1,16 +1,15 @@
-# Grid
+# #⃣ Grid
+
+## Introduction
 
 This document explains how the grid works on the Dart side. Also, it can be a development guide when you want to be a grid contributor. This document will get updated continuously, and any suggestions would be helpful.
-
-## Introduction&#x20;
 
 ### Definitions
 
 Below you will find some quick definitions to help you read through the document.
 
-| Item        | Description                                                                                                                                           |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Block       | @@@                                                                                                                                                   |
+| Block       | A grid can have many rows. Rows are therefore grouped into Blocks in order to make things more efficient                                              |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Cache class | @@@                                                                                                                                                   |
 | Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                        |
 | Column      | A column is a theoritical representation of data, however there is no Column class.                                                                   |
@@ -21,14 +20,13 @@ Below you will find some quick definitions to help you read through the document
 
 ## Grid
 
-At its core, a Grid type is a simple representation of items placed in columns and rows. It is not a spreadsheet.&#x20;
+At its core, a Grid type is a simple representation of items placed in columns and rows. It is not a spreadsheet.
 
-Another name for the column is Field. A column's configuration is defined in the [Field](grid.md#field) class. It is important to note though that although a grid has the concept of columns, there are no actual Column classes.&#x20;
+Another name for a column is Field. A column's configuration is defined in the [Field](grid.md#field) class. It is important to note though that although a grid has the concept of columns, there are no actual Column classes.
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Field in that row.
 
-A Grid has a list of blocks, each block has a list of rows.
-![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
+A Grid has a list of Blocks, each Block has a list of Rows. ![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
 
 ## Cache
 
@@ -36,36 +34,42 @@ A Grid has a list of blocks, each block has a list of rows.
 
 When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as show in the diagram above.
 
-1. GridFieldCache
-   * Listens to the Field's changes
-   * Updates the Field according to the `GridFieldChangesetPB`.
-2.  GridBlockCache
+1. `GridFieldCache`
+   * Listens to the `Field`'s changes.
+   * Updates the `Field` according to the `GridFieldChangesetPB`.
+2.  `GridBlockCache`
 
-    A Grid contains lots of blocks, each block has a `GridRowCache`. For the moment, we only implement one block.
+    A Grid contains many `Block`s, each `Block` has a `GridRowCache`.
 
-    * Listens to the block's changeset
-    * Updates the `GridRowCache` according to the `GridBlockChangesetPB`. The changeset contains the ids of inserted/deleted/updated rows.
-3. GridRowCache
-   * Caches the block's rows in memory
-   * A row contains many cells, each cell will be cached in the `GridCellCache`.
-   * Allows to insert/delete/update rows
-4. GridCellCache
-   * Caches each cell by `GridCellCacheKey` in memory
-   * Allow to remove/Insert cells
+    * Listens to the `Block`'s changeset.
+    * Updates the `GridRowCache` according to the `GridBlockChangesetPB`. The changeset contains the ids of inserted/deleted/updated `Rows`.
+3. `GridRowCache`
+   * Caches the `Block`'s `Row`s in memory.
+   * A `Row` contains many `Cell`s, each `Cell` will be cached in the `GridCellCache`.
+   * Allows to insert/delete/update `Row`s.
+4. `GridCellCache`
+   * Caches each `Cell` by `GridCellCacheKey` in memory.
+   * Allows to remove/insert `Cell`s.
+
+## Block
+
+A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and contained in `Block`s.&#x20;
+
+A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block` in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be lifted in the future.
 
 ## Field
 
 ### Field
 
-A Field represents a column's configuration. It will contain the column's name, id, width, type (as defined in [FieldType](grid.md#fieldtype)), etc.&#x20;
+A `Field` represents a column's configuration. It will contain the column's name, id, width, type (as defined in [FieldType](grid.md#fieldtype)), etc.
 
-A Field is not a column of data, it does not contain a list of Cells.
+A `Field` is not a column of data, it does not contain a list of `Cell`s.
 
 ### FieldType
 
-A Field has a FieldType. The FieldType defines the kind of data contained in a column. For example a column may contain dates, numbers, text, multi-select list, etc.&#x20;
+A `Field` has a `FieldType`. The `FieldType` defines the kind of data contained in a column. For example a column may contain dates, numbers, text, multi-select list, etc.
 
-Certain field types have user-defined options such as color, date format, number format, or a list of values for a multi-select list. These options are defined within a specialization of the FieldTypeOption class.
+Certain field types have user-defined options such as color, date format, number format, or a list of values for a multi-select list. These options are defined within a specialization of the `FieldTypeOption` class.
 
 ### **FieldEditor**
 
