@@ -26,29 +26,29 @@ GridBloc --> GridService
 GridBloc --> GridFieldCache: own
 GridBloc "1" *-- "*" GridBlockCache: own
 
-GridBlockCache --> GridBlock
+GridBlockCache --> GridBlockPB
 
 'FieldCache
-GridFieldCache ..> GridFieldChangeset
+GridFieldCache ..> GridFieldChangesetPB
 
 
 'Row Cache
 GridBlockCache --> GridRowCache : own
-GridRowCache --> GridBlockChangeset
+GridRowCache --> GridBlockChangesetPB
 GridRowCache --> GridCellCache: own
 GridRowCache --> GridRowCacheFieldNotifier
-GridRowCache "1" *-- "*" GridRow
-GridRow --> Row : raw row
-GridRow "1" o-- "*" Field
+GridRowCache "1" *-- "*" GridRowInfo
+GridRowInfo --> GridRowPB
+GridRowInfo "1" o-- "*" GridFieldPB
 
 
 'Cell Cache
-GridCellCache "1" *-- "*" GridCell
+GridCellCache "1" *-- "*" GridCell : Generic cell data
 GridCellCache --> GridCellCacheKey
 
 'Listener
 GridBlockCache --> GridBlockListener
-GridBlockListener "1" *-- "*" GridBlockChangeset
+GridBlockListener "1" *-- "*" GridBlockChangesetPB
 
 GridRowCacheFieldNotifierImpl -u-> GridFieldCache
 GridRowCacheFieldNotifierImpl --|> GridRowCacheFieldNotifier

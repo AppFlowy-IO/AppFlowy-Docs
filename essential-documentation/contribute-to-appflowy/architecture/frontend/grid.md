@@ -27,6 +27,7 @@ Another name for the column is Field. A column's configuration is defined in the
 A user can add a Row, and then define the data in each of the cells created for the Grid's Field in that row.
 
 A Grid has a list of blocks, each block has a list of rows.
+![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
 
 ## Cache
 
@@ -36,13 +37,13 @@ When you open a grid, a `GridBloc` will be initialized. There are four cache cla
 
 1. GridFieldCache
    * Listens to the Field's changes
-   * Updates the Field according to the `GridFieldChangeset`.
+   * Updates the Field according to the `GridFieldChangesetPB`.
 2.  GridBlockCache
 
     A Grid contains lots of blocks, each block has a `GridRowCache`. For the moment, we only implement one block.
 
     * Listens to the block's changeset
-    * Updates the `GridRowCache` according to the `GridBlockChangeset`. The changeset contains the ids of inserted/deleted/updated rows.
+    * Updates the `GridRowCache` according to the `GridBlockChangesetPB`. The changeset contains the ids of inserted/deleted/updated rows.
 3. GridRowCache
    * Caches the block's rows in memory
    * A row contains many cells, each cell will be cached in the `GridCellCache`.

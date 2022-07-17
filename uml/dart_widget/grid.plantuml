@@ -1,0 +1,12 @@
+@startuml
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+GridPB  "1" *-- "*" GridBlockPB
+GridPB  "1" *-- "*" GridFieldPB
+GridBlockPB "1" *-- "*" GridRowPB
+
+
+@enduml
