@@ -8,15 +8,14 @@ This document explains how the grid works on the Dart side. Also, it can be a de
 
 Below you will find some quick definitions to help you read through the document.
 
-| Block       | @@@                                                                                                                                                   |   |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | - |
-| Cache class | @@@                                                                                                                                                   |   |
-| Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                        |   |
-| Column      | A column is a theoritical representation of data, however there is no Column class.                                                                   |   |
-| Field       | A Field represents the configuration of a column. You can see more in the [Field](grid.md#field) section.                                             |   |
-| Grid        | A Grid type is simple representation of items placed in column and rows. It is not a spreasheet. You can see more in the [Grid](grid.md#grid) section |   |
-| Header      | @@@                                                                                                                                                   |   |
-| Row         | A Row represents a group of related data                                                                                                              |   |
+| Block       | @@@                                                                                                                                                   |
+| Cache class | @@@                                                                                                                                                   |
+| Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                        |
+| Column      | A column is a theoritical representation of data, however there is no Column class.                                                                   |
+| Field       | A Field represents the configuration of a column. You can see more in the [Field](grid.md#field) section.                                             |
+| Grid        | A Grid type is simple representation of items placed in column and rows. It is not a spreasheet. You can see more in the [Grid](grid.md#grid) section |
+| Header      | @@@                                                                                                                                                   |
+| Row         | A Row represents a group of related data                                                                                                              |
 
 ## Grid
 
