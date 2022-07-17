@@ -8,6 +8,8 @@ This document explains how the grid works on the Dart side. Also, it can be a de
 
 Below you will find some quick definitions to help you read through the document.
 
+| Item        | Description                                                                                                                                           |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Block       | @@@                                                                                                                                                   |
 | Cache class | @@@                                                                                                                                                   |
 | Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                        |
