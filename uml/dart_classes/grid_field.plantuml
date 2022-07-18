@@ -12,9 +12,8 @@ FieldEditor --> FieldEditorBloc
 FieldEditor --> FieldTypeOptionEditor
 
 'loader
-FieldEditorBloc ..> IFieldTypeOptionLoader : pass through params
 FieldEditorBloc --> TypeOptionDataController
-TypeOptionDataController -u-> IFieldTypeOptionLoader: own
+TypeOptionDataController --> IFieldTypeOptionLoader: own
 NewFieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 FieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 
@@ -24,7 +23,7 @@ FieldTypeOptionEditor --> TypeOptionWidgetContext
 FieldTypeOptionEditor ..> TypeOptionWidgetBuilder
 
 'Context
-TypeOptionWidgetContext --> TypeOptionDataController
+TypeOptionWidgetContext -l-> TypeOptionDataController
 @enduml
 
 @startuml Field Type Option Widget Builder
@@ -47,7 +46,7 @@ skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
-CheckboxTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
 
 DateTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
 

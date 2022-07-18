@@ -100,16 +100,18 @@ These options are defined within a specialization of the `FieldTypeOption` class
 * `IFieldTypeOptionLoad` defines how to load the field's type option data. For example, when we create a new field, we use
   `NewTypeOptionLoader`. We use `FieldTypeOptionLoader` to load the existing field's type option data.
 
-* `FieldTypeOptionEditor` is a widget that provides custom UI for each field. You can provide custom UI by extending the `TypeOptionWidgetBuilder` 
-  The widget returned by `TypeOptionWidgetBuilder` uses the `TypeOptionWidgetContext` as its data context.
+* `FieldTypeOptionEditor` is a widget that provides custom UI for each field. You can provide custom UI by extending the `TypeOptionWidgetBuilder`
+  As the pic shown below, we have lots of `TypeOptionWidgetBuilder` implementations. 
+  
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
-* `TypeOptionWidgetBuilder` 
+* The widget returned by `TypeOptionWidgetBuilder` use `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses
+  `DateTypeOptionContext` that extends the `TypeOptionWidgetContext`.
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder.svg)
 
-* `TypeOptionWidgetContext` 
-* 
+* `TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List<int>, to specific data type. As the pic shown below, 
+  different `TypeOptionContext` should have its corresponding `TypeOptionDataParser`. 
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
