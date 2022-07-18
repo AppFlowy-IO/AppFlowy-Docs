@@ -13,9 +13,9 @@ Below you will find some quick definitions to help you read through the document
 | ----------- |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cache class | Aim to reduce the time cost that getting data from the backend.                                                                                                                                                      |
 | Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                       |
-| Column      | A column is a theoritical representation of data, however there is no Column class.                                                                  |
+| Column      | A column is a theoretical representation of data, however, there is no Column class.                                                                  |
 | Field       | A Field represents the configuration of a column. You can see more in the [Field](grid.md#field) section.                                            |
-| Grid        | A Grid type is simple representation of items placed in column and rows. It is not a spreasheet. You can see more in the [Grid](grid.md#grid) section |
+| Grid        | A Grid type is a simple representation of items placed in columns and rows. It is not a spreadsheet. You can see more in the [Grid](grid.md#grid) section |
 | Header      | @@@                                                                                                                                                  |
 | Row         | A Row represents a group of related data                                                                                                             |
 
@@ -28,9 +28,9 @@ It is important to note though that although a grid has the concept of columns, 
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Field in that row.
 
-A Grid has a list of Blocks, each Block has a list of Rows. 
+A Grid has a list of Blocks, each Block has a list of Rows.
 
->  Every class with a `PB` suffix is mean it's generated in protobuf format. You could check the [protobuf document](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/protobuf) out if you interested in how the protobuf classes generated.
+>  Every class with a `PB` suffix is mean it's generated in protobuf format. You could check the [protobuf document](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/protobuf) out if you are interested in how the protobuf classes are generated.
 
 ![file : grid.plantuml](../../../..//uml/output/grid.svg)
 
@@ -38,11 +38,11 @@ A Grid has a list of Blocks, each Block has a list of Rows.
 
 ![file : grid\_data\_cache.plantuml](../../../..//uml/output/block\_row\_cell\_relation.svg)
 
-When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as show in the diagram above.
+When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as shown in the diagram above.
 
 1. `GridFieldCache`
-   * Listens to the `Field`'s changes.
-   * Updates the `Field` according to the `GridFieldChangesetPB`.
+    * Listens to the `Field`'s changes.
+    * Updates the `Field` according to the `GridFieldChangesetPB`.
 2.  `GridBlockCache`
 
     A Grid contains many `Block`s, each `Block` has a `GridRowCache`.
@@ -50,12 +50,12 @@ When you open a grid, a `GridBloc` will be initialized. There are four cache cla
     * Listens to the `Block`'s changeset.
     * Updates the `GridRowCache` according to the `GridBlockChangesetPB`. The changeset contains the ids of inserted/deleted/updated `Rows`.
 3. `GridRowCache`
-   * Caches the `Block`'s `Row`s in memory.
-   * A `Row` contains many `Cell`s, each `Cell` will be cached in the `GridCellCache`.
-   * Allows to insert/delete/update `Row`s.
+    * Caches the `Block`'s `Row`s in memory.
+    * A `Row` contains many `Cells, each `Cell` will be cached in the `GridCellCache`.
+    * Allows to insert/delete/update `Row`s.
 4. `GridCellCache`
-   * Caches each `Cell` by `GridCellCacheKey` in memory.
-   * Allows to remove/insert `Cell`s.
+    * Caches each `Cell` by `GridCellCacheKey` in memory.
+    * Allows to remove/insert `Cell`s.
 
 ## Block
 
@@ -65,7 +65,7 @@ contained in `Block`s.&#x20;
 ![file : grid_block.plantuml](../../../..//uml/output/grid_block.svg)
 
 A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block`
-in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be
+in the Grid. This will cause a limitation on the number of rows that a user can create, however, this limitation will be
 lifted in the future.
 
 
@@ -79,7 +79,7 @@ A `Field` is not a column of data, it does not contain a list of `Cell`s.
 
 ### FieldType
 
-A `Field` has a `FieldType`. The `FieldType` defines the kind of data contained in a column. For example a column may contain
+A `Field` has a `FieldType`. The `FieldType` defines the kind of data contained in a column. For example, a column may contain
 dates, numbers, text, multi-select list, etc.
 
 Certain field types have user-defined options such as color, date format, number format, or a list of values for a multi-select list.
@@ -95,14 +95,14 @@ These options are defined within a specialization of the `FieldTypeOption` class
 * `FieldEditorBloc` use `TypeOptionDataController` to listen on the field's changed or perform rename operation.
   It will notify the widget to rebuild if its state changed.
 
-* `TypeOptionDataController` defines how to update the field's properties. Such as the name, the field and the type option data.
+* `TypeOptionDataController` defines how to update the field's properties. Such as the name, the field, and the type option data.
 
 * `IFieldTypeOptionLoad` defines how to load the field's type option data. For example, when we create a new field, we use
   `NewTypeOptionLoader`. We use `FieldTypeOptionLoader` to load the existing field's type option data.
 
 * `FieldTypeOptionEditor` is a widget that provides custom UI for each field. You can provide custom UI by extending the `TypeOptionWidgetBuilder`
-  As the pic shown below, we have lots of `TypeOptionWidgetBuilder` implementations. 
-  
+  As the pic is shown below, we have lots of `TypeOptionWidgetBuilder` implementations.
+
 
 ![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
 * The widget returned by `TypeOptionWidgetBuilder` use `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses
@@ -110,47 +110,57 @@ These options are defined within a specialization of the `FieldTypeOption` class
 
 ![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder.svg)
 
-* `TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List<int>, to specific data type. As the pic shown below, 
-  different `TypeOptionContext` should have its corresponding `TypeOptionDataParser`. 
+* `TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List<int>, to specific data type. As the pic shown below,
+  different `TypeOptionContext` should have its corresponding `TypeOptionDataParser`.
 
 ![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
 ## Row
-A Row represents a group of related cells. 
+A Row represents a group of related cells.
 
-* `RowService` provides interfaces that are used to interact with the backend. It allows create, duplicate, delete and move the row operations.
-* `GridRowCache` cache the rows in memory in order to reduce the cost of getting data from the backend. (as defined in the [Cache](grid.md#cache))
+* `RowService` provides interfaces that are used to interact with the backend. It allows creating, duplicating, deleting, and moving the row operations.
+* `GridRowCache` caches the rows in memory to reduce the cost of getting data from the backend. (as defined in the [Cache](grid.md#cache))
 * A row has a list of cells. It uses the `GridCellBuilder` to build the custom cell according to the field type. Each cell should
-extend the `GridCellWidget` interface.
+  extend the `GridCellWidget` interface.
 
 ![file : grid_row.plantuml](../../../../uml/output/grid_row.svg)
 
 
 ## Cell
-A Cell is one individual cell in a grid. The number of cells in a row is equal to the number of fields in the grid. Each Cell 
-belongs to a specific field. We define the `GridCellWidget` that defines the shared behaviors. Such as `CellAccessory`, `CellEditable` and `CellShortcuts`.
+A Cell is one individual cell in a grid. The number of cells in a row is equal to the number of fields in the grid. Each cell
+belongs to a specific field. We define the `GridCellWidget` that defines the shared behaviors. Such as `CellAccessory`, `CellEditable`, and `CellShortcuts`.
 
 ![file : grid_cell.plantuml](../../../../uml/output/Grid_Cell_Builder.svg)
 
-Let's look at the select `GridSingleSelectOptionCell` and find out how it works. When we click the cell, the `SelectOptionCellEditor` will show up.
+Let's look at the select `GridSingleSelectCell` and find out how it works.
+
+When we click the cell, the `SelectOptionCellEditor` will show up.
 * `SelectOptionCellEditor` is a widget that defines the UI when editing the cell.
 * `SelectOptionCellEditorBloc` binds the UI and the data, the `SelectOptionCellEditor` will be rebuilt if the bloc state changes.
 * `SelectOptionService` provides interfaces that are used to interact with the backend. It allows deleting or updating the selection.
-* `GridSelectOptionCellController` use `IGridCellController` to implement its operations.
+* `GridSelectOptionCellController` use `IGridCellController` to implement the cell's operations.
 
 ![file : grid_cell.plantuml](../../../../uml/output/Grid_Selection_Cell_Edit.svg)
 
-`IGridCellController`  
-* Allow Read/Write cell data
-* Listen on the cell date change
-* Allow get the corresponding field type option data
-* Listen on the field event and load the cell data if need. 
-  For example, the number cell should reload when the number format is changed
+`IGridCellController`
+* Allow getting Read/Write cell data
+* Listen to the cell date change
+* Allow getting the corresponding field type option data that is parsed by the `TypeOptionDataParser`.
+* Listen to the field event and load the cell data if needed.
+  For example, the numbered cell should reload when the number format is changed
+
+`GridCellDataLoader`
+* Allow getting the cell data and then parsing into a specific type.
 
 `IGridCellDataParser`
+* Parse the `List<int>` into specific cell data. For example, the `SelectOptionCellDataParser` will parse the List<int> into
+  `SelectOptionCellDataPB`.
 
 `IGridCellDataPersistence`
+* Save the cell data
 
-`TypeOptionDataParser`
- 
+`CellService`
+* Provides interfaces that are used to interact with the backend to read or write the cell data.
+
+
 ![file : grid_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)

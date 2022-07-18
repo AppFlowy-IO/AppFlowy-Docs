@@ -59,6 +59,7 @@ IGridCellController --> TypeOptionDataParser
 'Data loader
 IGridCellController --> GridCellDataLoader
 GridCellDataLoader --> IGridCellDataParser
+GridCellDataLoader --> CellService
 
 'Data parser
 StringCellDataParser -u-|> IGridCellDataParser
@@ -75,6 +76,8 @@ IGridCellController --> IGridCellDataPersistence
 DateCellDataPersistence -u-|> IGridCellDataPersistence
 CellDataPersistence -u-|> IGridCellDataPersistence
 
+DateCellDataPersistence --> CellService
+CellDataPersistence --> CellService
 
 'Field
 IGridCellController --> GridCellFieldNotifier
