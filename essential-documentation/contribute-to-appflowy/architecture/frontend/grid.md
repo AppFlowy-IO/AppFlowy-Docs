@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This document explains how the grid works on the Dart side. Also, it can be a development guide when you want to be a grid contributor. This document will get updated continuously, and any suggestions would be helpful.
+This document explains how the grid works on the Dart side. Also, it can be a development guide when you want to be a
+grid contributor. This document will get updated continuously, and any suggestions would be helpful.
 
 ### Definitions
 
@@ -22,7 +23,8 @@ Below you will find some quick definitions to help you read through the document
 
 At its core, a Grid type is a simple representation of items placed in columns and rows. It is not a spreadsheet.
 
-Another name for a column is Field. A column's configuration is defined in the [Field](grid.md#field) class. It is important to note though that although a grid has the concept of columns, there are no actual Column classes.
+Another name for a column is Field. A column's configuration is defined in the [Field](grid.md#field) class.
+It is important to note though that although a grid has the concept of columns, there are no actual Column classes.
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Field in that row.
 
@@ -57,11 +59,14 @@ When you open a grid, a `GridBloc` will be initialized. There are four cache cla
 
 ## Block
 
-A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and contained in `Block`s.&#x20;
+A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and
+contained in `Block`s.&#x20;
 
 ![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid_block.svg)
 
-A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block` in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be lifted in the future.
+A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block`
+in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be
+lifted in the future.
 
 
 ## Field
@@ -74,15 +79,33 @@ A `Field` is not a column of data, it does not contain a list of `Cell`s.
 
 ### FieldType
 
-A `Field` has a `FieldType`. The `FieldType` defines the kind of data contained in a column. For example a column may contain dates, numbers, text, multi-select list, etc.
+A `Field` has a `FieldType`. The `FieldType` defines the kind of data contained in a column. For example a column may contain
+dates, numbers, text, multi-select list, etc.
 
-Certain field types have user-defined options such as color, date format, number format, or a list of values for a multi-select list. These options are defined within a specialization of the `FieldTypeOption` class.
+Certain field types have user-defined options such as color, date format, number format, or a list of values for a multi-select list.
+These options are defined within a specialization of the `FieldTypeOption` class.
 
 ### **FieldEditor**
 
-* Loads the FieldTypeOptionData
-
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field\_Editor.svg)
+
+* A `FieldEditor` is a widget that is used to edit the field's shared properties. Such as the name of the field, etc. It uses the
+  `FieldTypeOptionEditor` to customize the UI for each field.
+
+* `FieldEditorBloc` use `TypeOptionDataController` to listen on the field's changed or perform rename operation.
+  It will notify the widget to rebuild if its state changed.
+
+* `TypeOptionDataController` defines how to update the field's properties. Such as the name, the field and the type option data.
+
+* `IFieldTypeOptionLoad` defines how to load the field's type option data. For example, when we create a new field, we use
+  `NewTypeOptionLoader`. We use `FieldTypeOptionLoader` to load the existing field's type option data.
+
+* `FieldTypeOptionEditor` is a widget that provides custom UI for each field. You can provide custom UI by extending the `TypeOptionWidgetBuilder` 
+
+![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder.svg)
+Field_Type_Option_Widget_Builder
+* `TypeOptionWidgetBuilder` 
+* 
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field\_Type\_Option\_Editor.svg)
 

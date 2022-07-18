@@ -11,29 +11,47 @@ interface TypeOptionWidgetContext
 FieldEditor --> FieldEditorBloc
 FieldEditor --> FieldTypeOptionEditor
 
-'Context loader
-FieldEditorBloc --> IFieldTypeOptionLoader
+'loader
+FieldEditorBloc ..> IFieldTypeOptionLoader : pass through params
 FieldEditorBloc --> TypeOptionDataController
+TypeOptionDataController -u-> IFieldTypeOptionLoader: own
 NewFieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 FieldTypeOptionLoader -u-|> IFieldTypeOptionLoader
 
+'editor
 FieldTypeOptionEditor --> FieldTypeOptionEditBloc
 FieldTypeOptionEditor --> TypeOptionWidgetContext
-FieldTypeOptionEditor --> TypeOptionDataController
-TypeOptionDataController -l-> IFieldTypeOptionLoader
+FieldTypeOptionEditor ..> TypeOptionWidgetBuilder
 
 'Context
-TypeOptionWidgetContext -l-> TypeOptionDataController
-TypeOptionWidgetContext --> TypeOptionDataParser
+TypeOptionWidgetContext --> TypeOptionDataController
 @enduml
 
-@startuml Field Type Option Editor
+@startuml Field Type Option Widget Builder
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
 interface TypeOptionWidgetContext
+interface TypeOptionDataParser
+interface IFieldTypeOptionLoader
+
+TypeOptionWidgetBuilder --> TypeOptionWidgetContext
+TypeOptionWidgetContext --> TypeOptionDataController
+TypeOptionDataController --> IFieldTypeOptionLoader
+TypeOptionWidgetContext --> TypeOptionDataParser
+@enduml
+
+
+@startuml Field Type Option Editor Detail
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+interface TypeOptionWidgetContext
+interface TypeOptionDataParser
 
 TypeOptionWidgetContext --> TypeOptionDataController
 
