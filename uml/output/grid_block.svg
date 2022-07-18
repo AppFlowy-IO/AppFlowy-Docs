@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="420px" preserveAspectRatio="none" style="width:255px;height:420px;background:#FFFFFF;" version="1.1" viewBox="0 0 255 420" width="255px" zoomAndPan="magnify"><defs/><g><!--MD5=[8c40d9dd5d31fe877751a06228577dc5]
+cluster Grid--><g id="cluster_Grid"><rect height="407" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="242" x="7" y="7"/><path d="M47,7 L47,16.4883 L37,26.4883 L7,26.4883 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="30" x="10" y="21.5352">Grid</text></g><!--MD5=[3667dc68acd8c5284acdaea38f323bd8]
+cluster Block1--><g id="cluster_Block1"><rect fill="#DDDDDD" height="158" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="194" x="31" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="39" y="65.5352">Block 1</text></g><!--MD5=[3d84fd527fe8cc9acf8425fdc0173653]
+cluster Block2--><g id="cluster_Block2"><rect fill="#DDDDDD" height="158" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="194" x="31" y="232"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="39" y="247.5352">Block 2</text></g><!--MD5=[20ef5b0500837c2ffe5c3f3d55c4aa32]
+entity           row1          --><g id="elem_          row1          "><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="60" y="85"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="110" y="108.5352">row1</text></g><!--MD5=[c49d8b5caa0999bbb6b859a349d9ad31]
+entity           row2          --><g id="elem_          row2          "><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="60" y="156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="110" y="179.5352">row2</text></g><!--MD5=[629b5faff1806f6352bbd66557b802e5]
+entity           row3          --><g id="elem_          row3          "><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="60" y="267"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="110" y="290.5352">row3</text></g><!--MD5=[5b86691cf6a9bf366026abc11c0a8ce3]
+entity           row4          --><g id="elem_          row4          "><rect fill="#F1F1F1" height="36.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="60" y="338"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="110" y="361.5352">row4</text></g><!--MD5=[b7865cdb958890e34f09dc9eb3eebb9d]
+@startuml
+left to right direction
+skinparam componentStyle rectangle
+
+frame Grid {
+    component Block1 as "Block 1                         " #DDDDDD {
+        [          row1          ]
+        [          row2          ]
+    }
+
+    component Block2 as "Block 2                         " #DDDDDD {
+        [          row3          ]
+        [          row4          ]
+    }
+}
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 18:55:52 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

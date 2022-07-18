@@ -37,14 +37,34 @@ interface TypeOptionWidgetContext
 interface TypeOptionDataParser
 interface IFieldTypeOptionLoader
 
-TypeOptionWidgetBuilder --> TypeOptionWidgetContext
 TypeOptionWidgetContext --> TypeOptionDataController
 TypeOptionDataController --> IFieldTypeOptionLoader
 TypeOptionWidgetContext --> TypeOptionDataParser
 @enduml
 
+@startuml Field Type Option Widget Builder Impl
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+CheckboxTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
 
-@startuml Field Type Option Editor Detail
+DateTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
+NumberTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
+SingleSelectTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
+MultiSelectTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
+RichTextTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
+URLTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
+
+@enduml
+
+
+@startuml Field Type Option Editor Data Parser
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
@@ -53,37 +73,21 @@ left to right direction
 interface TypeOptionWidgetContext
 interface TypeOptionDataParser
 
-TypeOptionWidgetContext --> TypeOptionDataController
 
 'type option builder
-FieldTypeOptionEditor --> TypeOptionWidgetBuilder
-CheckboxTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-CheckboxTypeOptionWidgetBuilder --> CheckboxTypeOptionContext
 CheckboxTypeOptionContext --|> TypeOptionWidgetContext
 
-DateTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-DateTypeOptionWidgetBuilder --> DateTypeOptionContext
 DateTypeOptionContext --|> TypeOptionWidgetContext
 
-NumberTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-NumberTypeOptionWidgetBuilder --> NumberTypeOptionContext
 NumberTypeOptionContext --|> TypeOptionWidgetContext
 
-SingleSelectTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-SingleSelectTypeOptionWidgetBuilder --> SingleSelectTypeOptionContext
 SingleSelectTypeOptionContext --|> TypeOptionWidgetContext
 
-MultiSelectTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-MultiSelectTypeOptionWidgetBuilder --> MultiSelectTypeOptionContext
 MultiSelectTypeOptionContext --|> TypeOptionWidgetContext
 
 
-RichTextTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-RichTextTypeOptionWidgetBuilder --> RichTextTypeOptionContext
 RichTextTypeOptionContext --|> TypeOptionWidgetContext
 
-URLTypeOptionWidgetBuilder -u-|> TypeOptionWidgetBuilder
-URLTypeOptionWidgetBuilder -->URLTypeOptionContext
 URLTypeOptionContext --|> TypeOptionWidgetContext
 
 TypeOptionWidgetContext --> TypeOptionDataParser

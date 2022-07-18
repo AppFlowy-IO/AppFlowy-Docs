@@ -62,7 +62,7 @@ When you open a grid, a `GridBloc` will be initialized. There are four cache cla
 A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and
 contained in `Block`s.&#x20;
 
-![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid_block.svg)
+![file : grid_block.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid_block.svg)
 
 A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block`
 in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be
@@ -101,13 +101,17 @@ These options are defined within a specialization of the `FieldTypeOption` class
   `NewTypeOptionLoader`. We use `FieldTypeOptionLoader` to load the existing field's type option data.
 
 * `FieldTypeOptionEditor` is a widget that provides custom UI for each field. You can provide custom UI by extending the `TypeOptionWidgetBuilder` 
+  The widget returned by `TypeOptionWidgetBuilder` uses the `TypeOptionWidgetContext` as its data context.
+
+![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
+* `TypeOptionWidgetBuilder` 
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder.svg)
-Field_Type_Option_Widget_Builder
-* `TypeOptionWidgetBuilder` 
+
+* `TypeOptionWidgetContext` 
 * 
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field\_Type\_Option\_Editor.svg)
+![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
 ## Cell
 
