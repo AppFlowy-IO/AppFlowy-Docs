@@ -18,7 +18,7 @@ GridCellBuilder --> GridTextCell
 @enduml
 
 
-@startuml Grid Cell Builder
+@startuml Grid Cell Edit
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
@@ -28,17 +28,13 @@ class SelectOptionService
 class SelectOptionCellEditorBloc
 interface IGridCellController
 
-GridCellBuilder --> SingleSelectCell
-GridCellBuilder --> DateCell
-GridCellBuilder --> GridURLCell
 
 'SingleSelectCell
 SingleSelectCell --> SelectOptionCellEditor
-SelectOptionCellEditor --> GridSelectOptionCellController
 SelectOptionCellEditor --> SelectOptionCellEditorBloc
 
 SelectOptionCellEditorBloc --> SelectOptionService
-SelectOptionCellEditorBloc -u-> GridSelectOptionCellController
+SelectOptionCellEditorBloc --> GridSelectOptionCellController
 GridSelectOptionCellController --|> IGridCellController
 
 

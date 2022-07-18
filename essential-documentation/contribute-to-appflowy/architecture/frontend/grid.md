@@ -32,11 +32,11 @@ A Grid has a list of Blocks, each Block has a list of Rows.
 
 >  Every class with a `PB` suffix is mean it's generated in protobuf format. You could check the [protobuf document](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/protobuf) out if you interested in how the protobuf classes generated.
 
-![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
+![file : grid.plantuml](../../../..//uml/output/grid.svg)
 
 ## Cache
 
-![file : grid\_data\_cache.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/block\_row\_cell\_relation.svg)
+![file : grid\_data\_cache.plantuml](../../../..//uml/output/block\_row\_cell\_relation.svg)
 
 When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as show in the diagram above.
 
@@ -62,7 +62,7 @@ When you open a grid, a `GridBloc` will be initialized. There are four cache cla
 A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and
 contained in `Block`s.&#x20;
 
-![file : grid_block.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid_block.svg)
+![file : grid_block.plantuml](../../../..//uml/output/grid_block.svg)
 
 A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block`
 in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be
@@ -87,7 +87,7 @@ These options are defined within a specialization of the `FieldTypeOption` class
 
 ### **FieldEditor**
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field\_Editor.svg)
+![file : grid\_field.plantuml](../../../../uml/output/Field\_Editor.svg)
 
 * A `FieldEditor` is a widget that is used to edit the field's shared properties. Such as the name of the field, etc. It uses the
   `FieldTypeOptionEditor` to customize the UI for each field.
@@ -104,26 +104,26 @@ These options are defined within a specialization of the `FieldTypeOption` class
   As the pic shown below, we have lots of `TypeOptionWidgetBuilder` implementations. 
   
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
+![file : grid\_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
 * The widget returned by `TypeOptionWidgetBuilder` use `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses
   `DateTypeOptionContext` that extends the `TypeOptionWidgetContext`.
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Widget_Builder.svg)
+![file : grid\_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder.svg)
 
 * `TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List<int>, to specific data type. As the pic shown below, 
   different `TypeOptionContext` should have its corresponding `TypeOptionDataParser`. 
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Editor_Data_Parser.svg)
+![file : grid\_field.plantuml](../../../../uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
 ## Row
 
-![file : grid_row.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/grid_row.svg)
+![file : grid_row.plantuml](../../../../uml/output/grid_row.svg)
 
 
 ## Cell
 
 ![file : grid\_field.plantuml](../../../../uml/output/Grid_Cell_Builder.svg)
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Grid\_Cell\_Builder.svg)
+![file : grid\_field.plantuml](../../../../uml/output/Grid_Cell_Edit.svg)
 
-![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Grid\_Cell\_Controller.svg)
+![file : grid\_field.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
