@@ -7,18 +7,21 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-GridCellBuilder --> GridSingleSelectCell
-GridCellBuilder --> GridMultiSelectCell
-GridCellBuilder --> GridDateCell
-GridCellBuilder --> GridURLCell
-GridCellBuilder --> GridCheckboxCell
-GridCellBuilder --> GridNumberCell
-GridCellBuilder --> GridTextCell
+interface GridCellWidget
+GridCellBuilder --> GridCellWidget
+
+GridSingleSelectCell -u-|> GridCellWidget
+GridMultiSelectCell -u-|> GridCellWidget
+GridDateCell -u-|> GridCellWidget
+GridURLCell -u-|> GridCellWidget
+GridCheckboxCell -u-|> GridCellWidget
+GridNumberCell -u-|> GridCellWidget
+GridTextCell -u-|> GridCellWidget
 
 @enduml
 
 
-@startuml Grid Cell Edit
+@startuml Grid Selection Cell Edit
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
@@ -30,7 +33,7 @@ interface IGridCellController
 
 
 'SingleSelectCell
-SingleSelectCell --> SelectOptionCellEditor
+GridSingleSelectCell --> SelectOptionCellEditor
 SelectOptionCellEditor --> SelectOptionCellEditorBloc
 
 SelectOptionCellEditorBloc --> SelectOptionService
@@ -38,15 +41,6 @@ SelectOptionCellEditorBloc --> GridSelectOptionCellController
 GridSelectOptionCellController --|> IGridCellController
 
 
-'DateCell
-DateCell --> DateCellEditor
-DateCellEditor --> GridDateCellController
-GridDateCellController --|> IGridCellController
-
-'URLCell
-GridURLCell --> URLCellEditor
-URLCellEditor --> GridURLCellController
-GridURLCellController --|> IGridCellController
 
 @enduml
 

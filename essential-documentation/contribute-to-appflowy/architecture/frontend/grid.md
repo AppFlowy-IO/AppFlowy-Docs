@@ -104,26 +104,39 @@ These options are defined within a specialization of the `FieldTypeOption` class
   As the pic shown below, we have lots of `TypeOptionWidgetBuilder` implementations. 
   
 
-![file : grid\_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
+![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
 * The widget returned by `TypeOptionWidgetBuilder` use `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses
   `DateTypeOptionContext` that extends the `TypeOptionWidgetContext`.
 
-![file : grid\_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder.svg)
+![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder.svg)
 
 * `TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List<int>, to specific data type. As the pic shown below, 
   different `TypeOptionContext` should have its corresponding `TypeOptionDataParser`. 
 
-![file : grid\_field.plantuml](../../../../uml/output/Field_Type_Option_Editor_Data_Parser.svg)
+![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
 ## Row
+A Row represents a group of related cells. 
+
+* `RowService` provides interfaces that are used to interact with the backend. It allows create, duplicate, delete and move the row operations.
+* `GridRowCache` cache the rows in memory in order to reduce the cost of getting data from the backend. (as defined in the [Cache](grid.md#cache))
+* A row has a list of cells. It uses the `GridCellBuilder` to build the custom cell according to the field type. Each cell should
+extend the `GridCellWidget` interface.
 
 ![file : grid_row.plantuml](../../../../uml/output/grid_row.svg)
 
 
 ## Cell
+A Cell is one individual cell in a grid. The number of cells in a row is equal to the number of fields in the grid. Each Cell 
+belongs to a specific field. We define the `GridCellWidget` that defines the shared behaviors. Such as `CellAccessory`, `CellEditable` and `CellShortcuts`.
 
-![file : grid\_field.plantuml](../../../../uml/output/Grid_Cell_Builder.svg)
+![file : grid_cell.plantuml](../../../../uml/output/Grid_Cell_Builder.svg)
 
-![file : grid\_field.plantuml](../../../../uml/output/Grid_Cell_Edit.svg)
+Let's look at the select `GridSingleSelectOptionCell` and find out how it works. When we click the cell, the `SelectOptionCellEditor` will show up.
 
-![file : grid\_field.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
+
+![file : grid_cell.plantuml](../../../../uml/output/Grid_Selection_Cell_Edit.svg)
+
+IGridCellController
+
+![file : grid_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
