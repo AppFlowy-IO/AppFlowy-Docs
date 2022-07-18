@@ -133,10 +133,24 @@ belongs to a specific field. We define the `GridCellWidget` that defines the sha
 ![file : grid_cell.plantuml](../../../../uml/output/Grid_Cell_Builder.svg)
 
 Let's look at the select `GridSingleSelectOptionCell` and find out how it works. When we click the cell, the `SelectOptionCellEditor` will show up.
-
+* `SelectOptionCellEditor` is a widget that defines the UI when editing the cell.
+* `SelectOptionCellEditorBloc` binds the UI and the data, the `SelectOptionCellEditor` will be rebuilt if the bloc state changes.
+* `SelectOptionService` provides interfaces that are used to interact with the backend. It allows deleting or updating the selection.
+* `GridSelectOptionCellController` use `IGridCellController` to implement its operations.
 
 ![file : grid_cell.plantuml](../../../../uml/output/Grid_Selection_Cell_Edit.svg)
 
-IGridCellController
+`IGridCellController`  
+* Allow Read/Write cell data
+* Listen on the cell date change
+* Allow get the corresponding field type option data
+* Listen on the field event and load the cell data if need. 
+  For example, the number cell should reload when the number format is changed
 
+`IGridCellDataParser`
+
+`IGridCellDataPersistence`
+
+`TypeOptionDataParser`
+ 
 ![file : grid_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)

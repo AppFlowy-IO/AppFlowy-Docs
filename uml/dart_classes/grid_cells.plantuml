@@ -29,16 +29,12 @@ left to right direction
 
 class SelectOptionService
 class SelectOptionCellEditorBloc
-interface IGridCellController
 
-
-'SingleSelectCell
 GridSingleSelectCell --> SelectOptionCellEditor
 SelectOptionCellEditor --> SelectOptionCellEditorBloc
 
 SelectOptionCellEditorBloc --> SelectOptionService
 SelectOptionCellEditorBloc --> GridSelectOptionCellController
-GridSelectOptionCellController --|> IGridCellController
 
 
 
@@ -53,20 +49,22 @@ left to right direction
 
 interface IGridCellDataPersistence
 interface IGridCellController
-interface ICellDataParser
+interface IGridCellDataParser
+interface TypeOptionDataParser
 
 IGridCellController --> GridCellIdentifier
 IGridCellController --> CellListener
+IGridCellController --> TypeOptionDataParser
 
 'Data loader
 IGridCellController --> GridCellDataLoader
-GridCellDataLoader --> ICellDataParser
+GridCellDataLoader --> IGridCellDataParser
 
 'Data parser
-StringCellDataParser -u-|> ICellDataParser
-DateCellDataParser -u-|> ICellDataParser
-SelectOptionCellDataParser -u-|> ICellDataParser
-URLCellDataParser -u-|> ICellDataParser
+StringCellDataParser -u-|> IGridCellDataParser
+DateCellDataParser -u-|> IGridCellDataParser
+SelectOptionCellDataParser -u-|> IGridCellDataParser
+URLCellDataParser -u-|> IGridCellDataParser
 
 'Cache
 IGridCellController --> GridCellCache
