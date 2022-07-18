@@ -1,0 +1,19 @@
+@startuml
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+GridRowWidget --> RowBloc
+GridRowWidget --> GridCellBuilder
+
+RowBloc --> RowService
+
+'cache
+RowBloc --> GridRowCache
+GridRowCache --> GridCellCache: own
+GridRowCache "1" *-- "*" GridRowInfo
+GridRowInfo --> GridRowPB
+GridRowInfo "1" o-- "*" GridFieldPB
+RowBloc --> GridRowInfo
+@enduml

@@ -115,7 +115,14 @@ These options are defined within a specialization of the `FieldTypeOption` class
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
+## Row
+
+![file : grid_row.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/grid_row.svg)
+
+
 ## Cell
+
+![file : grid\_field.plantuml](../../../../uml/output/Grid_Cell_Builder.svg)
 
 ![file : grid\_field.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/Grid\_Cell\_Builder.svg)
 
