@@ -1,24 +1,3 @@
-@startuml FlowySDK
-title FFI
-left to right direction
-skinparam linetype polyline
-
-package "Front-end (Flutter)" #DDDDDD {
-    component Repository_A as "Repository"
-    component FFI_Frontend as "FFI" #FFDDDD
-}
-
-package "Back-end (Rust)" #DDDDDD {
-    component FFI_Backend as "FFI" #FFDDDD
-    component Dispatcher
-    component Module
-}
-
-Repository_A ..> FFI_Frontend : 1.Event + Protobuf
-FFI_Frontend --> FFI_Backend : 2.Bytes
-FFI_Backend --> Dispatcher : 3.Event + Protobuf
-Dispatcher --> Module: 4.Protobuf
-@enduml
 
 
 @startuml FlowySDK
@@ -35,7 +14,7 @@ frame Part_One {
     }
     note left of EventSource
     enum FolderEvent {
-        #[event(input = "ExportPayload", output = "ExportData")]
+        #[event(input = "ExportPayloadPB", output = "ExportDataPB")]
         ExportDocument = 0,
     }
     end note
@@ -46,7 +25,7 @@ frame Part_One {
         file PBDefine as "share.proto" #FFDDDD
     }
     note left of PBSource
-    struct ExportData {
+    struct ExportDataPB {
         #[pb(index = 1)]
         pub data: String,
 
@@ -104,48 +83,4 @@ Repository -[bold]up-> dart_pb
 Module -[bold]up-> rust_event
 Module -[bold]up-> rust_pb
 @enduml
-
-
-@startuml FlowySDK
-title Protobuf Communication
-top to bottom direction
-'skinparam linetype polyline
-
-rectangle {
-    package "Front-end (Flutter)" #DDDDDD {
-        component Repository
-        component FFI_Frontend as "FFI" #FFDDDD
-    }
-    note left of Repository
-    class FolderEventExportDocument {
-        Future<Either<ExportData, FlowyError>> send() {
-            ...
-        }
-    }
-    end note
-
-    package "Back-end (Rust)" #DDDDDD {
-        component Module
-        component Dispatcher as "Dispatcher" #FFDDDD
-        component FFI_Backend as "FFI" #FFDDDD
-    }
-    note left of Module
-    pub(crate) async fn export_handler(
-        data: Data<ExportPayload>,
-        controller: Unit<Arc<ViewController>>,
-    ) -> DataResult<ExportData, FlowyError> {
-        ...
-    }
-    end note
-}
-
-Repository --> Repository: 1.ExportPayload
-Repository --> FFI_Frontend: 2. Event + ExportPayload
-FFI_Frontend --> FFI_Backend: 3.Bytes
-FFI_Backend --> Dispatcher: 4: Event + ExportPayload
-Dispatcher --> Module: 5.ExportPayload
-Module --> Module : 6. call export_handler
-@enduml
-
-
 

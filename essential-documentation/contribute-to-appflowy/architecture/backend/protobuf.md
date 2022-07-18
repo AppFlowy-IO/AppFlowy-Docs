@@ -19,22 +19,29 @@ We define the `Event` and the `Protobuf data struct` in Rust, for example, the `
 ```rust
 // event_map.rs
 pub enum TextBlockEvent {
-    #[event(input = "TextBlockId", output = "TextBlockDelta")]
+    #[event(input = "TextBlockIdPB", output = "TextBlockDeltaPB")]
     GetBlockData = 0,
 
-    #[event(input = "TextBlockDelta", output = "TextBlockDelta")]
+    #[event(input = "TextBlockDeltaPB", output = "TextBlockDeltaPB")]
     ApplyDelta = 1,
 
-    #[event(input = "ExportPayload", output = "ExportData")]
+    #[event(input = "ExportPayloadPB", output = "ExportDataPB")]
     ExportDocument = 2,
 }
 
 ```
+The annotation, `#[event(input = Input struct, output = Output struct)]` is used to generate the dart function.
+
+* `Input struct` mean the function receive the input parameter's type.
+* `Output struct` mean the function's return value's type
+
+I think you noticed that there is a`PB` keyword appended to every struct. We use the `PB` keyword to identify
+this struct is in protobuf format.
 
 ```rust
 // entities.rs
 #[derive(Default, ProtoBuf)]
-pub struct ExportData {
+pub struct ExportDataPB {
     #[pb(index = 1)]
     pub data: String,
 
@@ -44,10 +51,10 @@ pub struct ExportData {
 
 ```
 
-They are not only used as the source codes but also used as the material for generating the [proto file](https://developers.google.com/protocol-buffers/docs/proto3).
-How to generate the proto file?
+The procedural macro, `ProtoBuf`, is used to mark this struct is going to generate the protobuf struct.
 
-We use the [syn](https://docs.rs/syn/latest/syn/) to collect the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) information that will be used to generate
+
+> We use the [syn](https://docs.rs/syn/latest/syn/) to collect the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) information that will be used to generate
 the `proto file`. If you interest in how to collect the information in details, you should check out the [Procedural Macros](https://doc.rust-lang.org/reference/procedural-macros.html).
 
 ### Part Two
@@ -55,12 +62,14 @@ the `proto file`. If you interest in how to collect the information in details, 
 Let's check out some pseudocode.
 
 ```Rust
+// build.rs
+
 fn main() {
-    gen_files(env!("CARGO_PKG_NAME"), "./src/protobuf/proto");
+    code_gen::protobuf_file::gen(env!("CARGO_PKG_NAME"));
 }
 
 
-fn gen_files(crate_name: &str, proto_file_dir: &str) { 
+fn gen(crate_name: &str, proto_file_dir: &str) { 
     // 1. generate the proto files to proto_file_dir
     let _ = gen_protos(crate_name);
 
@@ -72,14 +81,7 @@ fn gen_files(crate_name: &str, proto_file_dir: &str) {
 }
 ```
 
-The build scripts will be run before the crate gets compiled. Thanks to the cargo toolchain, we use `cargo:rerun-if-changed=PATH`
-to enable the build.rs will only run if the files were changed.
 
-> [cargo:rerun-if-changed=PATH](https://doc.rust-lang.org/cargo/reference/build-scripts.html#rerun-if-changed)
->
-> The rerun-if-changed instruction tells Cargo to re-run the build script if the file at the given path has changed.
-Currently, Cargo only uses the filesystem last-modified "mtime" timestamp to determine if the file has changed.
-It compares against an internal cached timestamp of when the build script last ran.
 
 ### Part Three
 You may wonder how build.rs define which files should generate the proto files and the event code(on the Dart side).
@@ -87,22 +89,20 @@ Well, we use the config file to achieve this.
 
 
 ```toml
-proto_crates = ["src/event_map.rs", "src/entities.rs"]
+proto_input = ["src/event_map.rs", "src/entities.rs"]
 event_files = ["src/event_map.rs"]
 ```
 
-**proto_crates** 
+**proto_input** 
 
-Enter the folder or file path, the proto files will be generated for each struct specified by `ProtoBuf`/`ProtoBuf_Enum` macro after build.rs run.
-The build.rs will not overwrite all the content in the proto file after first time. It only replaces the struct information.
-
-Because, we may need to import the other proto files into this proto file manually if your struct includes some types defined in other proto files.
-
+The proto_input receives path or file. The `code gen` process will parse the proto_input in order to generate the struct/enum.
 
 **event_files**
 
-The event classes will be generated from the path you specified in this section. each class name consists
-of the Enum name and the Enum value defined in event_map.rs. 
+The event_files receives file that define the event. The `code gen` process will parse the file in order to generate the
+dart event class.
+
+The event class name consists of the Enum name and the Enum value defined in event_map.rs. 
 
     For example: The ExportDocument event: 
     ```Dart
@@ -126,8 +126,27 @@ of the Enum name and the Enum value defined in event_map.rs.
     ```
 
 ### Part Four
-After the build.rs, it generates files in Dart and Rust protobuf files using the same proto files.
 
+The `code gen` process is embedded in the AppFlowy build process. But you can run the build process manually. 
+Just go to the corresponding crate directory(For example, frontend/flowy-text-block), and run:
+
+`cargo buil --features=dart`
+
+or if you want to check the verbose output.
+
+`cargo buil -vv --features=dart`
+
+The build scripts will be run before the crate gets compiled. Thanks to the cargo toolchain, we use `cargo:rerun-if-changed=PATH`
+to enable the build.rs will only run if the files were changed.
+
+> [cargo:rerun-if-changed=PATH](https://doc.rust-lang.org/cargo/reference/build-scripts.html#rerun-if-changed)
+>
+> The rerun-if-changed instruction tells Cargo to re-run the build script if the file at the given path has changed.
+Currently, Cargo only uses the filesystem last-modified timestamp to determine if the file has changed.
+It compares against an internal cached timestamp of when the build script last ran.
+
+
+After running the build.rs, it generates files in Dart and Rust protobuf files using the same proto files.
 Dart:
 * `share.pb.dart`
 * `event_map.pb.dart`
@@ -138,7 +157,7 @@ Rust:
 * `share.rs`
 * `event_map.rs`
 
-These files are located in "`the-corresponding-crate/src/protobuf`".
+These files are located in "`xxx-crate/src/protobuf`".
 
 
 ### Part Five
@@ -146,11 +165,12 @@ The class, TextBlockEventExportDocument, is automatically generated in the Dart 
 get called when the `ExportDocument` event happened. The calling route as the picture shown below.
 
 1. Repository constructs the `TextBlockEventExportDocument` class, and call `send()` function.
-2. Front-end's FFI serializes the event and the `ExportPayload` to bytes.
+2. Front-end's FFI serializes the event and the `ExportPayloadPB` to bytes.
 3. The bytes were sent to Back-end.
-4. Back-end's FFI deserializes the bytes into the corresponding `event` and `ExportPayload`.
-5. The dispatcher sends the `ExportPayload` to the module that registers as the event handler.
+4. Back-end's FFI deserializes the bytes into the corresponding `event` and `ExportPayloadPB`.
+5. The dispatcher sends the `ExportPayloadPB` to the module that registers as the event handler.
 6. Module's `export_handler` function gets called with the event and data.
+7. At the end, `export_handler` will return 'ExportDataPB', which will be post to the frontend. 
 
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf_Communication.svg)
 

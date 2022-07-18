@@ -8,15 +8,15 @@ This document explains how the grid works on the Dart side. Also, it can be a de
 
 Below you will find some quick definitions to help you read through the document.
 
-| Block       | A grid can have many rows. Rows are therefore grouped into Blocks in order to make things more efficient                                              |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cache class | @@@                                                                                                                                                   |
-| Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                        |
-| Column      | A column is a theoritical representation of data, however there is no Column class.                                                                   |
-| Field       | A Field represents the configuration of a column. You can see more in the [Field](grid.md#field) section.                                             |
+| Block       | A grid can have many rows. Rows are therefore grouped into Blocks in order to make things more efficient                                             |
+| ----------- |------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cache class | Aim to reduce the time cost that getting data from the backend.                                                                                                                                                      |
+| Cell        | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                       |
+| Column      | A column is a theoritical representation of data, however there is no Column class.                                                                  |
+| Field       | A Field represents the configuration of a column. You can see more in the [Field](grid.md#field) section.                                            |
 | Grid        | A Grid type is simple representation of items placed in column and rows. It is not a spreasheet. You can see more in the [Grid](grid.md#grid) section |
-| Header      | @@@                                                                                                                                                   |
-| Row         | A Row represents a group of related data                                                                                                              |
+| Header      | @@@                                                                                                                                                  |
+| Row         | A Row represents a group of related data                                                                                                             |
 
 ## Grid
 
@@ -26,7 +26,11 @@ Another name for a column is Field. A column's configuration is defined in the [
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Field in that row.
 
-A Grid has a list of Blocks, each Block has a list of Rows. ![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
+A Grid has a list of Blocks, each Block has a list of Rows. 
+
+> * Every class with a `PB` suffix is mean it's generated in protobuf format. You could check the [protobuf document](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/protobuf) out if you interested in how the protobuf classes generated.
+
+![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
 
 ## Cache
 
