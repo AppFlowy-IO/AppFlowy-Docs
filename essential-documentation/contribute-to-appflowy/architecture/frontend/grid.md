@@ -28,7 +28,7 @@ A user can add a Row, and then define the data in each of the cells created for 
 
 A Grid has a list of Blocks, each Block has a list of Rows. 
 
-> * Every class with a `PB` suffix is mean it's generated in protobuf format. You could check the [protobuf document](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/protobuf) out if you interested in how the protobuf classes generated.
+>  Every class with a `PB` suffix is mean it's generated in protobuf format. You could check the [protobuf document](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/protobuf) out if you interested in how the protobuf classes generated.
 
 ![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid.svg)
 
@@ -59,7 +59,10 @@ When you open a grid, a `GridBloc` will be initialized. There are four cache cla
 
 A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and contained in `Block`s.&#x20;
 
+![file : grid.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy-Docs/main/uml/output/grid_block.svg)
+
 A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block` in the Grid. This will cause a limitation on the number of rows that a user can create, however this limitation will be lifted in the future.
+
 
 ## Field
 

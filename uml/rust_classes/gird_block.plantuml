@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+skinparam componentStyle rectangle
+
+frame Grid {
+    component Block1 as "Block 1                         " #DDDDDD {
+        [          row1          ]
+        [          row2          ]
+    }
+
+    component Block2 as "Block 2                         " #DDDDDD {
+        [          row3          ]
+        [          row4          ]
+    }
+}
+@enduml
