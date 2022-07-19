@@ -12,9 +12,21 @@
 * You may need to disable hardware 3D acceleration if you are running AppFlowy in a VM. Otherwise, certain GL failures will prevent the app from launching.
 * If you encounter any issues, have a look at [troubleshooting-when-installing-appflowy.md](../../../install-appflowy/installation-methods/troubleshooting-when-installing-appflowy.md "mention") first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
-## Step 1: Install your build environment
+## Step 1: Get the source code
 
-There's no point continuing if this doesn't work for you, so lets start here before you even download the code. Feel free to ask questions on our [Discord](https://discord.gg/9Q2xaN37tV) so that we may refine this document and make the process as easy as possible for you.
+Clone the source code from our Github project.
+
+{% hint style="warning" %}
+You should fork the code instead if you wish to submit code to the project. You'll find information on that in [Submitting your first Pull Request](../submitting-code/submitting-your-first-pull-request.md)
+{% endhint %}
+
+```shell
+git clone https://github.com/AppFlowy-IO/appflowy.git
+```
+
+## Step 2: Install your build environment
+
+Feel free to ask questions on our [Discord](https://discord.gg/9Q2xaN37tV) so that we may refine this document and make the process as easy as possible for you.
 
 * Install system prerequisites
 
@@ -32,16 +44,7 @@ yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 {% endtab %}
 {% endtabs %}
 
-* Install rust on Linux
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-rustup toolchain install stable
-rustup default stable
-```
-
-* Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux)
+* Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 
 ```bash
 git clone https://github.com/flutter/flutter.git
@@ -50,34 +53,9 @@ echo "export PATH=\$PATH:"`pwd`"/bin" >> ~/.profile
 export PATH="$PATH:`pwd`/bin"
 ```
 
-* Make sure to enable the flutter stable channel
-
+* Run the setup script from the base directory
 ```bash
-flutter channel stable
-```
-
-* Enable linux desktop
-
-```bash
-flutter config --enable-linux-desktop
-```
-
-* Fix any problems reported by flutter doctor
-
-```bash
-flutter doctor
-```
-
-## Step 2: Get the source code
-
-Clone the source code from our Github project.
-
-{% hint style="warning" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in [Submitting your first Pull Request](../submitting-code/submitting-your-first-pull-request.md)
-{% endhint %}
-
-```shell
-git clone https://github.com/AppFlowy-IO/appflowy.git
+./frontend/scripts/install_dev_env/install_linux.sh
 ```
 
 ## Step 3: Build AppFlowy (Flutter GUI application)
@@ -86,24 +64,6 @@ git clone https://github.com/AppFlowy-IO/appflowy.git
 
 ```bash
 cd AppFlowy/frontend
-```
-
-* Install cargo make
-
-```bash
-cargo install --force cargo-make
-```
-
-* Install duckscript
-
-```bash
-cargo install --force duckscript_cli
-```
-
-* Check prerequisites
-
-```shell
-cargo make flowy_dev
 ```
 
 * \[Optional] Build flowy-sdk-dev (dart-ffi)
@@ -122,7 +82,7 @@ cargo make --profile production-linux-x86_64 flowy-sdk-release
 {% endtab %}
 {% endtabs %}
 
-* Build AppFlowy
+* Build AppFlowy. You'll find the binary in app\_flowy/product/linux/AppFlowy/
 
 {% tabs %}
 {% tab title="Development" %}
@@ -132,7 +92,6 @@ cargo make -p development-linux-x86_64 appflowy-linux-dev
 {% endtab %}
 
 {% tab title="Production" %}
-You'll find the binary in app\_flowy/product/linux/AppFlowy/
 
 ```bash
 cargo make -p production-linux-x86_64 appflowy-linux
