@@ -7,43 +7,29 @@
 ## **Step 1: Get the source code**
 
 {% hint style="warning" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in \*\*\*\* [setting-up-your-repositories.md](../submitting-code/setting-up-your-repositories.md "mention")\*\*\*\*
+You should fork the code instead if you wish to submit code to AppFlowy. You'll find information on that in [setting-up-your-repositories.md](../submitting-code/setting-up-your-repositories.md "mention")
 {% endhint %}
 
 ```shell
 git clone https://github.com/AppFlowy-IO/appflowy.git
 ```
 
-## **Step 2: Install Rust and Cargo**
+## **Step 2: Install Flutter**
 
 {% hint style="info" %}
-Skip install\_rust or install\_cargo\_make if you already installed it.
+Skip this if flutter is already installed on your system.
 {% endhint %}
 
-```shell
-cd AppFlowy/frontend
-```
+* Follow the instructions [here](https://flutter.dev/docs/get-started/install) to install Flutter.
 
-```shell
-make flowy_dev_install
+## **Step 3: Install your build environment**
+
+* Run the setup script from the base directory
+```bash
+./frontend/scripts/install_dev_env/install_linux.sh
 ```
 
 > FYI, AppFlowy uses [https://github.com/sagiegurari/cargo-make](https://github.com/sagiegurari/cargo-make) to construct the build scripts
-
-## **Step 3: Install Flutter**
-
-* Follow the instructions [here](https://flutter.dev/docs/get-started/install) to install Flutter.
-* As AppFlowy uses the `stable` channel, you need to switch the channel.
-
-```shell
-flutter channel stable
-```
-
-* Enable the specified platform first if you don't enable it before and then select the desktop device.
-
-```shell
-flutter config --enable-macos-desktop
-```
 
 ## **Step 4: Edit and run the application**
 
