@@ -25,8 +25,9 @@ Skip this if flutter is already installed on your system.
 ## **Step 3: Install your build environment**
 
 * Run the setup script from the base directory
+
 ```bash
-./frontend/scripts/install_dev_env/install_linux.sh
+./frontend/scripts/install_dev_env/install_macos.sh
 ```
 
 > FYI, AppFlowy uses [https://github.com/sagiegurari/cargo-make](https://github.com/sagiegurari/cargo-make) to construct the build scripts
@@ -34,10 +35,9 @@ Skip this if flutter is already installed on your system.
 ## **Step 4: Edit and run the application**
 
 1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
-
 2. Go to the Run and Debug tab and then click AF: Clean + Rebuild All for the first time running.
 
-![img.png](../../../../.gitbook/assets/launch_appflowy.png)
+![img.png](../../../../.gitbook/assets/launch\_appflowy.png)
 
 * Please also check the device selection, as of now AppFlowy only supports Desktop: ![device](https://user-images.githubusercontent.com/86001920/144546864-cebbf0c0-4eef-424e-93c7-e1e6b3a59669.png)
 
@@ -65,4 +65,3 @@ cargo make --profile production-mac-aarch64 appflowy
 The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
 The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/[OS]/Release/AppFlowy/`.
-
