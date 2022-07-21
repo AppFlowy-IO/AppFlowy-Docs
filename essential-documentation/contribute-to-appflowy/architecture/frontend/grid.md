@@ -1,4 +1,4 @@
-# #⃣ #⃣ Grid
+# #⃣  Grid
 
 ## Introduction
 
@@ -175,8 +175,9 @@ the `SelectOptionCellDataParser` will parse the List<int> into `SelectOptionCell
 
 **IGridCellDataPersistence**
 
-We can use CellDataPersistence that implements the `IGridCellDataPersistence` to perform normal save operation. Also, implement the `IGridCellDataPersistence`
-to provide custom data saving operation. Just like the `DateCellDataPersistence` does.
+We can use CellDataPersistence that implements the `IGridCellDataPersistence` to perform normal save operation.
+
+Also, implement the `IGridCellDataPersistence`to provide custom data saving operation. Just like the `DateCellDataPersistence` does.
 
 **CellService**
 
