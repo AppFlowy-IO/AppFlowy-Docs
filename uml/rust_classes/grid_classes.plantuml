@@ -25,7 +25,6 @@ GridRevision --> GridBlockMetaRevision
 
 'GridBlockManager
 class GridBlockManager #FB006D
-GridBlockManager -u-> GridUser
 GridBlockManager -u-> BlockIndexCache
 GridBlockManager "1" *-- "*" GridBlockRevisionEditor
 

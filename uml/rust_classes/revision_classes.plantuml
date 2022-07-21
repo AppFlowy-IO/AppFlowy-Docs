@@ -32,6 +32,7 @@ left to right direction
 '   deps
     RevisionManager ..> RevisionLoader
     RevisionLoader --> RevisionCloudService
+    RevisionLoader -->RevisionPersistence
     RevisionManager --> RevisionPersistence
     RevisionPersistence -d-> RevisionDiskCache
     RevisionPersistence -d-> RevisionMemoryCache
@@ -94,13 +95,13 @@ left to right direction
     class GridRevisionEditor #FB006D
     class GridBlockRevisionEditor #CEE741
     class GridRevisionCloudService #FB006D
-    class GridBlockMetaRevisionCloudService #CEE741
+    class GridBlockRevisionCloudService #CEE741
     class SQLiteGridRevisionPersistence #FB006D {}
-    class SQLiteGridBlockMetaRevisionPersistence #CEE741 {}
+    class SQLiteGridBlockRevisionPersistence #CEE741 {}
 
 '   interface impl
     SQLiteGridRevisionPersistence .u.|> RevisionDiskCache
-    SQLiteGridBlockMetaRevisionPersistence .u.|> RevisionDiskCache
+    SQLiteGridBlockRevisionPersistence .u.|> RevisionDiskCache
 
 '   deps
     GridRevisionEditor --> RevisionManager
@@ -109,7 +110,7 @@ left to right direction
     GridBlockRevisionEditor --> RevisionManager
     GridBlockRevisionEditor --> RevisionWebSocketManager
     GridRevisionCloudService .u.|> RevisionCloudService
-    GridBlockMetaRevisionCloudService .u.|> RevisionCloudService
+    GridBlockRevisionCloudService .u.|> RevisionCloudService
 
 
 'History
@@ -128,8 +129,6 @@ left to right direction
     RevisionHistoryManager ..> RevisionHistoryDiskCache
 
 'Snapshot
-'   classes
-    class RevisionSnapshot {}
 '   interface
     interface RevisionSnapshotDiskCache {}
 

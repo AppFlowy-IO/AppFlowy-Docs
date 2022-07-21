@@ -83,31 +83,59 @@ Certain field types have user-defined options such as color, date format, number
 
 ![file : grid\_field.plantuml](../../../../uml/output/Field\_Editor.svg)
 
-* A `FieldEditor` is a widget that is used to edit the field's shared properties. Such as the name of the field, etc. It uses the `FieldTypeOptionEditor` to customize the UI for each field.
-* `FieldEditorBloc` uses a `TypeOptionDataController` to listen for changes to a `Field` or perform a rename operation. It will notify the widget to rebuild if its state has changed.
-* `TypeOptionDataController` defines how to update a `Field`'s properties. Such as the name, the field, and the type option data.
-* `IFieldTypeOptionLoad` defines how to load a `Field`'s type option data. For example, when we create a new `Field`, we use `NewTypeOptionLoader`. We use `FieldTypeOptionLoader` to load the existing `Field`'s type option data.
-* `FieldTypeOptionEditor` is a widget that provides a custom UI for each `Field`. You can provide a custom UI by extending the `TypeOptionWidgetBuilder` As the image below shows, we have many `TypeOptionWidgetBuilder` implementations.
+**FieldEditor**
 
-![file : grid\_field.plantuml](../../../../uml/output/Field\_Type\_Option\_Widget\_Builder\_Impl.svg)
+A `FieldEditor` is a widget that is used to edit the field's shared properties. Such as the name of the field, etc. 
+It uses the `FieldTypeOptionEditor` to customize the UI for each field.
 
-* The widget returned by `TypeOptionWidgetBuilder` uses `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses `DateTypeOptionContext` that extends `TypeOptionWidgetContext`.
+**FieldEditorBloc**
 
-![file : grid\_field.plantuml](../../../../uml/output/Field\_Type\_Option\_Widget\_Builder.svg)
+`FieldEditorBloc` uses a `TypeOptionDataController` to listen for changes to a `Field` or perform a rename operation. 
+It will notify the widget to rebuild if its state has changed.
 
-* `TypeOptionWidgetContext` uses a `TypeOptionDataParser` to parse the generic data, List, to specific data type. As the image below shows, each `TypeOptionContext` must have a corresponding `TypeOptionDataParser`.
 
-![file : grid\_field.plantuml](../../../../uml/output/Field\_Type\_Option\_Editor\_Data\_Parser.svg)
+**TypeOptionDataController**
+
+Defines how to update a `Field`'s properties. Such as the name, the field, and the type option data.
+
+**IFieldTypeOptionLoad**
+
+Defines how to load a `Field`'s type option data. For example, when we create a new `Field`,
+we use `NewTypeOptionLoader`. We use `FieldTypeOptionLoader` to load the existing `Field`'s type option data.
+
+**FieldTypeOptionEditor**
+
+`FieldTypeOptionEditor` is a widget that provides a custom UI for each `Field`. You can provide a custom UI by extending the `TypeOptionWidgetBuilder`
+As the image below shows, we have many `TypeOptionWidgetBuilder` implementations.
+
+![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Widget_Builder_Impl.svg)
+
+The widget returned by `TypeOptionWidgetBuilder` use `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses
+`DateTypeOptionContext` that extends the `TypeOptionWidgetContext`.
+
+`TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List, to specific data type. As the image below shows,
+each `TypeOptionContext` must have a corresponding `TypeOptionDataParser`.
+
+![file : grid_field.plantuml](../../../../uml/output/Field_Type_Option_Editor_Data_Parser.svg)
 
 ## Row
 
 A `Row` represents a group of related `Cells`.
 
-* `RowService` provides interfaces that are used to interact with the backend. It allows creating, duplicating, deleting, and moving the row operations.
-* `GridRowCache` caches the rows in memory to reduce the cost of getting data from the backend. (as defined in the [Cache](grid.md#cache))
+**RowService**
+
+`RowService` handles up the logic to interact with the backend. It allows creating, duplicating, deleting, and moving the row operations.
+
+**GridRowCache**
+
+Caching the rows in memory to reduce the cost of getting data from the backend. (as defined in the [Cache](grid.md#cache))
+
+**GridCellBuilder**
+
 * A `Row` has a list of `Cell`s. It uses the `GridCellBuilder` to build the custom `Cell` according to the field type. Each cell should extend the `GridCellWidget` interface.
 
-![file : grid\_row.plantuml](../../../../uml/output/grid\_row.svg)
+
+![file : grid_row.plantuml](../../../../uml/output/grid_row.svg)
 
 ## Cell
 
@@ -115,38 +143,41 @@ A `Cell` is one individual cell in a grid. The number of `Cell`s in a `Row` is e
 
 ![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Cell\_Builder.svg)
 
-Let's look at the select `GridSingleSelectCell` and find out how it works.
+Let's look at the select `GridSingleSelectCell` and find out how it works. When a user clicks a cell, the `SelectOptionCellEditor` will show up.
 
-When a user clicks a cell, the `SelectOptionCellEditor` will show up.
-
-* `SelectOptionCellEditor` is a widget that defines the UI when editing the cell.
-* `SelectOptionCellEditorBloc` binds the UI and the data, the `SelectOptionCellEditor` will be rebuilt if the bloc state changes.
-* `SelectOptionService` provides interfaces that are used to interact with the backend. It allows deleting or updating the selection.
-* `GridSelectOptionCellController` use `IGridCellController` to implement the cell's operations.
 
 ![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Selection\_Cell\_Edit.svg)
 
-`IGridCellController`
+* `SelectOptionCellEditor` is a widget that defines the UI when editing the cell.
+* `SelectOptionCellEditorBloc` binds the UI and the data, the `SelectOptionCellEditor` will be rebuilt if the bloc state changes.
+* `SelectOptionService` handles up the logic for deleting, updating the select option with the backend. 
+* `GridSelectOptionCellController` use `IGridCellController` to implement the cell's operations.
+
+
+
+![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
+
+**IGridCellController**
 
 * Allows getting Read/Write cell data.
 * Listens to the cell date change.
 * Allows getting the corresponding field type option data that is parsed by the `TypeOptionDataParser`.
 * Listens to the field event and loads the cell data if needed. For example, the numbered cell should reload when the number format is changed.
 
-`GridCellDataLoader`
+**IGridCellDataParser**
 
-* Allows getting the cell data and then parsing into a specific type.
+Allow getting the cell data and then parsing into a specific type.
 
-`IGridCellDataParser`
+**IGridCellDataParser**
 
-* Parses the `List<int>` into specific cell data. For example, the `SelectOptionCellDataParser` will parse the List into `SelectOptionCellDataPB`.
+The implementation of `IGridCellDataParser` will parse the `List<int>` into specific cell data. For example, 
+the `SelectOptionCellDataParser` will parse the List<int> into `SelectOptionCellDataPB`.
 
-`IGridCellDataPersistence`
+**IGridCellDataPersistence**
 
-* Saves the cell data.
+We can use CellDataPersistence that implements the `IGridCellDataPersistence` to perform normal save operation. Also, implement the `IGridCellDataPersistence`
+to provide custom data saving operation. Just like the `DateCellDataPersistence` does.
 
-`CellService`
+**CellService**
 
-* Provides interfaces that are used to interact with the backend to read or write the cell data.
-
-![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
+Handling the logic for reading and writing the cell data with the backend.
