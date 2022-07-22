@@ -9,6 +9,7 @@
   * [x] Arch Linux - X86\_64
   * [ ] Deepin - X86\_64
   * [ ] Raspberry Pi OS - aarch64
+  * [x] openSUSE Tumbleweed - x86\_64
 * You may need to disable hardware 3D acceleration if you are running AppFlowy in a VM. Otherwise, certain GL failures will prevent the app from launching.
 * If you encounter any issues, have a look at [troubleshooting-when-installing-appflowy.md](../../../install-appflowy/installation-methods/troubleshooting-when-installing-appflowy.md "mention") first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
@@ -42,7 +43,27 @@ sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake 
 yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 ```
 {% endtab %}
+
+{%tab title="openSUSE Tumbleweed" %}
+```bash
+sudo zypper install -t pattern devel_basis
+sudo zypper install libopenssl-devel sqlite3-devel clang cmake ninja pkgconf-pkg-config pkgconf libgtk-3-0 curl zip unzip gtk3-devel
+```
+{% endtab %}
+
 {% endtabs %}
+
+* Install Rust according to [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install). 
+
+* Install the required Rust components
+
+```bash
+rustup toolchain install stable
+rustup component add cargo
+cargo install cargo-make
+
+```
+
 
 * Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 
