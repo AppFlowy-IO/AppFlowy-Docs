@@ -31,6 +31,7 @@
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
       * [#⃣ #⃣ Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/grid.md)
+      * [#⃣ #⃣ Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/editor.md)
     * [Backend](essential-documentation/contribute-to-appflowy/architecture/backend/README.md)
       * [Initialize](essential-documentation/contribute-to-appflowy/architecture/backend/initialize.md)
       * [Protobuf](essential-documentation/contribute-to-appflowy/architecture/backend/protobuf.md)
