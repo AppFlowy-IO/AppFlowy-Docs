@@ -169,8 +169,12 @@ get called when the `ExportDocument` event happened. The calling route as the pi
 3. The bytes were sent to Back-end.
 4. Back-end's FFI deserializes the bytes into the corresponding `event` and `ExportPayloadPB`.
 5. The dispatcher sends the `ExportPayloadPB` to the module that registers as the event handler.
-6. Module's `export_handler` function gets called with the event and data.
-7. At the end, `export_handler` will return 'ExportDataPB', which will be post to the frontend. 
+6. `ExportPayloadPB` will try to parse into `ExportParams`. It will return an error if there are illegal fields in it.
+
+   For example: the `view_id` field in the `ExportPayloadPB` should not be empty.
+
+7. Module's `export_handler` function gets called with the event and data.
+8. At the end, `export_handler` will return 'ExportDataPB', which will be post to the frontend. 
 
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf_Communication.svg)
 

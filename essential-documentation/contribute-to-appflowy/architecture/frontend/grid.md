@@ -79,6 +79,11 @@ A `Field` has a `FieldType`. The `FieldType` defines the kind of data contained 
 
 Certain field types have user-defined options such as color, date format, number format, or a list of values for a multi-select list. These options are defined within a specialization of the `FieldTypeOption` class.
 
+Each field has its `TypeOptionBuilder` in the backend that is used to parse the bytes into corresponding FieldTypeOption.
+
+![file : grid_field.plantuml](../../../../uml/output/FieldTypeOption_Builder.svg)
+
+
 ### **FieldEditor**
 
 ![file : grid\_field.plantuml](../../../../uml/output/Field\_Editor.svg)
