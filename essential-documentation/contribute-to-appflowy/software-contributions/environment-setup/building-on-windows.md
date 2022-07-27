@@ -25,6 +25,7 @@ git clone https://github.com/AppFlowy-IO/appflowy.git
 * Install Visual Studio 2022 build tools. Download from [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
   * In section "All Downloads" => "Tools for Visual Studio 2022" => "Build Tools for Visual Studio 2022".
   * Launch `vs_BuildTools.exe` to install.
+    * Choose "Desktop Development with C++"
 * Install vcpkg according to [this page](https://github.com/microsoft/vcpkg#quick-start-windows). Make sure to add vcpkg installation folder to your PATH environment variable.
 * Install flutter according to [this page](https://docs.flutter.dev/get-started/install/windows).
 * Make sure to enable the flutter stable channel
@@ -78,10 +79,9 @@ cargo install --force duckscript_cli
 \[VS Code]
 
 1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
-
 2. Go to the Run and Debug tab and then click AF: Clean + Rebuild All for the first time running.
 
-![img.png](../../../../.gitbook/assets/launch_appflowy.png)
+![img.png](../../../../.gitbook/assets/launch\_appflowy.png)
 
 If you encounter any issues, have a look at [Troubleshooting](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 

@@ -99,3 +99,17 @@ RichTextTypeOptionDataParser -u-|> TypeOptionDataParser
 URLTypeOptionDataParser -u-|> TypeOptionDataParser
 @enduml
 
+@startuml FieldTypeOption Builder
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+interface TypeOptionBuilder
+
+RichTextTypeOptionBuilder --|> TypeOptionBuilder
+NumberTypeOptionBuilder --|> TypeOptionBuilder
+DateTypeOptionBuilder --|> TypeOptionBuilder
+SingleSelectTypeOptionBuilder --|> TypeOptionBuilder
+MultiSelectTypeOptionBuilder --|> TypeOptionBuilder
+
+@enduml

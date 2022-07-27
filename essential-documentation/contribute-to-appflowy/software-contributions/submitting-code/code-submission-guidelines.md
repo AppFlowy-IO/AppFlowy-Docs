@@ -4,6 +4,24 @@ The following page describes how you should prepare your code before submitting 
 
 Before your code is merged into the main branch it will be peer reviewed so that it can be deployed for everyone to use. We go through your PR line by line and make sure that everything is on the up and up. You should always carefully craft your code submission in order for your reviewer to be able to more easily understand your changes.
 
+
+
+## Commit message guidelines
+
+We use commitlint to validate each commit message. It is automatically configured to validate your commit messages when you setup your AppFlowy repo.
+
+The commit message consists of `type`:`subject`&#x20;
+
+* type must be one of \[build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test]
+* no space between type and the colon
+* subject is the commit message
+
+**For example:**
+
+* git commit -m "fix: did something"
+* git commit -m "feat: did something"
+* git commit -m "refactor: did something"
+
 ## Committing Process
 
 Make small commits. A commit should be a small chunk of logic that is easy to understand and follow.&#x20;
