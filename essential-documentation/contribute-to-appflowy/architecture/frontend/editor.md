@@ -1,10 +1,12 @@
-# #⃣ #⃣ Editor
+# Editor
 
 ## Introduction
 
 This document explains how the editor works on the Dart side. Also, it can be a development guide when you want to be an editor contributor. This document will be continuously updated, and any suggestions would be helpful.
 
-> The editor is still under development, and there may be minor adjustments to the architecture. If you are interested, you can check out the feat/flowy_editor branch. Any technical suggestions are a help to us.
+{% hint style="info" %}
+The editor is still under development, and there may be minor adjustments to the architecture. If you are interested, you can check out the feat/flowy_editor branch. Any technical suggestions are a help to us.
+{% endhint %}
 
 
 ## Data Structure
@@ -12,10 +14,10 @@ In the selection of data structure, the editor focuses on
 
 * Extendable - which can be simply extended with a new type for rendering and updating.
 * Pluggable - which can assist in the implementation of plugins.
-* Collaborative - which supports editing collaboration.
+* Collaborative - which supports multiple simultaneous editors.
 
 
-Inspired by slate.js and quill.js, the editor uses a tree structure(we called it `state_tree`) to describe the nodes in the document, and for the text node, uses the `delta` to describe it.
+Inspired by slate.js and quill.js, the editor uses a tree structure (we called it `state_tree`) to describe the nodes in the document, and for the text node, uses the `delta` to describe it.
 
 
 The benefits of the combination of `state_tree` and `delta` are
@@ -53,13 +55,13 @@ Type is an identifier describing the current node. The editor dispatches nodes t
 Attributes is an information data describing the current node. We reserve the subtype field to describe the derived type of the current node, and other fields can be extended at will.
 
 #### Children
-Children are the child node describing the current node. We assume that each node can nest the other nodes.
+Children are the child nodes that describe the current node. We assume that each node can nest the other nodes.
 
 #### StateTree
 The editor encapsulates operations on Node, such as insert, delete and modify in StateTree. It holds the root node and is responsible for converting between JSON to and from it.
 
 #### Path
-Path is an array of integer numbers to locate a node in the state tree. For example, [0, 1] represents the second child of the first child of the root node.
+Path is an array of integers to locate a node in the state tree. For example, [0, 1] represents the second child of the first child of the root node.
 
 ![](../../../../.gitbook/assets/editor/path.png)
 
