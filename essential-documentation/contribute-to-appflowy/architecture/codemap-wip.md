@@ -1,4 +1,4 @@
-# CodeMap
+# CodeMap(WIP)
 
 This code map introduces the folder hierarchy of AppFlowy.
 
@@ -75,7 +75,7 @@ This code map introduces the folder hierarchy of AppFlowy.
         This crate handles all the Grid operations, such as creating a grid or deleting a row in a grid.
     6.  **`flowy-text-block`**
 
-        `This crate help to save the text editor data to disk.`
+        This crate help to save the text editor data to disk.
     7.  **`flowy-user`**
 
         This crate handles all the user-related operations.

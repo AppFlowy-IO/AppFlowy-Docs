@@ -30,7 +30,7 @@
     * [🔁 Launcher and Tasks](essential-documentation/contribute-to-appflowy/software-contributions/launcher-and-tasks.md)
     * [☎ Translate AppFlowy](essential-documentation/contribute-to-appflowy/software-contributions/translation.md)
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
-    * [CodeMap](essential-documentation/contribute-to-appflowy/architecture/codemap.md)
+    * [CodeMap(WIP)](essential-documentation/contribute-to-appflowy/architecture/codemap-wip.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
       * [#⃣ Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/grid.md)
     * [Backend](essential-documentation/contribute-to-appflowy/architecture/backend/README.md)
