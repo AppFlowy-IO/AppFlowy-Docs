@@ -5,4 +5,4 @@ and changes. The format of `Delta` is JSON based, and is human readable, it can 
 includes all text and formatting information.
 
 
-![file : delta.plantuml](../../../../uml/output/delta.svg)
+![file : delta.plantuml](../../../../uml/output/Delta.svg)
