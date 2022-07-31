@@ -37,6 +37,7 @@
       * [Initialize](essential-documentation/contribute-to-appflowy/architecture/backend/initialize.md)
       * [Protobuf](essential-documentation/contribute-to-appflowy/architecture/backend/protobuf.md)
       * [Event Driven System](essential-documentation/contribute-to-appflowy/architecture/backend/event-driven-system.md)
+      * [Delta](essential-documentation/contribute-to-appflowy/architecture/backend/delta.md)
     * [Domain Driven Design](essential-documentation/contribute-to-appflowy/architecture/domain-driven-design.md)
     * [Proposals](essential-documentation/contribute-to-appflowy/architecture/proposals.md)
   * [📚 Technical Glossary](essential-documentation/contribute-to-appflowy/technical-glossary.md)
