@@ -8,7 +8,7 @@ This code map introduces the folder hierarchy of AppFlowy.
 
         The directory contains all the resources that AppFlowy uses.
 
-        1. ~~**`fonts`**~~
+        1. **`fonts`**
         2. **`images`**
         3. **`translations`**
     2. **`lib`**
@@ -20,14 +20,22 @@ This code map introduces the folder hierarchy of AppFlowy.
 
            &#x20;This directory contains all the use-related components.
 
-           1. **`application`**
-           2. **`presentation`**
+           1.  **`application`**
+
+               Defines the tasks the **`user`** is supposed to do. (Shouldn't find any UI code or network code)
+           2.  **`presentation`**
+
+               &#x20;Consists of Widgets that are used by the **`user`** and also the state of the Widgets.
        4.  **`workspace`**:&#x20;
 
            This directory includes the codebase that is used to describe the user workspace.&#x20;
 
-           1. **`application`**
-           2. **`presentation`**
+           1.  **`application`**
+
+               Defines the tasks the **`workspace`** is supposed to do. (Shouldn't find any UI code or network code)
+           2.  **`presentation`**
+
+               &#x20;Consists of Widgets that are used by the **`workspace`** and also the state of the Widgets.
     3. **`packages`**
        1.  **`flowy_board`**:&#x20;
 
@@ -73,7 +81,9 @@ This code map introduces the folder hierarchy of AppFlowy.
         This crate handles all the user-related operations.
     8.  **`flowy-sdk`**
 
-        This crate is used to initial each crate including resolving their dependencies.&#x20;
+        This crate is used to initial each crate including resolving their dependencies. It encapsulates all the abilities provided by the other crates.
+
+
 3. **`scripts`**
 
 
