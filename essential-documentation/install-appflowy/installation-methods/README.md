@@ -1,4 +1,4 @@
-# 💿 Installation methods
+# Installation methods
 
 Before you install AppFlowy, be sure to review the [requirements.md](../requirements.md "mention")
 
