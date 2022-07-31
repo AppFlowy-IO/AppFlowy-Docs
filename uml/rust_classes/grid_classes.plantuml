@@ -3,8 +3,8 @@ title Grid Structs
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
-
 left to right direction
+
 class GridManager #FB006D
 GridManager "1" *-- "*" GridRevisionEditor
 GridManager --> GridUser

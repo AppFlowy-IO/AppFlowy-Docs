@@ -1,0 +1,45 @@
+@startuml Delta
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+
+interface Attributes
+interface Serialize
+interface Deserialize
+interface OperationTransform {
+ fn compose
+ fn transform
+ fn invert
+}
+
+interface Serde
+Serde --> Serialize
+Serde --> Deserialize
+
+DeltaBuilder --> Delta
+
+Delta "1" --> "*" Operation
+Delta --|> Serde
+Delta --> FlowyStr
+Delta --|> OperationTransform
+
+OperationBuilder --> Operation
+Delete -u-|> Operation
+Retain -u-|> Operation
+Insert -u-|> Operation
+Operation --|> Serde
+
+Retain --> Attributes
+Insert --> Attributes
+
+DeltaIterator --> DeltaCursor
+DeltaCursor --> Delta
+
+'rich text
+RichTextAttributes -u-|> Attributes
+RichTextAttributes -u-|> OperationTransform
+RichTextAttributes -l-|> Serde
+
+@enduml
