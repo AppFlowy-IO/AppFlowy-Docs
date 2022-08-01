@@ -22,10 +22,10 @@ DeltaBuilder --> Delta
 
 Delta "1" --> "*" Operation
 Delta --|> Serde
-Delta --> FlowyStr
+Delta --> OTString
 Delta --|> OperationTransform
 
-OperationBuilder --> Operation
+OperationsBuilder --> Operation
 Delete -u-|> Operation
 Retain -u-|> Operation
 Insert -u-|> Operation
