@@ -44,11 +44,11 @@ assert_eq!(cursor.get_next_op(), None);
 let delta = TextDeltaBuilder::new()
     .insert("AppFlowy")
     .build();
-assert_eq!(delta.content_str().unwrap(), "AppFlowy");
+assert_eq!(delta.content().unwrap(), "AppFlowy");
 
 let mut attribute = RichTextAttribute::Bold(true);
 let delta = RichTextDeltaBuilder::new().retain_with_attributes(7, attribute.into()).build();    
-assert_eq!(delta.to_json_str(), r#"[{"retain":7,"attributes":{"bold":true}}]"#);
+assert_eq!(delta.json_str(), r#"[{"retain":7,"attributes":{"bold":true}}]"#);
 ```
 
 ## Operation
@@ -140,7 +140,7 @@ pub trait OperationTransform {
     ///  let document = TextDeltaBuilder::new().build();
     ///  let delta = TextDeltaBuilder::new().insert("abc").build();
     ///  let new_document = document.compose(&delta).unwrap();
-    ///  assert_eq!(new_document.content_str().unwrap(), "abc".to_owned());
+    ///  assert_eq!(new_document.content().unwrap(), "abc".to_owned());
     /// ```
     fn compose(&self, other: &Self) -> Result<Self, OTError>
         where
