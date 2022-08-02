@@ -181,3 +181,10 @@ pub trait OperationTransform {
 ```
 
 ## Serde
+
+
+## Import and Export
+
+### Markdown
+We can use a Markdown parser to import the document into AppFlowy or export the data to a Markdown file.
+AppFlowy uses `Delta` to represent the document content.
