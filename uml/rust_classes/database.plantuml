@@ -1,0 +1,10 @@
+@startuml Database
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+component flowy-database
+a -> b
+
+@enduml
