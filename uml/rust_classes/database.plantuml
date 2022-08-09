@@ -4,7 +4,30 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-component flowy-database
-a -> b
+
+node database as "flowy-database" #F7931E {
+}
+
+node sdk as "flowy-sdk" {
+  class GridDatabaseImpl
+  class WorkspaceDatabaseImpl
+}
+
+node user as "flowy-user" #00B5FF {
+}
+
+node grid as "flowy-grid" {
+    interface [grid_database] as "GridDatabase" #DDDDDD
+}
+
+node folder as "flowy-folder" {
+    interface [folder_database] as "WorkspaceDatabase" #DDDDDD
+}
+
+sdk --> user
+
+user --> database : initialize
+WorkspaceDatabaseImpl --|> folder_database
+GridDatabaseImpl --|> grid_database
 
 @enduml

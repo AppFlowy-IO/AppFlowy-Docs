@@ -18,7 +18,11 @@ you install the diesel CLI tool. You can install it by running:
 ### Create schema
 Create a new schema.
 ```shell
+
+/// Go to the working directory
 cd frontend/rust-lib/flowy-database/
+
+/// Generate a new migration named user
 diesel migration generate user
 ```
 
@@ -26,10 +30,7 @@ diesel migration generate user
 * Creating migrations/2022-08-07-140433_user/up.sql
 * Creating migrations/2022-08-07-140433_user/down.sql
 
-Migrations allow us to evolve the database schema over time. Each migration can be applied (up.sql) or reverted (down.sql).
-Applying and immediately reverting a migration should leave your database schema unchanged.
-
-**up.sql**
+Create a table named **user_table**. Open the **up.sql**
 ```SQL
 CREATE TABLE user_table (
     id TEXT NOT NULL PRIMARY KEY,
@@ -38,7 +39,7 @@ CREATE TABLE user_table (
     email TEXT NOT NULL DEFAULT ''
 );
 ```
-**down.sql**
+When doing revert operation, the **down.sql** will be applied. We drop the **user_table** here.
 ```SQL
 DROP TABLE user_table;
 ```
@@ -48,8 +49,9 @@ Run the migration
 diesel migration run
 ```
 
-It’s a good idea to make sure that down.sql is correct. You can quickly confirm that your down.sql rolls back your
-migration correctly by redoing the migration:
+Migrations allow us to evolve the database schema over time. Each migration can be applied (up.sql) or reverted (down.sql).
+Applying and immediately reverting a migration should leave your database schema unchanged. It’s a good idea to make sure
+that down.sql is correct. You can quickly confirm that your down.sql rolls back your migration correctly by redoing the migration:
 
 ```SQL
 diesel migration redo
@@ -59,7 +61,7 @@ diesel migration redo
 * Rolling back migration 2022-08-07-140433_user
 * Running migration 2022-08-07-140433_user
 
-After running the migration, the schema is automatically added to the `schema.rs`
+Ok, here we go. Everything is fine. After running the migration, the schema is automatically added to the `schema.rs`
 ```rust
 // flowy-database/src/schema.rs
 table! {
@@ -146,6 +148,8 @@ pub struct UserTable {
 }
 ```
 
+Diesel provides lots of handy functions for reading and updating a record.
+
 **Read**
 ```rust
 // conn: the connection to the database
@@ -166,8 +170,8 @@ let _ = diesel::insert_into(user_table::table)
 
 **Update**
 
-Check out [this](https://diesel.rs/guides/all-about-updates.html) for more information about updating a record. We use
-`AsChangeset` macro that diesel provides to implement the AsChangeset trait.
+ We use`AsChangeset` macro that diesel provides to implement the AsChangeset trait. Check out [this](https://diesel.rs/guides/all-about-updates.html) 
+ for more information about updating a record.
 ```rust
 #[derive(AsChangeset, Identifiable, Default, Debug)]
 #[table_name = "user_table"]
@@ -185,4 +189,22 @@ Apply the changeset to the database
 diesel::update(user_table::table).set(&changeset);
 ```
 
-## Architecture(WIP)
+## Architecture
+We use dependency injection to forbid the other crates directly dependencies on the **flowy-database** crate. Each crate
+defines their database [traits](https://doc.rust-lang.org/book/ch10-02-traits.html) to meet their need.
+
+> Traits are a name given to a group of functions that a data structure can implement. I think using traits to isolate
+> dependencies is a very good practice. 
+
+The `flowy-user` dependencies on the `flowy-database` crate directly. It initializes the database connection when the Application
+launch or when the user switches account. The `flowy-grid` defines the `GridDatabase` trait and the `flowy-folder` defines the 
+`WorkspaceDatabase` trait, these two traits are implemented in the `flowy-sdk` crate.
+
+> `flowy-sdk` is a crate that aggregates all the crates and resolves each crate's dependencies.
+> `flowy-database` is a crate that handles all the grid operations
+>
+> `flowy-folder` is a crate that handles all the folder operations. The folder represents the concepts that include the 
+> workspace, app, and view.
+
+
+![file : database.plantuml](../../../../uml/output/Database.svg)

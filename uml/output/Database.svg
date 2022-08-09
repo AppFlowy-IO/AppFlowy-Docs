@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="317px" preserveAspectRatio="none" style="width:785px;height:317px;background:#FFFFFF;" version="1.1" viewBox="0 0 785 317" width="785px" zoomAndPan="magnify"><defs/><g><!--MD5=[4e16eabb8777c3fc41618e2b4c98755e]
+cluster sdk--><g id="cluster_sdk"><polygon points="16,51,26,41,272,41,272,253,262,263,16,263,16,51" style="stroke:#181818;stroke-width:1.0;fill:none;"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="262" x2="272" y1="51" y2="41"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="16" x2="262" y1="51" y2="51"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="262" x2="262" y1="51" y2="263"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="75" x="102.5" y="67.5352">flowy-sdk</text></g><!--MD5=[4e2cd9d9085da88ed777d4965722756f]
+cluster grid--><g id="cluster_grid"><polygon points="336.5,78,346.5,68,496.5,68,496.5,162,486.5,172,336.5,172,336.5,78" style="stroke:#181818;stroke-width:1.0;fill:none;"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="486.5" x2="496.5" y1="78" y2="68"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="336.5" x2="486.5" y1="78" y2="78"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="486.5" x2="486.5" y1="78" y2="172"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="78" x="373.5" y="94.5352">flowy-grid</text></g><!--MD5=[5dfe1150c87218a9f0b25c58295c84f7]
+cluster folder--><g id="cluster_folder"><polygon points="313,206,323,196,520,196,520,290,510,300,313,300,313,206" style="stroke:#181818;stroke-width:1.0;fill:none;"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="510" x2="520" y1="206" y2="196"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="313" x2="510" y1="206" y2="206"/><line style="stroke:#181818;stroke-width:1.0;fill:none;" x1="510" x2="510" y1="206" y2="300"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92" x="366.5" y="222.5352">flowy-folder</text></g><!--MD5=[f50ff5e4cd64f259303fc83dba1819fc]
+entity database--><g id="elem_database"><polygon fill="#F7931E" points="622,16,632,6,768,6,768,42.4883,758,52.4883,622,52.4883,622,16" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="758" x2="768" y1="16" y2="6"/><line style="stroke:#181818;stroke-width:0.5;" x1="622" x2="758" y1="16" y2="16"/><line style="stroke:#181818;stroke-width:0.5;" x1="758" x2="758" y1="16" y2="52.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="637" y="39.5352">flowy-database</text></g><!--MD5=[0e13ab4a4eb54d448921c36aed8a07cf]
+class GridDatabaseImpl--><g id="elem_GridDatabaseImpl"><rect codeLine="11" fill="#F1F1F1" height="48" id="GridDatabaseImpl" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="63.5" y="108"/><ellipse cx="78.5" cy="124" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M80.9731,130.1431 Q80.3921,130.4419 79.7529,130.5913 Q79.1138,130.7407 78.4082,130.7407 Q75.9014,130.7407 74.5815,129.0889 Q73.2617,127.437 73.2617,124.3159 Q73.2617,121.1865 74.5815,119.5347 Q75.9014,117.8828 78.4082,117.8828 Q79.1138,117.8828 79.7612,118.0322 Q80.4087,118.1816 80.9731,118.4805 L80.9731,121.2031 Q80.3423,120.6221 79.7488,120.3523 Q79.1553,120.0825 78.5244,120.0825 Q77.1797,120.0825 76.4949,121.1492 Q75.8101,122.2158 75.8101,124.3159 Q75.8101,126.4077 76.4949,127.4744 Q77.1797,128.541 78.5244,128.541 Q79.1553,128.541 79.7488,128.2712 Q80.3423,128.0015 80.9731,127.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="92.5" y="129.291">GridDatabaseImpl</text><line style="stroke:#181818;stroke-width:0.5;" x1="64.5" x2="223.5" y1="140" y2="140"/><line style="stroke:#181818;stroke-width:0.5;" x1="64.5" x2="223.5" y1="148" y2="148"/></g><!--MD5=[a1156d310b9b7541d3eee92f637f2fd3]
+class WorkspaceDatabaseImpl--><g id="elem_WorkspaceDatabaseImpl"><rect codeLine="12" fill="#F1F1F1" height="48" id="WorkspaceDatabaseImpl" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="208" x="40" y="191"/><ellipse cx="55" cy="207" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M57.4731,213.1431 Q56.8921,213.4419 56.2529,213.5913 Q55.6138,213.7407 54.9082,213.7407 Q52.4014,213.7407 51.0815,212.0889 Q49.7617,210.437 49.7617,207.3159 Q49.7617,204.1865 51.0815,202.5347 Q52.4014,200.8828 54.9082,200.8828 Q55.6138,200.8828 56.2612,201.0322 Q56.9087,201.1816 57.4731,201.4805 L57.4731,204.2031 Q56.8423,203.6221 56.2488,203.3523 Q55.6553,203.0825 55.0244,203.0825 Q53.6797,203.0825 52.9949,204.1492 Q52.3101,205.2158 52.3101,207.3159 Q52.3101,209.4077 52.9949,210.4744 Q53.6797,211.541 55.0244,211.541 Q55.6553,211.541 56.2488,211.2712 Q56.8423,211.0015 57.4731,210.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="176" x="69" y="212.291">WorkspaceDatabaseImpl</text><line style="stroke:#181818;stroke-width:0.5;" x1="41" x2="247" y1="223" y2="223"/><line style="stroke:#181818;stroke-width:0.5;" x1="41" x2="247" y1="231" y2="231"/></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><g id="elem_user"><polygon fill="#00B5FF" points="359.5,16,369.5,6,473.5,6,473.5,42.4883,463.5,52.4883,359.5,52.4883,359.5,16" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="463.5" x2="473.5" y1="16" y2="6"/><line style="stroke:#181818;stroke-width:0.5;" x1="359.5" x2="463.5" y1="16" y2="16"/><line style="stroke:#181818;stroke-width:0.5;" x1="463.5" x2="463.5" y1="16" y2="52.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="374.5" y="39.5352">flowy-user</text></g><!--MD5=[86c151e11066ce8794aa6eaf267f31d0]
+class grid_database--><g id="elem_grid_database"><rect codeLine="19" fill="#DDDDDD" height="48" id="grid_database" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="352.5" y="108"/><ellipse cx="367.5" cy="124" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M363.9277,120.2651 L363.9277,118.1069 L371.3071,118.1069 L371.3071,120.2651 L368.8418,120.2651 L368.8418,128.3418 L371.3071,128.3418 L371.3071,130.5 L363.9277,130.5 L363.9277,128.3418 L366.3931,128.3418 L366.3931,120.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="96" x="381.5" y="129.291">GridDatabase</text><line style="stroke:#181818;stroke-width:0.5;" x1="353.5" x2="479.5" y1="140" y2="140"/><line style="stroke:#181818;stroke-width:0.5;" x1="353.5" x2="479.5" y1="148" y2="148"/></g><!--MD5=[4ee889a251150a10185b5fd83f4a11c2]
+class folder_database--><g id="elem_folder_database"><rect codeLine="23" fill="#DDDDDD" height="48" id="folder_database" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="329" y="236"/><ellipse cx="344" cy="252" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M340.4277,248.2651 L340.4277,246.1069 L347.8071,246.1069 L347.8071,248.2651 L345.3418,248.2651 L345.3418,256.3418 L347.8071,256.3418 L347.8071,258.5 L340.4277,258.5 L340.4277,256.3418 L342.8931,256.3418 L342.8931,248.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="143" x="358" y="257.291">WorkspaceDatabase</text><line style="stroke:#181818;stroke-width:0.5;" x1="330" x2="503" y1="268" y2="268"/><line style="stroke:#181818;stroke-width:0.5;" x1="330" x2="503" y1="276" y2="276"/></g><!--MD5=[3c572ef8fbc86c55b73bb36c7886e787]
+link sdk to user--><g id="link_sdk_user"><path d="M272.323,52.289 C272.6837,52.2304 273.0443,52.1717 273.4051,52.113 C274.1266,51.9956 274.8483,51.8782 275.5702,51.7607 C277.0141,51.5258 278.4586,51.2908 279.9032,51.0557 C282.7924,50.5857 285.6819,50.1155 288.5662,49.6463 C311.6413,45.8919 334.3925,42.19 354.12,38.98 " fill="none" id="sdk-to-user" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="359.24,38.15,349.7154,35.6437,354.3046,38.9511,350.9972,43.5403,359.24,38.15" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[26beaa83c90aecb268e77cc6bc1c4575]
+link user to database--><g id="link_user_database"><path d="M473.79,29 C514.91,29 571.19,29 616.55,29 " fill="none" id="user-to-database" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="621.75,29,612.75,25,616.75,29,612.75,33,621.75,29" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="537" y="25.5684">initialize</text></g><!--MD5=[4ad39903fa5bf95842d723238e5c10c1]
+link WorkspaceDatabaseImpl to folder_database--><g id="link_WorkspaceDatabaseImpl_folder_database"><path codeLine="29" d="M248.04,232.14 C267.86,235.44 288.67,238.9 308.62,242.22 " fill="none" id="WorkspaceDatabaseImpl-to-folder_database" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="310.03,235.36,328.61,245.55,307.73,249.17,310.03,235.36" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[da2341e47128b6c9c6e524876271a08e]
+link GridDatabaseImpl to grid_database--><g id="link_GridDatabaseImpl_grid_database"><path codeLine="30" d="M224.7,132 C258.38,132 297.63,132 331.74,132 " fill="none" id="GridDatabaseImpl-to-grid_database" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="332.22,125,352.22,132,332.22,139,332.22,125" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9efd21060081a176317f03b71bd50567]
+@startuml Database
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+
+node database as "flowy-database" #F7931E {
+}
+
+node sdk as "flowy-sdk" {
+  class GridDatabaseImpl
+  class WorkspaceDatabaseImpl
+}
+
+node user as "flowy-user" #00B5FF {
+}
+
+node grid as "flowy-grid" {
+    interface [grid_database] as "GridDatabase" #DDDDDD
+}
+
+node folder as "flowy-folder" {
+    interface [folder_database] as "WorkspaceDatabase" #DDDDDD
+}
+
+sdk - -> user
+
+user - -> database : initialize
+WorkspaceDatabaseImpl - -|> folder_database
+GridDatabaseImpl - -|> grid_database
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 18:55:52 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
