@@ -1,3 +1,27 @@
 @startuml
+title Structs
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+left to right direction
+
+Board "1" --> "*" BoardColumn
+BoardColumn --> BoardOverlay
+BoardOverlay --> BoardOverlayState
+BoardOverlay "1" --> "*" BoardOverlayEntry
+BoardOverlayState --> _BoardStack
+_BoardStack --> Stack
+Stack "1" --> "*" _OverlayEntryWidget
+'_OverlayEntryWidget --> BoardOverlayEntry
+
+_BoardStack --|> RenderObjectWidget
+_BoardStack --> _RenderBoardObject : object
+_RenderBoardObject --|> RenderBox
+_BoardStack --> _BoardStackElement : element
+_BoardStackElement --|> RenderObjectElement
+
+
+BoardOverlayEntry --> BoardReorderFlex
+BoardReorderFlex --> BoardReorderFlexState
 
 @enduml
