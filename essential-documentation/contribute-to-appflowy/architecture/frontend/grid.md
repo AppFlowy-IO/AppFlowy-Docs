@@ -1,4 +1,4 @@
-# Grid
+# 🧮 Grid
 
 ## Introduction
 
@@ -81,8 +81,7 @@ Certain field types have user-defined options such as color, date format, number
 
 Each field has its `TypeOptionBuilder` in the backend that is used to parse the bytes into corresponding FieldTypeOption.
 
-![file : grid_field.plantuml](../../../../uml/output/FieldTypeOption_Builder.svg)
-
+![file : grid\_field.plantuml](../../../../uml/output/FieldTypeOption\_Builder.svg)
 
 ### **FieldEditor**
 

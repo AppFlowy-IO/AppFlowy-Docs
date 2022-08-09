@@ -33,7 +33,7 @@
     * [CodeMap(WIP)](essential-documentation/contribute-to-appflowy/architecture/codemap-wip.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
       * [🛰 Workspace](essential-documentation/contribute-to-appflowy/architecture/frontend/workspace.md)
-      * [#⃣ Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/grid.md)
+      * [🧮 Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/grid.md)
     * [Backend](essential-documentation/contribute-to-appflowy/architecture/backend/README.md)
       * [Initialize](essential-documentation/contribute-to-appflowy/architecture/backend/initialize.md)
       * [Protobuf](essential-documentation/contribute-to-appflowy/architecture/backend/protobuf.md)
