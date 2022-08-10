@@ -130,11 +130,11 @@ The event class name consists of the Enum name and the Enum value defined in eve
 The `code gen` process is embedded in the AppFlowy build process. But you can run the build process manually. 
 Just go to the corresponding crate directory(For example, frontend/flowy-text-block), and run:
 
-`cargo buil --features=dart`
+`cargo build --features=dart`
 
 or if you want to check the verbose output.
 
-`cargo buil -vv --features=dart`
+`cargo build -vv --features=dart`
 
 The build scripts will be run before the crate gets compiled. Thanks to the cargo toolchain, we use `cargo:rerun-if-changed=PATH`
 to enable the build.rs will only run if the files were changed.
