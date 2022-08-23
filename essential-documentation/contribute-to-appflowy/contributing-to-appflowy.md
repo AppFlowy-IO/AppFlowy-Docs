@@ -88,9 +88,12 @@ Sponsoring is another great way to contribute to the community.
 
 ## Contributor T-Shirt
 
-If your Pull Request is accepted as it fixes a bug, adds functionality, or makes AppFlowy's codebase significantly easier to use or understand, congratulations! You are now an official contributor to AppFlowy. Get in touch with us ([link](https://tally.so/r/mKP5z3)) to receive the very special Contributor T-shirt!
+If your Pull Request is accepted as it fixes a bug, adds functionality, or makes AppFlowy's codebase significantly easier to use or understand, congratulations! If your administrative and managerial work behind the scenes that sustains the community as a whole, congratulations! You are now an official contributor to AppFlowy. Get in touch with us ([link](https://tally.so/r/mKP5z3)) to receive the very special Contributor T-shirt!
 
 Proudly wear your T-shirt and show it to us by tagging [@appflowy](https://twitter.com/appflowy) on Twitter.
+
+![DSCF3560](https://user-images.githubusercontent.com/12026239/186107764-5b5dcd21-f5a8-4b40-8ed5-9fa271fe6425.jpg)
+
 
 ## Code of Conduct
 
