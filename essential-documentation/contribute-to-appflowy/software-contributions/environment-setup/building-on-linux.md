@@ -46,6 +46,8 @@ yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 
 * Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 
+* Or you can use the code below to install `FLUTTER` manually on your linux system.
+
 ```bash
 git clone https://github.com/flutter/flutter.git
 cd flutter
@@ -55,6 +57,7 @@ export PATH="$PATH:`pwd`/bin"
 
 * Run the setup script from the base directory
 ```bash
+cd appflowy
 ./frontend/scripts/install_dev_env/install_linux.sh
 ```
 
@@ -63,10 +66,10 @@ export PATH="$PATH:`pwd`/bin"
 * Change to the frontend directory
 
 ```bash
-cd AppFlowy/frontend
+cd frontend
 ```
 
-* \[Optional] Build flowy-sdk-dev (dart-ffi)
+* `Optionally if you want to Build flowy-sdk-dev (dart-ffi)`
 
 {% tabs %}
 {% tab title="Development" %}
@@ -102,7 +105,7 @@ cargo make -p production-linux-x86_64 appflowy-linux
 ## Step 4: Run the application
 
 ```bash
-cd app_flowy/product/0.0.2/linux/Debug/AppFlowy
+cd app_flowy/product/0.0.4/linux/Debug/AppFlowy
 ```
 
 ```shell
