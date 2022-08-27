@@ -70,7 +70,7 @@ cd appflowy
 
 ![img.png](../../../../.gitbook/assets/build\_step\_two\_warn\_success.png)
 
-`If you get the warning as shown above run following command`
+`If you get the warning as shown above, run following command:`
 
 ```bash
 export PATH="$PATH":"$HOME/.pub-cache/bin"
@@ -126,7 +126,7 @@ cargo make -p production-linux-x86_64 appflowy-linux
 ## Step 4: Run the application
 
 ```bash
-cd app_flowy/product/0.0.4/linux/Debug/AppFlowy
+cd app_flowy/product/0.0.5/linux/Debug/AppFlowy
 ```
 
 ```shell
@@ -134,7 +134,7 @@ cd app_flowy/product/0.0.4/linux/Debug/AppFlowy
 ```
 ![img.png](../../../../.gitbook/assets/build\_step\_four\_success.png)
 
-* A new window must appear running `AppFlowy` application as show below.
+* A new window as shown below will show up after you run the application:
 
 ![img.png](../../../../.gitbook/assets/welcome\_screen.png)
 
