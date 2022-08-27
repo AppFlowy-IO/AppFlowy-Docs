@@ -23,6 +23,7 @@ You should fork the code instead if you wish to submit code to AppFlowy. You'll 
 ```shell
 git clone https://github.com/AppFlowy-IO/appflowy.git
 ```
+![img.png](../../../../.gitbook/assets/build\_step\_one.png)
 
 ## Step 2: Install your build environment
 
@@ -35,6 +36,7 @@ Feel free to ask questions on our [Discord](https://discord.gg/9Q2xaN37tV) so th
 ```bash
 sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip
 ```
+
 {% endtab %}
 
 {% tab title="Arch" %}
@@ -43,6 +45,8 @@ yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip
 ```
 {% endtab %}
 {% endtabs %}
+
+![img.png](../../../../.gitbook/assets/build\_step\_two.png)
 
 * Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 
@@ -53,12 +57,23 @@ git clone https://github.com/flutter/flutter.git
 cd flutter
 echo "export PATH=\$PATH:"`pwd`"/bin" >> ~/.profile
 export PATH="$PATH:`pwd`/bin"
+cd ..
 ```
+![img.png](../../../../.gitbook/assets/flutter\_build\_step.png)
 
 * Run the setup script from the base directory
 ```bash
 cd appflowy
 ./frontend/scripts/install_dev_env/install_linux.sh
+```
+![img.png](../../../../.gitbook/assets/build\_step\_two\_script.png)
+
+![img.png](../../../../.gitbook/assets/build\_step\_two\_warn\_success.png)
+
+`If you get the warning as shown above run following command`
+
+```bash
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 ```
 
 ## Step 3: Build AppFlowy (Flutter GUI application)
@@ -76,14 +91,18 @@ cd frontend
 ```bash
 cargo make --profile development-linux-x86_64 flowy-sdk-dev
 ```
+
 {% endtab %}
 
 {% tab title="Production" %}
 ```bash
 cargo make --profile production-linux-x86_64 flowy-sdk-release
 ```
+
 {% endtab %}
 {% endtabs %}
+
+![img.png](../../../../.gitbook/assets/build\_step\_optional\_three\_success.png)
 
 * Build AppFlowy. You'll find the binary in app\_flowy/product/linux/AppFlowy/
 
@@ -102,6 +121,8 @@ cargo make -p production-linux-x86_64 appflowy-linux
 {% endtab %}
 {% endtabs %}
 
+![img.png](../../../../.gitbook/assets/build\_step\_three\_success.png)
+
 ## Step 4: Run the application
 
 ```bash
@@ -111,6 +132,12 @@ cd app_flowy/product/0.0.4/linux/Debug/AppFlowy
 ```shell
 ./app_flowy
 ```
+![img.png](../../../../.gitbook/assets/build\_step\_four\_success.png)
+
+* A new window must appear running `AppFlowy` application as show below.
+
+![img.png](../../../../.gitbook/assets/welcome\_screen.png)
+
 
 * If using a virtual machine
   * Run Linux GUI application through x11 on windows (use MobaXterm) for instance:
