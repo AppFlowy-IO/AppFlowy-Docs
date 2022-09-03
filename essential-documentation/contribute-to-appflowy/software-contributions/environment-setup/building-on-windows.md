@@ -5,7 +5,7 @@
 * The following steps are verified on
   * [x] Windows 10 X86\_64
   * [ ] Windows 10 arm64
-  * [ ] Windows 11 X86\_64
+  * [x] Windows 11 X86\_64
   * [ ] Windows 11 arm64
 * Both Windows `cmd` and `powershell` can be used for running commands.
 * If you encounter any issues, please have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
@@ -73,6 +73,30 @@ cargo install --force cargo-make
 ```shell
 cargo install --force duckscript_cli
 ```
+
+* Add Powershell to the PATH
+
+Add `C:\Windows\System32` to the PATH to prevent Powershell build commands crashing.
+
+* Install openssl
+  * Download `openssl_1.1.1n_win32_complete.zip` from [https://sockettools.com/kb/openssl-installation-packages-windows/](https://sockettools.com/kb/openssl-installation-packages-windows/)
+  * Run installer and install Openssl where you want
+  * Add `bin` folder to the PATH (ie: `G:\Compilation\OpenSSL\bin`)
+  * Create a new User variable (using the same window as the PATH editor): Name it `OPENSSL_DIR` with same value as bin folder (ie `G:\Compilation\OpenSSL\bin`)
+
+* Install perl
+  * Download Perl for Windows (called Strawberry perl) from [https://strawberryperl.com/](https://strawberryperl.com/) (choose x64 installer)
+  * Run installer
+  * Check Perl is installed with following command
+
+```shell
+perl --version
+```
+
+* Install Dart extension for Visual Studio Code
+
+* For Windows 11: Activate Developer Mode
+  * Go to Settings > Privacy & Security > switch ON Developer Mode
 
 ## Step 3: Edit and run the application
 
