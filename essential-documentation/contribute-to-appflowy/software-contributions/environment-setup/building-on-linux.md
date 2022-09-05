@@ -12,6 +12,20 @@
 * You may need to disable hardware 3D acceleration if you are running AppFlowy in a VM. Otherwise, certain GL failures will prevent the app from launching.
 * If you encounter any issues, have a look at [troubleshooting-when-installing-appflowy.md](../../../install-appflowy/installation-methods/troubleshooting-when-installing-appflowy.md "mention") first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
+{% hint style="warning" %} There is a known issue with Ubuntu 22.04, Fedora 36, and PopOS 22.04: 
+`Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory`
+The issue can be fixed by installing the required missing libraries:
+```
+# Fedora
+sudo dnf in openssl1.1.x86_64 # Workstation
+rpm-ostree upgrade && rpm-ostree install openssl1.1.x86_64 # Silverblue
+
+# Ubuntu & PopOS
+$ wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1.6_amd64.deb
+$ sudo dpkg -i libssl1.1_1.1.1l-1ubuntu1.6_amd64.deb
+```
+{% endhint %}
+
 ## Step 1: Get the source code
 
 Clone the source code from our Github project.
