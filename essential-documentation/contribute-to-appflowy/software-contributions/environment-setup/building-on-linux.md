@@ -4,6 +4,7 @@
 
 * The following steps are verified on
   * [x] lubuntu 20.04 - X86\_64
+  * [x] Linux Mint 20.3 - 86\_64
   * [ ] ubuntu 20.04 - aarch64
   * [ ] redhat - X86\_64
   * [x] Arch Linux - X86\_64
