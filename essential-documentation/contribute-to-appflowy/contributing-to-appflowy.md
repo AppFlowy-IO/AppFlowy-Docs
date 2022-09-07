@@ -58,26 +58,30 @@ This section has a step-by-step guide to starting as an AppFlowy codebase contri
 
 #### Where to look for your first issue
 
-* You can look through issues tagged with the [“good first issue for devs”](https://github.com/AppFlowy-IO/AppFlowy/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue+for+devs%22) label, which is used to indicate the issues that are especially approachable for new contributors.&#x20;
-* We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
-* In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
+* You can look through unclaimed issues [here](https://github.com/orgs/AppFlowy-IO/projects/5/views/4). 
+    * Issues tagged with the "good first issue for devs” label is used to indicate the issues that are especially approachable for new contributors.
+    * We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
+    * In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
 * If there is not already an issue covering the work you are interested in doing, then file a new issue to describe the problem/feature you are addressing.
 
 #### Claim an issue
 
-* Post a comment to the issue thread that you would like to claim. Someone with Contributor access\<ANOTHER ROLE?> will assign you to the issue and label the issue as “in progress”, once triage is completed
-* Guidelines for Triage (For Contributors):
-  * Ensure that the title is meaningful, and edit if not
-  * If report is unclear, add a comment asking for required details and add the `waiting for user response` label
-  * If the issue describes something that was implemented/fixed in a later build, add a comment saying so and close the issue
-  * If you recognize that this issue is a duplicate, comment a link to the original issue and close this one
-  * Add appropriate labels to the issue and add the issue to the Project Board
-* New contributors can only claim one issue until their first pull request is merged. This is to encourage folks to finish ongoing work before starting something new.&#x20;
+* Post a comment to the issue thread that you would like to claim. Someone with Contributor access\<ANOTHER ROLE?> will assign you to the issue and label the issue as “Todo”, once triage is completed
+* If you need a mentor, please @annieappflowy. We will assign you a mentor who's familiar with your task. We strongly recommend newcomers have a mentor in place.
+* We also recommend new contributors only claim one issue until their first pull request is merged. This is to encourage folks to get familiar with the codebase and finish ongoing work before starting something new.&#x20;
 
 #### Working on an issue
 
 * We encourage early pull requests for work in progress.&#x20;
 * It's normal and totally ok if your first PR takes you a while.&#x20;
+* Please update your progress on the issue regularly. If you no longer work on this issue, please comment on the issue so that other people can take over it.
+
+#### Guidelines for Triage (For Contributors)
+* Ensure that the title is meaningful, and edit if not
+* If report is unclear, add a comment asking for required details and add the `waiting for user response` label
+* If the issue describes something that was implemented/fixed in a later build, add a comment saying so and close the issue
+* If you recognize that this issue is a duplicate, comment a link to the original issue and close this one
+* Add appropriate labels to the issue and add the issue to [AppFlowy's Project](https://github.com/orgs/AppFlowy-IO/projects/5/views/3)
 
 ## Sponsor
 
