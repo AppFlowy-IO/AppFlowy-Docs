@@ -14,4 +14,4 @@ Download AppFlowy and use it right away:
 
 
 
-For Linux users, please also refer to [Installing on Linux ](installing-on-linux.md)for optional steps.&#x20;
+For Linux users, please also refer to [Installing on Linux ](installing-on-linux/)for optional steps.&#x20;
