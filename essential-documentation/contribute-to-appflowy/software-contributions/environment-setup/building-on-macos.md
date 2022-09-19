@@ -61,7 +61,7 @@ If you encounter any issues, have a look at [Troubleshooting](https://appflowy.g
 {% tabs %}
 {% tab title="x86" %}
 ```shell
-cargo make --profile production-mac-x86 appflowy
+cargo make --profile production-mac-x86_64 appflowy
 ```
 {% endtab %}
 
