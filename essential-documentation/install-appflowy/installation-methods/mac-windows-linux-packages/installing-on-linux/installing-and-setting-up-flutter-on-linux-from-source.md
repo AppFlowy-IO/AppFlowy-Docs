@@ -61,3 +61,11 @@ Check if the Flutter PATH is added into your shell.
 ```shell
 echo $PATH
 ```
+Once you've confirmed that flutter is installed and added to PATh, run 
+```shell
+flutter --version
+```
+
+You should see a screen that welcomes you and the version.
+
+![flutter](https://user-images.githubusercontent.com/109571434/191872386-6694e72d-5bdb-4de4-ad59-86830f830f33.png)
