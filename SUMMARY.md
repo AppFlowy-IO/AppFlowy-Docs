@@ -30,6 +30,8 @@
       * [⤴ Submitting your first Pull Request](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/submitting-your-first-pull-request.md)
     * [🔁 Launcher and Tasks](essential-documentation/contribute-to-appflowy/software-contributions/launcher-and-tasks.md)
     * [☎ Translate AppFlowy](essential-documentation/contribute-to-appflowy/software-contributions/translation.md)
+    * [🤔 How-tos](essential-documentation/contribute-to-appflowy/software-contributions/how-tos/README.md)
+      * [How to Create a Plugin for AppFlowy Editor](essential-documentation/contribute-to-appflowy/software-contributions/how-tos/how-to-create-a-plugin-for-appflowy-editor.md)
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [CodeMap(WIP)](essential-documentation/contribute-to-appflowy/architecture/codemap-wip.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
@@ -48,8 +50,6 @@
     * [Program Guidance](essential-documentation/contribute-to-appflowy/gsoc/contributor-guidance.md)
     * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/project-ideas.md)
     * [Proposal Template](essential-documentation/contribute-to-appflowy/gsoc/proposal-template.md)
-  * [🔢 GSoC](essential-documentation/contribute-to-appflowy/gsoc/README.md)
-    * [Application](essential-documentation/contribute-to-appflowy/gsoc/application.md)
 
 ## Design Documentation
 
