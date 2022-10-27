@@ -11,7 +11,7 @@ This article will cover:
 * The tests in AppFlowy
 * How to run the tests in AppFlowy
 * How to write a test in AppFlowy
-*
+* Code coverage
 
 
 
@@ -65,6 +65,10 @@ cargo make dart_unit_test
 WIP
 
 
+
+## Code converage
+
+WIP
 
 
 
