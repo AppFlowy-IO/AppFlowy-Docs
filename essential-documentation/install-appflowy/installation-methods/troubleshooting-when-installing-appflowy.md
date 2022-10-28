@@ -55,6 +55,19 @@ ArgumentError (Invalid argument(s): Failed to load dynamic library 'libdart\_ffi
 
 A: Are you trying to build for android? Appflowy only supports desktops as of now
 
+
+[issue #191](https://github.com/AppFlowy-IO/appflowy/issues/191)
+
+Q. Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart_ffi.so' on Ubuntu.
+
+A: I append ubuntu 21.04 source.list's content to `/etc/apt/source.list`, and then upgrade `libc6`.
+
+```shell
+# Append the ubuntu 20.04's source.list to its tail.
+$ sudo vim /etc/apt/source.list
+$ sudo apt upgrade libc6
+```
+
 ### 7. Build failed on Ubuntu 20.04
 
 [issue #106](https://github.com/AppFlowy-IO/appflowy/issues/106)
