@@ -22,9 +22,12 @@ sudo dnf in openssl1.1.x86_64 # Workstation
 rpm-ostree upgrade && rpm-ostree install openssl1.1.x86_64 # Silverblue
 
 # Ubuntu & PopOS
-$ wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1.6_amd64.deb
-$ sudo dpkg -i libssl1.1_1.1.1l-1ubuntu1.6_amd64.deb
+$ wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
+$ sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 ```
+
+If the above ``Ubuntu & PopOS`` link is expired or returns 404 then consider searching for ``libssl1.1_1.1.1`` on the following [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
+
 {% endhint %}
 
 ## Step 1: Get the source code
