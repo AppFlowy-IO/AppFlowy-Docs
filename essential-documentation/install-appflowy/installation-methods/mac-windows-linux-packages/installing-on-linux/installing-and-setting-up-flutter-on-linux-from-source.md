@@ -19,7 +19,7 @@ mkdir projectfolder
 ``` 
 Then install the [latest Flutter SDK tarball file](https://docs.flutter.dev/development/tools/sdk/releases?tab=linux)
 
-## Installition 
+## Installation 
 
 cd into the project folder you created earlier.
 

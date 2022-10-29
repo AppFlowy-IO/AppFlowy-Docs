@@ -56,7 +56,7 @@ sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake 
 
 {% tab title="Arch" %}
 ```bash
-yay -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip libkeybinder3 xdg-user-dirs
+sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip libkeybinder3 xdg-user-dirs
 ```
 {% endtab %}
 {% endtabs %}
