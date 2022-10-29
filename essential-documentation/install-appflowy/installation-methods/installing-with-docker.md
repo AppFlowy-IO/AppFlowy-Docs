@@ -10,8 +10,11 @@ docker run --rm \
   -v /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket \
   -v appflowy-data:/home/appflowy \
   -e DISPLAY=${DISPLAY} \
-  appflowyio/appflowy_client:latest
+  appflowyio/appflowy_client:main
 ```
+
+Using the `main` tag you will run the latest Appflowy version (from the `main` branch).
+You can also use specific releases using the tags (such as `0.0.5.3`). Check out the [available tags](https://hub.docker.com/r/appflowyio/appflowy_client/tags).
 
 **Note:** Appflowy inside docker needs access to your X server. In case of lack of permissions, it's recommended to build the docker image yourself.
 The least recommended option is running `xhost +` before running the container, but this command is [considered dangerous](https://stackoverflow.com/questions/63884968/why-is-xhost-considered-dangerous)!
