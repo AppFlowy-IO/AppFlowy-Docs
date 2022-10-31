@@ -47,7 +47,7 @@ In order to run the tests one by one, it needs to build the back-end library fir
 cargo make build-test-lib
 ```
 
-After building the back-end library, you can click the `Run|Debug` buton to run the test.
+After building the back-end library, you can click the `Run|Debug` button to run the test.
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +66,7 @@ WIP
 
 
 
-## Code converage
+## Code coverage
 
 WIP
 

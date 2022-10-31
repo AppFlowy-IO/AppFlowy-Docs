@@ -13,7 +13,7 @@ AppFlowy currently does not have a formal Linux installation process. However, t
     * [x] Ubuntu 20.04 - x86\_64
     * [x] Linux Mint 20.3 x86\_64
 
-    Any Linux distribution not listed here has not been tested, and the following steps may not work. If you are trying to install AppFlowy on a Linux distribution not listed here, let us know how it went so that we can add it to the list or fix any bugs that may ocurr.
+    Any Linux distribution not listed here has not been tested, and the following steps may not work. If you are trying to install AppFlowy on a Linux distribution not listed here, let us know how it went so that we can add it to the list or fix any bugs that may occur.
 
 ### Steps to install AppFlowy on Linux\*\*
 
