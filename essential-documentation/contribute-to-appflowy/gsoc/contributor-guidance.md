@@ -71,7 +71,7 @@ Some key criteria for mentees:
 * Existing AppFlowy contributor&#x20;
 * Likely to become a core community member
 * Have passion for AppFlowy
-* Capable of completing at least 60% of the proposed project with limited technical guidance\
+* Capable of completing at least 60% of the proposed project with limited technical guidance
 
 
 ## Stipends
