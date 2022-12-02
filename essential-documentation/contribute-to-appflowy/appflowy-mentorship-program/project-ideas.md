@@ -6,52 +6,100 @@ You might notice that the ideas listed are sometimes vague or incomplete. This i
 
 ### Desktop features&#x20;
 
-**1. Calendar Database**&#x20;
+1. **Table**&#x20;
+
+Add simple tabular content to a page
+
+Expected Outcome:&#x20;
+
+* The user can insert a table into a page via the slash '/' command
+* The user can delete and duplicate an existing table
+* The user can add/delete/duplicate/update rows and columns to an existing table
+* Each table cell supports rich-text editing
+* Test covered
+
+Difficulty: Medium to High
+
+Skills Required: Flutter
+
+Mentor:  [Lucas](https://github.com/LucasXu0)
+
+
+
+**2. Calendar Database**&#x20;
 
 Calendars are a great way to visualize how things connect to certain dates from any database in AppFlowy. Use them for task management and event planning.&#x20;
 
 * Expected Outcome: the user can create a calendar page and add an item to a certain date or a range of dates in the calendar.&#x20;
 * Difficulty: High&#x20;
 * Skills Required: Flutter&#x20;
-* Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
+* Mentor: [Nathan.fooo](https://github.com/appflowy)&#x20;
 
-**2. Search**&#x20;
+****
 
-Users write pages in AppFlowy. We’d like to have a search function for them to easily retrieve information from their wikis or notes.&#x20;
+**3. Toggle List**
 
-* Expected Outcome: a search function that allows users to search pages based on keywords&#x20;
-* Difficulty: High&#x20;
-* Skills Required: Flutter, Rust&#x20;
-* Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
+Toggles can show and hide content inside.
 
-**3. Template**&#x20;
+Expected Outcome:&#x20;
 
-People should be able to share their best practices via templates with others. We’d like to enable users to quickly set up a page by using a template and get inspiration from community templates.&#x20;
+* insert a toggle list via the slash '/' command
+* convert highlighted lines into a toggle list
+* add or move things inside a toggle
+* add a toggle inside a toggle
+* hide and show content inside a toggle
+* toggle headings
 
-* Expected Outcome:&#x20;
-  * A template center that allows users to view and clone a template into their workspace&#x20;
-  * A system that allows people to propose a new template that can be added to the template center&#x20;
-* Difficulty: Medium&#x20;
-* Skills Required: Flutter, Rust&#x20;
-* Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
+Difficulty: Medium to High
 
-**4. Add to Favorites**&#x20;
+Skills Required: Flutter
 
-Favoriting a page allows users to quickly access it without searching it or clicking through nesting pages.&#x20;
+Mentor: [Lucas](https://github.com/LucasXu0)
 
-* Expected Outcome: the user can favorite a page and access it via a “Favorites” section that resides in the navigation panel.&#x20;
-* Difficulty: Medium&#x20;
-* Skills Required: Flutter, Rust&#x20;
-* Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)
 
-**5. Page history**&#x20;
 
-AppFlowy users might want to go back to a previous version of a page, and we’d like to enable page history so that they can do so.&#x20;
+**4. The block handle and '+'** &#x20;
 
-* Expected Outcome: the user can restore a page to a previous version through “Page history”&#x20;
-* Difficulty: High&#x20;
-* Skills Required: Flutter, Rust&#x20;
-* Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [annie](https://github.com/annieappflowy) (annie\_appflowy)
+When you hover over any line or contents, the handle appears in the left margin. Click it to see a menu of options: Delete, Duplicate (design spec will be provided). Click '+' next to it to trigger the slash '/' menu.
+
+Difficulty: Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
+
+
+**5. Themes**
+
+Control the accent color used for interactive elements such as links, handles, and text selection. The editor cursor can also choose to use the same accent color.&#x20;
+
+Other customizations:
+
+* Fonts
+* Font sizes, font weights
+* Font colors
+* Text background colors
+
+Difficulty: Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
+
+
+**6. Shortcuts**
+
+Add more shortcuts and enable users to customize hotkeys
+
+Difficulty: Easy to Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
+****
 
 ### CI tools&#x20;
 
@@ -62,7 +110,7 @@ We consider binary size as an important metric, although it is easy to overlook.
 * Expected Outcome: an easy-to-use tool to report binary size&#x20;
 * Difficulty: Easy / Medium
 * Skills Required: Flutter, Rust, GitHub API&#x20;
-* Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)
+* Mentor: [Nathan.fooo](https://github.com/appflowy)&#x20;
 
 **2. Speed up building the release package**
 
@@ -71,7 +119,7 @@ It takes almost 20 minutes to build the AppFlowy release package. It would be ni
 * Expected Outcome: the cost of the time of the PR’s GitHub actions should be reduced&#x20;
 * Difficulty: Easy / Medium
 * Skills Required: Flutter, Rust, GitHub API&#x20;
-* Potential mentors: [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong), [Nathan.fooo](https://github.com/appflowy) (nathan.fooo)&#x20;
+* Mentor: [Nathan.fooo](https://github.com/appflowy)&#x20;
 
 
 
@@ -83,7 +131,7 @@ Performance could become a key differentiator for AppFlowy. We’d like to keep 
 
 * Expected Outcome:&#x20;
   * A metric system that measures the performance of AppFlowy&#x20;
-  * A working tool that collect results and persists them for analysis&#x20;
+  * A working tool that collects results and persists them for analysis&#x20;
 * Difficulty: Medium / High&#x20;
 * Skills Required: Rust&#x20;
-* Potential mentors: [Nathan.fooo](https://github.com/appflowy) (nathan.fooo), [visitor](https://github.com/tsuiyuenhong) (TsuiYuenHong)
+* Mentor: [Nathan.fooo](https://github.com/appflowy)
