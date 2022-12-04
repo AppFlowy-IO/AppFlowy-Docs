@@ -20,7 +20,7 @@ This is the process to use for every feature or bug fix that you want to propose
     git checkout main
     ```
 
-    * Get all the new changes from AppFlowy's repository. This command will download the all the changes in the AppFlowy repository, but will **not** merge them into your main branch.
+    * Get all the new changes from AppFlowy's repository. This command will download all the changes in the AppFlowy repository, but will **not** merge them into your main branch.
 
     ```shell
     git fetch upstream
@@ -60,7 +60,7 @@ Now, all three repositories are synched! We're ready to start our bug fix.
 
 You will loop through the following actions over and over until your fix is finished
 
-1. work on your code
+1. Work on your code
 2. Commit
 3. Keep your local repository up to date
 4. Keep your origin repository up to date
@@ -75,7 +75,7 @@ Work in your new branch (eg. fix\_setup\_page\_180) and commit your changes as n
 
 #### Keep your local repository up to date
 
-**Imporant.** While you were working on your fixes the original upstream project repository might have changed (due to other contributors working on it). So you'll have bring in those changes by rebasing your current feature branch. In other words you need to replay your fixes on top of the latest work from upstream repository to make sure your commits are still compatible with the latest commits upstream. The follwing command will result in a fast-forward merge for the pull request which is what we want:
+**Important.** While you were working on your fixes the original upstream project repository might have changed (due to other contributors working on it). So you'll have to bring in those changes by rebasing your current feature branch. In other words you need to replay your fixes on top of the latest work from upstream repository to make sure your commits are still compatible with the latest commits upstream. The following command will result in a fast-forward merge for the pull request which is what we want:
 
 ```bash
 git checkout fix_setup_page_180
@@ -113,7 +113,7 @@ Your code is now in your origin repository and ready to send to AppFlowy.
 
 Finally, go to the [AppFlowy repository](https://github.com/AppFlowy-IO/appflowy) on GitHub and click on "Pull Request".
 
-Upon doing this, you will be presented with a page that will show you the diff of the changes you made. Double check them to make sure you are making right pull request against the correct branch.
+Upon doing this, you will be presented with a page that will show you the differences of the changes you made. Double check them to make sure you are making right pull request against the correct branch.
 
 Things to check here are that the base fork is the upstream repo and the branch for the upstream repo is main, and that the head fork is your fork and the branch is the branch you wish to make the pull request from (fix\_setup\_page\_180).
 
