@@ -51,6 +51,7 @@
     * [Proposals](essential-documentation/contribute-to-appflowy/architecture/proposals.md)
   * [📚 Technical Glossary](essential-documentation/contribute-to-appflowy/technical-glossary.md)
   * [📔 AppFlowy Mentorship Program](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/README.md)
+    * [Pull Request Template](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/pull-request-template.md)
     * [Program Guidance](essential-documentation/contribute-to-appflowy/gsoc/contributor-guidance.md)
     * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/project-ideas.md)
     * [Proposal Template](essential-documentation/contribute-to-appflowy/gsoc/proposal-template.md)
