@@ -26,7 +26,7 @@ Mentor:  [Lucas](https://github.com/LucasXu0)
 
 
 
-**2. Calendar Database**&#x20;
+~~**2. Calendar Database (it's taken)**~~
 
 Calendars are a great way to visualize how things connect to certain dates from any database in AppFlowy. Use them for task management and event planning.&#x20;
 
