@@ -57,6 +57,7 @@
     * [Mentorship 2022](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/README.md)
       * [Mentee Projects](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/README.md)
         * [Calendar View for AppFlowy Database](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/calendar-view-for-appflowy-database.md)
+        * [Custom Themes](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/custom-themes.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
 
 ## Design Documentation
