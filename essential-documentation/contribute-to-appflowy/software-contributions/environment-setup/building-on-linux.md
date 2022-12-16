@@ -102,12 +102,12 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 cd frontend
 ```
 
-* `Optionally if you want to Build flowy-sdk-dev (dart-ffi)`
+* `Optionally if you want to Build appflowy-sdk-dev (dart-ffi)`
 
 {% tabs %}
 {% tab title="Development" %}
 ```bash
-cargo make --profile development-linux-x86_64 flowy-sdk-dev
+cargo make --profile development-linux-x86_64 appflowy-sdk-dev 
 ```
 
 {% endtab %}
