@@ -35,7 +35,7 @@ Here are the steps to follow to create and maintain a healthy fork and contribut
 
     * In your GitHub account, in your Fork of AppFlowy, go the the "<> Code" tab which is in the upper left corner.
     * Once there, click on the green "Code" button and a dropdown will appear.
-    * In the dropdown you will see choices for "HTTPS", "SSH", "GitHub CLI". We recommend using SSH, but that is beyound the scope of this tutorial. So we will be using HTTPS for simplicity. Click on HTTPS.
+    * In the dropdown you will see choices for "HTTPS", "SSH", "GitHub CLI". We recommend using SSH, but that is beyond the scope of this tutorial. So we will be using HTTPS for simplicity. Click on HTTPS.
     * You will see the link to your Fork. Click on the icon with two boxes to copy that URL to your clipboard.
     * In a terminal, go to your preferred directory for code.
     * Clone the Fork to your local machine:

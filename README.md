@@ -26,7 +26,7 @@ AppFlowy is an open-source alternation to Notion. You are in charge of your data
 
 * For those with no coding experience, AppFlowy enables you to create apps that suit your needs. It's built on a community-driven toolbox, including templates, plugins, themes, and more.
 
-### Truely native experience
+### Truly native experience
 
 * Faster, more stable with support for offline mode. It's also better integrated with different devices. Moreover, AppFlowy enables users to access features and possibilities not available on the web.
 

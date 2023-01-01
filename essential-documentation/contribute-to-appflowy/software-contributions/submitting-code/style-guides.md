@@ -8,7 +8,7 @@ description: >-
 
 ## General Coding Conventions
 
-The concentions in this section apply to all languages and scripts used in the AppFlowy project. You will find specifications for each language below, if applicable.
+The conventions in this section apply to all languages and scripts used in the AppFlowy project. You will find specifications for each language below, if applicable.
 
 ### Formatting
 
@@ -105,11 +105,11 @@ sum(int testValue) { // …}
 
 ### _Variables_ <a href="#2233" id="2233"></a>
 
-DO follow a consistent rule for var and final on local variables. Most local variables shouldn’t have type annotations and should be declared using just var or final. There are two rules in wide use for when to use one or the other:
+DO follow a consistent rule for var and final on local variables. Most local variables shouldn't have type annotations and should be declared using just var or final. There are two rules in wide use for when to use one or the other:
 
 Use final for local variables that are not reassigned and var for those that are.
 
-Use var for all local variables, even ones that aren’t reassigned. Never use final for locals. (Using final for fields and top-level variables is still encouraged, of course.)
+Use var for all local variables, even ones that aren't reassigned. Never use final for locals. (Using final for fields and top-level variables is still encouraged, of course.)
 
 Either rule is acceptable, but pick one and apply it consistently throughout your code. That way when a reader sees var, they know whether it means that the variable is assigned later in the function.
 
@@ -262,13 +262,13 @@ itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
 
 _Whenever you have widgets that don’t change when the state changes, you should declare them as constants. This will prevent them from being rebuilt, hence improving performance._
 
-_This is similar to caching widgets that won’t get rebuilt. Some of the widgets that can be declared as `const` include `Text`, `Padding`, and `Icons`, to mention a few. If the widgets contain dynamic information, they shouldn’t be declared as constants._
+_This is similar to caching widgets that won’t get rebuilt. Some of the widgets that can be declared as `const` include `Text`, `Padding`, and `Icons`, to mention a few. If the widgets contain dynamic information, they shouldn't be declared as constants._
 
 ![Usage of const](https://miro.medium.com/max/553/1\*IdXs5sjANVB\_1g41D9vUug.png)
 
 ### _Use Trailing Commas_ <a href="#8e4e" id="8e4e"></a>
 
-_Since your widget tree can grow quickly, you need a way to format your code in a way that makes it easy to read. Adding trailing commas and using your IDE’s formatting shortcuts leads to more readablility._
+_Since your widget tree can grow quickly, you need a way to format your code in a way that makes it easy to read. Adding trailing commas and using your IDE’s formatting shortcuts leads to more readability._
 
 ![Usage of traiing commas](https://miro.medium.com/max/600/1\*vyVnQzEfD325-t-EPoll9g.png)
 
@@ -287,7 +287,7 @@ _It’s important to check the code with the analyzer. Run `flutter analyze` in 
 flutter analyze
 ```
 
-_Note that the Continious Integration tasks will run flutter ananlyze on your PRs and will refuse tasks with warnings or errors._
+_Note that the Continuous Integration tasks will run flutter analyze on your PRs and will refuse tasks with warnings or errors._
 
 ### _Flutter Pub Version Checker (Android Studio Plugin)_ <a href="#d6ed" id="d6ed"></a>
 
