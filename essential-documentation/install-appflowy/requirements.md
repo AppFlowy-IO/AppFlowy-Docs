@@ -4,4 +4,7 @@ description: help-wanted
 
 # 🖥 System Requirements
 
-This page should include information about both the supported operating systems and the minimum requirements needed to install and use AppFlowy.\
+- OS: **Windows 7/8/8.1/10 64-bit** // **Ubuntu 16.10 & Newer Versions** // **Mac Os X & Newer Versions**
+- Processor: 64-bit 2.0 GHz
+- Memory: 2 GB
+- Storage: 500 MB
