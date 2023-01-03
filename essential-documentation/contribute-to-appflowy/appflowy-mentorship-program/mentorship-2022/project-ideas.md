@@ -89,7 +89,7 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-**6. Shortcuts**
+~~**6. Shortcuts (it's taken)**~~
 
 Add more shortcuts and enable users to customize hotkeys
 
