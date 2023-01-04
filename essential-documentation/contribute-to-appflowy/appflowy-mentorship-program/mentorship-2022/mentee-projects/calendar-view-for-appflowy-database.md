@@ -19,6 +19,7 @@ By the completion of this project, users will be able to:
 * Create a calendar page from the left sidebar
 * See events laid out in a calendar view
 * Switch between one month to the next
+* Choose whether Monday or Sunday is the first day of the week
 * Jump to current day
 * Jump to a particular month or year
 * Add a new event by clicking on a day
