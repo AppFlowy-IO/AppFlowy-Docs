@@ -4,16 +4,20 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-GridRowWidget --> RowBloc
+GridRowWidget --> RowInfo
+GridRowWidget --> RowDataController
 GridRowWidget --> GridCellBuilder
+GridRowWidget --> RowBloc
 
 RowBloc --> RowService
 
+'RowBloc
+RowBloc --> RowFFIService
+RowBloc --> RowDataController
+
 'cache
-RowBloc --> GridRowCache
-GridRowCache --> GridCellCache: own
-GridRowCache "1" *-- "*" GridRowInfo
-GridRowInfo --> GridRowPB
-GridRowInfo "1" o-- "*" GridFieldPB
-RowBloc --> GridRowInfo
+RowDataController --> RowInfo
+RowDataController --> GridFieldController
+RowDataController --> GridRowCache
+
 @enduml

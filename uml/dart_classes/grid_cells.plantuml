@@ -47,39 +47,39 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-interface IGridCellDataPersistence
-interface IGridCellController
-interface IGridCellDataParser
+interface GridCellDataPersistence
+interface GridCellController
+interface GridCellDataParser
 interface TypeOptionDataParser
 
-IGridCellController --> GridCellIdentifier
-IGridCellController --> CellListener
-IGridCellController --> TypeOptionDataParser
+GridCellController --> GridCellIdentifier
+GridCellController --> CellListener
+GridCellController --> TypeOptionDataParser
 
 'Data loader
-IGridCellController --> GridCellDataLoader
-GridCellDataLoader --> IGridCellDataParser
+GridCellController --> GridCellDataLoader
+GridCellDataLoader --> GridCellDataParser
 GridCellDataLoader --> CellService
 
 'Data parser
-StringCellDataParser -u-|> IGridCellDataParser
-DateCellDataParser -u-|> IGridCellDataParser
-SelectOptionCellDataParser -u-|> IGridCellDataParser
-URLCellDataParser -u-|> IGridCellDataParser
+StringCellDataParser -u-|> GridCellDataParser
+DateCellDataParser -u-|> GridCellDataParser
+SelectOptionCellDataParser -u-|> GridCellDataParser
+URLCellDataParser -u-|> GridCellDataParser
 
 'Cache
-IGridCellController --> GridCellCache
+GridCellController --> GridCellCache
 
 
 'Persistence
-IGridCellController --> IGridCellDataPersistence
-DateCellDataPersistence -u-|> IGridCellDataPersistence
-CellDataPersistence -u-|> IGridCellDataPersistence
+GridCellController --> GridCellDataPersistence
+DateCellDataPersistence -u-|> GridCellDataPersistence
+CellDataPersistence -u-|> GridCellDataPersistence
 
 DateCellDataPersistence --> CellService
 CellDataPersistence --> CellService
 
 'Field
-IGridCellController --> GridCellFieldNotifier
+GridCellController --> GridCellFieldNotifier
 
 @enduml

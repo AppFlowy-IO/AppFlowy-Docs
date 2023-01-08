@@ -146,30 +146,30 @@ Let's look at the select `GridSingleSelectCell` and find out how it works. When 
 * `SelectOptionCellEditor` is a widget that defines the UI when editing the cell.
 * `SelectOptionCellEditorBloc` binds the UI and the data, the `SelectOptionCellEditor` will be rebuilt if the bloc state changes.
 * `SelectOptionService` handles up the logic for deleting, updating the select option with the backend.
-* `GridSelectOptionCellController` use `IGridCellController` to implement the cell's operations.
+* `GridSelectOptionCellController` use `GridCellController` to implement the cell's operations.
 
 ![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
 
-**IGridCellController**
+**GridCellController**
 
 * Allows getting Read/Write cell data.
 * Listens to the cell date change.
 * Allows getting the corresponding field type option data that is parsed by the `TypeOptionDataParser`.
 * Listens to the field event and loads the cell data if needed. For example, the numbered cell should reload when the number format is changed.
 
-**IGridCellDataParser**
+**GridCellDataParser**
 
 Allow getting the cell data and then parsing into a specific type.
 
-**IGridCellDataParser**
+**GridCellDataParser**
 
-The implementation of `IGridCellDataParser` will parse the `List<int>` into specific cell data. For example, the `SelectOptionCellDataParser` will parse the List into `SelectOptionCellDataPB`.
+The implementation of `GridCellDataParser` will parse the `List<int>` into specific cell data. For example, the `SelectOptionCellDataParser` will parse the List into `SelectOptionCellDataPB`.
 
-**IGridCellDataPersistence**
+**GridCellDataPersistence**
 
-We can use CellDataPersistence that implements the `IGridCellDataPersistence` to perform normal save operation.
+We can use CellDataPersistence that implements the `GridCellDataPersistence` to perform normal save operation.
 
-Also, implement the `IGridCellDataPersistence`to provide custom data saving operation. Just like the `DateCellDataPersistence` does.
+Also, implement the `GridCellDataPersistence`to provide custom data saving operation. Just like the `DateCellDataPersistence` does.
 
 **CellService**
 
