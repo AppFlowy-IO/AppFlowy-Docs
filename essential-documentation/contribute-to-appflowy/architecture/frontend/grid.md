@@ -8,7 +8,7 @@ This document explains how the grid works on the Dart side. Also, it can be a de
 
 Below you will find some quick definitions to help you read through the document.
 
-|          | |
+|               |                                                                                                                                                           |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Cache classes | Aim to reduce the time cost of getting data from the backend.                                                                                             |
 | Cell          | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                            |
@@ -29,11 +29,11 @@ Another name for a column is Field. A column's configuration is defined in the [
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Fields in that row.
 
-![file : grid.plantuml](../../../../uml/output/grid.svg)
+![file : grid.plantuml](../../../../.gitbook/assets/grid.svg)
 
 ## Cache
 
-![file : grid\_data\_cache.plantuml](../../../../uml/output/row_cell_relation.svg)
+![file : grid\_data\_cache.plantuml](../../../../uml/output/row\_cell\_relation.svg)
 
 When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as shown in the diagram above.
 
@@ -109,13 +109,13 @@ Caching the rows in memory to reduce the cost of getting data from the backend. 
 
 * A `Row` has a list of `Cell`s. It uses the `GridCellBuilder` to build the custom `Cell` according to the field type. Each cell should extend the `GridCellWidget` interface.
 
-![file : grid\_row.plantuml](../../../../uml/output/grid\_row.svg)
+![file : grid\_row.plantuml](../../../../.gitbook/assets/grid\_row.svg)
 
 ## Cell
 
 A `Cell` is one individual cell in a grid. The number of `Cell`s in a `Row` is equal to the number of `Field`s in the `Grid`. We define the `GridCellWidget` that defines the shared behaviors. Such as `CellAccessory`, `CellEditable`, and `CellShortcuts`.
 
-![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Cell\_Builder.svg)
+![file : grid\_cell.plantuml](../../../../.gitbook/assets/Grid\_Cell\_Builder.svg)
 
 Let's look at the select `GridSingleSelectCell` and find out how it works. When a user clicks a cell, the `SelectOptionCellEditor` will show up.
 
@@ -126,7 +126,7 @@ Let's look at the select `GridSingleSelectCell` and find out how it works. When 
 * `SelectOptionService` handles up the logic for deleting, updating the select option with the backend.
 * `GridSelectOptionCellController` use `GridCellController` to implement the cell's operations.
 
-![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Cell\_Controller.svg)
+![file : grid\_cell.plantuml](../../../../.gitbook/assets/Grid\_Cell\_Controller.svg)
 
 **GridCellController**
 
