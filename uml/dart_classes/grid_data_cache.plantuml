@@ -22,7 +22,7 @@ GridViewCache --> GridViewListener: own
 @enduml
 
 
-@startuml block/row/cell relation
+@startuml row/cell relation
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray

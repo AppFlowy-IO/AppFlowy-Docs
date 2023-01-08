@@ -8,15 +8,18 @@ This document explains how the grid works on the Dart side. Also, it can be a de
 
 Below you will find some quick definitions to help you read through the document.
 
-| Block         | A grid can have many rows. Rows are therefore grouped into Blocks in order to make things more efficient.                                                 |
+|          | |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Cache classes | Aim to reduce the time cost of getting data from the backend.                                                                                             |
 | Cell          | A Cell is one individual cell in a grid. You can see more in the [Cell](grid.md#cell) section.                                                            |
 | Column        | A column is a theoretical representation of data, however, there is no Column class.                                                                      |
 | Field         | A Field represents the configuration of a column. You can see more in the [Field](grid.md#field) section.                                                 |
 | Grid          | A Grid type is a simple representation of items placed in columns and rows. It is not a spreadsheet. You can see more in the [Grid](grid.md#grid) section |
-| Header        | @@@                                                                                                                                                       |
 | Row           | A Row represents a group of related data                                                                                                                  |
+
+{% hint style="info" %}
+Classes with a PB suffix are generated in protobuf format. You could check the [protobuf.md](../backend/protobuf.md "mention") document out if you are interested in how the protobuf classes are generated.
+{% endhint %}
 
 ## Grid
 
@@ -26,52 +29,27 @@ Another name for a column is Field. A column's configuration is defined in the [
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Fields in that row.
 
-A Grid has a list of Blocks, each Block has a list of Rows.
-
-{% hint style="info" %}
-Classes with a PB suffix are generated in protobuf format. You could check the [protobuf.md](../backend/protobuf.md "mention") document out if you are interested in how the protobuf classes are generated.
-{% endhint %}
-
 ![file : grid.plantuml](../../../../uml/output/grid.svg)
 
 ## Cache
 
-![file : grid\_data\_cache.plantuml](../../../../uml/output/block\_row\_cell\_relation.svg)
+![file : grid\_data\_cache.plantuml](../../../../uml/output/row_cell_relation.svg)
 
 When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as shown in the diagram above.
 
-1. `GridFieldCache`
-   * Listens to the `Field`'s changes.
-   * Updates the `Field` according to the `GridFieldChangesetPB`.
-2.  `GridBlockCache`
-
-    A Grid contains many `Block`s, each `Block` has a `GridRowCache`.
-
-    * Listens to the `Block`'s changeset.
-    * Updates the `GridRowCache` according to the `GridBlockChangesetPB`. The changeset contains the ids of inserted/deleted/updated `Rows`.
-3. `GridRowCache`
-   * Caches the `Block`'s `Row`s in memory.
+1. `GridRowCache`
+   * Caches the `grid`'s `Row`s in memory.
    * A `Row` contains many `Cells, each` Cell`will be cached in the`GridCellCache\`.
    * Allows to insert/delete/update `Row`s.
-4. `GridCellCache`
+2. `GridCellCache`
    * Caches each `Cell` by `GridCellCacheKey` in memory.
    * Allows to remove/insert `Cell`s.
-
-## Block
-
-A `Grid` can hold many thousands of `Row`s. In order to streamline the fetching of data, these `Row`s are split up and contained in `Block`s.
-
-![file : grid\_block.plantuml](../../../../uml/output/grid\_block.svg)
-
-A `Grid` can contain many `Block`s, each `Block` has a `GridRowCache`. For the moment, we only support having one `Block` in the Grid. This will cause a limitation on the number of rows that a user can create, however, this limitation will be lifted in the future.
 
 ## Field
 
 ### Field
 
 A `Field` represents a column's configuration. It will contain the column's name, id, width, type (as defined in [FieldType](grid.md#fieldtype)), etc.
-
-A `Field` is not a column of data, it does not contain a list of `Cell`s.
 
 ### FieldType
 
