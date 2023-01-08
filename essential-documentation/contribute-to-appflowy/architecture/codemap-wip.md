@@ -37,10 +37,10 @@ This code map introduces the folder hierarchy of AppFlowy.
 
                &#x20;Consists of Widgets that are used by the **`workspace`** and also the state of the Widgets.
     3. **`packages`**
-       1.  **`flowy_board`**:&#x20;
+       1.  **`appflowy_board`**:&#x20;
 
            This directory contains all the codes that are used to build the BoardView.
-       2.  **`flowy_editor`**:
+       2.  **`appflowy_editor`**:
 
            &#x20;This directory contains all the codes that are used to build the FlowyEditor.
        3.  **`flowy_infra`**:&#x20;
@@ -49,7 +49,7 @@ This code map introduces the folder hierarchy of AppFlowy.
        4.  **`flowy_infra_ui`**:&#x20;
 
            This directory contains the shard Flutter widget that is used by AppFlowy. You can reuse the widgets here before designing to write a new widget.
-       5.  **`flowy_sdk`**:&#x20;
+       5.  **`appflowy_backend`**:&#x20;
 
            This directory contains the codes that are used to communicate with the backend. Such as the Dart protobuf class definitions, FFI interface, and the dispatch event definitions.
 
@@ -79,7 +79,7 @@ This code map introduces the folder hierarchy of AppFlowy.
     7.  **`flowy-user`**
 
         This crate handles all the user-related operations.
-    8.  **`flowy-sdk`**
+    8.  **`flowy-core`**
 
         This crate is used to initial each crate including resolving their dependencies. It encapsulates all the abilities provided by the other crates.
 
