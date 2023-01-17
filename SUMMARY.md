@@ -38,6 +38,8 @@
       * [🧩 How to Create a Plugin for AppFlowy Editor](essential-documentation/contribute-to-appflowy/software-contributions/how-tos/how-to-create-a-plugin-for-appflowy-editor.md)
       * [⌨ How to Implement Markdown Syntax To Style Text In AppFlowy Editor](essential-documentation/contribute-to-appflowy/software-contributions/how-tos/how-to-implement-markdown-syntax-to-style-text-in-appflowy-editor.md)
       * [☑ How to Add a Test](essential-documentation/contribute-to-appflowy/software-contributions/how-tos/how-to-add-a-test.md)
+    * [📄 Licenses](essential-documentation/contribute-to-appflowy/software-contributions/licenses/README.md)
+      * [❓ appflowy\_editor Licensing FAQ](essential-documentation/contribute-to-appflowy/software-contributions/licenses/appflowy\_editor-licensing-faq.md)
   * [💀 Architecture](essential-documentation/contribute-to-appflowy/architecture/README.md)
     * [CodeMap(WIP)](essential-documentation/contribute-to-appflowy/architecture/codemap-wip.md)
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
