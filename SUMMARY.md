@@ -41,7 +41,7 @@
     * [Frontend Tauri](essential-documentation/contribute-to-appflowy/architecture/frontend-tauri/README.md)
       * [🗺 CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend-tauri/codemap.md)
     * [Frontend Futter](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
-      * [🗺 CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/codemap-wip.md)
+      * [🗺 CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/codemap.md)
       * [🛰 Workspace](essential-documentation/contribute-to-appflowy/architecture/frontend/workspace.md)
       * [🧮 Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/grid.md)
       * [⚙ Setting](essential-documentation/contribute-to-appflowy/architecture/frontend/setting.md)

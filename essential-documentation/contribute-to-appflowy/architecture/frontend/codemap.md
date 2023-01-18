@@ -70,7 +70,7 @@ This code map introduces the folder hierarchy of AppFlowy.
     5.  **`flowy-grid`**
 
         This crate handles all the Grid operations, such as creating a grid or deleting a row in a grid.
-    6.  **`flowy-text-block`**
+    6.  **`flowy-document`**
 
         This crate help to save the text editor data to disk.
     7.  **`flowy-user`**
