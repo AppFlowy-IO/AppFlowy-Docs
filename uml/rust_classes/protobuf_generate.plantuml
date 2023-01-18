@@ -1,5 +1,3 @@
-
-
 @startuml FlowySDK
 title Protobuf Code Generation
 left to right direction
@@ -83,4 +81,3 @@ Repository -[bold]up-> dart_pb
 Module -[bold]up-> rust_event
 Module -[bold]up-> rust_pb
 @enduml
-
