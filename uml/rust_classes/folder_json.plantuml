@@ -1,0 +1,85 @@
+@startjson
+{
+    "type": "folder",
+    "children": [
+        {
+            "type": "workspaces",
+            "children": [
+                {
+                    "type": "workspace",
+                    "attributes": {
+                        "id": "1",
+                        "name": "my first workspace"
+                    },
+                    "children": []
+                },
+                {
+                    "type": "workspace",
+                     "attributes": {
+                        "id": "2",
+                        "name": "my second workspace"
+                    },
+                    "children": [
+                        {
+                            "type": "app",
+                            "name": "Work",
+                            "children": [
+                                {
+                                    "type": "view",
+                                    "name": "TODO",
+                                    "children": []
+                                },
+                                 {
+                                    "type": "view",
+                                    "name": "Articles",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "app",
+                            "name": "Life",
+                            "children": [
+                                {
+                                    "type": "view",
+                                    "name": "TODO",
+                                    "children": []
+                                },
+                                 {
+                                    "type": "view",
+                                    "name": "Travel",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "trash_list",
+            "children": [
+                {
+                    "type": "trash",
+                    "ty": "1",
+                    "name": "2022 recap"
+                },
+                 {
+                    "type": "trash",
+                    "ty": "2",
+                    "name": "2021 recap"
+                }
+            ]
+        }
+    ]
+}
+
+@endjson 
+
+
+@startuml
+class FolderNodePad {
+    folder: FolderRevision,
+    tree: NodeTree,
+}
+@enduml

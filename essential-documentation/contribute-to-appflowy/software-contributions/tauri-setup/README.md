@@ -20,11 +20,22 @@ npm install
 ```
 
 ## Step 3：
-Open the **[frontend](https://github.com/AppFlowy-IO/AppFlowy/tree/main/frontend)** folder located at xx/AppFlowy/fronted with VSCode.
-If you don't have VSCode then back to your terminal.
 
+Run from VSCode:
+Open the **[frontend](https://github.com/AppFlowy-IO/AppFlowy/tree/main/frontend)** folder located at AppFlowy/fronted with VSCode.
+![img.png](../../../../.gitbook/assets/vscode_run_tauri.png)
+This option enable debugging the [core process](https://tauri.app/v1/references/architecture/process-model#the-core-process) directly.
+
+Or you can run manually:
 ```shell
 cd frontend
 cargo make tauri_dev
 ```
 
+Remove build artifacts and any generated codes by running **Tauri Clean** from VSCode task 
+![img.png](../../../../.gitbook/assets/vscode_task_tauri_clean.png).
+Or you can run manually:
+```shell
+cd frontend
+cargo make tauri_clean
+```
