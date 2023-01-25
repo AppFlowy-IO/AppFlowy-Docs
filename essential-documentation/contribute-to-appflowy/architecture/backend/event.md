@@ -6,49 +6,82 @@ that supports **Dart** and **TS** event call.
 Events are emitted in the frontend and are processed in the backend. Each event has
 its own handler in the backend.This mechanism uses a Protobuf-RPC like protocol under
 the hood to serialize requests and responses, all arguments and return data must be
-serializable to **Protobuf**. This article introduces how AppFlowy uses protobuf buffer
-to exchange the data between Dart and Rust. The pattern as shown below:
+serializable to **Protobuf**. 
 
-![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-FFI.svg)
+This article introduces how AppFlowy uses protobuf buffer
+to exchange the data between the frontend and backend. The pattern as shown below:
 
-frontend written in Dart and Backend written in Rust, they communicate with each other using the protocol buffer. Let's dig into the details.
+![file : event_map.plantuml](../../../../uml/output/FlowySDK-FFI.svg)
+Different frontend uses the corresponding FFI interface to communicate with the backend. For example:
 
-## Generate Process
+* Dart
+```dart
+class UserEventSignIn {
+     SignInPayloadPB request;
+     UserEventSignIn(this.request);
 
-Let's introduce the generating process that consists of three parts.
+    Future<Either<UserProfilePB, FlowyError>> send() {
+    final request = FFIRequest.create()
+          ..event = UserEvent.SignIn.toString()
+          ..payload = requestToBytes(this.request);
+
+    return Dispatch.asyncRequest(request)
+        .then((bytesResult) => bytesResult.fold(
+           (okBytes) => left(UserProfilePB.fromBuffer(okBytes)),
+           (errBytes) => right(FlowyError.fromBuffer(errBytes)),
+        ));
+    }
+}
+```
+
+* TS
+```ts
+
+```
+
+So, just calling the corresponding function and then let the backend handle it. The result will be returned
+asynchronously.
+
+## Code Generate Process
+
+Let's introduce the generating process step by step.
 
 ![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf\_Code\_Generation.svg)
 
-### Part One
+### Step One - Definitions
 
-We define the `Event` and the `Protobuf data struct` in Rust, for example, the `TextBlockEvent` defined in event\_map.rs and `ExportData` defined in entities.rs.
+We define the `Event` and the `Protobuf data struct` in Rust, for example, the `DocumentEvent` defined in event_map.rs and `ExportDataPB` defined in entities.rs.
 
 ```rust
 // event_map.rs
-pub enum TextBlockEvent {
-    #[event(input = "TextBlockIdPB", output = "TextBlockDeltaPB")]
-    GetBlockData = 0,
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Display, Hash, ProtoBuf_Enum, Flowy_Event)]
+#[event_err = "FlowyError"]
+pub enum DocumentEvent {
+    #[event(input = "OpenDocumentContextPB", output = "DocumentSnapshotPB")]
+    GetDocument = 0,
 
-    #[event(input = "TextBlockDeltaPB", output = "TextBlockDeltaPB")]
-    ApplyDelta = 1,
+    #[event(input = "EditPayloadPB")]
+    ApplyEdit = 1,
 
     #[event(input = "ExportPayloadPB", output = "ExportDataPB")]
     ExportDocument = 2,
 }
 ```
 
-The annotation, `#[event(input = Input struct, output = Output struct)]` is used to generate the dart function.
+The annotation, `#[event(input = Input struct, output = Output struct)]` is used to generate the event FFI function.
 
 * `Input struct` mean the function receive the input parameter's type.
 * `Output struct` mean the function's return value's type
 
-I think you noticed that there is a`PB` keyword appended to every struct. We use the `PB` keyword to identify this struct is in protobuf format.
+I think you noticed that there is a`PB` keyword appended to every struct. We use the `PB` keyword to identify this
+struct is in protobuf format.
 
 ```rust
-// entities.rs
+// rust-lib/flowy-document/src/entities.rs
 #[derive(Default, ProtoBuf)]
 pub struct ExportDataPB {
-    #[pb(index = 1)]
+    // The annotation, index = 1, match the syntax that defines proto file.
+    #[pb(index = 1)] 
     pub data: String,
 
     #[pb(index = 2)]
@@ -60,73 +93,47 @@ The procedural macro, `ProtoBuf`, is used to mark this struct is going to genera
 
 > We use the [syn](https://docs.rs/syn/latest/syn/) to collect the [AST](https://en.wikipedia.org/wiki/Abstract\_syntax\_tree) information that will be used to generate the `proto file`. If you interest in how to collect the information in details, you should check out the [Procedural Macros](https://doc.rust-lang.org/reference/procedural-macros.html).
 
-### Part Two
-
-[Build Scripts](https://doc.rust-lang.org/cargo/reference/build-scripts.html) is the perfect way to do the code generation. Let's check out some pseudocode.
-
-```
-// build.rs
-
-fn main() {
-    code_gen::protobuf_file::gen(env!("CARGO_PKG_NAME"));
-}
-
-
-fn gen(crate_name: &str, proto_file_dir: &str) { 
-    // 1. generate the proto files to proto_file_dir
-    let _ = gen_protos(crate_name);
-
-    // 2. generate the protobuf files(Dart)
-    generate_dart_protobuf_files(crate_name, proto_file_dir, &paths, &file_names, &protoc_bin_path);
-    
-    // 3. generate the protobuf files(Rust)
-    generate_rust_protobuf_files(&protoc_bin_path, &paths, proto_file_dir);
-}
-```
-
-### Part Three
-
-You may wonder how build.rs define which files should generate the proto files and the event code(on the Dart side). Well, we use the config file to achieve this.
+### Step Two - Configurations
+We use [toml](https://en.wikipedia.org/wiki/TOML) to control which files should be included when doing the 
+code generation. It supports specify a single file or a folder.
 
 ```toml
 proto_input = ["src/event_map.rs", "src/entities.rs"]
 event_files = ["src/event_map.rs"]
 ```
 
-**proto\_input**
+**proto_input**
 
-The proto\_input receives path or file. The `code gen` process will parse the proto\_input in order to generate the struct/enum.
+The proto_input receives path or file. The `code gen` process will parse the proto_input in order to generate the struct/enum.
 
-**event\_files**
+**event_files**
 
-The event\_files receives file that define the event. The `code gen` process will parse the file in order to generate the dart event class.
+The event_files receives file that define the event. The `code gen` process will parse the file in order to generate the 
+corresponding language event class. The event class name consists of the Enum name and the Enum value defined in
+event_map.rs.
 
-The event class name consists of the Enum name and the Enum value defined in event\_map.rs.
+### Step Three - Build configuration
 
-````
-For example: The ExportDocument event: 
-```Dart
-class TextBlockEventExportDocument {
-     ExportPayload request;
-     TextBlockEventExportDocument(this.request);
-
-    Future<Either<ExportData, FlowyError>> send() {
-    final request = FFIRequest.create()
-          ..event = TextBlockEvent.ExportDocument.toString()
-          ..payload = requestToBytes(this.request);
-
-    return Dispatch.asyncRequest(request)
-        .then((bytesResult) => bytesResult.fold(
-           (okBytes) => left(ExportData.fromBuffer(okBytes)),
-           (errBytes) => right(FlowyError.fromBuffer(errBytes)),
-        ));
-    }
-}
+[Build Scripts](https://doc.rust-lang.org/cargo/reference/build-scripts.html) is the perfect way to do the code generation. Let's check out some pseudocode.
+We use [features flag](https://doc.rust-lang.org/cargo/reference/features.html) to control generate process. If the **dart** 
+feature is on then the **Dart** event FFI functions will be generated. 
 
 ```
-````
+// build.rs
 
-### Part Four
+fn main() {
+    let crate_name = env!("CARGO_PKG_NAME");
+    flowy_codegen::protobuf_file::gen(crate_name);
+
+    #[cfg(feature = "dart")]
+    flowy_codegen::dart_event::gen(crate_name);
+
+    #[cfg(feature = "ts")]
+    flowy_codegen::ts_event::gen(crate_name);
+}
+```
+
+### Step Four - Code Gen on Build
 
 The `code gen` process is embedded in the AppFlowy build process. But you can run the build process manually. Just go to the corresponding crate directory(For example, frontend/flowy-text-block), and run:
 
@@ -142,33 +149,30 @@ The build scripts will be run before the crate gets compiled. Thanks to the carg
 >
 > The rerun-if-changed instruction tells Cargo to re-run the build script if the file at the given path has changed. Currently, Cargo only uses the filesystem last-modified timestamp to determine if the file has changed. It compares against an internal cached timestamp of when the build script last ran.
 
-After running the build.rs, it generates files in Dart and Rust protobuf files using the same proto files. Dart:
+After running the build.rs, it generates files in Dart/TS and Rust protobuf files using the same proto files. 
 
-* `share.pb.dart`
-* `event_map.pb.dart`
+Dart (with dart feature on):
+* `dart_event.dart`
 
-These files are located in "`packages/flowy_sdk/lib/protobuf/`".
+The file is located in `packages/appflowy_backend/lib/dispatch/dart_event/flowy-document`.
 
-Rust:
+TS (with ts feature on):
+* `event.ts`
 
-* `share.rs`
-* `event_map.rs`
+The file is located in `appflowy_tauri/src/services/backend/events`.
 
-These files are located in "`xxx-crate/src/protobuf`".
+## Message passing
+Let's see how the message passing from the frontend to the backend. Let use dart for demonstration (It's the same in TS).
 
-### Part Five
-
-The class, TextBlockEventExportDocument, is automatically generated in the Dart side using the AST from `Part One`. The function `export_handler` will get called when the `ExportDocument` event happened. The calling route as the picture shown below.
-
-1. Repository constructs the `TextBlockEventExportDocument` class, and call `send()` function.
-2. frontend's FFI serializes the event and the `ExportPayloadPB` to bytes.
+1. Repository constructs the `DocumentEventExportDocument` class, and call `send()` function.
+2. Frontend's FFI serializes the event and the `ExportPayloadPB` to bytes.
 3. The bytes were sent to Backend.
 4. Backend's FFI deserializes the bytes into the corresponding `event` and `ExportPayloadPB`.
-5. The dispatcher sends the `ExportPayloadPB` to the module that registers as the event handler.
+5. The dispatcher sends the `ExportPayloadPB` to the crate that registers as the event handler.
 6.  `ExportPayloadPB` will try to parse into `ExportParams`. It will return an error if there are illegal fields in it.
 
     For example: the `view_id` field in the `ExportPayloadPB` should not be empty.
-7. Module's `export_handler` function gets called with the event and data.
+7. Crate's `export_handler` function gets called with the event and data.
 8. At the end, `export_handler` will return 'ExportDataPB', which will be post to the frontend.
 
-![file : event\_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf\_Communication.svg)
+![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf\_Communication.svg)

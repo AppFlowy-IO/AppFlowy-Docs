@@ -3,21 +3,31 @@ title FFI
 left to right direction
 skinparam linetype polyline
 
-package "Frontend (Flutter)" #DDDDDD {
-    component Repository_A as "Repository"
-    component FFI_Frontend as "FFI" #FFDDDD
+package "Frontend(Flutter)" #DDDDDD {
+    component Repository_Flutter as "Repository"
+    component FFI_Flutter as "FFI" #FFDDDD
 }
 
-package "Backend (Rust)" #DDDDDD {
+package "Frontend(Tauri)" #DDDDDD {
+    component Repository_Tauri as "Repository"
+    component FFI_Tauri as "FFI" #FFDDDD
+}
+
+package "Backend(Rust)" #DDDDDD {
     component FFI_Backend as "FFI" #FFDDDD
     component Dispatcher
-    component Module
+    component Crate
 }
 
-Repository_A ..> FFI_Frontend : 1.Event + Protobuf
-FFI_Frontend --> FFI_Backend : 2.Bytes
+Repository_Flutter ..> FFI_Flutter : 1.Event + Protobuf
+FFI_Flutter --> FFI_Backend : 2.Bytes
+
+Repository_Tauri ..> FFI_Tauri: 1.Event + Protobuf
+FFI_Tauri --> FFI_Backend : 2.Bytes
+
 FFI_Backend --> Dispatcher : 3.Event + Protobuf
-Dispatcher --> Module: 4.Protobuf
+Dispatcher --> Crate: 4.Protobuf
+Crate --> Crate: 5. Handler
 @enduml
 
 @startuml FlowySDK
@@ -39,11 +49,11 @@ rectangle {
     end note
 
     package "Backend (Rust)" #DDDDDD {
-        component Module
+        component Crate
         component Dispatcher as "Dispatcher" #FFDDDD
         component FFI_Backend as "FFI" #FFDDDD
     }
-    note left of Module
+    note left of Crate
     pub(crate) async fn export_handler(
         data: Data<ExportPayload>,
         controller: Unit<Arc<ViewController>>,
@@ -57,8 +67,8 @@ Repository --> Repository: 1.ExportPayload
 Repository --> FFI_Frontend: 2. Event + ExportPayload
 FFI_Frontend --> FFI_Backend: 3.Bytes
 FFI_Backend --> Dispatcher: 4: Event + ExportPayload
-Dispatcher --> Module: 5.ExportPayload
-Module --> Module : 6. call export_handler
+Dispatcher --> Crate: 5.ExportPayload
+Crate --> Crate : 6. call export_handler
 @enduml
 
 

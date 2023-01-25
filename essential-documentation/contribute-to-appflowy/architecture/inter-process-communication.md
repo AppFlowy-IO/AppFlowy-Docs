@@ -14,7 +14,8 @@ AppFlowy's backend defines all the events and generates the event's [foreign fun
 Currently, AppFlowy supports **Dart** and **TS** event call.
 
 Events are emitted in the frontend and are processed in the backend. Each
-event has its own handler in the backend
+event has its own handler in the backend. Please check out [this](../backend/event.md) if you want to 
+know the details of the events.
 
 ![file : inter_process_communication.plantuml](../../../uml/output/inter_process_commuciate-Events.svg)
 
