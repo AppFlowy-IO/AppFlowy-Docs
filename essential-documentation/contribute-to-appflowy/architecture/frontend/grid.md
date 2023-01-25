@@ -18,7 +18,7 @@ Below you will find some quick definitions to help you read through the document
 | Row           | A Row represents a group of related data                                                                                                                  |
 
 {% hint style="info" %}
-Classes with a PB suffix are generated in protobuf format. You could check the [protobuf.md](../backend/protobuf.md "mention") document out if you are interested in how the protobuf classes are generated.
+Classes with a PB suffix are generated in protobuf format. You could check the [protobuf.md](../backend/event.md "mention") document out if you are interested in how the protobuf classes are generated.
 {% endhint %}
 
 ## Grid

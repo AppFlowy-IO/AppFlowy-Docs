@@ -1,8 +1,15 @@
-# Protobuf
+# Events 
 
-The article introduces how AppFlowy uses protobuf buffer to exchange the data between Dart and Rust. The pattern as shown below:
+AppFlowy's backend defines all the events and generates the event's [foreign function interface](https://en.wikipedia.org/wiki/Foreign_function_interface)
+that supports **Dart** and **TS** event call.
 
-![file : event\_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-FFI.svg)
+Events are emitted in the frontend and are processed in the backend. Each event has
+its own handler in the backend.This mechanism uses a Protobuf-RPC like protocol under
+the hood to serialize requests and responses, all arguments and return data must be
+serializable to **Protobuf**. This article introduces how AppFlowy uses protobuf buffer
+to exchange the data between Dart and Rust. The pattern as shown below:
+
+![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-FFI.svg)
 
 frontend written in Dart and Backend written in Rust, they communicate with each other using the protocol buffer. Let's dig into the details.
 
@@ -10,7 +17,7 @@ frontend written in Dart and Backend written in Rust, they communicate with each
 
 Let's introduce the generating process that consists of three parts.
 
-![file : event\_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf\_Code\_Generation.svg)
+![file : event_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Protobuf\_Code\_Generation.svg)
 
 ### Part One
 
