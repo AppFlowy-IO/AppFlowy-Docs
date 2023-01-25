@@ -17,11 +17,11 @@ This article will cover:
 
 ## The tests in AppFlowy
 
-AppFlowy is written in Dart and Rust. We call it `front-end` tests in `Dart` and  `back-end` tests in `Rust`.
+AppFlowy is written in Dart and Rust. We call it `frontend` tests in `Dart` and  `Backend` tests in `Rust`.
 
-### Front-end tests
+### frontend tests
 
-The front-end tests locate in `frontend/app_flowy/test.` It contains three folders. The bloc test folder, integration test folder, and widget test folder.
+The frontend tests locate in `frontend/app_flowy/test.` It contains three folders. The bloc test folder, integration test folder, and widget test folder.
 
 
 
@@ -32,7 +32,7 @@ The front-end tests locate in `frontend/app_flowy/test.` It contains three folde
 
 When creating a new test, you should put it in the right folder.
 
-### Back-end tests
+### Backend tests
 
 WIP
 
@@ -40,14 +40,14 @@ WIP
 
 #### Run tests one by one
 
-In order to run the tests one by one, it needs to build the back-end library first.&#x20;
+In order to run the tests one by one, it needs to build the Backend library first.&#x20;
 
 ```bash
 // Make sure your current path is AppFlowy/frontend
 cargo make build-test-lib
 ```
 
-After building the back-end library, you can click the `Run|Debug` button to run the test.
+After building the Backend library, you can click the `Run|Debug` button to run the test.
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 

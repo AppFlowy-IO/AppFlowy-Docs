@@ -1,6 +1,6 @@
 # FlowySDK
 
-FlowySDK works as the AppFlowy application Back-end. It will be initialized before the application launch. Check out the initialization sequence diagram shown below.
+FlowySDK works as the AppFlowy application Backend. It will be initialized before the application launch. Check out the initialization sequence diagram shown below.
 
 ![file : flowy_sdk.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-Initialization.svg)
 

@@ -32,7 +32,7 @@ title AppFlowy Application
 top to bottom direction
 skinparam linetype ortho
 
-package "Front-end (Flutter)"  {
+package "frontend (Flutter)"  {
     node User as "User" #F7931E {
         component [user_p] as "Presentation layer" #DDDDDD
     }
@@ -41,7 +41,7 @@ package "Front-end (Flutter)"  {
     }
 }
 
-package "FlowySDK (Back-end)"  {
+package "FlowySDK (Backend)"  {
     node Flowy_user as "User" #F7931E {
         component [flowy_user_a] as "Application layer" #DDDDDD
         component [flowy_user_d] as "Domain layer" #DDDDDD
@@ -74,7 +74,7 @@ title AppFlowy Application
 top to bottom direction
 skinparam linetype ortho
 
-package "Front-end (Flutter)"  {
+package "frontend (Flutter)"  {
     node User as "User" #F7931E {
         component [user_p] as "Presentation layer" #DDDDDD
     }
@@ -85,7 +85,7 @@ package "Front-end (Flutter)"  {
 }
 
 
-package "Back-end (Rust)"  {
+package "Backend (Rust)"  {
     node FFI_Backend as "FFI" #FB006D
 
     node flowy_dispatcher as "Dispatcher" {

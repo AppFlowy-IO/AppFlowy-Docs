@@ -3,12 +3,12 @@ title FFI
 left to right direction
 skinparam linetype polyline
 
-package "Front-end (Flutter)" #DDDDDD {
+package "Frontend (Flutter)" #DDDDDD {
     component Repository_A as "Repository"
     component FFI_Frontend as "FFI" #FFDDDD
 }
 
-package "Back-end (Rust)" #DDDDDD {
+package "Backend (Rust)" #DDDDDD {
     component FFI_Backend as "FFI" #FFDDDD
     component Dispatcher
     component Module
@@ -26,7 +26,7 @@ top to bottom direction
 'skinparam linetype polyline
 
 rectangle {
-    package "Front-end (Flutter)" #DDDDDD {
+    package "frontend (Flutter)" #DDDDDD {
         component Repository
         component FFI_Frontend as "FFI" #FFDDDD
     }
@@ -38,7 +38,7 @@ rectangle {
     }
     end note
 
-    package "Back-end (Rust)" #DDDDDD {
+    package "Backend (Rust)" #DDDDDD {
         component Module
         component Dispatcher as "Dispatcher" #FFDDDD
         component FFI_Backend as "FFI" #FFDDDD

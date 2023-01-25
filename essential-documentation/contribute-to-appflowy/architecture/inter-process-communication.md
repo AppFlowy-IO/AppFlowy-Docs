@@ -16,7 +16,10 @@ Events are emitted in the frontend and are processed in the backend. Each
 event has its own handler in the backend
 
 
+![file : inter_process_communication.plantuml](../../../uml/output/inter_process_commuciate-Events.svg)
 
 ## Notifications
 Notifications one-way messages that are best suited to communicate lifecycle events
 and state changes. Notifications are triggered in the backend and received in the frontend.
+
+![file : inter_process_communication.plantuml](../../../uml/output/inter_process_commuciate-Notifications.svg)

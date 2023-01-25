@@ -4,7 +4,7 @@ The article introduces how AppFlowy uses protobuf buffer to exchange the data be
 
 ![file : event\_map.plantuml](https://raw.githubusercontent.com/AppFlowy-IO/docs/main/uml/output/FlowySDK-FFI.svg)
 
-Front-end written in Dart and Back-end written in Rust, they communicate with each other using the protocol buffer. Let's dig into the details.
+frontend written in Dart and Backend written in Rust, they communicate with each other using the protocol buffer. Let's dig into the details.
 
 ## Generate Process
 
@@ -154,9 +154,9 @@ These files are located in "`xxx-crate/src/protobuf`".
 The class, TextBlockEventExportDocument, is automatically generated in the Dart side using the AST from `Part One`. The function `export_handler` will get called when the `ExportDocument` event happened. The calling route as the picture shown below.
 
 1. Repository constructs the `TextBlockEventExportDocument` class, and call `send()` function.
-2. Front-end's FFI serializes the event and the `ExportPayloadPB` to bytes.
-3. The bytes were sent to Back-end.
-4. Back-end's FFI deserializes the bytes into the corresponding `event` and `ExportPayloadPB`.
+2. frontend's FFI serializes the event and the `ExportPayloadPB` to bytes.
+3. The bytes were sent to Backend.
+4. Backend's FFI deserializes the bytes into the corresponding `event` and `ExportPayloadPB`.
 5. The dispatcher sends the `ExportPayloadPB` to the module that registers as the event handler.
 6.  `ExportPayloadPB` will try to parse into `ExportParams`. It will return an error if there are illegal fields in it.
 
