@@ -48,7 +48,7 @@
       * [👾 Test](essential-documentation/contribute-to-appflowy/architecture/frontend/test.md)
     * [Backend](essential-documentation/contribute-to-appflowy/architecture/backend/README.md)
       * [Initialize](essential-documentation/contribute-to-appflowy/architecture/backend/initialize.md)
-      * [Events - Code Generation](essential-documentation/contribute-to-appflowy/architecture/backend/event.md)
+      * [Events](essential-documentation/contribute-to-appflowy/architecture/backend/event.md)
       * [Delta(WIP)](essential-documentation/contribute-to-appflowy/architecture/backend/delta.md)
       * [Database](essential-documentation/contribute-to-appflowy/architecture/backend/database.md)
     * [Inter-Process Communication](essential-documentation/contribute-to-appflowy/architecture/inter-process-communication.md)
