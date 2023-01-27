@@ -20,8 +20,29 @@ know the details of the events.
 ![file : inter_process_communication.plantuml](../../../uml/output/inter_process_commuciate-Events.svg)
 
 
+For example, using `UserEventSignIn` to trigger event with passed-in parameter in the backend. 
+```typescript
+async function sendSignInEvent() {
+    let make_payload = () =>
+        SignInPayloadPB.fromObject({
+            email: nanoid(4) + "@gmail.com",
+            password: "A!@123abc",
+            name: "abc",
+        });
+    await UserEventSignIn(make_payload());
+}
+```
+
 ## Notifications
 Notifications one-way messages that are best suited to communicate lifecycle events
 and state changes. Notifications are triggered in the backend and received in the frontend.
 
 ![file : inter_process_communication.plantuml](../../../uml/output/inter_process_commuciate-Notifications.svg)
+
+For example, using `UserNotificationListener` to receive notifications when new user signs in. 
+```typescript
+let listener = await new UserNotificationListener("", (userProfile) => {
+    console.log(userProfile);
+});
+listener.start();
+```
