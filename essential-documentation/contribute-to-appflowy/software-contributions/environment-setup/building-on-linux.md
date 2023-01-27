@@ -114,7 +114,7 @@ cargo make --profile development-linux-x86_64 appflowy-sdk-dev
 
 {% tab title="Production" %}
 ```bash
-cargo make --profile production-linux-x86_64 flowy-sdk-release
+cargo make --profile production-linux-x86_64 appflowy-sdk-release
 ```
 
 {% endtab %}
