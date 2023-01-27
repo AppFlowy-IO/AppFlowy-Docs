@@ -41,8 +41,16 @@ and state changes. Notifications are triggered in the backend and received in th
 
 For example, using `UserNotificationListener` to receive notifications when new user signs in. 
 ```typescript
-let listener = await new UserNotificationListener("", (userProfile) => {
-    console.log(userProfile);
-});
+ let listener = await new UserNotificationListener({
+    onUserSignIn: (userProfile) => {
+        console.log(userProfile);
+    }, 
+    onProfileUpdate(userProfile) {
+        console.log(userProfile);
+        // stop listening the changes
+        // listener.stop();
+    }}
+);
+
 listener.start();
 ```
