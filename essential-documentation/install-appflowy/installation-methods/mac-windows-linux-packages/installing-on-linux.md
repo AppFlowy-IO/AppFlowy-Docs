@@ -42,7 +42,7 @@ cd AppFlowy
 
 AppFlowy will look for the **Noto Color Emoji** font on your system when trying to display emoji unicode characters. Please make sure that the font is configured so that emoji characters are displayed correctly.
 
-**note:** Certain distributions (e.g. Fedora Linux) already have this set up by default. In that case, safely ignore this entire section.
+**note:** Certain distributions (e.g. Fedora Linux) already have this set up by default. In that case, you can safely ignore this section.
 
 1. Install the the font:
 
