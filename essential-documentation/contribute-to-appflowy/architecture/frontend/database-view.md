@@ -48,7 +48,8 @@ The main classes in Database are shown below.
 Most of the time, the raw data of cell is not human-readable. A cell doesn't know how to represent itself. It needs the 
 `Field` information to format the data.
 
-![file : database_view.plantuml](../../../../uml/output/database_view_classes-read_cell_sequence.svg)
+![file : database_view.plantuml](../../../../uml/output/database_view_classes-Read_Cell_Sequence.svg)
+
 1. Get the corresponding `Database` with `database_id`
 2. Get the corresponding `Field` with `field_id`
 3. Get the corresponding `TypeOption` base on the current value of the `Field`'s `field_ty` property. Assuming the `field_ty`
