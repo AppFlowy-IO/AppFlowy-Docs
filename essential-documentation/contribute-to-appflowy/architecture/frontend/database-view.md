@@ -30,6 +30,7 @@ Application,Domain, and Infrastructure layer.
 ![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view-Database_Views_DDD.svg)
 
 The main classes in Database are shown below.
+![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view_classes-Database_classes_UML.svg)
 
 |              |                                                                                                                                         |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -40,15 +41,11 @@ The main classes in Database are shown below.
 | Row          | A `Row` represents a group of related cells. The number of cells is equal to the number of the `Fields` that the database has           |
 | Cell         | A `Cell` represents the data of the corresponding `FieldType`                                                                           |
 | TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                                                                         |
-|              |                                                                                                                                         |
 
 
-![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view_classes-Database_classes_UML.svg)
-
-
-## Data of Cell 
+## Formatting Cell 
 Most of the time, the raw data of cell is not human-readable. A cell doesn't know how to represent itself. It needs the 
-`Field` information to decode the data.
+`Field` information to format the data.
 
 ![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view_classes-read_cell_sequence.svg)
 1. Get the corresponding `Database` with `database_id`
