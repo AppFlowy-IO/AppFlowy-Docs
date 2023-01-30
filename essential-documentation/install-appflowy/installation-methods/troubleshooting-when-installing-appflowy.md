@@ -135,7 +135,7 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 
 ### 16. Malicious software warning on install- MAC-OS
 [issue #18](https://github.com/AppFlowy-IO/AppFlowy/issues/18)
-[isseu #1313](https://github.com/AppFlowy-IO/AppFlowy/issues/1313)
+[issue #1313](https://github.com/AppFlowy-IO/AppFlowy/issues/1313)
 
 ###17. Cannot run on Ubuntu 22.04
 

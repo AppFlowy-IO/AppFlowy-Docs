@@ -1,0 +1,44 @@
+@startuml
+title Inter-Process Communication
+'top to bottom direction
+
+package "frontend (Flutter)" #DDDDDD {
+    component Dart_Events as "Events"
+}
+package "frontend (Tauri)" #DDDDDD {
+    component TS_Events as "Events"
+}
+
+package "Backend" #DDDDDD {
+    component Flowy_Core
+}
+
+@enduml
+
+@startuml
+title Events
+
+package "frontend" #DDDDDD {
+    component Events
+}
+
+package "Backend" #DDDDDD {
+    component FlowyCore
+}
+
+FlowyCore <-l- Events
+@enduml
+
+@startuml
+title Notifications
+
+package "frontend" #DDDDDD {
+    component Notifications
+}
+
+package "Backend" #DDDDDD {
+    component FlowyCore
+}
+
+Notifications <-r- FlowyCore
+@enduml

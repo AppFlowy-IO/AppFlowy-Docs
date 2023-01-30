@@ -1,5 +1,3 @@
-
-
 @startuml FlowySDK
 title Protobuf Code Generation
 left to right direction
@@ -60,11 +58,11 @@ frame Part_Three {
 }
 
 frame Part_Four {
-    package "Front-end (Flutter)" #DDDDDD {
+    package "frontend (Flutter)" #DDDDDD {
         component Repository
     }
 
-    package "Back-end (Rust)" #DDDDDD {
+    package "Backend (Rust)" #DDDDDD {
         component Module
     }
 }
@@ -83,4 +81,3 @@ Repository -[bold]up-> dart_pb
 Module -[bold]up-> rust_event
 Module -[bold]up-> rust_pb
 @enduml
-

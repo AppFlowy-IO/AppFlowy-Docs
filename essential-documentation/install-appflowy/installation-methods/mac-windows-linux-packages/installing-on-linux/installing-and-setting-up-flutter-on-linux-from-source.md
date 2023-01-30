@@ -6,12 +6,12 @@ Begin by running a system update with
 ```shell 
 sudo apt update
 ```
-Then install the neccessary packages. 
+Then install the necessary packages. 
 
 ```shell
 sudo apt install curl file git unzip xz-utils zip libglu1-mesa clang cmake \ ninja-build pkg-config libgtk-3-dev
 ```
-Personally, I reccomend installing cmake & ninja-build from source. This is completely optional and not reccomended. [cmake download](https://cmake.org/download/)  [ninja-build](https://github.com/ninja-build/ninja) <- cmake is required to install ninja-build OR python.
+Personally, I recommend installing cmake & ninja-build from source. This is completely optional and not recommended. [cmake download](https://cmake.org/download/)  [ninja-build](https://github.com/ninja-build/ninja) <- cmake is required to install ninja-build OR python.
 
 Create a new Folder for Flutter 
 ```shell

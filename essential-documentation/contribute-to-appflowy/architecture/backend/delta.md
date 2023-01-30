@@ -1,16 +1,13 @@
-# Delta
+# Delta(WIP)
 
-A `Delta` contains a list of operations, which describe the changes to a document. There are three kinds of operations,
-insert, delete, and retain. The implementation of Delta is located in the `lib-ot`(shared-lib/lib-ot) crate.The format
-of `Delta` is JSON based, and is human readable, it can describe any rich text document, includes all text and
-formatting information.
+A `Delta` contains a list of operations, which describe the changes to a document. There are three kinds of operations, insert, delete, and retain. The implementation of Delta is located in the `lib-ot`(shared-lib/lib-ot) crate.The format of `Delta` is JSON based, and is human readable, it can describe any rich text document, includes all text and formatting information.
 
-The picture shown below is a UML diagram that describes the relations between these classes. We're going to explain them
-on by one.
+The picture shown below is a UML diagram that describes the relations between these classes. We're going to explain them on by one.
 
 ![file : delta.plantuml](../../../../uml/output/Delta.svg)
 
 ## DeltaIterator
+
 ```rust
 let mut delta = RichTextDelta::default();
 delta.add(Operation::insert("123"));
@@ -27,6 +24,7 @@ assert_eq!(
 ```
 
 ### DeltaCursor
+
 ```rust
 let mut delta = RichTextDelta::default();   
 delta.add(Operation::insert("123"));    
@@ -38,6 +36,7 @@ assert_eq!(cursor.next_with_len(Some(2)).unwrap(), Operation::insert("12"));
 assert_eq!(cursor.get_next_op().unwrap(), Operation::insert("3"));
 assert_eq!(cursor.get_next_op(), None);
 ```
+
 ### DeltaBuilder
 
 ```rust
@@ -52,26 +51,24 @@ assert_eq!(delta.json_str(), r#"[{"retain":7,"attributes":{"bold":true}}]"#);
 ```
 
 ## Operation
-Operation contains three types, **Insert**, **Delete**, and **Retain**. 
+
+Operation contains three types, **Insert**, **Delete**, and **Retain**.
 
 ### Insert
-Insert operations have an insert key defined. A String value represents inserting text. an optional attributes key can 
-be defined with an Object to describe additional formatting information. Formats can be changed by the retain operation.
+
+Insert operations have an insert key defined. A String value represents inserting text. an optional attributes key can be defined with an Object to describe additional formatting information. Formats can be changed by the retain operation.
 
 ### Delete
+
 Delete operations have a Number delete key defined representing the number of characters to delete.
 
-
 ### Retain
-Retain operations have a Number retain key defined representing the number of characters to keep An optional attributes
-key can be defined with an Object to describe formatting changes to the character range. A value of null in the
-attributes Object represents removal of that key.
 
+Retain operations have a Number retain key defined representing the number of characters to keep An optional attributes key can be defined with an Object to describe formatting changes to the character range. A value of null in the attributes Object represents removal of that key.
 
 ## OTString
-The length of strings behaves differently in different languages. For example: [Dart] string's
-length is calculated with UTF-16 code units. The method [utf16_len] returns the length of a
-String in UTF-16 code units.
+
+The length of strings behaves differently in different languages. For example: \[Dart] string's length is calculated with UTF-16 code units. The method \[utf16\_len] returns the length of a String in UTF-16 code units.
 
 ```rust
 let utf16_len = OTString::from("👋").utf16_len();
@@ -81,6 +78,7 @@ assert_eq!(bytes_len, 4);
 ```
 
 **OTUtf16CodePointIterator**
+
 ```rust
 let s: OTString = "👋😁👋".into();    ///
 let mut iter = s.utf16_code_point_iter();
@@ -96,21 +94,18 @@ assert_eq!(iter.next().unwrap(), "2".to_string());
 assert_eq!(iter.skip(OTString::from("ab一二").utf16_len()).next().unwrap(), "👋".to_string());
 ```
 
-
 ## Attributes
-Each operation can carry attributes. For example, the [RichTextAttributes] has a list of key/value attributes.
-Such as { bold: true, italic: true }.  
 
-Because [Operation] is generic over the T, so you must specify the T. For example, the [TextDelta]
-uses [PhantomAttributes] as the T. [PhantomAttributes] does nothing, just a phantom.
+Each operation can carry attributes. For example, the \[RichTextAttributes] has a list of key/value attributes. Such as { bold: true, italic: true }.
 
+Because \[Operation] is generic over the T, so you must specify the T. For example, the \[TextDelta] uses \[PhantomAttributes] as the T. \[PhantomAttributes] does nothing, just a phantom.
 
 ### RichTextAttributes
+
 ```rust
 pub type RichTextDelta = Delta<RichTextAttributes>;
 pub type RichTextDeltaBuilder = DeltaBuilder<RichTextAttributes>;
 ```
-
 
 ### PhantomAttributes
 
@@ -120,11 +115,10 @@ pub type TextDeltaBuilder = DeltaBuilder<PhantomAttributes>;
 ```
 
 ## OperationTransform
-https://en.wikipedia.org/wiki/Operational_transformation
 
+https://en.wikipedia.org/wiki/Operational\_transformation
 
-```rust
-
+````rust
 pub trait OperationTransform {
     /// Merges the operation with `other` into one operation while preserving
     /// the changes of both.    
@@ -178,13 +172,12 @@ pub trait OperationTransform {
     /// ```
     fn invert(&self, other: &Self) -> Self;
 }
-```
+````
 
 ## Serde
-
 
 ## Import and Export
 
 ### Markdown
-We can use a Markdown parser to import the document into AppFlowy or export the data to a Markdown file.
-AppFlowy uses `Delta` to represent the document content.
+
+We can use a Markdown parser to import the document into AppFlowy or export the data to a Markdown file. AppFlowy uses `Delta` to represent the document content.

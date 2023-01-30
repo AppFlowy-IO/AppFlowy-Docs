@@ -1,0 +1,25 @@
+@startuml AppFlowy-Log
+title AppFlowy-Log
+left to right direction
+
+frame Frontend {
+    node "flowy_sdk" #DDDDDD {
+        file dart_log as "log.dart" #FFDDDD
+        file dart_ffi as "ffi.dart" #FFDDDD
+    }
+}
+
+frame Backend {
+    node "dart-ffi" #DDDDDD {
+        file rust_dart_ffi as "log.dart" #FFDDDD
+    }
+    node "flowy-sdk" #DDDDDD {
+        file flowy_sdk_lib as "lib.rs" #FFDDDD
+    }
+}
+
+dart_log --> dart_ffi
+dart_ffi --> rust_dart_ffi: C API
+rust_dart_ffi --> flowy_sdk_lib
+flowy_sdk_lib --> tracing
+@enduml

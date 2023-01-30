@@ -26,7 +26,7 @@ Mentor:  [Lucas](https://github.com/LucasXu0)
 
 
 
-**2. Calendar Database**&#x20;
+~~****~~[~~**2. Calendar Database**~~](mentee-projects/calendar-view-for-appflowy-database.md) ~~**(it's taken)**~~
 
 Calendars are a great way to visualize how things connect to certain dates from any database in AppFlowy. Use them for task management and event planning.&#x20;
 
@@ -70,7 +70,7 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-**5. Themes**
+~~****~~[~~**5. Themes**~~](mentee-projects/custom-themes.md) ~~**(it's taken)**~~
 
 Control the accent color used for interactive elements such as links, handles, and text selection. The editor cursor can also choose to use the same accent color.&#x20;
 
@@ -89,7 +89,7 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-**6. Shortcuts**
+~~**6. Shortcuts (it's taken)**~~
 
 Add more shortcuts and enable users to customize hotkeys
 

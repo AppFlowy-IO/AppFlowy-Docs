@@ -66,12 +66,21 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 
 ![img.png](../../../../.gitbook/assets/build\_step\_two.png)
 
+{% hint style="warning" %}
+Flutter version 3.3.10 is the version that AppFlowy is built and tested on. If you installed Flutter before, make sure the version matches AppFlowy's. You can get the the Flutter version using this command:
+
+```bash
+flutter --version
+```
+
+{% endhint %}
+
 * Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 
 * Or you can use the code below to install `FLUTTER` manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git
+git clone -b 3.0.5 https://github.com/flutter/flutter.git
 cd flutter
 echo "export PATH=\$PATH:"`pwd`"/bin" >> ~/.profile
 export PATH="$PATH:`pwd`/bin"
@@ -102,19 +111,19 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 cd frontend
 ```
 
-* `Optionally if you want to Build flowy-sdk-dev (dart-ffi)`
+* `Optionally if you want to Build appflowy-sdk-dev (dart-ffi)`
 
 {% tabs %}
 {% tab title="Development" %}
 ```bash
-cargo make --profile development-linux-x86_64 flowy-sdk-dev
+cargo make --profile development-linux-x86_64 appflowy-sdk-dev 
 ```
 
 {% endtab %}
 
 {% tab title="Production" %}
 ```bash
-cargo make --profile production-linux-x86_64 flowy-sdk-release
+cargo make --profile production-linux-x86_64 appflowy-sdk-release
 ```
 
 {% endtab %}

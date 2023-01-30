@@ -45,6 +45,8 @@ So you want to submit code, documentation, or graphical expertise? Welcome to th
   * (WIP: guidelines)
   * (WIP: Code Style)
 
+We require a CLA (Contributor License Agreement). This is a one-time process, which you will encounter when you submit your first PR to any of AppFlowy’s open source software projects.
+
 ### Your First Codebase Contribution
 
 This section has a step-by-step guide to starting as an AppFlowy codebase contributor. Don’t worry if you make mistakes in your first contribution; no one gets it right the first time.
@@ -58,25 +60,26 @@ This section has a step-by-step guide to starting as an AppFlowy codebase contri
 
 #### Where to look for your first issue
 
-* You can look through unclaimed issues [here](https://github.com/orgs/AppFlowy-IO/projects/5/views/4). 
-    * Issues tagged with the "good first issue for devs” label is used to indicate the issues that are especially approachable for new contributors.
-    * We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
-    * In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
+* You can look through unclaimed issues [here](https://github.com/orgs/AppFlowy-IO/projects/5/views/4).
+  * Issues tagged with the "good first issue for devs” label is used to indicate the issues that are especially approachable for new contributors.
+  * We also use the "good first issue for experienced devs" label to tag issues that are recommended to developers who have relevant expertise or extensive general software development experience.
+  * In addition, there are issues tagged with the "help wanted" label, which are ready for contributions.
 * If there is not already an issue covering the work you are interested in doing, then file a new issue to describe the problem/feature you are addressing.
 
 #### Claim an issue
 
 * Post a comment to the issue thread that you would like to claim. Someone with Contributor access\<ANOTHER ROLE?> will assign you to the issue and label the issue as “Todo”, once triage is completed
 * If you need a mentor, please @annieappflowy. We will assign you a mentor who's familiar with your task. We strongly recommend newcomers have a mentor in place.
-* We also recommend new contributors only claim one issue until their first pull request is merged. This is to encourage folks to get familiar with the codebase and finish ongoing work before starting something new.&#x20;
+* We also recommend new contributors only claim one issue until their first pull request is merged. This is to encourage folks to get familiar with the codebase and finish ongoing work before starting something new.
 
 #### Working on an issue
 
-* We encourage early pull requests for work in progress.&#x20;
-* It's normal and totally ok if your first PR takes you a while.&#x20;
+* We encourage early pull requests for work in progress.
+* It's normal and totally ok if your first PR takes you a while.
 * Please update your progress on the issue regularly. If you no longer work on this issue, please comment on the issue so that other people can take over it.
 
 #### Guidelines for Triage (For Contributors)
+
 * Ensure that the title is meaningful, and edit if not
 * If report is unclear, add a comment asking for required details and add the `waiting for user response` label
 * If the issue describes something that was implemented/fixed in a later build, add a comment saying so and close the issue
@@ -97,7 +100,6 @@ If your Pull Request is accepted as it fixes a bug, adds functionality, or makes
 Proudly wear your T-shirt and show it to us by tagging [@appflowy](https://twitter.com/appflowy) on Twitter.
 
 ![DSCF3560](https://user-images.githubusercontent.com/12026239/186107764-5b5dcd21-f5a8-4b40-8ed5-9fa271fe6425.jpg)
-
 
 ## Code of Conduct
 

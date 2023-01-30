@@ -1,0 +1,65 @@
+@startuml
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+'left to right direction
+
+class FolderNodePad {
+    tree: NodeTree,
+    workspaces: Vec<WorkspaceNode>,
+
+    fn get_workspace(id: &str) -> WorkspaceNode
+    fn add_workspace() {}
+    fn remove_workspace() {}
+
+    fn get_all_workspace(id: &str) -> Vec<WorkspaceNode>
+}
+
+class WorkspaceNode {
+    parent_path: Path,
+    tree: NodeTree,
+
+'attributes
+    fn get_id() -> String {}
+    fn get_name() -> String {}
+    fn set_name(name: String) {}
+
+    fn get_app() -> AppNode {}
+    fn get_mut_app() -> &mut AppNode {}
+    fn add_app() {}
+    fn remove_app() {}
+
+    fn all_apps() -> Vec<AppNode> {}
+}
+
+
+class AppNode {
+    parent_path: Path,
+    tree: NodeTree,
+
+
+'attributes
+    fn get_id() -> String {}
+    fn get_name() -> String {}
+    fn set_name(name: String) {}
+
+    fn get_view() -> ViewNode {}
+    fn get_mut_view() -> &mut ViewNode {}
+    fn add_view() {}
+    fn remove_view() {}
+
+    fn all_views() -> Vec<ViewNode> {}
+}
+
+class ViewNode {
+    parent_path: Path,
+    tree: NodeTree,
+
+    fn get_id() -> String {}
+    fn get_name() -> String {}
+}
+
+FolderNodePad "1" *-- "*" WorkspaceNode
+WorkspaceNode "1" *-- "*" AppNode
+AppNode "1" *-- "*" ViewNode
+@enduml

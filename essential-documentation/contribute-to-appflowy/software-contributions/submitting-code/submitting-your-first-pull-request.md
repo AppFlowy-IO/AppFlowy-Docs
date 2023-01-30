@@ -38,7 +38,7 @@ This is the process to use for every feature or bug fix that you want to propose
     git push origin main
     ```
 
-Now, all three repositories are synched! We're ready to start our bug fix.
+Now, all three repositories are synced! We're ready to start our bug fix.
 
 ### Setup a feature branch
 
@@ -67,7 +67,7 @@ You will loop through the following actions over and over until your fix is fini
 
 #### Work on your code
 
-Work in your new branch (eg. fix\_setup\_page\_180) and commit your changes as normal. You can commit as many times as you want but don't leave uncommited changes in the branch. As you are working on your code you may want to periodically synchronize your local repo with any changes that have been added to the AppFlowy upstream repo. This will hopefully save you from any future merge conflicts. See below.
+Work in your new branch (eg. fix\_setup\_page\_180) and commit your changes as normal. You can commit as many times as you want but don't leave uncommitted changes in the branch. As you are working on your code you may want to periodically synchronize your local repo with any changes that have been added to the AppFlowy upstream repo. This will hopefully save you from any future merge conflicts. See below.
 
 #### Commit
 
@@ -76,6 +76,7 @@ Work in your new branch (eg. fix\_setup\_page\_180) and commit your changes as n
 #### Keep your local repository up to date
 
 **Important.** While you were working on your fixes the original upstream project repository might have changed (due to other contributors working on it). So you'll have to bring in those changes by rebasing your current feature branch. In other words you need to replay your fixes on top of the latest work from upstream repository to make sure your commits are still compatible with the latest commits upstream. The following command will result in a fast-forward merge for the pull request which is what we want:
+
 
 ```bash
 git checkout fix_setup_page_180

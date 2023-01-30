@@ -26,7 +26,7 @@ The commit message consists of `type`:`subject`&#x20;
 
 Make small commits. A commit should be a small chunk of logic that is easy to understand and follow.&#x20;
 
-Before commiting you should do a file compare on every file that you want to commit. Here, you will check to make sure that you are not commiting temporary code or test code. You will also check for warnings, code formatting, and unneeded included packages.
+Before committing you should do a file compare on every file that you want to commit. Here, you will check to make sure that you are not committing temporary code or test code. You will also check for warnings, code formatting, and unneeded included packages.
 
 Commit often. The process of adding commits keeps track of your progress as you work. Commits also create a transparent history of your work that others can follow to understand what you’ve done and why.&#x20;
 

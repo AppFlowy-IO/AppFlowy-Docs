@@ -4,53 +4,55 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-GridBloc "1" *-- "*" GridBlockCache: own
-GridBloc --> GridService
-GridBloc --> GridFieldCache: own
+GridBloc --> GridController
+GridController --> GridFFIService: own
+GridController --> GridFieldController: own
+GridController --> GridViewCache: own
+
+GridFieldController --> GridFieldsListener: own
+GridFieldController --> SettingListener: own
+GridFieldController --> FiltersListener: own
+GridFieldController --> GridFFIService: own
+GridFieldController --> SettingFFIService: own
+GridFieldController --> FilterFFIService: own
+
+GridViewCache --> GridRowCache: own
+GridViewCache --> GridViewListener: own
+
 @enduml
 
 
-@startuml block/row/cell relation
+@startuml row/cell relation
 skinparam classFontStyle Bold
 skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-interface GridRowCacheFieldNotifier
-class GridFieldCache #B6FADC
-class GridBlockCache #B6FADC
-class GridRowCache #B6FADC
-class GridCellCache #B6FADC
-
-GridBloc --> GridService
-GridBloc --> GridFieldCache: own
-GridBloc "1" *-- "*" GridBlockCache: own
-
-GridBlockCache --> GridBlockPB
-
-'FieldCache
-GridFieldCache ..> GridFieldChangesetPB
+interface RowCacheDelegate {
+List<FieldInfo> get fields;
+void onRowDispose();
+}
+class GridRowCache
+class GridCellCache
 
 
 'Row Cache
-GridBlockCache --> GridRowCache : own
-GridRowCache --> GridBlockChangesetPB
 GridRowCache --> GridCellCache: own
-GridRowCache --> GridRowCacheFieldNotifier
-GridRowCache "1" *-- "*" GridRowInfo
-GridRowInfo --> GridRowPB
-GridRowInfo "1" o-- "*" GridFieldPB
+GridRowCache --> RowChangesetNotifierForward
+GridRowCache --> RowChangesetNotifier: own
+GridRowCache --> RowCacheDelegate
+GridRowCache --> RowList: own
+
+
+RowList "1" *-- "*" RowInfo
+RowInfo --> RowPB
+RowInfo "1" o-- "*" FieldInfo
 
 
 'Cell Cache
-GridCellCache "1" *-- "*" GridCell : Generic cell data
+GridCellCache "1" *-- "*" GridCell
 GridCellCache --> GridCellCacheKey
 
-'Listener
-GridBlockCache --> GridBlockListener
-GridBlockListener "1" *-- "*" GridBlockChangesetPB
 
-GridRowCacheFieldNotifierImpl -u-> GridFieldCache
-GridRowCacheFieldNotifierImpl --|> GridRowCacheFieldNotifier
 
 @enduml

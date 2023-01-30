@@ -2,9 +2,7 @@
 
 ## Introduction
 
-&#x20;AppFlowy is becoming a complex application, in order to maintain stability, we encourage developers to write more tests. Testing your code ensures that the software you develop works as expected and makes it less vulnerable to attackers.
-
-
+AppFlowy is becoming a complex application, in order to maintain stability, we encourage developers to write more tests. Testing your code ensures that the software you develop works as expected and makes it less vulnerable to attackers.
 
 This article will cover:
 
@@ -13,17 +11,13 @@ This article will cover:
 * How to write a test in AppFlowy
 * Code coverage
 
-
-
 ## The tests in AppFlowy
 
-AppFlowy is written in Dart and Rust. We call it `front-end` tests in `Dart` and  `back-end` tests in `Rust`.
+AppFlowy is written in Dart and Rust. We call it `frontend` tests in `Dart` and `Backend` tests in `Rust`.
 
-### Front-end tests
+### frontend tests
 
-The front-end tests locate in `frontend/app_flowy/test.` It contains three folders. The bloc test folder, integration test folder, and widget test folder.
-
-
+The frontend tests locate in `frontend/app_flowy/test.` It contains three folders. The bloc test folder, integration test folder, and widget test folder.
 
 | bloc test        | It contains the [bloc test](https://pub.dev/packages/bloc\_test)s of AppFlowy.                                      |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -32,7 +26,7 @@ The front-end tests locate in `frontend/app_flowy/test.` It contains three folde
 
 When creating a new test, you should put it in the right folder.
 
-### Back-end tests
+### Backend tests
 
 WIP
 
@@ -40,16 +34,16 @@ WIP
 
 #### Run tests one by one
 
-In order to run the tests one by one, it needs to build the back-end library first.&#x20;
+In order to run the tests one by one, it needs to build the Backend library first.
 
 ```bash
 // Make sure your current path is AppFlowy/frontend
 cargo make build-test-lib
 ```
 
-After building the back-end library, you can click the `Run|Debug` buton to run the test.
+After building the Backend library, you can click the `Run|Debug` button to run the test.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Run all the tests
 
@@ -58,17 +52,10 @@ After building the back-end library, you can click the `Run|Debug` buton to run 
 cargo make dart_unit_test
 ```
 
-
-
 ## How to write a test
 
 WIP
 
-
-
-## Code converage
+## Code coverage
 
 WIP
-
-
-
