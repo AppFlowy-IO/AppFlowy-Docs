@@ -18,7 +18,7 @@ Below you will find some quick definitions to help you read through the document
 | Row           | A Row represents a group of related data                                                                                                                  |
 
 {% hint style="info" %}
-Classes with a PB suffix are generated in protobuf format. You could check the [protobuf.md](../backend/event.md "mention") document out if you are interested in how the protobuf classes are generated.
+Classes with a PB suffix are generated in protobuf format. You could check the [event.md](../../backend/event.md "mention") document out if you are interested in how the protobuf classes are generated.
 {% endhint %}
 
 ## Grid
@@ -29,11 +29,11 @@ Another name for a column is Field. A column's configuration is defined in the [
 
 A user can add a Row, and then define the data in each of the cells created for the Grid's Fields in that row.
 
-![file : grid.plantuml](../../../../.gitbook/assets/grid.svg)
+![file : grid.plantuml](../../../../../.gitbook/assets/grid.svg)
 
 ## Cache
 
-![file : grid\_data\_cache.plantuml](../../../../uml/output/row\_cell\_relation.svg)
+![file : grid\_data\_cache.plantuml](../../../../../uml/output/row\_cell\_relation.svg)
 
 When you open a grid, a `GridBloc` will be initialized. There are four cache classes, as shown in the diagram above.
 
@@ -59,11 +59,11 @@ Certain field types have user-defined options such as color, date format, number
 
 Each field has its `TypeOptionBuilder` in the backend that is used to parse the bytes into corresponding FieldTypeOption.
 
-![file : grid\_field.plantuml](../../../../uml/output/FieldTypeOption\_Builder.svg)
+![file : grid\_field.plantuml](../../../../../uml/output/FieldTypeOption\_Builder.svg)
 
 ### **FieldEditor**
 
-![file : grid\_field.plantuml](../../../../uml/output/Field\_Editor.svg)
+![file : grid\_field.plantuml](../../../../../uml/output/Field\_Editor.svg)
 
 **FieldEditor**
 
@@ -85,13 +85,13 @@ Defines how to load a `Field`'s type option data. For example, when we create a 
 
 `FieldTypeOptionEditor` is a widget that provides a custom UI for each `Field`. You can provide a custom UI by extending the `TypeOptionWidgetBuilder` As the image below shows, we have many `TypeOptionWidgetBuilder` implementations.
 
-![file : grid\_field.plantuml](../../../../uml/output/Field\_Type\_Option\_Widget\_Builder\_Impl.svg)
+![file : grid\_field.plantuml](../../../../../uml/output/Field\_Type\_Option\_Widget\_Builder\_Impl.svg)
 
 The widget returned by `TypeOptionWidgetBuilder` use `TypeOptionWidgetContext` as its data model. For example, `DateTypeOptionWidget` uses `DateTypeOptionContext` that extends the `TypeOptionWidgetContext`.
 
 `TypeOptionWidgetContext` uses `TypeOptionDataParser` to parse the generic data, List, to specific data type. As the image below shows, each `TypeOptionContext` must have a corresponding `TypeOptionDataParser`.
 
-![file : grid\_field.plantuml](../../../../uml/output/Field\_Type\_Option\_Editor\_Data\_Parser.svg)
+![file : grid\_field.plantuml](../../../../../uml/output/Field\_Type\_Option\_Editor\_Data\_Parser.svg)
 
 ## Row
 
@@ -109,24 +109,24 @@ Caching the rows in memory to reduce the cost of getting data from the backend. 
 
 * A `Row` has a list of `Cell`s. It uses the `GridCellBuilder` to build the custom `Cell` according to the field type. Each cell should extend the `GridCellWidget` interface.
 
-![file : grid\_row.plantuml](../../../../.gitbook/assets/grid\_row.svg)
+![file : grid\_row.plantuml](../../../../../.gitbook/assets/grid\_row.svg)
 
 ## Cell
 
 A `Cell` is one individual cell in a grid. The number of `Cell`s in a `Row` is equal to the number of `Field`s in the `Grid`. We define the `GridCellWidget` that defines the shared behaviors. Such as `CellAccessory`, `CellEditable`, and `CellShortcuts`.
 
-![file : grid\_cell.plantuml](../../../../.gitbook/assets/Grid\_Cell\_Builder.svg)
+![file : grid\_cell.plantuml](../../../../../.gitbook/assets/Grid\_Cell\_Builder.svg)
 
 Let's look at the select `GridSingleSelectCell` and find out how it works. When a user clicks a cell, the `SelectOptionCellEditor` will show up.
 
-![file : grid\_cell.plantuml](../../../../uml/output/Grid\_Selection\_Cell\_Edit.svg)
+![file : grid\_cell.plantuml](../../../../../uml/output/Grid\_Selection\_Cell\_Edit.svg)
 
 * `SelectOptionCellEditor` is a widget that defines the UI when editing the cell.
 * `SelectOptionCellEditorBloc` binds the UI and the data, the `SelectOptionCellEditor` will be rebuilt if the bloc state changes.
 * `SelectOptionService` handles up the logic for deleting, updating the select option with the backend.
 * `GridSelectOptionCellController` use `GridCellController` to implement the cell's operations.
 
-![file : grid\_cell.plantuml](../../../../.gitbook/assets/Grid\_Cell\_Controller.svg)
+![file : grid\_cell.plantuml](../../../../../.gitbook/assets/Grid\_Cell\_Controller.svg)
 
 **GridCellController**
 

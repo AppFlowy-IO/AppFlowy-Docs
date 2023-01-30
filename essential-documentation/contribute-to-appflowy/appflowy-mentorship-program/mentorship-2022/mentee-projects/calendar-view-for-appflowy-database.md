@@ -6,7 +6,7 @@ description: Richard Shiue
 
 ## Introduction
 
-AppFlowy's database is an extremely powerful feature that allows users to store data in a structured manner. Each database can be customized to contain multiple fields, each of a different type, such as text, date and single-selection tags. For more information about the terminology used in AppFlowy's database, please check out [grid.md](../../../architecture/frontend/grid.md "mention"). While the most common way to view the database is in the table-view, alternative views can present the data better depending on the use case. For example, the kanban board groups entries into columns according to a status tag, and is a popular choice for project progress tracking. It also allows for new ways to interact with the entries, such as dragging a card from one column to another in kanban.
+AppFlowy's database is an extremely powerful feature that allows users to store data in a structured manner. Each database can be customized to contain multiple fields, each of a different type, such as text, date and single-selection tags. For more information about the terminology used in AppFlowy's database, please check out [grid.md](../../../architecture/frontend/frontend/grid.md "mention"). While the most common way to view the database is in the table-view, alternative views can present the data better depending on the use case. For example, the kanban board groups entries into columns according to a status tag, and is a popular choice for project progress tracking. It also allows for new ways to interact with the entries, such as dragging a card from one column to another in kanban.
 
 ## Goal
 
