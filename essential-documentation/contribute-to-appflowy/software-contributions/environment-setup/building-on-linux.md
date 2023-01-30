@@ -80,7 +80,7 @@ flutter --version
 * Or you can use the code below to install `FLUTTER` manually on your linux system.
 
 ```bash
-git clone -b 3.0.5 https://github.com/flutter/flutter.git
+git clone https://github.com/flutter/flutter.git
 cd flutter
 echo "export PATH=\$PATH:"`pwd`"/bin" >> ~/.profile
 export PATH="$PATH:`pwd`/bin"
