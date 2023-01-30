@@ -41,6 +41,8 @@ The main classes in Database are shown below.
 | Cell         | A `Cell` represents the data of the corresponding `FieldType`                                                                           |
 | TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                                                                         |
 |              |                                                                                                                                         |
+
+
 ![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view_classes-Database_classes_UML.svg)
 
 
