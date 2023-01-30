@@ -48,6 +48,8 @@
         * [⚙ Setting](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/setting.md)
         * [👾 Test](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/test.md)
       * [Inter-Process Communication](essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication.md)
+      * [Document](essential-documentation/contribute-to-appflowy/architecture/frontend/document.md)
+      * [Database View](essential-documentation/contribute-to-appflowy/architecture/frontend/database-view.md)
     * [Backend](essential-documentation/contribute-to-appflowy/architecture/backend/README.md)
       * [Initialize](essential-documentation/contribute-to-appflowy/architecture/backend/initialize.md)
       * [Events](essential-documentation/contribute-to-appflowy/architecture/backend/event.md)
