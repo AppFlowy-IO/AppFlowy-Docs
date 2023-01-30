@@ -22,15 +22,14 @@ Below you will find some quick definitions to help you read through the document
 ## Relations 
 Currently, AppFlowy has three types of views that share the same database. A single database can have multiple
 views and these views can be converted to each other. 
-![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view.svg)
+![file : database_view.plantuml](../../../../uml/output/database_view.svg)
 
 From the DDD perspective, these views are kind of the presentation layer and the database is the combination of
 Application,Domain, and Infrastructure layer. 
 
-![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view-Database_Views_DDD.svg)
+![file : database_view.plantuml](../../../../uml/output/database_view-Database_Views_DDD.svg)
 
 The main classes in Database are shown below.
-![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view_classes-Database_classes_UML.svg)
 
 |              |                                                                                                                                         |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,11 +42,13 @@ The main classes in Database are shown below.
 | TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                                                                         |
 
 
+![file : database_view.plantuml](../../../../uml/output/database_view_classes-Database_classes_UML.svg)
+
 ## Formatting Cell 
 Most of the time, the raw data of cell is not human-readable. A cell doesn't know how to represent itself. It needs the 
 `Field` information to format the data.
 
-![file : inter\_process\_communication.plantuml](../../../../uml/output/database_view_classes-read_cell_sequence.svg)
+![file : database_view.plantuml](../../../../uml/output/database_view_classes-read_cell_sequence.svg)
 1. Get the corresponding `Database` with `database_id`
 2. Get the corresponding `Field` with `field_id`
 3. Get the corresponding `TypeOption` base on the current value of the `Field`'s `field_ty` property. Assuming the `field_ty`
