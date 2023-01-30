@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="456px" preserveAspectRatio="none" style="width:795px;height:456px;background:#FFFFFF;" version="1.1" viewBox="0 0 795 456" width="795px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="29.1201" id="_title" style="stroke:none;stroke-width:1.0;" width="167" x="307" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="157" x="312" y="26.0439">Database classes UML</text><!--MD5=[ed3afe56f065d25b4329669e73deaf58]
+class Database--><g id="elem_Database"><rect codeLine="5" fill="#F1F1F1" height="67.1201" id="Database" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="7" y="306.6201"/><ellipse cx="40.9" cy="322.6201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M40.5875,328.6201 Q38.65,328.6201 37.525,327.1982 Q36.4,325.7607 36.4,322.8076 Q36.4,320.3076 37.5875,318.6201 Q38.775,316.9326 40.8375,316.9326 Q41.3219,316.9326 41.8219,317.042 Q42.2281,317.1826 42.4781,317.1826 Q42.6813,317.1826 42.7594,317.167 Q42.8531,317.1357 43.3844,316.4639 L44.1188,320.6982 L43.15,321.292 Q42.65,319.7451 42.0719,319.1826 Q41.5094,318.6201 40.6031,318.6201 Q39.4469,318.6201 38.7594,319.8076 Q38.0875,320.9795 38.0875,322.8076 Q38.0875,324.8076 38.6656,325.8701 Q39.2438,326.9326 40.5406,326.9326 Q41.4625,326.9326 42.1031,326.3701 Q42.7594,325.792 43.1031,324.4014 L44.1344,324.917 Q43.7438,326.667 42.8063,327.6514 Q41.8688,328.6201 40.5875,328.6201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="59.1" y="329.104">Database</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="141" y1="338.6201" y2="338.6201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="13" y="358.6641">database_id: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="141" y1="365.7402" y2="365.7402"/></g><!--MD5=[d9427b671d7d049aff2d6f2fe36a13b3]
+class Field--><g id="elem_Field"><rect codeLine="9" fill="#F1F1F1" height="86.2402" id="Field" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="156" x="202" y="232.1201"/><ellipse cx="260.25" cy="248.1201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M259.9375,254.1201 Q258,254.1201 256.875,252.6982 Q255.75,251.2607 255.75,248.3076 Q255.75,245.8076 256.9375,244.1201 Q258.125,242.4326 260.1875,242.4326 Q260.6719,242.4326 261.1719,242.542 Q261.5781,242.6826 261.8281,242.6826 Q262.0313,242.6826 262.1094,242.667 Q262.2031,242.6357 262.7344,241.9639 L263.4688,246.1982 L262.5,246.792 Q262,245.2451 261.4219,244.6826 Q260.8594,244.1201 259.9531,244.1201 Q258.7969,244.1201 258.1094,245.3076 Q257.4375,246.4795 257.4375,248.3076 Q257.4375,250.3076 258.0156,251.3701 Q258.5938,252.4326 259.8906,252.4326 Q260.8125,252.4326 261.4531,251.8701 Q262.1094,251.292 262.4531,249.9014 L263.4844,250.417 Q263.0938,252.167 262.1563,253.1514 Q261.2188,254.1201 259.9375,254.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="280.75" y="254.604">Field</text><line style="stroke:#181818;stroke-width:0.5;" x1="203" x2="357" y1="264.1201" y2="264.1201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="208" y="284.1641">typeOptions: IndexMap</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="208" y="303.2842">field_ty: FieldType</text><line style="stroke:#181818;stroke-width:0.5;" x1="203" x2="357" y1="310.3604" y2="310.3604"/></g><!--MD5=[b1e1556f4d9551c859c25b35078bae62]
+class FieldType--><g id="elem_FieldType"><rect codeLine="19" fill="#F1F1F1" height="124.4805" id="FieldType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="95" x="445" y="213.1201"/><ellipse cx="460" cy="229.1201" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M456.0625,225.1201 L456.0625,223.4326 L463.7813,223.4326 L464.7344,226.6514 L463.9219,227.2764 Q463.1563,226.0107 462.5313,225.5732 Q461.9063,225.1201 461.1875,225.1201 L459.0313,225.1201 Q458.8281,225.1201 458.75,225.167 Q458.6875,225.1982 458.6875,225.2295 L458.6875,228.4326 L460.1563,228.4326 Q460.625,228.4326 460.8125,228.2139 Q461,227.9795 461,227.4326 L461,226.6826 L462.6875,226.6826 L462.6875,231.8701 L461,231.8701 L461,231.2607 Q461,230.667 460.7969,230.4014 Q460.6094,230.1201 460.1563,230.1201 L458.6875,230.1201 L458.6875,233.3857 Q458.6719,233.3857 458.7344,233.417 Q458.7969,233.4326 459,233.4326 L460.9219,233.4326 Q461.9219,233.4326 462.6094,232.9482 Q463.2969,232.4639 463.8594,230.9795 L464.7344,231.6357 L463.8281,235.1201 L456,235.1201 L456,233.4326 L456.7344,233.4326 Q456.9531,233.4326 456.9688,233.417 Q457,233.4014 457,233.3232 L457,225.2295 Q457,225.1514 456.9688,225.1357 Q456.9531,225.1201 456.7344,225.1201 L456.0625,225.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="474" y="235.604">FieldType</text><line style="stroke:#181818;stroke-width:0.5;" x1="446" x2="539" y1="245.1201" y2="245.1201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="451" y="265.1641">RichText,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="451" y="284.2842">Date,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="451" y="303.4043">Number,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="451" y="322.5244">...</text><line style="stroke:#181818;stroke-width:0.5;" x1="446" x2="539" y1="329.6006" y2="329.6006"/></g><!--MD5=[07fdb7e257ac345fcb6d3529b669f031]
+class TypeOption--><g id="elem_TypeOption"><rect codeLine="26" fill="#F1F1F1" height="48" id="TypeOption" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="106" x="439.5" y="130.1201"/><ellipse cx="454.5" cy="146.1201" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M451.375,142.1201 L451.375,140.4326 L457.3125,140.4326 L457.3125,142.1201 L455.4375,142.1201 Q455.2813,142.1201 455.2344,142.1514 Q455.1875,142.1826 455.1875,142.2295 L455.1875,150.3232 Q455.1875,150.3701 455.2344,150.4014 Q455.2813,150.4326 455.4375,150.4326 L457.3125,150.4326 L457.3125,152.1201 L451.375,152.1201 L451.375,150.4326 L453.25,150.4326 Q453.4531,150.4326 453.4688,150.417 Q453.5,150.4014 453.5,150.3232 L453.5,142.2295 Q453.5,142.1514 453.4688,142.1357 Q453.4531,142.1201 453.25,142.1201 L451.375,142.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="74" x="468.5" y="152.604">TypeOption</text><line style="stroke:#181818;stroke-width:0.5;" x1="440.5" x2="544.5" y1="162.1201" y2="162.1201"/><line style="stroke:#181818;stroke-width:0.5;" x1="440.5" x2="544.5" y1="170.1201" y2="170.1201"/></g><!--MD5=[05aedcff764caeeb5d443618a4d90de7]
+class Row--><g id="elem_Row"><rect codeLine="29" fill="#F1F1F1" height="67.1201" id="Row" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="108" x="226" y="362.6201"/><ellipse cx="263.05" cy="378.6201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M262.7375,384.6201 Q260.8,384.6201 259.675,383.1982 Q258.55,381.7607 258.55,378.8076 Q258.55,376.3076 259.7375,374.6201 Q260.925,372.9326 262.9875,372.9326 Q263.4719,372.9326 263.9719,373.042 Q264.3781,373.1826 264.6281,373.1826 Q264.8313,373.1826 264.9094,373.167 Q265.0031,373.1357 265.5344,372.4639 L266.2688,376.6982 L265.3,377.292 Q264.8,375.7451 264.2219,375.1826 Q263.6594,374.6201 262.7531,374.6201 Q261.5969,374.6201 260.9094,375.8076 Q260.2375,376.9795 260.2375,378.8076 Q260.2375,380.8076 260.8156,381.8701 Q261.3938,382.9326 262.6906,382.9326 Q263.6125,382.9326 264.2531,382.3701 Q264.9094,381.792 265.2531,380.4014 L266.2844,380.917 Q265.8938,382.667 264.9563,383.6514 Q264.0188,384.6201 262.7375,384.6201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="281.95" y="385.104">Row</text><line style="stroke:#181818;stroke-width:0.5;" x1="227" x2="333" y1="394.6201" y2="394.6201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="232" y="414.6641">cells: IndexMap</text><line style="stroke:#181818;stroke-width:0.5;" x1="227" x2="333" y1="421.7402" y2="421.7402"/></g><!--MD5=[fea3dc74c7473bae0133d22265a91e2f]
+class Cell--><g id="elem_Cell"><rect codeLine="38" fill="#F1F1F1" height="67.1201" id="Cell" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="149" x="418" y="372.6201"/><ellipse cx="476.25" cy="388.6201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M475.9375,394.6201 Q474,394.6201 472.875,393.1982 Q471.75,391.7607 471.75,388.8076 Q471.75,386.3076 472.9375,384.6201 Q474.125,382.9326 476.1875,382.9326 Q476.6719,382.9326 477.1719,383.042 Q477.5781,383.1826 477.8281,383.1826 Q478.0313,383.1826 478.1094,383.167 Q478.2031,383.1357 478.7344,382.4639 L479.4688,386.6982 L478.5,387.292 Q478,385.7451 477.4219,385.1826 Q476.8594,384.6201 475.9531,384.6201 Q474.7969,384.6201 474.1094,385.8076 Q473.4375,386.9795 473.4375,388.8076 Q473.4375,390.8076 474.0156,391.8701 Q474.5938,392.9326 475.8906,392.9326 Q476.8125,392.9326 477.4531,392.3701 Q478.1094,391.792 478.4531,390.4014 L479.4844,390.917 Q479.0938,392.667 478.1563,393.6514 Q477.2188,394.6201 475.9375,394.6201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="496.75" y="395.104">Cell</text><line style="stroke:#181818;stroke-width:0.5;" x1="419" x2="566" y1="404.6201" y2="404.6201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="424" y="424.6641">type_cell_data: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="419" x2="566" y1="431.7402" y2="431.7402"/></g><!--MD5=[753b207320b90a257553d6e6cd61d689]
+class TypeCellData--><g id="elem_TypeCellData"><rect codeLine="42" fill="#F1F1F1" height="86.2402" id="TypeCellData" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="148" x="633.5" y="363.1201"/><ellipse cx="662" cy="379.1201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M661.6875,385.1201 Q659.75,385.1201 658.625,383.6982 Q657.5,382.2607 657.5,379.3076 Q657.5,376.8076 658.6875,375.1201 Q659.875,373.4326 661.9375,373.4326 Q662.4219,373.4326 662.9219,373.542 Q663.3281,373.6826 663.5781,373.6826 Q663.7813,373.6826 663.8594,373.667 Q663.9531,373.6357 664.4844,372.9639 L665.2188,377.1982 L664.25,377.792 Q663.75,376.2451 663.1719,375.6826 Q662.6094,375.1201 661.7031,375.1201 Q660.5469,375.1201 659.8594,376.3076 Q659.1875,377.4795 659.1875,379.3076 Q659.1875,381.3076 659.7656,382.3701 Q660.3438,383.4326 661.6406,383.4326 Q662.5625,383.4326 663.2031,382.8701 Q663.8594,382.292 664.2031,380.9014 L665.2344,381.417 Q664.8438,383.167 663.9063,384.1514 Q662.9688,385.1201 661.6875,385.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="679" y="385.604">TypeCellData</text><line style="stroke:#181818;stroke-width:0.5;" x1="634.5" x2="780.5" y1="395.1201" y2="395.1201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="639.5" y="415.1641">cell_str: String,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="639.5" y="434.2842">field_type: FieldType,</text><line style="stroke:#181818;stroke-width:0.5;" x1="634.5" x2="780.5" y1="441.3604" y2="441.3604"/></g><!--MD5=[c246243149f362544c015944313fc406]
+class RichTextTypeOption--><g id="elem_RichTextTypeOption"><rect codeLine="47" fill="#F1F1F1" height="48" id="RichTextTypeOption" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="627" y="47.1201"/><ellipse cx="642" cy="63.1201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M641.6875,69.1201 Q639.75,69.1201 638.625,67.6982 Q637.5,66.2607 637.5,63.3076 Q637.5,60.8076 638.6875,59.1201 Q639.875,57.4326 641.9375,57.4326 Q642.4219,57.4326 642.9219,57.542 Q643.3281,57.6826 643.5781,57.6826 Q643.7813,57.6826 643.8594,57.667 Q643.9531,57.6357 644.4844,56.9639 L645.2188,61.1982 L644.25,61.792 Q643.75,60.2451 643.1719,59.6826 Q642.6094,59.1201 641.7031,59.1201 Q640.5469,59.1201 639.8594,60.3076 Q639.1875,61.4795 639.1875,63.3076 Q639.1875,65.3076 639.7656,66.3701 Q640.3438,67.4326 641.6406,67.4326 Q642.5625,67.4326 643.2031,66.8701 Q643.8594,66.292 644.2031,64.9014 L645.2344,65.417 Q644.8438,67.167 643.9063,68.1514 Q642.9688,69.1201 641.6875,69.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="656" y="69.604">RichTextTypeOption</text><line style="stroke:#181818;stroke-width:0.5;" x1="628" x2="787" y1="79.1201" y2="79.1201"/><line style="stroke:#181818;stroke-width:0.5;" x1="628" x2="787" y1="87.1201" y2="87.1201"/></g><!--MD5=[b619ec48271b48ba21857f6265b88366]
+class DateTypeOption--><g id="elem_DateTypeOption"><rect codeLine="48" fill="#F1F1F1" height="48" id="DateTypeOption" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="639.5" y="130.1201"/><ellipse cx="654.5" cy="146.1201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M654.1875,152.1201 Q652.25,152.1201 651.125,150.6982 Q650,149.2607 650,146.3076 Q650,143.8076 651.1875,142.1201 Q652.375,140.4326 654.4375,140.4326 Q654.9219,140.4326 655.4219,140.542 Q655.8281,140.6826 656.0781,140.6826 Q656.2813,140.6826 656.3594,140.667 Q656.4531,140.6357 656.9844,139.9639 L657.7188,144.1982 L656.75,144.792 Q656.25,143.2451 655.6719,142.6826 Q655.1094,142.1201 654.2031,142.1201 Q653.0469,142.1201 652.3594,143.3076 Q651.6875,144.4795 651.6875,146.3076 Q651.6875,148.3076 652.2656,149.3701 Q652.8438,150.4326 654.1406,150.4326 Q655.0625,150.4326 655.7031,149.8701 Q656.3594,149.292 656.7031,147.9014 L657.7344,148.417 Q657.3438,150.167 656.4063,151.1514 Q655.4688,152.1201 654.1875,152.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="668.5" y="152.604">DateTypeOption</text><line style="stroke:#181818;stroke-width:0.5;" x1="640.5" x2="774.5" y1="162.1201" y2="162.1201"/><line style="stroke:#181818;stroke-width:0.5;" x1="640.5" x2="774.5" y1="170.1201" y2="170.1201"/></g><!--MD5=[cd76778a710705fdd5d36d2b3f5220a3]
+class NumberTypeOption--><g id="elem_NumberTypeOption"><rect codeLine="49" fill="#F1F1F1" height="48" id="NumberTypeOption" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="630" y="213.1201"/><ellipse cx="645" cy="229.1201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M644.6875,235.1201 Q642.75,235.1201 641.625,233.6982 Q640.5,232.2607 640.5,229.3076 Q640.5,226.8076 641.6875,225.1201 Q642.875,223.4326 644.9375,223.4326 Q645.4219,223.4326 645.9219,223.542 Q646.3281,223.6826 646.5781,223.6826 Q646.7813,223.6826 646.8594,223.667 Q646.9531,223.6357 647.4844,222.9639 L648.2188,227.1982 L647.25,227.792 Q646.75,226.2451 646.1719,225.6826 Q645.6094,225.1201 644.7031,225.1201 Q643.5469,225.1201 642.8594,226.3076 Q642.1875,227.4795 642.1875,229.3076 Q642.1875,231.3076 642.7656,232.3701 Q643.3438,233.4326 644.6406,233.4326 Q645.5625,233.4326 646.2031,232.8701 Q646.8594,232.292 647.2031,230.9014 L648.2344,231.417 Q647.8438,233.167 646.9063,234.1514 Q645.9688,235.1201 644.6875,235.1201 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="659" y="235.604">NumberTypeOption</text><line style="stroke:#181818;stroke-width:0.5;" x1="631" x2="784" y1="245.1201" y2="245.1201"/><line style="stroke:#181818;stroke-width:0.5;" x1="631" x2="784" y1="253.1201" y2="253.1201"/></g><!--MD5=[261558d99a657b3dba2d0b116528259d]
+reverse link Database to Field--><g id="link_Database_Field"><path codeLine="51" d="M154.92,314.7501 C170.39,309.8101 186.58,304.6401 201.97,299.7201 " fill="none" id="Database-backto-Field" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="142.13,318.8401,149.0627,320.8244,153.5608,315.1881,146.628,313.2038,142.13,318.8401" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="149.9098" y="332.3749">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="189.0428" y="317.9017">*</text></g><!--MD5=[f035b87ee0c3b12c52e7b00ba799bd11]
+link Field to FieldType--><g id="link_Field_FieldType"><path codeLine="52" d="M358.19,275.1201 C385.35,275.1201 415.21,275.1201 439.77,275.1201 " fill="none" id="Field-to-FieldType" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="444.93,275.1201,435.93,271.1201,439.93,275.1201,435.93,279.1201,444.93,275.1201" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[605b40ea5d788bc5bd20b168d37c50cb]
+reverse link Field to TypeOption--><g id="link_Field_TypeOption"><path codeLine="53" d="M365.36,225.5101 C382.73,215.3901 400.93,204.8601 418,195.1201 C427.64,189.6201 438.04,183.7701 447.89,178.2601 " fill="none" id="Field-backto-TypeOption" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="354.08,232.0901,361.278,232.5254,364.4482,226.0486,357.2503,225.6133,354.08,232.0901" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="359.2109" y="221.1755">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="431.4069" y="201.206">*</text></g><!--MD5=[b0b16116be3b2f724ac4d18378e0f403]
+reverse link Database to Row--><g id="link_Database_Row"><path codeLine="54" d="M154.76,361.9301 C178.55,368.4801 204.07,375.5001 225.76,381.4701 " fill="none" id="Database-backto-Row" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="142.13,358.4601,146.8556,363.907,153.7011,361.6398,148.9754,356.193,142.13,358.4601" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="149.9098" y="376.3284">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="213.1356" y="395.5843">*</text></g><!--MD5=[37673fd022c6767d21706d6d4a2b59f0]
+reverse link Row to Cell--><g id="link_Row_Cell"><path codeLine="55" d="M347.3,399.2701 C369.68,400.3301 394.8,401.5301 417.73,402.6201 " fill="none" id="Row-backto-Cell" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="334.12,398.6401,339.9243,402.9192,346.1066,399.2071,340.3023,394.9281,334.12,398.6401" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="341.8627" y="415.0615">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="404.7615" y="418.0664">*</text></g><!--MD5=[ffa0985f77a8839028568855d578c1e7]
+link Cell to TypeCellData--><g id="link_Cell_TypeCellData"><path codeLine="60" d="M567.1,406.1201 C586.83,406.1201 608.24,406.1201 628.21,406.1201 " fill="none" id="Cell-to-TypeCellData" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="633.26,406.1201,624.26,402.1201,628.26,406.1201,624.26,410.1201,633.26,406.1201" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[64a9200439ab6069ddf3c2b7769c3a97]
+reverse link TypeOption to RichTextTypeOption--><g id="link_TypeOption_RichTextTypeOption"><path codeLine="61" d="M564.31,126.5301 C590.33,116.3901 619.55,105.0001 644.71,95.2001 " fill="none" id="TypeOption-backto-RichTextTypeOption" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="566.78,133.0801,545.61,133.8201,561.7,120.0301,566.78,133.0801" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a07afd22ce12bd506dcaa2ac64d7f4e5]
+reverse link TypeOption to DateTypeOption--><g id="link_TypeOption_DateTypeOption"><path codeLine="62" d="M565.71,154.1201 C589.49,154.1201 615.82,154.1201 639.22,154.1201 " fill="none" id="TypeOption-backto-DateTypeOption" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="565.61,161.1201,545.61,154.1201,565.61,147.1201,565.61,161.1201" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[92e51345a8b8fb1c8426718fc6fd4c25]
+reverse link TypeOption to NumberTypeOption--><g id="link_TypeOption_NumberTypeOption"><path codeLine="63" d="M564.31,181.7101 C590.33,191.8501 619.55,203.2401 644.71,213.0401 " fill="none" id="TypeOption-backto-NumberTypeOption" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="561.7,188.2101,545.61,174.4201,566.78,175.1601,561.7,188.2101" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3f2f61274e5ada2d25f2023bf818c89b]
+@startuml
+title Database classes UML 
+left to right direction
+'skinparam monochrome reverse
+
+class Database {
+database_id: String
+}
+
+class Field {
+typeOptions: IndexMap
+field_ty: FieldType
+}
+'note left
+'   contains key/value pairs
+'   key: id of the FieldType
+'   value: opaque data
+'end note
+
+enum FieldType {
+RichText,
+Date,
+Number,
+...
+}
+
+interface TypeOption {
+}
+
+class Row {
+cells: IndexMap
+}
+'note left
+'key/value pairs.
+'key: field id,
+'value: CellMeta
+'end note
+
+class Cell {
+type_cell_data: String
+}
+
+class TypeCellData {
+cell_str: String,
+field_type: FieldType,
+}
+
+class RichTextTypeOption {}
+class DateTypeOption {}
+class NumberTypeOption {}
+
+Database "1" *- - "*" Field
+Field - -> FieldType
+Field "1" *- - "*" TypeOption
+Database "1" *- - "*" Row
+Row "1" *- - "*" Cell
+'note left of Cell
+'Deserialize String to
+'TypeCellData
+'end note
+Cell - -> TypeCellData
+RichTextTypeOption -u-|> TypeOption
+DateTypeOption -u-|> TypeOption
+NumberTypeOption -u-|> TypeOption
+
+@enduml
+
+@startuml
+title Database classes UML 
+left to right direction
+
+class Database {
+database_id: String
+}
+
+class Field {
+typeOptions: IndexMap
+field_ty: FieldType
+}
+
+enum FieldType {
+RichText,
+Date,
+Number,
+...
+}
+
+interface TypeOption {
+}
+
+class Row {
+cells: IndexMap
+}
+
+class Cell {
+type_cell_data: String
+}
+
+class TypeCellData {
+cell_str: String,
+field_type: FieldType,
+}
+
+class RichTextTypeOption {}
+class DateTypeOption {}
+class NumberTypeOption {}
+
+Database "1" *- - "*" Field
+Field - -> FieldType
+Field "1" *- - "*" TypeOption
+Database "1" *- - "*" Row
+Row "1" *- - "*" Cell
+Cell - -> TypeCellData
+RichTextTypeOption -u-|> TypeOption
+DateTypeOption -u-|> TypeOption
+NumberTypeOption -u-|> TypeOption
+
+@enduml
+
+PlantUML version 1.2022.12(Mon Oct 24 02:12:26 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>

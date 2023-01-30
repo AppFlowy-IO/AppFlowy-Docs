@@ -1,0 +1,103 @@
+@startuml
+title Database classes UML
+left to right direction
+'skinparam monochrome reverse
+
+class Database {
+database_id: String,
+fields: Vec<Field>,
+rows: Vec<Row>,
+}
+
+class Field {
+typeOptions: IndexMap
+field_ty: FieldType
+}
+'note left
+'   contains key/value pairs
+'   key: id of the FieldType
+'   value: opaque data
+'end note
+
+enum FieldType {
+RichText,
+Date,
+Number,
+...
+}
+
+interface TypeOption {
+}
+
+class Row {
+cells: IndexMap
+}
+'note left
+'key/value pairs.
+'key: field id,
+'value: CellMeta
+'end note
+
+class Cell {
+type_cell_data: String
+}
+
+class TypeCellData {
+cell_str: String,
+field_type: FieldType,
+}
+
+class RichTextTypeOption {}
+class DateTypeOption {}
+class NumberTypeOption {}
+
+Database "1" *-- "*" Field
+Field --> FieldType
+Field "1" *-- "*" TypeOption
+Database "1" *-- "*" Row
+Row "1" *-- "*" Cell
+'note left of Cell
+'Deserialize String to
+'TypeCellData
+'end note
+Cell --> TypeCellData
+RichTextTypeOption -u-|> TypeOption
+DateTypeOption -u-|> TypeOption
+NumberTypeOption -u-|> TypeOption
+@enduml
+
+@startuml
+title "Read Cell Sequence"
+actor Reader
+Reader --> Database: database_id,row_id,field_id
+activate Database
+
+box "Get DateTypeOption"
+Database --> Field
+activate Field
+
+Field --> DateTypeOption
+activate DateTypeOption
+
+DateTypeOption --> Field
+deactivate DateTypeOption
+end box
+
+Field --> Database
+deactivate Field
+
+box "Get Cell Raw Data"
+Database --> Row
+activate Row
+Row --> Row: read the cell data with field_id
+Row --> Database: returns the raw cell data
+deactivate Row
+end box
+
+Database --> DateTypeOption
+activate DateTypeOption
+DateTypeOption --> DateTypeOption: Format the cell data
+DateTypeOption --> Database: returns formatted cell data
+deactivate DateTypeOption
+Database --> Reader
+@enduml

@@ -1,0 +1,40 @@
+
+@startuml
+top to bottom direction
+node "Database Views" {
+    component Grid as "Grid" #DDDDDD
+    component Board as "Board" #DDDDDD
+    component Calendar as "Calendar" #DDDDDD
+}
+
+node "Database" {
+}
+
+Grid ..> Database
+Board ..> Database
+Calendar ..> Database
+@enduml
+
+@startuml
+title "Database Views DDD"
+top to bottom direction
+skinparam linetype ortho
+
+node "Views" {
+    component Presentation_Grid as "Grid Presentation" #DDDDDD
+    component Presentation_Board as "Board Presentation" #DDDDDD
+    component Presentation_Calendar as "Calendar Presentation" #DDDDDD
+}
+node "Database" {
+    component Application as "Application Layer" #DDDDDD
+    component Domain as "Domain Layer" #DDDDDD
+    component Infrastructure as "Infrastructure Layer" #DDDDDD
+}
+
+Presentation_Grid ..> Application
+Presentation_Board ..> Application
+Presentation_Calendar ..> Application
+Application ..> Domain
+Application ..> Infrastructure
+Domain <.. Infrastructure
+@enduml

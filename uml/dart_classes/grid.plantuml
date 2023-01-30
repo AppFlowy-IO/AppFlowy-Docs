@@ -4,7 +4,7 @@ skinparam ActivityBackgroundColor Silver
 skinparam ActivityBorderColor DimGray
 left to right direction
 
-GridPB  "1" *-- "*" GridRowPB
-GridPB  "1" *-- "*" GridFieldPB
+DatabasePB  "1" *-- "*" GridRowPB
+DatabasePB  "1" *-- "*" GridFieldPB
 
 @enduml

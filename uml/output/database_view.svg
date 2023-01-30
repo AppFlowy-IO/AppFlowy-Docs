@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="224px" preserveAspectRatio="none" style="width:379px;height:224px;background:#FFFFFF;" version="1.1" viewBox="0 0 379 224" width="379px" zoomAndPan="magnify"><defs/><g><!--MD5=[f9897a18b1e6d38ef63997d88397b68e]
+cluster Database Views--><g id="cluster_Database Views"><polygon fill="none" points="16,16,26,6,362,6,362,104,352,114,16,114,16,16" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="352" x2="362" y1="16" y2="6"/><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="352" y1="16" y2="16"/><line style="stroke:#181818;stroke-width:1.0;" x1="352" x2="352" y1="16" y2="114"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="110" x="130" y="35.0439">Database Views</text></g><!--MD5=[37959fb698c9491fc27601706cbc0adb]
+entity Grid--><g id="elem_Grid"><rect fill="#DDDDDD" height="49.1201" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="278.5" y="49"/><rect fill="#DDDDDD" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="325.5" y="54"/><rect fill="#DDDDDD" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="323.5" y="56"/><rect fill="#DDDDDD" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="323.5" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="293.5" y="85.0439">Grid</text></g><!--MD5=[563c8103e92128030235f3c56ede6b9d]
+entity Board--><g id="elem_Board"><rect fill="#DDDDDD" height="49.1201" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="78" x="165" y="49"/><rect fill="#DDDDDD" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="223" y="54"/><rect fill="#DDDDDD" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="221" y="56"/><rect fill="#DDDDDD" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="221" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="180" y="85.0439">Board</text></g><!--MD5=[6942661d4bf545990c0f94e1efdb370c]
+entity Calendar--><g id="elem_Calendar"><rect fill="#DDDDDD" height="49.1201" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="32" y="49"/><rect fill="#DDDDDD" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="110" y="54"/><rect fill="#DDDDDD" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="108" y="56"/><rect fill="#DDDDDD" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="108" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="47" y="85.0439">Calendar</text></g><!--MD5=[fa1e3283224feb76407c84b7e90ed808]
+entity Database--><g id="elem_Database"><polygon fill="#F1F1F1" points="153.5,168,163.5,158,254.5,158,254.5,197.1201,244.5,207.1201,153.5,207.1201,153.5,168" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="244.5" x2="254.5" y1="168" y2="158"/><line style="stroke:#181818;stroke-width:0.5;" x1="153.5" x2="244.5" y1="168" y2="168"/><line style="stroke:#181818;stroke-width:0.5;" x1="244.5" x2="244.5" y1="168" y2="207.1201"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="168.5" y="194.0439">Database</text></g><!--MD5=[ba7a8796f40e12065bce1158043efe0e]
+link Grid to Database--><g id="link_Grid_Database"><path d="M288.03,98.25 C271.39,114.73 249.18,136.74 231.76,153.99 " fill="none" id="Grid-to-Database" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="227.9,157.82,237.0995,154.303,231.4427,154.2916,231.4541,148.6348,227.9,157.82" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3d78a811a0e71b608a04e9d29a71a825]
+link Board to Database--><g id="link_Board_Database"><path d="M204,98.25 C204,114.32 204,135.64 204,152.68 " fill="none" id="Board-to-Database" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="204,157.82,208,148.82,204,152.82,200,148.82,204,157.82" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e45f8864ce27119208b828931c8608e1]
+link Calendar to Database--><g id="link_Calendar_Database"><path d="M108.3,98.25 C127.41,114.87 152.98,137.11 172.88,154.43 " fill="none" id="Calendar-to-Database" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="176.78,157.82,172.6024,148.9011,173.003,154.5437,167.3603,154.9443,176.78,157.82" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b2cac961e38c94927ca69b31ae87f057]
+@startuml
+top to bottom direction
+node "Database Views" {
+    component Grid as "Grid" #DDDDDD
+    component Board as "Board" #DDDDDD
+    component Calendar as "Calendar" #DDDDDD
+}
+
+node "Database" {
+}
+
+Grid ..> Database
+Board ..> Database
+Calendar ..> Database
+@enduml
+
+PlantUML version 1.2022.12(Mon Oct 24 02:12:26 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>
