@@ -160,6 +160,19 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 
 [issue #566](https://github.com/AppFlowy-IO/AppFlowy/issues/566)
 
+### 18. Unable to generate protobuf files due to permission issue in Mac.
+  While running `clean+rebuild all` command i was getting an error due to a permission issue.
+
+  ie, the script present inside the `./scripts/build_sdk.sh` was failling. Fixed it by running the script with sudo permission.
+  ```sh
+  sudo FLOWY_DEV_ENV=macOS sh ./scripts/build_sdk.sh
+  ```
+
+
+
+
+
+
 
 
 
