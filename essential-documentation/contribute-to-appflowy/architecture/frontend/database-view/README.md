@@ -9,7 +9,7 @@ This document explains how the Grid,Board, and Calendar shares the same data str
 Below you will find some quick definitions to help you read through the document.
 
 |          |                                                                                                      |
-| -------- | ---------------------------------------------------------------------------------------------------- |
+|----------|------------------------------------------------------------------------------------------------------|
 | Database | AppFlowy self-defined database that manages the relation between columns,rows, and cells.            |
 | Grid     | A Grid type is a simple representation of items placed in columns and rows                           |
 | Board    | A Board is an project management tool designed to help visualize work, limit work-in-progress        |
@@ -27,7 +27,7 @@ From the DDD perspective, these views are kind of the presentation layer and the
 The main classes in Database are shown below.
 
 |              |                                                                                                                                         |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Database     | A Database struct contains the list of fields and rows                                                                                  |
 | Field        | A Field contains list of `TypeOption` for different `FieldType`. The `field_ty` property determine which `TypeOption` will be used      |
 | TypeOption   | A `TypeOption` represents the configuration of a column. A `TypeOption` will be serialized to opaque data and then saved in the `Field` |
@@ -55,7 +55,7 @@ Most of the time, the raw data of cell is not human-readable. A cell doesn't kno
 The formatted cell data will be different depending on the `DateFormat` and `TimeFormat` of the `DateTypeOption`.
 
 | DateFormat     | TimeFormat     | Raw cell data |                     |
-| -------------- | -------------- | ------------- | ------------------- |
+|----------------|----------------|---------------|---------------------|
 | month/day/year | TwelveHour     | 1675083591    | 01/30/2023 01:00 PM |
 |                | TwentyFourHour | 1675083591    | 01/30/2023 13:00    |
 |                |                |               |                     |

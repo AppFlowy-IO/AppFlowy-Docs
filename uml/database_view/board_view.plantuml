@@ -1,0 +1,38 @@
+@startuml
+title Board view classes
+left to right direction
+interface GroupGenerator {
+fn generate_groups()
+}
+
+CheckboxGroupGenerator -u-|> GroupGenerator
+MultiSelectGroupGenerator -u-|> GroupGenerator
+SingleSelectGroupGenerator -u-|> GroupGenerator
+URLGroupGenerator -u-|> GroupGenerator
+
+interface GroupCustomize {
+fn can_group()
+fn create_group_when_cell_changed()
+fn add_or_remove_row_when_cell_changed()
+fn remove_row()
+fn move_row()
+}
+class  GenericGroupController {}
+GenericGroupController --> GroupGenerator
+GenericGroupController --> GroupCustomize
+
+
+CheckboxGroupController --> GenericGroupController
+MultiSelectGroupController --> GenericGroupController
+SingleSelectGroupController --> GenericGroupController
+
+
+interface GroupController {}
+interface GroupControllerActions {}
+GroupController --> GroupControllerActions
+
+CheckboxGroupController -u-|> GroupController
+MultiSelectGroupController -u-|> GroupController
+SingleSelectGroupController -u-|> GroupController
+DatabaseViewRevisionEditor --> GroupController
+@enduml
