@@ -176,7 +176,7 @@ cd app_flowy/product/0.0.5/linux/Debug/AppFlowy
 \[VS Code]
 
 1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
-2. Go to the Run and Debug tab and then click AF: Clean + Rebuild All for the first time running.
+2. Go to the Run and Debug tab and then click AF-desktop: Clean + Rebuild All for the first time running.
 
 ![img.png](../../../../.gitbook/assets/launch\_appflowy.png)
 

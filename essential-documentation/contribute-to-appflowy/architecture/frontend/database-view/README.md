@@ -18,7 +18,10 @@ Below you will find some quick definitions to help you read through the document
 
 ## Relations
 
-Currently, AppFlowy has three types of views that share the same database. A single database can have multiple views and these views can be converted to each other. ![file : database\_view.plantuml](../../../../../uml/output/database\_view.svg)
+Currently, AppFlowy has three types of views that share the same database. A single database can have multiple views and these views can be converted to each other.
+
+![file : database\_view.plantuml](../../../../../uml/output/database\_view.svg)
+
 
 From the DDD perspective, these views are kind of the presentation layer and the database is the combination of Application,Domain, and Infrastructure layer.
 
