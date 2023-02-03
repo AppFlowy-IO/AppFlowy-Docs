@@ -66,14 +66,6 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 
 ![img.png](../../../../.gitbook/assets/build\_step\_two.png)
 
-{% hint style="warning" %}
-Flutter version 3.3.10 is the version that AppFlowy is built and tested on. If you installed Flutter before, make sure the version matches AppFlowy's. You can get the Flutter version using this command:
-
-```bash
-flutter --version
-```
-
-{% endhint %}
 
 * Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 
