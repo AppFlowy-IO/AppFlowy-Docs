@@ -74,11 +74,12 @@ A `FieldType` represents the type of the `Field`. Currently, AppFlowy supports `
 A `TypeOption` represents the configuration of the `Field`. A Certain `TypeOption`s have user-defined options such as color,
 date format, number format, or a list of values for a multi-select list.
 
-For example,
-A `Field` with `SingleSelect` field type contains the name and a list of options as shown in the picture below.
+For example, A `Field` with `SingleSelect` field type contains the name and a list of options as shown in the picture below.
+
 ![type_option.png](assets/type_option.png)
 
 A `Field` with `Number` field type contains the name and a list of format styles as shown in the picture below.
+
 ![img.png](assets/number_type_option.png)
 
 ### Row
