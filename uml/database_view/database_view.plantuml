@@ -16,6 +16,28 @@ Calendar ..> Database
 @enduml
 
 @startuml
+title Events & Notifications
+top to bottom direction
+node "Database Views" {
+    component Grid as "Grid" #DDDDDD
+    component Board as "Board" #DDDDDD
+    component Calendar as "Calendar" #DDDDDD
+}
+
+node "Database" {
+}
+
+Grid .[#red].> Database: Event
+Database -[#blue]-> Grid: Notification
+
+Board .[#red].> Database: Event
+Database -[#blue]-> Board: Notification
+
+Calendar .[#red].> Database: Event
+Database -l[#blue]-> Calendar: Notification
+@enduml
+
+@startuml
 title "Database Views DDD"
 top to bottom direction
 skinparam linetype ortho
