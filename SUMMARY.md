@@ -50,6 +50,8 @@
         * [🧮 Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/grid.md)
         * [⚙ Setting](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/setting.md)
       * [Inter-Process Communication](essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication.md)
+      * [User](essential-documentation/contribute-to-appflowy/architecture/frontend/user/README.md)
+        * [Events](essential-documentation/contribute-to-appflowy/architecture/frontend/user/events.md)
       * [Folder](essential-documentation/contribute-to-appflowy/architecture/frontend/folder/README.md)
         * [Events](essential-documentation/contribute-to-appflowy/architecture/frontend/folder/events.md)
       * [Document](essential-documentation/contribute-to-appflowy/architecture/frontend/document.md)
