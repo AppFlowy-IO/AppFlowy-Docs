@@ -3,7 +3,7 @@
 ## Mac Install
 
 ```
-brew install appflowy
+brew install --cask appflowy
 ```
 
 ## Packages
