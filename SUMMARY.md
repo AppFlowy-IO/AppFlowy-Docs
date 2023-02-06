@@ -78,6 +78,8 @@
         * [Custom Themes](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/custom-themes.md)
         * [Shortcuts and Customized Hotkeys for AppFlowy](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/shortcuts-and-customized-hotkeys-for-appflowy.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
+  * [⛱ GSoC 2023](essential-documentation/contribute-to-appflowy/gsoc-2023/README.md)
+    * [🧩 Idea List](essential-documentation/contribute-to-appflowy/gsoc-2023/idea-list.md)
 
 ## Design Documentation
 
