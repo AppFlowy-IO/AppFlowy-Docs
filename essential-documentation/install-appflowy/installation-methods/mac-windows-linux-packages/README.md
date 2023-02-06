@@ -1,5 +1,13 @@
 # Mac / Windows / Linux Packages
 
+## Linux Install
+
+AppFlowy is available on [Flathub](https://flathub.org/apps/details/io.appflowy.AppFlowy).
+
+```
+flatpak install flathub io.appflowy.AppFlowy
+```
+
 ## Mac Install
 
 ```
