@@ -80,6 +80,7 @@
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [⛱ GSoC 2023](essential-documentation/contribute-to-appflowy/gsoc-2023/README.md)
     * [🧩 Idea List](essential-documentation/contribute-to-appflowy/gsoc-2023/idea-list.md)
+    * [📗 Contributor Guidance](essential-documentation/contribute-to-appflowy/gsoc-2023/contributor-guidance.md)
 
 ## Design Documentation
 
