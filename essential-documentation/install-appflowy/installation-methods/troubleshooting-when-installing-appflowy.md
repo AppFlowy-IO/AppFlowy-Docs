@@ -12,7 +12,7 @@ description: >-
 
 Flutter Web / Android / iOS is not supported yet. Please switch to macOS or other supported devices.
 
-### 2. Package do not exist in  git@github.com:appflowy/flutter-quill.git for flutter-quill
+### 2. Package do not exist in git@github.com:appflowy/flutter-quill.git for flutter-quill
 
 [issue #61](https://github.com/AppFlowy-IO/appflowy/issues/61)
 
@@ -55,10 +55,9 @@ ArgumentError (Invalid argument(s): Failed to load dynamic library 'libdart\_ffi
 
 A: Are you trying to build for android? Appflowy only supports desktops as of now
 
-
 [issue #191](https://github.com/AppFlowy-IO/appflowy/issues/191)
 
-Q. Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart_ffi.so' on Ubuntu.
+Q. Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart\_ffi.so' on Ubuntu.
 
 A: I append ubuntu 21.04 source.list's content to `/etc/apt/source.list`, and then upgrade `libc6`.
 
@@ -79,11 +78,13 @@ To Reproduce Just follow the BUILD\_ON\_LINUX.md
 A: There are some issues in protobuf generation of appflowy on linux. If you skip that step, you can get it working. Protobuf has already been generated and is tracked in the repository. So it will work without regeneration as of now.
 
 ### 8. The document data could not be saved on Ubuntu
+
 [issue #1306](https://github.com/AppFlowy-IO/AppFlowy/issues/1306)
 
 ### 9. Can't build development environment
 
-Q. While executing install_linux.sh script at compiling diesel_cli i'm getting following error: 
+Q. While executing install\_linux.sh script at compiling diesel\_cli i'm getting following error:
+
 ```
 error: linking with `cc` failed: exit status: 1
 ...
@@ -94,9 +95,12 @@ error: linking with `cc` failed: exit status: 1
 error: could not compile `diesel_cli` due to previous error
 error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be found at `/tmp/cargo-install4xWPP3`
 ```
+
 [issue #1076](https://github.com/AppFlowy-IO/AppFlowy/issues/1076)
-### 10. App don't run in Fedora 36 
-```error:
+
+### 10. App don't run in Fedora 36
+
+```
 [ERROR:flutter/lib/ui/ui_dart_state.cc(198)] Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: No file
 #0 _open (dart:ffi-patch/ffi_dynamic_library_patch.dart:12)
 #1 new DynamicLibrary.open (dart:ffi-patch/ffi_dynamic_library_patch.dart:23)
@@ -111,33 +115,40 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 #10 InitRustSDKTask.initialize (package:app_flowy/startup/tasks/rust_sdk.dart:12)
 #11 AppLauncher.launch (package:app_flowy/startup/startup.dart:99)
 ```
+
 [issue #702](https://github.com/AppFlowy-IO/AppFlowy/issues/742)
 
-### 11. Docker Hub (app_flowy:1): Gtk-WARNING **: 10:44:25.079: cannot open display
+### 11. Docker Hub (app\_flowy:1): Gtk-WARNING \*\*: 10:44:25.079: cannot open display
+
 [issue #389](https://github.com/AppFlowy-IO/AppFlowy/issues/389)
 
 ### 12. Failed to start Flutter renderer: Unable to create a GL context
+
 ```
 ⋊> ./app_flowy
 ** (app_flowy:21547): WARNING **: 03:05:10.061: Failed to start Flutter renderer: Unable to create a GL context
 ** (app_flowy:21547): WARNING **: 03:05:12.733: Unable to retrieve framework response: No engine to send to
 ```
+
 [issue #295](https://github.com/AppFlowy-IO/AppFlowy/issues/295)
 
 ### 13. Cannot run on Macbook M1 chip
-[issue #255] (https://github.com/AppFlowy-IO/AppFlowy/issues/255)
 
-### 14. Windows Build Failed 
+\[issue #255] (https://github.com/AppFlowy-IO/AppFlowy/issues/255)
+
+### 14. Windows Build Failed
+
 [issue #210](https://github.com/AppFlowy-IO/AppFlowy/issues/210)
 
-### 15. Linux failing on cargo make flowy_dev pre-request step
+### 15. Linux failing on cargo make flowy\_dev pre-request step
+
 [issue #53](https://github.com/AppFlowy-IO/AppFlowy/issues/52)
 
 ### 16. Malicious software warning on install- MAC-OS
-[issue #18](https://github.com/AppFlowy-IO/AppFlowy/issues/18)
-[issue #1313](https://github.com/AppFlowy-IO/AppFlowy/issues/1313)
 
-###17. Cannot run on Ubuntu 22.04
+[issue #18](https://github.com/AppFlowy-IO/AppFlowy/issues/18) [issue #1313](https://github.com/AppFlowy-IO/AppFlowy/issues/1313)
+
+\###17. Cannot run on Ubuntu 22.04
 
 ```
 [ERROR:flutter/lib/ui/ui_dart_state.cc(198)] Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory
@@ -161,21 +172,11 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 [issue #566](https://github.com/AppFlowy-IO/AppFlowy/issues/566)
 
 ### 18. Unable to generate protobuf files due to permission issue in Mac.
-  While running `clean+rebuild all` command we might get an error due to a permission issue in Mac.
 
-  ie, the script present inside the `./scripts/build_sdk.sh` might be failing.
-  You can fix it by running the script with sudo permission.
-  ```sh
-  sudo FLOWY_DEV_ENV=macOS sh ./scripts/build_sdk.sh
-  ```
+While running `clean+rebuild all` command we might get an error due to a permission issue in Mac.
 
+ie, the script present inside the `./scripts/build_sdk.sh` might be failing. You can fix it by running the script with sudo permission.
 
-
-
-
-
-
-
-
-
-
+```
+sudo FLOWY_DEV_ENV=macOS sh ./scripts/build_sdk.sh
+```
