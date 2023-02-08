@@ -41,13 +41,13 @@ This document explains the events defined in the database scope.
 | DidUpdateViewRows           | Trigger after inserting/deleting/updating a row                                                                    |
 | DidUpdateViewRowsVisibility | Trigger when the visibility of the row was changed. For example, updating the filter will trigger the notification |
 | DidUpdateFields             | Trigger after inserting/deleting/updating a field                                                                  |
-| DidUpdateCell               |                                                                                                                    |
-| DidUpdateField              |                                                                                                                    |
-| DidUpdateGroupView          |                                                                                                                    |
-| DidUpdateGroupRow           |                                                                                                                    |
-| DidGroupByNewField          |                                                                                                                    |
-| DidUpdateFilter             |                                                                                                                    |
-| DidUpdateSort               |                                                                                                                    |
-| DidReorderRows              |                                                                                                                    |
-| DidReorderSingleRow         |                                                                                                                    |
-| DidUpdateSetting            |                                                                                                                    |
+| DidUpdateCell               | Trigger after editing a cell                                                                                       |
+| DidUpdateField              | Trigger after editing a field properties including rename,update type option, etc.                                 |
+| DidUpdateGroups             | Trigger after the number of groups is changed                                                                      |
+| DidUpdateGroupRow           | Trigger after inserting/deleting/updating/moving a row                                                             |
+| DidGroupByField             | Trigger when setting a new grouping field                                                                          |
+| DidUpdateFilter             | Trigger after inserting/deleting/updating a filter                                                                 |
+| DidUpdateSort               | Trigger after inserting/deleting/updating a sort                                                                   |
+| DidReorderRows              | Trigger after the sort configurations are changed                                                                  |
+| DidReorderSingleRow         | Trigger after editing the row that hit the sort rule                                                               |
+| DidUpdateSetting            | Trigger when the settings of the database are changed                                                              |
