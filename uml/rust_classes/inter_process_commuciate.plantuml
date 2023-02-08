@@ -6,10 +6,10 @@ package "Frontend" #DDDDDD {
 }
 
 package "Backend" #DDDDDD {
-    component FlowyCore
+    component EventHandler as "Event Handler"
 }
 
-FlowyCore <-l- Events
+EventHandler <-l- Events: Protobuf
 @enduml
 
 @startuml
@@ -20,8 +20,8 @@ package "Frontend" #DDDDDD {
 }
 
 package "Backend" #DDDDDD {
-    component FlowyCore
+    component EventHandler as "Event Handler"
 }
 
-Notifications <-r- FlowyCore
+Notifications <-r- EventHandler: Protobuf
 @enduml
