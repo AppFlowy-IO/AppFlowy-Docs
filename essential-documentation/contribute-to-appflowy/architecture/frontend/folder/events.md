@@ -1,9 +1,10 @@
-# Events
+# Events and Notifications
 
 Events are used in the [communication](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication) between the frontend and the backend.
 If you interested in the process about generating the events files, please check [this](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/event) out. 
 This document explains the events defined in the Folder scope.
 
+## Events
 
 | FolderEvent          |                                                                   |
 |----------------------|-------------------------------------------------------------------|
@@ -29,3 +30,19 @@ This document explains the events defined in the Folder scope.
 | RestoreAllTrash      | Put back all the trash to its original folder                     |
 | DeleteAllTrash       | Delete all the trash from the disk                                |
 
+
+## Notifications
+
+| FolderNotification        |                                                                                                             |
+|---------------------------|-------------------------------------------------------------------------------------------------------------|
+| DidCreateWorkspace        | Trigger after creating a workspace                                                                          | 
+| DidDeleteWorkspace        | Trigger after deleting a workspace                                                                          | 
+| DidUpdateWorkspace        | Trigger after updating a workspace                                                                          | 
+| DidUpdateWorkspaceApps    | Trigger when the number of apps of the workspace is changed                                                 | 
+| DidUpdateWorkspaceSetting | Trigger when the settings of the workspace are changed. The changes including the latest visiting view, etc | 
+| DidUpdateApp              | Trigger when the properties including rename,update description of the app are changed                      | 
+| DidUpdateView             | Trigger when the properties including rename,update description of the view are changed                     | 
+| DidDeleteView             | Trigger after deleting the view                                                                             | 
+| DidRestoreView            | Trigger when restore the view from trash                                                                    | 
+| DidMoveViewToTrash        | Trigger after moving the view to trash                                                                      | 
+| DidUpdateTrash            | Trigger when the number of trash is changed                                                                 | 
