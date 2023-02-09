@@ -6,7 +6,7 @@ You might notice that the ideas listed are sometimes vague or incomplete. This i
 
 ### Desktop features&#x20;
 
-1. **Table**&#x20;
+1. ~~**Table (it's taken)**~~
 
 Add simple tabular content to a page
 
