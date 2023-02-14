@@ -1,2 +1,8 @@
 # User Data
 
+The user data is stored locally using SQLite. The name of the folder is different between development and production.
+
+|             | Flutter   | Tauri     |
+|-------------|-----------|-----------|
+| development | flowy_dev | dev/data  |
+| production  | flowy     | data      |
