@@ -11,11 +11,11 @@
   * [ ] Deepin - X86\_64
   * [ ] Raspberry Pi OS - aarch64
 * You may need to disable hardware 3D acceleration if you are running AppFlowy in a VM. Otherwise, certain GL failures will prevent the app from launching.
-* If you encounter any issues, have a look at [troubleshooting-when-installing-appflowy.md](../../../install-appflowy/installation-methods/troubleshooting-when-installing-appflowy.md "mention") first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
+* If you encounter any issues, have a look at [Broken link](broken-reference "mention") first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
-{% hint style="warning" %} There is a known issue with Ubuntu 22.04, Fedora 36, and PopOS 22.04: 
-`Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory`
-The issue can be fixed by installing the required missing libraries:
+{% hint style="warning" %}
+There is a known issue with Ubuntu 22.04, Fedora 36, and PopOS 22.04: `Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory` The issue can be fixed by installing the required missing libraries:
+
 ```
 # Fedora
 sudo dnf in openssl1.1.x86_64 # Workstation
@@ -26,8 +26,7 @@ $ wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f
 $ sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 ```
 
-If the above ``Ubuntu & PopOS`` link is expired or returns 404 then consider searching for ``libssl1.1_1.1.1`` on the following [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
-
+If the above `Ubuntu & PopOS` link is expired or returns 404 then consider searching for `libssl1.1_1.1.1` on the following [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
 {% endhint %}
 
 ## Step 1: Get the source code
@@ -41,6 +40,7 @@ You should fork the code instead if you wish to submit code to AppFlowy. You'll 
 ```shell
 git clone https://github.com/AppFlowy-IO/appflowy.git
 ```
+
 ![img.png](../../../../.gitbook/assets/build\_step\_one.png)
 
 ## Step 2: Install your build environment
@@ -54,7 +54,6 @@ Feel free to ask questions on our [Discord](https://discord.gg/9Q2xaN37tV) so th
 ```bash
 sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip
 ```
-
 {% endtab %}
 
 {% tab title="Arch" %}
@@ -66,9 +65,7 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 
 ![img.png](../../../../.gitbook/assets/build\_step\_two.png)
 
-
 * Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
-
 * Or you can use the code below to install `FLUTTER` manually on your linux system.
 
 ```bash
@@ -78,13 +75,16 @@ echo "export PATH=\$PATH:"`pwd`"/bin" >> ~/.profile
 export PATH="$PATH:`pwd`/bin"
 cd ..
 ```
+
 ![img.png](../../../../.gitbook/assets/flutter\_build\_step.png)
 
 * Run the setup script from the base directory
+
 ```bash
 cd appflowy
 ./frontend/scripts/install_dev_env/install_linux.sh
 ```
+
 ![img.png](../../../../.gitbook/assets/build\_step\_two\_script.png)
 
 ![img.png](../../../../.gitbook/assets/build\_step\_two\_warn\_success.png)
@@ -110,14 +110,12 @@ cd frontend
 ```bash
 cargo make --profile development-linux-x86_64 appflowy-sdk-dev 
 ```
-
 {% endtab %}
 
 {% tab title="Production" %}
 ```bash
 cargo make --profile production-linux-x86_64 appflowy-sdk-release
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -133,7 +131,6 @@ cargo make -p development-linux-x86_64 appflowy-linux-dev
 {% endtab %}
 
 {% tab title="Production" %}
-
 ```bash
 cargo make -p production-linux-x86_64 appflowy-linux
 ```
@@ -151,12 +148,12 @@ cd app_flowy/product/0.0.5/linux/Debug/AppFlowy
 ```shell
 ./app_flowy
 ```
+
 ![img.png](../../../../.gitbook/assets/build\_step\_four\_success.png)
 
 * A new window as shown below will show up after you run the application:
 
 ![img.png](../../../../.gitbook/assets/welcome\_screen.png)
-
 
 * If using a virtual machine
   * Run Linux GUI application through x11 on windows (use MobaXterm) for instance:

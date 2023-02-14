@@ -6,18 +6,13 @@ Message passing is a safer technique than shared memory or direct function acces
 
 ## Events
 
-AppFlowy's backend defines all the events and generates the event's [foreign function interface](https://en.wikipedia.org/wiki/Foreign\_function\_interface).
-Currently, AppFlowy supports **Dart** and **TS** event call.
+AppFlowy's backend defines all the events and generates the event's [foreign function interface](https://en.wikipedia.org/wiki/Foreign\_function\_interface). Currently, AppFlowy supports **Dart** and **TS** event call.
 
-Events are emitted in the frontend and are processed in the backend. Each event has its 
-own handler in the backend. Each event can carry a payload that is serialized using protobuf.
-This payload will be deserialized in the backend using the corresponding protobuf struct.
+Events are emitted in the frontend and are processed in the backend. Each event has its own handler in the backend. Each event can carry a payload that is serialized using protobuf. This payload will be deserialized in the backend using the corresponding protobuf struct.
 
-Please check out [this](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/event)
-if you want to know the details of the events.
+Please check out [this](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/backend/event) if you want to know the details of the events.
 
-
-![file : inter\_process\_communication.plantuml](../../../../uml/output/inter\_process\_commuciate-Events.svg)
+![file : inter\_process\_communication.plantuml](../../../../.gitbook/assets/inter\_process\_commuciate-Events.svg)
 
 For example, using `UserEventSignIn` to trigger event with passed-in parameter in the backend.
 
@@ -35,12 +30,9 @@ async function sendSignInEvent() {
 
 ## Notifications
 
-Notifications one-way messages that are best suited to communicate lifecycle events and state changes. 
-Notifications are triggered in the backend and received in the frontend. Each notification can carry payload
-that is serialized using protobuf. This payload will be deserialized in the frontend using the corresponding
-protobuf struct.
+Notifications one-way messages that are best suited to communicate lifecycle events and state changes. Notifications are triggered in the backend and received in the frontend. Each notification can carry payload that is serialized using protobuf. This payload will be deserialized in the frontend using the corresponding protobuf struct.
 
-![file : inter\_process\_communication.plantuml](../../../../uml/output/inter\_process\_commuciate-Notifications.svg)
+![file : inter\_process\_communication.plantuml](../../../../.gitbook/assets/inter\_process\_commuciate-Notifications.svg)
 
 For example, using `UserNotificationListener` to receive notifications when new user signs in.
 
