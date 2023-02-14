@@ -1,12 +1,12 @@
-# Database
+# SQLite Database
 
 AppFlowy use [SQLite](https://www.sqlite.org/index.html) as database and [Diesel](https://diesel.rs/) as [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational\_mapping).
 
-## The flowy-database
+## The flowy-sqlite
 
-The crate, flowy-database, contains the logic for creating the SQLite [schema](https://www.sqlite.org/schematab.html) and providing a shared kv storage. It is located in `frontend/rust-lib/flowy-database`.
+The crate, flowy-sqlite, contains the logic for creating the SQLite [schema](https://www.sqlite.org/schematab.html) and providing a shared kv storage. It is located in `frontend/rust-lib/flowy-sqlite`.
 
-![flowy-database.png](../../../../.gitbook/assets/flowy-database.png)
+![flowy-sqlite.png](assets/flowy-sqlite.png)
 
 The following section will guide you through how to create or update a schema. Before starting, I recommend checking out the [Diesel Getting Started](https://diesel.rs/guides/getting-started) if you don't know about diesel before. Make sure you install the diesel CLI tool. You can install it by running:
 
@@ -18,7 +18,7 @@ Create a new schema.
 
 ```shell
 /// Go to the working directory
-cd frontend/rust-lib/flowy-database/
+cd frontend/rust-lib/flowy-sqlite/
 
 /// Generate a new migration named user
 diesel migration generate user
@@ -66,7 +66,7 @@ diesel migration redo
 Ok, here we go. Everything is fine. After running the migration, the schema is automatically added to the `schema.rs`
 
 ```rust
-// flowy-database/src/schema.rs
+// flowy-sqlite/src/schema.rs
 table! {
     user_table (id) {
         id -> Text,
@@ -95,7 +95,7 @@ pub struct UserTable {
 Update an existing schema.
 
 ```shell
-cd frontend/rust-lib/flowy-database/
+cd frontend/rust-lib/flowy-sqlite/
 diesel migration generate user-add-icon
 ```
 
@@ -124,7 +124,7 @@ diesel migration redo
 After running the migration, the icon\_url is added to the user\_table schema automatically.
 
 ```rust
-// flowy-database/src/schema.rs
+// flowy-sqlite/src/schema.rs
 table! {
     user_table (id) {
         id -> Text,
@@ -200,13 +200,13 @@ diesel::update(user_table::table).set(&changeset);
 
 ## Architecture
 
-We use dependency injection to forbid the other crates directly dependencies on the **flowy-database** crate. Each crate defines their database [traits](https://doc.rust-lang.org/book/ch10-02-traits.html) to meet their need.
+We use dependency injection to forbid the other crates directly dependencies on the **flowy-sqlite** crate. Each crate defines their database [traits](https://doc.rust-lang.org/book/ch10-02-traits.html) to meet their need.
 
 > Traits are a name given to a group of functions that a data structure can implement. I think using traits to isolate dependencies is a very good practice.
 
-The `flowy-user` dependencies on the `flowy-database` crate directly. It initializes the database connection when the Application launch or when the user switches account. The `flowy-grid` defines the `GridDatabase` trait and the `flowy-folder` defines the `WorkspaceDatabase` trait, these two traits are implemented in the `flowy-sdk` crate.
+The `flowy-user` dependencies on the `flowy-sqlite` crate directly. It initializes the database connection when the Application launch or when the user switches account. The `flowy-grid` defines the `GridDatabase` trait and the `flowy-folder` defines the `WorkspaceDatabase` trait, these two traits are implemented in the `flowy-sdk` crate.
 
-> `flowy-sdk` is a crate that aggregates all the crates and resolves each crate's dependencies. `flowy-database` is a crate that handles all the grid operations
+> `flowy-sdk` is a crate that aggregates all the crates and resolves each crate's dependencies. `flowy-sqlite` is a crate that handles all the grid operations
 >
 > `flowy-folder` is a crate that handles all the folder operations. The folder represents the concepts that include the workspace, app, and view.
 
