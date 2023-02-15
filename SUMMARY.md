@@ -80,6 +80,7 @@
   * [⛱ GSoC 2023](essential-documentation/contribute-to-appflowy/gsoc-2023/README.md)
     * [🧩 Idea List](essential-documentation/contribute-to-appflowy/gsoc-2023/idea-list.md)
     * [📗 Contributor Guidance](essential-documentation/contribute-to-appflowy/gsoc-2023/contributor-guidance.md)
+* [⌨ Shortcuts](essential-documentation/shortcuts.md)
 
 ## Design Documentation
 
