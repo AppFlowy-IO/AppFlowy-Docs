@@ -1,6 +1,5 @@
 # ⌨ Shortcuts
-
-
+All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) are listed below. You may scroll or use `Ctrl+F` to search what you are looking for.
 
 <h1>Basics</h1>
     
@@ -165,7 +164,7 @@
             <td>Move cursor top</td>
             <td>Ctrl</td>
             <td>Arrow up</td>
-            <td>-</td>
+            <td></td>
         </tr>
         <tr style="text-align: center">
             <td>Move cursor bottom</td>
@@ -177,13 +176,13 @@
             <td>Move cursor start</td>
             <td>Ctrl</td>
             <td>Arrow Left</td>
-            <td>-</td>
+            <td></td>
         </tr>
         <tr style="text-align: center">
             <td>Move cursor end</td>
             <td>Ctrl</td>
             <td>Arrow Right</td>
-            <td>-</td>
+            <td></td>
         </tr>
         <tr style="text-align: center">
             <td>Cursor top select</td>
@@ -210,7 +209,7 @@
             <td>Cursor begin select</td>
             <td>Shift</td>
             <td>Home</td>
-            <td>-</td>
+            <td></td>
         </tr>
           <tr style="text-align: center">
             <td>Cursor end select</td>
@@ -225,7 +224,7 @@
             <td>Cursor end select</td>
             <td>Shift</td>
             <td>End</td>
-            <td>-</td>
+            <td></td>
         </tr>
 </table>
 
@@ -291,7 +290,7 @@
         <tr style="text-align: center">
             <td>Double Stars to Bold</td>
             <td>Shift</td>
-            <td>*</td>
+            <td>Asterisk</td>
             <td></td>
         </tr>
         <tr style="text-align: center">
@@ -322,10 +321,10 @@
 
 Description | Key#1| Key#2 | Key #3 | 
 | :-----: | :---: | :---: | :---: | 
-Cursor up select | Shift | Arrow Up | - |
-Cursor down select | Shift | Arrow Down | - |
-Cursor left select | Shift | Arrow Left | - |
-Cursor right select | Shift | Arrow Right | - |
+Cursor up select | Shift | Arrow Up |  |
+Cursor down select | Shift | Arrow Down |  |
+Cursor left select | Shift | Arrow Left |  |
+Cursor right select | Shift | Arrow Right |  |
 Cursor left word select | Shift | Alt | Arrow Left |
 Cursor right word select | Shift | Alt | Arrow Right |
-Cursor left word delete| Ctrl | Backspace | - |
+Cursor left word delete| Ctrl | Backspace |  |
