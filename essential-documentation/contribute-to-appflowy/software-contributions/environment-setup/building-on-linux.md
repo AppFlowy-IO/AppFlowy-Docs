@@ -100,29 +100,12 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 ```bash
 cd frontend
-```
-
-* `Optionally if you want to Build the development AppFlowy`
-
-{% tabs %}
-{% tab title="Development" %}
-```bash
 cargo make --profile development-linux-x86_64 appflowy-core-dev 
 ```
-{% endtab %}
-
-{% tab title="Production" %}
-```bash
-cargo make --profile production-linux-x86_64 appflowy
-```
-{% endtab %}
-{% endtabs %}
 
 ![img.png](../../../../.gitbook/assets/build\_step\_optional\_three\_success.png)
 
 After building the AppFlowy. You'll find the binary in app\_flowy/product/linux/AppFlowy/
-
-![img.png](../../../../.gitbook/assets/build\_step\_three\_success.png)
 
 ## Step 4: Run the application
 
