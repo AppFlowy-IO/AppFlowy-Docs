@@ -38,10 +38,9 @@ You should fork the code instead if you wish to submit code to AppFlowy. You'll 
 {% endhint %}
 
 ```shell
-git clone https://github.com/AppFlowy-IO/appflowy.git
+git clone https://github.com/AppFlowy-IO/AppFlowy.git
 ```
 
-![img.png](../../../../.gitbook/assets/build\_step\_one.png)
 
 ## Step 2: Install your build environment
 
@@ -103,39 +102,25 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 cd frontend
 ```
 
-* `Optionally if you want to Build appflowy-sdk-dev (dart-ffi)`
+* `Optionally if you want to Build the development AppFlowy`
 
 {% tabs %}
 {% tab title="Development" %}
 ```bash
-cargo make --profile development-linux-x86_64 appflowy-sdk-dev 
+cargo make --profile development-linux-x86_64 appflowy-core-dev 
 ```
 {% endtab %}
 
 {% tab title="Production" %}
 ```bash
-cargo make --profile production-linux-x86_64 appflowy-sdk-release
+cargo make --profile production-linux-x86_64 appflowy
 ```
 {% endtab %}
 {% endtabs %}
 
 ![img.png](../../../../.gitbook/assets/build\_step\_optional\_three\_success.png)
 
-* Build AppFlowy. You'll find the binary in app\_flowy/product/linux/AppFlowy/
-
-{% tabs %}
-{% tab title="Development" %}
-```
-cargo make -p development-linux-x86_64 appflowy-linux-dev
-```
-{% endtab %}
-
-{% tab title="Production" %}
-```bash
-cargo make -p production-linux-x86_64 appflowy-linux
-```
-{% endtab %}
-{% endtabs %}
+After building the AppFlowy. You'll find the binary in app\_flowy/product/linux/AppFlowy/
 
 ![img.png](../../../../.gitbook/assets/build\_step\_three\_success.png)
 
