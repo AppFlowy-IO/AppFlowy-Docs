@@ -155,16 +155,3 @@ cd app_flowy/product/0.0.5/linux/Debug/AppFlowy
 ![img.png](../../../../.gitbook/assets/launch\_appflowy.png)
 
 If you encounter any issues, have a look at [Troubleshooting](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
-
-## Building in release mode
-
-1. Go to the AppFlowy/frontend/ directory.
-2. Run the following command to create the binary.
-
-```bash
-cargo make --profile production-linux-x86 appflowy
-```
-
-The scripts are located in the AppFlowy/frontend/Makefile.toml file.
-
-The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/linux/Release/AppFlowy/`.
