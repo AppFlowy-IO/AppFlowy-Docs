@@ -10,7 +10,7 @@ The crate, flowy-sqlite, contains the logic for creating the SQLite [schema](htt
 
 The following section will guide you through how to create or update a schema. Before starting, I recommend checking out the [Diesel Getting Started](https://diesel.rs/guides/getting-started) if you don't know about diesel before. Make sure you install the diesel CLI tool. You can install it by running:
 
-> cargo install diesel\_cli --no-default-features --features SQLite
+> cargo install diesel\_cli --no-default-features --features sqlite
 
 ### Create schema
 
@@ -170,7 +170,7 @@ let user: UserTable = dsl::user_table
 Check out [this](https://diesel.rs/guides/all-about-inserts.html) for more information about inserting a record.
 
 ```rust
-// user: instance of the UserTable 
+// user: instance of the UserTable
 let _ = diesel::insert_into(user_table::table)
             .values(user)
             .execute(conn)?;
@@ -194,7 +194,7 @@ pub struct UserTableChangeset {
 Apply the changeset to the database
 
 ```rust
-// changeset: instance of the UserTableChangeset 
+// changeset: instance of the UserTableChangeset
 diesel::update(user_table::table).set(&changeset);
 ```
 
