@@ -23,7 +23,9 @@ A board using the [database](../frontend/) as its data storage.
 
 ## Group
 
-The UML of the classes used in grouping shown in the following picture. ![file : database\_view.plantuml](../../../../../uml/output/board\_view-Board\_view\_classes.svg)
+The UML of the classes used in grouping shown in the following picture.
+
+![file : database\_view.plantuml](../../../../../uml/output/board\_view-Board\_view\_classes.svg)
 
 ### Generation
 

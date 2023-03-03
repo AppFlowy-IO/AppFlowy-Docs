@@ -1,0 +1,30 @@
+@startuml
+skinparam classFontStyle Bold
+skinparam ActivityBackgroundColor Silver
+skinparam ActivityBorderColor DimGray
+'left to right direction
+
+interface DatabaseViewData #FFCE00 {}
+class DatabaseViews #FFCE00
+class DatabaseViewEditor #FFCE00
+class DatabaseViewRevisionPad #FFCE00
+
+DatabaseManager "1" *-- "*" DatabaseEditor
+
+DatabaseEditor --> DatabaseRevisionPad
+DatabaseRevisionPad --> DatabaseRevision
+
+DatabaseEditor -->  DatabaseViews
+DatabaseViews "1" *-- "*" DatabaseViewEditor
+DatabaseViewEditor --> DatabaseViewData
+note left
+Provide the interfaces for
+getting/setting database data
+end note
+DatabaseViewEditor --> DatabaseViewRevisionPad
+
+
+DatabaseEditor --> DatabaseBlockManager
+DatabaseBlockManager "1" *-- "*" DatabaseBlockEditor
+DatabaseBlockEditor --> DatabaseBlockRevisionPad
+@enduml
