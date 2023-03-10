@@ -125,6 +125,8 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 ****
 
+9. **More ideas to come!**
+
 ### CI tools&#x20;
 
 **1. Report Binary Size**
