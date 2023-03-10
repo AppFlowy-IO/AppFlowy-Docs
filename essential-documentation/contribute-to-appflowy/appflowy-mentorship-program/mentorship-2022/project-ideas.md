@@ -99,6 +99,30 @@ Skills Required: Flutter
 
 Mentor: [Lucas](https://github.com/LucasXu0)
 
+
+
+7. **AI writers**&#x20;
+
+Utilize AI models to assist in writing. For example, create a summary of selected text areas or brainstorm ideas given a specific prompt.
+
+Difficulty: Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
+
+
+8. **AI designers**
+
+Utilize AI models to assist in designing a page. For example, generate an image from text or auto makeover a page layout to make it more visually appealing
+
+Difficulty: Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
 ****
 
 ### CI tools&#x20;
