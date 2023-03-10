@@ -125,7 +125,25 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 ****
 
-9. **More ideas to come!**
+9. **Outline Plugins for AppFlowy Editor**
+
+By adding the outline plugins to the document, a list of anchor links to the headings within the document will be automatically generated.
+
+Expected Outcome:&#x20;
+
+* insert a outline via the slash '/' command
+* convert highlighted lines into a outline
+* the content of the outline will be generated automatically based on the document
+* click on the content of the outline will take users directly to the corresponding heading
+* different levels of headings are indented differently. For example, H1 will have no indentation, while H2 will be indented once, and so on.
+
+Difficulty: Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
+10. **More ideas to come!**
 
 ### CI tools&#x20;
 
