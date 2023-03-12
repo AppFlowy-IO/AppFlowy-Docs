@@ -21,11 +21,8 @@
 {% hint style="danger" %}
 **There is a known issue with Ubuntu 22.04, Fedora 37, and PopOS 22.04:**
 
-
-
 `Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory.`\
-``\
-``The issue can be fixed by installing the required missing libraries:
+`\` The issue can be fixed by installing the required missing libraries:
 
 ```bash
 # Fedora Workstation
@@ -77,7 +74,7 @@ sudo pacman -S git
 You should fork the code instead if you wish to submit code to AppFlowy. You will find information on that in [Setting Up Your Repositories](../submitting-code/setting-up-your-repositories.md).
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-51-27 (1).png" alt=""><figcaption><p>Image: Cloning the source  from the Github repository. </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-51-27.png" alt=""><figcaption><p>Image: Cloning the source from the Github repository.</p></figcaption></figure>
 
 ### Step 2: Install your build environment
 
@@ -103,7 +100,7 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-32-41.png" alt=""><figcaption><p>Image: Installing prerequisites on Ubuntu.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-32-41 (1).png" alt=""><figcaption><p>Image: Installing prerequisites on Ubuntu.</p></figcaption></figure>
 
 #### **Install flutter (three different methods):**
 
@@ -144,7 +141,7 @@ source ~/.bashrc
 If you are not using **bash**, check the official [asdf guide](https://asdf-vm.com/guide/getting-started.html) to learn how to set up asdf for your shell.
 {% endhint %}
 
-3. Install  flutter via asdf and set it as your local runtime at the AppFlowy source directory (`xx/AppFlowy/`). &#x20;
+3. Install flutter via asdf and set it as your local runtime at the AppFlowy source directory (`xx/AppFlowy/`).
 
 ```bash
 cd AppFlowy
@@ -177,12 +174,12 @@ cd AppFlowy
 source ~/.bashrc
 ```
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 22-43-35.png" alt=""><figcaption><p>Image: Running script  install_linux.sh inside <code>xx/AppFlowy/frontend/scripts/install_dev_env/</code>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 22-43-35.png" alt=""><figcaption><p>Image: Running script install_linux.sh inside <code>xx/AppFlowy/frontend/scripts/install_dev_env/</code>.</p></figcaption></figure>
 
 {% hint style="warning" %}
-**If you get this following warning (image shown below** 👇**):**
+**If you get this following warning (image shown below** 👇\*\*):\*\*
 
-****
+***
 
 `Warning: Pub installs executables into $HOME/.pub-cache/bin, which is not on your path. You can fix that by adding this to your shell's config file (.bashrc, .bash_profile, etc.):`
 
@@ -251,12 +248,12 @@ cd appflowy_flutter/product/[version number in x.x.x]/linux/Debug/AppFlowy
 {% hint style="info" %}
 If you do not know the version number for the AppFlowy binary that you have built, please use your terminal shells' tab completion, or type and enter the`ls`(list) command to reveal the name of folder which is the version number you are building.
 
-**The current version of AppFlowy is 0.1.0.**&#x20;
+**The current version of AppFlowy is 0.1.0.**
 {% endhint %}
 
 A new window as shown below will show up after you run the application:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (2).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
 
 If using a virtual machine, run the Linux GUI application through x11 on windows (use MobaXterm) for instance:
 
@@ -266,7 +263,7 @@ If using a virtual machine, run the Linux GUI application through x11 on windows
 
 {% hint style="warning" %}
 **Do not use the flatpak distribution of VS Code!**\
-****The flatpak VS Code is sandboxed and uses an isolated shell environment, and cannot access any binaries or libraries installed in your system, including your default system shell.
+\*\*\*\*The flatpak VS Code is sandboxed and uses an isolated shell environment, and cannot access any binaries or libraries installed in your system, including your default system shell.
 {% endhint %}
 
 1. Open the `frontend` folder located at `xx/AppFlowy/` with VS Code.
