@@ -253,7 +253,7 @@ If you do not know the version number for the AppFlowy binary that you have buil
 
 A new window as shown below will show up after you run the application:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (2).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (2) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
 
 If using a virtual machine, run the Linux GUI application through x11 on windows (use MobaXterm) for instance:
 

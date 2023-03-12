@@ -1,4 +1,4 @@
-# 👾 Test
+# 👾 Unit Test
 
 ## Introduction
 
@@ -43,7 +43,7 @@ cargo make build-test-lib
 
 After building the Backend library, you can click the `Run|Debug` button to run the test.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Run all the tests
 
