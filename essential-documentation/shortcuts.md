@@ -69,11 +69,11 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 ## Selection
 
 |        Description       | Key#1 |    Key#2    |    Key #3   |
-| :----------------------: | :---: | :---------: | :---------: |
-|     Cursor up select     | Shift |   Arrow Up  |             |
-|    Cursor down select    | Shift |  Arrow Down |             |
-|    Cursor left select    | Shift |  Arrow Left |             |
-|    Cursor right select   | Shift | Arrow Right |             |
-|  Cursor left word select | Shift |     Alt     |  Arrow Left |
-| Cursor right word select | Shift |     Alt     | Arrow Right |
-|  Cursor left word delete |  Ctrl |  Backspace  |             |
+| ----------------------   | ---   | ---------   | ---------   |
+| Cursor up select         | Shift | Arrow Up    |             |
+| Cursor down select       | Shift | Arrow Down  |             |
+| Cursor left select       | Shift | Arrow Left  |             |
+| Cursor right select      | Shift | Arrow Right |             |
+| Cursor left word select  | Shift | Alt         | Arrow Left  |
+| Cursor right word select | Shift | Alt         | Arrow Right |
+| Cursor left word delete  | Ctrl  | Backspace   |             |
