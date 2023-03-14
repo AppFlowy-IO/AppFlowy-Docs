@@ -43,7 +43,7 @@
     * [Frontend](essential-documentation/contribute-to-appflowy/architecture/frontend/README.md)
       * [Tauri](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend-tauri/README.md)
         * [🗺 CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend-tauri/codemap.md)
-      * [Futter](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/README.md)
+      * [Flutter](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/README.md)
         * [🗺 CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/codemap.md)
         * [🧮 Grid](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/grid.md)
         * [⚙ Setting](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/setting.md)
