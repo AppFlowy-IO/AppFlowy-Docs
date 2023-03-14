@@ -35,23 +35,23 @@ defined [here](https://appflowy.gitbook.io/docs/essential-documentation/contribu
 
 Below you will find some quick definitions about the database.
 
-|              |                                                                                        |
-| ------------ | -------------------------------------------------------------------------------------- |
-| Database     | A Database struct contains the list of fields and rows                                 |
-| Field        | A Field represents a column of the database. Different field has different `FieldType` |
-| FieldType    | A `FieldType` represents the type of column.                                           |
-| TypeOption   | A `TypeOption` represents the configuration of the `Field`.                            |
-| Row          | A `Row` represents a group of related cells.                                           |
-| Cell         | A `Cell` contains the data of the corresponding `FieldType`                            |
-| TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                        |
+|              |                                                                                          |
+| ------------ | ---------------------------------------------------------------------------------------- |
+| Database     | A Database struct that contains the list of fields and rows                              |
+| Field        | A Field represents a column of the database. Different fields has different `FieldType`s |
+| FieldType    | A `FieldType` represents the type of column.                                             |
+| TypeOption   | A `TypeOption` represents the configuration of the `Field`.                              |
+| Row          | A `Row` represents a group of related cells.                                             |
+| Cell         | A `Cell` contains the data of the corresponding `FieldType`                              |
+| TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                          |
 
 ![file : database_view.plantuml](../../../../../uml/output/database_view_classes-Database_classes_UML.svg)
 
 ### Database
 
-A database is just a collection of rows and columns shown below picture. It allows to create more rows and columns.
-Each row contains a list of cells, each cell corresponds to a specific column. Which means the number of cells is equal to
-the number of columns in a row. Each column, aka `Field`, contains the configuration of how to format the cell.
+A database is a collection of rows and columns, as shown in the picture below. It allows for the creation of more rows and columns.
+Each row contains a list of cells and each cell corresponds to a specific column. The number of cells is equal to
+the number of columns in a row. Each column, aka the `Field`, contains the configuration of how to format the cell.
 
 ![database.png](assets/database.png)
 
@@ -59,7 +59,7 @@ the number of columns in a row. Each column, aka `Field`, contains the configura
 
 A Field represents a column of the database. It has a property called `field_ty`, which is an enum defined in FieldType.
 The `FieldType` defines the kind of data contained in a column. Such as dates, numbers, text, multi-select, etc. This data
-are stored in the `typeOptions` property, which is a Map. The key is the `FieldType`, and the value is the `TypeOption`.
+is stored in the `typeOptions` property, which is a Map. The key is the `FieldType`, and the value is the `TypeOption`.
 
 The current field type of the column is determined by the `field_ty` property. As shown in the picture below. There
 are two Fields in the database.
@@ -75,7 +75,7 @@ A `FieldType` represents the type of the `Field`. Currently, AppFlowy supports `
 
 ### TypeOption
 
-A `TypeOption` represents the configuration of the `Field`. A Certain `TypeOption`s have user-defined options such as color,
+A `TypeOption` represents the configuration of the `Field`. Certain `TypeOption`s have user-defined options such as color,
 date format, number format, or a list of values for a multi-select list.
 
 For example, A `Field` with `SingleSelect` field type contains the name and a list of options as shown in the picture below.
