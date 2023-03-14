@@ -26,7 +26,7 @@ git clone https://github.com/AppFlowy-IO/appflowy.git
   * In section "All Downloads" => "Tools for Visual Studio 2022" => "Build Tools for Visual Studio 2022".
   * Launch `vs_BuildTools.exe` to install.
     * Choose "Desktop Development with C++"
-* Install vcpkg according to [this page](https://github.com/microsoft/vcpkg#quick-start-windows). Make sure to add vcpkg installation folder to your PATH environment variable.
+* Install vcpkg according to [this page](https://github.com/microsoft/vcpkg#quick-start-windows). Make sure to add vcpkg installation folder to your [PATH environment variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/).
 * Install flutter according to [this page](https://docs.flutter.dev/get-started/install/windows).
 * Make sure to enable the flutter stable channel
 
