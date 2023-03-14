@@ -26,8 +26,8 @@ and these views can be converted to each other.
 ## Events and notifications
 
 The database views use [events and notifications](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication) to exchange the data between the frontend and backend.
-When trigger an event, there might be some notifications sent back to the frontend asynchronously. The database events are
-defined in [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/database-view/events).
+When triggering an event, there may be notifications sent to the frontend asynchronously. The database events are
+defined [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/database-view/events).
 
 ![file : database_view.plantuml](../../../../../uml/output/database_view-Events___Notifications.svg)
 
