@@ -79,7 +79,7 @@
         * [Table](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/table.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
-* [🪄 AppFlowy x OpenAI](essential-documentation/appflowy-x-openai.md)
+* [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 
 ## Design Documentation
 
