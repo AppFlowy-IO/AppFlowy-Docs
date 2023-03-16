@@ -43,15 +43,20 @@ Bring the power of AI into your AppFlowy pages, smarter and faster!
 
 
 
-### What are the current limitations of AppFlowy + OpenAI?
-
-
-
 ### What about privacy?
 
+AppFlowy, the application, sends the encrypted HTTPS requests with data that the user explicitly provided for making OpenAI API calls to only one domain, openai.com. The OpenAI [features](appflowy-x-openai.md#what-are-the-current-functions-of-openai-in-appflowy) only connect to the specified domain: openai.com
+
+The OpenAI key you provided in `Settings` is stored on your local device where you installed AppFlowy.
+
+Since AppFlowy is 100% open-source, you can confirm our practices via the [codebase.](https://github.com/AppFlowy-IO/AppFlowy)
+
+We encourage AppFlowy users to review how [OpenAI](https://openai.com/) handles their data before using their services.
 
 
-### How can I provide feedback?
+
+### How can I provide feedback or help?
 
 1. You can report bugs and submit feature requests via [GitHub Issues](https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose)
 2. If you would like to get support or create a discussion, please join our [Discord](https://discord.gg/9Q2xaN37tV) server
+3. Please share with us how you benefit from the OpenAI features in AppFlowy on [GitHub Discussions](https://github.com/AppFlowy-IO/AppFlowy/discussions)
