@@ -6,9 +6,9 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 
 ### What are the current functions of OpenAI in AppFlowy?
 
-* OpenAI Writer
-* Summarize
-* Fix spelling
+* **OpenAI Writer**: Ask AI to write anything for you. Let AI draft it for you whenever you're starting something new.
+* **Summarize**: Auto-generate a nice summary for an article, your proposal, or anything else.
+* **Fix spelling**: With one click away, catch and fix misspelled words instantly.
 
 ### What's coming up next?
 
@@ -37,8 +37,6 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-###
-
 ### What are ways I can use OpenAI in AppFlowy?
 
 People who embrace the latest AI technologies will quickly gain an edge.
@@ -59,8 +57,6 @@ The OpenAI key you provided in `Settings` is stored on your local device where y
 Since AppFlowy is 100% open-source, you can confirm our practices via the [codebase.](https://github.com/AppFlowy-IO/AppFlowy)
 
 We encourage AppFlowy users to review how [OpenAI](https://openai.com/) handles their data before using their services.
-
-
 
 ### How can I provide feedback or help?
 
