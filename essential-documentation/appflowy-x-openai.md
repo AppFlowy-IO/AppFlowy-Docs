@@ -1,10 +1,8 @@
----
-description: This page is under construction
----
-
 # 🪄 AppFlowy + OpenAI
 
-Bring the power of AI into your AppFlowy pages, smarter and faster!
+Bring the power of next-generation AI into your AppFlowy pages, supercharging productivity!
+
+OpenAI is a research organization, known for developing several cutting-edge AI systems, such as GPT (Generative Pre-trained Transformer) and DALL-E.
 
 ### What are the current functions of OpenAI in AppFlowy?
 
@@ -21,14 +19,21 @@ Bring the power of AI into your AppFlowy pages, smarter and faster!
 
 ### How to get started?
 
-1. You’ll need an [OpenAI](https://openai.com/) account and an API key. You can sign up [here](https://chat.openai.com/).
-2. Go to Settings --> Users --> OpenAI Key --> Enter your API key
+1. You’ll need an [OpenAI](https://openai.com/) account and an API key. You can sign up [here](https://platform.openai.com/signup). It offers a FREE trial.
+2. After creating an account, you can create a secret API key [here](https://platform.openai.com/account/api-keys).
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+3. Copy the secret key --> Go to Settings --> Users --> OpenAI Key --> Enter your API key
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 3. Restart AppFlowy
-4. Type the slash `/auto` command to use OpenAI Writer
-5. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize` and `Fix spelling`
+4. Type the slash `/open` command to use `OpenAI Writer`
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+3. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize` and `Fix spelling`
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,12 +41,14 @@ Bring the power of AI into your AppFlowy pages, smarter and faster!
 
 ### What are ways I can use OpenAI in AppFlowy?
 
+People who embrace the latest AI technologies will quickly gain an edge.
+
 1. Get your questions answered instantly within the app
 2. Ask AI to write anything for you and brainstorm ideas
 3. Summarize notes and articles to save time
 4. Fix spelling to polish your writing
 
-
+<mark style="color:red;">Warning: AI responses can be misleading, inaccurate, or biased.</mark>
 
 ### What about privacy?
 
