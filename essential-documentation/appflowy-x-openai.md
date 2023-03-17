@@ -1,6 +1,6 @@
 # 🪄 AppFlowy + OpenAI
 
-Bring the power of next-generation AI into your AppFlowy pages, supercharging productivity!
+Bring the power of the next-generation AI into your AppFlowy pages, supercharging productivity!
 
 OpenAI is a research organization, known for developing several cutting-edge AI systems, such as GPT (Generative Pre-trained Transformer) and DALL-E.
 
