@@ -16,6 +16,7 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 * Make shorter or longer
 * Text-to-image generator
 * Integrate more AI service providers
+* And many more to come!
 
 ### How to get started?
 
@@ -50,7 +51,12 @@ People who embrace the latest AI technologies will quickly gain an edge.
 
 ### What about privacy?
 
-AppFlowy, the application, sends the encrypted HTTPS requests with data that the user explicitly provided for making OpenAI API calls to only one domain, openai.com. The OpenAI [features](appflowy-x-openai.md#what-are-the-current-functions-of-openai-in-appflowy) only connect to the specified domain: openai.com
+AppFlowy, the application, sends the encrypted HTTPS requests with data that the user explicitly provided for making OpenAI API calls listed below to only one domain, openai.com. The OpenAI [features](appflowy-x-openai.md#what-are-the-current-functions-of-openai-in-appflowy) only connect to the specified domain: openai.com
+
+Here are the OpenAI API calls triggered by our OpenAI [features](appflowy-x-openai.md#what-are-the-current-functions-of-openai-in-appflowy):
+
+* [https://api.openai.com/v1/edits](https://api.openai.com/v1/edits)
+* [https://api.openai.com/v1/completions](https://api.openai.com/v1/completions)
 
 The OpenAI key you provided in `Settings` is stored on your local device where you installed AppFlowy.
 
