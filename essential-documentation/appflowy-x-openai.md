@@ -29,12 +29,12 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-3. Restart AppFlowy
-4. Type the slash `/open` command to use `OpenAI Writer`
+4. Restart AppFlowy
+5. Type the slash `/open` command to use `OpenAI Writer`
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize` and `Fix spelling`
+6. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize` and `Fix spelling`
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
