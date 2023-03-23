@@ -1,5 +1,9 @@
 # Mac / Windows / Linux Packages
 
+## Windowns install 
+
+You can download the executable directly from [Github](https://github.com/AppFlowy-IO/appflowy/releases)
+
 ## Linux Install
 
 AppFlowy is available on [Flathub](https://flathub.org/apps/details/io.appflowy.AppFlowy).
