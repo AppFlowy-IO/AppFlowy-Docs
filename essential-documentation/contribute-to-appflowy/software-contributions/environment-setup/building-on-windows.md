@@ -95,6 +95,12 @@ perl --version
 
 * Install Dart extension for Visual Studio Code
 
+* Enable the Dart `protoc_plugin`
+
+```shell
+dart pub global activate protoc_plugin
+```
+
 * For Windows 11: Activate Developer Mode
   * Go to Settings > Privacy & Security > switch ON Developer Mode
 
