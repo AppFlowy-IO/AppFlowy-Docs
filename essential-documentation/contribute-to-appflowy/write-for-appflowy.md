@@ -2,58 +2,122 @@
 
 This page is under construction
 
-**Are you an AppFlowy enthusiast? Join the Write for AppFlowy program to help other AppFlowy users and builders, get paid, and build credibility.**
+### **Are you an AppFlowy enthusiast? Help other AppFlowy users and builders, get paid, and build your reputation as a writer.**
 
-Whether you’re an expert on software or product or a young student just starting, there is knowledge you can share and benefit the entire AppFlowy community. Topics that would help the community the most at the current stage are how-tos, specific use cases, and software development related to AppFlowy’s codebase. We’re looking for both tutorials and deep dives. You get paid for articles published on [AppFlowy Binary](https://blog-appflowy.ghost.io/) and pages posted to [the AppFlowy documentation](https://appflowy.gitbook.io/docs/essential-documentation/start-here/welcome-to-appflowy). Your work will be published under your name and a link to your social profile. We pay anywhere between $50 - $350 for content created. We also look for editors with proof of track record to help with style and grammar (link to more details).
+Whether you’re a software development expert, an AppFlowy power user, or just a student just starting to learn how to program, there is knowledge you can share that will benefit the entire AppFlowy community.
 
-#### How does it work?
+The types of articles we’re currently looking for include:&#x20;
 
-1. Join our Discord [channel](https://discord.gg/s9yQttsP53) and create a post. Your post should include the topic you want to cover and the outline. The topic can be your own or select an existing GitHub issue tagged with “[write-for-appflowy](https://github.com/AppFlowy-IO/AppFlowy/labels/write%20for%20appflowy)”.
-2. Once you create a post, the AppFlowy team will review it. It may take a few days or weeks for us to review. If we shortlist your topic, we will work with you to refine your outline and agree on an informative and engaging final topic. Then we will create a GitHub issue for the topic and assign the issue to you.
-3. After you finish the first draft, you are encouraged to get feedback from the AppFlowy team and a few community members who are your article’s target audience. You should be aware that not every submitted article will be published.
-4. Once your article is reviewed and published on our blog, you can submit your invoice to get paid via [Deel](https://www.deel.com/). But that’s not all - we’ll also promote your work on our social media channels, providing greater exposure for your work.
-5. Ongoing support is required. You should promptly respond to queries about your published work. How-to guides should remain up-to-date. We may archive your how-to guides if it’s not up-to-date given that our product is still under rapid development and may evolve pretty quickly.
+* How-tos&#x20;
+* Discussions about specific use cases
+* Software development related to AppFlowy’s codebase
 
-#### What kind of content are we looking for authors?
+You will be paid for articles published on[ AppFlowy Binary](https://blog-appflowy.ghost.io/) and pages posted to[ the AppFlowy documentation](https://appflowy.gitbook.io/docs/essential-documentation/start-here/welcome-to-appflowy). We pay anywhere between $50 - $350 for content created.
 
-1. Write a how-to guide explaining some of AppFlowy’s features. This can be from the development or the product user perspective.
-2. Share the specific use cases you have with AppFlowy. We are eager to know what you use it for and how other people can borrow your ideas to get similar benefits you have gained.
-3. Engineering topics related to AppFlowy always excite us. In particular, we love deep dives or tutorials that lower junior developers' barriers to participating in our open-source projects.
+Your work will be published under your name with a link to the relevant social profile of your choosing.
+
+We are also looking for editors with a proven track record to help with style and grammar (link to more details).
+
+
+
+### How does it work?
+
+#### Post to Discord About Your Topic
+
+First, join our Discord[ channel](https://discord.gg/s9yQttsP53) and create a post. Your post should include the topic you want to cover and an outline. The topic can be your own or select an existing GitHub issue tagged with “[write-for-appflowy](https://github.com/AppFlowy-IO/AppFlowy/labels/write%20for%20appflowy)”.
+
+#### Wait Approval on the Topic
+
+Once you create a post, the AppFlowy team will review it. It may take a few days or weeks for us to review.&#x20;
+
+If we shortlist your topic, we will work with you to refine the scope and outline of the article to ensure the result is informative and engaging.&#x20;
+
+We will then create a GitHub issue for the topic and assign the issue to you.
+
+#### Get Feedback
+
+After you finish the first draft, you are encouraged to get feedback from the AppFlowy team and a few community members who are your article’s target audience.&#x20;
+
+You should be aware that not every submitted article will be published.
+
+#### Publication of Your Article
+
+Once your article is reviewed and published on our blog, you can submit your invoice to get paid via[ Deel](https://www.deel.com/).&#x20;
+
+But that’s not all — we’ll also promote your work on our social media channels, providing greater exposure for your work.
+
+#### Ongoing Support
+
+Ongoing support is required. You should promptly respond to queries about your published work. How-to guides should remain up-to-date.&#x20;
+
+We expect that you will provide support for at least 30 days after your article is published. Future engagements will be contingent on how well existing articles are supported.
+
+We may archive your how-to guides if it’s not up-to-date given that our product is still under rapid development and may evolve pretty quickly.
+
+
+
+### What kind of content are we looking for authors?
+
+#### How-to-Guides
+
+Write a how-to guide explaining one of AppFlowy’s features. This can be from the development or the end-user perspective.
+
+#### Specific Use Cases
+
+Share the specific use cases you have for AppFlowy.&#x20;
+
+We are eager to know what you use AppFlowy for and how other people can borrow your ideas to gain similar benefits.
+
+#### Engineering Topics
+
+Engineering topics related to AppFlowy always excite us.&#x20;
+
+We love deep dives or tutorials that lower junior developers' barriers to participating in our open-source projects.
+
+
 
 ### FAQs
 
-#### Where do I share my drafts?
+#### 1. Where Do I Share My Drafts?
 
-We use GitHub to collaborate. Once your topic is approved, a page will be created for you to work on in [this repo](https://github.com/AppFlowy-IO/AppFlowy-Docs). When you are ready to share your draft, submit a pull request to the page. We’ll provide feedback on your pull request. If you are not familiar with GitHub, don’t worry. We’ll guide you through.
+We use GitHub to collaborate.&#x20;
 
-#### How much do I get paid?
+Once your topic is approved, a page will be created for you to work on in[ this repo](https://github.com/AppFlowy-IO/AppFlowy-Docs).
 
-| Categories           | Words | Payment     |
-| -------------------- | ----- | ----------- |
-| How-to guides        | <800  | $50         |
-| How-to guides        | >800  | $100        |
-| Use cases            | <1300 | $100        |
-| Use cases            | >1300 | $150        |
-| Engineering topics\* | -     | $200 - $350 |
+When you are ready to share your draft, submit a pull request to the page. We’ll provide feedback on your pull request.&#x20;
 
-* Engineering topics will not be paid by word count; instead, it will depend on your article's technical excellence.
+If you are not familiar with GitHub, don’t worry. We’ll guide you through.
 
-#### Can I cross-post the article?
+#### 2. How Much Do I Get Paid?
 
-Yes, you can cross-post the article on other platforms like Medium or your blog as long as you can add a canonical link to the article URL.
+| Categories         | Payment     |
+| ------------------ | ----------- |
+| How-to guides      | $50         |
+| Use cases          | $100        |
+| Engineering topics | $100 - $350 |
 
-#### Can I write in languages other than English?
+#### 3. Can I Cross-Post the Article?
+
+Yes, you can cross-post the article on other platforms like Medium or your blog as long as you can add a [canonical link](https://yoast.com/rel-canonical/) to the article in the AppFlowy project.
+
+#### 4. Can I Write in Languages Other than English?
 
 No, unfortunately, content published on our blog is currently in English only.
 
-#### Are you the right candidate for a technical deep dive?
+#### 5. Am I the Right Candidate for a Technical Deep Dive?
 
-You should be an experienced developer who has contributed to AppFlowy’s codebase with a deep understanding of its design. And you seek technical excellence and value collaboration, honesty, and inclusiveness.
+You are an experienced developer who has contributed to AppFlowy’s codebase with a deep understanding of its design.&#x20;
 
-#### What right does AppFlowy claim over the article?
+You seek technical excellence and you value collaboration, honesty, and inclusiveness.
 
-AppFlowy claims the blog post piece as our own after it is published and you have been compensated. You can cross-post with a [canonical link](https://yoast.com/rel-canonical/) pointing to the original AppFlowy post.
+#### 6. What Rights Do AppFlowy Claim Over The Article?
 
-#### How many articles can I submit each month?
+After it is published and you have been compensated, your content will become part of the AppFlowy project and will be distributed under its license.
+
+You can cross-post with a[ canonical link](https://yoast.com/rel-canonical/) pointing to the original AppFlowy post.
+
+#### 7. How Many Articles Can I Submit Each Month?
 
 There is no limit, and you can create a series if your articles fall under the same topic or theme.
+
+\
