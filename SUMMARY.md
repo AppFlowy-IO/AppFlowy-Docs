@@ -80,7 +80,7 @@
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
-* [#⃣ #⃣ Markdown](essential-documentation/markdown.md)
+* [#⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 
 ## Design Documentation
