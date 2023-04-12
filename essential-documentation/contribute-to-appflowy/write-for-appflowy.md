@@ -14,7 +14,7 @@ You will be paid for articles published on[ AppFlowy Binary](https://blog-appflo
 
 Your work will be published under your name with a link to the relevant social profile of your choosing.
 
-We are also looking for editors with a proven track record to help with style and grammar (link to more details).
+We are also looking for content writers and technical editors with a proven track record to help with style, grammar, and content. Please email your portfolio to career@appflowy.io
 
 
 
