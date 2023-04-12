@@ -1,8 +1,8 @@
-# ✍ Write for AppFlowy
+# ✏ Write for AppFlowy
 
 ## **Are you an AppFlowy enthusiast? Help other AppFlowy users and builders, get paid, and build your reputation as a writer.**
 
-Whether you’re a software development expert, an AppFlowy power user, or just a student just starting to learn how to program, there is knowledge you can share that will benefit the entire AppFlowy community.
+Whether you’re an AppFlowy power user, a software development expert, or just a student starting to get into open source, there is knowledge you can share that will benefit the entire AppFlowy community.
 
 The types of articles we’re currently looking for include:&#x20;
 
@@ -68,6 +68,7 @@ Ideas:
   * Table view
   * Board view
   * Take charge of our data
+  * ... more to cover as we ship new features
 * Contribute to AppFlowy:
   * How a certain feature is built
   * How to make customizations
@@ -116,7 +117,7 @@ If you are not familiar with GitHub, don’t worry. We’ll guide you through.
 | ----------------------------- | ----------- |
 | How-to guides for product     | $50         |
 | How to contribute to AppFlowy | $100        |
-| Use cases                     | $100        |
+| Product use cases             | $100        |
 | Engineering topics            | $100 - $350 |
 
 #### 3. Can I Cross-Post the Article?
