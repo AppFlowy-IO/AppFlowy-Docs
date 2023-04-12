@@ -1,8 +1,6 @@
 # ✍ Write for AppFlowy
 
-This page is under construction
-
-### **Are you an AppFlowy enthusiast? Help other AppFlowy users and builders, get paid, and build your reputation as a writer.**
+## **Are you an AppFlowy enthusiast? Help other AppFlowy users and builders, get paid, and build your reputation as a writer.**
 
 Whether you’re a software development expert, an AppFlowy power user, or just a student just starting to learn how to program, there is knowledge you can share that will benefit the entire AppFlowy community.
 
@@ -20,7 +18,7 @@ We are also looking for editors with a proven track record to help with style an
 
 
 
-### How does it work?
+## How does it work?
 
 #### Post to Discord About Your Topic
 
@@ -56,11 +54,24 @@ We may archive your how-to guides if it’s not up-to-date given that our produc
 
 
 
-### What kind of content are we looking for authors?
+## What kind of content are we looking for authors?
 
 #### How-to-Guides
 
 Write a how-to guide explaining one of AppFlowy’s features. This can be from the development or the end-user perspective.
+
+Ideas:
+
+* AppFlowy 101: Introduction to basic functionality
+  * Write and edit
+  * Database properties
+  * Table view
+  * Board view
+  * Take charge of our data
+* Contribute to AppFlowy:
+  * How a certain feature is built
+  * How to make customizations
+  * How to add plugins
 
 #### Specific Use Cases
 
@@ -68,15 +79,26 @@ Share the specific use cases you have for AppFlowy.&#x20;
 
 We are eager to know what you use AppFlowy for and how other people can borrow your ideas to gain similar benefits.
 
+Ideas:&#x20;
+
+* Guides by use cases: write notes, manage tasks, documentation, wiki, engineering...
+* AppFlowy for students, product, engineering, personal use...
+
 #### Engineering Topics
 
 Engineering topics related to AppFlowy always excite us.&#x20;
 
 We love deep dives or tutorials that lower junior developers' barriers to participating in our open-source projects.
 
+Ideas:
 
+* A guide to contributing with minimal project structure to start working on a feature
+* More on the architecture and how to circumvent common pitfalls
+* How AppFlowy uses Flutter Bloc
+* How Rust and Flutter work through event-driven cooperation
+* Reach out annie@appflowy on [Discord](https://discord.gg/9Q2xaN37tV) for more ideas
 
-### FAQs
+## FAQs
 
 #### 1. Where Do I Share My Drafts?
 
@@ -90,11 +112,12 @@ If you are not familiar with GitHub, don’t worry. We’ll guide you through.
 
 #### 2. How Much Do I Get Paid?
 
-| Categories         | Payment     |
-| ------------------ | ----------- |
-| How-to guides      | $50         |
-| Use cases          | $100        |
-| Engineering topics | $100 - $350 |
+| Categories                    | Payment     |
+| ----------------------------- | ----------- |
+| How-to guides for product     | $50         |
+| How to contribute to AppFlowy | $100        |
+| Use cases                     | $100        |
+| Engineering topics            | $100 - $350 |
 
 #### 3. Can I Cross-Post the Article?
 
