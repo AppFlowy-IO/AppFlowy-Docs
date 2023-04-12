@@ -22,9 +22,9 @@ We are also looking for editors with a proven track record to help with style an
 
 #### Post to Discord About Your Topic
 
-First, join our Discord[ channel](https://discord.gg/s9yQttsP53) and create a post. Your post should include the topic you want to cover and an outline. The topic can be your own or select an existing GitHub issue tagged with “[write-for-appflowy](https://github.com/AppFlowy-IO/AppFlowy/labels/write%20for%20appflowy)”.
+First, join our Discord[ channel](https://discord.gg/s9yQttsP53) and create a post. Your post should include the topic you want to cover and an outline. The topic can be your own or select an existing GitHub issue tagged with “[write-for-appflowy](https://github.com/AppFlowy-IO/AppFlowy-Docs/issues?q=is%3Aopen+is%3Aissue+label%3Awrite-for-appflowy)".
 
-#### Wait Approval on the Topic
+#### Wait for Approval on the Topic
 
 Once you create a post, the AppFlowy team will review it. It may take a few days or weeks for us to review.&#x20;
 
