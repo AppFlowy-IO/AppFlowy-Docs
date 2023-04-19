@@ -38,6 +38,11 @@ Every item on the roadmap is an issue, with labels that indicate each of the fol
 * `program`: this is a community program task
 * `react`: related to React
 * `Rust-only`: to complete this task only requires Rust
+* `Rust-starter`: friendly to Rust beginners
+* `shortcuts`: features related to keyboard shortcuts
+* `tauri`: features or tasks related to AppFlowy Tauri
+* `tests`: tasks related to writing tests
+* `translation`: tasks related to translating AppFlowy into different languages
 
 #### Item Status
 
