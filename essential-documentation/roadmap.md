@@ -10,16 +10,34 @@ Our [roadmap](https://github.com/orgs/AppFlowy-IO/projects/5/views/12) is where 
 
 Every item on the roadmap is an issue, with labels that indicate each of the following:
 
-* bug: something needs fixing
-* new feature: this is something new for the end user
-* improvements: an improvement on an existing feature
-* documentation: this is a documentation task
-* needs design: this requires a design spec
-* grid: features related to Flowy Grid
-* editor: features related to Flowy Editor
-* help-wanted: for the community members to claim
-* first time issue for devs: for the community members to claim
-* first time issue for experienced devs: for the experienced community developers to claim
+* `AI`: features built on top of artificial intelligence technology
+* `bug`: something needs fixing
+* `calendar`: features related to the calendar database
+* `ci`: tasks related to continuous integrations
+* `data sync`: features related to syncing data across devices and tools
+* `dependencies`: pull requests that update a dependency file
+* `documentation`: this is a documentation task
+* `duplicate`: the issue or pull request already exists
+* `editor`: features related to the rich-text editor
+* `export`: features related to exporting data from AppFlowy
+* `good first issue for devs`: for the community members to claim
+* `good first issue for experienced devs`: for the experienced community developers to claim
+* `grid`: features related to the table-view database
+* `help-wanted`: for the community members to claim
+* `improvements`: an improvement on an existing feature
+* `infra`: engineering tasks that are not related to UX/UI features
+* `install`: tasks related to installing AppFlowy
+* `integrations`: features related to integrating third-party services
+* `kanban board`: features related to the board-view database
+* `mobile`: features related to AppFlowy Mobile
+* `needs design`: this requires a design spec
+* `new feature`: this is something new for the end user
+* `notes`: something to remember
+* `organization`: features related to organizing information in AppFlowy
+* `plugins`: this is a plugin task
+* `program`: this is a community program task
+* `react`: related to React
+* `Rust-only`: to complete this task only requires Rust
 
 #### Item Status
 
