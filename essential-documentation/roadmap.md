@@ -24,7 +24,7 @@ Every item on the roadmap is an issue, with labels that indicate each of the fol
 * `good first issue for experienced devs`: for the experienced community developers to claim
 * `grid`: features related to the table-view database
 * `help-wanted`: for the community members to claim
-* `improvements`: an improvement on an existing feature
+* `improvements`: improvements on an existing feature
 * `infra`: engineering tasks that are not related to UX/UI features
 * `install`: tasks related to installing AppFlowy
 * `integrations`: features related to integrating third-party services
@@ -68,19 +68,19 @@ The roadmap is arranged on a project board to give a sense of how far out each i
 To easily track the project based on your interest, we organize issues into different views as follows:
 
 * [Roadmap](https://github.com/orgs/AppFlowy-IO/projects/5/views/12)
-* [v0.0.x](https://github.com/orgs/AppFlowy-IO/projects/5/views/1)
+* [v0.1.x](https://github.com/orgs/AppFlowy-IO/projects/5/views/1)
 * [Upcoming](https://github.com/orgs/AppFlowy-IO/projects/5/views/3)
 * [Help Wanted](https://github.com/orgs/AppFlowy-IO/projects/5/views/4)
-* [Editor](https://github.com/orgs/AppFlowy-IO/projects/5/views/5)
-* [Grid](https://github.com/orgs/AppFlowy-IO/projects/5/views/6)
+* [Editor](https://github.com/orgs/AppFlowy-IO/projects/5/views/5) - the rich-text editor
+* [Grid](https://github.com/orgs/AppFlowy-IO/projects/5/views/6) - the table-view database
 * [Bug Tracker](https://github.com/orgs/AppFlowy-IO/projects/5/views/9)
 
-If you are interested in contributing to AppFlowy, please have a look at the “[Help Wanted](https://github.com/orgs/AppFlowy-IO/projects/5/views/4)” tab where we maintain a list of issues open to the community. Flowy Editor and Flowy Grid are two key components AppFlowy offers. Flowy Editor is a rich-text editor. Flowy Grid is a database component that can be inserted into Flowy Editor. Both components are developed by AppFlowy’s team from the ground up. You can use the “Editor” and the “Grid” tab to track the development progress of these two components.
+If you are interested in contributing to AppFlowy, please have a look at the “[Help Wanted](https://github.com/orgs/AppFlowy-IO/projects/5/views/4)” tab where we maintain a list of issues open to the community.&#x20;
 
 ### Disclaimer
 
-The roadmap is subject to change, especially further out on the timeline. Any statement in this repository that is not purely historical is considered a forward-looking statement. The forward-looking roadmap does not represent a commitment, guarantee, obligation or promise to deliver any product or feature, or the deliver any product and feature by any particular date, and is intended to outline the general development plans.
+The roadmap is subject to change, especially further out on the timeline. Any statement in this repository that is not purely historical is considered a forward-looking statement. The forward-looking roadmap does not represent a commitment, guarantee, obligation, or promise to deliver any product or feature, or promise to deliver any product and feature by any particular date, and is intended to outline the general development plans.
 
-### Acknowledgements
+### Acknowledgments
 
 This article is adapted from GitHub public roadmap’s [README.md](https://github.com/github/roadmap)
