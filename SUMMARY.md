@@ -83,13 +83,6 @@
 * [#⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 
-## Design Documentation
-
-* [Brand](wip-design-documentation/ui-design-system-documentation.md)
-* [Product](wip-design-documentation/product.md)
-* [Research](wip-design-documentation/research.md)
-* [Accessibility](wip-design-documentation/accessibility.md)
-
 ## Handbook
 
 * [Values](handbook/values.md)
