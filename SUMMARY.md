@@ -78,15 +78,10 @@
         * [Shortcuts and Customized Hotkeys for AppFlowy](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/shortcuts-and-customized-hotkeys-for-appflowy.md)
         * [Table](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/table.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
+  * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
+* [#⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
-
-## Design Documentation
-
-* [Brand](wip-design-documentation/ui-design-system-documentation.md)
-* [Product](wip-design-documentation/product.md)
-* [Research](wip-design-documentation/research.md)
-* [Accessibility](wip-design-documentation/accessibility.md)
 
 ## Handbook
 
