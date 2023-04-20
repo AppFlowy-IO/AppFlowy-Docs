@@ -6,12 +6,24 @@ You can help Appflowy in supporting various languages by contributing. Follow th
 
 Translation files are located in : `frontend/app_flowy/assets/translations/`
 
+### Modify in the no-code editor (inlang)
+
+1. Open the [inlang-editor](https://inlang.com/editor/github.com/AppFlowy-IO/AppFlowy)
+2. Edit translations (filter & search can help)
+4. Run `flutter pub run easy_localization:generate -S assets/translations/`
+5. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
+6. Verify that the translation has changed appropriately by compiling and running the app.
+
+### Modify in code
+
 1. Modify the specific translation file.
 2. Run `flutter pub run easy_localization:generate -S assets/translations/`
 3. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
 4. Verify that the translation has changed appropriately by compiling and running the app.
 
 ## Steps to add new language
+
+> Adding new languages from within the inlang editor is not supported yet, but you can add the language and then do the translations in inlang. (Adding via inlang is coming soon)
 
 **NOTE: Translation files SHOULD be** `json` **files named in the format** `<lang_code>-<country_code>.json` **or just** `<lang_code>.json`**. eg:**`en.json`**,** `en-UK.json`
 
