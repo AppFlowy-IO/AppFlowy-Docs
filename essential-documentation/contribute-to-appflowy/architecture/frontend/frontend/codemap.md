@@ -17,7 +17,7 @@ This code map introduces the folder hierarchy of AppFlowy.
           This directory includes the initialized tasks when the application launched.
       3.  **`user`**:
 
-          This directory contains all the use-related components.
+          This directory contains all the user-related components.
 
           1.  **`application`**
 
