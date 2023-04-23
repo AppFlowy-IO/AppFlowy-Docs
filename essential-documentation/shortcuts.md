@@ -29,6 +29,8 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 | Page Up                | `Page Up`                 |         |       |
 | Page Down              | `Page Down`               |         |       |
 | Tab                    | `⇥ Tab`                   |         |       |
+| Indent                 | `⇥ Tab`                   |         |       |
+| Outdent                | `Shift`                   | `⇥ Tab` |       |
 | Selection Menu         | `/`                       |         |       |
 | OR                     |                           |         |       |
 | Selection Menu         | `Shift`                   | `/`     |       |
