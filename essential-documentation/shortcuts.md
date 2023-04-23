@@ -2,52 +2,52 @@
 
 ## ⌨ Shortcuts
 
-All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) are listed below. You may scroll or use `Ctrl+F` to search for what you are looking for.
+All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) are listed below. You may scroll or use `CTRL` (or  `⌘`)`+F` to search for what you are looking for.
 
 ## Basics
 
-| Description            | Key#1                     | Key#2   | Key#3 |
-| ---------------------- | ------------------------- | ------- | ----- |
-| Go Up                  | `↑`                       |         |       |
-| Go Left                | `←`                       |         |       |
-| Go Bottom              | `↓`                       |         |       |
-| Go Right               | `→`                       |         |       |
-| Copy                   | `CTRL` (or  `⌘` on MacOS) | `C`     |       |
-| Paste                  | `CTRL` (or `⌘` on MacOS)  | `V`     |       |
-| Cut                    | `CTRL` (or `⌘` on MacOS)  | `X`     |       |
-| Redo                   | `CTRL` (or `⌘` on MacOS)  | `Y`     |       |
-| OR                     |                           |         |       |
-| Redo                   | `CTRL` (or `⌘` on MacOS)  | `Shift` | `E`   |
-| Undo                   | `CTRL` (or `⌘` on MacOS)  | `Z`     |       |
-| Home                   | `Home`                    |         |       |
-| End                    | `End`                     |         |       |
-| Backspace Text         | `← Backspace`             |         |       |
-| Delete Text            | `Delete`                  |         |       |
-| Enter                  | `Enter`                   |         |       |
-| Space                  | `Space`                   |         |       |
-| Select All             | `CTRL` (or `⌘` on MacOS)  | `A`     |       |
-| Page Up                | `Page Up`                 |         |       |
-| Page Down              | `Page Down`               |         |       |
-| Tab                    | `⇥ Tab`                   |         |       |
-| Indent                 | `⇥ Tab`                   |         |       |
-| Outdent                | `Shift`                   | `⇥ Tab` |       |
-| Selection Menu         | `/`                       |         |       |
-| OR                     |                           |         |       |
-| Selection Menu         | `Shift`                   | `/`     |       |
-| Markdown link or image | `Shift`                   | `)`     |       |
-| Exit Editing Mode      | `Esc`                     |         |       |
-| Move cursor top        | `CTRL` (or `⌘` on MacOS)  | `↑`     |       |
-| Move cursor bottom     | `CTRL` (or `⌘` on MacOS)  | `↓`     | -     |
-| Move cursor start      | `CTRL` (or `⌘` on MacOS)  | `←`     |       |
-| Move cursor end        | `CTRL` (or `⌘` on MacOS)  | `→`     |       |
-| Cursor top select      | `CTRL` (or `⌘` on MacOS)  | `Shift` | `↑`   |
-| Cursor bottom select   | `CTRL` (or `⌘` on MacOS)  | `Shift` | `↓`   |
-| Cursor begin select    | `CTRL` (or `⌘` on MacOS)  | `Shift` | `←`   |
-| OR                     |                           |         |       |
-| Cursor begin select    | `Shift`                   | `Home`  |       |
-| Cursor end select      | `CTRL` (or `⌘` on MacOS)  | `Shift` | `→`   |
-| OR                     |                           |         |       |
-| Cursor end select      | `Shift`                   | `End`   |       |
+| Description                            | Key#1                     | Key#2   | Key#3 |
+| -------------------------------------- | ------------------------- | ------- | ----- |
+| Go Up                                  | `↑`                       |         |       |
+| Go Left                                | `←`                       |         |       |
+| Go Bottom                              | `↓`                       |         |       |
+| Go Right                               | `→`                       |         |       |
+| Copy                                   | `CTRL` (or  `⌘` on MacOS) | `C`     |       |
+| Paste                                  | `CTRL` (or `⌘` on MacOS)  | `V`     |       |
+| Cut                                    | `CTRL` (or `⌘` on MacOS)  | `X`     |       |
+| Redo                                   | `CTRL` (or `⌘` on MacOS)  | `Y`     |       |
+| OR                                     |                           |         |       |
+| Redo                                   | `CTRL` (or `⌘` on MacOS)  | `Shift` | `E`   |
+| Undo                                   | `CTRL` (or `⌘` on MacOS)  | `Z`     |       |
+| Home                                   | `Home`                    |         |       |
+| End                                    | `End`                     |         |       |
+| Backspace Text                         | `← Backspace`             |         |       |
+| Delete Text                            | `Delete`                  |         |       |
+| Enter                                  | `Enter`                   |         |       |
+| Space                                  | `Space`                   |         |       |
+| Select All                             | `CTRL` (or `⌘` on MacOS)  | `A`     |       |
+| Page Up                                | `Page Up`                 |         |       |
+| Page Down                              | `Page Down`               |         |       |
+| Tab                                    | `⇥ Tab`                   |         |       |
+| Indent in Checkboxes and Bullet Lists  | `⇥ Tab`                   |         |       |
+| Outdent in Checkboxes and Bullet Lists | `Shift`                   | `⇥ Tab` |       |
+| Selection Menu                         | `/`                       |         |       |
+| OR                                     |                           |         |       |
+| Selection Menu                         | `Shift`                   | `/`     |       |
+| Markdown link or image                 | `Shift`                   | `)`     |       |
+| Exit Editing Mode                      | `Esc`                     |         |       |
+| Move cursor top                        | `CTRL` (or `⌘` on MacOS)  | `↑`     |       |
+| Move cursor bottom                     | `CTRL` (or `⌘` on MacOS)  | `↓`     | -     |
+| Move cursor start                      | `CTRL` (or `⌘` on MacOS)  | `←`     |       |
+| Move cursor end                        | `CTRL` (or `⌘` on MacOS)  | `→`     |       |
+| Cursor top select                      | `CTRL` (or `⌘` on MacOS)  | `Shift` | `↑`   |
+| Cursor bottom select                   | `CTRL` (or `⌘` on MacOS)  | `Shift` | `↓`   |
+| Cursor begin select                    | `CTRL` (or `⌘` on MacOS)  | `Shift` | `←`   |
+| OR                                     |                           |         |       |
+| Cursor begin select                    | `Shift`                   | `Home`  |       |
+| Cursor end select                      | `CTRL` (or `⌘` on MacOS)  | `Shift` | `→`   |
+| OR                                     |                           |         |       |
+| Cursor end select                      | `Shift`                   | `End`   |       |
 
 ## Formatting
 
