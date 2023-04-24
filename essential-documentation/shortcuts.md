@@ -70,13 +70,14 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 
 ## Selection
 
-| Description              | Key#1                    | Key#2                     | Key #3 |
-| ------------------------ | ------------------------ | ------------------------- | ------ |
-| Cursor up select         | `Shift`                  | `↑`                       |        |
-| Cursor down select       | `Shift`                  | `↓`                       |        |
-| Cursor left select       | `Shift`                  | `←`                       |        |
-| Cursor right select      | `Shift`                  | `→`                       |        |
-| Cursor left word select  | `Shift`                  | `ALT`  (or  `⌥ on MacOS)` | `←`    |
-| Cursor right word select | `Shift`                  | `ALT`  (or  `⌥ on MacOS)` | `→`    |
-| Cursor left word delete  | `CTRL` (or `⌘` on MacOS) | `← Backspace`             |        |
+| Description                   | Key#1                     | Key#2                     | Key #3 |
+| ----------------------------- | ------------------------- | ------------------------- | ------ |
+| Cursor up select              | `Shift`                   | `↑`                       |        |
+| Cursor down select            | `Shift`                   | `↓`                       |        |
+| Cursor left select            | `Shift`                   | `←`                       |        |
+| Cursor right select           | `Shift`                   | `→`                       |        |
+| Cursor left word select       | `Shift`                   | `ALT`  (or  `⌥ on MacOS)` | `←`    |
+| Cursor right word select      | `Shift`                   | `ALT`  (or  `⌥ on MacOS)` | `→`    |
+| Cursor left word delete       | `CTRL` (or `⌘` on MacOS)  | `← Backspace`             |        |
+| Cursor jump from word to word | `ALT`  (or  `⌥ on MacOS)` | `←` or `→`                |        |
 
