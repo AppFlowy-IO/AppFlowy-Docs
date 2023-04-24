@@ -12,10 +12,11 @@
 
 ### Styling Text
 
-| Style   | Syntax                                             | Example              | Output           |
-| ------- | -------------------------------------------------- | -------------------- | ---------------- |
-| Bold    | <p><code>** ** OR</code><br><code>__ __</code></p> | `** this is bold **` | **this is bold** |
-| Italics | `_ _`                                              | `_ italic text _`    | _this is italic_ |
+| Style         | Syntax                                             | Example             | Output            |
+| ------------- | -------------------------------------------------- | ------------------- | ----------------- |
+| Bold          | <p><code>** ** OR</code><br><code>__ __</code></p> | `**this is bold**`  | **this is bold**  |
+| Italics       | `_ _`                                              | `_italic text_`     | _this is italic_  |
+| Strikethrough | `~~ ~~`                                            | `~~strikethrough~~` | ~~strikethrough~~ |
 
 
 
