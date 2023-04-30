@@ -82,6 +82,8 @@
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
       * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
       * [\[Draft\] How to contribute to AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-how-to-contribute-to-appflowy.md)
+* [🧩 AppFlowy Plugins](essential-documentation/appflowy-plugins.md)
+* [🟣 Community Plugins](essential-documentation/community-plugins.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
 * [#⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
