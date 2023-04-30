@@ -10,9 +10,9 @@ Auto Generator
 
 Smart Edit
 
-Code Block
+Code Blocks
 
-Math Equation
+Math Equations
 
 Cover
 
