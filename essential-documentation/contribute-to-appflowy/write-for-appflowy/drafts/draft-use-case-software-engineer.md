@@ -5,11 +5,14 @@
 ## Introduction
 Welcome, fellow software engineers! Today, I want to share with you how I use Appflowy to stay organized and productive in my work. As software engineers, we all know how important it is to keep track of our projects, deadlines, and tasks. That's where Appflowy comes in! With its simple and intuitive design, Appflowy makes it easy to stay on top of everything.
 
+![image](https://user-images.githubusercontent.com/89600478/235852123-0105d13e-b05e-4df0-b136-4825ca817351.png)
+
+
 
 <!-- How to Contribute -->
 ## Installation
-These are the installation instructions for an end user. If you wish to contribute to AppFlowy or if you just want to view and run directly from source code please visit the [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy).
-You can view the [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/requirements).
+These are the installation instructions for an end user. If you wish to contribute to AppFlowy or if you just want to view and run directly from source code please visit the [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy).<br>
+You can view the [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/requirements).<br>
 You can go directly to the [Installation methods](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods).
 
 ## Setting Up
@@ -29,9 +32,16 @@ Now that we have our workspace set up, let's talk about how to use Appflowy for 
 ## Development Tasks:
 Once I have my project plan in place, it's time to start working on the development tasks. To manage my development tasks, I create a new list for each task and add notes and tags as needed. For example, I might create a note for the task description, a note for any subtasks, and a note for the estimated time to complete. By tagging each note with the project name and task name, I can easily find all the notes related to that task.
 
-![image (3)](https://user-images.githubusercontent.com/89600478/235844308-d90c9446-732f-4b0a-8808-f7ace7f3e774.png)
 
- Yes I use boards to design my Database schema 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/89600478/235844308-d90c9446-732f-4b0a-8808-f7ace7f3e774.png">
+</div>
+
+
+<div align="center">
+  <p><small style="font-size: 70%"><em>Yes I use boards to design my Database schema</em></small></p>
+</div>
+
  
 ## Bugs and Issues
 Of course, no software project is without its bugs and issues. That's where Appflowy's bug tracking features come in. To track bugs and issues, I create a new list for each issue and add notes and tags as needed. For example, I might create a note for the bug description, a note for the steps to reproduce, and a note for the priority level. By tagging each note with the project name and issue name, I can easily find all the notes related to that issue.
@@ -49,10 +59,13 @@ Appflowy makes collaboration with team members easy. I can share lists as a mark
 ## Open AI Integration
 This section is under development.
 ## CodeBlock
-This section is under development.
-![image (5)](https://user-images.githubusercontent.com/89600478/235844514-280eebd8-004a-40f3-a9ca-ee76267d4495.png)
-## Share Via link(coming soon)
+Will discuss how to use Appflowy's code block feature to create and store code snippets, scripts, and development notes.
+This section is under development.<br>
 
+![image (5)](https://user-images.githubusercontent.com/89600478/235844514-280eebd8-004a-40f3-a9ca-ee76267d4495.png)
+
+## Share Via link(coming soon)
+This section is under development.
 
 
 ## Conclusion:
