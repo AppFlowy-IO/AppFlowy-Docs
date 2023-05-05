@@ -86,6 +86,7 @@
 * [⏮ Duplicate, Delete, and Restore](essential-documentation/duplicate-delete-and-restore.md)
 * [💎 Databases](essential-documentation/databases/README.md)
   * [🔢 Database Properties](essential-documentation/databases/database-properties.md)
+  * [🗃 Manage Properties](essential-documentation/databases/manage-properties.md)
 * [🧩 AppFlowy Plugins](essential-documentation/appflowy-plugins/README.md)
   * [Grid](essential-documentation/appflowy-plugins/grid.md)
   * [Kanban Board](essential-documentation/appflowy-plugins/kanban-board.md)

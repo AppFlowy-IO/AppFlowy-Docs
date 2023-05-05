@@ -27,7 +27,7 @@
 * Dropdown menu of tags letting you add more than one at a time.
 * Label your records.
 
-Checkbox:&#x20;
+### Checkbox:&#x20;
 
 * Simple checkboxes that indicate whether something is done or not.
 * Check it off when the item is done.

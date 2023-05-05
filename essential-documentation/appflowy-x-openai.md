@@ -36,7 +36,7 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 
 6. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize` and `Fix spelling`
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### What are ways I can use OpenAI in AppFlowy?
 
