@@ -73,7 +73,7 @@ This means that you no longer have to worry about manually formatting and highli
 
 
 ## Cleander View Databases
-This section is under development.
+This section is under development..
 
 
 ## Conclusion:
