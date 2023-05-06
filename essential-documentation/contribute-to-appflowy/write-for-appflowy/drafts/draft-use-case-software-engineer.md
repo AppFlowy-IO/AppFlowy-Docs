@@ -65,6 +65,7 @@ Before you get started, make sure to enter your OpenAI API key in the settings m
 <div align="center">
   <p><small style="font-size: 70%"><em>Open AI summarizing the paragraph</em></small></p>
 </div>
+
 ## CodeBlock
 With Appflowy's code block feature you can now save your code snippets directly in your Appflowy documents, complete with an auto language specifier at the top.
 This means that you no longer have to worry about manually formatting and highlighting your code snippets - Appflowy takes care of it all for you!
