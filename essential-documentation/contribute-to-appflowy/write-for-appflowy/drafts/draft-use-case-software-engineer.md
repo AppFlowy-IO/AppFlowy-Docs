@@ -57,14 +57,22 @@ Appflowy makes collaboration with team members easy. I can share lists as a mark
 
 ## Other Exciting features for Software Engineers
 ## Open AI Integration
-This section is under development.
+Being a Software Engineer you must be tired of reading through long, technical documents and articles. Well, Appflowy's got your back with their new OpenAI integration. With just a few clicks, you can now quickly summarize lengthy texts and extract key information using the power of OpenAI.
+All you have to do is highlight the text you want to summarize and click on the 'Summarize' option in Appflowy's menu. And that's not it, it can fix spellings for you too.
+Before you get started, make sure to enter your OpenAI API key in the settings menu. This feature can be a huge time-saver for busy software engineers who need to stay up-to-date on the latest industry news and trends. So what are you waiting for? Give it a try and make your life easy.
+
+  ![image (8)](https://user-images.githubusercontent.com/89600478/236600222-7f6b30f0-2e39-4f5d-a642-7a90948ea624.png)
+<div align="center">
+  <p><small style="font-size: 70%"><em>Open AI summarizing the paragraph</em></small></p>
+</div>
 ## CodeBlock
-Will discuss how to use Appflowy's code block feature to create and store code snippets, scripts, and development notes.
-This section is under development.<br>
+With Appflowy's code block feature you can now save your code snippets directly in your Appflowy documents, complete with an auto language specifier at the top.
+This means that you no longer have to worry about manually formatting and highlighting your code snippets - Appflowy takes care of it all for you!
 
 ![image (5)](https://user-images.githubusercontent.com/89600478/235844514-280eebd8-004a-40f3-a9ca-ee76267d4495.png)
 
-## Share Via link(coming soon)
+
+## Cleander View Databases
 This section is under development.
 
 
