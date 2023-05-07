@@ -9,6 +9,7 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 * **OpenAI Writer**: Ask AI to write anything for you. Let AI draft it for you whenever you're starting something new.
 * **Summarize**: Auto-generate a nice summary for an article, your proposal, or anything else.
 * **Fix spelling**: With one click away, catch and fix misspelled words instantly.
+* **Improve Writing**: There is no need to switch between different tools; simply highlight the text and ask AI to quickly transform it into something better and more suitable for the task.
 
 ### What's coming up next?
 
@@ -34,9 +35,9 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 
 <figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize` and `Fix spelling`
+6. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize`, `Fix spelling`, and `Improve Writing`.
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### What are ways I can use OpenAI in AppFlowy?
 

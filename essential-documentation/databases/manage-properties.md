@@ -24,7 +24,7 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 * `Clicking on Add option to add unique values`
 * &#x20;You can also enter a new tag by clicking on a cell under the column, typing what you want, and pressing enter after each. Colors are randomly assigned.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,7 +55,7 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 
 ### Delete, duplicate, and rename a property
 
-<img src="../../.gitbook/assets/image (10) (3).png" alt="" data-size="original">![](<../../.gitbook/assets/image (11).png>)
+<img src="../../.gitbook/assets/image (10) (3) (1).png" alt="" data-size="original">![](<../../.gitbook/assets/image (11).png>)
 
 Click on the property name to edit the property. As you can see in the above screenshots, clicking on "Status" will trigger an action menu where you can find "Edit property", "Hide", "Duplicate", and "Delete".
 
