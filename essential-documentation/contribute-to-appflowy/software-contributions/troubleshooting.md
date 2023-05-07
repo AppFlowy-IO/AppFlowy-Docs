@@ -3,27 +3,30 @@
 First of all, make sure the version of flutter and rust is the version specified in [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup)
 
 ## 1. Protobuf Generation Errors
+
 1. Ensure the protoc-gen is installed
+
 ```shell
 which protoc-gen-dart
 ```
+
 2. Ensure the $HOME/.pub-cache/bin is shown in your $PATH.
+
 ```shell
 echo $PATH
 ```
 
-3. Ensure VS Code uses bash as the default terminal
-You can check out this [link](https://github.com/AppFlowy-IO/AppFlowy/issues/413) for more information.
+3. Ensure VS Code uses bash as the default terminal You can check out this [link](https://github.com/AppFlowy-IO/AppFlowy/issues/413) for more information.
 
 ## 2. Remove outdated files
-AppFlowy uses `CodeGen` to generate some files that are ignored by git. So remove these files if there are
-some errors, warnings, and reference errors.
+
+AppFlowy uses `CodeGen` to generate some files that are ignored by git. So remove these files if there are some errors, warnings, and reference errors.
 
 Here are the files are safe to remove
+
 1. `AppFlowy/frontend/app_flowy/packages/flowy_sdk`
 2. `AppFlowy/frontend/app_flowy/packages/appflowy_backend/lib/dispatch/dart_event`
 3. `AppFlowy/frontend/app_flowy/packages/appflowy_backend/lib/protobuf`
-
 
 ## 3. Error: Not found: 'dart:ffi'
 
@@ -51,17 +54,16 @@ A: [https://stackoverflow.com/questions/2643502/git-how-to-solve-permission-deni
 
 ## 7. Failed to load dynamic library 'libdart\_ffi.so'
 
-[issue #112](https://github.com/AppFlowy-IO/appflowy/issues/112)
-Q: Hello, when I run app with vs code\&android\&mac m1, it gave error:
+[issue #112](https://github.com/AppFlowy-IO/appflowy/issues/112) Q: Hello, when I run app with vs code\&android\&mac m1, it gave error:
 
 ArgumentError (Invalid argument(s): Failed to load dynamic library 'libdart\_ffi.so': dlopen failed: library "libdart\_ffi.so" not found)
 
 A: Are you trying to build for android? Appflowy only supports desktops as of now
 
-[issue #191](https://github.com/AppFlowy-IO/appflowy/issues/191)
-Q. Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart\_ffi.so' on Ubuntu.
+[issue #191](https://github.com/AppFlowy-IO/appflowy/issues/191) Q. Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart\_ffi.so' on Ubuntu.
 
 A: I append ubuntu 21.04 source.list's content to `/etc/apt/source.list`, and then upgrade `libc6`.
+
 ```shell
 # Append the ubuntu 20.04's source.list to its tail.
 $ sudo vim /etc/apt/source.list
@@ -147,3 +149,24 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 ```
 
 [issue #566](https://github.com/AppFlowy-IO/AppFlowy/issues/566)
+
+## 17. Run appyflowy in docker,but it not work: cannot open display: 0
+
+#### Q:
+
+Bug Description
+
+xhost + docker run --rm -v $HOME/.Xauthority:/root/.Xauthority:rw -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/dri:/dev/dri -v /var/run/dbus/system\_bus\_socket:/var/run/dbus/system\_bus\_socket -v appflowy-data:/home/appflowy -e DISPLAY=${DISPLAY} appflowyio/appflowy\_client:main
+
+(app\_flowy:1): Gtk-WARNING \*\*: 01:27:57.247: cannot open display: :0
+
+
+
+**A:**
+
+I add the param\
+**--network=host**&#x20;
+
+and it works
+
+[issue: #2458](https://github.com/AppFlowy-IO/AppFlowy/issues/2458)
