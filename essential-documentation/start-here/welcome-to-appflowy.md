@@ -8,7 +8,7 @@ AppFlowy is the first open-source Notion alternative. You are in charge of your 
 
 <figure><img src="../../.gitbook/assets/appflowy_light_mode_kanban_board.png" alt=""><figcaption><p>AppFlowy Kanban Board for To-Dos</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/appflowy_open_ai_features (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/OpenAI features.png" alt=""><figcaption><p>AppFlowy Open AI Opt-in Smart Write and Edit</p></figcaption></figure>
 
 ### Overview
 
