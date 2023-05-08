@@ -24,9 +24,9 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 * `Clicking on Add option to add unique values`
 * &#x20;You can also enter a new tag by clicking on a cell under the column, typing what you want, and pressing enter after each. Colors are randomly assigned.
 
-<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
@@ -37,7 +37,7 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 * Work almost the same as `Select` except that each value can hold more than one tag.
 * For example, Priority is a `Select` property while Categories is a `Multi-Select` property.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Date
 
@@ -47,7 +47,7 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 
 * Toggle on `Include time` to choose an exact time, not just a day.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click `Date format & Time format` to modify these settings.
 
@@ -55,7 +55,7 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 
 ### Delete, duplicate, and rename a property
 
-<img src="../../.gitbook/assets/image (10) (3) (1).png" alt="" data-size="original">![](<../../.gitbook/assets/image (11).png>)
+<img src="../../.gitbook/assets/image (10) (3) (1) (1).png" alt="" data-size="original">![](<../../.gitbook/assets/image (11).png>)
 
 Click on the property name to edit the property. As you can see in the above screenshots, clicking on "Status" will trigger an action menu where you can find "Edit property", "Hide", "Duplicate", and "Delete".
 
@@ -66,7 +66,7 @@ Click on the property name to edit the property. As you can see in the above scr
 * Select `Delete`&#x20;
 * Then you will need to click on `OK` to delete the property
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Duplicate**
 
@@ -82,7 +82,7 @@ Click on the property name to edit the property. As you can see in the above scr
 * Enter a new name&#x20;
 * Click anywhere outside the dropdown menu where you edited the property name to close up the menu or simply pressing `ESC`
 
-![](<../../.gitbook/assets/image (3) (2).png>)![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (3) (2) (1).png>)![](<../../.gitbook/assets/image (4) (2).png>)
 
 
 
@@ -99,15 +99,15 @@ Click on the property name to edit the property. As you can see in the above scr
 
 * Go to Settings located at the top right corner of the database
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on `Properties`
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Toggle on the 👁️ icon next to "Progress" to show it
 
-<figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Rearrange properties
 
