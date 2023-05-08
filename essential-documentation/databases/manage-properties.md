@@ -26,7 +26,7 @@ Data put under a property (or a column) is called a value. Setting up a proper p
 
 <figure><img src="../../.gitbook/assets/image (10) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,14 +66,14 @@ Click on the property name to edit the property. As you can see in the above scr
 * Select `Delete`&#x20;
 * Then you will need to click on `OK` to delete the property
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Duplicate**
 
 * Select Duplicate
 * A new column with the same property type will show up to the right of the duplicated column.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Rename a property**
 
@@ -93,7 +93,7 @@ Click on the property name to edit the property. As you can see in the above scr
 * Click on the property name to open up the action menu
 * Click on `Hide`
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### **Show a property**
 
