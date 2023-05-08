@@ -112,5 +112,15 @@ When you sort your data by any property in `Ascending` or `Descending` order, al
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-## Link Views of Database
+## Linked View of Database
+
+You can add an existing view of database to a page. Type `/` to open the slash menu.&#x20;
+
+Select `Referenced Grid`\` to link an existing table-view database.
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+Property value changes you made to the linked view will sync back to the original database.&#x20;
+
+
 
