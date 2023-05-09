@@ -16,7 +16,7 @@
       <ul>
         <li><a href="#how-to-connect-with-the-team">How to Connect with the Team</a></li>
         <li><a href="#how-to-identify-and-solve-your-first-pr">How to identify and solve your first PR</a></li>
-        <li><a href="#how-to-propose-new-features-for-appflowy">How to propose new features for Appflowy (via GitHub Issues)</a></li>
+        <li><a href="#how-to-propose-new-features-and-changes-for-appflowy">How to propose new features for Appflowy (via GitHub Issues)</a></li>
         <li><a href="#an-example-on-how-to-handle-your-first-pr">An Example on how to handle your first PR</a></li>
       </ul>
     </li>
@@ -139,7 +139,7 @@ Step 5: Click submit, and you're done!
 
 
 ### An Example on how to handle your first PR
-
+(WIP)
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 
@@ -147,20 +147,48 @@ Step 5: Click submit, and you're done!
 <!-- How to best engage with the community -->
 ## How to best engage with the community
 
+<p> Here are some best practices to engage with the community here at Appflowy: </p>
+
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Focusing on what is best for the community
+- Showing empathy towards other community members
+
+<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at annie@appflowy.io. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.</p>
+  
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 <!-- Links to Resources to help get started with technical contributions -->
 ## Links to Resources to help get started with technical contributions
+
+<p> This might be quite a lot to take in at first, especially if you're a newcomer to Software Development. We have curated some links that can help kickstart your journey with Appflowy. These include documentation for the technologies and frameworks used for maintaining and developing Appflowy. Feel free to read up on anything that might be unfamiliar to you. It goes a long way!</p>
+
+- [Git](https://git-scm.com/)
+- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [Futter](https://flutter.dev/learn)
+- [Rust](https://www.rust-lang.org/learn)
+- [Appflowy Doumentation](https://appflowy.gitbook.io/docs/essential-documentation/readme)
 
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 <!-- Other Initiatives by Appflowy -->
 ## Other Initiatives by Appflowy
 
+<p>Here at Appflowy, we foster learning through various iniatives. It's our goal to help anyone who stops by in their developmental journey as much as possible. With this in mind, here are some initatives by Appflowy for the same: </>
+  
+  - Appflowy Mentorship Program - The AppFlowy mentorship program is aimed at creating a hands-on learning opportunity for new developers who may otherwise lack the opportunity to gain exposure to real-world software practice and entry to the technical community. Link: [Appflowy Mentorship Program](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/contributor-guidance)
+  
+  - GitHub Octernships - (Currently Closed)
+  
+  - Write for Appflowy - Whether you’re an AppFlowy power user, a software development expert, or just a student starting to get into open source, there is knowledge you can share that will benefit the entire AppFlowy community. Click the link below to learn more. Link: [Write for Appflowy](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/write-for-appflowy)
+
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 <!-- Conclusion -->
 ## Conclusion
+
+<p> To summarise, we were able to understand how to Contribute to Appflowy, how to handle that first PR, How to connect with the community, and many others in this article. </p>
 
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
