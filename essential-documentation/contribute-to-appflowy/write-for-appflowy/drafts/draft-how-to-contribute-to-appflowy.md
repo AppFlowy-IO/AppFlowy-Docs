@@ -78,10 +78,65 @@ And many more. Let's dive in!</p>
   - You can get in touch with the team via mail - [support@appflowy.io](support@appflowy.io).
 
 
-
 ### How to identify and solve your first PR
+<p>Contributions are made via Pull Requests (PR's). We recommend getting familiar with [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) for the same. Once you're ready, you can begin looking for a PR to work on. A pre-cursor to this would also include setting up your developemet environment. You can find help for the same in Appflowy's Documentation, made available [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions). The steps are as follows:</p>
 
-### How to propose new features for Appflowy
+  Step 1: Go to the [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section in GitHub. Here you can see all of Appflowy's Open-Source repositories that can be contributed to. For the purposes of this article, we shall be looking for Issues within the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
+  
+  ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/715c8a61-af5f-4856-840f-11f8604e765c)
+  *Appflowy GitHub Page - with all Open-Source Repositories that can be worked on*
+  
+  Step 2: Go to the <b>Issues</b> section of the repository. It should looke something like this:
+  
+  ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/14fdc0e3-1517-40da-9576-4646b0516b36)
+  *Issues Section*
+  
+  Step 3: Go to the label subsection, and type in <b>Good First Issue for Devs</b>.
+  
+  ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/f5dedcd1-5f08-483d-9898-6372022060b3)
+  *Label subsection within Issues*
+  
+  Step 4: Here, you can go through a list of Issues that can be worked on. They're fairly straightforward and can help you get accustomed to the developement environment as well as the codebase. Feel free to ask anyone from the Appflowy Team for suggestions, as well as to assign you to an Issue.
+  
+  ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/e1022103-e98e-42b5-a43d-03f5c5b08f04)
+  *Label subsection within Issues*
+  
+  <p> Issues are generally categorized into either <b>Feature [FR]</b> or <b>Bugs [Bug]</b>. You can proceed to have a look at the description provided for the given issue. Send a message down in comments section to get the issue assigned to yourself. Once that's done, you are ready to begin coding!</p>
+  
+  ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/a0c1479d-8c1b-4af8-a766-dbff8ab6c3d4)
+  *An example of an issue that can be worked on. Remember to message the maintainers first!*
+  
+  <p> As mentioned before, we expect you to go about contributions using the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) way. That involves some standard steps: </p>
+  
+1. Creating your own branch, either within a forked repository (recommended), or directly within the Appflowy Repository.
+2. Setting up your developemnt environment.
+3. Making changes to the codebase, in accordance to the requirements and tasks present in the Issue that you have chosen to work on.
+4. Pushing the changes to your branch, and creating a Pull Request for the same.
+5. Having a code review for the same, making further changes.
+6. Passing all the automated tests put in place.
+7. Handling Merge Conflicts.
+8. Merging your branch, and subsequent deletion of the branch once Merge is successfully completed.
+
+<p>These are the steps required to hande your first PR.</p>
+
+### How to propose new features and changes for Appflowy
+<p>Congratulations on completing your first PR! We're sure this is the first of many contributions from you! As Appflowy is Open Source in Nature, it also means that anyone and everyone is free to make recommendations and changes that can help improve Appflowy. If you have any ideas on how to go about doing the same, you can propose them via GitHub Issues. Let us see how:</p>
+
+Step 1: Go to the [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section in GitHub. Here you can see all of Appflowy's Open-Source repositories that can be contributed to. For the purposes of this article, we shall be looking at the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
+Step 2: Click on the <b>New Issue</b> section of the repository. The subsequent page should look something like this:
+
+![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/6d1b1efd-eb69-4083-a098-6f9e4117e11c)
+*Create New Issues Page*
+
+Step 3: Here, you can choose either to propose a Feature change, or address a Bug. For the purpose of this article, we shall choose the Create new Feature option.
+Step 4: On entering the type of issue, you will be redirected to a Feature Request form. Fill in all the fields, including the title, a detailed description of what the feature aims to do, its potential impact, and any other additional context needed to better understand the proposed feature. 
+Step 5: Click submit, and you're done!
+
+![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/cbccc006-7b10-47a8-886c-828352c67319)
+*Feature Submit Form*
+
+<p>Congratulations! You now know how to submit a feature through the issues tab available on GitHub.</p>
+
 
 ### An Example on how to handle your first PR
 
