@@ -54,13 +54,29 @@ And many more. Let's dive in!</p>
 
 ### How to Connect with the Team
 <p>The best ways to connect with the team are via Discord and GitHub. </p> 
+
 1. Discord 
   - Create a Discord account, and join the [Appflowy Community Server](https://discord.com/invite/9Q2xaN37tV). The server is full of creative individuals from all over the world, who are always ready to help you out, so do not be afraid to ask questions!
-  - Start of by introducing yourself in the <b>Intro's</b> section. Read carefully through the "welcome" Section to better abide by the server's rules and regulations.
-![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
+  - Start of by introducing yourself in the <b>Intro's</b> section. Read carefully through the <b>welcome</b> Section to better abide by the server's rules and regulations.
+  - Have a look around! Feel free to ask any prevalent questions to any member of the Appflowy Team or Appflowy Contributor's by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
 
-3. GitHub
-4. Mail
+![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
+*Welcome Page - Appflowy Dicord Server*
+
+2. GitHub  
+  - You can get started via asking questions in the [GitHub Discussions](https://github.com/AppFlowy-IO/AppFlowy/discussions) section of Appflowy.
+  - GitHub Discussions provides a forum for Appflowy Contributor's to Ask questions, Share ideas, Engage with other community members and to subsequently Welcome others who join in down the road.
+
+![image](https://user-images.githubusercontent.com/70965472/237032567-9d75b320-423e-4bc2-805d-7bcb7c96217c.png)
+*The Appflowy Discussions page*
+
+   - You can navigate through the various categories made available, including announcements, ideas, polls, etc.
+   - Feel free to explore the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) Sections to check out some open projects within Appflowy that you can get started working on.
+   - Also, feel free to explore Appflowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding on Appflowy's current development goal over the course of the next 6 months.
+
+3. Mail 
+  - You can get in touch with the team via mail - [support@appflowy.io](support@appflowy.io).
+
 
 
 ### How to identify and solve your first PR
