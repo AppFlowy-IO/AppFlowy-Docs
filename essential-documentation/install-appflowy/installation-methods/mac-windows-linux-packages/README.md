@@ -30,6 +30,6 @@ brew install --cask appflowy
 
 ##
 
-## Windowns install
+## Windows install
 
 You can download the executable directly from [Github](https://github.com/AppFlowy-IO/appflowy/releases)
