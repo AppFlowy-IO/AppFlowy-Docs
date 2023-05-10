@@ -1,6 +1,6 @@
 # 🔢 Database Properties
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>AppFlowy Database Properties</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>AppFlowy Database Properties</p></figcaption></figure>
 
 ### Text:&#x20;
 

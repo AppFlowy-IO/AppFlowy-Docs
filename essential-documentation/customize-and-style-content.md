@@ -8,7 +8,7 @@ description: Work in progress...
 
 Highlight any text to trigger the toolbar menu to access styling features:
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can also style with shortcuts. For example, `ctrl/cmd` + `b` for **bold** and `ctrl/cmd` **+** `shift` + **`h`** to <mark style="background-color:yellow;">highlight</mark>. A comprehensive list of shortcuts AppFlowy supports can be found [here](shortcuts.md).
 
@@ -34,13 +34,13 @@ Find a full list of [Markdown](customize-and-style-content.md#markdown) styling 
 
 <mark style="color:red;">Color code</mark> your text or <mark style="background-color:purple;">highlight</mark> in your favorite color from the same menu you've used to bold, italic, underline, or strikethrough.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Callout
 
 Use callouts to highlight specific text or include additional information. Maybe you want to add tips or actions. Here is what it looks like:
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>AppFlowy Callout</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>AppFlowy Callout</p></figcaption></figure>
 
 Add a callout:
 
@@ -51,7 +51,7 @@ Change the color:
 * Hover on the top right corner of the callout block
 * Click on 🎨
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Cover
 
@@ -63,10 +63,10 @@ Add a banner image to the top of your page
 
 * Hover over the cover that appears and choose `Change Cover`.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>AppFlowy Cover Art</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>AppFlowy Cover Art</p></figcaption></figure>
 
 * Pick a color or upload an image from your device&#x20;
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Upload an Image </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Upload an Image </p></figcaption></figure>

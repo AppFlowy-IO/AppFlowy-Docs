@@ -51,22 +51,22 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 
 ## Formatting
 
-|                                |                          |         |       |
-| ------------------------------ | ------------------------ | ------- | ----- |
-| Description                    | Key#1                    | Key#2   | Key#3 |
-| Format Bold                    | `CTRL` (or `⌘` on MacOS) | `B`     |       |
-| Format Italic                  | `CTRL` (or `⌘` on MacOS) | `I`     |       |
-| Format Underline               | `CTRL` (or `⌘` on MacOS) | `U`     |       |
-| Toggle Checkbox                | `CTRL` (or `⌘` on MacOS) | `Enter` |       |
-| Format Strikethrough           | `CTRL` (or `⌘` on MacOS) | `Shift` | `S`   |
-| Format Highlight               | `CTRL` (or `⌘` on MacOS) | `Shift` | `H`   |
-| Format embed code              | `CTRL` (or `⌘` on MacOS) | `E`     |       |
-| Underscore to italic           | `Shift`                  | `_`     |       |
-| Double Stars to Bold           | `Shift`                  | `*`     |       |
-| Backquotes around text to code | `` ` ``                  |         |       |
-| Double tilde to strikethrough  | `~`                      |         |       |
-| OR                             |                          |         |       |
-| Double tilde to strikethrough  | `Shift`                  | `~`     |       |
+|                                           |                          |         |       |
+| ----------------------------------------- | ------------------------ | ------- | ----- |
+| Description                               | Key#1                    | Key#2   | Key#3 |
+| Format Bold                               | `CTRL` (or `⌘` on MacOS) | `B`     |       |
+| Format Italic                             | `CTRL` (or `⌘` on MacOS) | `I`     |       |
+| Format Underline                          | `CTRL` (or `⌘` on MacOS) | `U`     |       |
+| Toggle Checkbox                           | `CTRL` (or `⌘` on MacOS) | `Enter` |       |
+| Format Strikethrough                      | `CTRL` (or `⌘` on MacOS) | `Shift` | `S`   |
+| Format Highlight                          | `CTRL` (or `⌘` on MacOS) | `Shift` | `H`   |
+| Format embed code                         | `CTRL` (or `⌘` on MacOS) | `E`     |       |
+| Underscore to italic                      | `Shift`                  | `_`     |       |
+| Double Stars to Bold                      | `Shift`                  | `*`     |       |
+| Backquotes around text to code            | `` `format as code` ``   |         |       |
+| Double tilde around text to strikethrough | `~~strikethrough~~`      |         |       |
+| OR                                        |                          |         |       |
+| Double tilde to strikethrough             | `Shift`                  | `~`     |       |
 
 ## Selection
 

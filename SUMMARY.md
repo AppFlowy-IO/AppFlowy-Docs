@@ -88,7 +88,7 @@
   * [🔢 Database Properties](essential-documentation/databases/database-properties.md)
   * [🗃 Manage Properties](essential-documentation/databases/manage-properties.md)
 * [🧩 AppFlowy Plugins](essential-documentation/appflowy-plugins/README.md)
-  * [Grid](essential-documentation/appflowy-plugins/grid.md)
+  * [Table-view Databases](essential-documentation/appflowy-plugins/table-view-databases.md)
   * [Kanban Board](essential-documentation/appflowy-plugins/kanban-board.md)
   * [Calendar](essential-documentation/appflowy-plugins/calendar.md)
   * [Auto Generator](essential-documentation/appflowy-plugins/auto-generator.md)
