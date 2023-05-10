@@ -52,8 +52,6 @@ Of course, no software project is without its bugs and issues. That's where Appf
 ## Project Completion
 Once all the development tasks are completed and all the bugs are fixed, it's time to wrap up the project. To manage the project completion, I create a new list for the project and add notes and tags as needed. For example, I might create a note for the final deliverables, a note for any outstanding issues, and a note for the project status. By tagging each note with the project name, I can easily find all the notes related to that project.
 
-## Collaboration
-Appflowy makes collaboration with team members easy. I can share lists as a markdown file with team members, add comments, and coordinate project plans and progress. 
 
 ## Other Exciting features for Software Engineers
 ## Open AI Integration
@@ -70,11 +68,18 @@ Before you get started, make sure to enter your OpenAI API key in the settings m
 With Appflowy's code block feature you can now save your code snippets directly in your Appflowy documents, complete with an auto language specifier at the top.
 This means that you no longer have to worry about manually formatting and highlighting your code snippets - Appflowy takes care of it all for you!
 
-![image (5)](https://user-images.githubusercontent.com/89600478/235844514-280eebd8-004a-40f3-a9ca-ee76267d4495.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/89600478/235844514-280eebd8-004a-40f3-a9ca-ee76267d4495.png"></img>
 
+  <p><small style="font-size: 70%"><em>Code Block</em></small></p>
+</div>
 
 ## Cleander View Databases
-This section is under development..
+This latest version v0.1.4 of Appflowy includes a major feature launch - Calendar View Databases(much needed by Software Engineers), which lets you easily plan and manage your tasks and deadlines using Appflowy's calendar views. With this feature, you can quickly visualize your project timeline and meetings, and ensure you meet all your deadlines.
+
+
+ ![image](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/ff465713-c12a-4d5c-8233-2456a328599e)
+
 
 
 ## Conclusion:
