@@ -79,7 +79,7 @@ And many more. Let's dive in!</p>
 
 
 ### How to identify and solve your first PR
-<p>Contributions are made via Pull Requests (PR's). We recommend getting familiar with [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) for the same. Once you're ready, you can begin looking for a PR to work on. A pre-cursor to this would also include setting up your developemet environment. You can find help for the same in Appflowy's Documentation, made available [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions). The steps are as follows:</p>
+<p>Contributions are made via Pull Requests (PR's). We recommend getting familiar with [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) for the same. Once you're ready, you can begin looking for a PR to work on. A pre-cursor to this would also include setting up your development environment. You can find help for the same in Appflowy's Documentation, made available [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions). The steps are as follows:</p>
 
   Step 1: Go to the [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section in GitHub. Here you can see all of Appflowy's Open-Source repositories that can be contributed to. For the purposes of this article, we shall be looking for Issues within the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
   
@@ -108,8 +108,8 @@ And many more. Let's dive in!</p>
   
   <p> As mentioned before, we expect you to go about contributions using the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) way. That involves some standard steps: </p>
   
-1. Creating your own branch, either within a forked repository (recommended), or directly within the Appflowy Repository.
-2. Setting up your developemnt environment.
+1. Creating your own branch, within your forked repository.
+2. Setting up your development environment.
 3. Making changes to the codebase, in accordance to the requirements and tasks present in the Issue that you have chosen to work on.
 4. Pushing the changes to your branch, and creating a Pull Request for the same.
 5. Having a code review for the same, making further changes.
@@ -128,8 +128,8 @@ Step 2: Click on the <b>New Issue</b> section of the repository. The subsequent 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/6d1b1efd-eb69-4083-a098-6f9e4117e11c)
 *Create New Issues Page*
 
-Step 3: Here, you can choose either to propose a Feature change, or address a Bug. For the purpose of this article, we shall choose the Create new Feature option.
-Step 4: On entering the type of issue, you will be redirected to a Feature Request form. Fill in all the fields, including the title, a detailed description of what the feature aims to do, its potential impact, and any other additional context needed to better understand the proposed feature. 
+Step 3: Here, you can choose either to propose a feature change, or address a bug. For the purpose of this article, we shall choose the "Create New Feature" option.
+Step 4: On entering the type of issue, you will be redirected to a "Feature Request" form. Fill in all the fields, including the title, a detailed description of what the feature aims to do, its potential impact, and any other additional context needed to better understand the proposed feature. 
 Step 5: Click submit, and you're done!
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/cbccc006-7b10-47a8-886c-828352c67319)
