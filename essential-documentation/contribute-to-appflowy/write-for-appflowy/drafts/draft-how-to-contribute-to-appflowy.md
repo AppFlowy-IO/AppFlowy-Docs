@@ -31,10 +31,10 @@
 
 <!-- Introduction -->
 ## Introduction
-<p>Appflowy is a productivity tool that can be used to help individuals or teams accomplish tasks efficiently and effectively. It is open-source, which means that its code is freely available to all for development and customization! Whether you're an aspiring developer, a seasoned programmer, or someone with a genuine interest in technology, this guide is here to help you navigate the exciting world of open-source with Appflowy!</p>
+<p>Appflowy is a productivity tool that streamlines note taking and task management. It is open-source, which means that its code is available to everyone for development and customization! Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open-source with Appflowy!</p>
 
 ### General Purpose of this Article
-<p>We will explore the ins and outs of contributing to Appflowy and provide you with practical tips on how to make your first contribution. We'll demystify the process, highlight the benefits, and equip you with the essential tools and resources to get started on your open-source journey with Appflowy.
+<p>We will explore the process of contributing to Appflowy and provide practical tips on how to make your first contribution. We'll demystify the process, highlight the benefits, and equip you with the essential tools and resources to get started on your open-source journey with Appflowy.
 
 Throughout this guide, we'll address common questions you may have, such as:
 
@@ -57,7 +57,7 @@ And many more. Let's dive in!</p>
 
 1. Discord 
   - Create a Discord account and join the [Appflowy Community Server](https://discord.com/invite/9Q2xaN37tV). Don't be afraid to ask questions!
-  - Start by introducing yourself in the <b>Intro's</b> section. Read carefully through the <b>welcome</b> section to better abide by the server's rules and regulations.
+  - Start by introducing yourself in the <b>Intro's</b> section. Read carefully through the <b>welcome</b> section. You must abide by the server's rules and regulations.
   - If you have any questions, tag the Appflowy Team or Appflowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
 
 ![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
@@ -79,9 +79,9 @@ And many more. Let's dive in!</p>
 
 
 ### How to identify and solve your first PR
-<p>Contributions are made via Pull Requests (PR's). We recommend getting familiar with [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) for the same. Once you're ready, you can begin looking for a PR to work on. A pre-cursor to this would also include setting up your development environment. You can find help for the same in Appflowy's documentation, made available [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions). The steps are as follows:</p>
+<p>Contributions are made via Pull Requests (PR's). We recommend getting familiar with [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) and setting up your development environment. Now that you're ready, start looking for a PR to work on. If you need help getting started, look at Appflowy's [documentation](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions). The steps are as follows:</p>
 
-  Step 1: Go to [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section in GitHub. Here you can see all of Appflowy's open-source repositories that can be contributed to. For the purposes of this article, we shall be looking for Issues within the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
+  Step 1: Go to [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section in GitHub. This is a list of all of Appflowy's repositories open for contributions. For the purposes of this article, we shall be looking for Issues within the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
   
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/715c8a61-af5f-4856-840f-11f8604e765c)
   *Appflowy GitHub Page - with all Open-Source Repositories that can be worked on*
@@ -135,7 +135,7 @@ Step 5: Click submit, and you're done!
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/cbccc006-7b10-47a8-886c-828352c67319)
 *Feature Submit Form*
 
-<p>Congratulations! You now know how to submit a feature through the issues tab available on GitHub.</p>
+<p>Congratulations on submitting your first feature!</p>
 
 
 ### An Example on how to handle your first PR
@@ -162,7 +162,7 @@ Step 5: Click submit, and you're done!
 <!-- Links to Resources to help get started with technical contributions -->
 ## Links to Resources to Help get Started with Technical Contributions
 
-<p> This might be quite a lot to take in at first, especially if you're a newcomer to software development. We have curated some links that can help kickstart your journey with Appflowy. These include documentation for the technologies and frameworks used for maintaining and developing Appflowy. Feel free to read up on anything that might be unfamiliar to you. It goes a long way!</p>
+<p> This might be lot to take in, especially if you're a newcomer. We have curated some links to kickstart your journey with Appflowy. These include documentation for the technologies and frameworks used for maintaining and developing Appflowy. Feel free to read up on anything that might be unfamiliar to you. It goes a long way!</p>
 
 - [Git](https://git-scm.com/)
 - [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
