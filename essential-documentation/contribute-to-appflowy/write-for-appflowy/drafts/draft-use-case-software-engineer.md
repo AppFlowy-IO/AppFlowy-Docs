@@ -8,15 +8,18 @@ Welcome, fellow software engineers! Today, I want to share with you how I use Ap
 ![image](https://user-images.githubusercontent.com/89600478/235852123-0105d13e-b05e-4df0-b136-4825ca817351.png)
 
 
-
 <!-- How to Contribute -->
 ## Installation
-These are the installation instructions for an end user. If you wish to contribute to AppFlowy or if you just want to view and run directly from source code please visit the [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy).<br>
-You can view the [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/requirements).<br>
-You can go directly to the [Installation methods](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods).
+Prior to proceeding with the installation, it is essential to ensure that your machine meets the specified [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods).<br>
+Here are the [Installation methods](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods) that provide clear guidance on how to successfully install Appflowy. <br>
+Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated Contribute to AppFlowy section.
+
 
 ## Setting Up
-To get started with Appflowy, Once it is installed you'll need to create a workspace. In Appflowy, workspaces are used to group related lists together. For example, you might have a workspace for all your software engineering projects. Within that workspace, you can create categories such as Project Planning, Development Tasks, Bugs and Issues, and Project Completion. This way, you can keep all your work in one place and easily find what you need.
+After installation, users can pick a folder for saving data on the quick start page.
+![image (9)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/f96b3596-3196-458e-bb1f-be8ba847eac6)
+
+Once it is installed you'll need to create a workspace. In Appflowy, workspaces are used to group related lists together. For example, you might have a workspace for all your software engineering projects. Within that workspace, you can create categories such as Project Planning, Development Tasks, Bugs and Issues, and Project Completion. This way, you can keep all your work in one place and easily find what you need.
 
 
 ## Benefits of using Appflowy as a Software Engineer
