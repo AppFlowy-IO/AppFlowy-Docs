@@ -37,6 +37,9 @@ Before we dive into the details, let's talk about the benefits of using Appflowy
 Now that we have our workspace set up, let's talk about how to use Appflowy for project planning. To plan a project in Appflowy, I create a new list for the project and add notes and tags as needed. For example, I might create a note for the project goal, a note for the requirements, and a note for each milestone. By tagging each note with the project name, I can easily find all the notes related to that project.
 
 ![project plann](https://user-images.githubusercontent.com/89600478/235844017-2f00d682-5ddd-4fb5-a935-0055d0f3bb34.jpg)
+<div align="center">
+  <p><small style="font-size: 70%"><em>Project planning page</em></small></p>
+</div>
 
 ## Development Tasks:
 Once I have my project plan in place, it's time to start working on the development tasks. To manage my development tasks, I create a new list for each task and add notes and tags as needed. For example, I might create a note for the task description, a note for any subtasks, and a note for the estimated time to complete. By tagging each note with the project name and task name, I can easily find all the notes related to that task.
@@ -88,6 +91,9 @@ This latest version v0.1.4 of Appflowy includes a major feature launch - Calenda
 
 
  ![image](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/ff465713-c12a-4d5c-8233-2456a328599e)
+ <div align="center">
+  <p><small style="font-size: 70%"><em>Calender View Databases</em></small></p>
+</div>
 
 
 
