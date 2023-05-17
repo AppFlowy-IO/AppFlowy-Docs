@@ -29,7 +29,7 @@ Once you have AppFlowy installed, simply create a new page for your software eng
 
 
 ## Benefits of using Appflowy as a Software Engineer
-Before we dive into the details, let's talk about the benefits of using Appflowy as a software engineer. First and foremost, Appflowy helps me stay organized. With its ability to create categories and subcategories, I can keep all my projects, tasks, and notes in one place. Additionally, Appflowy's tagging feature allows me to quickly and easily find specific items. Also, Appflowy's collaboration features allow me to easily work with my team and keep everyone on the same page.
+Before we dive into the details, let's talk about the benefits of using Appflowy as a software engineer. First and foremost, Appflowy helps me stay organized. With its ability to create structured pages, I can keep all my projects, tasks, and notes in one place. Additionally, I can easily share my pages in markdown with my team and keep everyone on the same page.
 
 
 
