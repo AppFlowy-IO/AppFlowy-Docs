@@ -17,9 +17,9 @@
         <li><a href="#how-to-connect-with-the-team">How to Connect with the Team</a></li>
         <li><a href="#how-to-identify-and-solve-your-first-pr">How to identify and solve your first PR</a></li>
         <li><a href="#how-to-propose-new-features-and-changes-for-appflowy">How to propose new features for Appflowy (via GitHub Issues)</a></li>
-        <li><a href="#an-example-on-how-to-handle-your-first-pr">An Example on how to handle your first PR</a></li>
       </ul>
     </li>
+    <li><a href="#an-example-on-how-to-handle-your-first-pr">An Example on how to handle your first PR</a></li>
     <li><a href="#how-to-best-engage-with-the-community">How to best engage with the community</a></li>
     <li><a href="#links-to-resources-to-help-get-started-with-technical-contributions">Links to Resources to help get started with Technical Contributions</a></li>
     <li><a href="#other-initiatives-by-appflowy">Other Initiatives by Appflowy</a></li>
@@ -138,8 +138,27 @@ Step 5: Click submit, and you're done!
 <p>Congratulations on submitting your first feature!</p>
 
 
-### An Example on how to handle your first PR
-(WIP)
+## An Example on how to handle your first PR
+
+<p> In this section, I shall be highlighting my personal experience with Appflowy, from why I decided to the contribute, the workflow that I followed, and the overall experience of going about Open-Source development.</p>
+
+### Why I decided to contribute to Appflowy
+
+<p> My first contribution for Appflowy came during the GitHub Octernship season. I had heard about the GitHub Octernships through a promotional video that I had found on YouTube. Considering how similar it was to GSOC and other Open-Source iniatives, I was interested to try it out. I registered for the event, and after carefull consideration, decided to choose Appflowy as one of my 4 entries. The initial appeal of Appflowy was clear, it was a productivity tool suite, competing with heavyweights like Notion and Todoist, and most importantly, was Open-Source in nature. That meant a 3rd year Junior like myself could have a shot at development experience, without much hassle. Appflowy is built out of Flutter and Rust, which were completely new to me. But considering the pros of the Octernship program, I decided to enroll anyway. I joined the Appflowy Discord Server, introduced myself, and quickly got down to completing the assignment. This brought me to handling a PR for any first-time issue for Junior Dev's. This was a compulsory part of the Octernship application, which officially started my Open-Source journey with Appflowy. </p>
+
+### How I went about searching for a first time issue
+
+### How I solved it
+
+### How I went about clarifying doubts with the maintainers
+
+### How I handled code reviews with the team - changes that I made, following conventions, etc.
+
+### The final merge request
+
+### Things that I learnt through this whole experience
+
+
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 
