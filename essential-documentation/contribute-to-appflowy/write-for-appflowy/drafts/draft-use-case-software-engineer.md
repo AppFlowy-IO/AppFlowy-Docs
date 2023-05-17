@@ -13,13 +13,19 @@ Welcome, fellow software engineers! Today, I want to share with you how I use Ap
 Prior to proceeding with the installation, it is essential to ensure that your machine meets the specified [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods).<br>
 Here are the [Installation methods](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods) that provide clear guidance on how to successfully install Appflowy. <br>
 Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated Contribute to AppFlowy section.
-
-
-## Setting Up
 After installation, users can pick a folder for saving data on the quick start page.
+
 ![image (9)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/f96b3596-3196-458e-bb1f-be8ba847eac6)
 
-Once it is installed you'll need to create a workspace. In Appflowy, workspaces are used to group related lists together. For example, you might have a workspace for all your software engineering projects. Within that workspace, you can create categories such as Project Planning, Development Tasks, Bugs and Issues, and Project Completion. This way, you can keep all your work in one place and easily find what you need.
+## Setting Up
+
+Once you have AppFlowy installed, simply create a new page for your software engineering projects. This page will serve as your central hub, where you can structure and categorize your tasks.For example,When using AppFlowy for software engineering, you can create sections like "Project Planning" for goals, requirements, and milestones. "Development Tasks" helps manage project-specific tasks. Use "Bugs and Issues" to log and address problems, and a "Project Completion" section to track final steps for successful delivery. By creating these sections within your page, you can easily navigate through your projects and find the information you need without any confusion. AppFlowy provides a clean and intuitive interface that allows you to stay focused and organized throughout the software engineering process.
+
+![image](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/4efe4a56-c9ac-4dc0-b695-f576a8729682)
+<div align="center">
+  <p><small style="font-size: 70%"><em>Sample Appflowy Page</em></small></p>
+</div>
+
 
 
 ## Benefits of using Appflowy as a Software Engineer
