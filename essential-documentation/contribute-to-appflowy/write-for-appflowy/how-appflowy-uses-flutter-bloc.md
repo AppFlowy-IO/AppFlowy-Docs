@@ -51,4 +51,4 @@ Give Flutter Bloc a try in your own projects, and experience the benefits it bri
 
 In conclusion, Flutter Bloc has proven to be a valuable asset in AppFlowy's state management strategy. The clear separation of concerns, event-driven approach, and seamless integration with the user interface contribute to a well-structured and maintainable codebase. By leveraging the power of Flutter Bloc, AppFlowy delivers a smooth, responsive, and scalable user experience.
 
-Give it a try in your own Flutter projects, explore the possibilities, and unlock the potential of Flutter Bloc in your state management endeavors. Happy coding!
+Give it a try in your own Flutter projects , explore the possibilities, and unlock the potential of Flutter Bloc in your state management endeavors. Happy coding!
