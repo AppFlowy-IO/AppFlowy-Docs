@@ -44,7 +44,7 @@ Throughout this guide, we'll address common questions you may have, such as:
 4. How do I propose new features for Appflowy?
 5. How can I best engage with the community?
   
-And many more. Let's dive in!</p>
+Let's dive in!</p>
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 
@@ -120,7 +120,7 @@ And many more. Let's dive in!</p>
 <p>These are the steps required to handle your first PR.</p>
 
 ### How to Propose New Features and Changes for Appflowy
-<p>Congratulations on completing your first PR! We're sure this is the first of many contributions from you! As Appflowy is Open Source in nature, it also means that anyone and everyone is free to make recommendations and changes that can help improve Appflowy. If you have any ideas on how to go about doing the same, you can propose them via GitHub Issues. Let us see how:</p>
+<p>Congratulations on completing your first PR! Now let's explore how you can propose your ideas for improving AppFlowy with a GitHub Issues walkthrough:</p>
 
 <b>Step 1:</b> Go to [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. Here you can see all of Appflowy's Open-Source repositories that can be contributed to. For the purposes of this article, we shall be looking at the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
 <b>Step 2:</b> Click on the <b>New Issue</b> section of the repository. The subsequent page should look something like this:
@@ -146,7 +146,7 @@ And many more. Let's dive in!</p>
 
 <p> My first contribution for Appflowy came during the GitHub Octernship season. I had heard about the GitHub Octernships through a promotional video that I had found on YouTube. Considering how similar it was to GSOC and other Open-Source iniatives, I was interested to try it out. I registered for the event, and after carefull consideration, decided to choose Appflowy as one of my 4 entries. The initial appeal of Appflowy was clear, it was a productivity tool suite, competing with heavyweights like Notion and Todoist, and most importantly, was Open-Source in nature. That meant a 3rd year Junior like myself could have a shot at development experience, without much hassle. Appflowy is built out of Flutter and Rust, which were completely new to me. But considering the pros of the Octernship program, I decided to enroll anyway. I joined the Appflowy Discord Server, introduced myself, and quickly got down to completing the assignment. This brought me to handling a PR for any first-time issue for Junior Dev's. This was a compulsory part of the Octernship application, which officially started my Open-Source journey with Appflowy. </p>
 
-### How I Went About Searching for a First Time Issue
+### Searching for My First Issue
 
 <p> I began by searching for issues on the main Appflowy Repository. I had contributed to minor open-source projects before, and knew how one generally went about contributing to open-source repositories. I entered the words "good-first-issue" in the label bar. I selected the first option, i.e. good first issues for junior devs. This was my first time working on flutter, so I decided it was best that i started out with something easy. I decided to go ahead with issue <a href="https://github.com/AppFlowy-IO/AppFlowy/issues/1059">#1059 - Support markdown to italicize text</a>. The requirements were fairly simple: Add a function to enable italics via use of single asterisks. After going through the codebase, I knew it would just involve copying and editing a pre-existing function that did the same for underscores, and so I decided to go ahead with it.</p>
 
@@ -175,7 +175,7 @@ And many more. Let's dive in!</p>
 
 <p> With the environment up and running, it was down to make the changes needed to fullfill the task at hand. I added the function required, tested it manually in my local environment, and pushed the ensuing commit into my forked repository's branch. I then created a pull request for the same and awaited my first code review. </p>
 
-### How I Clarified Doubts With the Maintainers
+### Clarifying Doubts With Maintainers
 
 <p> As always, feel free to ask doubts and seek suggestions from the maintainers and the core team. You can ask questions related to any feature you'd like to implement, any bug that you've encountered, and so on. </p>
 
