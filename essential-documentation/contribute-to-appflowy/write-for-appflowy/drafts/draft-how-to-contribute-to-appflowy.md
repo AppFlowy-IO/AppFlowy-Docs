@@ -1,4 +1,4 @@
-# \[Draft] How to contribute to AppFlowy
+# \[Draft] How to Contribute to Appflowy
 
 
 <!-- TABLE OF CONTENTS -->
@@ -8,20 +8,20 @@
     <li>
       <a href="#introduction">Introduction</a>
       <ul>
-        <li><a href="#general-purpose-of-this-article">General Purpose of this Article</a></li>
+        <li><a href="#general-purpose-of-this-article">General Purpose of This Article</a></li>
       </ul>
     </li>
     <li>
       <a href="#how-to-contribute-to-appflowy">How to Contribute to Appflowy</a>
       <ul>
-        <li><a href="#how-to-connect-with-the-team">How to Connect with the Team</a></li>
-        <li><a href="#how-to-identify-and-solve-your-first-pr">How to identify and solve your first PR</a></li>
-        <li><a href="#how-to-propose-new-features-and-changes-for-appflowy">How to propose new features for Appflowy (via GitHub Issues)</a></li>
+        <li><a href="#how-to-connect-with-the-team">How to Connect With the Team</a></li>
+        <li><a href="#how-to-identify-and-solve-your-first-pr">How to Identify and Solve Your First PR</a></li>
+        <li><a href="#how-to-propose-new-features-and-changes-for-appflowy">How to Propose New Features for Appflowy (Via Github Issues)</a></li>
       </ul>
     </li>
-    <li><a href="#an-example-on-how-to-handle-your-first-pr">An Example on how to handle your first PR</a></li>
-    <li><a href="#how-to-best-engage-with-the-community">How to best engage with the community</a></li>
-    <li><a href="#links-to-resources-to-help-get-started-with-technical-contributions">Links to Resources to help get started with Technical Contributions</a></li>
+    <li><a href="#an-example-on-how-to-handle-your-first-pr">An Example on How to Handle Your First PR</a></li>
+    <li><a href="#how-to-best-engage-with-the-community">How to Best Engage With the Community</a></li>
+    <li><a href="#links-to-resources-to-help-get-started-with-technical-contributions">Links to Resources to Help Get Started With Technical Contributions</a></li>
     <li><a href="#other-initiatives-by-appflowy">Other Initiatives by Appflowy</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ol>
@@ -33,7 +33,7 @@
 ## Introduction
 <p>Appflowy is a productivity tool that streamlines note taking and task management. It is open-source, which means that its code is available to everyone for development and customization! Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open-source with Appflowy!</p>
 
-### General Purpose of this Article
+### General Purpose of This Article
 <p>We will explore the process of contributing to Appflowy and provide practical tips on how to make your first contribution. We'll demystify the process, highlight the benefits, and equip you with the essential tools and resources to get started on your open-source journey with Appflowy.
 
 Throughout this guide, we'll address common questions you may have, such as:
@@ -52,7 +52,7 @@ And many more. Let's dive in!</p>
 ## How to Contribute to Appflowy
 <p>Appflowy is managed via GitHub, a popular version control system. You'll need a GitHub account to get started. We recommend getting familiar with GitHub's features, especially GitHub Workflows, before starting with contributions.</p>
 
-### How to Connect with the Team
+### How to Connect With the Team
 <p>The best ways to connect with the team are via Discord and GitHub. </p> 
 
 1. Discord 
@@ -78,7 +78,7 @@ And many more. Let's dive in!</p>
   - You can get in touch with the team via mail at [support@appflowy.io](support@appflowy.io).
 
 
-### How to identify and solve your first PR
+### How to Identify and Solve Your First PR
 <p>Contributions are made via Pull Requests (PR's). We recommend getting familiar with <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</a> and setting up your development environment. Now that you're ready, start looking for a PR to work on. If you need help getting started, look at Appflowy's <a href="https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions">Documentation</a>. The steps are as follows:</p>
 
   **Step 1:** Go to [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section in GitHub. This is a list of all of Appflowy's repositories open for contributions. For the purposes of this article, we shall be looking for Issues within the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
@@ -119,7 +119,7 @@ And many more. Let's dive in!</p>
 
 <p>These are the steps required to handle your first PR.</p>
 
-### How to propose new features and changes for Appflowy
+### How to Propose New Features and Changes for Appflowy
 <p>Congratulations on completing your first PR! We're sure this is the first of many contributions from you! As Appflowy is Open Source in nature, it also means that anyone and everyone is free to make recommendations and changes that can help improve Appflowy. If you have any ideas on how to go about doing the same, you can propose them via GitHub Issues. Let us see how:</p>
 
 <b>Step 1:</b> Go to [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. Here you can see all of Appflowy's Open-Source repositories that can be contributed to. For the purposes of this article, we shall be looking at the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
@@ -138,15 +138,15 @@ And many more. Let's dive in!</p>
 <p>Congratulations on submitting your first feature!</p>
 
 
-## An Example on how to handle your first PR
+## An Example on How to Handle Your First PR
 
 <p> In this section, I shall be highlighting my personal experience with Appflowy, from why I decided to the contribute, the workflow that I followed, and the overall experience of going about Open-Source development.</p>
 
-### Why I decided to contribute to Appflowy
+### Why I Decided to Contribute to Appflowy
 
 <p> My first contribution for Appflowy came during the GitHub Octernship season. I had heard about the GitHub Octernships through a promotional video that I had found on YouTube. Considering how similar it was to GSOC and other Open-Source iniatives, I was interested to try it out. I registered for the event, and after carefull consideration, decided to choose Appflowy as one of my 4 entries. The initial appeal of Appflowy was clear, it was a productivity tool suite, competing with heavyweights like Notion and Todoist, and most importantly, was Open-Source in nature. That meant a 3rd year Junior like myself could have a shot at development experience, without much hassle. Appflowy is built out of Flutter and Rust, which were completely new to me. But considering the pros of the Octernship program, I decided to enroll anyway. I joined the Appflowy Discord Server, introduced myself, and quickly got down to completing the assignment. This brought me to handling a PR for any first-time issue for Junior Dev's. This was a compulsory part of the Octernship application, which officially started my Open-Source journey with Appflowy. </p>
 
-### How I went about searching for a first time issue
+### How I Went About Searching for a First Time Issue
 
 <p> I began by searching for issues on the main Appflowy Repository. I had contributed to minor open-source projects before, and knew how one generally went about contributing to open-source repositories. I entered the words "good-first-issue" in the label bar. I selected the first option, i.e. good first issues for junior devs. This was my first time working on flutter, so I decided it was best that i started out with something easy. I decided to go ahead with issue <a href="https://github.com/AppFlowy-IO/AppFlowy/issues/1059">#1059 - Support markdown to italicize text</a>. The requirements were fairly simple: Add a function to enable italics via use of single asterisks. After going through the codebase, I knew it would just involve copying and editing a pre-existing function that did the same for underscores, and so I decided to go ahead with it.</p>
 
@@ -158,7 +158,7 @@ And many more. Let's dive in!</p>
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/60633c00-bf46-4d19-99a6-775213b0a370)
 *Always ask questions - clarify your thoughts, as well as your plans for implementation with the team*
 
-### How I solved it
+### How I Solved It
 
 <p> As mentioned before, it was a fairly straightforward issue, with code already present in the code base that could be reused for the same. However, I had a lot of trouble setting up my development environment. This is a common issue to first-timers, so don't worry if you have trouble setting up your environment as well. I had issues with the unpacking of the cargo files for the Rust Backend. This mostly came down to my Antivirus flagging all the incoming files needed for development. It took a while of troubleshooting, and asking for help from the community, but I was eventually able to figure it out, and get the environment up and ready. Some things that I did to smoothen my onboarding experience included: </p>
 
@@ -175,14 +175,14 @@ And many more. Let's dive in!</p>
 
 <p> With the environment up and running, it was down to make the changes needed to fullfill the task at hand. I added the function required, tested it manually in my local environment, and pushed the ensuing commit into my forked repository's branch. I then created a pull request for the same and awaited my first code review. </p>
 
-### How I went about clarifying doubts with the maintainers
+### How I Clarified Doubts With the Maintainers
 
 <p> As always, feel free to ask doubts and seek suggestions from the maintainers and the core team. You can ask questions related to any feature you'd like to implement, any bug that you've encountered, and so on. </p>
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/0aa7325a-7212-4df1-ba51-a127471b29d7)
 *An example of a community member helping me resolve an issue*
 
-### How I handled code reviews with the team - changes that I made, following conventions, etc.
+### How I Handled Code Reviews With the Team - Changes That I Made, Following Conventions, Etc.
 
 <p> As a first time contributor to a repository, you will be asked to sign the CLA, i.e. the Contributor Liscence Agreement. You can read more on the same <a href="https://en.wikipedia.org/wiki/Contributor_License_Agreement">here</a>. Once that's done, your Pull Request will be assigned one or more reviewers. They are generally members of the core Appflowy team, or Senior contributors. They know the codebase in and out, so feel free to ask for suggestions on how to tackle any developmental issue that you may face. My reviewers left some suggested changes for the Pull Request, including changing on keyboard conventions and other small changes. </p>
 
@@ -204,12 +204,12 @@ And many more. Let's dive in!</p>
 
 <p> Overall, I think I made quite a mess with my first Pull Request. From horrible coding practices, to terrible naming conventions, I had it all! But thanks to the community, I was able to navigate the entire process with relative ease. A big thank you to <a href="https://github.com/Xazin">Xazin</a> and <a href="https://github.com/LucasXu0">LucasXu0</a> for all their help and support. This really is what I admire the most at Appflowy, the <b>Community</b>. So stay hungry, always be open to suggestions, and you'd be surpsised by just how much you can learn while working on a large scaled, open-source collaborative project like Appflowy. </p>
 
-### The final merge request
+### The Final Merge Request
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/1a57eece-041f-4862-a99f-0bc604179740)
 *The first of many more Pull Requests!*
 
-### Things that I learnt through this whole experience
+### Things That I Learnt Through This Whole Experience
 
 <p> To summarise, here are my key takeaways from the entire experience: </p>
 
@@ -225,7 +225,7 @@ And many more. Let's dive in!</p>
 
 
 <!-- How to best engage with the community -->
-## How to best engage with the community
+## How to Best Engage With the Community
 
 <p> Here are some best practises to engage with the community here at Appflowy: </p>
 
@@ -240,7 +240,7 @@ And many more. Let's dive in!</p>
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 <!-- Links to Resources to help get started with technical contributions -->
-## Links to Resources to Help get Started with Technical Contributions
+## Links to Resources to Help Get Started With Technical Contributions
 
 <p> This might be lot to take in, especially if you're a newcomer. We have curated some links to kickstart your journey with Appflowy. These include documentation for the technologies and frameworks used for maintaining and developing Appflowy. Feel free to read up on anything that might be unfamiliar to you. It goes a long way!</p>
 
