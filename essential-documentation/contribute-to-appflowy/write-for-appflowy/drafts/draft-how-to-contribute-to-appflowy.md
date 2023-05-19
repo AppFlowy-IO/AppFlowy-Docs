@@ -68,7 +68,7 @@ Let's dive in!</p>
   - GitHub Discussions provides a forum for Appflowy contributors to ask questions, share ideas, engage with other community members, and subsequently welcome others who join in down the road.
 
 ![image](https://user-images.githubusercontent.com/70965472/237032567-9d75b320-423e-4bc2-805d-7bcb7c96217c.png)
-*The Appflowy Discussions page*
+*The Appflowy Discussions Page*
 
    - You can navigate through the various categories made available, including announcements, ideas, polls, etc.
    - The [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections contain open projects for first time contributors.
@@ -84,7 +84,7 @@ Let's dive in!</p>
   **Step 1:** Go to [Appflowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. This is a list of all of Appflowy's repositories open for contributions. For the purposes of this article, we shall be looking for <b>Issues</b> within the main [Appflowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
   
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/715c8a61-af5f-4856-840f-11f8604e765c)
-  *Appflowy GitHub Page - with all Open-Source Repositories that can be worked on*
+  *Appflowy Github Page - With all open-source repositories that can be worked on*
   
   **Step 2:** Go to the <b>Issues</b> section of the repository. It should look something like this:
   
@@ -94,12 +94,12 @@ Let's dive in!</p>
   **Step 3:** Go to the label subsection, and type in <b>Good First Issue for Devs</b>.
   
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/f5dedcd1-5f08-483d-9898-6372022060b3)
-  *Label subsections within Issues*
+  *Label Subsections Within Issues*
   
   **Step 4:** Here, you can go through a list of Issues that can be worked on. They're fairly straightforward and can help you get accustomed to the  development environment as well as the codebase. Feel free to ask anyone from the Appflowy team for suggestions or to assign you to an Issue.
   
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/e1022103-e98e-42b5-a43d-03f5c5b08f04)
-  *Label subsection within Issues*
+  *Good First Issue for Devs*
   
   <p> Issues are generally categorised into either <b>Feature [FR]</b> or <b>Bugs [Bug]</b>. You can take a look at the description provided for the given issue. Send a message down in the comments section to get the issue assigned to yourself. Once that's done, you are ready to begin coding!</p>
   
@@ -156,7 +156,7 @@ Let's dive in!</p>
 <p> I started by asking one of the moderators if I could work on the issue. The core team got back to me on what I could work on, specifically with respect to the given issue. Once I got assigned the issue, I was ready to get started.</p>
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/60633c00-bf46-4d19-99a6-775213b0a370)
-*Always ask questions - clarify your thoughts, as well as your plans for implementation with the team*
+*Always Ask Questions - Clarify your thoughts, as well as your plans for implementation with the Team*
 
 ### How I Solved It
 
@@ -167,7 +167,7 @@ Let's dive in!</p>
 - Creating an issue in the Issues tab and highlighting the exact problem that you faced. I carefully detailed the exact issue that I was facing, including screenshots, error messages, and any other relevent information pertaining to the issue that I was facing. (You can have a look at Issue [#2045](https://github.com/AppFlowy-IO/AppFlowy/issues/2045). This is a fairly good example of how one can approach roadblocks on their development journey).
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/919bfd67-9e32-427e-b817-1ea72c06b0e2)
-*An Example of an Issue created to help gain feedback from the community on how to best tackle it*
+*An example of an issue created to help gain feedback from the community on how to best tackle it*
 
 - Asking on Discord - you may do so on the <b>flutter-101</b> and <b>rust-101</b> channels.
 
@@ -187,7 +187,7 @@ Let's dive in!</p>
 <p> As a first-time contributor to a repository, you will be asked to sign the CLA, i.e., the Contributor Liscence Agreement. You can read more on the same <a href="https://en.wikipedia.org/wiki/Contributor_License_Agreement">here</a>. Once that's done, your Pull Request will be assigned one or more reviewers. They are generally members of the core Appflowy team or senior contributors. They know the codebase in and out, so feel free to ask for suggestions on how to tackle any developmental issue that you may face. My reviewers left some suggested changes for the Pull Request, including changing keyboard conventions and other small changes. </p>
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/242608e8-6295-4e8c-8d61-7709cb04b4cd)
-*An example of a suggested review left by Reviewers during a Code Review of a Pull Request*
+*An example of a suggested review left by reviewers during a dode review of a pull request*
 
 <p> Another requirement that was put forward by the team was to make unit tests for the new feature. Unit testing is important as it makes sure that changes made to a codebase do not break other parts of the codebase. I had a horrid time writing these unit tests, as I was still very new to Flutter. But as always, feel free to ask for help. </p>
 
