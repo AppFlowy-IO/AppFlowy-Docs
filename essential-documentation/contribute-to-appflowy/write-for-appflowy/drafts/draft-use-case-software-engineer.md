@@ -69,7 +69,7 @@ Once all the development tasks are completed and all the bugs are fixed, it's ti
 ## Open AI Integration
 Being a Software Engineer you must be tired of reading through long, technical documents and articles. Well, Appflowy's got your back with their new OpenAI integration. With just a few clicks, you can now quickly summarize lengthy texts and extract key information using the power of OpenAI.
 All you have to do is highlight the text you want to summarize and click on the 'Summarize' option in Appflowy's menu. And that's not it, it can fix spellings for you too.
-Before you get started, make sure to enter your OpenAI API key in the settings menu. This feature can be a huge time-saver for busy software engineers who need to stay up-to-date on the latest industry news and trends. So what are you waiting for? Give it a try and make your life easy.
+Before you get started, make sure to enter your OpenAI API key in the settings menu. Please visit [Appflowy AI Setup](https://appflowy.gitbook.io/docs/essential-documentation/appflowy-x-openai) to know ho to integrate this feature. This feature can be a huge time-saver for busy software engineers who need to stay up-to-date on the latest industry news and trends. So what are you waiting for? Give it a try and make your life easy.
 
 ![Animation3](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/0a0a0dff-74d5-43f6-a6b1-236e754bebf1)
 <div align="center">
