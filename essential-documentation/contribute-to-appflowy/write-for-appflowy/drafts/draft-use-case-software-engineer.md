@@ -29,7 +29,7 @@ Once you have AppFlowy installed, simply create a new page for your software eng
 
 
 ## Benefits of using Appflowy as a Software Engineer
-Before we dive into the details, let's talk about the benefits of using Appflowy as a software engineer. First and foremost, Appflowy helps me stay organized. With its ability to create structured pages, I can keep all my projects, tasks, and notes in one place. Additionally, I can easily share my pages in markdown with my team and keep everyone on the same page.
+Before we dive into the details, let's talk about the benefits of using Appflowy as a software engineer. First and foremost, Appflowy helps me stay organized. With its ability to create structured pages, I can keep all my projects, tasks, and notes in one place. Additionally, I can easily share my pages in Markdown(.md file) with my team and keep everyone on the same page.
 
 
 
@@ -65,13 +65,13 @@ Of course, no software project is without its bugs and issues. That's where Appf
 Once all the development tasks are completed and all the bugs are fixed, it's time to wrap up the project. To manage the project completion, I create a new list for the project and add notes and tags as needed. For example, I might create a note for the final deliverables, a note for any outstanding issues, and a note for the project status. By tagging each note with the project name, I can easily find all the notes related to that project.
 
 
-## Other Exciting features for Software Engineers
+## Other Exciting Features for Software Engineers
 ## Open AI Integration
 Being a Software Engineer you must be tired of reading through long, technical documents and articles. Well, Appflowy's got your back with their new OpenAI integration. With just a few clicks, you can now quickly summarize lengthy texts and extract key information using the power of OpenAI.
 All you have to do is highlight the text you want to summarize and click on the 'Summarize' option in Appflowy's menu. And that's not it, it can fix spellings for you too.
 Before you get started, make sure to enter your OpenAI API key in the settings menu. This feature can be a huge time-saver for busy software engineers who need to stay up-to-date on the latest industry news and trends. So what are you waiting for? Give it a try and make your life easy.
 
-  ![image (8)](https://user-images.githubusercontent.com/89600478/236600222-7f6b30f0-2e39-4f5d-a642-7a90948ea624.png)
+![Animation3](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/0a0a0dff-74d5-43f6-a6b1-236e754bebf1)
 <div align="center">
   <p><small style="font-size: 70%"><em>Open AI summarizing the paragraph</em></small></p>
 </div>
@@ -92,7 +92,7 @@ This latest version v0.1.4 of Appflowy includes a major feature launch - Calenda
 
  ![image](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/ff465713-c12a-4d5c-8233-2456a328599e)
  <div align="center">
-  <p><small style="font-size: 70%"><em>Calender View Databases</em></small></p>
+  <p><small style="font-size: 70%"><em>Calendar View Databases</em></small></p>
 </div>
 
 
