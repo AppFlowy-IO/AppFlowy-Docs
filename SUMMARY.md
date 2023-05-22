@@ -80,8 +80,9 @@
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/README.md)
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
-      * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
       * [\[Draft\] How to contribute to AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-how-to-contribute-to-appflowy.md)
+      * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
+      * [\[Draft\] Use Case: High School Students](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-high-school-students.md)
 * [🎨 Customize and Style Content](essential-documentation/customize-and-style-content.md)
 * [⏮ Duplicate, Delete, and Restore](essential-documentation/duplicate-delete-and-restore.md)
 * [💎 Databases](essential-documentation/databases/README.md)
@@ -99,7 +100,7 @@
   * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
 * [🟣 Community Plugins](essential-documentation/community-plugins.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
-* [#⃣ Markdown](essential-documentation/markdown.md)
+* [#⃣ #⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 
 ## Handbook

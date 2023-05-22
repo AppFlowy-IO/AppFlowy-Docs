@@ -51,7 +51,7 @@ Change the color:
 * Hover on the top right corner of the callout block
 * Click on 🎨
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Cover
 
