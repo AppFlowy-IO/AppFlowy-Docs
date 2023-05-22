@@ -21,7 +21,7 @@
     </li>
     <li><a href="#my experience-handling-my-first-pr">My Experience Handling First PR</a></li>
     <li><a href="#how-to-best-engage-with-the-community">How to Best Engage With the Community</a></li>
-    <li><a href="#links-to-resources-to-help-get-started-with-technical-contributions">Links to Resources to Help Get Started With Technical Contributions</a></li>
+    <li><a href="#resources-for-getting-started-with-technical-contributions">Resources for Getting Started With Technical Contributions</a></li>
     <li><a href="#other-initiatives-by-appflowy">Other Initiatives by Appflowy</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ol>
@@ -34,7 +34,7 @@
 ## Introduction
 <p>AppFlowy is a productivity tool that streamlines note-taking and task management.
 
-This is an open-source project, which means that its code is available to everyone for development and customization! Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open source development with AppFlowy!</p>
+This is an open-source project, which means that its code is available to everyone for development and customization! Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open source development with AppFlowy!
 
 ### Overview
 <p>We will explore the process of contributing to AppFlowy and provide practical tips on how to make your first contribution. 
@@ -51,13 +51,13 @@ Throughout this guide, we'll address common questions you may have, such as:
 4. How do I propose new features for AppFlowy?
 5. How can I best engage with the community?
 
-Let's dive in!</p>
+Let's dive in!
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 
 <!-- How to Contribute -->
 ## How to Contribute to AppFlowy
-AppFlowy is managed via GitHub, a popular version control system. You'll need a [GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to get started. We recommend getting familiar with GitHub's features, especially **GitHub Workflows**, before starting with contributions.
+AppFlowy is managed via GitHub, a popular version control system. You'll need a [GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to get started. We recommend getting familiar with GitHub's features, especially [GitHub Workflows](https://docs.github.com/en/actions/using-workflows), before starting with contributions.
 
 ### How to Connect With the Team
 The best ways to connect with the team are via **Discord** and **GitHub**.
@@ -65,7 +65,8 @@ The best ways to connect with the team are via **Discord** and **GitHub**.
 #### Using Discord to Connect With the Team
 
   - Create a Discord account and join the [AppFlowy Community Server](https://discord.com/invite/9Q2xaN37tV). 
-  - Start by introducing yourself in the <b>Intro's</b> section. Read carefully through the <b>welcome</b> section. You must abide by the server's rules and regulations.
+  - Start by introducing yourself in the <b>Intro's</b> section. 
+  - Read carefully through the <b>welcome</b> section. You must abide by the server's rules and regulations.
   - Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
 
 ![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
@@ -79,55 +80,62 @@ The best ways to connect with the team are via **Discord** and **GitHub**.
 ![image](https://user-images.githubusercontent.com/70965472/237032567-9d75b320-423e-4bc2-805d-7bcb7c96217c.png)
 *The AppFlowy Discussions Page*
 
-   - You can navigate through the various categories made available, including announcements, ideas, polls, etc.
+   - You can navigate through the various categories, including announcements, ideas, polls, etc.
    - The [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections contain open projects for first time contributors.
    - Also, feel free to explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
 
 #### Using Email to Connect With the Team
 
-  - You can get in touch with the team via email at [support@appflowy.io](support@appflowy.io).
+You can get in touch with the team via email at [support@appflowy.io](support@appflowy.io).
 
 
 ## How to Identify and Resolve Your First PR
-<p>Contributions are made via Pull Requests (PR's).</p>
-<p> We recommend getting familiar with the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> for collaborating on projects and setting up your development environment.</p>
-<p>Once you're ready, start looking for a PR to work on. If you need help getting started, look at AppFlowy's <a href="https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions">Documentation</a>. </p><p>
+Contributions are made via Pull Requests (PR's).
+
+We recommend getting familiar with the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> for collaborating on projects and setting up your development environment.
+
+Once you're ready, start looking for a PR to work on. If you need help getting started, look at AppFlowy's <a href="https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions">Documentation</a>.
 
 ### Finding an Issue to Work On
 
- **Step 1:** Go to [AppFlowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. This is a list of all of AppFlowy's repositories open for contributions. For the purposes of this article, we shall be looking for <b>Issues</b> within the main [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
+**Step 1:** Go to [AppFlowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. This is a list of all of AppFlowy's repositories open for contributions. For the purposes of this article, we shall be looking for *Issues* within the main [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
 
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/715c8a61-af5f-4856-840f-11f8604e765c)
   *AppFlowy Github Page - With all open-source repositories that can be worked on*
 
- **Step 2:** Go to the <b>Issues</b> section of the repository. It should look something like this:
+ **Step 2:** Go to the *Issues* section of the repository. It should look something like this:
 
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/14fdc0e3-1517-40da-9576-4646b0516b36)
   *Issues Section*
 
- **Step 3:** Go to the label subsection, and type in <b>Good First Issue for Devs</b>.
+ **Step 3:** Go to the label subsection, and type in "Good First Issue for Devs"
 
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/f5dedcd1-5f08-483d-9898-6372022060b3)
   *Label Subsections Within Issues*
 
- **Step 4:** Here, you can go through a list of Issues that can be worked on. They're fairly straightforward and can help you get accustomed to the  development environment as well as the codebase. Feel free to ask anyone from the AppFlowy team for suggestions or to assign you to an Issue.
+ **Step 4:** Here, you can go through a list of *Issues* that can be worked on. They're fairly straightforward and can help you get accustomed to the  development environment as well as the codebase. 
+
+Feel free to ask anyone from the AppFlowy team for suggestions or to assign you to an Issue.
 
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/e1022103-e98e-42b5-a43d-03f5c5b08f04)
   *Good First Issue for Devs*
 
-  <p> Issues are generally categorized into either <b>Feature [FR]</b> or <b>Bugs [Bug]</b>. You can take a look at the description provided for the given issue. Send a message down in the comments section to get the issue assigned to yourself. Once that's done, you are ready to begin coding!</p>
+Issues are generally categorized into either a <b>Feature [FR]</b> or a <b>Bug [Bug]</b>. You can take a look at the description provided for the given issue. 
+
+Send a message down in the comments section to get the issue assigned to yourself. Once that's done, you are ready to begin coding!
 
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/a0c1479d-8c1b-4af8-a766-dbff8ab6c3d4)
   *An example of an issue that can be worked on. Remember to message the maintainers first!*
 
 ### Working on Your Issue
 
-<p> As mentioned previously, we expect you to make contributions using the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</a> workflow.</p>
-<p>That means following these standard steps: </p>
+As mentioned previously, we expect you to make contributions using the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</a> workflow.
+
+That means following these standard steps:
 
 1. Create your own branch within your forked repository
 2. Set up your development environment
-3. Make changes to the codebase in accordance with the requirements and tasks present in the **Issue** that you have chosen to work on
+3. Make changes to the codebase in accordance with the requirements and tasks present in the *Issue* that you have chosen to work on
 4. Push the changes to your branch and creating a Pull Request for the same
 5. Ask for a code review for your PR and make changes as required
 6. Pass all the automated tests that have been put in place
@@ -137,19 +145,27 @@ The best ways to connect with the team are via **Discord** and **GitHub**.
 Congratulations on completing your first PR!
 
 ## How to Propose New Features and Changes for AppFlowy
-<p>Now let us explore how you can propose your ideas for improving AppFlowy with a GitHub Issues walkthrough:</p>
+You can propose your own ideas for improving AppFlowy. Below is a walkthrough on how to do so using GitHub Issues:
 
-<b>Step 1:</b> Go to [AppFlowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. Here you can see all of Appflowy's Open-Source repositories that can be contributed to. For the purposes of this article, we shall be looking at the main [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
+<b>Step 1:</b> Go to [AppFlowy's repository](https://github.com/orgs/AppFlowy-IO/repositories) section on GitHub. Here you can see all of Appflowy's Open-Source repositories to which you may contribute. For the purposes of this article, we shall be looking at the main [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) repository.
 
-<b>Step 2:</b> Click on the <b>New Issue</b> section of the repository. The subsequent page should look something like this:
+<b>Step 2:</b> Click on the "New Issue" section of the repository. The subsequent page should look something like this:
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/6d1b1efd-eb69-4083-a098-6f9e4117e11c)
 *Create New Issues Page*
 
 <b>Step 3:</b> Here, you can choose either to propose a feature change, or address a bug. For the purpose of this article, we shall choose the "Create New Feature" option.
 
-<b>Step 4:</b> On entering the type of issue, you will be redirected to a "Feature Request" form. Fill in all the fields, including the title, a detailed description of what the feature aims to do, its potential impact, and any other additional context needed to better understand the proposed feature. 
-<b>Step 5:</b> Click submit, and you're done!
+<b>Step 4:</b> On entering the type of issue, you will be redirected to a "Feature Request" form. 
+
+Fill in all the fields, including:
+
+* the title
+* a detailed description of what the feature aims to do
+* its potential impact
+* any other additional context needed to better understand the proposed feature. 
+
+<b>Step 5:</b> Click "Submit new issue" and you're done!
 
 ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/cbccc006-7b10-47a8-886c-828352c67319)
 *Feature Submit Form*
@@ -165,9 +181,9 @@ In this section, I will highlight my personal experience with AppFlowy, from why
 
 My first contribution for AppFlowy came during the GitHub Octernship season. I had heard about the GitHub Octernships through a promotional video that I had found on YouTube. 
 
-Considering how similar it was to GSOC and other Open-Source initiatives, I was interested in trying it out. I registered for the event, and after careful consideration, decided to choose AppFlowy as one of my four entries. 
+Considering how similar it was to GSOC and other Open Source initiatives, I was interested in trying it out. I registered for the event, and after careful consideration, decided to choose AppFlowy as one of my four entries. 
 
-The initial appeal of AppFlowy was clear, it was a productivity tool suite, competing with heavyweights like Notion and Todoist, and most importantly, it was Open-Source in nature. That meant a third-year junior like myself could have a shot at development experience, without much hassle. 
+The initial appeal of AppFlowy was clear, it was a productivity tool suite, competing with heavyweights like Notion and Todoist, and most importantly, it was Open Source in nature. That meant a third-year junior like myself could have a shot at development experience, without much hassle. 
 
 AppFlowy is built out of Flutter and Rust, which were completely new to me. But considering the pros of the Octernship program, I decided to enroll anyway. I joined the AppFlowy Discord Server, introduced myself, and quickly got down to completing the assignment. 
 
@@ -216,7 +232,7 @@ It took a while of troubleshooting, and asking for help from the community, but 
 
 Following these steps helped me successfully fix the issue that I was facing.
 
-Also, **always document** everything that occurs during the lifecycle of an issue resolution within your Issue and PR. Doing so will help future contributors who might encounter the same issue down the road.
+Also, *always document* everything that occurs during the lifecycle of an issue resolution within your Issue and PR. Doing so will help future contributors who might encounter the same issue down the road.
 
 With the environment up and running, it was time to make the changes needed to fullfill the task at hand. 
 
@@ -266,7 +282,7 @@ But thanks to the community, I was able to navigate the entire process with rela
 
 This really is what I admire the most at AppFlowy: the **Community**. 
 
-So stay hungry, always be open to suggestions, and  you'll be  surprised by just how much you can learn while working on a large-scale, open-source collaborative project like AppFlowy.
+So stay hungry, always be open to suggestions, and you'll be  surprised by just how much you can learn while working on a large-scale, open-source collaborative project like AppFlowy.
 
 ### The Final Merge Request
 
@@ -278,7 +294,7 @@ So stay hungry, always be open to suggestions, and  you'll be  surprised by just
 <p> To summarize, here are my key takeaways from the entire experience: </p>
 
 - Be open to suggestions and constructive criticism. We can't learn if we close our minds to change.
-- Learn the languages and frameworks of the codebase! I cannot stress this enough. Try to have a firm understanding of the basics of the frameworks and languages used, namely Flutter and Rust. Feel free to refer to the <a href="#links-to-resources-to-help-get-started-with-technical-contributions">Links to Resources to help get started with Technical Contributions</a> Section down below for the same.
+- Learn the languages and frameworks of the codebase! I cannot stress this enough. Try to have a firm understanding of the basics of the frameworks and languages used, namely Flutter and Rust. Feel free to refer to the Section <a href="#resources-for-getting-started-with-technical-contributions">Resources for Getting Started With Technical Contributions</a> below for the same.
 - Follow the conventions and standards put in place. Be it coding or naming conventions, make sure you follow the conventions put in place by the community.
 - Feel free to ask questions! But at the same time, make sure you've done your research. Whenever you encounter a roadblock, try Googling the issue first. Chances are, you'd be able to get an answer to your question without having to wait for a community member to respond. In case you're truly stuck, do not be afraid to reach out. The community is behind you every step of the way.
 - Document everything! Make sure to document any bugs and issues that you encounter. These can be useful to future contributors down the road, who may encounter the same.
@@ -306,7 +322,7 @@ All complaints will be reviewed and investigated,  resulting in a response that 
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
 <!-- Links to Resources to help get started with technical contributions -->
-## Links to Resources to Help Get Started With Technical Contributions
+## Resources For Getting Started With Technical Contributions
 
 This might be a lot to take in, especially if you're a newcomer. 
 
@@ -330,11 +346,11 @@ Here at AppFlowy, we foster learning through various initiatives. It's our goal 
 With this in mind, here are some initiatives by AppFlowy for the same:
 
 
-  - AppFlowy Mentorship Program - The [AppFlowy Mentorship Program](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/contributor-guidance) is aimed at creating a hands-on learning opportunity for new developers who may otherwise lack the opportunity to gain exposure to real-world software development and entry into the technical community.
+  - The [AppFlowy Mentorship Program](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/contributor-guidance) is aimed at creating a hands-on learning opportunity for new developers who may otherwise lack the opportunity to gain exposure to real-world software development and entry into the technical community.
   
   - GitHub Octernships - (Currently Closed)
   
-  - [Write for Appflowy](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/write-for-appflowy) - Whether you’re an AppFlowy power user, a software development expert, or just a student starting to get into open source, there is knowledge you can share that will benefit the entire AppFlowy community.
+  - The [Write for Appflowy](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/write-for-appflowy) initiative allows you to share your knowledge to benefit the entire AppFlowy community, whether you’re an AppFlowy power user, a software development expert, or just a student starting to get into open source.
 
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
