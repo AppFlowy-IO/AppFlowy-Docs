@@ -64,25 +64,28 @@ The best ways to connect with the team are via **Discord** and **GitHub**.
 
 #### Using Discord to Connect With the Team
 
-  - Create a Discord account and join the [AppFlowy Community Server](https://discord.com/invite/9Q2xaN37tV). 
+Create a Discord account and join the [AppFlowy Community Server](https://discord.com/invite/9Q2xaN37tV). 
+
   - Start by introducing yourself in the <b>Intro's</b> section. 
   - Read carefully through the <b>welcome</b> section. You must abide by the server's rules and regulations.
-  - Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
+
+Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
 
 ![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
 *Welcome Page - AppFlowy Dicord Server*
 
 #### Using GitHub to Connect With the Team
 
-  - You can get started by asking questions in the [GitHub Discussions](https://github.com/AppFlowy-IO/AppFlowy/discussions) section of AppFlowy.
-  - GitHub Discussions provides a forum for AppFlowy contributors to ask questions, share ideas, engage with other community members, and subsequently welcome others who join in down the road.
+You can get started by asking questions in the [GitHub Discussions](https://github.com/AppFlowy-IO/AppFlowy/discussions) section of AppFlowy.
+
+GitHub Discussions provides a forum for AppFlowy contributors to ask questions, share ideas, engage with other community members, and subsequently welcome others who join in down the road.
 
 ![image](https://user-images.githubusercontent.com/70965472/237032567-9d75b320-423e-4bc2-805d-7bcb7c96217c.png)
 *The AppFlowy Discussions Page*
 
-   - You can navigate through the various categories, including announcements, ideas, polls, etc.
-   - The [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections contain open projects for first time contributors.
-   - Also, feel free to explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
+   - Navigate through the various categories, including announcements, ideas, polls, etc.
+   - Use the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections to find open projects for first time contributors.
+   - Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
 
 #### Using Email to Connect With the Team
 
@@ -103,7 +106,7 @@ Once you're ready, start looking for a PR to work on. If you need help getting s
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/715c8a61-af5f-4856-840f-11f8604e765c)
   *AppFlowy Github Page - With all open-source repositories that can be worked on*
 
- **Step 2:** Go to the *Issues* section of the repository. It should look something like this:
+**Step 2:** Go to the *Issues* section of the repository. It should look something like this:
 
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/14fdc0e3-1517-40da-9576-4646b0516b36)
   *Issues Section*
@@ -113,7 +116,7 @@ Once you're ready, start looking for a PR to work on. If you need help getting s
   ![image](https://github.com/JRS296/AppFlowy-Docs/assets/70965472/f5dedcd1-5f08-483d-9898-6372022060b3)
   *Label Subsections Within Issues*
 
- **Step 4:** Here, you can go through a list of *Issues* that can be worked on. They're fairly straightforward and can help you get accustomed to the  development environment as well as the codebase. 
+**Step 4:** Here, you can go through a list of *Issues* that can be worked on. They're fairly straightforward and can help you get accustomed to the development environment as well as the codebase. 
 
 Feel free to ask anyone from the AppFlowy team for suggestions or to assign you to an Issue.
 
