@@ -83,6 +83,7 @@
       * [\[Draft\] How to contribute to AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-how-to-contribute-to-appflowy.md)
       * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
       * [\[Draft\] Use Case: High School Students](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-high-school-students.md)
+      * [\[Draft\] How to add a new property to appflowy database](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-how-to-add-a-new-property-to-appflowy-database.md)
 * [🎨 Customize and Style Content](essential-documentation/customize-and-style-content.md)
 * [⏮ Duplicate, Delete, and Restore](essential-documentation/duplicate-delete-and-restore.md)
 * [💎 Databases](essential-documentation/databases/README.md)
