@@ -2,6 +2,8 @@
 
 You can help Appflowy in supporting various languages by contributing. Follow the steps below sequentially to contribute translations.
 
+[![translation badge](https://inlang.com/badge?url=github.com/AppFlowy-IO/AppFlowy)](https://inlang.com/editor/AppFlowy-IO/AppFlowy/repo?ref=badge)
+
 ## Steps to modify an existing translation
 
 Translation files are located in : `frontend/app_flowy/assets/translations/`
