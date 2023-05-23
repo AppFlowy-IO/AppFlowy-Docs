@@ -15,7 +15,7 @@
       <a href="#how-to-contribute-to-appflowy">How to Contribute to Appflowy</a>
       <ul>
         <li><a href="#how-to-connect-with-the-team">How to Connect With the Team</a></li>
-        <li><a href="#how-to-identify-and-resolve-your-first-pr">How to Identify and Reolve Your First PR</a></li>
+        <li><a href="#how-to-identify-and-resolve-your-first-pr">How to Identify and Resolve Your First PR</a></li>
         <li><a href="#how-to-propose-new-features-and-changes-for-appflowy">How to Propose New Features for Appflowy (Via Github Issues)</a></li>
       </ul>
     </li>
