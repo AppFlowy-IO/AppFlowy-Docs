@@ -36,7 +36,8 @@ In order to start developing you will need to setup your environment. We have se
 [architecture](../architecture/)
 {% endcontent-ref %}
 
-* [How we built AppFlowy with Flutter and Rust](https://github.com/AppFlowy-IO/appflowy/wiki/How-we-built-Appflowy-with-Flutter-and-Rust)
+* [How we built AppFlowy with Flutter and Rust](https://blog-appflowy.ghost.io/tech-design-flutter-rust/)
+* [How we built a highly customizable rich-text editor for Flutter](https://blog-appflowy.ghost.io/how-we-built-a-highly-customizable-rich-text-editor-for-flutter/)
 
 ## How-tos
 
