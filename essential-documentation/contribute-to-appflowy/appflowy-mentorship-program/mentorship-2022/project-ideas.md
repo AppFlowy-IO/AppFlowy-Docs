@@ -1,16 +1,14 @@
 # Project Ideas
 
-You might notice that the ideas listed are sometimes vague or incomplete. This is on purpose, as in real-world development, you often need to define the problem and scope your solution before coding officially begins. If you wish to submit a proposal based on these ideas, you are encouraged to contact the mentors on Discord and find out more about the particular suggestion you're looking at.&#x20;
+You might notice that the ideas listed are sometimes vague or incomplete. This is on purpose, as in real-world development, you often need to define the problem and scope your solution before coding officially begins. If you wish to submit a proposal based on these ideas, you are encouraged to contact the mentors on Discord and find out more about the particular suggestion you're looking at.
 
-
-
-### Desktop features&#x20;
+### Desktop features
 
 1. ~~**Table (it's taken)**~~
 
 Add simple tabular content to a page
 
-Expected Outcome:&#x20;
+Expected Outcome:
 
 * The user can insert a table into a page via the slash '/' command
 * The user can delete and duplicate an existing table
@@ -22,57 +20,24 @@ Difficulty: Medium to High
 
 Skills Required: Flutter
 
-Mentor:  [Lucas](https://github.com/LucasXu0)
-
-
-
-2. ~~****~~[~~**Calendar Database**~~](mentee-projects/calendar-view-for-appflowy-database.md) ~~**(it's taken)**~~
-
-Calendars are a great way to visualize how things connect to certain dates from any database in AppFlowy. Use them for task management and event planning.&#x20;
-
-* Expected Outcome: the user can create a calendar page and add an item to a certain date or a range of dates in the calendar.&#x20;
-* Difficulty: High&#x20;
-* Skills Required: Flutter&#x20;
-* Mentor: [Nathan.fooo](https://github.com/appflowy)&#x20;
-
-****
-
-3. **Toggle List**
-
-Toggles can show and hide content inside.
-
-Expected Outcome:&#x20;
-
-* insert a toggle list via the slash '/' command
-* convert highlighted lines into a toggle list
-* add or move things inside a toggle
-* add a toggle inside a toggle
-* hide and show content inside a toggle
-* toggle headings
-
-Difficulty: Medium to High
-
-Skills Required: Flutter
-
 Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-4. **The block handle and '+'** &#x20;
+2. [~~**Calendar Database**~~](mentee-projects/calendar-view-for-appflowy-database.md) ~~**(it's taken)**~~
 
-When you hover over any line or contents, the handle appears in the left margin. Click it to see a menu of options: Delete, Duplicate (design spec will be provided). Click '+' next to it to trigger the slash '/' menu.
+Calendars are a great way to visualize how things connect to certain dates from any database in AppFlowy. Use them for task management and event planning.
 
-Difficulty: Medium
+* Expected Outcome: the user can create a calendar page and add an item to a certain date or a range of dates in the calendar.
+* Difficulty: High
+* Skills Required: Flutter
+* Mentor: [Nathan.fooo](https://github.com/appflowy)
 
-Skills Required: Flutter
+***
 
-Mentor: [Lucas](https://github.com/LucasXu0)
+3. [~~**Themes**~~](mentee-projects/custom-themes.md) ~~**(it's taken)**~~
 
-
-
-5. ~~****~~[~~**Themes**~~](mentee-projects/custom-themes.md) ~~**(it's taken)**~~
-
-Control the accent color used for interactive elements such as links, handles, and text selection. The editor cursor can also choose to use the same accent color.&#x20;
+Control the accent color used for interactive elements such as links, handles, and text selection. The editor cursor can also choose to use the same accent color.
 
 Other customizations:
 
@@ -89,7 +54,7 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-6. &#x20;~~**Shortcuts (it's taken)**~~
+4. ~~**Shortcuts (it's taken)**~~
 
 Add more shortcuts and enable users to customize hotkeys
 
@@ -101,21 +66,9 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-7. **AI writers**&#x20;
+5. **AI writers**
 
-Utilize AI models to assist in writing. For example, create a summary of selected text areas or brainstorm ideas given a specific prompt.
-
-Difficulty: Medium
-
-Skills Required: Flutter
-
-Mentor: [Lucas](https://github.com/LucasXu0)
-
-
-
-8. **AI designers**
-
-Utilize AI models to assist in designing a page. For example, generate an image from text or auto makeover a page layout to make it more visually appealing
+Utilize AI models to assist in writing. For example, generate to-do lists, outlines, blog posts.
 
 Difficulty: Medium
 
@@ -123,16 +76,40 @@ Skills Required: Flutter
 
 Mentor: [Lucas](https://github.com/LucasXu0)
 
-****
 
-9. **Outline Plugins for AppFlowy Editor**
 
-By adding the outline plugins to the document, a list of anchor links to the headings within the document will be automatically generated.
+6. **AI image generator**
 
-Expected Outcome:&#x20;
+Generate images from text and beyond
 
-* insert a outline via the slash '/' command
-* convert highlighted lines into a outline
+Difficulty: Medium
+
+Skills Required: Flutter
+
+Mentor: [Lucas](https://github.com/LucasXu0)
+
+***
+
+7. ***
+
+***
+
+Difficulty: Medium to Hard
+
+Skills Required: Flutter
+
+Mentor: Alex&#x20;
+
+***
+
+8. **Outline Plugin for AppFlowy Editor**
+
+Adding the outline block to the document will automatically generate a list of anchor links to the headings within the document.
+
+Expected Outcome:
+
+* insert an outline via the slash '/' command
+* convert highlighted lines into an outline
 * the content of the outline will be generated automatically based on the document
 * click on the content of the outline will take users directly to the corresponding heading
 * different levels of headings are indented differently. For example, H1 will have no indentation, while H2 will be indented once, and so on.
@@ -143,39 +120,66 @@ Skills Required: Flutter
 
 Mentor: [Lucas](https://github.com/LucasXu0)
 
-10. **More ideas to come!**
 
-### CI tools&#x20;
+
+9. **Favorites**
+
+Allow us to quickly access favorited pages via Favorites in the left navigation panel.
+
+Expected Outcome:
+
+* Favorite and unfavorite a page or subpage
+* Favorited pages can be accessed from the "Favorites" list in the left panel
+
+Difficulty: Hard
+
+Skills Required: Flutter, Rust
+
+Mentor: Mathias, Nathan
+
+
+
+10. **Importers**
+
+Import data from third-party sources, eg: Notion importer, Joplin importer
+
+Difficulty: Easy / Medium / Hard
+
+Skills Required: Flutter, Rust
+
+Mentor: Lucas
+
+
+
+### CI tools
 
 **1. Report Binary Size**
 
-We consider binary size as an important metric, although it is easy to overlook. We would like to create some GitHub integrations that would automatically do a release build of a new PR and report the difference in binary size between that PR and the current main branch.&#x20;
+We consider binary size as an important metric, although it is easy to overlook. We would like to create some GitHub integrations that would automatically do a release build of a new PR and report the difference in binary size between that PR and the current main branch.
 
-* Expected Outcome: an easy-to-use tool to report binary size&#x20;
+* Expected Outcome: an easy-to-use tool to report binary size
 * Difficulty: Easy / Medium
-* Skills Required: Flutter, Rust, GitHub API&#x20;
-* Mentor: [Nathan.fooo](https://github.com/appflowy)&#x20;
+* Skills Required: Flutter, Rust, GitHub API
+* Mentor: [Nathan.fooo](https://github.com/appflowy)
 
 **2. Speed up building the release package**
 
-It takes almost 20 minutes to build the AppFlowy release package. It would be nice if we can speed it up using GitHub cache or matrix.&#x20;
+It takes almost 20 minutes to build the AppFlowy release package. It would be nice if we can speed it up using GitHub cache or matrix.
 
-* Expected Outcome: the cost of the time of the PR’s GitHub actions should be reduced&#x20;
+* Expected Outcome: the cost of the time of the PR’s GitHub actions should be reduced
 * Difficulty: Easy / Medium
-* Skills Required: Flutter, Rust, GitHub API&#x20;
-* Mentor: [Nathan.fooo](https://github.com/appflowy)&#x20;
+* Skills Required: Flutter, Rust, GitHub API
+* Mentor: [Nathan.fooo](https://github.com/appflowy)
 
-
-
-### Tracing performance regressions&#x20;
+### Tracing performance regressions
 
 **1. Tracing performance regressions**
 
-Performance could become a key differentiator for AppFlowy. We’d like to keep tracking it. To track it, we need to come up with a metric system. The system includes a set of metrics and a running process that collects results and persists them for analysis.&#x20;
+Performance could become a key differentiator for AppFlowy. We’d like to keep tracking it. To track it, we need to come up with a metric system. The system includes a set of metrics and a running process that collects results and persists them for analysis.
 
-* Expected Outcome:&#x20;
-  * A metric system that measures the performance of AppFlowy&#x20;
-  * A working tool that collects results and persists them for analysis&#x20;
-* Difficulty: Medium / High&#x20;
-* Skills Required: Rust&#x20;
+* Expected Outcome:
+  * A metric system that measures the performance of AppFlowy
+  * A working tool that collects results and persists them for analysis
+* Difficulty: Medium / High
+* Skills Required: Rust
 * Mentor: [Nathan.fooo](https://github.com/appflowy)
