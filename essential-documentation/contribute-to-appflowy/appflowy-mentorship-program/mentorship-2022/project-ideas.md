@@ -68,7 +68,7 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 5. **AI writers**
 
-Utilize AI models to assist in writing. For example, generate to-do lists, outlines, blog posts.
+Utilize AI models to assist in writing. For example, generate to-do lists, outlines, and blog posts.
 
 Difficulty: Medium
 
@@ -139,7 +139,7 @@ Mentor: Mathias, Nathan
 
 
 
-10. **Importers**
+10. &#x20;**Importers**
 
 Import data from third-party sources, eg: Notion importer, Joplin importer
 
