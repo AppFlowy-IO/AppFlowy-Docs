@@ -145,7 +145,7 @@ Send a message down in the comments section to get the issue assigned to yoursel
 
 ### Working on Your Issue
 
-As mentioned previously, we expect you to make contributions using the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub Flow</a> workflow.
+As mentioned previously, we expect you to make contributions using the [GitHub Workflow](https://docs.github.com/en/get-started/quickstart/github-flow).
 
 That means following these standard steps:
 
