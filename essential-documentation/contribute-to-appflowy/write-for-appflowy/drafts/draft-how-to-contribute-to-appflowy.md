@@ -7,17 +7,18 @@
   <ol>
     <li>
       <a href="#introduction">Introduction</a>
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-      </ul>
     </li>
     <li>
-      <a href="#how-to-contribute-to-appflowy">How to Contribute to Appflowy</a>
-      <ul>
-        <li><a href="#how-to-connect-with-the-team">How to Connect With the Team</a></li>
-        <li><a href="#how-to-identify-and-resolve-your-first-pr">How to Identify and Resolve Your First PR</a></li>
-        <li><a href="#how-to-propose-new-features-and-changes-for-appflowy">How to Propose New Features for Appflowy (Via Github Issues)</a></li>
-      </ul>
+  		<a href="#before-you-get-started">Before You Get Started</a>
+    </li>
+    <li>
+      <a href="#how-to-connect-with-the-team">How to Connect With the Team</a>
+    </li>
+    <li>
+      <a href="#how-to-identify-and-resolve-your-first-pr">How to Identify and Resolve Your First PR</a>
+    </li>
+    <li>
+      <a href="#how-to-propose-new-features-and-changes-for-appflowy">How to Propose New Features for Appflowy (Via Github Issues)</a>
     </li>
     <li><a href="#my experience-handling-my-first-pr">My Experience Handling First PR</a></li>
     <li><a href="#how-to-best-engage-with-the-community">How to Best Engage With the Community</a></li>
@@ -33,8 +34,9 @@
 <!-- Introduction -->
 ## Introduction
 <p>AppFlowy is a productivity tool that streamlines note-taking and task management.
+This is an open-source project, which means that its code is available to everyone for development and customization! 
 
-This is an open-source project, which means that its code is available to everyone for development and customization! Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open source development with AppFlowy!
+Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open source development with AppFlowy!
 
 ### Overview
 <p>We will explore the process of contributing to AppFlowy and provide practical tips on how to make your first contribution. 
@@ -56,13 +58,24 @@ Let's dive in!
 
 
 <!-- How to Contribute -->
-## How to Contribute to AppFlowy
-AppFlowy is managed via GitHub, a popular version control system. You'll need a [GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to get started. We recommend getting familiar with GitHub's features, especially [GitHub Workflows](https://docs.github.com/en/actions/using-workflows), before starting with contributions.
+## Before You Get Started
+If you are new to open source development, this document will guide you through the process.
 
-### How to Connect With the Team
+If you've worked on open source projects before, much of this will seem familiar to you. However, we still reccomend you review this guide to make sure you are adhering to our processes and conventions.
+
+AppFlowy is managed via GitHub, a popular version control system. 
+
+You'll need a [GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to get started. 
+
+We recommend getting familiar with GitHub's features, especially [GitHub Workflows](https://docs.github.com/en/actions/using-workflows), before starting with contributions.
+
+Please also familiarize youself with the AppFlowy [Style Guide](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/style-guides) and 
+[Code Submission Guidelines](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/code-submission-guidelines) before you submit your code.
+
+## How to Connect With the Team
 The best ways to connect with the team are via **Discord** and **GitHub**.
 
-#### Using Discord to Connect With the Team
+### Using Discord to Connect With the Team
 
 Create a Discord account and join the [AppFlowy Community Server](https://discord.com/invite/9Q2xaN37tV). 
 
@@ -74,7 +87,7 @@ Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy T
 ![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
 *Welcome Page - AppFlowy Dicord Server*
 
-#### Using GitHub to Connect With the Team
+### Using GitHub to Connect With the Team
 
 You can get started by asking questions in the [GitHub Discussions](https://github.com/AppFlowy-IO/AppFlowy/discussions) section of AppFlowy.
 
@@ -87,7 +100,7 @@ GitHub Discussions provides a forum for AppFlowy contributors to ask questions, 
    - Use the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections to find open projects for first time contributors.
    - Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
 
-#### Using Email to Connect With the Team
+### Using Email to Connect With the Team
 
 You can get in touch with the team via email at [support@appflowy.io](support@appflowy.io).
 
@@ -139,11 +152,13 @@ That means following these standard steps:
 1. Create your own branch within your forked repository
 2. Set up your development environment
 3. Make changes to the codebase in accordance with the requirements and tasks present in the *Issue* that you have chosen to work on
-4. Push the changes to your branch and creating a Pull Request for the same
-5. Ask for a code review for your PR and make changes as required
-6. Pass all the automated tests that have been put in place
-7. Handle merge conflicts
-8. Merge your branch, and delete of the branch once the merge is successfully completed
+4. Add unit tests for any new features as necessary
+5. Push the changes to your branch and creating a Pull Request for the same
+6. Ask for a code review for your PR and make changes as required
+7. Pass all the automated tests that have been put in place
+8. Handle merge conflicts
+9. Wait for approval from the AppFlowy team, once approved merge your branch
+10. Delete your branch once the PR has been merged
 
 Congratulations on completing your first PR!
 
