@@ -108,9 +108,9 @@ You can get in touch with the team via email at [support@appflowy.io](support@ap
 ## How to Identify and Open Your First PR
 Contributions are made via Pull Requests (PR's).
 
-We recommend getting familiar with the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> for collaborating on projects and setting up your development environment.
+We recommend getting familiar with the [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) for collaborating on projects and setting up your development environment.
 
-Once you're ready, start looking for a PR to work on. If you need help getting started, look at AppFlowy's <a href="https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions">Documentation</a>.
+Once you're ready, start looking for a PR to work on. If you need help getting started, look at [AppFlowy's documentation](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions).
 
 ### Finding an Issue to Work On
 
