@@ -375,7 +375,13 @@ With this in mind, here are some initiatives by AppFlowy for the same:
 <!-- Conclusion -->
 ## Conclusion
 
-To summarize, we were able to understand how to contribute to AppFlowy, how to handle that first PR, how to connect with the community, and many others in this article.
+You should now be well-equipped to embark on your own open source journey. By following the guidelines in this article, you will be able to successfully resolve pull requests and engage meaningfully with other project contributors.
+
+We hope you participate in AppFlowy's development and make an impact either through coding, bug reporting, feature suggestions, documentation. Contributing to this project and building relationships within the AppFlowy community not only fosters collaboration but also offers opportunities for learning and growth.
+
+We invite you to start contributing to AppFlowy right away by selecting an [[issue to work on](https://github.com/AppFlowy-IO/AppFlowy/issues)](https://github.com/AppFlowy-IO/AppFlowy/issues).
+
+Happy Coding!
 
 <p align="right">(<a href="#introduction">back to top</a>)</p>
 
