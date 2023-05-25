@@ -85,7 +85,7 @@ GitHub Discussions provides a forum for AppFlowy contributors to ask questions, 
 
    - Navigate through the various categories, including announcements, ideas, polls, etc.
    - Use the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections to find open projects for first time contributors.
-   - Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
+   - Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715) to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
 
 #### Using Email to Connect With the Team
 
