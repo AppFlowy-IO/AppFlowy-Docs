@@ -79,8 +79,8 @@ The best ways to connect with the team are via **Discord** and **GitHub**.
 
 Create a Discord account and join the [AppFlowy Community Server](https://discord.com/invite/9Q2xaN37tV). 
 
-  - Start by introducing yourself in the <b>Intro's</b> section. 
-  - Read carefully through the <b>welcome</b> section. You must abide by the server's rules and regulations.
+  - Start by introducing yourself in the <b>intros</b> channel. 
+  - Read carefully through the <b>welcome</b> channel. You must abide by the server's rules and regulations.
 
 Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
 
@@ -98,7 +98,7 @@ GitHub Discussions provides a forum for AppFlowy contributors to ask questions, 
 
    - Navigate through the various categories, including announcements, ideas, polls, etc.
    - Use the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections to find open projects for first time contributors.
-   - Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715), to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
+   - Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715) to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
 
 ### Using Email to Connect With the Team
 
