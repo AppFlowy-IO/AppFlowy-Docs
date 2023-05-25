@@ -66,7 +66,7 @@ The best ways to connect with the team are via **Discord** and **GitHub**.
 
 Create a Discord account and join the [AppFlowy Community Server](https://discord.com/invite/9Q2xaN37tV). 
 
-  - Start by introducing yourself in the <b>Intro's</b> section. 
+  - Start by introducing yourself in the <b>intros</b> channel. 
   - Read carefully through the <b>welcome</b> section. You must abide by the server's rules and regulations.
 
 Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
