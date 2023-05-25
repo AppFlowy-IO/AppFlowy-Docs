@@ -15,7 +15,7 @@
       <a href="#how-to-connect-with-the-team">How to Connect With the Team</a>
     </li>
     <li>
-      <a href="#how-to-identify-and-resolve-your-first-pr">How to Identify and Resolve Your First PR</a>
+      <a href="#how-to-identify-and-open-your-first-pr">How to Identify and Open Your First PR</a>
     </li>
     <li>
       <a href="#how-to-propose-new-features-and-changes-for-appflowy">How to Propose New Features for Appflowy (Via Github Issues)</a>
@@ -31,6 +31,7 @@
 
 
 
+
 <!-- Introduction -->
 ## Introduction
 <p>AppFlowy is a productivity tool that streamlines note-taking and task management.
@@ -39,8 +40,7 @@ This is an open-source project, which means that its code is available to everyo
 Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open source development with AppFlowy!
 
 ### Overview
-<p>We will explore the process of contributing to AppFlowy and provide practical tips on how to make your first contribution. 
-
+We will explore the process of contributing to AppFlowy and provide practical tips on how to make your first contribution. 
 
 We'll demystify the process, highlight the benefits, and equip you with the essential tools and resources to get started on your open-source journey with AppFlowy.
 
@@ -49,7 +49,7 @@ Throughout this guide, we'll address common questions you may have, such as:
 
 1. How do I contribute to AppFlowy?
 2. How do I connect with the team?
-3. How do I identify and solve my first Pull Request?
+3. How do I identify and open my first Pull Request?
 4. How do I propose new features for AppFlowy?
 5. How can I best engage with the community?
 
@@ -82,7 +82,7 @@ Create a Discord account and join the [AppFlowy Community Server](https://discor
   - Start by introducing yourself in the <b>intros</b> channel. 
   - Read carefully through the <b>welcome</b> channel. You must abide by the server's rules and regulations.
 
-Don't be afraid to ask questions!  If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
+Don't be afraid to ask questions! If you have any questions, tag the AppFlowy Team or AppFlowy Contributors by sending a message with a tag (<b>@AppFlowy Team </b>) for the same.
 
 ![image](https://user-images.githubusercontent.com/70965472/237025457-bf33e70d-8fbd-4bea-a25e-f1d0ea2147bf.png)
 *Welcome Page - AppFlowy Dicord Server*
@@ -105,7 +105,7 @@ GitHub Discussions provides a forum for AppFlowy contributors to ask questions, 
 You can get in touch with the team via email at [support@appflowy.io](support@appflowy.io).
 
 
-## How to Identify and Resolve Your First PR
+## How to Identify and Open Your First PR
 Contributions are made via Pull Requests (PR's).
 
 We recommend getting familiar with the <a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> for collaborating on projects and setting up your development environment.
