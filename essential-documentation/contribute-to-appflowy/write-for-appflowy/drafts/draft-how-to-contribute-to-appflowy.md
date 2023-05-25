@@ -150,7 +150,7 @@ As mentioned previously, we expect you to make contributions using the [GitHub W
 That means following these standard steps:
 
 1. Create your own branch within your forked repository
-2. Set up your development environment
+2. Set up your development [environment](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions#environment-setup)
 3. Make changes to the codebase in accordance with the requirements and tasks present in the *Issue* that you have chosen to work on
 4. Add unit tests for any new features as necessary
 5. Push the changes to your branch and creating a Pull Request for the same
