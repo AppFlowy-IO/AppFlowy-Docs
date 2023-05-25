@@ -102,7 +102,7 @@ GitHub Discussions provides a forum for AppFlowy contributors to ask questions, 
 
 ### Using Email to Connect With the Team
 
-You can get in touch with the team via email at [support@appflowy.io](support@appflowy.io).
+You can get in touch with the team via email at [support@appflowy.io](mailto:support@appflowy.io).
 
 
 ## How to Identify and Open Your First PR
