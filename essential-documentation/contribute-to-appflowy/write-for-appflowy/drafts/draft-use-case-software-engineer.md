@@ -12,7 +12,7 @@ Welcome, fellow software engineers! Today, I want to share with you how I use Ap
 ## Installation
 Prior to proceeding with the installation, it is essential to ensure that your machine meets the specified [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods).<br>
 Here are the [Installation methods](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods) that provide clear guidance on how to successfully install Appflowy. <br>
-Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated Contribute to AppFlowy section.
+Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy).
 After installation, users can pick a folder for saving data on the quick start page.
 
 ![image (9)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/f96b3596-3196-458e-bb1f-be8ba847eac6)
