@@ -112,7 +112,7 @@ Flutter version 3.7.9 is the recent supported stable release used for for buildi
 * **Method 2:** You can use the code below to install flutter manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git --branch 3.3.10
+git clone https://github.com/flutter/flutter.git --branch 3.7.9
 cd flutter
 echo -e "\nexport PATH=\$PATH:"`pwd`"/bin" >> ~/.bashrc
 source ~/.bashrc
@@ -146,9 +146,9 @@ If you are not using **bash**, check the official [asdf guide](https://asdf-vm.c
 ```bash
 cd AppFlowy
 asdf plugin-add flutter
-asdf install flutter 3.3.10-stable
+asdf install flutter 3.7.9-stable
 rm -rf .tool-versions
-asdf local flutter 3.3.10-stable 
+asdf local flutter 3.7.9-stable 
 cd ..
 ```
 
