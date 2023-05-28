@@ -52,7 +52,7 @@ the number of columns in a row. Each column, aka a `Field`, contains the configu
 ![database.png](assets/database.png)
 
 ### Field
-A Field represents a column of the database. It has a property called `field_ty`, which is an enum defined in FieldType.
+A Field represents a column in the database. It has a property called `field_ty`, which is an enum defined in FieldType.
 The `FieldType` defines the kind of data contained in a column. Such as date, number, text, multi-select, etc. This data
 is stored in the `typeOptions` property, which is a Map. The key is the `FieldType`, and the value is the `TypeOption`.
 
