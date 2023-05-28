@@ -47,7 +47,7 @@ Below you will find some quick definitions about the database.
 ### Database
 A database is a collection of rows and columns, as shown in the picture below. It allows for the creation of more rows and columns.
 Each row contains a list of cells and each cell corresponds to a specific column. The number of cells is equal to
-the number of columns in a row. Each column, aka the `Field`, contains the configuration of how to format the cell.
+the number of columns in a row. Each column, aka a `Field`, contains the configuration of how to format the cell.
 
 ![database.png](assets/database.png)
 
