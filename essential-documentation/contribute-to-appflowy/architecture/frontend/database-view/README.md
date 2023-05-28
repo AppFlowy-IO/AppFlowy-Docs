@@ -108,7 +108,7 @@ Most of the time, the cell data is not human-readable and requires the `Field`'s
 The formatted cell data will be different depending on the `DateFormat` and `TimeFormat` of the `DateTypeOption`.
 
 | DateFormat     | TimeFormat     | Raw cell data |                     |
-| -------------- | -------------- | ------------- | ------------------- |
+|----------------|----------------|---------------|---------------------|
 | month/day/year | TwelveHour     | 1675083591    | 01/30/2023 01:00 PM |
 |                | TwentyFourHour | 1675083591    | 01/30/2023 13:00    |
 |                |                |               |                     |
