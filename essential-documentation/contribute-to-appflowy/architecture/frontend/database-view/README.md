@@ -33,15 +33,15 @@ When triggering an event, there may be notifications sent to the frontend asynch
 
 Below you will find some quick definitions about the database.
 
-|              |                                                                                          |
-| ------------ | ---------------------------------------------------------------------------------------- |
-| Database     | A Database struct that contains a list of fields and rows                              |
+|              |                                                                                           |
+| ------------ | ------------------------------------------------------------------------------------------|
+| Database     | A Database struct that contains a list of fields and rows                                |
 | Field        | A Field represents a column of the database. Different fields have different `FieldType`s |
-| FieldType    | A `FieldType` represents the type of column.                                             |
-| TypeOption   | A `TypeOption` represents the configuration of the `Field`.                              |
-| Row          | A `Row` represents a group of related cells.                                             |
-| Cell         | A `Cell` contains the data of the corresponding `FieldType`                              |
-| TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                          |
+| FieldType    | A `FieldType` represents the type of column.                                              |
+| TypeOption   | A `TypeOption` represents the configuration of the `Field`.                               |
+| Row          | A `Row` represents a group of related cells.                                              |
+| Cell         | A `Cell` contains the data of the corresponding `FieldType`                               |
+| TypeCellData | Same as `Cell` but carry the `FieldType` when the `Cell` create                           |
 
 ![file : database\_view.plantuml](../../../../../uml/output/database\_view\_classes-Database\_classes\_UML.svg)
 
