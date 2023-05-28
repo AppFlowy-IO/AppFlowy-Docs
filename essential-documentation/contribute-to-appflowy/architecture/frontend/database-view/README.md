@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document explains how the Grid, Board, and Calendar shares the same data structs defined in the backend. It can be a development guide when you want to contribute to Grid, Board or Calendar. This document will be continuously updated, and any suggestions would be helpful.
+This document explains how the Grid, Board, and Calendar shares the same data structs defined in the backend. It can be a development guide when you want to contribute to the Grid, Board or Calendar feature. This document will be continuously updated, and all suggestions are appreciated.
 
 ## View Definitions
 Below you will find some quick definitions to help you read through the document.
