@@ -34,8 +34,8 @@ When triggering an event, there may be notifications sent to the frontend asynch
 Below you will find some quick definitions about the database.
 
 |              |                                                                                           |
-| ------------ | ------------------------------------------------------------------------------------------|
-| Database     | A Database struct that contains a list of fields and rows                                |
+|--------------|-------------------------------------------------------------------------------------------|
+| Database     | A Database struct that contains a list of fields and rows                                 |
 | Field        | A Field represents a column of the database. Different fields have different `FieldType`s |
 | FieldType    | A `FieldType` represents the type of column.                                              |
 | TypeOption   | A `TypeOption` represents the configuration of the `Field`.                               |
