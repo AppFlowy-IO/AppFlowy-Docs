@@ -105,7 +105,7 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 #### **Install flutter (three different methods):**
 
 {% hint style="danger" %}
-Flutter version 3.3.10 is the recent supported stable release used for for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
+Flutter version 3.7.9 is the recent supported stable release used for for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
 {% endhint %}
 
 * **Method 1:** Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
@@ -253,7 +253,7 @@ If you do not know the version number for the AppFlowy binary that you have buil
 
 A new window as shown below will show up after you run the application:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (2) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
 
 If using a virtual machine, run the Linux GUI application through x11 on windows (use MobaXterm) for instance:
 

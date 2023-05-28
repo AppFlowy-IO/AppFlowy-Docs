@@ -36,10 +36,26 @@ By the completion of this project, users will be able to:
 * Show alternative views that are more time-oriented (week, work week, 3 day, day)
 * Set up recurring events and choose when editing one to either edit all the events set up in the same way or just that specific one
 
-## Prep Work
-
-WIP
-
 ## Design Architecture
 
-WIP
+For more details on the design architecture, please see [calendar.md](../../../architecture/frontend/database-view/calendar.md "mention").
+
+## Schedule
+
+At the midterm evaluation, many of the features have been implemented.
+
+April 28, 2023
+
+* Calendar supports date ranges:
+  * In all database views (grid, kanban and calendar), users can now select an end date and time in addition to the original date and time to specify a duration of time.
+  * These ranges will appear on the calendar as well.
+* Calendar supports events being deleted from the "open as page" overlay.
+* Calendar supports de-scheduling an event by removing the date data from the relevant date cell.
+  * Calendar supports displaying which events are unscheduled.
+
+May 5, 2023
+
+* Calendar supports displaying other properties in the calendar cards
+  * These may include properties such as multi-select option tags.
+  * The user is able to choose which fields to display from the calendar settings.
+* Calendar supports dragging an event from one day to another to re-schedule it.

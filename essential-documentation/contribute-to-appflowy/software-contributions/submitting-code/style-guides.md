@@ -18,17 +18,17 @@ Instead, formatting should be done using ./x.py fmt. It's a good habit to run ./
 
 In the past, files began with a copyright and license notice. Please omit this notice for new files licensed under the standard terms (dual MIT/Apache-2.0).
 
-#### Line length&#x20;
+#### Line length
 
 Lines should be at most 120 characters. It's even better if you can keep things to 80.
 
 **Ignoring the line length limit.** Sometimes – in particular for tests – it can be necessary to exempt yourself from this limit. In that case, you can add a comment towards the top of the file like so:
 
-### Coding for correctness&#x20;
+### Coding for correctness
 
 Beyond formatting, there are a few other tips that are worth following.
 
-#### Prefer exhaustive matches&#x20;
+#### Prefer exhaustive matches
 
 Using \_ in a match is convenient, but it means that when new variants are added to the enum, they may not get handled correctly. Ask yourself: if a new variant were added to this enum, what's the chance that it would want to use the \_ code, versus having some other treatment? Unless the answer is "low", then prefer an exhaustive match. (The same advice applies to if let and while let, which are effectively tests for a single variant.)
 
@@ -48,7 +48,7 @@ fn do_something() {
 
 These are very practical and you can see a list of them in the VS Code 'Problems' tab.
 
-![](<../../../../.gitbook/assets/vs_code_problem.png>)
+![](../../../../.gitbook/assets/vs\_code\_problem.png)
 
 ### _Naming conventions_ <a href="#7a56" id="7a56"></a>
 
@@ -86,7 +86,7 @@ void sum(int testValue) {…}
 
 ### _Variables_ <a href="#5dc0" id="5dc0"></a>
 
-_@@@_ [Nathan Foo](https://app.gitbook.com/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
+_@@@_ [Nathan Foo](http://localhost:5000/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
 
 #### _Specify types for class members_ <a href="#5dc0" id="5dc0"></a>
 
@@ -115,7 +115,7 @@ Either rule is acceptable, but pick one and apply it consistently throughout you
 
 ### _Use Cascade Notation @@@I think this applies to both Rust and Dart_ <a href="#405d" id="405d"></a>
 
-__[_Cascade notation_](https://flutterbyexample.com/lesson/cascade-notation) _allows you to perform a sequence of operations on the same object. It saves your number of steps and needs for a temporary variable._
+\_\_[_Cascade notation_](https://flutterbyexample.com/lesson/cascade-notation) _allows you to perform a sequence of operations on the same object. It saves your number of steps and needs for a temporary variable._
 
 ```
 Demo d1 = new Demo();
@@ -133,7 +133,7 @@ d2..setA(10)
   ..showVal();
 ```
 
-### _Use expression function bodies @@@_ [Nathan Foo](https://app.gitbook.com/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
+### _Use expression function bodies @@@_ [Nathan Foo](http://localhost:5000/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
 
 _For functions that contain just one expression, you can use an expression function. The `=>` (arrow) notation is used for expression functions._
 
@@ -159,7 +159,7 @@ _Create a separate file to store strings, colors, constants. so it’s easy to a
 
 ## _Rust Coding Conventions_ <a href="#7a56" id="7a56"></a>
 
-### Using crates from crates.io&#x20;
+### Using crates from crates.io
 
 It is allowed to use crates from crates.io, though external dependencies should not be added gratuitously. All such crates must have a suitably permissive license.
 
@@ -299,7 +299,7 @@ _Plugin for checking the latest Pub packages versions. It will automatically run
 
 ### _Custom Error Screen: handle “RED SCREEN OF DEATH”_ <a href="#8dad" id="8dad"></a>
 
-_Use ErrorWidget that renders an exception’s message. This widget is used when a build method fails, to help determine where the problem lies. Exceptions are also logged to the console, which you can read using `flutter logs`. The console will also include additional information such as the stack trace for the exception._&#x20;
+_Use ErrorWidget that renders an exception’s message. This widget is used when a build method fails, to help determine where the problem lies. Exceptions are also logged to the console, which you can read using `flutter logs`. The console will also include additional information such as the stack trace for the exception._
 
 > _**It is possible to override this widget**. Refer to this_ [_article_](https://medium.com/nonstopio/flutter-kill-the-red-screen-of-death-f5e0601d1cdc) _for more information._
 
@@ -333,4 +333,4 @@ void main() {
 }
 ```
 
-## __ <a href="#7a56" id="7a56"></a>
+## \_\_ <a href="#7a56" id="7a56"></a>
