@@ -44,16 +44,11 @@ Now that we have our workspace set up, let's talk about how to use Appflowy for 
 ## Development Tasks:
 Once I have my project plan in place, it's time to start working on the development tasks. To manage my development tasks, I create a new list for each task and add notes and tags as needed. For example, I might create a note for the task description, a note for any subtasks, and a note for the estimated time to complete. By tagging each note with the project name and task name, I can easily find all the notes related to that task.
 
-
+![image (13)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/f8ee65db-b24f-4fdc-8347-6f1b273acf05)
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/89600478/235844308-d90c9446-732f-4b0a-8808-f7ace7f3e774.png">
+  <p><small style="font-size: 70%"><em>Development Tasks Plan
+    </em></small></p>
 </div>
-
-
-<div align="center">
-  <p><small style="font-size: 70%"><em>Yes I use boards to design my Database schema</em></small></p>
-</div>
-
  
 ## Bugs and Issues
 Of course, no software project is without its bugs and issues. That's where Appflowy's bug tracking features come in. To track bugs and issues, I create a new list for each issue and add notes and tags as needed. For example, I might create a note for the bug description, a note for the steps to reproduce, and a note for the priority level. By tagging each note with the project name and issue name, I can easily find all the notes related to that issue.
