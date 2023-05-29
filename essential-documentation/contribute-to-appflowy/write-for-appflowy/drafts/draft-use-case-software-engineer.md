@@ -53,6 +53,7 @@ Once I have my project plan in place, it's time to start working on the developm
 ## Bugs and Issues
 Of course, no software project is without its bugs and issues. That's where Appflowy's bug tracking features come in. To track bugs and issues, I create a new list for each issue and add notes and tags as needed. For example, I might create a note for the bug description, a note for the steps to reproduce, and a note for the priority level. By tagging each note with the project name and issue name, I can easily find all the notes related to that issue.
 
+![image (14)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/030c9349-0e96-4973-af39-ae0cd9007db5)
 
 
 
