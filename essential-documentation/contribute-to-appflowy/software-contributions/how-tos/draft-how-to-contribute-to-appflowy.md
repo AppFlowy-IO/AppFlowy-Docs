@@ -1,4 +1,4 @@
-# \[Draft] How to contribute to AppFlowy
+# 👾 How to contribute to AppFlowy
 
 <details>
 
