@@ -118,6 +118,12 @@ Issues are generally categorized into either a Feature \[FR] or a Bug \[Bug]. Yo
 
 Send a message down in the comments section to get the issue assigned to yourself. Once that's done, you are ready to begin coding!
 
+Note:
+
+* Don't worry about being assigned before starting work on it. Even if you aren't assigned, all pull requests that solve a GitHub issue are appreciated.
+* However, please do understand that even though you can work on issues that haven't been assigned to you, there is an increased possibility that this will lead to merge conflicts should it end up being assigned to someone else.
+* You are also free to suggest improvements on an issue assigned to someone else.
+
 <figure><img src="https://github.com/JRS296/AppFlowy-Docs/assets/70965472/a0c1479d-8c1b-4af8-a766-dbff8ab6c3d4" alt=""><figcaption><p><em>An example of an issue that can be worked on. Remember to message the maintainers first!</em></p></figcaption></figure>
 
 ### Working on Your Issue
@@ -172,15 +178,15 @@ In this section, I will highlight my personal experience with AppFlowy, from why
 
 ### Why I Decided to Contribute to AppFlowy
 
-My first contribution for AppFlowy came during the GitHub Octernship season. I had heard about the GitHub Octernships through a promotional video that I had found on YouTube.
+My first contribution for AppFlowy came during the [GitHub Octernships](https://education.github.com/students/octernships) season. I had heard about the GitHub Octernships through a promotional video that I had found on YouTube.
 
 Considering how similar it was to GSOC and other Open Source initiatives, I was interested in trying it out. I registered for the event, and after careful consideration, decided to choose AppFlowy as one of my four entries.
 
 The initial appeal of AppFlowy was clear, it was a productivity tool suite, competing with heavyweights like Notion and Todoist, and most importantly, it was Open Source in nature. That meant a third-year junior like myself could have a shot at development experience, without much hassle.
 
-AppFlowy is built out of Flutter and Rust, which were completely new to me. But considering the pros of the Octernship program, I decided to enroll anyway. I joined the AppFlowy Discord Server, introduced myself, and quickly got down to completing the assignment.
+AppFlowy is built out of Flutter and Rust, which were completely new to me. However, considering the pros of the Octernships program, I decided to enroll anyway. I joined the AppFlowy Discord Server, introduced myself, and quickly got down to completing the assignment.
 
-This brought me to handling a PR for any first-time issue for Junior Dev's. This was a compulsory part of the Octernship application, which officially started my Open Source journey with AppFlowy.
+This brought me to handling a PR for any first-time issue for Junior Dev's. This was a compulsory part of the Octernships application, which officially started my Open Source journey with AppFlowy.
 
 ### Searching for My First Issue
 
@@ -213,7 +219,7 @@ It took a while of troubleshooting, and asking for help from the community, but 
 Some things that I did to smoothen my onboarding experience included:
 
 * Reading up on AppFlowy's documentation and searching for cases where this bug has been encountered before, and how it was dealt with.
-* Searching on online platforms for cases where such an error was encountered before. This included combing through popular sites like StackOverflow, other GitHub repositories, BitBucket, etc. for any instances where this issue had occurred before, and any potential fixes for the same.
+* Searching on online platforms for cases where such an error was encountered before. This included combing through popular sites like Stack Overflow, other GitHub repositories, BitBucket, etc. for any instances where this issue had occurred before, and any potential fixes for the same.
 * Creating an issue in the Issues tab and highlighting the exact problem that I faced. I carefully detailed the exact issue that I was facing, including screenshots, error messages, and any other relevant information pertaining to the issue that I was facing. (You can have a look at Issue [#2045](https://github.com/AppFlowy-IO/AppFlowy/issues/2045). This is a fairly good example of how one can approach roadblocks on their development journey).
 
 <figure><img src="https://github.com/JRS296/AppFlowy-Docs/assets/70965472/919bfd67-9e32-427e-b817-1ea72c06b0e2" alt=""><figcaption><p><em>An example of an issue created to help gain feedback from the community on how to best tackle it</em></p></figcaption></figure>
@@ -296,7 +302,7 @@ Here are some best practices to engage with the community here at AppFlowy:
 * Focus on what is best for the community
 * Show empathy towards other community members
 
-You can report instances of abusive, harassing, or otherwise unacceptable behaviour by emailing the project team at annie@appflowy.io.
+You can report instances of abusive, harassing, or otherwise unacceptable behaviour by emailing the project team at support@appflowy.io.
 
 All complaints will be reviewed and investigated, resulting in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
 
@@ -325,7 +331,7 @@ Here at AppFlowy, we foster learning through various initiatives. It's our goal 
 With this in mind, here are some initiatives by AppFlowy for the same:
 
 * The [AppFlowy Mentorship Program](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/contributor-guidance) is aimed at creating a hands-on learning opportunity for new developers who may otherwise lack the opportunity to gain exposure to real-world software development and entry into the technical community.
-* GitHub Octernships - (Currently Closed)
+* GitHub Octernships
 * The [Write for Appflowy](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/write-for-appflowy) initiative allows you to share your knowledge to benefit the entire AppFlowy community, whether you’re an AppFlowy power user, a software development expert, or just a student starting to get into open source.
 
 ([back to top](draft-how-to-contribute-to-appflowy.md#introduction))
@@ -336,7 +342,7 @@ You should now be well-equipped to embark on your own open source journey. By fo
 
 We hope you participate in AppFlowy's development and make an impact either through coding, bug reporting, feature suggestions, documentation. Contributing to this project and building relationships within the AppFlowy community not only fosters collaboration but also offers opportunities for learning and growth.
 
-We invite you to start contributing to AppFlowy right away by selecting an \[[issue to work on](https://github.com/AppFlowy-IO/AppFlowy/issues)]\(https://github.com/AppFlowy-IO/AppFlowy/issues).
+We invite you to start contributing to AppFlowy right away by selecting an [issue to work on](https://github.com/AppFlowy-IO/AppFlowy/issues).
 
 Happy Coding!
 
