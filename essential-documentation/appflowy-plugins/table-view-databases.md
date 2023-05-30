@@ -38,7 +38,7 @@ Every row in a database is a page. You can open a row as a page to edit properti
 
 * Click the `+` that appears on hover next to any row. This creates a new row below it.
 
-<figure><img src="../../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 * Click `+ New` at the bottom of your table to add a new row right there.
 
@@ -95,7 +95,7 @@ View only the rows that fit certain criteria.
 
 * Remove a filter by clicking on the filter and then the `:` menu
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 
 

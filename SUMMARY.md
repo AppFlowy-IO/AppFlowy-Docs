@@ -101,7 +101,7 @@
   * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
 * [🟣 Community Plugins](essential-documentation/community-plugins.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
-* [#⃣ #⃣ Markdown](essential-documentation/markdown.md)
+* [#⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 
 ## Handbook

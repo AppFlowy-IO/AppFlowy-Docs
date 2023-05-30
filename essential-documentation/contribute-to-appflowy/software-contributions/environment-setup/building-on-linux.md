@@ -74,7 +74,7 @@ sudo pacman -S git
 You should fork the code instead if you wish to submit code to AppFlowy. You will find information on that in [Setting Up Your Repositories](../submitting-code/setting-up-your-repositories.md).
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-51-27.png" alt=""><figcaption><p>Image: Cloning the source from the Github repository.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-51-27 (1).png" alt=""><figcaption><p>Image: Cloning the source from the Github repository.</p></figcaption></figure>
 
 ### Step 2: Install your build environment
 
@@ -100,7 +100,7 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-32-41 (1).png" alt=""><figcaption><p>Image: Installing prerequisites on Ubuntu.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-32-41.png" alt=""><figcaption><p>Image: Installing prerequisites on Ubuntu.</p></figcaption></figure>
 
 #### **Install flutter (three different methods):**
 
@@ -120,7 +120,7 @@ flutter
 cd ..
 ```
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-55-23.png" alt=""><figcaption><p>Image: Installing flutter manually.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot%20from%202023-02-27%2013-55-23.png" alt=""><figcaption><p>Image: Installing flutter manually.</p></figcaption></figure>
 
 * **Method 3**: You can also use a runtime version manager like [asdf](https://asdf-vm.com/) or a flutter-specific version manager to install flutter on your system. Assuming you are using the **bash** shell, follow these steps:
 
@@ -253,7 +253,7 @@ If you do not know the version number for the AppFlowy binary that you have buil
 
 A new window as shown below will show up after you run the application:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (2).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
 
 If using a virtual machine, run the Linux GUI application through x11 on windows (use MobaXterm) for instance:
 
