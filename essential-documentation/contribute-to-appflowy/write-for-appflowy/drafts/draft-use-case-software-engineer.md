@@ -19,7 +19,7 @@ After installation, users can pick a folder for saving data on the quick start p
 
 ## Setting Up
 
-Once you have AppFlowy installed, simply create a new page for your software engineering projects. This page will serve as your central hub, where you can structure and categorize your tasks.For example,When using AppFlowy for software engineering, you can create sections like "Project Planning" for goals, requirements, and milestones. "Development Tasks" helps manage project-specific tasks. Use "Bugs and Issues" to log and address problems, and a "Project Completion" section to track final steps for successful delivery. By creating these sections within your page, you can easily navigate through your projects and find the information you need without any confusion. AppFlowy provides a clean and intuitive interface that allows you to stay focused and organized throughout the software engineering process.
+Once you have AppFlowy installed, simply create a new page for your software engineering projects. This page will serve as your central hub, where you can structure and categorize your tasks. For example,When using AppFlowy for software engineering, you can create sections like "Project Planning" for goals, requirements, and milestones. "Development Tasks" helps manage project-specific tasks. Use "Bugs and Issues" to log and address problems, and a "Project Completion" section to track final steps for successful delivery. By creating these sections within your page, you can easily navigate through your projects and find the information you need without any confusion. AppFlowy provides a clean and intuitive interface that allows you to stay focused and organized throughout the software engineering process.
 
 
 
@@ -49,15 +49,18 @@ Once I have my project plan in place, it's time to start working on the developm
 Of course, no software project is without its bugs and issues. That's where Appflowy's bug tracking features come in. To track bugs and issues, I create a new list for each issue and add notes and tags as needed. For example, I might create a note for the bug description, a note for the steps to reproduce, and a note for the priority level. By tagging each note with the project name and issue name, I can easily find all the notes related to that issue.
 
 ![image (14)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/030c9349-0e96-4973-af39-ae0cd9007db5)
-
-
+<div align="center">
+  <p><small style="font-size: 70%"><em>Bugs and issues page</em></small></p>
+</div>
 
 ## Project Completion
 Once all the development tasks are completed and all the bugs are fixed, it's time to wrap up the project. To manage the project completion, I create a new list for the project and add notes and tags as needed. For example, I might create a note for the final deliverables, a note for any outstanding issues, and a note for the project status. By tagging each note with the project name, I can easily find all the notes related to that project.
 
 
 ![image (17)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/ae858112-3594-47fd-89f4-9eca7e4f47b7)
-
+<div align="center">
+  <p><small style="font-size: 70%"><em>Project completion page</em></small></p>
+</div>
 
 ## Other Exciting Features for Software Engineers
 ## Open AI Integration
