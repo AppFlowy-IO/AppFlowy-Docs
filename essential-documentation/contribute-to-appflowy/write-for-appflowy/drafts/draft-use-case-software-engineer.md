@@ -56,6 +56,9 @@ Of course, no software project is without its bugs and issues. That's where Appf
 Once all the development tasks are completed and all the bugs are fixed, it's time to wrap up the project. To manage the project completion, I create a new list for the project and add notes and tags as needed. For example, I might create a note for the final deliverables, a note for any outstanding issues, and a note for the project status. By tagging each note with the project name, I can easily find all the notes related to that project.
 
 
+![image (17)](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/ae858112-3594-47fd-89f4-9eca7e4f47b7)
+
+
 ## Other Exciting Features for Software Engineers
 ## Open AI Integration
 Being a Software Engineer you must be tired of reading through long, technical documents and articles. Well, Appflowy's got your back with their new OpenAI integration. With just a few clicks, you can now quickly summarize lengthy texts and extract key information using the power of OpenAI.
