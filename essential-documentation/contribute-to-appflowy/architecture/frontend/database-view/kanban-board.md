@@ -19,7 +19,7 @@ Below you will find some quick definitions to help you read through the document
 
 ## Board
 
-A board using the [database](../) as its data storage.
+A board using the [database](../frontend/) as its data storage.
 
 ## Group
 

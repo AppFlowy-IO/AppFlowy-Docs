@@ -112,7 +112,7 @@ Flutter version 3.7.9 is the recent supported stable release used for for buildi
 * **Method 2:** You can use the code below to install flutter manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git --branch 3.3.10
+git clone https://github.com/flutter/flutter.git --branch 3.7.9
 cd flutter
 echo -e "\nexport PATH=\$PATH:"`pwd`"/bin" >> ~/.bashrc
 source ~/.bashrc
@@ -120,7 +120,7 @@ flutter
 cd ..
 ```
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-55-23.png" alt=""><figcaption><p>Image: Installing flutter manually.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot%20from%202023-02-27%2013-55-23.png" alt=""><figcaption><p>Image: Installing flutter manually.</p></figcaption></figure>
 
 * **Method 3**: You can also use a runtime version manager like [asdf](https://asdf-vm.com/) or a flutter-specific version manager to install flutter on your system. Assuming you are using the **bash** shell, follow these steps:
 
@@ -146,9 +146,9 @@ If you are not using **bash**, check the official [asdf guide](https://asdf-vm.c
 ```bash
 cd AppFlowy
 asdf plugin-add flutter
-asdf install flutter 3.3.10-stable
+asdf install flutter 3.7.9-stable
 rm -rf .tool-versions
-asdf local flutter 3.3.10-stable 
+asdf local flutter 3.7.9-stable 
 cd ..
 ```
 
@@ -253,7 +253,7 @@ If you do not know the version number for the AppFlowy binary that you have buil
 
 A new window as shown below will show up after you run the application:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (2).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
 
 If using a virtual machine, run the Linux GUI application through x11 on windows (use MobaXterm) for instance:
 

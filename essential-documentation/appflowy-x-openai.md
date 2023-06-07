@@ -10,11 +10,12 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 * **Summarize**: Auto-generate a nice summary for an article, your proposal, or anything else.
 * **Fix spelling**: With one click away, catch and fix misspelled words instantly.
 * **Improve Writing**: There is no need to switch between different tools; simply highlight the text and ask AI to quickly transform it into something better and more suitable for the task.
+* **Make longer:** AI will automatically rewrite its response with more copy
 
 ### What's coming up next?
 
 * Make a to-do list
-* Make shorter or longer
+* Make shorter
 * Text-to-image generator
 * Integrate more AI service providers
 * And many more to come!

@@ -46,6 +46,11 @@ flutter config --enable-windows-desktop
 flutter doctor
 ```
 
+* Install LLVM
+  * Based on your platform, install the LLVM using the [LLVM-16.0.0-win64(32)](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.0). Additionally, make sure to add it to the system path.
+
+  ![install_llvm](../../../../.gitbook/assets/install_llvm.png)
+
 * Install rust
   * Download `rustup.exe` from [https://win.rustup.rs/x86\_64](https://win.rustup.rs/x86\_64)
   * Call rustup.exe from powershell or cmd
