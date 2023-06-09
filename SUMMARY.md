@@ -85,6 +85,7 @@
       * [\[Draft\] Use Case: High School Students](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-high-school-students.md)
       * [\[Draft\] How to add a new property to appflowy database](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-how-to-add-a-new-property-to-appflowy-database.md)
 * [🎨 Customize and Style Content](essential-documentation/customize-and-style-content.md)
+* [💽 Data Storage](essential-documentation/data-storage.md)
 * [⏮ Duplicate, Delete, and Restore](essential-documentation/duplicate-delete-and-restore.md)
 * [💎 Databases](essential-documentation/databases/README.md)
   * [🔢 Database Properties](essential-documentation/databases/database-properties.md)

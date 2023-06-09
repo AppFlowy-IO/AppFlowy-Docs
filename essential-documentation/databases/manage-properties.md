@@ -103,7 +103,7 @@ Click on the property name to edit the property. As you can see in the above scr
 
 * Click on `Properties`
 
-<figure><img src="../../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Toggle on the 👁️ icon next to "Progress" to show it
 
@@ -117,4 +117,4 @@ Click on the property name to edit the property. As you can see in the above scr
 
 ### Adjust the width of a column
 
-<figure><img src="../../.gitbook/assets/column_rearrange (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/column_rearrange.gif" alt=""><figcaption></figcaption></figure>

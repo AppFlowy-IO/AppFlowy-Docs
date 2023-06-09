@@ -48,10 +48,13 @@ Add a callout:
 
 Change the color:
 
-* Hover on the top right corner of the callout block
-* Click on 🎨
+* Hover on the callout block to trigger the action menu as indicated in the below screenshot
+* Click to open menu
+* Select `Color`
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 ### Cover
 
