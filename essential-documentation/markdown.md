@@ -14,7 +14,7 @@
 
 ### Quotes
 
-You can quote text by adding a `>` symbols before the text.
+You can quote text by adding  a `"` symbol at the beginning of your quote.
 
 > This is a quote
 
@@ -55,3 +55,10 @@ To create a checkbox item, start with a hyphen `-` and followed by `[]` or `[x]`
 ```
 
 You can press `Tab` or `Shift + Tab` to indent or unindent a checkbox item.
+
+
+
+### Divider
+
+To insert to divider, start with an empty line and type \*\*\* or `---`
+
