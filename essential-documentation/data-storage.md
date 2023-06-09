@@ -6,7 +6,7 @@ When you launch the application the first time, you will be able to set the dire
 
 If you can't decide at the moment, simply click Quick Start without changing the data directory. You will be able to change it in the application.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can always verify where your data is stored by going to Settings --> Files
 
