@@ -14,7 +14,7 @@
 
 ### Quotes
 
-You can quote text by adding  a `"` symbol at the beginning of your quote.
+You can quote text by typing `"` + `Space`at the beginning of your quote.
 
 > This is a quote
 
