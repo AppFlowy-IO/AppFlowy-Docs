@@ -10,7 +10,7 @@ If you can't decide at the moment, simply click Quick Start without changing the
 
 You can always verify where your data is stored by going to Settings --> Files
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 To open another AppFlowy data folder, click on `Change` and choose your target folder.
 
