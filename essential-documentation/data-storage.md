@@ -12,5 +12,5 @@ You can always verify where your data is stored by going to Settings --> Files
 
 <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-To open another AppFlowy data folder, click on the file icon next to `Change` and choose your target folder.
+To open another AppFlowy data folder, click on `Change` and choose your target folder.
 
