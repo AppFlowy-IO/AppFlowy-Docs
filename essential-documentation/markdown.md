@@ -1,4 +1,4 @@
-# #⃣ Markdown
+# #⃣ #⃣ Markdown
 
 ### Headings
 
@@ -62,3 +62,8 @@ You can press `Tab` or `Shift + Tab` to indent or unindent a checkbox item.
 
 To insert to divider, start with an empty line and type \*\*\* or `---`
 
+
+
+### Format as code
+
+Type `` ` `` around the text to format it as `code`
