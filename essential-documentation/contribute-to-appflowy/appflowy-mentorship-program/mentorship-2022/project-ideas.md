@@ -102,7 +102,7 @@ Mentor: Alex&#x20;
 
 ***
 
-8. **Outline Plugin for AppFlowy Editor**
+8. ~~**Outline Plugin for AppFlowy Editor (it's taken)**~~
 
 Adding the outline block to the document will automatically generate a list of anchor links to the headings within the document.
 
@@ -122,7 +122,7 @@ Mentor: [Lucas](https://github.com/LucasXu0)
 
 
 
-9. **Favorites**
+9. ~~**Favorites (it's taken)**~~
 
 Allow us to quickly access favorited pages via Favorites in the left navigation panel.
 
@@ -139,7 +139,7 @@ Mentor: Mathias, Nathan
 
 
 
-10. &#x20;**Importers**
+10. &#x20;~~**Importers (it's taken)**~~
 
 Import data from third-party sources, eg: Notion importer, Joplin importer
 
