@@ -19,28 +19,42 @@
 {% endhint %}
 
 {% hint style="danger" %}
-**There is a known issue with Ubuntu 22.04, Fedora 37, and PopOS 22.04:**
+**Attention:** There is an issue affecting Ubuntu 22.04, Fedora 37, and PopOS 22.04:
 
-`Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory.`\
-`\` The issue can be fixed by installing the required missing libraries:
+ Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory.
+ The issue can be fixed by installing the required missing libraries:
 
-```bash
-# Fedora Workstation
-sudo dnf install openssl-devel
-```
+ **For Fedora Workstation:**
 
-```bash
-# Fedora Silverblue
-rpm-ostree upgrade && rpm-ostree install openssl1.1.x86_64 # Silverblue
-```
+ ```shell
+ sudo dnf install openssl-devel
+ ```
 
-```bash
-# Ubuntu & PopOS
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
-sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
-```
+ **For Fedora Silverblue:**
 
-If the above Ubuntu & PopOS link is expired, or returns an error 404 then consider searching for libssl1.1\_1.1.1 on the following [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
+ ```shell
+ rpm-ostree upgrade
+ rpm-ostree install openssl1.1.x86_64
+ ```
+
+ For Silverblue, it is necessary to perform both the upgrade and the installation.
+
+ **For Ubuntu & PopOS:**
+
+ 1. Download the required package by executing the following command:
+
+ ```shell
+ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+ ```
+
+ 2. Install the downloaded package using the following command:
+
+ ```shell
+ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+ ```
+
+ If the provided link for Ubuntu & PopOS is expired or returns an error 404, you can search for "libssl1.1_1.1.1" on the [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
+
 {% endhint %}
 
 ### Step 1: Get the source code

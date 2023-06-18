@@ -1,71 +1,74 @@
-# Installing & Setting up Flutter on Linux from Source
+# Flutter Installation Guide for Linux (Building from Source)
 
-This guide will show you how to install and get Flutter working to install AppFlowy. This **should** work for majority on Debian Based Distros. 
 
-Begin by running a system update with 
+This guide provides step-by-step instructions to install and set up Flutter on Linux from source. It is primarily targeted at Debian-based distributions but should work for the majority of them.
+
+Update your system by running the following command:
+
 ```shell 
 sudo apt update
 ```
-Then install the necessary packages. 
+Install the necessary packages using the command:
 
 ```shell
 sudo apt install curl file git unzip xz-utils zip libglu1-mesa clang cmake \ ninja-build pkg-config libgtk-3-dev
 ```
-Personally, I recommend installing cmake & ninja-build from source. This is completely optional and not recommended. [cmake download](https://cmake.org/download/)  [ninja-build](https://github.com/ninja-build/ninja) <- cmake is required to install ninja-build OR python.
+Optionally, you can choose to install cmake and ninja-build from source. This step is not recommended but provided for advanced users. You can download cmake from [here](https://cmake.org/download/) and ninja-build from [here](https://github.com/ninja-build/ninja/). Note that installing cmake is required to install ninja-build or Python.
 
-Create a new Folder for Flutter 
+
+Create a new folder for Flutter by running the following command:
+
 ```shell
 mkdir projectfolder
 ``` 
-Then install the [latest Flutter SDK tarball file](https://docs.flutter.dev/development/tools/sdk/releases?tab=linux)
+Download the [latest Flutter SDK tarball file](https://docs.flutter.dev/development/tools/sdk/releases?tab=linux)
 
 ## Installation 
 
-cd into the project folder you created earlier.
+Change into the project folder you created earlier:
 
 ```shell
 cd projectfolder
 ```
-Extract the Flutter file
+Extract the Flutter tarball file using the command:
 
 ```shell
 tar xvf ~/Downloads/flutter_linux_*-stable.tar.xz
 ```
-Add Flutter to your environment PATH
+Add Flutter to your environment PATH by executing the following command:
 
 ```shell
 export PATH="$PATH:[path-to-flutter-directory]/bin"
 ``` 
-Optionally, you can also run 
+Optionally, you can add the PATH by opening the .bashrc file using the command:
 
 ```shell
 nano ~/.bashrc
 ``` 
-and add the PATh there. 
+Add the PATH configuration there.
 
-Replace [path-to-flutter-directory]  in the above command with the actual path of the folder where you have extracted the Flutter.
-
-For example, here we have created a folder called projectfolder and under it, we have extracted the folder. Hence the above command in our case will be:
+Replace [path-to-flutter-directory] in the above command with the actual path to the folder where you extracted the Flutter SDK. For example, if you extracted Flutter in a folder called projectfolder, the command will be:
 
 ```shell
 export PATH="$PATH:~/projectfolder/flutter/bin"
 ```
-**Save** the file by pressing **Ctrl+O** and then **Ctr+X**.
+**Save the file by pressing Ctrl+O and then Ctrl+X.**
 
 ### **Reload Terminal Session**
-You can exit the terminal and reopen, or run
+Reload your terminal session by either reopening the terminal or running the following command:
+
 ```shell
 /bin/bash
 ```
-Check if the Flutter PATH is added into your shell.
+Check if the Flutter PATH is correctly added to your shell by running:
 ```shell
 echo $PATH
 ```
-Once you've confirmed that flutter is installed and added to PATh, run 
+Once you have confirmed that Flutter is installed and the PATH is set, run the following command to check the Flutter version:
 ```shell
 flutter --version
 ```
 
-You should see a screen that welcomes you and the version.
+You should see a welcome screen along with the installed version of Flutter.
 
 ![flutter](https://user-images.githubusercontent.com/109571434/191872386-6694e72d-5bdb-4de4-ad59-86830f830f33.png)
