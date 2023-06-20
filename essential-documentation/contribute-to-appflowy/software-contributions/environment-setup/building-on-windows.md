@@ -103,7 +103,7 @@ perl --version
 * Enable the Dart `protoc_plugin`
 
 ```shell
-dart pub global activate protoc_plugin
+dart pub global activate protoc_plugin 20.0.1
 ```
 
 * For Windows 11: Activate Developer Mode
