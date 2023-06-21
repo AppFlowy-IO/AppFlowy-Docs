@@ -36,7 +36,7 @@ Tasks:
 Milestones:
 
 1. Gain a comprehensive understanding of GPT-4 capabilities and functionalities
-2. Gain in depth understanding of appflowing best coding practices integrated in CI/CD.
+2. Gain in depth understanding of appflowy best coding practices integrated in CI/CD.
 3. Determine if there are existing Rust libraries available for GPT-4 integration
 
 **Week 2 (26/06/2023):**
