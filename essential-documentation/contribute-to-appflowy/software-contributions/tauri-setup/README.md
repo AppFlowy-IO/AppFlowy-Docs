@@ -21,7 +21,8 @@ cd AppFlowy/frontend
 cargo make appflowy-tauri-deps-tools
 
 cd appflowy_tauri
-npm install
+npm install -g pnpm
+pnpm install
 ```
 
 ## IDE setup 
