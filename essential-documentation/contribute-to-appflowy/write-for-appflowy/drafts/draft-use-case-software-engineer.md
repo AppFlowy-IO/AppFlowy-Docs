@@ -5,7 +5,7 @@
 ## Introduction
 Welcome, fellow software engineers! Today, I want to share with you how I use Appflowy to stay organized and productive in my work. As software engineers, we all know how important it is to keep track of our projects, deadlines, and tasks. That's where Appflowy comes in! With its simple and intuitive design, Appflowy makes it easy to stay on top of everything.
 
-![Getting started page](https://user-images.githubusercontent.com/89600478/235852123-0105d13e-b05e-4df0-b136-4825ca817351.png)
+![Getting started page](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/d5776555-f530-4aad-a1e8-640ebebd24c9)
 
 
 <!-- How to Contribute -->
@@ -15,7 +15,7 @@ Here are the [Installation methods](https://appflowy.gitbook.io/docs/essential-d
 Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy).
 After installation, users can pick a folder for saving data on the quick start page.
 
-![Welcome page](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/f96b3596-3196-458e-bb1f-be8ba847eac6)
+![Welcome page](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/4f75470a-6642-4640-8215-cffbe3ab58e3)
 
 ## Setting Up
 
