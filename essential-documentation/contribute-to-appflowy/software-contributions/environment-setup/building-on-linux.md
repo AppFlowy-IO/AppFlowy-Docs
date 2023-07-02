@@ -19,28 +19,42 @@
 {% endhint %}
 
 {% hint style="danger" %}
-**There is a known issue with Ubuntu 22.04, Fedora 37, and PopOS 22.04:**
+**Attention:** There is an issue affecting Ubuntu 22.04, Fedora 37, and PopOS 22.04:
 
-`Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory.`\
-`\` The issue can be fixed by installing the required missing libraries:
+ Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory.
+ The issue can be fixed by installing the required missing libraries:
 
-```bash
-# Fedora Workstation
-sudo dnf install openssl-devel
-```
+ **For Fedora Workstation:**
 
-```bash
-# Fedora Silverblue
-rpm-ostree upgrade && rpm-ostree install openssl1.1.x86_64 # Silverblue
-```
+ ```shell
+ sudo dnf install openssl-devel
+ ```
 
-```bash
-# Ubuntu & PopOS
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
-sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
-```
+ **For Fedora Silverblue:**
 
-If the above Ubuntu & PopOS link is expired, or returns an error 404 then consider searching for libssl1.1\_1.1.1 on the following [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
+ ```shell
+ rpm-ostree upgrade
+ rpm-ostree install openssl1.1.x86_64
+ ```
+
+ For Silverblue, it is necessary to perform both the upgrade and the installation.
+
+ **For Ubuntu & PopOS:**
+
+ 1. Download the required package by executing the following command:
+
+ ```shell
+ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+ ```
+
+ 2. Install the downloaded package using the following command:
+
+ ```shell
+ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+ ```
+
+ If the provided link for Ubuntu & PopOS is expired or returns an error 404, you can search for "libssl1.1_1.1.1" on the [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
+
 {% endhint %}
 
 ### Step 1: Get the source code
@@ -74,7 +88,7 @@ sudo pacman -S git
 You should fork the code instead if you wish to submit code to AppFlowy. You will find information on that in [Setting Up Your Repositories](../submitting-code/setting-up-your-repositories.md).
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-51-27.png" alt=""><figcaption><p>Image: Cloning the source from the Github repository.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-51-27 (1).png" alt=""><figcaption><p>Image: Cloning the source from the Github repository.</p></figcaption></figure>
 
 ### Step 2: Install your build environment
 
@@ -100,7 +114,7 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-32-41 (1).png" alt=""><figcaption><p>Image: Installing prerequisites on Ubuntu.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 13-32-41.png" alt=""><figcaption><p>Image: Installing prerequisites on Ubuntu.</p></figcaption></figure>
 
 #### **Install flutter (three different methods):**
 
@@ -253,7 +267,7 @@ If you do not know the version number for the AppFlowy binary that you have buil
 
 A new window as shown below will show up after you run the application:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (1) (1) (1).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot from 2023-02-27 21-59-56 (1) (1) (1) (2).png" alt=""><figcaption><p>Image: AppFlowy window</p></figcaption></figure>
 
 If using a virtual machine, run the Linux GUI application through x11 on windows (use MobaXterm) for instance:
 
