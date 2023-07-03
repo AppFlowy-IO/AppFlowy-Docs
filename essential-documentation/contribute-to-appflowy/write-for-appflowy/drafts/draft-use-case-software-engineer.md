@@ -21,7 +21,8 @@ After installation, users can pick a folder for saving data on the quick start p
 
 Once you have AppFlowy installed, simply create a new page for your software engineering projects. This page will serve as your central hub, where you can structure and categorize your tasks. For example,When using AppFlowy for software engineering, you can create sections like "Project Planning" for goals, requirements, and milestones. "Development Tasks" helps manage project-specific tasks. Use "Bugs and Issues" to log and address problems, and a "Project Completion" section to track final steps for successful delivery. By creating these sections within your page, you can easily navigate through your projects and find the information you need without any confusion. AppFlowy provides a clean and intuitive interface that allows you to stay focused and organized throughout the software engineering process.
 
-![Setting up](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/898db581-5254-4db9-9ba5-afe376f9270e)
+![Setting up](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/1290affb-1a06-47d7-879d-cd3a5fcc5a02)
+![Automated grid view for the setting up page](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/98718b99-8ec1-4490-9971-c7b5f4defc9e)
 
 
 
