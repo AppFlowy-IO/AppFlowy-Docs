@@ -21,40 +21,38 @@
 {% hint style="danger" %}
 **Attention:** There is an issue affecting Ubuntu 22.04, Fedora 37, and PopOS 22.04:
 
- Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory.
- The issue can be fixed by installing the required missing libraries:
+Failed to load dynamic library 'libdart\_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory. The issue can be fixed by installing the required missing libraries:
 
- **For Fedora Workstation:**
+**For Fedora Workstation:**
 
- ```shell
- sudo dnf install openssl-devel
- ```
+```shell
+sudo dnf install openssl-devel
+```
 
- **For Fedora Silverblue:**
+**For Fedora Silverblue:**
 
- ```shell
- rpm-ostree upgrade
- rpm-ostree install openssl1.1.x86_64
- ```
+```shell
+rpm-ostree upgrade
+rpm-ostree install openssl1.1.x86_64
+```
 
- For Silverblue, it is necessary to perform both the upgrade and the installation.
+For Silverblue, it is necessary to perform both the upgrade and the installation.
 
- **For Ubuntu & PopOS:**
+**For Ubuntu & PopOS:**
 
- 1. Download the required package by executing the following command:
+1. Download the required package by executing the following command:
 
- ```shell
- wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
- ```
+```shell
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+```
 
- 2. Install the downloaded package using the following command:
+2. Install the downloaded package using the following command:
 
- ```shell
- sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
- ```
+```shell
+sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+```
 
- If the provided link for Ubuntu & PopOS is expired or returns an error 404, you can search for "libssl1.1_1.1.1" on the [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
-
+If the provided link for Ubuntu & PopOS is expired or returns an error 404, you can search for "libssl1.1\_1.1.1" on the [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
 {% endhint %}
 
 ### Step 1: Get the source code
@@ -193,7 +191,7 @@ source ~/.bashrc
 {% hint style="warning" %}
 **If you get this following warning (image shown below** 👇\*\*):\*\*
 
-***
+
 
 `Warning: Pub installs executables into $HOME/.pub-cache/bin, which is not on your path. You can fix that by adding this to your shell's config file (.bashrc, .bash_profile, etc.):`
 

@@ -29,7 +29,7 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 
 3. Copy the secret key --> Go to Settings --> Users --> OpenAI Key --> Enter your API key
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Restart AppFlowy
 5. Type the slash `/open` command to use `OpenAI Writer`
