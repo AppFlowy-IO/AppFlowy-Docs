@@ -170,3 +170,21 @@ I add the param\
 and it works
 
 [issue: #2458](https://github.com/AppFlowy-IO/AppFlowy/issues/2458)
+
+# 18. Can't run tests on windows "Failed to load dynamic library"
+
+If you're trying to run tests on windows, but they're failing due to this message:
+
+```
+Invalid argument(s): Failed to load dynamic library
+'C:\Users\mathias\AppFlowy\frontend\appflowy_flutter/.sandbox/dart_ffi.dll': error code 126
+dart:ffi
+open
+   ...
+```
+
+Run this command from the frontend directory:
+`cargo make dart_unit_test`
+
+_Optionally you can run this in bash instead of the above one, but you must be inside the appflowy_flutter directory:_
+`flutter test --dart-define=RUST_LOG=INFO -j, --concurrency=1 --coverage`
