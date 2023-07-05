@@ -12,7 +12,7 @@ description: Working in progress
 
 This is how it looks if I select `Date` and name it as "Deadline".
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit property values
 

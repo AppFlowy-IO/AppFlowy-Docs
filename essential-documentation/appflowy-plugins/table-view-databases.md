@@ -74,11 +74,11 @@ View only the rows that fit certain criteria.
 
 * Click `Filter` at the top right of your table.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * Choose which property you want to filter by from the dropdown.
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 * Choose the condition you want to use, i.e. `is`, `is not`, etc.
 
@@ -91,7 +91,7 @@ View only the rows that fit certain criteria.
 
 * Click `Filter` again to hide or show filters
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Remove a filter by clicking on the filter and then the `:` menu
 
