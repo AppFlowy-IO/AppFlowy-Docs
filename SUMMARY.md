@@ -108,7 +108,7 @@
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
 * [#⃣ #⃣ #⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
-* [Themes](essential-documentation/themes.md)
+* [🎨 Themes](essential-documentation/themes.md)
 
 ## Handbook
 

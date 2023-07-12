@@ -22,7 +22,7 @@ AppFlowy is the first open-source Notion alternative. You are in charge of your 
 {% hint style="info" %}
 **Help & Feedback**
 
-***
+
 
 **Docs**
 
@@ -36,7 +36,7 @@ Edit [**AppFlowy Docs**](https://github.com/AppFlowy-IO/docs) to fix an error or
 [Propose functionality](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) by submitting a feature request.\
 [Join our Discord channel](https://discord.gg/9Q2xaN37tV) to help shape new features.
 
-***
+
 
 **Get Help**
 

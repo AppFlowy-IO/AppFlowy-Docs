@@ -33,7 +33,7 @@ Calendars are a great way to visualize how things connect to certain dates from 
 * Skills Required: Flutter
 * Mentor: [Nathan.fooo](https://github.com/appflowy)
 
-***
+
 
 3. [~~**Themes**~~](mentee-projects/custom-themes.md) ~~**(it's taken)**~~
 
@@ -88,11 +88,11 @@ Skills Required: Flutter
 
 Mentor: [Lucas](https://github.com/LucasXu0)
 
-***
 
-7. ***
 
-***
+7. ~~**Code Block for AppFlowy Editor (it's taken)**~~
+
+Develop a code block in Flutter as a standalone package that can be used by AppFlowy and other Flutter applications
 
 Difficulty: Medium to Hard
 
@@ -100,7 +100,7 @@ Skills Required: Flutter
 
 Mentor: Alex&#x20;
 
-***
+
 
 8. ~~**Outline Plugin for AppFlowy Editor (it's taken)**~~
 
