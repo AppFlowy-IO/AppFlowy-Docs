@@ -15,9 +15,9 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 | Copy                                   | `CTRL` (or `⌘` on MacOS) | `C`     |       |
 | Paste                                  | `CTRL` (or `⌘` on MacOS) | `V`     |       |
 | Cut                                    | `CTRL` (or `⌘` on MacOS) | `X`     |       |
-| Redo                                   | `CTRL` (or `⌘` on MacOS) | `Y`     |       |
+| Redo                                   | `CTRL`                   | `Y`     |       |
 | OR                                     |                          |         |       |
-| Redo                                   | `CTRL` (or `⌘` on MacOS) | `Shift` | `E`   |
+| Redo                                   | `CTRL` (or `⌘` on MacOS) | `Shift` | `Z`   |
 | Undo                                   | `CTRL` (or `⌘` on MacOS) | `Z`     |       |
 | Home                                   | `Home`                   |         |       |
 | End                                    | `End`                    |         |       |
@@ -71,13 +71,14 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 | Cursor left word select       | `Shift`                  | `ALT` (or `⌥` on MacOS)   | `←`           |
 | Cursor right word select      | `Shift`                  | `ALT` (or `⌥` on MacOS)   | `→`           |
 | Cursor left word delete       | `CTRL` (or `⌥` on MacOS) | `← Backspace`             |               |
+| Cursor right word delete      | `CTRL` (or `⌥` on MacOS) | `Delete`                  |               |
 | Cursor sentence delete        | `CTRL` (or `⌘` on MacOS) | `ALT` (or `n/a` on MacOS) | `← Backspace` |
 | Cursor jump from word to word | `ALT` (or `⌥` on MacOS)  | `←` or `→`                |               |
 | Cursor top select             | `CTRL` (or `⌘` on MacOS) | `Shift`                   | `↑`           |
 | Cursor bottom select          | `CTRL` (or `⌘` on MacOS) | `Shift`                   | `↓`           |
-| Cursor begin select           | `CTRL` (or `⌘` on MacOS) | `Shift`                   | `←`           |
+| Cursor begin select           |  `⌘`                     | `Shift`                   | `←`           |
 | OR                            |                          |                           |               |
 | Cursor begin select           | `Shift`                  | `Home`                    |               |
-| Cursor end select             | `CTRL` (or `⌘` on MacOS) | `Shift`                   | `→`           |
+| Cursor end select             | `⌘`                      | `Shift`                   | `→`           |
 | OR                            |                          |                           |               |
 | Cursor end select             | `Shift`                  | `End`                     |               |
