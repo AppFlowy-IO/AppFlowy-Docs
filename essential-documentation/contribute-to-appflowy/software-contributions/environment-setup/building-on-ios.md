@@ -1,4 +1,4 @@
-# 🍎 Building on MacOS
+# 📱 Building on iOS
 
 **Note:**
 
