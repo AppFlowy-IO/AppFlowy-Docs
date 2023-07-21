@@ -7,7 +7,7 @@ We have set up instructions for Linux, MacOS, and Windows.
 
 
 {% hint style="warning" %}
-Flutter version 3.7.9 is the version that AppFlowy is built and tested on. If you installed Flutter before, make sure the version matches AppFlowy's.
+Flutter version 3.10.1 is the version that AppFlowy is built and tested on. If you installed Flutter before, make sure the version matches AppFlowy's.
 And don't forget to run the following command to active the protoc plugin.
 ```dart
 dart pub global activate protoc_plugin
@@ -23,3 +23,5 @@ Rust version 1.65 is the version that AppFlowy is built and tested on. If you in
 [Building on MacOS](building-on-macos.md)
 
 [Building on Windows](building-on-windows.md)
+
+[Building on iOS](building-on-ios.md)
