@@ -5,7 +5,7 @@
 ## Introduction
 Welcome, fellow software engineers! Today, I want to share with you how I use Appflowy to stay organized and productive in my work. As software engineers, we all know how important it is to keep track of our projects, deadlines, and tasks. That's where Appflowy comes in! With its simple and intuitive design, Appflowy makes it easy to stay on top of everything.
 
-![Getting started page](https://user-images.githubusercontent.com/89600478/235852123-0105d13e-b05e-4df0-b136-4825ca817351.png)
+![Getting started page](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Getting_Started_page.png)
 
 
 <!-- How to Contribute -->
@@ -15,13 +15,14 @@ Here are the [Installation methods](https://appflowy.gitbook.io/docs/essential-d
 Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy).
 After installation, users can pick a folder for saving data on the quick start page.
 
-![Welcome page](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/f96b3596-3196-458e-bb1f-be8ba847eac6)
+![Welcome page](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Welcome_page.png)
 
 ## Setting Up
 
 Once you have AppFlowy installed, simply create a new page for your software engineering projects. This page will serve as your central hub, where you can structure and categorize your tasks. For example,When using AppFlowy for software engineering, you can create sections like "Project Planning" for goals, requirements, and milestones. "Development Tasks" helps manage project-specific tasks. Use "Bugs and Issues" to log and address problems, and a "Project Completion" section to track final steps for successful delivery. By creating these sections within your page, you can easily navigate through your projects and find the information you need without any confusion. AppFlowy provides a clean and intuitive interface that allows you to stay focused and organized throughout the software engineering process.
 
-![Setting up](https://github.com/AbubakrChan/AppFlowy-Docs/assets/89600478/898db581-5254-4db9-9ba5-afe376f9270e)
+![Setting up](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Setting_up_page.png)
+![Automated grid view for the setting up page](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Setting_up_grid_view_page.png)
 
 
 
