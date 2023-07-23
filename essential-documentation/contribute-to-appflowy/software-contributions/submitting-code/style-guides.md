@@ -86,7 +86,7 @@ void sum(int testValue) {…}
 
 ### _Variables_ <a href="#5dc0" id="5dc0"></a>
 
-_@@@_ [Nathan Foo](http://localhost:5000/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
+_@@@_ [Nathan Foo](http://127.0.0.1:5000/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_We have to choose one of these two ideologies. Me, personally, I'm a type who writes the types. It makes the code easier to understand. I know that the newer mentality is to not have them because the compiler can figure it out. But where I disagree is that just because the compiler can figure it out, I don't see why we should make the next programmer have to figure it out. We'll do whatever you want :)_
 
 #### _Specify types for class members_ <a href="#5dc0" id="5dc0"></a>
 
@@ -133,7 +133,7 @@ d2..setA(10)
   ..showVal();
 ```
 
-### _Use expression function bodies @@@_ [Nathan Foo](http://localhost:5000/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
+### _Use expression function bodies @@@_ [Nathan Foo](http://127.0.0.1:5000/u/HstpM3YrioTmnraZh6WT3tPRAN63 "mention")_I think this applies to both Rust and Dart_ <a href="#2998" id="2998"></a>
 
 _For functions that contain just one expression, you can use an expression function. The `=>` (arrow) notation is used for expression functions._
 

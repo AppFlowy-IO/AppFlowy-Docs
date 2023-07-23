@@ -8,7 +8,7 @@ AppFlowy allows uploading user-defined color schemes. AppFlowy's latest color sc
 
 To provide your own color scheme, you must create two JSON files, one called `<your_theme_name>.dark.json` and `<your_theme_name>.light.json` in a folder called `<your_theme_name>.flowy_plugin`. Here's an example for a theme called "Material"
 
-<img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (1) (2).png" alt="" data-size="original">
 
 **Explanation**
 
@@ -106,11 +106,11 @@ If you prefer to use these color pickers, you can simply replace `#` with `0xFF`
 
 Before you upload, double check that your theme plugin has the correct format and that the keys and values provided in your JSON are accurate. After, open your AppFlowy settings tab and click on the folder icon.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (28).png>)
 
 The following pop up should appear.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (4).png>)
 
 Click on upload and choose `<your_theme_name>.flowy_plugin` folder.
 

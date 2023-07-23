@@ -78,7 +78,7 @@
         * [Custom Themes](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/custom-themes.md)
         * [Shortcuts and Customized Hotkeys for AppFlowy](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/shortcuts-and-customized-hotkeys-for-appflowy.md)
         * [Table](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/table.md)
-        * [Favorites](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/favorites.md)
+        * [⭐ Favorites](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/favorites.md)
         * [Code Block](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/code-block.md)
         * [Outlines](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/outlines.md)
         * [Importers](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/importers.md)
@@ -106,7 +106,7 @@
   * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
 * [🟣 Community Plugins](essential-documentation/community-plugins.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
-* [#⃣ #⃣ #⃣ Markdown](essential-documentation/markdown.md)
+* [#⃣ #⃣ #⃣ #⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 * [🎨 Themes](essential-documentation/themes.md)
 
