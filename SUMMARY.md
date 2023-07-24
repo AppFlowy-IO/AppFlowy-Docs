@@ -82,6 +82,7 @@
         * [Code Block](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/code-block.md)
         * [Outlines](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/outlines.md)
         * [Importers](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/importers.md)
+        * [AI Writers](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/ai-writers.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [☕ Blog Post Work in Progress](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/README.md)
     * [Dynamic Plugin](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/dynamic-plugin.md)
