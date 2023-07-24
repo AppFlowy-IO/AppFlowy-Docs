@@ -83,6 +83,8 @@
         * [Outlines](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/outlines.md)
         * [Importers](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/importers.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
+  * [☕ Blog Post Work in Progress](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/README.md)
+    * [Dynamic Plugin](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/dynamic-plugin.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/README.md)
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
       * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
