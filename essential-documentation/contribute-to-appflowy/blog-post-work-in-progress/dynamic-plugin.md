@@ -21,7 +21,7 @@ return AppFlowyEditor(
 
 In this specific example, the developer leveraged the interface from the editor to render local images in the editor. The following picture demonstrates what the added functionality may look like (note that this is a local image and this feature was made available in the 0.2.5 release).
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8574c76a-6848-475b-81e9-6009c2c01106/Untitled.png)
+<figure><img src="../../../.gitbook/assets/Untitled2.png" alt=""><figcaption></figcaption></figure>
 
 **Summary**
 

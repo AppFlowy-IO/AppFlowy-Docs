@@ -85,7 +85,7 @@
         * [AI Writers](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/ai-writers.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [☕ Blog Post Work in Progress](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/README.md)
-    * [Don’t Try to Load Code Dynamically in Your Flutter App, It’s Terrible](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/dont-try-to-load-code-dynamically-in-your-flutter-app-its-terrible.md)
+    * [Don’t Try to Load Code Dynamically in Your Flutter App, It’s Terrible](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/dynamic-plugin.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/README.md)
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
       * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
