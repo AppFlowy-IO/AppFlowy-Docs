@@ -1,10 +1,16 @@
 # Don’t Try to Load Code Dynamically in Your Flutter App, It’s Terrible
 
-**Background**
+## Background
 
-AppFlowy, is an open-source project, emphasizes user customization by offering an editor that allows developers to inject custom code the AppFlowy application. At AppFlowy, we call this injected code a plugin. The primary interface that allows plugin injection is the AppFlowy Editor, the core feature that allows users to edit rich text for their notes. If you are a developer that is curious about how you may be able to support a marketplace where users can get extensions for your application, this article is for you. Let’s get started!
+AppFlowy is an open-source project that emphasizes user customization by offering an editor that allows developers to inject custom code into the AppFlowy application. At AppFlowy we call this an injected code a plugin. 
 
-We’ll start by exploring an example that showcases how a developer inject their plugins into the AppFlowy Editor. Please read the comments before continuing.
+The primary interface that allows plugin injection is the **AppFlowy Editor**. This is a core feature that allows users to edit rich text for their notes. 
+
+If you are a developer that is curious about how you can support a marketplace where users can get extensions for your application, this article is for you. Let’s get started!
+
+We’ll start by exploring an example that showcases how a developer injects their plugins into the AppFlowy Editor. 
+
+Please read the in-line comments before continuing.
 
 ```dart
 // this code is currently AOT compiled the app
@@ -19,18 +25,23 @@ return AppFlowyEditor(
 );
 ```
 
-In this specific example, the developer leveraged the interface from the editor to render local images in the editor. The following picture demonstrates what the added functionality may look like (note that this is a local image and this feature was made available in the 0.2.5 release).
+In this example, the code leverages the interface from the editor to render local images in the editor. 
+
+The following picture demonstrates what the added functionality may look like (note that this is a local image and this feature was made available in the 0.2.5 release).
 
 <figure><img src="../../../.gitbook/assets/Untitled2.png" alt=""><figcaption></figcaption></figure>
 
-**Summary**
 
-By utilizing the `AppFlowyEditor` API, the developer was able to seamlessly integrate a Network image into the editor. If the developer wants this plugin to be used by an end user, they can either:
+By utilizing the `AppFlowyEditor` API, the code seamlessly integrates a Network image into the editor. 
+
+## Submitting Features
+
+If a developer wants a plugin they have developed to be used by an end user, they can either:
 
 1. Submit a pull request to AppFlowy and have this plugin integrated into our version of the application.
 2. Create their own version of AppFlowy with this plugin and publish it for end user consumption.
 
-**Problem**
+## How to Handle Issues with Plugins
 
 Suppose that the added plugin caused the editor to render its content slower. Or, suppose that the added plugin caused the release size to increase significantly. The team would need to consider whether the added plugin was a net benefit to our user base, whether the plugin’s opportunity cost warranted shipping the feature in the next release. **Some users may require the `NetworkImageNodeWidgetBuilder` while others do not. To make everyone happy we may need to create one version of the application with the plugin and one without the plugin**. Now, we are faced with scalability challenges for anyone developing plugins because:
 
