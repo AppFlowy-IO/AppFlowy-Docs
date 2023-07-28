@@ -2,7 +2,7 @@
 
 ## Background
 
-AppFlowy is an open-source project that emphasizes user customization by offering an editor that allows developers to inject custom code into the AppFlowy application. At AppFlowy we call this an injected code a plugin. 
+AppFlowy is an open-source project that emphasizes user customization by offering an editor that allows developers to inject custom code into the AppFlowy application. At AppFlowy we call this injected code a plugin. 
 
 The primary interface that allows plugin injection is the **AppFlowy Editor**. This is a core feature that allows users to edit rich text for their notes. 
 
