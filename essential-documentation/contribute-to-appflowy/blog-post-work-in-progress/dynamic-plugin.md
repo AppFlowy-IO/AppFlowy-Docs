@@ -34,37 +34,47 @@ The following picture demonstrates what the added functionality may look like (n
 
 By utilizing the `AppFlowyEditor` API, the code seamlessly integrates a Network image into the editor. 
 
-## Submitting Features
-
 If a developer wants a plugin they have developed to be used by an end user, they can either:
 
 1. Submit a pull request to AppFlowy and have this plugin integrated into our version of the application.
 2. Create their own version of AppFlowy with this plugin and publish it for end user consumption.
 
-## How to Handle Issues with Plugins
+## How to Handle Scalability Challenges with Plugins
 
-Suppose that the added plugin caused the editor to render its content slower. Or, suppose that the added plugin caused the release size to increase significantly. The team would need to consider whether the added plugin was a net benefit to our user base, whether the plugin’s opportunity cost warranted shipping the feature in the next release. **Some users may require the `NetworkImageNodeWidgetBuilder` while others do not. To make everyone happy we may need to create one version of the application with the plugin and one without the plugin**. Now, we are faced with scalability challenges for anyone developing plugins because:
+Suppose that the added plugin caused the editor to render its content slower. Or suppose that the added plugin caused the release size to increase significantly. The team would need to consider whether the added plugin was a net benefit to our user base, whether the plugin’s opportunity cost warranted shipping the feature in the next release. 
+
+*Some users may require the `NetworkImageNodeWidgetBuilder` while others do not. To make everyone happy we may need to create one version of the application with the plugin and one without the plugin*. 
+
+Now we are faced with scalability challenges for anyone developing plugins because:
 
 * The plugin developer needs to maintain their own version of AppFlowy with the plugin.
-* Or, the team needs to accept this plugin in our version. If not, we need to maintain another version with this plugin.
+* Or the team needs to accept this plugin in our version. If not, we need to maintain another version with this plugin.
 
-Hence, non-developers may need to download multiple versions of AppFlowy if developer X has built AppFlowy with plugin Y and developer A has built AppFlowy with plugin B.
+This leads to an issue where non-developers may need to download multiple versions of AppFlowy if developer X has built AppFlowy with plugin Y and developer A has built AppFlowy with plugin B. 
 
-Hence, the number of AppFlowy versions grows exponentially. To illustrate, when there are "$n$" distinct plugins, there are a total of $2^n$ versions of AppFlowy. With just 1 plugin, we have one version with the plugin and one version without. With just 5 plugins we would end up with 32 distinct versions of AppFlowy. This lack of scalability indicates the need for a more efficient solution.
+This could lead to the number of AppFlowy versions growing exponentially. When there are "$n$" distinct plugins, there are a total of $2^n$ versions of AppFlowy. With just 1 plugin, we have one version with the plugin and one version without. With just 5 plugins we would end up with 32 distinct versions of AppFlowy. 
 
-**Objective**
+This lack of scalability indicates the need for a more efficient solution.
 
-The objective now becomes streamlining the release process by consolidating it the application into a single release that allows users to download plugins on demand. In doing so, we aim to enable the execution of 3rd party plugins within our application, treating it as an integrated component. The user should be able to download and enable 3rd party developer plugins with the click of a button from within the application, not by downloading a different version.
+### Objective
 
-**Solutions**
+The objective now becomes streamlining the release process by consolidating it the application into a single release that allows users to download plugins on demand. 
 
-In our pursuit of achieving the desired functionality, we explored many potential approaches. The following sections describe the potential solutions that could enable the integration of 3rd party plugins within our application. By evaluating these options, we aimed to identify the most suitable approach that aligned with our objectives and technical bandwidth.
+In doing so, we aim to enable the execution of 3rd party plugins within our application, treating it as an integrated component. The user should be able to download and enable 3rd party developer plugins with the click of a button from within the application, not by downloading a different version.
 
-**Approach #1: Over-the-Air Frameworks**
+### Solutions
+
+In our pursuit of achieving the desired functionality, we explored many potential approaches. The following sections describe the potential solutions that could enable the integration of 3rd party plugins within our application. 
+
+By evaluating these options, we aimed to identify the most suitable approach that aligned with our objectives and technical bandwidth.
+
+#### Approach #1: Over-the-Air Frameworks
 
 Over-the-Air (OTA) update frameworks facilitate wireless software updates by delivering code, that wasn’t previously in the software, from a server. Furthermore, OTA updates allow new features to be delivered without 3rd party services, like the App Store.
 
-Typically, these updates are transmitted as deltas, which are unpacked and applied by the framework on the client side. Effective management of the update process necessitates a server to handle code push operations. The following code block illustrates how AppFlowy might use an OTA update framework to implement dynamic plugins.
+Typically, these updates are transmitted as deltas, which are unpacked and applied by the framework on the client side. Effective management of the update process necessitates a server to handle code push operations. 
+
+The following code block illustrates how AppFlowy might use an OTA update framework to implement dynamic plugins.
 
 ```dart
 @override
@@ -103,7 +113,7 @@ Consequences:
   * Some require the use of specific or older versions of Flutter.
 * **Apps that use OTA updates can be banned by the App Store or Google Play Store because they circumvent the approval process.**
 
-**Introducing New Complexities**
+##### Introducing New Complexities
 
 Implementing an OTA framework to enable customized release builds, but would entail addressing the following requirements:
 
@@ -121,7 +131,7 @@ Due to the potential challenges that the team may face, I decided against pursui
 
 Notable mentions: [Shorebird.dev](https://shorebird.dev/) and [Flutter Fair](https://pub.dev/packages/fair)
 
-**Approach #2: Isolates and Dynamic Libraries**
+#### Approach #2: Isolates and Dynamic Libraries
 
 It is also possible to load plugins using dart’s `DynamicLibrary` or by using `Isolates`. However, dynamically loaded libraries in dart depend on reflection to analyze code via `dart:mirrors`. The following code block shows rough pseudocode demonstrating how the AppFlowy application may load a 3rd party plugin using isolates.
 
@@ -150,7 +160,7 @@ void main() {
 
 Unfortunately the **`dart:mirrors`** library is not available for use in Flutter apps, [due to its size and complexity](https://github.com/flutter/flutter/issues/1150). If I recall correctly, this was a decision made by the Flutter team to improve the performance of released applications. While there are workarounds, the workarounds would be solely supported by the AppFlowy team and would incur significant cost. Therefore, loading code with isolates and dynamic libraries was not considered as candidate for loading 3rd party plugins in AppFlowy. Use this approach if your application can run using Dart without Flutter!
 
-**`flutter_eval` and `dart_eval`**
+##### flutter_eval` and `dart_eval`
 
 `flutter_eval` and `dart_eval` are both tools used for evaluating and executing Dart code at runtime. `dart_eval` is a bytecode compiler and runtime for Dart which makes it a viable candidate for loading 3rd party plugins in AppFlowy. Let’s walk through an example of how we might use the two frameworks to create a dynamically loaded 3rd party plugin that inserts a double divider when the user types `==` in the editor. Here’s the code for the shortcut event that we want to load into the editor.
 
