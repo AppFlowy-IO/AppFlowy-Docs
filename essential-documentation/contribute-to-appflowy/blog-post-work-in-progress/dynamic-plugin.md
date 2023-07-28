@@ -168,7 +168,7 @@ If I recall correctly, this was a decision made by the Flutter team to improve t
 
 While there are workarounds, the workarounds would be solely supported by the AppFlowy team and would incur significant cost. Therefore, loading code with isolates and dynamic libraries was not considered as candidate for loading 3rd party plugins in AppFlowy. Use this approach if your application can run using Dart without Flutter!
 
-### flutter_eval` and `dart_eval`
+### `flutter_eval` and `dart_eval`
 
 `flutter_eval` and `dart_eval` are both tools used for evaluating and executing Dart code at runtime. 
 
@@ -217,7 +217,10 @@ For example,
 * What are its constructor's parameters?
 * What are the methods?
 * What are the parameters of the methods?
-* The list goes on for every method, getter, setter, and field in the class. After we implement our interop class, we have about **250+ lines of code**.
+
+The list goes on for every method, getter, setter, and field in the class. 
+
+After we implement our interop class, we have about **250+ lines of code**.
 
 ```dart
 import 'package:dart_eval/dart_eval.dart';
@@ -742,9 +745,11 @@ This is an example for the node widget builder for the editor:
     }
     ```
 
-This class alone required that I build about 10 different classes, scattered throughout `flowy_eval`, `flutter_eval`, and `dart_eval`. Not only that, but I started to think about the user experience.
+This class alone required that I build about 10 different classes, scattered throughout `flowy_eval`, `flutter_eval`, and `dart_eval`.
 
-* What if a plugin developer wanted to use code from another package. If that were the case, they would have to create a bridge themselves. I thought that this steep barrier to entry may discourage others from capitalizing on our efforts.
+Not only that, but I started to think about the user experience.
+
+What if a plugin developer wanted to use code from another package. If that were the case, they would have to create a bridge themselves. I thought that this steep barrier to entry may discourage others from capitalizing on our efforts.
 
 **Generate the Interop Then**
 
