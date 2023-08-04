@@ -1,6 +1,6 @@
 # ⌨ Shortcuts
 
-## ⌨ Shortcuts
+## ⌨ Shortcuts Guide
 
 All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) are listed below. You may scroll or use `CTRL` (or `⌘`)`+F` to search for what you are looking for.
 
@@ -82,3 +82,30 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 | Cursor end select             | `⌘`                      | `Shift`                   | `→`           |
 | OR                            |                          |                           |               |
 | Cursor end select             | `Shift`                  | `End`                     |               |
+
+## 🔧 Customizing Shortcuts
+
+For customizing shortcut keys, go through the following steps:\
+
+
+1. Open Settings in AppFlowy
+2.  Click Shortcuts to see a list of current shortcuts and their respective key commands\
+
+
+    <figure><img src="../.gitbook/assets/Screenshot (25).png" alt="" width="563"><figcaption><p>click shortcuts in settings</p></figcaption></figure>
+
+
+3.  Click a keybinding of whichever command you want to update\
+
+
+    <figure><img src="../.gitbook/assets/Screenshot (26).png" alt="" width="563"><figcaption><p>click the keybinding</p></figcaption></figure>
+
+
+4.  Press the desired keys that you want and press Enter for submitting the shortcut\
+
+
+    <figure><img src="../.gitbook/assets/image (28).png" alt="" width="563"><figcaption><p>press desired key combination</p></figcaption></figure>
+
+
+5. 🥳 Wo hoo! You have customized a shortcut.
+

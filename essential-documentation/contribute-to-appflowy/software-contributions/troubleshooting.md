@@ -1,8 +1,10 @@
 # ❓ Troubleshooting
 
+## ❓ Troubleshooting
+
 First of all, make sure the version of flutter and rust is the version specified in [here](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup)
 
-## 1. Protobuf Generation Errors
+### 1. Protobuf Generation Errors
 
 1. Ensure the protoc-gen is installed
 
@@ -18,7 +20,7 @@ echo $PATH
 
 3. Ensure VS Code uses bash as the default terminal You can check out this [link](https://github.com/AppFlowy-IO/AppFlowy/issues/413) for more information.
 
-## 2. Remove outdated files
+### 2. Remove outdated files
 
 AppFlowy uses `CodeGen` to generate some files that are ignored by git. So remove these files if there are some errors, warnings, and reference errors.
 
@@ -28,13 +30,13 @@ Here are the files are safe to remove
 2. `AppFlowy/frontend/app_flowy/packages/appflowy_backend/lib/dispatch/dart_event`
 3. `AppFlowy/frontend/app_flowy/packages/appflowy_backend/lib/protobuf`
 
-## 3. Error: Not found: 'dart:ffi'
+### 3. Error: Not found: 'dart:ffi'
 
 [issue #38](https://github.com/AppFlowy-IO/appflowy/issues/38)
 
 Flutter Web / Android / iOS is not supported yet. Please switch to macOS or other supported devices.
 
-## 4. How to use sql-data.json
+### 4. How to use sql-data.json
 
 Q: How to use sql-data.json
 
@@ -44,15 +46,15 @@ A: Check the offline mode section:
 
 [https://docs.rs/sqlx/0.4.0-beta.1/sqlx/macro.query.html](https://docs.rs/sqlx/0.4.0-beta.1/sqlx/macro.query.html)
 
-## 5. How to create a pull request
+### 5. How to create a pull request
 
 A: [https://opensource.com/article/19/7/create-pull-request-github](https://opensource.com/article/19/7/create-pull-request-github)
 
-## 6. Permission denied
+### 6. Permission denied
 
 A: [https://stackoverflow.com/questions/2643502/git-how-to-solve-permission-denied-publickey-error-when-using-git](https://stackoverflow.com/questions/2643502/git-how-to-solve-permission-denied-publickey-error-when-using-git)
 
-## 7. Failed to load dynamic library 'libdart\_ffi.so'
+### 7. Failed to load dynamic library 'libdart\_ffi.so'
 
 [issue #112](https://github.com/AppFlowy-IO/appflowy/issues/112) Q: Hello, when I run app with vs code\&android\&mac m1, it gave error:
 
@@ -70,7 +72,7 @@ $ sudo vim /etc/apt/source.list
 $ sudo apt upgrade libc6
 ```
 
-## 8. Build failed on Ubuntu 20.04
+### 8. Build failed on Ubuntu 20.04
 
 [issue #106](https://github.com/AppFlowy-IO/appflowy/issues/106)
 
@@ -80,11 +82,11 @@ To Reproduce Just follow the BUILD\_ON\_LINUX.md
 
 A: There are some issues in protobuf generation of appflowy on linux. If you skip that step, you can get it working. Protobuf has already been generated and is tracked in the repository. So it will work without regeneration as of now.
 
-## 9. The document data could not be saved on Ubuntu
+### 9. The document data could not be saved on Ubuntu
 
 [issue #1306](https://github.com/AppFlowy-IO/AppFlowy/issues/1306)
 
-## 10. Can't build development environment
+### 10. Can't build development environment
 
 Q. While executing install\_linux.sh script at compiling diesel\_cli i'm getting following error:
 
@@ -101,11 +103,11 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 
 [issue #1076](https://github.com/AppFlowy-IO/AppFlowy/issues/1076)
 
-## 11. Docker Hub (app\_flowy:1): Gtk-WARNING \*\*: 10:44:25.079: cannot open display
+### 11. Docker Hub (app\_flowy:1): Gtk-WARNING \*\*: 10:44:25.079: cannot open display
 
 [issue #389](https://github.com/AppFlowy-IO/AppFlowy/issues/389)
 
-## 12. Failed to start Flutter renderer: Unable to create a GL context
+### 12. Failed to start Flutter renderer: Unable to create a GL context
 
 ```
 ⋊> ./app_flowy
@@ -115,19 +117,19 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 
 [issue #295](https://github.com/AppFlowy-IO/AppFlowy/issues/295)
 
-## 13. Cannot run on Macbook M1 chip
+### 13. Cannot run on Macbook M1 chip
 
 \[issue #255] (https://github.com/AppFlowy-IO/AppFlowy/issues/255)
 
-## 14. Windows Build Failed
+### 14. Windows Build Failed
 
 [issue #210](https://github.com/AppFlowy-IO/AppFlowy/issues/210)
 
-## 15. Malicious software warning on install- MAC-OS
+### 15. Malicious software warning on install- MAC-OS
 
 [issue #18](https://github.com/AppFlowy-IO/AppFlowy/issues/18) [issue #1313](https://github.com/AppFlowy-IO/AppFlowy/issues/1313)
 
-## 16. Cannot run on Ubuntu 22.04
+### 16. Cannot run on Ubuntu 22.04
 
 ```
 [ERROR:flutter/lib/ui/ui_dart_state.cc(198)] Unhandled Exception: Invalid argument(s): Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory
@@ -150,9 +152,9 @@ error: failed to compile `diesel_cli v2.0.0`, intermediate artifacts can be foun
 
 [issue #566](https://github.com/AppFlowy-IO/AppFlowy/issues/566)
 
-## 17. Run appyflowy in docker,but it not work: cannot open display: 0
+### 17. Run appyflowy in docker,but it not work: cannot open display: 0
 
-#### Q:
+**Q:**
 
 Bug Description
 
@@ -160,18 +162,16 @@ xhost + docker run --rm -v $HOME/.Xauthority:/root/.Xauthority:rw -v /tmp/.X11-u
 
 (app\_flowy:1): Gtk-WARNING \*\*: 01:27:57.247: cannot open display: :0
 
-
-
 **A:**
 
 I add the param\
-**--network=host**&#x20;
+**--network=host**
 
 and it works
 
 [issue: #2458](https://github.com/AppFlowy-IO/AppFlowy/issues/2458)
 
-# 18. Can't run tests on windows "Failed to load dynamic library"
+## 18. Can't run tests on windows "Failed to load dynamic library"
 
 If you're trying to run tests on windows, but they're failing due to this message:
 
@@ -183,8 +183,6 @@ open
    ...
 ```
 
-Run this command from the frontend directory:
-`cargo make dart_unit_test`
+Run this command from the frontend directory: `cargo make dart_unit_test`
 
-_Optionally you can run this in bash instead of the above one, but you must be inside the appflowy_flutter directory:_
-`flutter test --dart-define=RUST_LOG=INFO -j, --concurrency=1 --coverage`
+_Optionally you can run this in bash instead of the above one, but you must be inside the appflowy\_flutter directory:_ `flutter test --dart-define=RUST_LOG=INFO -j, --concurrency=1 --coverage`
