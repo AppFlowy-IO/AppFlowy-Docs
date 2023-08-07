@@ -1,4 +1,4 @@
-# #⃣ #⃣ Markdown
+# #⃣ Markdown
 
 ### Headings
 
@@ -14,7 +14,7 @@
 
 ### Quotes
 
-You can quote text by typing `"` + `Space`at the beginning of your quote.
+You can quote text by typing `"` + `Space` at the beginning of your quote.
 
 > This is a quote
 
@@ -67,3 +67,9 @@ To insert to divider, start with an empty line and type \*\*\* or `---`
 ### Format as code
 
 Type `` ` `` around the text to format it as `code`
+
+
+
+### Insert Toggle
+
+Type `>` + `Space` at the beggining of the line
