@@ -8,7 +8,7 @@ description: Working in progress
 
 <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>How to Add a New Property</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Name Property and Change its Type</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Name Property and Change its Type</p></figcaption></figure>
 
 This is how it looks if I select `Date` and name it as "Deadline".
 
