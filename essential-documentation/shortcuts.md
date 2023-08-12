@@ -2,7 +2,8 @@
 
 ## ⌨ Shortcuts Guide
 
-All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) are listed below. You may scroll or use `CTRL` (or `⌘`)`+F` to search for what you are looking for.
+All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) are listed below. \
+You may scroll or use `CTRL` (or `⌘`)`+F` to search for what you are looking for.
 
 ## Basics
 
@@ -62,26 +63,13 @@ All the available Shortcuts/KeyBindings for [AppFlowy](https://github.com/AppFlo
 
 ## Selection
 
-| Description                   | Key#1                    | Key#2                     | Key #3        |
-| ----------------------------- | ------------------------ | ------------------------- | ------------- |
-| Cursor up select              | `Shift`                  | `↑`                       |               |
-| Cursor down select            | `Shift`                  | `↓`                       |               |
-| Cursor left select            | `Shift`                  | `←`                       |               |
-| Cursor right select           | `Shift`                  | `→`                       |               |
-| Cursor left word select       | `Shift`                  | `ALT` (or `⌥` on MacOS)   | `←`           |
-| Cursor right word select      | `Shift`                  | `ALT` (or `⌥` on MacOS)   | `→`           |
-| Cursor left word delete       | `CTRL` (or `⌥` on MacOS) | `← Backspace`             |               |
-| Cursor right word delete      | `CTRL` (or `⌥` on MacOS) | `Delete`                  |               |
-| Cursor sentence delete        | `CTRL` (or `⌘` on MacOS) | `ALT` (or `n/a` on MacOS) | `← Backspace` |
-| Cursor jump from word to word | `ALT` (or `⌥` on MacOS)  | `←` or `→`                |               |
-| Cursor top select             | `CTRL` (or `⌘` on MacOS) | `Shift`                   | `↑`           |
-| Cursor bottom select          | `CTRL` (or `⌘` on MacOS) | `Shift`                   | `↓`           |
-| Cursor begin select           |  `⌘`                     | `Shift`                   | `←`           |
-| OR                            |                          |                           |               |
-| Cursor begin select           | `Shift`                  | `Home`                    |               |
-| Cursor end select             | `⌘`                      | `Shift`                   | `→`           |
-| OR                            |                          |                           |               |
-| Cursor end select             | `Shift`                  | `End`                     |               |
+<table><thead><tr><th width="201">Description</th><th width="194">Key#1</th><th width="203">Key#2</th><th>Key #3</th></tr></thead><tbody><tr><td>Cursor up select</td><td><code>Shift</code></td><td><code>↑</code></td><td></td></tr><tr><td>Cursor down select</td><td><code>Shift</code></td><td><code>↓</code></td><td></td></tr><tr><td>Cursor left select</td><td><code>Shift</code></td><td><code>←</code></td><td></td></tr><tr><td>Cursor right select</td><td><code>Shift</code></td><td><code>→</code></td><td></td></tr><tr><td>Cursor left word select</td><td><code>Shift</code></td><td><code>ALT</code> (or <code>⌥</code> on MacOS)</td><td><code>←</code></td></tr><tr><td>Cursor right word select</td><td><code>Shift</code></td><td><code>ALT</code> (or <code>⌥</code> on MacOS)</td><td><code>→</code></td></tr><tr><td>Cursor left word delete</td><td><code>CTRL</code> (or <code>⌥</code> on MacOS)</td><td><code>← Backspace</code></td><td></td></tr><tr><td>Cursor right word delete</td><td><code>CTRL</code> (or <code>⌥</code> on MacOS)</td><td><code>Delete</code></td><td></td></tr><tr><td>Cursor sentence delete</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>ALT</code> (or <code>n/a</code> on MacOS)</td><td><code>← Backspace</code></td></tr><tr><td>Cursor jump from word to word</td><td><code>ALT</code> (or <code>⌥</code> on MacOS)</td><td><code>←</code> or <code>→</code></td><td></td></tr><tr><td>Cursor top select</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>Shift</code></td><td><code>↑</code></td></tr><tr><td>Cursor bottom select</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>Shift</code></td><td><code>↓</code></td></tr><tr><td>Cursor begin select</td><td> <code>⌘</code> </td><td><code>Shift</code></td><td><code>←</code></td></tr><tr><td>OR</td><td></td><td></td><td></td></tr><tr><td>Cursor begin select</td><td><code>Shift</code></td><td><code>Home</code></td><td></td></tr><tr><td>Cursor end select</td><td><code>⌘</code> </td><td><code>Shift</code></td><td><code>→</code></td></tr><tr><td>OR</td><td></td><td></td><td></td></tr><tr><td>Cursor end select</td><td><code>Shift</code></td><td><code>End</code></td><td></td></tr></tbody></table>
+
+## App
+
+<table><thead><tr><th width="197">Description</th><th width="200">Key#1</th><th width="202">Key#2</th><th>Key #3</th></tr></thead><tbody><tr><td>Show or Hide Sidebar</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>\</code></td><td></td></tr><tr><td>Toggle Theme Mode (Light/Dark)</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>Shift</code></td><td><code>L</code></td></tr></tbody></table>
+
+##
 
 ## 🔧 Customizing Shortcuts
 
