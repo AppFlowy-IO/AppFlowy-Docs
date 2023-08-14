@@ -85,6 +85,7 @@
         * [AI Writers](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/mentee-projects/ai-writers.md)
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [☕ Blog Post Work in Progress](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/README.md)
+    * [Creating a Calendar View for the AppFlowy Database](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/creating-a-calendar-view-for-the-appflowy-database.md)
     * [Don’t Try to Load Code Dynamically in Your Flutter App, It’s Terrible](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/dynamic-plugin.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/README.md)
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
