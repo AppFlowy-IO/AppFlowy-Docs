@@ -113,6 +113,7 @@
 * [#⃣ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 * [🎨 Themes](essential-documentation/themes.md)
+* [☁ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
 
 ## Handbook
 
