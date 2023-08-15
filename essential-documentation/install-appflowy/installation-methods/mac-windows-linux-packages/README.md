@@ -1,3 +1,7 @@
+---
+description: Download AppFlowy for Free 100% Open Source
+---
+
 # Mac / Windows / Linux Packages
 
 ## Packages
@@ -14,15 +18,23 @@ For Linux users, please also refer to [Installing on Linux ](installing-on-linux
 
 ## Linux Install
 
-AppFlowy is available on [Flathub](https://flathub.org/apps/details/io.appflowy.AppFlowy).
+AppFlowy is available on [Flathub](https://flathub.org/apps/details/io.appflowy.AppFlowy):
 
 ```
 flatpak install flathub io.appflowy.AppFlowy
 ```
 
-##
+also available on Canonical Snapcraft's Snap Store:
+
+[https://snapcraft.io/appflowy](https://snapcraft.io/appflowy)
+
+
 
 ## Mac Install
+
+Download the application from [GitHub](https://github.com/AppFlowy-IO/AppFlowy/releases)
+
+Alternatively
 
 ```
 brew install --cask appflowy
@@ -32,4 +44,4 @@ brew install --cask appflowy
 
 ## Windows install
 
-You can download the executable directly from [Github](https://github.com/AppFlowy-IO/appflowy/releases)
+You can download the executable directly from [GitHub](https://github.com/AppFlowy-IO/AppFlowy/releases)
