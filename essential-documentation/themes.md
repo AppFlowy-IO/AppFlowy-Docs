@@ -106,7 +106,7 @@ If you prefer to use these color pickers, you can simply replace `#` with `0xFF`
 
 Before you upload, double check that your theme plugin has the correct format and that the keys and values provided in your JSON are accurate. After, open your AppFlowy settings tab and click on the folder icon.
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (3).png>)
 
 The following pop up should appear.
 
