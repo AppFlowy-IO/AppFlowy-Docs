@@ -1,6 +1,6 @@
 # ☁ AppFlowy Cloud
 
-## Here comes this AppFlowy Cloud that does 3 things for you:
+Here comes this AppFlowy Cloud that does 3 things for you:
 
 1. Allow you to back up local data and access it from different devices
 2. Given that AppFlowy is local-first, you enjoy the flexibility to remain local and sync as required
@@ -24,19 +24,25 @@ Data stored in AppFlowy Cloud is not encrypted by default. To enable encryption,
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-## Sign in on other devices
+
+
+## FAQ 🤔
+
+### Sign in on other devices
 
 When data encryption is enabled, the sign-in process will differ. It will require you to enter the encryption secret. You must provide the correct secret; otherwise, the sign-in will not be successful.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-## FAQ
 
-#### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
+
+### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
 
 When using data encryption, it is essential you save your encryption key in a secure location.If the key is lost, encrypted journal stored in the AppFlowy cannot be decrypted. AppFlowy does not have access to the private key at any point.
 
-#### What happens when encryption is enabled on one device while some other devices are already logged in?
+
+
+### What happens when encryption is enabled on one device while some other devices are already logged in?
 
 Enabling encryption on one device will force other devices that previously logged in without the encryption key to log out. They will then need to log in again using the encryption key
 
