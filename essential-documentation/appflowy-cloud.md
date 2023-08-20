@@ -32,9 +32,15 @@ When data encryption is enabled, the sign-in process will differ. It will requir
 
 ## FAQ
 
-### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
+#### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
 
 When using data encryption, it is essential you save your encryption key in a secure location.If the key is lost, encrypted journal stored in the AppFlowy cannot be decrypted. AppFlowy does not have access to the private key at any point.
+
+#### What happens when encryption is enabled on one device while some other devices are already logged in?
+
+Enabling encryption on one device will force other devices that previously logged in without the encryption key to log out. They will then need to log in again using the encryption key
+
+
 
 
 
