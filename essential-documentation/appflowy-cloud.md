@@ -16,7 +16,7 @@ If you're new to AppFlowy, click 'Continue with Google.' This will create a new 
 
 If you've been using AppFlowy for some time, you can migrate your local data to AppFlowy Cloud. Navigate to Settings -> User -> Sign in with Google. After signing in, your local data will sync to your account.
 
-<figure><img src="../.gitbook/assets/appflowy_cloud_server_login.png" alt=""><figcaption><p>appflowy server sync</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/appflowy_cloud_server_login.png" alt=""><figcaption></figcaption></figure>
 
 ## Data encryption
 
@@ -30,23 +30,27 @@ Data stored in AppFlowy Cloud is not encrypted by default. To enable encryption,
 
 ### How to sign in on other devices after enabling data encryption?
 
-When data encryption is enabled, the sign-in process will differ. It will require you to enter the encryption secret. You must provide the correct secret; otherwise, the sign-in will not be successful.
+> When data encryption is enabled, the sign-in process will differ. It will require you to enter the encryption secret. You must provide the correct secret; otherwise, the sign-in will not be successful.
 
 <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
 
-When using data encryption, it is essential you save your encryption key in a secure location.If the key is lost, encrypted journal stored in the AppFlowy cannot be decrypted. AppFlowy does not have access to the private key at any point.
-
-
+> When using data encryption, it is essential you save your encryption key in a secure location.If the key is lost, encrypted journal stored in the AppFlowy cannot be decrypted. AppFlowy does not have access to the private key at any point.
 
 ### What happens when encryption is enabled on one device while some other devices are already logged in?
 
-Enabling encryption on one device will force other devices that previously logged in without the encryption key to log out. They will then need to log in again using the encryption key
+> Enabling encryption on one device will force other devices that previously logged in without the encryption key to log out. They will then need to log in again using the encryption key
 
+### Can I log in using Discord, GitHub, or other third-party OAuth authentication?
 
+> Currently, AppFlowy supports sign-in through Google, and we plan to support additional authentication methods in the future. Let us know if you have specific preference
 
+### Can I self-host AppFlowy with cloud functionality enabled?
 
+> Of course! The documentation for self-hosting is still in progress, but once it's complete, the setup will be quite straightforward for developers. Just a single command and you're all set
+
+### Can I use other cloud storage services as remote storage for AppFlowy?
+
+> Any cloud storage that supports key/value storage can be used as remote storage for AppFlowy. For instance, AWS.&#x20;
 
