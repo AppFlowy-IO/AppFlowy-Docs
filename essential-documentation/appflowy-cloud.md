@@ -18,7 +18,7 @@ If you've been using AppFlowy for some time, you can migrate your local data to 
 
 <figure><img src="../.gitbook/assets/appflowy_cloud_server_login.png" alt=""><figcaption><p>appflowy server sync</p></figcaption></figure>
 
-## Encrypt your data
+## Data encryption
 
 Data stored in AppFlowy Cloud is not encrypted by default. To enable encryption, navigate to Settings -> Sync Settings -> Toggle encryption. Once encryption is enabled, it can not be turned off. Ensure you store your encryption key securely. As of now, AppFlowy saves the key on your local disk. If you delete AppFlowy's data folder, you will lose the encryption key, making it impossible to decrypt your data
 
@@ -28,7 +28,7 @@ Data stored in AppFlowy Cloud is not encrypted by default. To enable encryption,
 
 ## FAQ 🤔
 
-### Sign in on other devices
+### How to sign in on other devices after enabling data encryption?
 
 When data encryption is enabled, the sign-in process will differ. It will require you to enter the encryption secret. You must provide the correct secret; otherwise, the sign-in will not be successful.
 
