@@ -30,5 +30,11 @@ When data encryption is enabled, the sign-in process will differ. It will requir
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
+## FAQ
+
+### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
+
+When using data encryption, it is essential you save your encryption key in a secure location.If the key is lost, encrypted journal stored in the AppFlowy cannot be decrypted. AppFlowy does not have access to the private key at any point.
+
 
 
