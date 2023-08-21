@@ -1,10 +1,12 @@
 # ☁ AppFlowy Cloud
 
-Here comes this AppFlowy Cloud that does 3 things for you:
+## AppFlowy Cloud does four things for you:&#x20;
 
-1. Allow you to back up local data and access it from different devices
-2. Given that AppFlowy is local-first, you enjoy the flexibility to remain local and sync as required
-3. You have the freedom to make one workspace 100% local and another has cloud backup
+1. Allows you to back up local data and access it from different devices&#x20;
+2. Given that AppFlowy is privacy-first, you can opt for end-to-end encryption, ensuring utmost privacy and security of your data&#x20;
+3. You will have the flexibility to remain local and sync as required&#x20;
+4. Provides you with the freedom to make one workspace 100% local and another backed up to the cloud\
+
 
 ## New to AppFlowy
 
@@ -20,7 +22,9 @@ If you've been using AppFlowy for some time, you can migrate your local data to 
 
 ## Data encryption
 
-Data stored in AppFlowy Cloud is not encrypted by default. To enable encryption, navigate to Settings -> Sync Settings -> Toggle encryption. Once encryption is enabled, it can not be turned off. Ensure you store your encryption key securely. As of now, AppFlowy saves the key on your local disk. If you delete AppFlowy's data folder, you will lose the encryption key, making it impossible to decrypt your data
+To enable end-to-end encryption, navigate to Settings -> Sync Settings -> Toggle on Encrypt data. Once it is enabled, it can not be turned off. Ensure you store your encryption key securely.&#x20;
+
+As of now, AppFlowy saves the key on your local disk. If you delete AppFlowy's data folder, you will lose the encryption key, making it impossible to decrypt your data
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
