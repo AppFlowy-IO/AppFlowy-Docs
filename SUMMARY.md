@@ -110,7 +110,7 @@
   * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
 * [🟣 Community Plugins](essential-documentation/community-plugins.md)
 * [⌨ Shortcuts](essential-documentation/shortcuts.md)
-* [#⃣ #⃣ Markdown](essential-documentation/markdown.md)
+* [Ⓜ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 * [🎨 Themes](essential-documentation/themes.md)
 * [☁ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)

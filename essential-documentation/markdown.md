@@ -1,4 +1,4 @@
-# #⃣ Markdown
+# Ⓜ Markdown
 
 ### Headings
 
@@ -8,7 +8,7 @@
 
 ### Styling Text
 
-<table><thead><tr><th>Style</th><th width="161">Syntax</th><th width="216">Example</th><th>Output</th></tr></thead><tbody><tr><td>Bold</td><td><code>** ** OR</code><br><code>__ __</code></td><td><code>**this is bold**</code></td><td><strong>this is bold</strong></td></tr><tr><td>Italics</td><td><code>_ _</code></td><td><code>_italic text_</code></td><td><em>this is italic</em></td></tr><tr><td>Strikethrough</td><td><code>~~ ~~</code></td><td><code>~~strikethrough~~</code></td><td><del>strikethrough</del></td></tr></tbody></table>
+<table><thead><tr><th>Style</th><th width="161">Syntax</th><th width="216">Example</th><th>Output</th></tr></thead><tbody><tr><td>Bold</td><td><code>** ** OR</code><br><code>__ __</code></td><td><code>**this is bold**</code></td><td><strong>this is bold</strong></td></tr><tr><td>Italics</td><td><code>_ _</code></td><td><code>_italic text_</code></td><td><em>this is italic</em></td></tr><tr><td>Strikethrough</td><td><code>~~ ~~</code></td><td><code>~~strikethrough~~</code></td><td><del>strikethrough</del></td></tr><tr><td>Bold and italics</td><td><code>**_ _**</code></td><td><code>**Bold text and _nested italic_ text**</code></td><td><strong>Bold text and </strong><em><strong>nested italic</strong></em><strong> text</strong></td></tr></tbody></table>
 
 
 
@@ -72,4 +72,4 @@ Type `` ` `` around the text to format it as `code`
 
 ### Insert Toggle
 
-Type `>` + `Space` at the beggining of the line
+Type `>` + `Space` at the beginning of the line
