@@ -8,27 +8,39 @@ description: >-
 
 by Richard, as part of the AppFlowy Mentorship Program
 
-### Introduction
+## Introduction
 
-AppFlowy is powered by a robust database that stores large amounts of structured data. It is designed to help you input, store and organize this data in an intuitive way. Users can select a specific field type for a column that is most suited for the data in that field such as date, select options and checklist. Each row can also have a rich-text editing area to add even more information. And lastly, there are extra tools to pick out special interests in the data such as sorting and filtering.
+AppFlowy is powered by a robust database that stores large amounts of structured data. It is designed to help you input, store and organize this data in an intuitive way. 
 
-### The case for database views
+Users can select a specific field type for a column that is most suited for the data in that field such as date, select options, or checklist. Each row can also have a rich-text editing area to add more information. Lastly, there are extra tools to pick out special interests in the data such as sorting and filtering.
 
-The AppFlowy database can be thought of as simply a collection of rows and columns (or fields). For example, consider a database for books in a library. The database needs to keep track of all the information on the books that it offers to the visitors. This includes the title, author, publisher, date of publication, ISBN, borrow status, current borrower, date borrowed and latest date of return, etc. The user can use the field type most suited for each kind of information (single select for borrow status, date and time for date borrowed, for example)
+## The Case for Database Views
+
+The AppFlowy database can be thought of as simply a collection of rows and columns (or fields). 
+
+For example, consider a database for books in a library. The database needs to keep track of all the information on the books that it offers to the visitors. This includes the title, author, publisher, date of publication, ISBN, borrow status, current borrower, date borrowed and latest date of return, etc. 
+
+The user can use the field type most suited for each kind of information (e.g., single select for borrow status, date and time for date borrowed)
 
 <figure><img src="../../../.gitbook/assets/book_grid_example.png" alt=""><figcaption><p>The grid views lays out data in rows and columns</p></figcaption></figure>
 
-However, we wish to provide users with a way to visualize the data in the database in different ways to give more useful insight. We do this by allowing users to select which view layout to view the database. Prior to this project, we support grid and kanban board.
+However, we wish to provide users with a way to visualize the data in the database in different ways to give more useful insight. We do this by allowing users to select which **view layout** to use to view the database. 
 
-To give users the most flexibility, we separated data that should be customizable in each individual database view from the data that should be shared between all the database views. We will see the structure of a database view in the following section, but in a basic sense only the field and row information (corresponding to the books and attributes of those books in the examples) is shared between all the views.
+Prior to this project, we only supported grid and Kanban board views. To give users the most flexibility, we separated data that should be customizable in each individual database view from the data that should be shared between all the database views. We will go into more detail about the structure of a database view in the following section.
 
-A database can also have multiple database views at the same time. The user can switch between them using the tab bar above the database. Continuing from our example, a kanban board view that uses a “Status” field to group the rows could be added to a nice overview of the books that are in the library, which ones are being borrowed, which ones are reserved, etc.
+Fundamentally, only the field and row information is shared between all the views (in our book example, this would be the books as rows and attributes of those books as fields). A database can have multiple database views at the same time. The user can switch between them using the tab bar above the database. 
+
+Continuing from our example, a Kanban board view that uses a “Status” field to group the rows could be added to provide an overview of the books that are in the library based on their availability — which ones are being borrowed, which ones are reserved, etc.
 
 <figure><img src="../../../.gitbook/assets/book_kanban_board_example.png" alt=""><figcaption><p>The kanban board groups similar rows together</p></figcaption></figure>
 
-To go a step further, we can also add a calendar view so that users will be able to know when a book should be returned at a glance. Through a calendar, users can grasp upcoming (or past) scheduled events at a glance. Users will be able easily identify the duration of an event, if and when events overlap, or how much time exists between two events. This feature would be especially useful for task scheduling and event planning. In this post, we'll explore how we created a new calendar view for the AppFlowy database.
+To go a step further, we can also add a calendar view so that users will be able to know when a book should be returned at a glance. 
 
-### A closer look at a database view
+Through a calendar, users can grasp upcoming (or past) scheduled events at a glance. Calendars also allow users to easily identify the duration of an event, if and when events overlap, or how much time exists between two events. This feature would be especially useful for task scheduling and event planning. 
+
+In this post, we'll explore how we created a new calendar view for the AppFlowy database.
+
+## A Closer Look at a Database View
 
 ```rust
 pub struct DatabaseView {
@@ -47,21 +59,23 @@ pub struct DatabaseView {
 }
 ```
 
-Most of these fields are pretty straightforward. For example, `filters` and `sorts` correspond to existing sort and filter configurations, while `group_settings` corresponds to how rows may be grouped in a kanban board, and `field_orders` and `row_orders` define how the rows and fields are ordered respectively.
+Most of these fields are pretty straightforward. For example, `filters` and `sorts` correspond to existing sort and filter configurations, while `group_settings` corresponds to how rows may be grouped in a Kanban board, and `field_orders` and `row_orders` define how the rows and fields are ordered respectively.
 
 We'll now look at a new configuration introduced for the calendar specifically that helps users to customize it: `layout_settings`.
 
-### Layout Settings
+## Layout Settings
 
-Whether it is a custom in their current region or personal preference, users would like to customize their calendar layouts to better suit their needs. The layout settings is responsible for storing these layout-specific settings.
+Whether it is a custom in their current region or a personal preference, users would like to customize their calendar layouts to better suit their needs. The layout settings is responsible for storing these layout-specific settings.
 
-* The calendar layout type: while only month layout is supported currently, we are also hoping to have a week layout as well as a day layout in the future.
-* First day of the week: in some parts of the world, Monday is the first day of the week while in others, Sunday is the first day of the week
-* Show weekends: some people such as students or people working on weekdays only can choose to hide the weekends to save space
-* Show week numbers: this is pretty self-explanatory
-* `field_id` this is the id of the date field being used to layout the events in the calendar. We’ll talk about this later.
+* **The calendar layout type**: while only month layout is supported currently, we are also hoping to have a week layout as well as a day layout in the future.
+* **First day of the week**: in some parts of the world, Monday is the first day of the week while in others, Sunday is the first day of the week
+* **Show weekends**: some people such as students or people working on weekdays only can choose to hide the weekends to save space
+* **Show week numbers**: this is pretty self-explanatory
+* **field_id**: this is the id of the date field being used to layout the events in the calendar. We’ll talk about this later.
 
-To store the data and support [Conflict-free Replicated Data Type (CRDT)](https://crdt.tech/) throughout the entire application, we use the `yrs` crate in our AppFlowy-Collab crate. Naturally, we use the data structures that lead to the most efficient data processing possible. The database stores and processes data through a wrapper around a hash map of the `lib0` crate's `Any` type, which can store any type of value and has efficient serialization for storage. We call this `AnyMap` and we use it to store cell data, field type options, sort and filter configurations, etc. We also use other common shared types as well, including `ArrayRef` and `MapRef`.
+To store the data and support [Conflict-free Replicated Data Type (CRDT)](https://crdt.tech/) throughout the entire application, we use the `yrs` crate in our AppFlowy-Collab crate. 
+
+We use the data structures that lead to the most efficient data processing possible. The database stores and processes data through a wrapper around a hash map of the `lib0` crate's `Any` type, which can store any type of value and has efficient serialization for storage. We call this `AnyMap` and we use it to store cell data, field type options, sort and filter configurations, etc. We also use other common shared types as well, including `ArrayRef` and `MapRef`.
 
 <pre class="language-rust" data-overflow="wrap"><code class="lang-rust">pub struct LayoutSettings(HashMap&#x3C;DatabaseLayout, LayoutSetting>);
 
@@ -114,11 +128,15 @@ impl From&#x3C;CalendarLayoutSetting> for LayoutSetting {
 }
 </code></pre>
 
-### Events and Notifications
+## Events and Notifications
 
-AppFlowy uses a system of events and notifications using Protobuf to communicate between the frontend and backend. (You can learn more about events and notifications in the [AppFlowy Documentation](https://docs.appflowy.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication)) And while most of these used in grids and kanban boards are also usable in the calendar, we created some additional ones to pass event data more efficiently.
+AppFlowy provides a system of events and notifications implemented with Protobuf to communicate between the frontend and backend. (You can learn more about events and notifications in the [AppFlowy Documentation](https://docs.appflowy.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication)) 
 
-The first is of course events and notifications for layout settings, and we defined `DatabaseEvent::GetLayoutSetting` and `DatabaseEvent::SetLayoutSetting`, pretty straight forward. Next, we need to fetch the calendar events from the database. Let’s first define a calendar event as the following:
+While most of the events and notifictions used in grids and Kanban boards are also usable in the calendar, we have created some additional implementations to pass event data more efficiently.
+
+The first is events and notifications for layout settings, defined as `DatabaseEvent::GetLayoutSetting` and `DatabaseEvent::SetLayoutSetting`. 
+
+We also need to fetch the calendar events from the database. To illustrate how events are defined, below is an example definition of a calendar event:
 
 ```rust
 pub struct CalendarEventPB {
@@ -139,27 +157,37 @@ pub struct CalendarEventPB {
 }
 ```
 
-In grid and kanban board, we can load the rows in a straightforward manner. In the calendar, however, we decided to also fetch timestamp of the event based on the date field specified in the layout settings. Doing this makes it much easier to write the frontend code, since the event information and the timestamp are now together. If we didn’t do this, we would have to get all of the rows in the database, and then fetch the timestamp for each individual.
+In grid and Kanban board, we can load the rows in a straightforward manner. In the calendar, however, we decided to also fetch a timestamp for the event based on the date field specified in the layout settings. 
 
-Currently, there are four defined events: `GetAllCalendarEvents`, `GetNoDateCalendarEvents`, `GetCalendarEvent` and `MoveCalendarEvent`. While the first 3 are simply getters that return one or more `CalendarEventPB`s, `MoveCalendarEvent` is a special event that we use to re-schedule the event using drag and drop.
+Doing this makes it much easier to write the frontend code, since the event information and the timestamp are now together. If we didn’t do this, we would have to get all of the rows in the database, and then fetch the timestamp for each individual.
+
+Currently, there are four defined events: 
+  * `GetAllCalendarEvents`
+  * `GetNoDateCalendarEvents`
+  * `GetCalendarEvent`
+  * `MoveCalendarEvent`
+  
+While the first 3 are simply getters that return one or more `CalendarEventPB`s, `MoveCalendarEvent` is a special event that we use to re-schedule the event using drag and drop.
 
 After implementing the event handlers for each event, and we’re now ready to move to the frontend.
 
-### Building the Frontend
+## Building the Frontend
 
-#### Bloc
+### State Management Using Bloc
 
-In AppFlowy databases, state management is typically handled using `bloc`. Thanks to the separation of logic from the Flutter widgets that it provides, we are able to solely focus on the processing of data. We then use the `flutter_bloc` package to create, manage and consume them in the widget tree.
+In AppFlowy databases, state management is typically handled using `bloc`. 
+
+Thanks to the separation of logic from the Flutter widgets that it provides, we are able to focus on the processing of data. We then use the `flutter_bloc` package to create, manage and consume them in the widget tree.
 
 Let’s first look at the blocs used in other database views and see what we can re-use. There are a number of controllers and services in place to communicate with the backend. They are often initialized with the bloc managing the state of the database being presented to the user, but some others may be created as needed (such as a cell controller being created for a specific cell's editor bloc). During initialization, listeners for notifications from the backend are also created.
 
 * `DatabaseController` is a controller that encapsulates some specific controllers and services to provide specific functions. This is the main controller when a database is opened.
 * `DatabaseViewBackendService` can be used to make settings to the current database view (more on this later).
 * `FieldController` is used to edit the options of a field and manage filtering and sorting tasks on a field.
-* `DatabaseGroupListener` is used in database views that can group rows together based on a specific field, listening to group setting changes in the backend. This is currently only used in Kanban Board.
+* `DatabaseGroupListener` is used in database views that can group rows together based on a specific field, listening to group setting changes in the backend. This is currently only used in the Kanban board.
 * `DatabaseLayoutSettingListener` listens to layout setting changes. This is currently only used in Calendar.
+* `FilterBackendService` and `SortBackendService` allow the user to create, modify and remove filtering and sorting configurations.
 * Various cell controllers used to listen to and allow making changes to cell data.
-* `FilterBackendService` and `SortBackendService` that allow the user to create, modify and remove filtering and sorting configurations.
 
 Since there are lots of overlap between different listeners, we’ll only look at the `DatabaseLayoutSettingListener` here.
 
@@ -201,7 +229,9 @@ class DatabaseLayoutSettingListener {
 }
 ```
 
-Upon starting, the listener listens for notifications coming from the backend. When a `DidUpdateLayoutSettings` notification arrives, the `_settingNotifier` is changed to the new value. This then triggers a series callback functions to be called, ultimately ending up at the `didReceiveCalendarSettings` event handler in the calendar bloc.
+Upon starting, the listener listens for notifications coming from the backend. 
+
+When a `DidUpdateLayoutSettings` notification arrives, the `_settingNotifier` is changed to the new value. This then triggers a series callback functions, ultimately ending up at the `didReceiveCalendarSettings` event handler in the calendar bloc.
 
 ```dart
 didReceiveCalendarSettings: (CalendarLayoutSettingPB settings) {
@@ -217,9 +247,11 @@ didReceiveCalendarSettings: (CalendarLayoutSettingPB settings) {
 
 As evident from the code snippet, we only need to load all the events (through the `GetAllCalendarEvents` that we have looked at earlier) if there is a change in the date field being used in the layout. This saves us from having to reload all the events when we only change the first day of week from Monday to Sunday, for example.
 
-#### Third-Party Calendar Component
+### Third-Party Calendar Component
 
-With all the business logic set up and ready to go, the actual implementation of the calendar UI is pretty easy. We use the [calendar\_view](https://pub.dev/packages/calendar\_view) package to implement it, which provides a pretty healthy level of customization and usability features.
+With all the business logic set up and ready to go, the actual implementation of the calendar UI is pretty easy. 
+
+We use the [calendar\_view](https://pub.dev/packages/calendar\_view) package to implement it, which provides a healthy level of customization and usability features.
 
 This is our current design:
 
@@ -231,8 +263,10 @@ This is our current design:
   * Users can also drag and drop the event cards to reschedule them.
 * Users can switch to the previous or next month, and while in another month, jump to the current one.
 
-We also have plans to continuously update the UI to make it more beautiful, intuitive and user-friendly.
+We also plan to continuously update the UI to make it more beautiful, intuitive, and user-friendly.
 
-### Questionnaire
+## Questionnaire
 
-Thanks for reading this article. If you have some time, please kindly take our 1-minute survey (TODO: link) to give us feedback and let us know what interests you the most. If you have a suggestion or question for the calendar view or any part of AppFlowy, you can create an issue on Github and we’ll get back to you as soon as possible. Also feel free to follow us @appflowy on Twitter or join our Discord server to follow our latest development! (TODO: insert links)
+Thanks for reading this article. If you have some time, please kindly take our 1-minute survey (TODO: link) to give us feedback and let us know what interests you the most. 
+
+If you have a suggestion or question for the calendar view or any part of AppFlowy, you can create an issue on Github and we’ll get back to you as soon as possible. Also feel free to follow us @appflowy on Twitter or join our Discord server to follow our latest development! (TODO: insert links)
