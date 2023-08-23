@@ -12,13 +12,13 @@
 
 If you're new to AppFlowy, click 'Continue with Google.' This will create a new account for you.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Already with AppFlowy
 
 If you've been using AppFlowy for some time, you can migrate your local data to AppFlowy Cloud. Navigate to Settings -> User -> Sign in with Google. After signing in, your local data will sync to your account.
 
-<figure><img src="../.gitbook/assets/appflowy_cloud_server_login.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/appflowy_cloud_server_login.png" alt=""><figcaption></figcaption></figure>
 
 ## Data encryption
 
@@ -26,7 +26,7 @@ To enable end-to-end encryption, navigate to Settings -> Sync Settings -> Toggle
 
 As of now, AppFlowy saves the key on your local disk. If you delete AppFlowy's data folder, you will lose the encryption key, making it impossible to decrypt your data
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -36,7 +36,7 @@ As of now, AppFlowy saves the key on your local disk. If you delete AppFlowy's d
 
 > When data encryption is enabled, the sign-in process will differ. It will require you to enter the encryption secret. You must provide the correct secret; otherwise, the sign-in will not be successful.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ### What if I lose my encryption key? <a href="#what-if-i-lose-my-encryption-key" id="what-if-i-lose-my-encryption-key"></a>
 

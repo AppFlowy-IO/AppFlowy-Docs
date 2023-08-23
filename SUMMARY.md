@@ -114,7 +114,8 @@
 * [Ⓜ Markdown](essential-documentation/markdown.md)
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 * [🎨 Themes](essential-documentation/themes.md)
-* [☁ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
+* [☁ AppFlowy Cloud](essential-documentation/appflowy-cloud/README.md)
+  * [AppFlowy with Supabase(WIP)](essential-documentation/appflowy-cloud/appflowy-with-supabase-wip.md)
 
 ## Handbook
 
