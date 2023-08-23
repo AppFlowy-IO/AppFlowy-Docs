@@ -1,0 +1,169 @@
+@startuml
+title data storage
+autonumber
+
+participant "Runtime Loop" as R
+participant "Document A" as A
+participant "Document B" as B
+participant "Document C" as C
+participant "RemoteCollabStorage" as RCS
+database "Supabase Postgres" as S
+
+par "Simultaneous Updates from Documents"
+    A -> R: Update from A
+    B -> R: Update from B
+    C -> R: Update from C
+end par
+
+activate R
+
+R -> RCS: Process Update A
+activate RCS
+RCS -> S: Send Processed Update A to DB
+S --> RCS: Acknowledge Update A
+RCS --> R: Update A Processed
+deactivate RCS
+
+R -> RCS: Process Update B
+activate RCS
+RCS -> S: Send Processed Update B to DB
+S --> RCS: Acknowledge Update B
+RCS --> R: Update B Processed
+deactivate RCS
+
+R -> RCS: Process Update C
+activate RCS
+RCS -> S: Send Processed Update C to DB
+S --> RCS: Acknowledge Update C
+RCS --> R: Update C Processed
+deactivate RCS
+
+deactivate R
+
+@enduml
+
+@startuml
+title Authentication Flow
+autonumber
+
+actor user as "User"
+participant "AppFlowy" as af
+participant "Supabase" as sp
+participant "WebBrowser" as wb
+
+user -> af: Click login button
+af -> sp: Request authentication
+sp -> wb: Open authentication page
+wb -> user: Enter credentials
+user -> wb: Submit credentials
+wb -> sp: Send credentials for verification
+sp --> af: Return user token
+af -> user: Show logged in status
+@enduml
+
+
+
+@startuml
+title AppFlowy Server Trait
+left to right direction
+interface AppFlowyServer {
+  + set_enable_sync(_enable: bool)
+  + user_service(): Arc<dyn UserCloudService>
+  + folder_service(): Arc<dyn FolderCloudService>
+  + database_service(): Arc<dyn DatabaseCloudService>
+  + document_service(): Arc<dyn DocumentCloudService>
+  + collab_storage(): Option<Arc<dyn RemoteCollabStorage>>
+}
+
+class AppFlowyServerSupabaseImpl {
+}
+
+class AppFlowyServerFirebaseImpl {
+}
+
+class AppFlowyServerAWSImpl {
+}
+
+class AppFlowyServerLocalImpl {
+}
+
+AppFlowyServerSupabaseImpl -u-|> AppFlowyServer
+AppFlowyServerFirebaseImpl -u-|> AppFlowyServer
+AppFlowyServerAWSImpl -u-|> AppFlowyServer
+AppFlowyServerLocalImpl -u-|> AppFlowyServer
+@enduml
+
+
+@startuml
+title AppFlowy Server Component Diagram
+
+package "AppFlowy Application" {
+    interface "AppFlowyServer" as server {
+      + set_enable_sync(_enable: bool)
+      + user_service(): Arc<dyn UserCloudService>
+      + folder_service(): Arc<dyn FolderCloudService>
+      + database_service(): Arc<dyn DatabaseCloudService>
+      + document_service(): Arc<dyn DocumentCloudService>
+      + collab_storage(): Option<Arc<dyn RemoteCollabStorage>>
+    }
+
+    interface "UserCloudService" as UserCloudService
+    interface "FolderCloudService" as foldercloudservice
+    interface "DatabaseCloudService" as databasecloudservice
+    interface "DocumentCloudService" as documentcloudservice
+    interface "RemoteCollabStorage" as remotecollabstorage
+}
+
+class "AppFlowyServerSupabaseImpl" as supabase
+class "AppFlowyServerFirebaseImpl" as firebase
+class "AppFlowyServerAWSImpl" as aws
+class "AppFlowyServerLocalImpl" as local
+
+server <|.u. supabase: implements
+server <|.u. firebase: implements
+server <|.u. aws: implements
+server <|.u. local: implements
+
+server -down-> UserCloudService: provides
+server -down-> foldercloudservice: provides
+server -down-> databasecloudservice: provides
+server -down-> documentcloudservice: provides
+server -down-> remotecollabstorage: optionally provides
+
+@enduml
+
+
+@startuml
+title "Application"
+left to right direction
+package "AppFlowy Application" {
+  [User]
+}
+
+cloud "Supabase Server" {
+  [RESTful Component]
+  [Realtime Component]
+  [Postgres DB]
+}
+
+database "LocalServer" {
+  [Local Server Component]
+}
+
+
+cloud "AppFlowy Cloud Server" {
+  [RESTful Component] as [AppFlowy RESTful Component]
+  [Realtime Component] as [AppFlowy Realtime Component]
+  [Postgres DB] as [AppFlowy Postgres DB]
+}
+
+User --> [AppFlowy Application]
+[AppFlowy Application] --> [Local Server Component] : Connect
+
+[AppFlowy Application] --> [RESTful Component] : RESTful API Communication
+[AppFlowy Application] <..> [Realtime Component] : WebSocket Communication
+
+[AppFlowy Application] --> [AppFlowy RESTful Component] : RESTful API Communication
+[AppFlowy Application] <..> [AppFlowy Realtime Component] : WebSocket Communication
+
+@enduml
