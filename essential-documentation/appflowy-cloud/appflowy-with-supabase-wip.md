@@ -161,6 +161,6 @@ pub(crate) async fn flush_collab_with_update(
 For a comprehensive guide on configuring the PostgreSQL database, refer to [this documentation](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
 
 Here's what our schema looks like:
-![schema.png](..%2F..%2F..%2FAppFlowy-Supabase%2Fpostgres%2Fdocs%2Fschema.png)
+![schema.png](schema.png)
 
 
