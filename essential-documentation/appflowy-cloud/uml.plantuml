@@ -78,7 +78,7 @@ interface AppFlowyServer {
 class AppFlowyServerSupabaseImpl {
 }
 
-class AppFlowyServerFirebaseImpl {
+class AppFlowyServerAppwriteImpl {
 }
 
 class AppFlowyServerAWSImpl {
@@ -88,7 +88,7 @@ class AppFlowyServerLocalImpl {
 }
 
 AppFlowyServerSupabaseImpl -u-|> AppFlowyServer
-AppFlowyServerFirebaseImpl -u-|> AppFlowyServer
+AppFlowyServerAppwriteImpl -u-|> AppFlowyServer
 AppFlowyServerAWSImpl -u-|> AppFlowyServer
 AppFlowyServerLocalImpl -u-|> AppFlowyServer
 @enduml
@@ -96,6 +96,7 @@ AppFlowyServerLocalImpl -u-|> AppFlowyServer
 
 @startuml
 title AppFlowy Server Component Diagram
+'left to right direction
 
 package "AppFlowy Application" {
     interface "AppFlowyServer" as server {
@@ -115,14 +116,14 @@ package "AppFlowy Application" {
 }
 
 class "AppFlowyServerSupabaseImpl" as supabase
-class "AppFlowyServerFirebaseImpl" as firebase
+class "AppFlowyServerAppwriteImpl" as appwrite
 class "AppFlowyServerAWSImpl" as aws
-class "AppFlowyServerLocalImpl" as local
+class "AppFlowyServerFirebaseImpl" as firebase
 
 server <|.u. supabase: implements
+server <|.u. appwrite: implements
 server <|.u. firebase: implements
 server <|.u. aws: implements
-server <|.u. local: implements
 
 server -down-> UserCloudService: provides
 server -down-> foldercloudservice: provides
@@ -132,38 +133,23 @@ server -down-> remotecollabstorage: optionally provides
 
 @enduml
 
-
 @startuml
-title "Application"
-left to right direction
-package "AppFlowy Application" {
-  [User]
-}
+title "Realtime Service"
+autonumber
 
-cloud "Supabase Server" {
-  [RESTful Component]
-  [Realtime Component]
-  [Postgres DB]
-}
+participant "User" as U
+participant "Device A" as A
+participant "Device B" as B
+participant "Supabase Realtime Service" as S
+participant "af_user Table" as T
 
-database "LocalServer" {
-  [Local Server Component]
-}
-
-
-cloud "AppFlowy Cloud Server" {
-  [RESTful Component] as [AppFlowy RESTful Component]
-  [Realtime Component] as [AppFlowy Realtime Component]
-  [Postgres DB] as [AppFlowy Postgres DB]
-}
-
-User --> [AppFlowy Application]
-[AppFlowy Application] --> [Local Server Component] : Connect
-
-[AppFlowy Application] --> [RESTful Component] : RESTful API Communication
-[AppFlowy Application] <..> [Realtime Component] : WebSocket Communication
-
-[AppFlowy Application] --> [AppFlowy RESTful Component] : RESTful API Communication
-[AppFlowy Application] <..> [AppFlowy Realtime Component] : WebSocket Communication
-
+U -> A: Login
+A -> S: Subscribe to af_user table
+S --> T: Listen for updates
+U -> B: Login from another device
+B -> S: Send login update
+S --> T: Update af_user table
+T --> S: Notify of update
+S --> A: Send latest updates
+A --> U: Show notification/update UI
 @enduml

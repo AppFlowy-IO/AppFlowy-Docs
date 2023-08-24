@@ -1,22 +1,24 @@
-# AppFlowy with Supabase(WIP)
-AppFlowy, known for its user-friendly features in local apps, now allows users to upload data to the Cloud. We've chosen Supabase, an open-source alternative to Firebase, to manage user sign-ins and data storage. With a Supabase project, anyone can easily implement a self-hosted AppFlowy.
+# AppFlowy with Supabase
 
-Let's explore how AppFlowy uses Supabase for these tasks.
+AppFlowy is renowned for its user-friendly local app features. Recognizing the numerous requests for a cloud version, we're thrilled to announce that AppFlowy is now cloud-enabled! We've partnered with Supabase, an open-source alternative to Firebase, to handle user sign-ins and data storage. With a Supabase project, transforming AppFlowy into a self-hosted cloud app is straightforward. By the end of this article, you'll be primed to launch your very own AppFlowy cloud application with ease.
+
+Let's explore how AppFlowy uses Supabase to implement the cloud features.
 
 # Table of Contents
 
-- [Authentication](#Authentication)
-  - [Dive in the code](#Dive in the code)
-  - [Deep Links](#Deep Links)
-  - [Voila!](#Voila!)
-- [Data storage](#Data storage)
-  - [Architecture Design](#Architecture Design)
-  - [Supabase implementation](#Supabase implementation)
-    - [Database schema](#Database schema)
-    - [Dive in the code](#Dive in the code)
-- [Realtime](#Realtime)
+- [Authentication](#authentication)
+  - [Dive in the code](#dive-in-the-code)
+  - [Voila!](#voila)
+- [Data storage](#data-storage)
+  - [Architectural Design](#architectural-design)
+  - [Supabase implementation](#supabase-implementation)
+    - [Database schema](#database-schema)
+    - [Dive in the code](#dive-in-the-code-1)
+- [Realtime](#realtime)
+  - [Dive in the code](#dive-in-the-code-2)
 
-# Authentication
+
+## Authentication
 
 Initially, we considered building our own authentication service from scratch, one that would support social third-party authentication, magic links, and traditional email & password login. However, we soon realized that there were open-source projects available that already offer these features. That led us to the discovery of the Supabase authentication service, which provides multiple methods for user authentication.
 
@@ -27,7 +29,7 @@ Initially, we considered building our own authentication service from scratch, o
 
 This is exactly what we need. We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After follow the instructions in [this documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service. 
 
-## Dive in the code
+### Dive in the code
 Additionally, there's a Flutter package named [supabase_flutter](https://pub.dev/packages/supabase_flutter) which can be seamlessly integrated into AppFlowy. It perfectly meets our requirements. We utilize the `env` file to inject the supabase configuration into the app. Consequently, simply adding `supabase_flutter` and `envied` to the `pubspec.yaml` is all that's needed to kickstart the process.
 
 ```yaml
@@ -41,7 +43,7 @@ dev_dependencies:
 
 **Configuring the .env File**
 
-Start by creating a file named `.env` in the `appflowy_flutter` directory. Then, establish the `env.dart` file, which defines the global environment variables.
+Start by creating a file named `.env` in the `appflowy_flutter` directory. Then, create the `env.dart` file, which defines the global environment variables.
 
 * .env
 ```dotenv
@@ -99,7 +101,7 @@ Before utilizing the Supabase instance, it must be initialized. This initializat
 
 **Perform authentication**
 
-Our authentication logic leverages an abstract class named `AuthService`. This class's Supabase implementation can be found in `SupabaseAuthService`, specifically within the `supabase_auth_service.dart` file. 
+Our authentication logic provided an abstract class named `AuthService`. This class's Supabase implementation can be found in `SupabaseAuthService`, specifically within the `supabase_auth_service.dart` file. 
 
 ```dart
  @override
@@ -144,21 +146,21 @@ The authentication flow is shown below:
 
 ![](./uml-Authentication_Flow.png)
 
-## Deep Links
-
-## Voila!
+### Voila!
 Ultimately, by clicking the Google login button, users are directed to a web browser to finalize the authentication process. Once authenticated, they are seamlessly redirected back to AppFlowy. Truly, integrating Supabase authentication into AppFlowy is a straightforward endeavor.
 
 ![login.png](login_image.png)
 
-# Data storage
-## Architecture Design
+## Data storage
 
-One of the prerequisites for AppFlowy Data Storage is supporting multiple cloud services. To realize this, we've architected a modular design that accommodates the integration of diverse cloud services. Each implementation supplies the specific logic for the functions delineated in the AppFlowyServer interface. This architectural design is depicted below:
+### Architectural Design
+
+One of the prerequisites for AppFlowy Data Storage is the support for multiple cloud services. To achieve this, we've designed an abstraction layer that facilitates the integration of various cloud services. Each implementation provides the specific logic for the functions outlined in the AppFlowyServer interface. The architectural design is illustrated below:
 
 ![](./uml-AppFlowy_Server_Component_Diagram.png)
 
-As you can see, with the `AppFlowyServer` interface, we can seamlessly switch between different cloud services. For instance, transitioning from Supabase to AWS or Firebase is as simple as altering the implementation of the `AppFlowyServer` interface. This flexibility is a notable benefit of its modular design. The `AppFlowyServer` comprises five components, with each component handling a distinct set of functionalities. Let's delve into each of these components.
+From the `AppFlowyServer` interface, it's evident that we can easily transition between various cloud services. For instance, moving from [Supabase](https://supabase.com/) to [Firebase](https://firebase.google.com/) or [Appwrite](https://appwrite.io/) is merely a matter of changing the implementation of the `AppFlowyServer` interface. The `AppFlowyServer` encompasses five services, with each service catering to a unique set of functionalities. Additionally, each service defines its own interface. Let's explore each of these components in detail.
+
 
 * UserCloudService
 
@@ -183,7 +185,7 @@ The `FolderCloudService` interface outlines a set of operations centered around 
 
 Currently, we only support Supabase as a cloud service provider. However, we intend to support other cloud services in the future. Let's explore how to implement the `AppFlowyServer` using Supabase.
 
-## Supabase implementation
+### Supabase implementation
 Upon integrating Supabase authentication, we discovered it inherently offers a PostgreSQL database. This advantage implies that individual users self-hosting AppFlowy on Supabase won't require separate data storage setups. Each Supabase project is pre-equipped with a dedicated PostgreSQL database, which we leverage to store AppFlowy's data.
 
 ### Database schema
@@ -195,7 +197,10 @@ We utilize the Postgres database to store:
 4. Relationships between users and their associated workspaces
 
 Here's what our schema looks like:
+
 ![schema.png](schema.png)
+
+Let's introduce some of the tables and views in the schema:
 
 1. **`af_roles` table**: Captures roles, e.g., 'Owner', 'Member', 'Guest'.
 
@@ -221,12 +226,63 @@ We've developed a [tool](https://github.com/AppFlowy-IO/AppFlowy-Supabase) desig
 
 ### Dive in the code
 
-AppFlowy's backend is built using Rust, necessitating a Rust crate to facilitate interaction with the Postgres database. Fortunately, the community has provided [postgrest-rs](https://github.com/supabase-community/postgrest-rs), a crate tailored to implement Supabase's Postgres database functionalities.
+AppFlowy's backend is developed in Rust, which requires a Rust crate to interact seamlessly with the Postgres database. Thankfully, the community has provided [postgrest-rs](https://github.com/supabase-community/postgrest-rs), a crate specifically designed to handle Supabase's Postgres database features. We've defined a struct named [SupabaseServer](https://github.com/AppFlowy-IO/AppFlowy/blob/main/frontend/rust-lib/flowy-server/src/supabase/server.rs) that implements the `AppFlowyServer` trait.
 
+When interacting with the Postgres database, primarily CRUD operations are carried out. However, it's important to emphasize the value of the RPC function for customizing database actions. We've defined a function called `flush_collab_updates_v3`. This function locks the row with a specified OID, aggregates the updates into a single update, and then deletes the consolidated updates.
 
-![](./data_storage.png)
+Here is the definition of the `flush_collab_updates_v3` function:
+```plpgsql
+CREATE OR REPLACE FUNCTION public.flush_collab_updates_v3(
+        oid TEXT,
+        new_value BYTEA,
+        encrypt INTEGER,
+        md5 TEXT,
+        value_size INTEGER,
+        partition_key INTEGER,
+        uid BIGINT,
+        workspace_id UUID,
+        removed_keys BIGINT [],
+        did TEXT
+    ) RETURNS void AS $$
+DECLARE lock_key INTEGER;
+BEGIN -- Hashing the oid to an integer for the advisory lock
+lock_key := (hashtext(oid)::bigint)::integer;
+-- Getting a session level lock
+PERFORM pg_advisory_lock(lock_key);
+-- Deleting rows with keys in removed_keys
+DELETE FROM af_collab_update
+WHERE key = ANY (removed_keys);
+-- Inserting a new update with the new key and value
+INSERT INTO af_collab_update(
+        oid,
+        value,
+        encrypt,
+        md5,
+        value_size,
+        partition_key,
+        uid,
+        workspace_id,
+        did
+    )
+VALUES (
+        oid,
+        new_value,
+        encrypt,
+        md5,
+        value_size,
+        partition_key,
+        uid,
+        workspace_id,
+        did
+    );
+-- Releasing the lock
+PERFORM pg_advisory_unlock(lock_key);
+RETURN;
+END;
+$$ LANGUAGE plpgsql;
+```
 
-We won't delve too deeply here since it's beyond the scope of this article. However, it's worth highlighting the RPC function, which proves invaluable for customizing database actions. We've defined a function named `flush_collab_updates_v3`. This function locks the row with a specified oid, consolidates the updates into one, and subsequently deletes the merged updates.
+Then we can call the `flush_collab_updates_v3` function in Rust.
 
 ```rust
 pub(crate) async fn flush_collab_with_update(
@@ -270,8 +326,78 @@ pub(crate) async fn flush_collab_with_update(
     .await?;
   Ok(())
 }
-
 ```
+## Realtime
+
+Using Supabase's [realtime](https://supabase.com/docs/guides/realtime) service, we can track changes to specific tables. For example, monitoring the `af_user` table allows us to capture the most recent user activities whenever they sign in on various devices. Other tables can be monitored in the same way.
+
+
+![](./uml-Realtime_Service.png)
+
+
+### Dive in the code
+
+We observe update events from both the `af_collab_update` and `af_user` tables. When an update event is triggered, we propagate the event data to the Rust backend.  
+
+```dart
+Future<void> _subscribeTablesChanges() async {
+ final List<ChannelFilter> filters = [
+      "document",
+      "folder",
+      "database",
+      "database_row",
+      "w_database",
+    ]
+        .map(
+          (name) => ChannelFilter(
+            event: 'INSERT',
+            schema: 'public',
+            table: "af_collab_update_$name",
+            filter: 'uid=eq.${userProfile.id}',
+          ),
+        )
+        .toList();
+
+    filters.add(
+      ChannelFilter(
+        event: 'UPDATE',
+        schema: 'public',
+        table: "af_user",
+        filter: 'uid=eq.${userProfile.id}',
+      ),
+    );
+
+    const ops = RealtimeChannelConfig(ack: true);
+    channel?.unsubscribe();
+    channel = supabase.client.channel("table-db-changes", opts: ops);
+    for (final filter in filters) {
+      channel?.on(
+        RealtimeListenTypes.postgresChanges,
+        filter,
+        (payload, [ref]) {
+          try {
+            final jsonStr = jsonEncode(payload);
+            final pb = RealtimePayloadPB.create()..jsonStr = jsonStr;
+            UserEventPushRealtimeEvent(pb).send();
+          } catch (e) {
+            Log.error(e);
+          }
+        },
+      );
+    }
+
+    channel?.subscribe(
+      (status, [err]) {
+        Log.info(
+          "subscribe channel statue: $status, err: $err",
+        );
+      },
+    );
+ }
+```
+
+Different components will consume various updates. A detailed discussion on this is beyond the purview of this documentation, but we will delve into it in future discussions.
+
 
 
 
