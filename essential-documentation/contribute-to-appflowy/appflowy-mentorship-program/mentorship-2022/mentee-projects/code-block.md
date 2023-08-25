@@ -1,7 +1,3 @@
----
-description: Mayur Mahajan
----
-
 # Code Block
 
 ### Introduction <a href="#docs-internal-guid-6fac17cc-7fff-3d73-60fa-4887f8e5612c" id="docs-internal-guid-6fac17cc-7fff-3d73-60fa-4887f8e5612c"></a>

@@ -74,15 +74,15 @@ View only the rows that fit certain criteria.
 
 * Click `Filter` at the top right of your table.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * Choose which property you want to filter by from the dropdown.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Choose the condition you want to use, i.e. `is`, `is not`, etc.
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Define the value of the property you want to see, i.e. a specific tag or contains certain words.
 * You can add multiple filters.
@@ -103,7 +103,7 @@ View only the rows that fit certain criteria.
 
 When you sort your data by any property in `Ascending` or `Descending` order, all the data from that row will travel together automatically.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Click `Sort` at the top right of your table.
 * Choose the property you want to sort by, then choose `Ascending` or `Descending`. You'll see your table rearrange in real time.

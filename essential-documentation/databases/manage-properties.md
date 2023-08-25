@@ -8,7 +8,7 @@ description: Working in progress
 
 <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>How to Add a New Property</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Name Property and Change its Type</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Name Property and Change its Type</p></figcaption></figure>
 
 This is how it looks if I select `Date` and name it as "Deadline".
 
@@ -93,7 +93,7 @@ Click on the property name to edit the property. As you can see in the above scr
 * Click on the property name to open up the action menu
 * Click on `Hide`
 
-<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Show a property**
 
