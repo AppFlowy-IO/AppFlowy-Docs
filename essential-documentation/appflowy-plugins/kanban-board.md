@@ -19,7 +19,8 @@ A typical Kanban Board have columns for various stages of a process e.g.: "to-do
 Every Kanban board has three basic elements: boards, columns, and cards.
 
 * Kanban baord: It is your project or workflow's homebase. It contains everything you need to get a project done.
-* Kanban column: it is the visual stack of a stage of a process. You may have only one stack that represent "doing" or a couple of stacks that further breaks down "doing". You can have as many columns as you want and rename them.
+* Kanban column: It is the visual stack of a stage of a process. You may have only one stack that represent "doing" or a couple of stacks that further breaks down "doing". You can have as many columns as you want and rename them.
+* Kanban card: It represents a task or min-project that needs to be done within the scope of your project. Cards are moved along from left to right, from one status to another. You can add as many cards as you want to under each column or follow the Work In Progress limits. Once a card reaches the last stage of the process, you can either delete them or keep them there for future reference.
 
 ## Why is it effective?
 
@@ -37,3 +38,5 @@ You can use it to brainstorm ideas, organize to-dos, plan for family life, vacat
 
 * Editorial calendar: use Kanban to ensure you have a pipeline of content ready for publishing. You can also create a calendar view to visualize when your content is scheduled to publish.
 * Manage a sales pipeline: with columns like "Leads", "Contacted", "Contact later", "Won", and "Lost", you can easily glance where your focus should be and help you manage a steady deal flow.
+* Create and manage a product development roadmap: product manager can use Kanban to plan and prioritize features and developers can use it to track the development process.
+* Plan and track design requests: use a Kanban board to collectively sort and organize incoming design requests and get them done.
