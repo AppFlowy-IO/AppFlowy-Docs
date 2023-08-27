@@ -10,17 +10,17 @@ by Richard, as part of the AppFlowy Mentorship Program
 
 ## Introduction
 
-AppFlowy is powered by a robust database that stores large amounts of structured data. It is designed to help you input, store and organize this data in an intuitive way.
+AppFlowy is powered by a robust database that stores large amounts of structured data. It is designed to help you input, store, and organize this data in an intuitive way.
 
-The AppFlowy database can be thought of as simply a collection of rows and columns (or fields). Users can select a specific field type for a column that is most suited such as date, select options, or checklist. Some fields provide a popup that present the users with buttons and other controls to enter the data, while other fields do some simple formatting and/or validation.
+The AppFlowy database can be thought of as simply a collection of rows and columns (or fields). Users can select a specific field type for a column that is most suited such as date, select options, or checklist. Some field types provide a popup that presents users with buttons and other controls to enter data, while other field types perform some data formatting and/or validation.
 
 <figure><img src="../../../.gitbook/assets/edit-a-book-status.png" alt="" width="375"><figcaption><p>The book status can be easily chosen using the menu.</p></figcaption></figure>
 
-Additionally, each row can also store large amounts of text data. The rich-text editing area can be accessed by opening the row up as an overlay. This is really useful when the user needs to attach a report, or simply some text that is unique to each row.
+Additionally, each row can also store large amounts of text data. The rich-text editing area can be accessed by opening the row up as an overlay. This is really useful when the user needs to attach a report to the row, or simply add some text that is unique to each row.
 
 <figure><img src="../../../.gitbook/assets/row-detail-overlay.png" alt=""><figcaption><p>The properties of a book along with the rich-text editing area below it.</p></figcaption></figure>
 
-There are also extra tools to pick out special interests in the data such as sorting and filtering.
+There are additional tools that allow specific data to be highlighted, such as sorting and filtering.
 
 In this post, we will explore another key concept of the database: database views. We will look at the motivation behind having multiple database views and how we created a new calendar view.
 
@@ -28,7 +28,7 @@ Through a calendar, users can grasp upcoming (or past) scheduled events at a gla
 
 ## The Case for Database Views
 
-Let's consider an example of a database for books in a library. The database needs to keep track of all the information on the books that it offers to the visitors. This includes the title, author, publisher, date of publication, ISBN, borrow status, current borrower, date borrowed and latest date of return, etc.
+Let's consider an example of a database for books in a library. The database needs to keep track of all the information on the books that it offers to the visitors. This includes the title, author, publisher, date of publication, ISBN, borrow status, current borrower, date borrowed, latest date of return, etc.
 
 The user can use the field type most suited for each kind of information (e.g., single select for borrow status, date and time for date borrowed)
 
@@ -48,9 +48,9 @@ To go a step further, we can also add a calendar view and make it layout the row
 
 Let's now look at the structure of the database and the database view. It will illustrate the relationship between the two.
 
-## Behind the scenes
+## Behind the Scenes
 
-First, the database. The first two are related to data storage and synchronization, the remaining ones are the interesting ones. `fields` store the field information: name, id, type option, etc. `metas` store the documents stored in each row while `block` stores the data of all the rows.
+First, let's consider the database. The first two properties shown below are related to data storage and synchronization. The subsequent properties are of greater interest to as, as they show the type of the information stored in the database. `fields` store information about the fields such as the name, id, and type option. `metas` store the documents stored in each row, while `block` stores all of the rows' data. And finally, `views` store all the database views.
 
 ```rust
 pub struct Database {
@@ -63,9 +63,9 @@ pub struct Database {
 }
 ```
 
-Contrast that with the database view and you will notice that lots of configurations are separated into the database view.
+Contrast that with the structure of the `DatabaseView` and you will observe that lots configuration information are separated into from the `Database` struct.
 
-Most of these fields are pretty straightforward. For example, `filters` and `sorts` correspond to existing sort and filter configurations, while `group_settings` corresponds to how rows may be grouped in a Kanban board, and `field_orders` and `row_orders` define how the rows and fields are ordered respectively.
+Most of the fields in the struct are pretty straightforward. For example, `filters` and `sorts` correspond to existing sort and filter configurations, while `group_settings` corresponds to how rows may be grouped in a Kanban board, and `field_orders` and `row_orders` define how the rows and fields are ordered respectively.
 
 ```rust
 pub struct DatabaseView {
@@ -84,11 +84,15 @@ pub struct DatabaseView {
 }
 ```
 
-We'll now look at a new configuration introduced for the calendar specifically that helps users to customize it: `layout_settings`.
-
 ## Layout Settings
 
-Whether it is a custom in their current region or a personal preference, users would like to customize their calendar layouts to better suit their needs. The layout settings is responsible for storing these layout-specific settings.
+We'll now look at a new configuration introduced for the calendar specifically that helps users to customize it: `layout_settings`. Through it, we will also see how other database views' properties are retrieved and stored.
+
+Layout settings are configurations of a database view that are specific to the view layout (grid, Kanban board or calendar).
+
+These layout settings are primarily visual. Whether it is predicated on the current locale or simply a personal preference, users would be able to customize the look of their database views as much as they would like.
+
+For the calendar view, we allow the following layout settings to be customized:
 
 * **The calendar layout type**: while only month layout is supported currently, we are also hoping to have a week layout as well as a day layout in the future.
 * **First day of the week**: in some parts of the world, Monday is the first day of the week while in others, Sunday is the first day of the week
@@ -96,9 +100,15 @@ Whether it is a custom in their current region or a personal preference, users w
 * **Show week numbers**: this is pretty self-explanatory
 * **field\_id**: this is the id of the date field being used to layout the events in the calendar. We’ll talk about this later.
 
-To store the data and support [Conflict-free Replicated Data Type (CRDT)](https://crdt.tech/) throughout the entire application, we use the `yrs` crate in our AppFlowy-Collab crate.
+Let's now see how this is implemented in code.
 
-We use the data structures that lead to the most efficient data processing possible. The database stores and processes data through a wrapper around a hash map of the `lib0` crate's `Any` type, which can store any type of value and has efficient serialization for storage. We call this `AnyMap` and we use it to store cell data, field type options, sort and filter configurations, etc. We also use other common shared types as well, including `ArrayRef` and `MapRef`.
+Our [AppFlowy-Collab](https://github.com/AppFlowy-IO/AppFlowy-Collab) crate is responsible for data synchronization and storage throughout the entire application. In it, the `yrs` crate is used to store the data and support [Conflict-free Replicated Data Type (CRDT)](https://crdt.tech/).
+
+The database stores and processes data through a wrapper around a hash map of the `lib0` crate's `Any` type, which can store any type of value and has efficient serialization for storage. We call this `AnyMap` and we use it to store cell data, field type options, sort and filter configurations, etc.
+
+Of course, we also need to convert these to and from the Shared Types in `yrs`, including `ArrayRef` and `MapRef`.
+
+Below is a basic demonstration of the conversion between the `CalendarLayoutSetting` and `AnyMap` type.
 
 <pre class="language-rust" data-overflow="wrap"><code class="lang-rust">pub struct LayoutSettings(HashMap&#x3C;DatabaseLayout, LayoutSetting>);
 
@@ -112,6 +122,8 @@ pub struct CalendarLayoutSetting {
     pub field_id: String,
 }
 
+/// Converts an AnyMap to a CalendarLayoutSetting, used when reading from storage
+/// or received from a synced device
 impl From&#x3C;LayoutSetting> for CalendarLayoutSetting {
     fn from(setting: LayoutSetting) -> Self {
         let layout_ty = setting
@@ -137,7 +149,9 @@ impl From&#x3C;LayoutSetting> for CalendarLayoutSetting {
         }
     }
 }
-	
+
+/// Converts a CalendarLayoutSetting to an AnyMap to store and/or
+/// sync to another device
 impl From&#x3C;CalendarLayoutSetting> for LayoutSetting {
 <strong>    fn from(setting: CalendarLayoutSetting) -> Self {
 </strong>        LayoutSettingBuilder::new()
@@ -155,7 +169,7 @@ impl From&#x3C;CalendarLayoutSetting> for LayoutSetting {
 
 AppFlowy provides a system of events and notifications implemented with Protobuf to communicate between the frontend and backend. (You can learn more about events and notifications in the [AppFlowy Documentation](https://docs.appflowy.io/docs/essential-documentation/contribute-to-appflowy/architecture/frontend/inter-process-communication))
 
-While most of the events and notifictions used in grids and Kanban boards are also usable in the calendar, we have created some additional implementations to pass event data more efficiently.
+While most of the events and notifications used in grids and Kanban boards are also usable in the calendar, we have created some additional implementations to pass event data more efficiently.
 
 The first is events and notifications for layout settings, defined as `DatabaseEvent::GetLayoutSetting` and `DatabaseEvent::SetLayoutSetting`.
 
@@ -182,7 +196,7 @@ pub struct CalendarEventPB {
 
 In grid and Kanban board, we can load the rows in a straightforward manner. In the calendar, however, we decided to also fetch a timestamp for the event based on the date field specified in the layout settings.
 
-Doing this makes it much easier to write the frontend code, since the event information and the timestamp are now together. If we didn’t do this, we would have to get all of the rows in the database, and then fetch the timestamp for each individual.
+Doing this makes it much easier to write the frontend code, since the event information and the timestamp are now passed together. If we didn’t do this, we would have to get all of the rows in the database, then fetch the timestamp for each individual row.
 
 Currently, there are four defined events:
 
@@ -199,9 +213,9 @@ After implementing the event handlers for each event, and we’re now ready to m
 
 ### State Management Using Bloc
 
-In AppFlowy databases, state management is typically handled using `bloc`.
+In the fronted, we take advantage of the `bloc` package for our state management needs.
 
-Thanks to the separation of logic from the Flutter widgets that it provides, we are able to focus on the processing of data. We then use the `flutter_bloc` package to create, manage and consume them in the widget tree.
+Thanks to the separation of logic from the Flutter widgets that it provides, we are able to focus on the processing of data in the Blocs. We then use the `flutter_bloc` package to create, manipulate and consume them in the widget tree.
 
 Let’s first look at the blocs used in other database views and see what we can re-use. There are a number of controllers and services in place to communicate with the backend. They are often initialized with the bloc managing the state of the database being presented to the user, but some others may be created as needed (such as a cell controller being created for a specific cell's editor bloc). During initialization, listeners for notifications from the backend are also created.
 
