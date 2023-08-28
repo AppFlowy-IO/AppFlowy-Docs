@@ -88,7 +88,7 @@
   * [☕ Blog Post Work in Progress](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/README.md)
     * [Demystifying AppFlowy Editor's Codebase](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/demystifying-appflowy-editors-codebase.md)
     * [Creating a Calendar View for the AppFlowy Database](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/creating-a-calendar-view-for-the-appflowy-database.md)
-    * [AppFlowy with Supabase(WIP)](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/appflowy-with-supabase-wip.md)
+    * [AppFlowy with Supabase](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/appflowy-with-supabase-wip.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/README.md)
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
       * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
