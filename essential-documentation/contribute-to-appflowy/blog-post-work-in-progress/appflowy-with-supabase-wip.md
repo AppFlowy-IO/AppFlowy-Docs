@@ -1,8 +1,8 @@
-# AppFlowy with Supabase(WIP)
+# AppFlowy with Supabase
 
 ## AppFlowy with Supabase
 
-AppFlowy is renowned for its user-friendly local app features. Recognizing the numerous requests for a cloud version, we're thrilled to announce that AppFlowy is now cloud-enabled! We've partnered with Supabase, an open-source alternative to Firebase, to handle user sign-ins and data storage. With a Supabase project, transforming AppFlowy into a self-hosted cloud app is straightforward. By the end of this article, you'll be primed to launch your very own AppFlowy cloud application with ease.
+AppFlowy is built with user-friendly local app features in mind. Having noted the frequent requests for a cloud version, we're pleased to share that AppFlowy can now be cloud-enabled. We've partnered with Supabase, an open-source alternative to Firebase, to handle user sign-ins and data storage. With a Supabase project, transforming AppFlowy into a self-hosted cloud app is straightforward. By the end of this article, you'll be primed to launch your very own AppFlowy cloud application with ease. It's worth noting that the steps for other cloud services, such as `Appwrite` or `Firebase`, bear similarities."
 
 Let's explore how AppFlowy uses Supabase to implement the cloud features.
 
@@ -18,7 +18,9 @@ Let's explore how AppFlowy uses Supabase to implement the cloud features.
     * [Dive in the code](appflowy-with-supabase-wip.md#dive-in-the-code-1)
 * [Realtime](appflowy-with-supabase-wip.md#realtime)
   * [Dive in the code](appflowy-with-supabase-wip.md#dive-in-the-code-2)
-
+* [File Storage(WIP)](appflowy-with-supabase-wip.md#file-storage)
+* [Self-hosting](appflowy-with-supabase-wip.md#self-hosting)
+  
 ### Authentication
 
 Initially, we considered building our own authentication service from scratch, one that would support social third-party authentication, magic links, and traditional email & password login. However, we soon realized that there were open-source projects available that already offer these features. That led us to the discovery of the Supabase authentication service, which provides multiple methods for user authentication.
@@ -28,7 +30,7 @@ Initially, we considered building our own authentication service from scratch, o
 * Social providers
 * Phone logins
 
-This is exactly what we need. We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After follow the instructions in [this documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service.
+This is exactly what we need. We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After follow the instructions in [this documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service. Let's explore how we integrated Supabase authentication into AppFlowy.
 
 #### Dive in the code
 
@@ -82,7 +84,7 @@ abstract class Env {
 }
 ```
 
-Afterwards, run the following command to generate the `env.g.dart` file. This file contains the environment variables we defined in the `.env` file.
+Afterwards, run the following command to generate the `env.g.dart` file. This file contains the environment variables we defined in the `.env` file. These variables are encrypted to prevent them from being exposed in the source code.
 
 ```shell
 dart run build_runner build --delete-conflicting-outputs
@@ -153,6 +155,8 @@ The authentication flow is shown below:
 
 Ultimately, by clicking the Google login button, users are directed to a web browser to finalize the authentication process. Once authenticated, they are seamlessly redirected back to AppFlowy. Truly, integrating Supabase authentication into AppFlowy is a straightforward endeavor.
 
+We will support other social logins later, including GitHub, Discord, Slack, and more. The processes for each are quite similar
+
 ![login.png](../../appflowy-cloud/login\_image.png)
 
 ### Data storage
@@ -175,7 +179,7 @@ The `DocumentCloudService` represents a set of standardized functionalities for 
 
 * DatabaseCloudService
 
-The `DatabaseCloudService` represents a set of standardized operations focused on collaborative objects within a cloud-based database. This interface allows for the retrieval of updates for a specific collaborative object, batch fetching of updates for multiple collaborative objects of a given type, and obtaining a set number of snapshots for a collaborative object. These functionalities ensure efficient and streamlined interactions when managing and accessing collaborative data in a cloud database environment.
+The `DatabaseCloudService` represents a set of standardized operations focused on collaborative objects within a `AppFlowy` database. This interface allows for the retrieval of updates for a specific collaborative object, batch fetching of updates for multiple collaborative objects of a given type, and obtaining a set number of snapshots for a collaborative object. These functionalities ensure efficient and streamlined interactions when managing and accessing collaborative data in a cloud database environment.
 
 * RemoteCollabStorage
 
@@ -326,13 +330,14 @@ pub(crate) async fn flush_collab_with_update(
 
 ### Realtime
 
-Using Supabase's [realtime](https://supabase.com/docs/guides/realtime) service, we can track changes to specific tables. For example, monitoring the `af_user` table allows us to capture the most recent user activities whenever they sign in on various devices. Other tables can be monitored in the same way.
+With Supabase's [realtime](https://supabase.com/docs/guides/realtime) service, we can monitor changes to specific tables. For instance, by watching the `af_user` table, we can detect the latest user activities every time they sign in across different devices. Similarly, other tables can be monitored. This diagram illustrates how user profile updates are tracked across multiple devices.
+
 
 ![](../../appflowy-cloud/uml-Realtime\_Service.png)
 
 #### Dive in the code
 
-We observe update events from both the `af_collab_update` and `af_user` tables. When an update event is triggered, we propagate the event data to the Rust backend.
+We observe update events from both the `af_collab_update` and `af_user` tables. When an update event is triggered, we propagate the event data to the Rust backend. Different components will consume various updates. A detailed discussion on this is beyond the purview of this documentation, but we will delve into it in future discussions.
 
 ```dart
 Future<void> _subscribeTablesChanges() async {
@@ -391,4 +396,30 @@ Future<void> _subscribeTablesChanges() async {
  }
 ```
 
-Different components will consume various updates. A detailed discussion on this is beyond the purview of this documentation, but we will delve into it in future discussions.
+
+### File Storage(WIP)
+File storage in AppFlowy is still under development. Once implemented, users will be able to store images, videos, documents, and various other file types.
+
+### Self-hosting
+
+We've tried to make the process of self-hosting AppFlowy as straightforward as possible. Please follow the steps below to guide you through the process:
+
+1. **Set up a Supabase Project**: Start by creating a new Supabase project. For detailed instructions, refer to [this documentation](https://supabase.com/docs/guides/getting-started/tutorials/with-flutter).
+
+2. **Configure Your Postgres Database**: For guidance on setting up your Postgres database, consult this [guide](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
+
+3. **Fork the Repository**: Fork the [Self-hosting-template](https://github.com/AppFlowy-IO/Self-hosting-template) repository on GitHub.
+
+4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll need to configure the following variables: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `SUPABASE_JWT_SECRET`.
+
+![create_environment.png](create_environment.png)
+
+![environment_secret.png](environment_secret.png)
+
+5. **Deploy with a New Tag**: Initiate the deployment by pushing a new tag using the shell command:
+```shell
+git tag -a 0.3.0_main && git push origin 0.3.0_main
+```
+
+![deploy.png](deploy_appflowy.png)
+
