@@ -412,14 +412,14 @@ We've tried to make the process of self-hosting AppFlowy as straightforward as p
 
 4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll need to configure the following variables: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `SUPABASE_JWT_SECRET`.
 
-![create_environment.png](create_environment.png)
+![create_environment.png](../../appflowy-cloud/create_environment.png)
 
-![environment_secret.png](environment_secret.png)
+![environment_secret.png](../../appflowy-cloud/environment_secret.png)
 
 5. **Deploy with a New Tag**: Initiate the deployment by pushing a new tag using the shell command:
 ```shell
 git tag -a 0.3.0_main && git push origin 0.3.0_main
 ```
 
-![deploy.png](deploy_appflowy.png)
+![deploy.png](../../appflowy-cloud/deploy_appflowy.png)
 
