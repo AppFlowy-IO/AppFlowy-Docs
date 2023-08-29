@@ -19,7 +19,7 @@ Let's explore how AppFlowy uses Supabase to implement the cloud features.
 * [Realtime](appflowy-with-supabase-wip.md#realtime)
   * [Dive in the code](appflowy-with-supabase-wip.md#dive-in-the-code-2)
 * [File Storage(WIP)](appflowy-with-supabase-wip.md#file-storage)
-* [Self-hosting](appflowy-with-supabase-wip.md#self-hosting)
+* [Self-Hosting](appflowy-with-supabase-wip.md#self-hosting)
   
 ### Authentication
 
@@ -400,7 +400,7 @@ Future<void> _subscribeTablesChanges() async {
 ### File Storage(WIP)
 File storage in AppFlowy is still under development. Once implemented, users will be able to store images, videos, documents, and various other file types.
 
-### Self-hosting
+### Self-Hosting
 
 We've tried to make the process of self-hosting AppFlowy as straightforward as possible. Please follow the steps below to guide you through the process:
 
