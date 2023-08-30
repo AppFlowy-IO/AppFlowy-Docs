@@ -54,7 +54,6 @@ Start by creating a file named `.env` in the `appflowy_flutter` directory. Then,
 ```dotenv
 SUPABASE_URL=https://xxx.supabase.co
 SUPABASE_ANON_KEY=xxx
-SUPABASE_JWT_SECRET=xxx
 ```
 
 * env.dart
@@ -74,13 +73,6 @@ abstract class Env {
     defaultValue: '',
   )
   static final String supabaseAnonKey = _Env.supabaseAnonKey;
-
-  @EnviedField(
-    obfuscate: true,
-    varName: 'SUPABASE_JWT_SECRET',
-    defaultValue: '',
-  )
-  static final String supabaseJwtSecret = _Env.supabaseJwtSecret;
 }
 ```
 
@@ -410,11 +402,11 @@ We've tried to make the process of self-hosting AppFlowy as straightforward as p
 
 3. **Fork the Repository**: Fork the [Self-hosting-template](https://github.com/AppFlowy-IO/Self-hosting-template) repository on GitHub.
 
-4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll need to configure the following variables: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `SUPABASE_JWT_SECRET`.
+4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll need to configure the following variables: `SUPABASE_URL` and `SUPABASE_ANON_KEY`.
 
 ![create_environment.png](../../appflowy-cloud/create_environment.png)
 
-![environment_secret.png](../../appflowy-cloud/environment_secret.png)
+![environment_secret.png](../../appflowy-cloud/environment_secret2.png)
 
 5. **Deploy with a New Tag**: Initiate the deployment by pushing a new tag using the shell command:
 ```shell
