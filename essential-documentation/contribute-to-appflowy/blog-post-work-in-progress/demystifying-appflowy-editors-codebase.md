@@ -63,7 +63,7 @@ The `items` takes a list of `SelectionMenuItems` which we will talk about now.
 
 2. **Selection Menu Items**: The options you see on the Selection Menu: Text, H1, Image, Quote, Checkbox, etc. are SelectionMenuItems. This is how a typical `SelectionMenuItem` instance looks like:&#x20;
 
-```
+```dart
 // appflowy-editor\lib\src\editor\selection_menu\selection_menu_service.dart
 SelectionMenuItem(
     name: AppFlowyEditorLocalizations.current.bulletedList,
@@ -79,9 +79,11 @@ SelectionMenuItem(
   ),
 ```
 
-As you can see we have parameters for name, icon, keywords (these are words that when you type after pressing / this item is filtered out for you), and a handler that is responsible for inserting the Node or Component onto the Editor. Once this node is inserted into the Document, the Editor searches for that node's respective BlockComponentBuilder to render it on the Editor.
+As you can see we have parameters for name, icon, keywords (these are words that when you type after pressing / (slash), this item is filtered out for you), and a handler of the selection menu item that serves as a callback for when the user clicks on the SelectionMenuItem. \
+\
+This handler can be used to insert a node, transform the current node, and much more. Once this node is inserted into the Document, the Editor searches for that node's respective BlockComponentBuilder to render it on the Editor.
 
-You might wonder how actually does the Node or Component gets inserted. For understanding that let's explore them:
+You might wonder how the Node or Component gets inserted. To understand that let's explore them:
 
 3. **Node**: Node is a class that is actually stored in the Document Tree. Let us take a look at the definition of Node class:
 
@@ -113,15 +115,18 @@ final class Node extends ChangeNotifier with LinkedListEntry<Node> {
 }
 ```
 
-It has a `type` that defines the type of the node such as the heading, todo\_list, etc. This type is used to determine which Block Component to render on the Flutter App. \
+It has a `type` that defines the type of the node such as the heading, todo\_list, etc. This type is used to determine which Block Component to render on the Flutter App, this determining logic is done by`BlockComponentRendererService`, which we will talk about later.  \
+\
 It has `attributes` that control its appearance and state, for eg: todo\_list has an attribute called checked which determines whether it is completed or incomplete. \
+\
 The `children` parameter defines the children of the node, these are stored in a LinkedList which combined with the Document Tree allows the Editor to support Node Hierarchy. \
 To learn more about Node and its properties, read this [article](https://blog-appflowy.ghost.io/how-we-built-a-highly-customizable-rich-text-editor-for-flutter/).
 
-4. **Block Components**: Each Node type has a corresponding BlockComponentBuilder flutter widget implementing a class called `BlockComponentsBuilder`. This builds a Flutter widget for the Node type. Take a look at the implementation of `BlockComponentBuilder` class here: `appflowy-editor\lib\src\editor\editor_component\service\renderer\block_component_service.dart`\
+4. **Block Components**: Each Node type has a corresponding BlockComponentBuilder, which is a Widget Builder, that accepts a Node as an input and produces a Widget as an output. This is how you get a Flutter widget for a Node. \
    \
-   and a example that implements the `BlockComponentBuilder` to show the bulleted\_list in the editor:  `appflowy-editor\lib\src\editor\block_component\bulleted_list_block_component\bulleted_list_block_component.dart`\
-
+   Take a look at the implementation of `BlockComponentBuilder` class here: `appflowy-editor\lib\src\editor\editor_component\service\renderer\block_component_service.dart`\
+   \
+   and an example that implements the `BlockComponentBuilder` to show the bulleted\_list in the editor:  `appflowy-editor\lib\src\editor\block_component\bulleted_list_block_component\bulleted_list_block_component.dart`
 
 So let's outline what actually happens behind the scenes when we press a slash on the Editor and select some option say Heading for instance.&#x20;
 
@@ -150,8 +155,6 @@ Here is the organization of folders that make the AppFlowyEditor package:
 `│   │   ├── editor`
 
 `│   │   ├── extensions`
-
-`│   │   ├── flutter`
 
 `│   │   ├── history`
 
@@ -210,36 +213,26 @@ We are mainly concerned about the lib/src folder which is the main source code f
     <figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>the toolbar feature allows us to apply various styles to nodes in the editor.</p></figcaption></figure>
 
     \
-    Finally, the editor\_component also includes a folder called `command` and `utils`. The command/ folder consists of utility methods such as TextTransform operations, and SelectionTransform operations. The util/ folder contains various utilities such as File Picker, raw\_keyboard\_extension, etc that are used in various Editor features.\
+    Finally, the editor\_component also includes a folder called `command` and `utils`. The command/ folder consists of utility methods such as TextTransform operations, and SelectionTransform operations. The util/ folder contains various utilities such as File Picker, raw\_keyboard\_extension, etc. that are used in various Editor features.\
 
-3. `src/extensions`: consists of helpful extensions on Attributes, Colors, TextSpan, Node, Position, and much more.&#x20;
-4. `src/flutter`: consists of flutter classes like `overlay.dart` . This overlay file is what allows us to render the SelectionMenu, FindAndReplaceMenu, and Toolbar. Basically, the Overlay is a stack onto which you can insert OverlayEntries. This Overlay widget then renders itself on the Editor through BuildContext.&#x20;
-5. `src/plugins`: This is a family of plugins that make data encoding and decoding possible with popular formats such as HTML, Markdown, and Quill Delta. We use a `Document` class to convert the contents of our Editor to these formats. \
-   Here are the contents: \
-   \
-   `src/plugins` \
-   `├── html` \
-   `├── markdown` \
-   `├── quill_delta` \
-   `└── plugins.dart`\
-   \
-   It is quintessential that we allow the contents of our Document to be converted to these formats because we want to allow our data to be synced across the web, and other tools. These plugins are how we achieve this.
-6. `src/editor_state.dart`: The EditorState class is at the heart of the AppFlowyEditor. It holds:\
+3. `src/editor_state.dart`: \
+   The EditorState class is at the heart of the AppFlowyEditor. It holds:\
    \> the state of the Editor which includes:\
    &#x20;\- the document to render\
    &#x20;\- the state of the selection\
    \
-   \> various services of the Editor:\
-   &#x20;\- Selection service \
+   \> Various services of the Editor:\
+   &#x20;\- Selection service: \
    &#x20;\- Scroll service \
    &#x20;\- Keyboard service \
-   &#x20;\- Input service \
-   &#x20;\- Toolbar service\
+   &#x20;\- Renderer service.\
+   \
+   More about these services in the next section.\
    \
    \>  the editor style, the Undo Manager, and methods that mutate the document.\
    Here is an overview:
 
-```
+```dart
 class EditorState {
   EditorState({ required this.document, }) {...}
 
@@ -268,13 +261,160 @@ class EditorState {
 }
 ```
 
+In the above code, you can see a getter `Transaction get transaction{...}`. This gives me a chance to introduce a crucial topic for our discussion: the `Transaction`. Here is the definition of Transaction in the codebase:
 
+> A \[Transaction] has a list of \[Operation] objects that will be applied to the editor.
+
+The Transaction essentially controls the state refresh of the editor. Each change you want to make to the state of the editor is made by fetching the Transaction instance within the EditorState ( done by the getter we talked about earlier) and calling the `apply` method of the EditorState.&#x20;
+
+You may ask why we have to use a Transaction instead of directly mutating the Document contained within the EditorState. Well, mutating the document with its API is not recommended with consideration of collaborative editing.&#x20;
+
+Here is an example of a transaction used in the _remove\_word\_command.dart_ file:
+
+```dart
+//src\editor\editor_component\service\shortcuts\command_shortcut_events\remove_word_command.dart
+  ...
+
+  final transaction = editorState.transaction;
+  transaction.deleteText(
+    node,
+    selection.end.offset,
+    endOfWord.offset - selection.end.offset,
+  );
+
+  editorState.apply(transaction);
+  
+  ...
+```
+
+In the above code, you can see that we are calling a method called `deleteText` of the class Transaction, similarly, there are other useful methods in this class, which change the content and state of the document. Explore the class by looking in: `lib\src\core\transform\transaction.dart`
+
+4. `src/extensions`: consists of helpful extensions on Attributes, Colors, TextSpan, Node, Position, and much more. \
+
+5. `src/plugins`: This is a family of plugins that make data encoding and decoding possible with popular formats such as HTML, Markdown, and Quill Delta. We use a `Document` class to convert the contents of our Editor to these formats. \
+   Here are the contents: \
+   \
+   `src/plugins` \
+   `├── html` \
+   `├── markdown` \
+   `├── quill_delta` \
+   `└── plugins.dart`\
+   \
+   It is quintessential that we allow the contents of our Document to be converted to these formats because we want to allow our data to be synced across the web, and other tools. These plugins are how we achieve this.
 
 That's it about the Folder Organization of the AppFlowyEditor package. I hope after reading up to this point has given you a brief overview of what's located where. I leave it up to you as the reader and contributor to explore these modules and services in more depth.
 
+### Services in EditorState
+
+Let's discuss the various services that the EditorState hosts. These services are crucial for the working of the AppFlowyEditor. They are provided to the EditorState through a class called: `EditorService` located in `lib\src\editor\editor_component\service\editor_service.dart`.
+
+1. `Selection Service`:  This service is responsible for processing the \[Selection] changes and updates such as making a selection, updating a selection, getting the selected nodes, etc. Check out its interface:
+
+```dart
+// lib\src\editor\editor_component\service\selection_service.dart
+
+abstract class AppFlowySelectionService {
+  ValueNotifier<Selection?> get currentSelection;
+
+  List<Node> get currentSelectedNodes;
+  
+  void updateSelection(Selection? selection);
+  
+  void clearSelection();
+
+  void clearCursor();
+
+  Node? getNodeInOffset(Offset offset);
+
+  Position? getPositionInOffset(Offset offset);
+  
+  List<Rect> get selectionRects;
+
+  void registerGestureInterceptor(SelectionGestureInterceptor interceptor);
+  void unregisterGestureInterceptor(String key);
+}
+```
+
+In AppFlowyEditor, there are different implementations of the SelectionService for desktop and mobile. I encourage the reader to explore them too.
+
+2. `Keyboard Service`: This service is responsible for processing shortcut keys. If this service is enabled then only the ShortcutEvents are processed, if we disable this service then the shortcuts are not processed. This service is also used to control the keyboard behavior in AppFlowyEditor mobile.&#x20;
+
+```dart
+// lib\src\editor\editor_component\service\keyboard_service.dart
+
+abstract class AppFlowyKeyboardService {
+  void enable();
+  
+  void disable();
+  
+  /// Used in mobile
+  void closeKeyboard();
+  
+  /// Used in mobile
+  void enableKeyBoard(Selection selection);
+}  
+```
+
+3. `Scroll Service`: This service is responsible for processing document scrolling. It also contains information about number of pages in the document, maximum scroll height on the vertical axis, etc. Probably its most used method is its `scrollTo(double dy, {Duration duration})` method, which scrolls to dy in the duration. Everything inside the scroll service:
+
+```dart
+// lib\src\editor\editor_component\service\scroll_service.dart
+
+abstract class AppFlowyScrollService implements AutoScrollerService {
+  double get dy;
+  double? get onePageHeight;
+  int? get page;
+  double get maxScrollExtent;
+  double get minScrollExtent;
+  ScrollController get scrollController;
+
+  void scrollTo(
+    double dy, {
+    Duration? duration,
+  });
+
+  void goBallistic(double velocity);
+
+  void enable();
+
+  void disable();
+}
+```
+
+4. `Renderer Service`: This service is responsible for registering render plugin with specified  `Node.type`. \
+   \
+   Earlier we talked about how the content of the Editor is an instance of some type of Node, an image on your screen is represented as a Node of type 'image' in the document. Well determining which BlockComponentWidgetBuilder to use for which type of Node is done using this service. Let's take a look at its interface:
+
+```dart
+// lib\src\editor\editor_component\service\renderer\block_component_service.dart
+
+abstract class BlockComponentRendererService {
+  void register(String type, BlockComponentBuilder builder);
+
+  void registerAll(Map<String, BlockComponentBuilder> builders) =>
+      builders.forEach(register);
+
+  void unRegister(String type);
+
+  BlockComponentBuilder? blockComponentBuilder(String type);
+
+  Widget build(
+    BuildContext buildContext,
+    Node node,
+  );
+
+  List<Widget> buildList(
+    BuildContext buildContext,
+    Iterable<Node> nodes,
+  );
+}
+```
+
+So far, we have discussed all the crucial services in the AppFlowy Editor. But we have only discussed their interfaces, the actual implementation of these Services is where a lot of magic happens.
+
 ### Strategies and Tips to Use AppFlowyEditor
 
-Now that you are familiar with the codebase and you understand how things are working. Here are strategies that will help you to use AppFlowyEditor and to contribute to the package.&#x20;
+Now that you are familiar with the codebase and you understand how things are working. Here are strategies that will help you to use AppFlowyEditor and contribute to the package.&#x20;
 
 * Most of the time, we will want to update existing Editor Plugins/Components, Shortcuts, and features like Toolbar, Context Menu, FindAndReplaceMenu, etc. To do so, look up their implementations and apply your modifications. \
 
@@ -282,7 +422,7 @@ Now that you are familiar with the codebase and you understand how things are wo
   \
   1\. Create a Node definition with Node keys and a method for returning the Node. So for example here is the same for QuoteNode:
 
-```
+```dart
 // lib\src\editor\block_component\quote_block_component\quote_block_component.dart
 class QuoteBlockKeys {
   const QuoteBlockKeys._();
@@ -312,7 +452,7 @@ Node quoteNode({
 
 2. Create a class implementing the `BlockComponentBuilder` &#x20;
 
-```
+```dart
 class QuoteBlockComponentBuilder extends BlockComponentBuilder {
   QuoteBlockComponentBuilder({
     this.configuration = const BlockComponentConfiguration(),
@@ -345,16 +485,16 @@ class QuoteBlockComponentBuilder extends BlockComponentBuilder {
 }
 ```
 
-3. Create the Stateful Widget that will be the UI of your custom component by extending `BlockComponentStatefulWidget` in this example the `QuoteBlockComponentWidget` is the corresponding stateful widget.
-4. Finally, make sure you add a SelectionMenuItem for adding your custom Node into the Selection Menu and add your BlockComponentBuilder to the AppFlowyEditor. This way when someone presses the selection menu they will be able to see your custom component. If you need more help on this let me know, I am writing a separate article for explaining this.
+3. Create the Widget that will be the UI of your custom component by extending `BlockComponentStatefulWidget` In this example, this `QuoteBlockComponentWidget` is the corresponding stateful widget.
+4. Finally, make sure you add a SelectionMenuItem for adding your custom Node into the Selection Menu and add your BlockComponentBuilder to the AppFlowyEditor. This way when someone presses the selection menu they will be able to see your custom component. If you need more help on this let me know, I am writing a separate article to explain this.
 
-* To add new features, you can refer to existing features that are implemented, take that as a base and then develop your desired functionality. For instance: while developing the FindAndReplaceMenu, I borrowed a lot of code from the Selection Menu in order to facilitate the rendering of the FlutterWidget onto the Editor.\
+* To add new features, you can refer to existing features that are implemented, take that as a base, and then develop your desired functionality. For instance: while developing the FindAndReplaceMenu, I borrowed a lot of code from the Selection Menu in order to facilitate the rendering of the FlutterWidget onto the Editor.\
 
 * Adding and Customizing Shortcuts: AppFlowy Editor supports two types of shortcuts that are CommandShortcutEvents and CharacterShortcutEvents. Command Shortcuts get triggered when the user types a certain key combination on their keyboard. Examples of this are `FormatBold`, `FormatItalic`, `CopyCommand`, etc. Character Shortcuts get triggered when the Editor encounters a certain character being typed into the page. Examples include the `SlashCharacterEvent`, `DividerCharacterEvent`, etc. You can read more about shortcuts and how to customize them [here](https://github.com/AppFlowy-IO/appflowy-editor/blob/main/documentation/customizing.md).\
   \
   To add a new command shortcut, create an instance of `CommandShortcutEvent` and provide it with a key, a default command, platform-specific commands, and a handler. Here is an example of a CommandShortcutEvent instance.
 
-```
+```dart
 // src\editor\editor_component\service\shortcuts\command_shortcut_events\remove_word_command.dart
 final CommandShortcutEvent deleteLeftWordCommand = CommandShortcutEvent(
   key: 'delete the left word',
@@ -372,7 +512,7 @@ return KeyEventResult.handled;
 
 Finally, provide this new command event to the AppFlowyEditor. If you want to include it in the standard shortcut events that come by default with the Editor, then to do so, add your shortcut in the `standardCommandShortcutEvents` which you can find at `appflowy-editor\lib\src\editor\block_component\standard_block_components.dart`
 
-* Make sure you write a lot of tests for your new features, components, and shortcuts. These tests should assert the expected behavior and also test tricky use cases. Personally, I think to get a much deeper understanding of AppFlowyEditor, you should try writing some tests and debugging or watching what happens behind the scenes. As a contributor if your PR has well written tests then it makes the life of the maintainer much easier.
+* Make sure you write a lot of tests for your new features, components, and shortcuts. These tests should assert the expected behavior and also test tricky use cases. Personally, I think to get a much deeper understanding of AppFlowyEditor, you should try writing some tests and debugging or watching what happens behind the scenes. As a contributor, if your PR has well-written tests then it makes the life of the maintainer much easier.
 
 
 
