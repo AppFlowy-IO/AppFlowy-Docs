@@ -10,13 +10,19 @@ According to Wikipedia, "a kanban board is one of the tools that can be used to 
 
 What is Kanban? It means "visual sign" or "visual card" in Japanese. It is a lean method that manages work at a personal or organizational level originated by Toyota in the 1940s.
 
+<figure><img src="../../.gitbook/assets/kanban_board.png" alt=""><figcaption><p>appflowy kanban board</p></figcaption></figure>
+
 The purpose of Kanban was to create a transparent work process and help identify bottlenecks and overcommitments, thereby optimizing manufacturing efficiency. Kanban board as a project management tool has evolved from post-it notes on a whiteboard to digital board platforms to serve teams of all sizes in a variety of industries.
 
 A typical Kanban Board have columns for various stages of a process e.g.: "to-do", "doing", and "done". Each column has cards to represent work items. Each card can be moved from left to right to indicate the progress.
 
+<figure><img src="../../.gitbook/assets/movestatus.gif" alt=""><figcaption><p>move a card from left to right</p></figcaption></figure>
+
 ## How does a Kanban Board Work?
 
 Every Kanban board has three basic elements: boards, columns, and cards.
+
+<figure><img src="../../.gitbook/assets/kanban_explain.png" alt=""><figcaption><p>three basic elements</p></figcaption></figure>
 
 * Kanban baord: It is your project or workflow's homebase. It contains everything you need to get a project done.
 * Kanban column: It is the visual stack of a stage of a process. You may have only one stack that represent "doing" or a couple of stacks that further breaks down "doing". You can have as many columns as you want and rename them.
