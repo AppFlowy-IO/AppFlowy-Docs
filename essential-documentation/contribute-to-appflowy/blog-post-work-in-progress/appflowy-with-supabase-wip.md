@@ -1,40 +1,54 @@
-# AppFlowy with Supabase
+# Authentication and Data Storage for AppFlowy Using Supabase
 
-## AppFlowy with Supabase
+## Introducing Cloud Enabled AppFlowy
 
-AppFlowy is built with user-friendly local app features in mind. Having noted the frequent requests for a cloud version, we're pleased to share that AppFlowy can now be cloud-enabled. We've partnered with Supabase, an open-source alternative to Firebase, to handle user sign-ins and data storage. With a Supabase project, transforming AppFlowy into a self-hosted cloud app is straightforward. By the end of this article, you'll be primed to launch your very own AppFlowy cloud application with ease. It's worth noting that the steps for other cloud services, such as `Appwrite` or `Firebase`, bear similarities."
+AppFlowy is built with local app features in mind to keep it simple and user friendly. However, given the frequent requests for a cloud version, we're pleased to share that AppFlowy can now be cloud-enabled. 
+
+In order to implement cloud computimng features such as user sign-ins and data storage, we've partnered with [Supabase](https://supabase.com/), an open-source alternative to [Firebase](https://firebase.google.com/).  
+
+With a Supabase project, transforming AppFlowy into a self-hosted cloud app is straightforward. By the end of this article, you'll be primed to launch your very own AppFlowy cloud application with ease. Furthermore these steps are similar to other cloud services, such as `Appwrite` or `Firebase`, should you want to use those services for an AppFlowy cloud implementation.
 
 Let's explore how AppFlowy uses Supabase to implement the cloud features.
 
 ## Table of Contents
 
-* [Authentication](appflowy-with-supabase-wip.md#authentication)
-  * [Dive in the code](appflowy-with-supabase-wip.md#dive-in-the-code)
-  * [Voila!](appflowy-with-supabase-wip.md#voila)
-* [Data storage](appflowy-with-supabase-wip.md#data-storage)
-  * [Architectural Design](appflowy-with-supabase-wip.md#architectural-design)
-  * [Supabase implementation](appflowy-with-supabase-wip.md#supabase-implementation)
-    * [Database schema](appflowy-with-supabase-wip.md#database-schema)
-    * [Dive in the code](appflowy-with-supabase-wip.md#dive-in-the-code-1)
-* [Realtime](appflowy-with-supabase-wip.md#realtime)
-  * [Dive in the code](appflowy-with-supabase-wip.md#dive-in-the-code-2)
-* [File Storage(WIP)](appflowy-with-supabase-wip.md#file-storage)
+* [Authentication](#authentication)
+  * [Auth Code Walkthrough](#auth-code-walkthrough)
+  * [The Authentication Flow In Action](#the-authenication-flow-in-action)
+* [Data Storage](#data-storage)
+  * [Architectural Design](#architectural-design)
+  * [Supabase Implementation](#supabase-implementation)
+    * [Database Schema](#database-schema)
+    * [DB Code Walkthrough](#db-code-walkthrough)
+  * [Database Monitoring With Realtime](#database-monitoring-with-realtime)
+    * [Monitoring Code Walkthrough](#monitoring-code-walkthrough)
+* [File Storage](#file-storage)
 * [Self-Hosting](appflowy-with-supabase-wip.md#self-hosting)
   
-### Authentication
+## Authentication
 
-Initially, we considered building our own authentication service from scratch, one that would support social third-party authentication, magic links, and traditional email & password login. However, we soon realized that there were open-source projects available that already offer these features. That led us to the discovery of the Supabase authentication service, which provides multiple methods for user authentication.
+Initially, we considered building our own authentication service from scratch. The feature set we were looking to support included social third-party authentication and magic links as well as traditional email & password login. 
+
+However, we soon realized that there were open-source projects available that already offer these features. That led us to the discovery of the Supabase authentication service, which provides multiple methods for user authentication.
 
 * Email & password
 * Magic links
 * Social providers
 * Phone logins
 
-This is exactly what we need. We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After follow the instructions in [this documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service. Let's explore how we integrated Supabase authentication into AppFlowy.
+This is exactly what we need. 
 
-#### Dive in the code
+We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After follow the instructions the [Supabase auth documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service. 
 
-Additionally, there's a Flutter package named [supabase\_flutter](https://pub.dev/packages/supabase\_flutter) which can be seamlessly integrated into AppFlowy. It perfectly meets our requirements. We utilize the `env` file to inject the supabase configuration into the app. Consequently, simply adding `supabase_flutter` and `envied` to the `pubspec.yaml` is all that's needed to kickstart the process.
+Let's explore how we integrated Supabase authentication into AppFlowy.
+
+### Auth Code Walkthrough
+
+Inetgrating AppFlowy with Supabae requires the [supabase\_flutter](https://pub.dev/packages/supabase\_flutter) Flutter package.
+
+
+#### Adding Dependencies
+We utilize the `env` file to inject the supabase configuration into the app. Simply adding `supabase_flutter` and `envied` to the `pubspec.yaml` is all that's needed to kickstart the process.
 
 ```yaml
 dependencies:
@@ -45,18 +59,20 @@ dev_dependencies:
   envied_generator: ^0.3.0+3
 ```
 
-**Configuring the .env File**
+#### Config Files
 
-Start by creating a file named `.env` in the `appflowy_flutter` directory. Then, create the `env.dart` file, which defines the global environment variables.
+Start by creating a file named `.env` in the `appflowy_flutter` directory. 
 
-* .env
+Below is the contents of the  `.env` file.
 
 ```dotenv
 SUPABASE_URL=https://xxx.supabase.co
 SUPABASE_ANON_KEY=xxx
 ```
 
-* env.dart
+Then, create the `env.dart` file, which defines the global environment variables.
+
+The `.env.dart` file will look as follows:
 
 ```dart
 @Envied(path: '.env')
@@ -82,7 +98,7 @@ Afterwards, run the following command to generate the `env.g.dart` file. This fi
 dart run build_runner build --delete-conflicting-outputs
 ```
 
-**Initialize the supabase**
+#### Initializing the Supabase Instance
 
 Before utilizing the Supabase instance, it must be initialized. This initialization takes place in the `supabase_task.dart` file. We define the `SupabaseLocalStorage` to customize the storage of the Supabase auth data.
 
@@ -95,9 +111,11 @@ Before utilizing the Supabase instance, it must be initialized. This initializat
  );
 ```
 
-**Perform authentication**
+#### Performing Authentication
 
-Our authentication logic provided an abstract class named `AuthService`. This class's Supabase implementation can be found in `SupabaseAuthService`, specifically within the `supabase_auth_service.dart` file.
+Our authentication logic is provided in an abstract class named `AuthService`. 
+
+This class's Supabase implementation can be found in `SupabaseAuthService`, specifically within the `supabase_auth_service.dart` file.
 
 ```dart
  @override
@@ -130,8 +148,9 @@ Our authentication logic provided an abstract class named `AuthService`. This cl
     return completer.future;
   }
 ```
+### The Authentication Flow In Action
 
-The authentication flow is shown below:
+The steps for the authentication flow are outlined below:
 
 1. The user clicks the login button in AppFlowy.
 2. AppFlowy requests Supabase to start the authentication process.
@@ -143,51 +162,81 @@ The authentication flow is shown below:
 
 ![](../../appflowy-cloud/uml-Authentication\_Flow.png)
 
-#### Voila!
+By clicking a login button for Google, users are directed to a web browser to finalize the authentication process. Once authenticated, they are redirected back to AppFlowy.
 
-Ultimately, by clicking the Google login button, users are directed to a web browser to finalize the authentication process. Once authenticated, they are seamlessly redirected back to AppFlowy. Truly, integrating Supabase authentication into AppFlowy is a straightforward endeavor.
-
-We will support other social logins later, including GitHub, Discord, Slack, and more. The processes for each are quite similar
+We will support other social logins later, including GitHub, Discord, Slack, and more. The process for each is quite similar
 
 ![login.png](../../appflowy-cloud/login\_image.png)
 
-### Data storage
+## Data Storage
 
-#### Architectural Design
+### Architectural Design
 
-One of the prerequisites for AppFlowy Data Storage is the support for multiple cloud services. To achieve this, we've designed an abstraction layer that facilitates the integration of various cloud services. Each implementation provides the specific logic for the functions outlined in the AppFlowyServer interface. The architectural design is illustrated below:
+One of the prerequisites for AppFlowy Data Storage is support for multiple cloud services.
+
+ To achieve this, we've designed an abstraction layer that facilitates the integration of various cloud services. Each implementation provides the specific logic for the functions outlined in the AppFlowyServer interface. 
+ 
+ The architectural design is illustrated below:
 
 ![](../../appflowy-cloud/uml-AppFlowy\_Server\_Component\_Diagram.png)
 
-From the `AppFlowyServer` interface, it's evident that we can easily transition between various cloud services. For instance, moving from [Supabase](https://supabase.com/) to [Firebase](https://firebase.google.com/) or [Appwrite](https://appwrite.io/) is merely a matter of changing the implementation of the `AppFlowyServer` interface. The `AppFlowyServer` encompasses five services, with each service catering to a unique set of functionalities. Additionally, each service defines its own interface. Let's explore each of these components in detail.
+Using the `AppFlowyServer` interface we can easily transition between various cloud services. For instance, moving from [Supabase](https://supabase.com/) to [Firebase](https://firebase.google.com/) or [Appwrite](https://appwrite.io/) is merely a matter of changing the implementation of the `AppFlowyServer` interface. 
 
-* UserCloudService
+The `AppFlowyServer` encompasses five services, with each service catering to a unique set of functionalities. Additionally, each service defines its own interface. Let's explore each of these components in detail.
 
-The UserCloudService represents a standardized set of functionalities for interacting with a cloud-based user management service. This includes operations for registering new users, authenticating existing ones, managing user profiles, and handling user workspaces. In addition to basic user management, the interface provides methods for managing collaborative objects, subscribing to user updates, and receiving real-time events.
+#### UserCloudService
 
-* DocumentCloudService
+The UserCloudService represents a standardized set of functionalities for interacting with a cloud-based user management service. 
 
-The `DocumentCloudService` represents a set of standardized functionalities for managing and retrieving information related to documents in a cloud service. It facilitates fetching updates to a given document, obtaining snapshots of a document up to a specified limit, and accessing the primary data of a document. This interface is designed to offer asynchronous operations to ensure efficient and non-blocking interactions when dealing with document data in a cloud environment.
+This includes operations for: 
+ * registering new users
+ * authenticating existing users
+ * managing user profiles
+ * handling user workspaces 
 
-* DatabaseCloudService
+In addition to basic user management, the interface provides methods for managing collaborative objects, subscribing to user updates, and receiving real-time events.
 
-The `DatabaseCloudService` represents a set of standardized operations focused on collaborative objects within a `AppFlowy` database. This interface allows for the retrieval of updates for a specific collaborative object, batch fetching of updates for multiple collaborative objects of a given type, and obtaining a set number of snapshots for a collaborative object. These functionalities ensure efficient and streamlined interactions when managing and accessing collaborative data in a cloud database environment.
+#### DocumentCloudService
 
-* RemoteCollabStorage
+The `DocumentCloudService` represents a set of standardized functionalities for managing and retrieving information related to documents in a cloud service. 
 
-The `RemoteCollabStorage` interface provides a suite of operations for managing collaborative objects in a remote storage system. This includes checking whether the remote storage is active and functions for retrieving all updates, snapshots, and the state of a collaborative object. Furthermore, there are methods to create snapshots and dispatch updates or initial states to the remote storage. The service is built with asynchronous operations in mind, as evident by the `async` keyword, ensuring that activities like fetching or sending data don't block other operations. It also allows subscribing to remote updates, giving users the capability to stay updated with changes in the collaborative object.
+It facilitates fetching updates to a given document, obtaining snapshots of a document up to a specified limit, and accessing the primary data of a document. 
 
-* FolderCloudService
+This interface is designed to offer asynchronous operations to ensure efficient and non-blocking interactions when dealing with document data in a cloud environment.
 
-The `FolderCloudService` interface outlines a set of operations centered around managing workspaces and folders in a cloud environment. It offers capabilities to create a new workspace and fetch data, snapshots, and updates related to a specific folder within a workspace. .
+#### DatabaseCloudService
 
-Currently, we only support Supabase as a cloud service provider. However, we intend to support other cloud services in the future. Let's explore how to implement the `AppFlowyServer` using Supabase.
+The `DatabaseCloudService` represents a set of standardized operations focused on collaborative objects within a `AppFlowy` database. 
 
-#### Supabase implementation
+This interface allows for the retrieval of updates for a specific collaborative object, batch fetching of updates for multiple collaborative objects of a given type, and obtaining a set number of snapshots for a collaborative object. 
 
-Upon integrating Supabase authentication, we discovered it inherently offers a PostgreSQL database. This advantage implies that individual users self-hosting AppFlowy on Supabase won't require separate data storage setups. Each Supabase project is pre-equipped with a dedicated PostgreSQL database, which we leverage to store AppFlowy's data.
+These functionalities ensure efficient and streamlined interactions when managing and accessing collaborative data in a cloud database environment.
 
-#### Database schema
+#### RemoteCollabStorage
+
+The `RemoteCollabStorage` interface provides a suite of operations for managing collaborative objects in a remote storage system. This includes checking whether the remote storage is active and functions for retrieving all updates, snapshots, and the state of a collaborative object.
+
+ Furthermore, there are methods to create snapshots and dispatch updates or initial states to the remote storage. 
+ 
+ The service is built with asynchronous operations in mind, as evident by the `async` keyword, ensuring that activities like fetching or sending data don't block other operations. It also allows subscribing to remote updates, giving users the capability to stay updated with changes in the collaborative object.
+
+#### FolderCloudService
+
+The `FolderCloudService` interface outlines a set of operations centered around managing workspaces and folders in a cloud environment. It offers capabilities to create a new workspace and fetch data, snapshots, and updates related to a specific folder within a workspace.
+
+### Cloud Service Provider Implementations
+
+Currently, we only support Supabase as a cloud service provider. However, we intend to support other cloud services in the future. 
+
+Let's explore how to implement the `AppFlowyServer` using Supabase.
+
+#### Supabase Implementation
+
+Upon integrating Supabase authentication, we discovered it inherently offers a PostgreSQL database. This advantage implies that individual users self-hosting AppFlowy on Supabase won't require separate data storage setups. 
+
+Each Supabase project is pre-equipped with a dedicated PostgreSQL database, which we leverage to store AppFlowy's data.
+
+#### Database Schema
 
 We utilize the Postgres database to store:
 
@@ -215,11 +264,15 @@ Let's introduce some of the tables and views in the schema:
 
 We've developed a [tool](https://github.com/AppFlowy-IO/AppFlowy-Supabase) designed to set up the database tables, triggers, and functions within a Supabase PostgreSQL database. With this tool, a single command can configure your database. For a detailed guide, please consult [this documentation](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
 
-#### Dive in the code
+#### DB Code Walkthrough
 
-AppFlowy's backend is developed in Rust, which requires a Rust crate to interact seamlessly with the Postgres database. Thankfully, the community has provided [postgrest-rs](https://github.com/supabase-community/postgrest-rs), a crate specifically designed to handle Supabase's Postgres database features. We've defined a struct named [SupabaseServer](https://github.com/AppFlowy-IO/AppFlowy/blob/main/frontend/rust-lib/flowy-server/src/supabase/server.rs) that implements the `AppFlowyServer` trait.
+AppFlowy's backend is developed in Rust, which requires a Rust crate to interact seamlessly with the Postgres database. 
 
-When interacting with the Postgres database, primarily CRUD operations are carried out. However, it's important to emphasize the value of the RPC function for customizing database actions. We've defined a function called `flush_collab_updates_v3`. This function locks the row with a specified OID, aggregates the updates into a single update, and then deletes the consolidated updates.
+Thankfully, the community has provided [postgrest-rs](https://github.com/supabase-community/postgrest-rs), a crate specifically designed to handle Supabase's Postgres database features. We've defined a struct named [SupabaseServer](https://github.com/AppFlowy-IO/AppFlowy/blob/main/frontend/rust-lib/flowy-server/src/supabase/server.rs) that implements the `AppFlowyServer` trait.
+
+When interacting with the Postgres database, primarily CRUD operations are carried out. However, it's important to emphasize the value of the RPC function for customizing database actions. 
+
+We've defined a function called `flush_collab_updates_v3`. This function locks the row with a specified OID, aggregates the updates into a single update, and then deletes the consolidated updates.
 
 Here is the definition of the `flush_collab_updates_v3` function:
 
@@ -320,16 +373,20 @@ pub(crate) async fn flush_collab_with_update(
 }
 ```
 
-### Realtime
+### Database Monitoring With Realtime
 
-With Supabase's [realtime](https://supabase.com/docs/guides/realtime) service, we can monitor changes to specific tables. For instance, by watching the `af_user` table, we can detect the latest user activities every time they sign in across different devices. Similarly, other tables can be monitored. This diagram illustrates how user profile updates are tracked across multiple devices.
+With Supabase's [realtime](https://supabase.com/docs/guides/realtime) service, we can monitor changes to specific tables. 
+
+For instance, by watching the `af_user` table, we can detect the latest user activities every time they sign in across different devices. Similarly, other tables can be monitored. This diagram illustrates how user profile updates are tracked across multiple devices.
 
 
 ![](../../appflowy-cloud/uml-Realtime\_Service.png)
 
-#### Dive in the code
+#### Monitoring Code Walkthrough
 
-We observe update events from both the `af_collab_update` and `af_user` tables. When an update event is triggered, we propagate the event data to the Rust backend. Different components will consume various updates. A detailed discussion on this is beyond the purview of this documentation, but we will delve into it in future discussions.
+We observe update events from both the `af_collab_update` and `af_user` tables. When an update event is triggered, we propagate the event data to the Rust backend. Different components will consume various updates. 
+
+A detailed discussion on this is beyond the scope of this documentation, but we will delve into it in future discussions.
 
 ```dart
 Future<void> _subscribeTablesChanges() async {
@@ -389,10 +446,12 @@ Future<void> _subscribeTablesChanges() async {
 ```
 
 
-### File Storage(WIP)
-File storage in AppFlowy is still under development. Once implemented, users will be able to store images, videos, documents, and various other file types.
+## File Storage
+File storage in AppFlowy is still under development. 
 
-### Self-Hosting
+Once implemented, users will be able to store images, videos, documents, and various other file types.
+
+## Self-Hosting
 
 We've tried to make the process of self-hosting AppFlowy as straightforward as possible. Please follow the steps below to guide you through the process:
 
