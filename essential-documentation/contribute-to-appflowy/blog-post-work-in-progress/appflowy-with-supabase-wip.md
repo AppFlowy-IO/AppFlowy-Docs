@@ -4,7 +4,7 @@
 
 AppFlowy is built with local app features in mind to keep it simple and user friendly. However, given the frequent requests for a cloud version, we're pleased to share that AppFlowy can now be cloud-enabled. 
 
-In order to implement cloud computimng features such as user sign-ins and data storage, we've partnered with [Supabase](https://supabase.com/), an open-source alternative to [Firebase](https://firebase.google.com/).  
+In order to implement cloud features such as user sign-ins and data storage, we've partnered with [Supabase](https://supabase.com/), an open-source alternative to [Firebase](https://firebase.google.com/).  
 
 With a Supabase project, transforming AppFlowy into a self-hosted cloud app is straightforward. By the end of this article, you'll be primed to launch your very own AppFlowy cloud application with ease. Furthermore these steps are similar to other cloud services, such as `Appwrite` or `Firebase`, should you want to use those services for an AppFlowy cloud implementation.
 
