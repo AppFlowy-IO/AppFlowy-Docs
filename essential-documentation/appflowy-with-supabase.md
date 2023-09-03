@@ -171,13 +171,13 @@ The steps for the authentication flow are outlined below:
 6. Supabase verifies the credentials and sends a user token back to AppFlowy.
 7. AppFlowy updates to show the user they're logged in.
 
-![](appflowy-cloud/uml-Authentication\_Flow.png)
+![](cloud-asset/supabase/uml-Authentication\_Flow.png)
 
 By clicking a login button for Google, users are directed to a web browser to finalize the authentication process. Once authenticated, they are redirected back to AppFlowy.
 
 We will support other social logins later, including GitHub, Discord, Slack, and more. The process for each is quite similar
 
-![login.png](appflowy-cloud/login\_image.png)
+![login.png](cloud-asset/supabase/login\_image.png)
 
 ## Data Storage
 
@@ -189,7 +189,7 @@ To achieve this, we've designed an abstraction layer that facilitates the integr
 
 The architectural design is illustrated below:
 
-![](appflowy-cloud/uml-AppFlowy\_Server\_Component\_Diagram.png)
+![](cloud-asset/supabase/uml-AppFlowy\_Server\_Component\_Diagram.png)
 
 Using the `AppFlowyServer` interface we can easily transition between various cloud services. For instance, moving from [Supabase](https://supabase.com/) to [Firebase](https://firebase.google.com/) or [Appwrite](https://appwrite.io/) is merely a matter of changing the implementation of the `AppFlowyServer` interface.
 
@@ -205,7 +205,7 @@ This includes operations for:
 * authenticating existing users
 * managing user profiles
 * handling user workspaces
-
+* 
 In addition to basic user management, the interface provides methods for managing collaborative objects, subscribing to user updates, and receiving real-time events.
 
 #### DocumentCloudService
@@ -259,7 +259,7 @@ We utilize the Postgres database to store:
 
 Here's what our schema looks like:
 
-![schema.png](appflowy-cloud/schema.png)
+![schema.png](cloud-asset/supabase/schema.png)
 
 Let's introduce some of the tables and views in the schema:
 
@@ -391,7 +391,7 @@ With Supabase's [realtime](https://supabase.com/docs/guides/realtime) service, w
 
 For instance, by watching the `af_user` table, we can detect the latest user activities every time they sign in across different devices. Similarly, other tables can be monitored. This diagram illustrates how user profile updates are tracked across multiple devices.
 
-![](appflowy-cloud/uml-Realtime\_Service.png)
+![](cloud-asset/supabase/uml-Realtime\_Service.png)
 
 #### Monitoring Code Walkthrough
 
@@ -471,9 +471,9 @@ We've tried to make the process of self-hosting AppFlowy as straightforward as p
 3. **Fork the Repository**: Fork the [Self-hosting-template](https://github.com/AppFlowy-IO/Self-hosting-template) repository on GitHub.
 4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll need to configure the following variables: `SUPABASE_URL` and `SUPABASE_ANON_KEY`.
 
-![create\_environment.png](appflowy-cloud/create\_environment.png)
+![create\_environment.png](cloud-asset/supabase/create\_environment.png)
 
-![environment\_secret.png](appflowy-cloud/environment\_secret2.png)
+![environment\_secret.png](cloud-asset/supabase/environment\_secret2.png)
 
 5. **Deploy with a New Tag**: Initiate the deployment by pushing a new tag using the shell command:
 
@@ -481,7 +481,7 @@ We've tried to make the process of self-hosting AppFlowy as straightforward as p
 git tag -a 0.3.0_main && git push origin 0.3.0_main
 ```
 
-![deploy.png](appflowy-cloud/deploy\_appflowy.png)
+![deploy.png](cloud-asset/supabase/deploy\_appflowy.png)
 
 ## Questionnaire
 
