@@ -114,7 +114,7 @@
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 * [🎨 Themes](essential-documentation/themes.md)
 * [☁ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
-* [🆓 Self-hosting AppFlowy Free Using Supabase](essential-documentation/appflowy-with-supabase-wip.md)
+* [🆓 Self-hosting AppFlowy Free Using Supabase](essential-documentation/appflowy-with-supabase.md)
 
 ## Handbook
 
