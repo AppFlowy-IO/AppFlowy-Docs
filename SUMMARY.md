@@ -87,7 +87,6 @@
       * [Project Ideas](essential-documentation/contribute-to-appflowy/appflowy-mentorship-program/mentorship-2022/project-ideas.md)
   * [☕ Blog Post Work in Progress](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/README.md)
     * [Demystifying AppFlowy Editor's Codebase](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/demystifying-appflowy-editors-codebase.md)
-    * [AppFlowy with Supabase](essential-documentation/contribute-to-appflowy/blog-post-work-in-progress/appflowy-with-supabase-wip.md)
   * [✏ Write for AppFlowy](essential-documentation/contribute-to-appflowy/write-for-appflowy/README.md)
     * [📃 Drafts](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/README.md)
       * [\[Draft\] Use Case: Software Engineer](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-use-case-software-engineer.md)
@@ -115,6 +114,7 @@
 * [🪄 AppFlowy + OpenAI](essential-documentation/appflowy-x-openai.md)
 * [🎨 Themes](essential-documentation/themes.md)
 * [☁ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
+* [🆓 Self-hosting AppFlowy Free Using Supabase](essential-documentation/appflowy-with-supabase-wip.md)
 
 ## Handbook
 
