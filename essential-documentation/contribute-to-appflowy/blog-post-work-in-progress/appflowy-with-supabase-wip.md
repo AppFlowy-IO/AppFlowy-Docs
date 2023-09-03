@@ -1,8 +1,15 @@
-# Authentication and Data Storage for AppFlowy Using Supabase
+# Self-hosting AppFlowy Free Using Supabase
+
+AppFlowy is a privacy-first, open source workspace for your notes, wikis, projects, and more. You are in charge of your data and customizations, with no vendor lock-in.
+
+Over the past year, we've been working hard alongside thousands of community members towards our mission: to empower everyone to create workspaces that suit their needs, without limits on what's possible. We have been determined to uphold our three core values from the very beginning:
+- Data privacy first
+- Reliable native experience
+- Community-driven extensibility
+
+Today, we're pleased to share that AppFlowy can now be self-hosted. This article will delve into what's behind the scenes and guide you on how to self-host AppFlowy using Supabase.
 
 ## Introducing Cloud Enabled AppFlowy
-
-AppFlowy is built with local app features in mind to keep it simple and user friendly. However, given the frequent requests for a cloud version, we're pleased to share that AppFlowy can now be cloud-enabled. 
 
 In order to implement cloud features such as user sign-ins and data storage, we've partnered with [Supabase](https://supabase.com/), an open-source alternative to [Firebase](https://firebase.google.com/).  
 
@@ -38,7 +45,7 @@ However, we soon realized that there were open-source projects available that al
 
 This is exactly what we need. 
 
-We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After follow the instructions the [Supabase auth documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service. 
+We can leverage Supabase's authentication service to implement AppFlowy's authentication system. After following the instructions the [Supabase auth documentation](https://supabase.com/docs/guides/auth), we successfully set up the authentication service. 
 
 Let's explore how we integrated Supabase authentication into AppFlowy.
 
@@ -451,7 +458,7 @@ File storage in AppFlowy is still under development.
 
 Once implemented, users will be able to store images, videos, documents, and various other file types.
 
-## Self-Hosting
+## How to Self-host AppFlowy with Supabase
 
 We've tried to make the process of self-hosting AppFlowy as straightforward as possible. Please follow the steps below to guide you through the process:
 
@@ -474,3 +481,7 @@ git tag -a 0.3.0_main && git push origin 0.3.0_main
 
 ![deploy.png](../../appflowy-cloud/deploy_appflowy.png)
 
+## Questionnaire
+Thanks for reading this article. If you have some time, please kindly take our [1-minute survey](https://tally.so/r/w2aVej) to give us feedback and let us know what interests you the most.
+
+If you have a suggestion or question for self-hosted solutions or any part of AppFlowy, you can [create an issue](https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose) on GitHub and we’ll get back to you as soon as possible. Also feel free to follow us @appflowy on [Twitter](https://twitter.com/appflowy) or join our [Discord server](https://discord.gg/9Q2xaN37tV) to follow our latest development!
