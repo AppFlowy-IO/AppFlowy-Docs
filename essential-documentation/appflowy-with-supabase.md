@@ -1,6 +1,6 @@
 # 🆓 Self-hosting AppFlowy Free Using Supabase
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption><p>AppFlowy Self-hosted </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption><p>AppFlowy Self-hosted</p></figcaption></figure>
 
 AppFlowy is a privacy-first, open source workspace for your notes, wikis, projects, and more. You are in charge of your data and customizations, with no vendor lock-in.
 
@@ -205,7 +205,7 @@ This includes operations for:
 * authenticating existing users
 * managing user profiles
 * handling user workspaces
-* 
+
 In addition to basic user management, the interface provides methods for managing collaborative objects, subscribing to user updates, and receiving real-time events.
 
 #### DocumentCloudService
