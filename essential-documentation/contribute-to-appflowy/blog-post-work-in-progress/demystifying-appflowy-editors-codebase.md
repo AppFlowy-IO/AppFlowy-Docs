@@ -87,7 +87,7 @@ You might wonder how the Node or Component gets inserted. To understand that let
 
 3. **Node**: Node is a class that is actually stored in the Document Tree. Let us take a look at the definition of Node class:
 
-```
+```dart
 // appflowy-editor\lib\src\core\document\node.dart
 final class Node extends ChangeNotifier with LinkedListEntry<Node> {
   Node({
