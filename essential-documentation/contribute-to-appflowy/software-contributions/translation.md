@@ -4,7 +4,7 @@ You can help Appflowy in supporting various languages by contributing. Follow th
 
 ## Steps to modify an existing translation
 
-Translation files are located in : `frontend/app_flowy/assets/translations/`
+Translation files are located in : `frontend/resources/translations/`
 
 ### Modify in the no-code editor (inlang)
 
