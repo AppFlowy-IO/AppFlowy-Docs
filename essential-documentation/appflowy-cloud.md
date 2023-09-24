@@ -1,5 +1,9 @@
 # ☁ AppFlowy Cloud
 
+## It's on a private beta mode. You have the chance to be among the first to experience it. Sign up [here](https://survey.appflowy.io/private-beta).
+
+
+
 ## AppFlowy Cloud does four things for you:&#x20;
 
 1. Allows you to back up local data and access it from different devices&#x20;
