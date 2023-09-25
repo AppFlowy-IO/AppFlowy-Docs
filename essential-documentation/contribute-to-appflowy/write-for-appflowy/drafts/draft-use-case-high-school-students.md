@@ -85,7 +85,7 @@ As a student, conducting research work can be time-consuming and overwhelming. H
 
 To benefit from this feature, simply highlight the text you wish to summarize and click on the 'Summarize' option in AppFlowy's menu. Additionally, AppFlowy can even help you correct spelling errors, ensuring accuracy in your research work.
 
-Before you get started, make sure to set up your OpenAI API key in the settings menu. For detailed instructions on integrating this feature, please visit [AppFlowy AI Setup](https://appflowy.com/ai-setup). This integration can significantly save time for busy students, allowing you to stay updated on the latest research findings and trends.
+Before you get started, make sure to set up your OpenAI API key in the settings menu. For detailed instructions on integrating this feature, please visit [AppFlowy AI Setup](https://appflowy.gitbook.io/docs/essential-documentation/appflowy-x-openai). This integration can significantly save time for busy students, allowing you to stay updated on the latest research findings and trends.
 ![AI integration page](https://github.com/naumansajjad/AppFlowy-Docs/blob/main/.gitbook/assets/Assets2/AI.PNG)
 
 Don't miss out on this opportunity to simplify your research work. Give AppFlowy a try and make your academic life easier and more efficient.
