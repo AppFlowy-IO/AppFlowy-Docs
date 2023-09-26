@@ -52,7 +52,7 @@ We require a CLA (Contributor License Agreement). This is a one-time process, wh
 This section has a step-by-step guide to starting as an AppFlowy codebase contributor. Don’t worry if you make mistakes in your first contribution; no one gets it right the first time.
 
 * First, make an account on the [AppFlowy community server](https://discord.gg/9Q2xaN37tV), and pay attention to the community norms.
-* Set up your [AppFlowy development environment](../../documentation/appflowy/software-contributions/from-source/environment-setup/), getting help [on the forum](https://github.com/AppFlowy-IO/appflowy/discussions) or in #general on [the community server](https://discord.gg/9Q2xaN37tV).
+* Set up your [AppFlowy development environment](../../documentation/appflowy/from-source/environment-setup/), getting help [on the forum](https://github.com/AppFlowy-IO/appflowy/discussions) or in #general on [the community server](https://discord.gg/9Q2xaN37tV).
 * Familiarize yourself with using the development environment
 * Check out [How we built AppFlowy with Flutter and Rust](https://blog-appflowy.ghost.io/tech-design-flutter-rust/)
 * Read the [Submitting Code](software-contributions/submitting-code/) guide if you are new to GitHub or development in general

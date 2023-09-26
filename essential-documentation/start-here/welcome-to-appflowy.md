@@ -14,10 +14,10 @@ AppFlowy is the first open-source Notion alternative. You are in charge of your 
 
 ### Overview
 
-| Essential Documentation                                        | Popular Topics                                                                                 |
-| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [install-appflowy](../../appflowy/install-appflowy/ "mention") | [architecture](../contribute-to-appflowy/architecture/ "mention")                              |
-| [appflowy](../../documentation/appflowy/ "mention")            | [translation.md](../../documentation/appflowy/software-contributions/translation.md "mention") |
+| Essential Documentation                                        | Popular Topics                                                          |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [install-appflowy](../../appflowy/install-appflowy/ "mention") | [architecture](../contribute-to-appflowy/architecture/ "mention")       |
+| [appflowy](../../documentation/appflowy/ "mention")            | [translation.md](../../documentation/appflowy/translation.md "mention") |
 
 {% hint style="info" %}
 **Help & Feedback**

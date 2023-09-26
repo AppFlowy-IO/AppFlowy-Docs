@@ -21,7 +21,7 @@
 
 AppFlowy is a productivity tool that streamlines note-taking and task management. This is an open-source project, which means that its code is available to everyone for development and customization!
 
-Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open source development with AppFlowy!
+Whether you're an aspiring developer, a seasoned programmer, or someone genuinely interested in technology, this guide is here to help you navigate the exciting world of open-source development with AppFlowy!
 
 ### Overview
 
@@ -43,9 +43,9 @@ Let's dive in!
 
 ## Before You Get Started
 
-If you are new to open source development, this document will guide you through the process.
+If you are new to open-source development, this document will guide you through the process.
 
-If you've worked on open source projects before, much of this will seem familiar to you. However, we still recommend you review this guide to make sure you are adhering to our processes and conventions.
+If you've worked on open-source projects before, much of this will seem familiar to you. However, we still recommend you review this guide to make sure you are adhering to our processes and conventions.
 
 AppFlowy is managed via GitHub, a popular version control system.
 
@@ -79,7 +79,7 @@ GitHub Discussions provides a forum for AppFlowy contributors to ask questions, 
 <figure><img src="https://user-images.githubusercontent.com/70965472/237032567-9d75b320-423e-4bc2-805d-7bcb7c96217c.png" alt=""><figcaption><p><em>The AppFlowy Discussions Page</em></p></figcaption></figure>
 
 * Navigate through the various categories, including announcements, ideas, polls, etc.
-* Use the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections to find open projects for first time contributors.
+* Use the [General Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/general-help-wanted) and [Technical Help Wanted](https://github.com/AppFlowy-IO/AppFlowy/discussions/categories/technical-help-wanted) sections to find open projects for first-time contributors.
 * Explore AppFlowy's [6 Month Technical Roadmap](https://github.com/AppFlowy-IO/AppFlowy/discussions/1715) to gain a better understanding of AppFlowy's current development goals over the course of the next 6 months.
 
 ### Using Email to Connect With the Team
@@ -88,7 +88,7 @@ You can get in touch with the team via email at [support@appflowy.io](mailto:sup
 
 ## How to Identify and Open Your First PR
 
-Contributions are made via Pull Requests (PR's).
+Contributions are made via Pull Requests (PRs).
 
 We recommend getting familiar with the [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) for collaborating on projects and setting up your development environment.
 
@@ -136,11 +136,11 @@ That means following these standard steps:
 2. Set up your development [environment](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions#environment-setup)
 3. Make changes to the codebase in accordance with the requirements and tasks present in the _Issue_ that you have chosen to work on
 4. Add unit tests for any new features as necessary
-5. Push the changes to your branch and creating a Pull Request for the same
+5. Push the changes to your branch and create a Pull Request for the same
 6. Ask for a code review for your PR and make changes as required
 7. Pass all the automated tests that have been put in place
 8. Handle merge conflicts
-9. Wait for approval from the AppFlowy team, once approved merge your branch
+9. Wait for approval from the AppFlowy team. Once approved, merge your branch
 10. Delete your branch once the PR has been merged
 
 Congratulations on completing your first PR!
@@ -186,17 +186,17 @@ The initial appeal of AppFlowy was clear, it was a productivity tool suite, comp
 
 AppFlowy is built out of Flutter and Rust, which were completely new to me. However, considering the pros of the Octernships program, I decided to enroll anyway. I joined the AppFlowy Discord Server, introduced myself, and quickly got down to completing the assignment.
 
-This brought me to handling a PR for any first-time issue for Junior Dev's. This was a compulsory part of the Octernships application, which officially started my Open Source journey with AppFlowy.
+This brought me to handling a PR for any first-time issue for Junior Devs. This was a compulsory part of the Octernships application, which officially started my Open Source journey with AppFlowy.
 
 ### Searching for My First Issue
 
 I began by searching for issues on the main AppFlowy repository.
 
-I had contributed to minor open-source projects before, and knew how one generally went about contributing to open-source repositories. I entered the words "good-first-issue" in the label bar and selected the first option, i.e., good first issues for junior devs.
+I had contributed to minor open-source projects before and knew how one generally went about contributing to open-source repositories. I entered the words "good-first-issue" in the label bar and selected the first option, i.e., good first issues for junior devs.
 
 This was my first time working with Flutter, so I decided it was best that I started out with something easy. I decided to go ahead with issue [#1059 - Support markdown to italicize text](https://github.com/AppFlowy-IO/AppFlowy/issues/1059).
 
-The requirements were fairly simple: _Add a function to enable italics via use of single asterisks._
+The requirements were fairly simple: _Add a function to enable italics via the use of single asterisks._
 
 After going through the codebase, I knew it would just involve copying and editing a pre-existing function that did the same for underscores, so I decided to go ahead with it.
 
@@ -218,7 +218,7 @@ It took a while of troubleshooting, and asking for help from the community, but 
 
 Some things that I did to smoothen my onboarding experience included:
 
-* Reading up on AppFlowy's documentation and searching for cases where this bug has been encountered before, and how it was dealt with.
+* Read up on AppFlowy's documentation and search for cases where this bug has been encountered before, and how it was dealt with.
 * Searching on online platforms for cases where such an error was encountered before. This included combing through popular sites like Stack Overflow, other GitHub repositories, BitBucket, etc. for any instances where this issue had occurred before, and any potential fixes for the same.
 * Creating an issue in the Issues tab and highlighting the exact problem that I faced. I carefully detailed the exact issue that I was facing, including screenshots, error messages, and any other relevant information pertaining to the issue that I was facing. (You can have a look at Issue [#2045](https://github.com/AppFlowy-IO/AppFlowy/issues/2045). This is a fairly good example of how one can approach roadblocks on their development journey).
 
@@ -244,7 +244,7 @@ As always, feel free to ask questions when you have doubts and seek suggestions 
 
 As a first-time contributor to a repository, you will be asked to sign the CLA, i.e., the [Contributor License Agreement](https://en.wikipedia.org/wiki/Contributor\_License\_Agreement).
 
-Once that's done, your Pull Request will be assigned one or more reviewers. They are generally members of the core AppFlowy team or senior contributors. They know the codebase in and out, so feel free to ask for suggestions on how to tackle any developmental issue that you may face.
+Once that's done, your Pull Request will be assigned to one or more reviewers. They are generally members of the core AppFlowy team or senior contributors. They know the codebase in and out, so feel free to ask for suggestions on how to tackle any developmental issue that you may face.
 
 My reviewers left some suggested changes for the Pull Request, including changing keyboard conventions and other small changes.
 
@@ -252,7 +252,7 @@ My reviewers left some suggested changes for the Pull Request, including changin
 
 Another requirement that was put forward by the team was to make unit tests for the new feature.
 
-Unit testing is important as it makes sure that indvidual changes made to a codebase function as intended. I had a horrid time writing these unit tests, as I was still very new to Flutter. But as always, feel free to ask for help.
+Unit testing is important as it makes sure that individual changes made to a codebase function as intended. I had a horrid time writing these unit tests, as I was still very new to Flutter. But as always, feel free to ask for help.
 
 <figure><img src="https://github.com/JRS296/AppFlowy-Docs/assets/70965472/7ab3576c-b392-4b23-8ba6-1aaa7e081dc0" alt=""><figcaption><p><em>Asking for help - just do it!</em></p></figcaption></figure>
 
@@ -268,7 +268,7 @@ For more information on the naming conventions used in AppFlowy, check out our [
 
 <figure><img src="https://github.com/JRS296/AppFlowy-Docs/assets/70965472/c1e546a5-9c97-4682-9b23-a44f9d39c553" alt=""><figcaption><p><em>Ended up having trouble with squashing some commits as well. This really was quite the journey 😅</em></p></figcaption></figure>
 
-Overall, I think I made quite a mess with my first Pull Request. From horrible coding practises to terrible naming conventions, I had it all!
+Overall, I think I made quite a mess with my first Pull Request. From horrible coding practices to terrible naming conventions, I had it all!
 
 But thanks to the community, I was able to navigate the entire process with relative ease. A big thank you to [Xazin](https://github.com/Xazin) and [LucasXu0](https://github.com/LucasXu0) for all their help and support.
 
