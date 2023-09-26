@@ -1,2 +1,0 @@
-# 🙌 Contribute to AppFlowy
-

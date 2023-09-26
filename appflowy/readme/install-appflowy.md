@@ -29,4 +29,4 @@ After successful installation, launch AppFlowy and start enjoying the benefits o
 
 That's it! You're now ready to experience the productivity and organization that AppFlowy brings to your daily tasks.
 
-If you encounter any issues during installation or have questions, do not hesitate to [reach out for hep](how-to-get-help.md)!
+If you encounter any issues during installation or have questions, do not hesitate to [reach out for hep](../../essential-documentation/get-started/how-to-get-help.md)!

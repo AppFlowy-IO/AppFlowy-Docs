@@ -1,6 +1,6 @@
 # 🐙 Git Conventions
 
-The following page describes how you should prepare your code before submitting it for a PR. If you want information on how to create your PR please see [Submitting your first Pull Request](../submitting-code/submitting-your-first-pull-request.md).
+The following page describes how you should prepare your code before submitting it for a PR. If you want information on how to create your PR please see [Submitting your first Pull Request](../../../essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/submitting-your-first-pull-request.md).
 
 Before your code is merged into the main branch it will be peer reviewed so that it can be deployed for everyone to use. We go through your PR line by line and make sure that everything is on the up and up. You should always carefully craft your code submission in order for your reviewer to be able to more easily understand your changes.
 
