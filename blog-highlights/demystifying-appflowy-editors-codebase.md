@@ -98,7 +98,7 @@ As you can see we have parameters for:
  * keywords  
  * handler 
  
- The *keywords* are words that when you type after pressing `/` (slash), this item is filtered out for you.
+ The *keywords* are used to filter results from the menu, and are matched against what you type after pressing `/` (slash).
 
  The *handler* serves as a callback for when the user clicks on the SelectionMenuItem. This handler can be used to insert a node, transform the current node, and much more. 
  
