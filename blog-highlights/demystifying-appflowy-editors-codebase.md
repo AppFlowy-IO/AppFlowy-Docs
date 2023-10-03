@@ -170,7 +170,7 @@ So let's outline what actually happens behind the scenes when we press a slash o
 
 1. First, when we press `\` (slash), the `SelectionMenu` appears with a bunch of `SelectionMenuItems`.
 2. When we click the Heading item, a Node of the corresponding type ('heading') gets inserted in the **Editor Document Tree** using the `EditorState`.
-1. The `AppFlowyEditor` then looks at its newly added node and searches for its corresponding `BlockComponentBuilder` using the type of the Node. So it will search for a BlockComponentBuilder for type 'heading'. Once found, it executes the builder to show a Flutter representation of the Heading Node.
+3. The `AppFlowyEditor` then looks at its newly added node and searches for its corresponding `BlockComponentBuilder` using the type of the Node. So it will search for a BlockComponentBuilder for type 'heading'. Once found, it executes the builder to show a Flutter representation of the Heading Node.
 
 Now that we have a basic understanding of how things are happening inside the Editor and how its components work, let's explore the Folder organization to get an understanding of what is located where and discuss some other important modules that are part of the AppFlowyEditor.
 
