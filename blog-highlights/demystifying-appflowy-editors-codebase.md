@@ -362,7 +362,7 @@ Here are the contents: \
 
 It is essential that we allow the contents of our Document to be converted to these formats because we want to allow our data to be synced across the web and other tools. These plugins are how we achieve this.
 
-That concludes our disucssion on the folder organization of the AppFlowyEditor package.
+That concludes our discussion on the folder organization of the AppFlowyEditor package.
 
 
 ## Services in EditorState
