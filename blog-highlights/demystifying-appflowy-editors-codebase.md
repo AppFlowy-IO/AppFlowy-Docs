@@ -230,7 +230,7 @@ The block_component consists of a collection of block\_components such as headin
 
 The EditorComponent is the root node of the document tree. Its job is to hold all other components, display these components, and allow scrolling, typing, and listening to Shortcut Events. It is a class implementing the `BlockComponentBuilder` with a Node type of 'page'.
 
-The `editor_component\service` contains the scroll service, keyboard service, selection service, shortcuts, IME service, and the definitions of `BlockComponentBuilder` itself within the:
+The `editor_component\service` contains the scroll service, keyboard service, selection service, shortcuts, IME service, and the definitions of `BlockComponentBuilder` itself within this directory:
 
 ```
 editor_component\service\renderer
