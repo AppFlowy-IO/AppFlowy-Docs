@@ -224,7 +224,7 @@ When you expand this folder you will see the following subdirectories. \
 
 #### block\_component
 
-The block_component consists of a collection of block\_components such as heading, bulleted\_lists, image\_block\_components, etc. We have already talked about some of them
+The block_component consists of a collection of block_components such as headings, bulleted_lists, image_block_components, etc. We have already mentioned some of them.
 
 #### editor\_component
 
