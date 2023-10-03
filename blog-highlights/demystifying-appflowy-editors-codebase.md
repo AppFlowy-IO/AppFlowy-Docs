@@ -617,7 +617,7 @@ appflowy-editor\lib\src\editor\block_component\standard_block_components.dart`
 
 ### Write Tests
 
-To ensure the robustness and reliability of your new features, components, and shortcuts in AppFlowy Editor, it's essential to write comprehensive tests. Writing tests not only verifies the correctness of your code but also provides insights into what's happening behind the scenes. Well-written tests are a valuable contribution to the project and make life easier for contributors.
+To ensure the robustness and reliability of your new features, components, and shortcuts in AppFlowy Editor, it's essential to write comprehensive tests. Writing tests not only verify the correctness of your code but also provide insights into what is happening behind the scenes. Well-written tests are a valuable contribution to the project and make life easier for contributors.
 
 Let's see how you can write tests for AppFlowy Editor:
 
