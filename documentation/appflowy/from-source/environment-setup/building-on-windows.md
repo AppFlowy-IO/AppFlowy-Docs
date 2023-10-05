@@ -1,5 +1,7 @@
 # 🪟 Building on Windows
 
+If you prefer a video tutorial follow this link: [Setting up AppFlowy from Source on Windows](https://youtu.be/RhyTyNZuAFo?si=T1u2VOZNLdDhQdD6) 📽️
+
 **Notes:**
 
 * The following steps are verified on
@@ -13,7 +15,7 @@
 ## Step 1: Get the source code
 
 {% hint style="warning" %}
-You should fork the code instead if you wish to submit patches. You'll find information on that in [setting-up-your-repositories.md](../../../../../essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/setting-up-your-repositories.md "mention")
+You should fork the code instead if you wish to submit patches. You'll find information on that in [setting-up-your-repositories.md](../../../../essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/setting-up-your-repositories.md "mention")
 {% endhint %}
 
 ```shell
@@ -50,7 +52,7 @@ flutter doctor
 
     * Based on your platform, install the LLVM using the [LLVM-16.0.0-win64(32)](https://github.com/llvm/llvm-project/releases/tag/llvmorg-16.0.0). Additionally, make sure to add it to the system path.
 
-    ![install\_llvm](../../../../../.gitbook/assets/install\_llvm.png)
+    ![install\_llvm](../../../../.gitbook/assets/install\_llvm.png)
 * Install rust
   * Download `rustup.exe` from [https://win.rustup.rs/x86\_64](https://win.rustup.rs/x86\_64)
   * Call rustup.exe from powershell or cmd
@@ -114,7 +116,7 @@ dart pub global activate protoc_plugin 20.0.1
 1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code.
 2. Go to the Run and Debug tab and then click AF-desktop: Clean + Rebuild All for the first time running.
 
-![img.png](../../../../../.gitbook/assets/launch\_appflowy.png)
+![img.png](../../../../.gitbook/assets/launch\_appflowy.png)
 
 If you encounter any issues, have a look at [Troubleshooting](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
 
