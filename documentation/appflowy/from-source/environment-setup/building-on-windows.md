@@ -1,7 +1,5 @@
 # 🪟 Building on Windows
 
-If you prefer a video tutorial follow this link: [Setting up AppFlowy from Source on Windows](https://youtu.be/RhyTyNZuAFo?si=T1u2VOZNLdDhQdD6) 📽️
-
 **Notes:**
 
 * The following steps are verified on
@@ -10,7 +8,14 @@ If you prefer a video tutorial follow this link: [Setting up AppFlowy from Sourc
   * [x] Windows 11 X86\_64
   * [ ] Windows 11 arm64
 * Both Windows `cmd` and `powershell` can be used for running commands.
-* If you encounter any issues, please have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).
+* If you encounter any issues, please have a look at [Troubleshooting](https://github.com/AppFlowy-IO/appflowy/wiki/Troubleshooting) first. If your issue is not included in the page, please create an [issue](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) or ask on [Discord](https://discord.gg/9Q2xaN37tV).\
+
+
+**If you prefer a video tutorial click here:**&#x20;
+
+{% embed url="https://www.youtube.com/watch?v=RhyTyNZuAFo" %}
+video tutorial for building on windows&#x20;
+{% endembed %}
 
 ## Step 1: Get the source code
 
