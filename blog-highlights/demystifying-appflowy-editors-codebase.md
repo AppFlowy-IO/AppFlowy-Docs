@@ -61,7 +61,7 @@ class _SelectionMenuWidgetState extends State<SelectionMenuWidget> {
 
 The EditorState (the property `editorState` ) is an entity that encapsulates the state of the entire Editor and includes the services of the editor (discussed below).
 
-The SelectionMenuService (the property `selectionMenuService`) is responsible for implementing the UI for the SelectionMenu. It achieves so by adding `OverlayEntry` on top of the Editor widget. This is a pattern you will encounter again when you explore the `Toolbar` and `FindAndReplace` plugins.
+The SelectionMenuService (the property `selectionMenuService`) is responsible for implementing the UI for the SelectionMenu. It achieves this by adding `OverlayEntry` on top of the Editor widget. This is a pattern you will encounter again when you explore the `Toolbar` and `FindAndReplace` plugins.
 
 ### Selection Menu Items
 
@@ -150,7 +150,7 @@ To learn more about Node and its properties, read this [article](https://blog-ap
 
 ### Block Components
 
-Each Node type has a corresponding BlockComponentBuilder, which is a Widget Builder, that accepts a Node as an input and produces a Widget as an output. This is how you get a Flutter widget for a Node.
+Each Node type has a corresponding BlockComponentBuilder which functions as a widget builder. It accepts a Node as an input and produces a Widget as an output, allowing you to get a [Flutter widget](https://api.flutter.dev/flutter/widgets/Widget-class.html) for a Node.
 
 Take a look at the implementation of `BlockComponentBuilder` class at this location:
 
@@ -172,9 +172,8 @@ So let's outline what actually happens behind the scenes when we press a slash o
 2. When we click the Heading item, a Node of the corresponding type ('heading') gets inserted in the **Editor Document Tree** using the `EditorState`.
 3. The `AppFlowyEditor` then looks at its newly added node and searches for its corresponding `BlockComponentBuilder` using the type of the Node. So it will search for a BlockComponentBuilder for type 'heading'. Once found, it executes the builder to show a Flutter representation of the Heading Node.
 
-Now that we have a basic understanding of how things are happening inside the Editor and how its components work, let's explore the Folder organization to get an understanding of what is located where and discuss some other important modules that are part of the AppFlowyEditor.
-
 ## Folder Organization
+Now that we have a basic understanding of how things are happening inside the Editor and how its components work, let's explore the Folder organization to get an understanding of what is located where and discuss some other important modules that are part of the AppFlowyEditor.
 
 Here is the organization of folders that make the AppFlowyEditor package:
 
@@ -312,7 +311,7 @@ Here is the definition of Transaction in the codebase:
 
 > A \[Transaction] has a list of \[Operation] objects that will be applied to the editor.
 
-The Transaction controls the state refresh of the editor. Each change you want to make to the state of the editor is made by fetching the Transaction instance within the EditorState (done by the getter we talked about earlier) and calling the `apply` method of the EditorState.
+The [Transaction](https://blog.appflowy.io/how-we-built-a-highly-customizable-rich-text-editor-for-flutter/#transactions) controls state of the editor and when it is refreshed. Each change you want to make through the editor is made by fetching the Transaction instance within the EditorState (done by the getter we talked about earlier) and calling the `apply` method of the EditorState.
 
 You may ask why we have to use a Transaction instead of directly mutating the Document contained within the EditorState. Well, mutating the document with its API is not recommended because you must consider the implications of collaborative editing.
 
@@ -342,7 +341,6 @@ Explore the class by looking in:
 lib\src\core\transform\transaction.dart
 ```
 
-To learn more about how Transaction manages State Refresh read this [article](https://blog-appflowy.ghost.io/how-we-built-a-highly-customizable-rich-text-editor-for-flutter/).
 
 ### src\extensions
 This directory consists of helpful extensions on Attributes, Colors, TextSpan, Node, Position, and much more.
@@ -587,7 +585,7 @@ AppFlowy Editor supports two types of shortcuts that are CommandShortcutEvents a
 
 *Command Shortcuts* get triggered when the user types a certain key combination on their keyboard. Examples of this are `FormatBold`, `FormatItalic`, `CopyCommand`, etc. 
 
-*Character Shortcuts* get triggered when the Editor encounters a certain character being typed into the page. Examples include the `SlashCharacterEvent`, `DividerCharacterEvent`, etc. You can read more about shortcuts and how to customize them [here](https://github.com/AppFlowy-IO/appflowy-editor/blob/main/documentation/customizing.md).
+*Character Shortcuts* get triggered when the Editor encounters a certain character being typed into the page. Examples include the `SlashCharacterEvent`, `DividerCharacterEvent`, etc. You can read more about shortcuts and how to customize them in our guide to [Customizing Editor Features](https://github.com/AppFlowy-IO/appflowy-editor/blob/main/documentation/customizing.md).
 
 To add a new command shortcut, create an instance of `CommandShortcutEvent` and provide it with a key, a default command, platform-specific commands, and a handler. Here is an example of a CommandShortcutEvent instance.
 
@@ -617,7 +615,7 @@ appflowy-editor\lib\src\editor\block_component\standard_block_components.dart`
 
 ### Write Tests
 
-To ensure the robustness and reliability of your new features, components, and shortcuts in AppFlowy Editor, it's essential to write comprehensive tests. Writing tests not only verify the correctness of your code but also provide insights into what is happening behind the scenes. Well-written tests are a valuable contribution to the project and make life easier for contributors.
+To ensure the robustness and reliability of your new features, components, and shortcuts in AppFlowy Editor, it's essential to write comprehensive tests. Writing tests not only verifies the correctness of your code but also provides insights into what is happening behind the scenes. Well-written tests are a valuable contribution to the project and make life easier for contributors.
 
 Let's see how you can write tests for AppFlowy Editor:
 
@@ -625,15 +623,15 @@ Let's see how you can write tests for AppFlowy Editor:
 
 When writing tests for AppFlowy Editor, you'll typically work with `UnitTest`s or `WidgetTest`s. Follow these strategies to create effective tests:
 
-1. **Test Organization**: Organize your tests by creating a new file or folder under the `appflowy_editor\test`` directory for each new feature you want to test.
-2. **Test Scenarios**: Tests should cover expected behaviors as well as edge cases. For example, when testing features related to text selection, consider scenarios where a large amount of text is selected, or only a single character is selected.
+1. **Test Organization**: Organize your tests by creating a new file or folder under the `appflowy_editor\test` directory for each new feature you want to test.
+2. **Test Scenarios**: Tests should cover expected behaviors as well as edge cases. For example, when testing features related to text selection, consider scenarios where a large amount of text is selected as well as when only a single character is selected.
 3. **Descriptive Tests**: Write clear and descriptive test messages and comments to enhance readability and understanding.
 4. **Platform Considerations**: If your feature behaves differently on various platforms (e.g., Windows, Linux, Mac), write platform-specific tests to ensure cross-compatibility.
-5. **Reuse Utilities**: Utilize existing test utilities provided by the package and create feature-specific utility classes for common operations to promote reusability.
+5. **Reuse Utilities**: Use existing test utilities provided by the package and create feature-specific utility classes for common operations to promote reusability.
 
 #### Testing a Feature
 
-Let's walk through an example of writing tests for the "**Find And Replace**" Plugin in AppFlowy Editor. The code for this example can be found in the  `appflowy_editor\test\new\find_replace_menu` directory.
+Let's walk through an example of writing tests for the "**Find And Replace**" Plugin in AppFlowy Editor. The code for this example can be found in the `appflowy_editor\test\new\find_replace_menu` directory.
 
 In this directory you can see four files:
 
@@ -730,21 +728,20 @@ void main() async {
 }
 ```
 
-In our test: **selects found match** we first load the editor instance for widget testing and initialize it with some paragraphs. There are other utilities for initializing the editor with some content, such as: `addNode`, `addEmptyParagraph`, etc.
+In our test **selects found match** we first load the editor instance for widget testing and initialize it with some paragraphs. There are other utilities for initializing the editor with some content, such as: `addNode`, `addEmptyParagraph`, etc.
 
 ```dart
 final editor = tester.editor;
 editor.addParagraphs(3, initialText: text);
 ```
 
-
-If you have experience of writing widget tests in Flutter, typically you want to pump the widget that you want to test. Well this pump logic is already taken care by the TestableEditor class we talked about. So to pump the widget under test we do:
+If you have experience of writing widget tests in Flutter, you will be aware that typically you want to [pump](https://docs.flutter.dev/cookbook/testing/widget/introduction#notes-about-the-pump-methods) the widget that you want to test. However, for AppFlowy, this pump logic is already taken care by the TestableEditor class we mentioned above. So to pump the widget under test we call the following method:
 
 ```dart
 await editor.startTesting();
 ```
 
-Then in our test we perform the actual testing logic. This involves interacting with the contents of the Editor. This includes:
+Then in our test we perform the actual testing logic. This involves interacting with the contents of the Editor. For our example this includes:
 
 * making a selection
 * accessing nodes and performing operations on them
@@ -755,16 +752,16 @@ We can make a selection within our Editor using the `updateSelection()` method. 
 await editor.updateSelection(Selection.single(path: [0], startOffset: 0));
 ```
 
-To access nodes within your editor. You can do so with:
+To access nodes within your editor, you can use the `nodeAtPath` method as shown below:
 ```dart
 final node = editor.nodeAtPath([2]);
 ```
 
-Here we are accessing the node located at path [2].
+Here we are accessing the node located at path [2]. *TODO: maybe a explain this a bit better -- are we simply saying we are choosing the 3rd node in the collection of nodes?*
 
-Once you have the access of a node you can check if it is null, its content, its attributes. This is essential when you are testing something which may modify one or multiple nodes in the editor. So for example when testing the replace operation, we may want to access the text within a node before and after a replace operation.
+Once you have access to a node you can check if it is null as well as verify its content and attributes. This is essential when you are testing something which may modify one or multiple nodes in the editor. For example, when testing the replace operation, we may want to access the text within a node before and after a replace operation.
 
-So you can write something like (this code is not in our eg test):
+So you can write something like (this code is not in our eg (*TODO: note sure what you mean by 'eg'*) test):
 ```dart
 expect(
   editor.nodeAtPath([0])?.delta?.toPlainText(),
@@ -784,7 +781,7 @@ To send a keyboard event we use the `editor.pressKey()` method. In our test we a
 ```dart
 await pressFindAndReplaceCommand(editor);
 ```
-this method is defined within **find_replace_menu_utils.test** file. You can see at its core this method uses the `pressKey()` method to send Keyboard Events to our Editor, like this:
+This method is defined within **find_replace_menu_utils.test** file. You can see at its core this method uses the `pressKey()` method to send Keyboard Events to our Editor, like this:
 
 ```dart
 await editor.pressKey(
@@ -803,7 +800,7 @@ expect(selection.end, Position(path: [0], offset: pattern.length));
 ```
 
 
-That's it for this section. I urge the reader to look at more tests directly from the source code.
+For additional testing examples, please review the `appflowy_editor\test` directory. *TODO: provide suggestions that you think are particularly good models to follow as far as coverage and completeness go*
 
 
 ## Conclusion
