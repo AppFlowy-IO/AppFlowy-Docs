@@ -757,11 +757,11 @@ To access nodes within your editor, you can use the `nodeAtPath` method as shown
 final node = editor.nodeAtPath([2]);
 ```
 
-Here we are accessing the node located at path [2]. *TODO: maybe a explain this a bit better -- are we simply saying we are choosing the 3rd node in the collection of nodes?*
+Here we are choosing the 3rd node in the collection of nodes. Since nodes are zero-indexed.
 
 Once you have access to a node you can check if it is null as well as verify its content and attributes. This is essential when you are testing something which may modify one or multiple nodes in the editor. For example, when testing the replace operation, we may want to access the text within a node before and after a replace operation.
 
-So you can write something like (this code is not in our eg (*TODO: note sure what you mean by 'eg'*) test):
+So you can write something like:
 ```dart
 expect(
   editor.nodeAtPath([0])?.delta?.toPlainText(),
@@ -799,8 +799,21 @@ expect(selection!.start, Position(path: [0], offset: 0));
 expect(selection.end, Position(path: [0], offset: pattern.length));
 ```
 
+Review the following tests which are good models to follow as far as coverage and completeness go:
 
-For additional testing examples, please review the `appflowy_editor\test` directory. *TODO: provide suggestions that you think are particularly good models to follow as far as coverage and completeness go*
+```
+test\new\block_component\table_block_component
+```
+
+```
+test\new\service\shortcuts\command_shortcut_events\backspace_command_test.dart
+```
+
+```
+test\core
+```
+
+For additional testing examples, please review the `appflowy_editor\test` directory.
 
 
 ## Conclusion
