@@ -121,6 +121,8 @@
   * [⌨ How to Implement Markdown Syntax To Style Text In AppFlowy Editor](documentation/appflowy-editor/how-to-implement-markdown-syntax-to-style-text-in-appflowy-editor.md)
   * [🧩 How to Create a Plugin for AppFlowy Editor](documentation/appflowy-editor/how-to-create-a-plugin-for-appflowy-editor.md)
   * [👮♀ Licenses](documentation/appflowy-editor/licenses.md)
+* [☁ AppFlowy Cloud](documentation/appflowy-cloud/README.md)
+  * [🌈 Architecture](documentation/appflowy-cloud/architecture.md)
 
 ## Guides
 
