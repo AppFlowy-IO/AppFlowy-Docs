@@ -1,0 +1,24 @@
+@startuml
+component "AppFlowy Application" as app
+component "AppFlowy Client API" as api
+component "AppFlowy Cloud Gateway" as gateway
+component "GoTrue" as gotrue
+database "Postgres" as postgres
+component "Storage" as storage
+component "S3 Storage Provider" as s3
+component "Realtime" as realtime
+component "Redis" as redis
+
+app ..> api
+api ..> gateway
+gateway ..> gotrue : /auth
+gateway ..> storage : /storage
+gateway ..> realtime : /ws
+
+storage ..> s3
+storage ..> gotrue
+realtime ..> redis
+realtime ..> postgres
+gotrue ..> postgres
+
+@enduml
