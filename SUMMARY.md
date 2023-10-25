@@ -123,6 +123,7 @@
   * [👮♀ Licenses](documentation/appflowy-editor/licenses.md)
 * [☁ AppFlowy Cloud](documentation/appflowy-cloud/README.md)
   * [🌈 Architecture](documentation/appflowy-cloud/architecture.md)
+  * [☀ Deployment](documentation/appflowy-cloud/deployment.md)
 
 ## Guides
 
