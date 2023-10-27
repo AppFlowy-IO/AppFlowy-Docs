@@ -6,11 +6,15 @@ We're thrilled to have you here and can't wait to connect with you. Whether you 
 
 Looking to report a bug, request a feature, or discuss a project in-depth? GitHub is the place to be! Head over to our repository and dive into the issues or discussions. We're always eager to hear your thoughts and collaborate on exciting projects.
 
-[**2. Discord**](https://discord.gg/Hjp2qhS2ZJ)
+[**2. Community Forum**](https://forum.appflowy.io))
+
+Discuss questions and ideas. Get help from the community. Suggest a new feature to be built in AppFlowy. Report bugs to help us improve AppFlowy. Share your how-tos with the community.
+
+[**3. Discord**](https://discord.gg/Hjp2qhS2ZJ)
 
 Fancy some real-time chatting with fellow enthusiasts and our friendly team members? Join our Discord server! It's a vibrant hub for community discussions, troubleshooting, and connecting with like-minded folks.
 
-[**3. Reddit**](https://www.reddit.com/r/AppFlowy/)
+[**4. Reddit**](https://www.reddit.com/r/AppFlowy/)
 
 For those who prefer the charm of Reddit, we've got you covered. Visit our subreddit and be a part of the conversation. Share your experiences, ask questions, or simply enjoy the amazing content our community shares.
 
