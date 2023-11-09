@@ -45,8 +45,8 @@ Skip this if flutter is already installed on your system.
 
 ## **Step 4: Edit and run the application**
 
-1. Open the `frontend` folder located at xx/AppFlowy/frontend with VS Code. It is important _not_ to open the root folder, as that will not give access to the appropriate debug commands.
-2. Check the device selection: ![device](https://user-images.githubusercontent.com/86001920/144546864-cebbf0c0-4eef-424e-93c7-e1e6b3a59669.png)
+1. Open the `frontend` folder located at `xx/AppFlowy/frontend` with VS Code. It is important _not_ to open the root folder, as that will not give access to the appropriate debug commands.
+2. Open `xx/AppFlowy/frontend/app_flowy/lib/main.dart` and then check the device selection: ![device](https://user-images.githubusercontent.com/86001920/144546864-cebbf0c0-4eef-424e-93c7-e1e6b3a59669.png)
 3. Go to the Run and Debug tab and then click AF-desktop: Clean + Rebuild All for the first time running.
 
 ![img.png](../../../../../.gitbook/assets/launch\_appflowy.png)
