@@ -1,6 +1,6 @@
-# 🆓 Self-hosting AppFlowy for free Free Using Supabase
+# 🆓 Self-hosting AppFlowy for free Using Supabase
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption><p>AppFlowy Self-hosted</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image%20(37).png" alt=""><figcaption><p>AppFlowy Self-hosted</p></figcaption></figure>
 
 AppFlowy is a privacy-first, open source workspace for your notes, wikis, projects, and more. You are in charge of your data and customizations, with no vendor lock-in.
 
@@ -22,18 +22,18 @@ Let's explore how AppFlowy uses Supabase to implement the cloud features.
 
 ## Table of Contents
 
-* [Authentication](appflowy-with-supabase.md#authentication)
-  * [Auth Code Walkthrough](appflowy-with-supabase.md#auth-code-walkthrough)
-  * [The Authentication Flow In Action](appflowy-with-supabase.md#the-authenication-flow-in-action)
-* [Data Storage](appflowy-with-supabase.md#data-storage)
-  * [Architectural Design](appflowy-with-supabase.md#architectural-design)
-  * [Supabase Implementation](appflowy-with-supabase.md#supabase-implementation)
-    * [Database Schema](appflowy-with-supabase.md#database-schema)
-    * [DB Code Walkthrough](appflowy-with-supabase.md#db-code-walkthrough)
-  * [Database Monitoring With Realtime](appflowy-with-supabase.md#database-monitoring-with-realtime)
-    * [Monitoring Code Walkthrough](appflowy-with-supabase.md#monitoring-code-walkthrough)
-* [File Storage](appflowy-with-supabase.md#file-storage)
-* [Self-Hosting](appflowy-with-supabase.md#self-hosting)
+* [Authentication](self-hosting-appflowy-using-supabase#authentication)
+  * [Auth Code Walkthrough](self-hosting-appflowy-using-supabase#auth-code-walkthrough)
+  * [The Authentication Flow In Action](self-hosting-appflowy-using-supabase#the-authenication-flow-in-action)
+* [Data Storage](self-hosting-appflowy-using-supabase#data-storage)
+  * [Architectural Design](self-hosting-appflowy-using-supabase#architectural-design)
+  * [Supabase Implementation](self-hosting-appflowy-using-supabase#supabase-implementation)
+    * [Database Schema](self-hosting-appflowy-using-supabase#database-schema)
+    * [DB Code Walkthrough](self-hosting-appflowy-using-supabase#db-code-walkthrough)
+  * [Database Monitoring With Realtime](self-hosting-appflowy-using-supabase#database-monitoring-with-realtime)
+    * [Monitoring Code Walkthrough](self-hosting-appflowy-using-supabase#monitoring-code-walkthrough)
+* [File Storage](self-hosting-appflowy-using-supabase#file-storage)
+* [Self-Hosting](self-hosting-appflowy-using-supabase#self-hosting)
 
 ## Authentication
 
@@ -259,7 +259,7 @@ We utilize the Postgres database to store:
 
 Here's what our schema looks like:
 
-![schema.png](cloud-asset/supabase/schema.png)
+![schema.png](../../essential-documentation/cloud-asset/supabase/schema.png)
 
 Let's introduce some of the tables and views in the schema:
 
