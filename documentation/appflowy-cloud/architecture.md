@@ -1,7 +1,5 @@
 # 🌈 Architecture
 
-## 🌈 Architecture
-
 * This articles goes through self-host AppFlowy Cloud's architecture after deployment.
 * For the rest of the article, we will `myhost` as the hostname/ip of the machine where AppFlowy Cloud is deployed in.
 
