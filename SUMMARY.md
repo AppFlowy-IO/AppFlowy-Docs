@@ -129,8 +129,8 @@
 ## Guides
 
 * [AppFlowy](guides/appflowy/README.md)
-  * [☁ Self-hosting AppFlowy using Docker](guides/appflowy/self-hosting-appflowy)
-  * [🆓 Self-hosting AppFlowy for free Using Supabase](guides/appflowy/self-hosting-appflowy-using-supabase)
+  * [☁ Self-hosting AppFlowy using Docker](guides/appflowy/self-hosting-appflowy.md)
+  * [🆓 Self-hosting AppFlowy for free Using Supabase](guides/appflowy/self-hosting-appflowy-using-supabase.md)
 
 ## Blog Highlights
 
