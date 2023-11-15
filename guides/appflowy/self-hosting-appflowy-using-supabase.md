@@ -71,13 +71,13 @@ dev_dependencies:
 
 #### Config Files
 
-Start by creating a file named `.env` in the `appflowy_flutter` directory.
-
-Below is the contents of the `.env` file.
+Follow the instructions [here](https://github.com/AppFlowy-IO/AppFlowy/blob/main/frontend/appflowy_flutter/dev.env) to setup
+the `.env` file.
 
 ```dotenv
-SUPABASE_URL=https://xxx.supabase.co
-SUPABASE_ANON_KEY=xxx
+CLOUD_TYPE=1
+SUPABASE_URL=your-supabase-url
+SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
 
 Then, create the `env.dart` file, which defines the global environment variables.
