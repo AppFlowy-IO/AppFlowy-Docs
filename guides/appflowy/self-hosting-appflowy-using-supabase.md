@@ -469,20 +469,20 @@ We've tried to make the process of self-hosting AppFlowy as straightforward as p
 1. **Set up a Supabase Project**: Start by creating a new Supabase project. For detailed instructions, refer to [this documentation](https://supabase.com/docs/guides/getting-started/tutorials/with-flutter).
 2. **Configure Your Postgres Database**: For guidance on setting up your Postgres database, consult this [guide](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
 3. **Fork the Repository**: Fork the [Self-hosting-template](https://github.com/AppFlowy-IO/Self-hosting-template) repository on GitHub.
-4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll need to configure the following variables: `SUPABASE_URL` and `SUPABASE_ANON_KEY`.
+4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll 
+need to configure the following variables: `CLOUD_TYPE`,`SUPABASE_URL` and `SUPABASE_ANON_KEY`. The `CLOUD_TYPE` here is `1`, 
+which means you are using Supabase as your cloud service provider. 
 
-![create\_environment.png](cloud-asset/supabase/create\_environment.png)
+![create_environment.png](../../essential-documentation/cloud-asset/supabase/create_environment.png)
 
-![environment\_secret.png](cloud-asset/supabase/environment\_secret2.png)
+![img.png](../../essential-documentation/cloud-asset/supabase/environment_secret.png)
 
 5. **Deploy with a New Tag**: Initiate the deployment by pushing a new tag using the shell command:
 
 ```shell
 git tag -a 0.3.0_main && git push origin 0.3.0_main
 ```
-
-![deploy.png](cloud-asset/supabase/deploy\_appflowy.png)
-
+![deploy_appflowy.png](..%2F..%2Fessential-documentation%2Fcloud-asset%2Fsupabase%2Fdeploy_appflowy.png)
 ## Questionnaire
 
 Thanks for reading this article. If you have some time, please kindly take our [1-minute survey](https://tally.so/r/w2aVej) to give us feedback and let us know what interests you the most.
