@@ -23,15 +23,15 @@ Follow this [guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/
    * Navigate to the [AppFlowy with AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
    * Click the "Fork" button to create a personal copy of the repository.
 2. **Set Up Environment Secrets**:
-   * Within your forked repository, go to "Settings" and then select "Environments" from the left sidebar.
-   * Click "New environment" to establish an environment named `AppFlowyCloud`.
-   * Add the requisite environment secrets by selecting "Add secret":
-     * `CLOUD_TYPE`: `2`
-     * `APPFLOWY_CLOUD_BASE_URL`: `http://203.0.113.0:8000`
-     * `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://203.0.113.0:8000/ws`
-     * `APPFLOWY_CLOUD_GOTRUE_URL`: `http://203.0.113.0:9998`
+   - Within your forked repository, go to "Settings" and then select "Environments" from the left sidebar.
+   - Click "New environment" to establish an environment named `AppFlowyCloud`.
+   - Add the requisite environment secrets by selecting "Add secret":
+      - `CLOUD_TYPE`: `2`
+      - `APPFLOWY_CLOUD_BASE_URL`: `http://<your host server public hostname>:8000`
+      - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your host server public hostname>:8000/ws`
+      - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your host server public hostname>:9998`
 
-Substitute `203.0.113.0` with your cloud server's actual public IP address. If you have assigned a domain name to your server, use it in place of the IP address.
+    Substitute `<your host server public hostname>` with your cloud server's actual public host name. If you have assigned a domain name to your server, use it in place.
 
 3.  **Deploy**: Start the deployment by issuing a new tag with the shell command below. The building of the native AppFlowy application and its upload to the release page may take some time.
 
