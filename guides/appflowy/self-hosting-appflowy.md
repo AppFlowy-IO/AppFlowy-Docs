@@ -9,7 +9,7 @@ We're thrilled to introduce self-hosting capabilities for AppFlowy, further empo
 
 ## Step 1: Setting Up AppFlowy Cloud
 
-To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/deployment.md).
+To self-host AppFlowy Cloud, please refer to our comprehensive [deployment guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/deployment.md).
 
 ## Step 2: Building AppFlowy with a Self-hosted Server
 
