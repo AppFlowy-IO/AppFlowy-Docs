@@ -14,23 +14,29 @@ To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](h
 ## Step 2: Building AppFlowy with a Self-hosted Server
 
 1. **Fork the Repository**:
-    - Visit the [AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
-    - Click "Fork" to create your version of the repository.
+
+- Visit the [AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
+- Click "Fork" to create your version of the repository.
 
 2. **Configure Environment Secrets**:
-    - In your forked repository, go to "Settings" > "Environments".
-    - Create a new environment named `AppFlowyCloud`.
-    - Add these secrets under "Add secret":
-        - `CLOUD_TYPE`: `2` (indicating AppFlowy Cloud usage)
-        - `APPFLOWY_CLOUD_BASE_URL`: `http://<your-server-hostname>:8000`
-        - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your-server-hostname>:8000/ws`
-        - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your-server-hostname>:9998`
-    - Replace `<your-server-hostname>` with your server's public hostname or domain name.
+
+- In your forked repository, go to "Settings" > "Environments".
+- Create a new environment named `AppFlowyCloud`.
+- Add these secrets under "Add secret":
+    - `CLOUD_TYPE`: `2` (indicating AppFlowy Cloud usage)
+    - `APPFLOWY_CLOUD_BASE_URL`: `http://<your-server-hostname>:8000`
+    - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your-server-hostname>:8000/ws`
+    - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your-server-hostname>:9998`
+- Replace `<your-server-hostname>` with your server's public hostname or domain name.
+
+![img.png](../assets/appflowy_cloud_self_host_env.png)
 
 3. **Initiate Deployment**:
-    - Issue a new release tag and push it to start the deployment process:
+   
+   Issue a new release tag and push it to start the deployment process:
       ```bash
       git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
       ```
-    - This process builds the native AppFlowy application and uploads it to the release page.
+    After pushing the tag, you can view the build process in the Actions tab of your repository.
+    ![img_1.png](../assets/appflowy_cloud_build_action.png)
 
