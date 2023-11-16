@@ -13,6 +13,8 @@ To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](h
 
 ## Step 2: Building AppFlowy with a Self-hosted Server
 
+> 💪This step will become unnecessary once the AppFlowy client application is updated to allow switching between self-hosted servers directly within the app.
+
 1. **Fork the Repository**:
 
 - Visit the [AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
@@ -38,5 +40,6 @@ To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](h
       git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
       ```
     After pushing the tag, you can view the build process in the Actions tab of your repository.
+
     ![img_1.png](../assets/appflowy_cloud_build_action.png)
 
