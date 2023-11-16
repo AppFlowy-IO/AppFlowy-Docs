@@ -35,12 +35,17 @@ To self-host AppFlowy Cloud, please refer to our comprehensive [deployment guide
 
 ### Initiate Deployment
 
-Issue a new release tag and push it to start the deployment process:
-   ```bash
-   git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
-   ```
- After pushing the tag, you can view the build process in the Actions tab of your repository.
+To begin the deployment of AppFlowy, create and push a new release tag using the following commands:
 
- ![img_1.png](../assets/appflowy_cloud_build_action.png)
- After the build process is completed, you can download the binaries from the "Assets" section of the build.
- ![img.png](img.png)
+```bash
+# Create and push a tag for building AppFlowy version 0.3.8 on the main branch
+git tag 0.3.8_main && git push origin 0.3.8_main
+```
+
+After pushing the tag, you can view the build process in the Actions tab of your repository.
+
+![img_1.png](../assets/appflowy_cloud_build_action.png)
+
+After the build process is completed, you can download the binaries from the "Assets" section of the build.
+
+![img.png](img.png)
