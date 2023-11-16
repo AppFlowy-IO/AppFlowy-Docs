@@ -15,12 +15,12 @@ To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](h
 
 > 💪This step will become unnecessary once the AppFlowy client application is updated to allow switching between self-hosted servers directly within the app.
 
-1. **Fork the Repository**:
+### Fork the Repository
 
 - Visit the [AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
 - Click "Fork" to create your version of the repository.
 
-2. **Configure Environment Secrets**:
+### Configure Environment Secrets
 
 - In your forked repository, go to "Settings" > "Environments".
 - Create a new environment named `AppFlowyCloud`.
@@ -33,13 +33,14 @@ To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](h
 
 ![img.png](../assets/appflowy_cloud_self_host_env.png)
 
-3. **Initiate Deployment**:
-   
-   Issue a new release tag and push it to start the deployment process:
-      ```bash
-      git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
-      ```
-    After pushing the tag, you can view the build process in the Actions tab of your repository.
+### Initiate Deployment
 
-    ![img_1.png](../assets/appflowy_cloud_build_action.png)
+Issue a new release tag and push it to start the deployment process:
+   ```bash
+   git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
+   ```
+ After pushing the tag, you can view the build process in the Actions tab of your repository.
 
+ ![img_1.png](../assets/appflowy_cloud_build_action.png)
+ After the build process is completed, you can download the binaries from the "Assets" section of the build.
+ ![img.png](img.png)
