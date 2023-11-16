@@ -1,40 +1,36 @@
-# ☁ Self-hosting AppFlowy with AppFlowy Cloud
+# ☁️ Self-hosting AppFlowy with AppFlowy Cloud
 
-AppFlowy is a privacy-first, open source workspace for your notes, wikis, projects, and more. You are in charge of your data and customizations, with no vendor lock-in.
+AppFlowy is a privacy-first, open-source workspace designed for notes, wikis, projects, and more, giving you full control over your data and customizations. Over the past year, our community-driven approach has focused on delivering a data-privacy-centric, reliable native experience, and extensible platform.
 
-Over the past year, we've been working hard alongside thousands of community members towards our mission: to empower everyone to create workspaces that suit their needs, without limits on what's possible. We have been determined to uphold our three core values from the very beginning:
+We're thrilled to introduce self-hosting capabilities for AppFlowy, further empowering users to tailor workspaces to their needs. This guide is divided into two key sections:
 
-* Data privacy first
-* Reliable native experience
-* Community-driven extensibility
+1. Setting up AppFlowy Cloud on your server.
+2. Building AppFlowy with a self-hosted server.
 
-We're excited to announce that AppFlowy now supports self-hosting. This article provides an in-depth look and instructions on how to self-host AppFlowy alongside [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud). This article is divided into two parts:
+## Step 1: Setting Up AppFlowy Cloud
 
-1. Self-host [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud)
-2. Build AppFlowy with Self-hosted server
+To self-host AppFlowy Cloud on AWS EC2, follow our detailed [deployment guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/deployment.md).
 
-## Self-host AppFlowy Cloud
-
-Follow this [guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/deployment.md) you will be able to self-host AppFlowy Cloud in AWS EC2.
-
-## Build AppFlowy with a Self-hosted Server
+## Step 2: Building AppFlowy with a Self-hosted Server
 
 1. **Fork the Repository**:
-   * Navigate to the [AppFlowy with AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
-   * Click the "Fork" button to create a personal copy of the repository.
-2. **Set Up Environment Secrets**:
-   - Within your forked repository, go to "Settings" and then select "Environments" from the left sidebar.
-   - Click "New environment" to establish an environment named `AppFlowyCloud`.
-   - Add the requisite environment secrets by selecting "Add secret":
-      - `CLOUD_TYPE`: `2`
-      - `APPFLOWY_CLOUD_BASE_URL`: `http://<your host server public hostname>:8000`
-      - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your host server public hostname>:8000/ws`
-      - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your host server public hostname>:9998`
+    - Visit the [AppFlowy-Cloud Build repository](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build) on GitHub.
+    - Click "Fork" to create your version of the repository.
 
-    Substitute `<your host server public hostname>` with your cloud server's actual public host name. If you have assigned a domain name to your server, use it in place.
+2. **Configure Environment Secrets**:
+    - In your forked repository, go to "Settings" > "Environments".
+    - Create a new environment named `AppFlowyCloud`.
+    - Add these secrets under "Add secret":
+        - `CLOUD_TYPE`: `2` (indicating AppFlowy Cloud usage)
+        - `APPFLOWY_CLOUD_BASE_URL`: `http://<your-server-hostname>:8000`
+        - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your-server-hostname>:8000/ws`
+        - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your-server-hostname>:9998`
+    - Replace `<your-server-hostname>` with your server's public hostname or domain name.
 
-3.  **Deploy**: Start the deployment by issuing a new tag with the shell command below. The building of the native AppFlowy application and its upload to the release page may take some time.
+3. **Initiate Deployment**:
+    - Issue a new release tag and push it to start the deployment process:
+      ```bash
+      git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
+      ```
+    - This process builds the native AppFlowy application and uploads it to the release page.
 
-    ```bash
-    git tag -a v0.3.8 -m "Release 0.3.8" && git push origin v0.3.8
-    ```
