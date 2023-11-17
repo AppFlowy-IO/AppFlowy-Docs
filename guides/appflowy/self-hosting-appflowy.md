@@ -46,13 +46,24 @@ git tag 0.3.8_main && git push origin 0.3.8_main
 
 After pushing the tag, you can view the build process in the Actions tab of your repository.
 
-![img_1.png](../assets/appflowy_cloud_build_action.png)
+![appflowy_cloud_build_action.png](../assets/appflowy_cloud_build_action.png)
 
 After the build process is completed, you can download the binaries from the "Assets" section of the build.
 
-![img.png](../assets/build_artifact.png)
+![build_artifact.png](../assets/build_artifact.png)
 
 After logging in, you can visit the "Settings" page to confirm that the server URL is correct.
 
 ![server_url.png](../assets/setting_server_url.png)
 
+
+## Current Limitations
+
+**Bundle ID Conflict**
+
+The AppFlowy App built with AppFlowy Cloud currently shares the same bundle ID as the official AppFlowy App. Consequently,
+you cannot install both versions on the same device simultaneously. We are working on a solution for this issue.
+
+**Ongoing Development of Stable Branch**
+The process of building AppFlowy with AppFlowy Cloud using the stable branch is ongoing. Rapid developments and frequent 
+updates in [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud) mean that new features are constantly being added. 
