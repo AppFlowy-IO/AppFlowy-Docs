@@ -7,6 +7,8 @@ We're thrilled to introduce self-hosting capabilities for AppFlowy, further empo
 1. Setting up AppFlowy Cloud on your server.
 2. Building AppFlowy with a self-hosted server.
 
+🙏If you have any questions, don't hesitate to contact us on [Discord](https://discord.gg/7kmZgcvA).
+
 ## Step 1: Setting Up AppFlowy Cloud
 
 To self-host AppFlowy Cloud, please refer to our comprehensive [deployment guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/deployment.md).
@@ -48,4 +50,9 @@ After pushing the tag, you can view the build process in the Actions tab of your
 
 After the build process is completed, you can download the binaries from the "Assets" section of the build.
 
-![img.png](img.png)
+![img.png](../assets/build_artifact.png)
+
+After logging in, you can visit the "Settings" page to confirm that the server URL is correct.
+
+![server_url.png](../assets/setting_server_url.png)
+
