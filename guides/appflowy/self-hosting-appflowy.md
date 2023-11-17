@@ -65,5 +65,6 @@ The AppFlowy App built with AppFlowy Cloud currently shares the same bundle ID a
 you cannot install both versions on the same device simultaneously. We are working on a solution for this issue.
 
 **Ongoing Development of Stable Branch**
+
 The process of building AppFlowy with AppFlowy Cloud using the stable branch is ongoing. Rapid developments and frequent 
 updates in [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud) mean that new features are constantly being added. 
