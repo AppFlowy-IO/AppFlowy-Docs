@@ -28,10 +28,11 @@ To self-host AppFlowy Cloud, please refer to our comprehensive [deployment guide
 - Create a new environment named `AppFlowyCloud`.
 - Add these secrets under "Add secret":
     - `CLOUD_TYPE`: `2` (indicating AppFlowy Cloud usage)
-    - `APPFLOWY_CLOUD_BASE_URL`: `http://<your-server-hostname>:8000`
-    - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your-server-hostname>:8000/ws`
-    - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your-server-hostname>:9998`
+    - `APPFLOWY_CLOUD_BASE_URL`: `http://<your-server-hostname>`
+    - `APPFLOWY_CLOUD_WS_BASE_URL`: `ws://<your-server-hostname>/ws`
+    - `APPFLOWY_CLOUD_GOTRUE_URL`: `http://<your-server-hostname>/gotrue`
 - Replace `<your-server-hostname>` with your server's public hostname or domain name.
+- use https instead if you have SSL configured and port 443 exposed
 
 ![img.png](../assets/appflowy_cloud_self_host_env.png)
 
@@ -72,5 +73,5 @@ you cannot install both versions on the same device simultaneously. We are worki
 
 **Ongoing Development of Stable Branch**
 
-The process of building AppFlowy with AppFlowy Cloud using the stable branch is ongoing. Rapid developments and frequent 
-updates in [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud) mean that new features are constantly being added. 
+The process of building AppFlowy with AppFlowy Cloud using the stable branch is ongoing. Rapid developments and frequent
+updates in [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud) mean that new features are constantly being added.
