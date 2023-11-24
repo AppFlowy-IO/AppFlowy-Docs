@@ -37,13 +37,13 @@ To get started with the AppFlowy application, follow these steps:
     - Enter your server address in the provided field.
     - Click `Restart` to apply the changes.
 
-      ![Fill AppFlowy Cloud](../assets/fill_appflowy_cloud.png)
+      ![AppFlowy Cloud](../assets/fill_appflowy_cloud.png)
 
 4. **Login**:
    - Go the `Setting` page
    - On the left sidebar, select `User`.
    
-     ![img.png](../assets/login_page.png)
+     ![login.png](../assets/login_page.png)
    
 ## Current Limitations
 
