@@ -464,25 +464,38 @@ Once implemented, users will be able to store images, videos, documents, and var
 
 ## How to Self-host AppFlowy with Supabase
 
-We've tried to make the process of self-hosting AppFlowy as straightforward as possible. Please follow the steps below to guide you through the process:
+Self-hosting AppFlowy with Supabase has been made easy and straightforward. Follow this detailed guide:
 
-1. **Set up a Supabase Project**: Start by creating a new Supabase project. For detailed instructions, refer to [this documentation](https://supabase.com/docs/guides/getting-started/tutorials/with-flutter).
-2. **Configure Your Postgres Database**: For guidance on setting up your Postgres database, consult this [guide](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
-3. **Fork the Repository**: Fork the [Self-hosting-template](https://github.com/AppFlowy-IO/Self-hosting-template) repository on GitHub.
-4. **Establish Environment Secrets**: In the forked GitHub repository, set up the required environment secrets. You'll 
-need to configure the following variables: `CLOUD_TYPE`,`SUPABASE_URL` and `SUPABASE_ANON_KEY`. The `CLOUD_TYPE` here is `1`, 
-which means you are using Supabase as your cloud service provider. 
+### Step 1: Set Up a Supabase Project
+- **Create a Supabase Project**: Start by creating a new project in Supabase. Detailed instructions are available in the [Supabase Getting Started Guide for Flutter](https://supabase.com/docs/guides/getting-started/tutorials/with-flutter).
 
-![create_environment.png](../../essential-documentation/cloud-asset/supabase/create_environment.png)
+### Step 2: Configure Your Postgres Database
+- **Database Setup**: Configure your Postgres database according to the steps provided in the [Postgres Setup Guide](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
 
-![img.png](../../essential-documentation/cloud-asset/supabase/environment_secret.png)
+### Step 3: Download and Install AppFlowy
+- **Download AppFlowy**: Get the latest release package from the [AppFlowy Releases](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build/releases) page.
+- **Install and Launch**: Install the downloaded AppFlowy application and open it.
 
-5. **Deploy with a New Tag**: Initiate the deployment by pushing a new tag using the shell command:
+### Step 4: Configure the AppFlowy Application
+- **Initial Setup**: In the AppFlowy application, click on 'Quick Start'.
 
-```shell
-git tag -a 0.3.0_main && git push origin 0.3.0_main
-```
-![deploy_appflowy.png](..%2F..%2Fessential-documentation%2Fcloud-asset%2Fsupabase%2Fdeploy_appflowy.png)
+  ![Quick Start](../assets/quick_start.png)
+
+- **Cloud Settings**: Go to the `Settings` page, select `Cloud Setting` from the sidebar, and choose `Supabase` as your cloud provider.
+
+- **Enter Details**: Fill in your Supabase server's `url` and `anon key`, then click `Restart` to apply the new settings.
+
+  ![Fill Supabase Cloud](fill_supabase_cloud.png)
+
+### Step 5: Login to Your Account
+- **User Settings**: Access the `Setting` page in the AppFlowy application and choose `User` from the sidebar.
+
+  ![User Settings](../assets/login_page.png)
+
+By following these steps, you'll be able to successfully set up and start using AppFlowy with Supabase as your backend.
+
+🙏If you have any questions, don't hesitate to contact us on [Discord](https://discord.gg/7kmZgcvA).
+
 ## Questionnaire
 
 Thanks for reading this article. If you have some time, please kindly take our [1-minute survey](https://tally.so/r/w2aVej) to give us feedback and let us know what interests you the most.
