@@ -7,7 +7,7 @@
 
 * This deployment architecture is designed to make self-hosting AppFlowy-Cloud as easy as possible.
 * Deployment can be done in a single machine which only needs `docker` to be installed.
-* [Cloud Deployment Guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/deployment.md)
+* [Cloud Deployment Guide](https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/DEPLOYMENT.md)
 
 ## Deployment Architecture
 
