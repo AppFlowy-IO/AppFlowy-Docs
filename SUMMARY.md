@@ -111,6 +111,7 @@
       * [🍎 Building on macOS](documentation/appflowy/from-source/environment-setup/building-on-macos.md)
       * [🪟 Building on Windows](documentation/appflowy/from-source/environment-setup/building-on-windows.md)
   * [📡 Tauri Setup](documentation/appflowy/tauri-setup.md)
+  * [☁ Debugging with AppFlowy Cloud](documentation/appflowy/debugging-with-appflowy-cloud.md)
   * [🔁 Debugging in VS Code](documentation/appflowy/launcher-and-tasks.md)
   * [👾 Unit Test](documentation/appflowy/test/README.md)
     * [Frontend Tests](documentation/appflowy/test/frontend-tests.md)
