@@ -128,7 +128,7 @@
 
 ## Guides
 
-* [Self-Hosting AppFlow](guides/appflowy/README.md)
+* [Self-Hosting AppFlowy](guides/appflowy/README.md)
   * [☁ Self-hosting AppFlowy with AppFlowy Cloud](guides/appflowy/self-hosting-appflowy.md)
   * [🆓 Self-hosting AppFlowy for free Using Supabase](guides/appflowy/self-hosting-appflowy-using-supabase.md)
 
