@@ -23,6 +23,8 @@ After restarting, you can log in to the application.
 After restarting the application, you'll need to log in. To do this, navigate to the `Setting` page and select `Logout`.
 This action will redirect you to the login page.
 
+![mobile_login.png](assets/mobile_login.png)
+
 
 During this process, AppFlowy Cloud will generate logs in the console, allowing you to monitor and debug interactions
 between the application and the cloud service. Keep an eye on these logs to troubleshoot any issues or to understand
