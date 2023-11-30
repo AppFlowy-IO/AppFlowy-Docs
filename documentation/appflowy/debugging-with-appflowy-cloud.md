@@ -8,11 +8,25 @@ is running, build the AppFlowy application from its source code and launch it. N
 application and choose `AppFlowy Cloud` as your cloud provider. For the server address, enter `http://localhost`. 
 Click `Restart` to save your changes and reinitialize the application.
 
-![img_2.png](assets/localhost_login.png)
+### Desktop
+![setting.png](assets/localhost_login.png)
 
-After restarting, you can log in to the application. During this process, AppFlowy Cloud will generate logs in the console, allowing you to monitor and debug interactions between the application and the cloud service. Keep an eye on these logs to troubleshoot any issues or to understand how the application communicates with AppFlowy Cloud.
+After restarting, you can log in to the application.
 
-![img_1.png](assets/localhost_setting.png)
+![desktop_login.png](assets/localhost_setting.png)
+
+### Mobile
+![cloud_setting](assets/mobile_cloud_config.png)
+
+![appflowy_cloud_setting](assets/mobile_localhost.png)
+
+After restarting the application, you'll need to log in. To do this, navigate to the `Setting` page and select `Logout`.
+This action will redirect you to the login page.
+
+
+During this process, AppFlowy Cloud will generate logs in the console, allowing you to monitor and debug interactions
+between the application and the cloud service. Keep an eye on these logs to troubleshoot any issues or to understand
+how the application communicates with AppFlowy Cloud.
 
 
 ## Self-Hosted Server
