@@ -30,4 +30,5 @@ The profiling data will be displayed in terminal after the application run.
 
 ### Profiling with Flutter
 
-WIP
+Using [Xcode instruments](https://github.com/cmyr/cargo-instruments) to profile the backend.
+
