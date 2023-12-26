@@ -6,6 +6,7 @@
   * [x] Lubuntu 20.04 - x86\_64
   * [x] Linux Mint 20.3 - x86\_64
   * [ ] Ubuntu 20.04 - aarch64
+  * [x] Ubuntu 22.04 - x86\_64
   * [ ] Redhat Linux - x86\_64
   * [x] Fedora 37 - x86\_64
   * [x] Arch Linux - x86\_64
@@ -95,7 +96,7 @@ You should fork the code instead if you wish to submit code to AppFlowy. You wil
 {% tabs %}
 {% tab title="Ubuntu" %}
 ```bash
-sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip libkeybinder-3.0-dev
+sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip libkeybinder-3.0-dev libnotify-dev
 ```
 {% endtab %}
 
@@ -117,14 +118,14 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 #### **Install flutter (three different methods):**
 
 {% hint style="danger" %}
-Flutter version 3.7.9 is the recent supported stable release used for for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
+Flutter version 3.16.2 is the recent supported stable release used for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
 {% endhint %}
 
 * **Method 1:** Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 * **Method 2:** You can use the code below to install flutter manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git --branch 3.7.9
+git clone https://github.com/flutter/flutter.git --branch 3.16.2
 cd flutter
 echo -e "\nexport PATH=\$PATH:"`pwd`"/bin" >> ~/.bashrc
 source ~/.bashrc
@@ -158,9 +159,9 @@ If you are not using **bash**, check the official [asdf guide](https://asdf-vm.c
 ```bash
 cd AppFlowy
 asdf plugin-add flutter
-asdf install flutter 3.7.9-stable
+asdf install flutter 3.16.2-stable
 rm -rf .tool-versions
-asdf local flutter 3.7.9-stable 
+asdf local flutter 3.16.2-stable
 cd ..
 ```
 
@@ -189,7 +190,7 @@ source ~/.bashrc
 <figure><img src="../../../../../.gitbook/assets/Screenshot from 2023-02-27 22-43-35.png" alt=""><figcaption><p>Image: Running script install_linux.sh inside <code>xx/AppFlowy/frontend/scripts/install_dev_env/</code>.</p></figcaption></figure>
 
 {% hint style="warning" %}
-**If you get this following warning (image shown below** 👇\*\*):\*\*
+**If you get this warning:**
 
 ***
 
@@ -197,14 +198,14 @@ source ~/.bashrc
 
 `export PATH="$PATH":"$HOME/.pub-cache/bin"`\
 \
-Run following command to add the path inside your shell configuration dotfile (`.bashrc`, `.zshrc`, etc.). For **bash** users:
+Then run the following command to add the path inside your shell configuration dotfile (`.bashrc`, `.zshrc`, etc.). For **bash** users:
 
 ```bash
 echo -e '\nexport PATH="$PATH":"$HOME/.pub-cache/bin"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-OR, you can alternatively do this:
+OR, alternatively run this in your shell every time you build AppFlowy:
 
 ```bash
 export PATH="$PATH":"$HOME/.pub-cache/bin
@@ -226,13 +227,13 @@ cd frontend
 {% tabs %}
 {% tab title="Release binary" %}
 ```bash
-cargo make --profile production-linux-x86_64 appflowy 
+cargo make --profile production-linux-x86_64 appflowy
 ```
 {% endtab %}
 
 {% tab title="Debug binary" %}
 ```bash
-cargo make --profile development-linux-x86_64 appflowy-dev 
+cargo make --profile development-linux-x86_64 appflowy-dev
 ```
 {% endtab %}
 {% endtabs %}
