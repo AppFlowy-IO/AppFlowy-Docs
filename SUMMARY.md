@@ -116,7 +116,6 @@
   * [☎ Translate AppFlowy](documentation/appflowy/translation.md)
   * [❓ Troubleshooting](documentation/appflowy/troubleshooting.md)
   * [👮♀ Licenses](documentation/appflowy/licenses.md)
-  * [🏬 AppFlowy Data](documentation/appflowy/appflowy-data.md)
 * [🏍 AppFlowy Editor](documentation/appflowy-editor/README.md)
   * [⌨ How to Implement Markdown Syntax To Style Text In AppFlowy Editor](documentation/appflowy-editor/how-to-implement-markdown-syntax-to-style-text-in-appflowy-editor.md)
   * [🧩 How to Create a Plugin for AppFlowy Editor](documentation/appflowy-editor/how-to-create-a-plugin-for-appflowy-editor.md)
