@@ -126,6 +126,7 @@
 
 ## Guides
 
+* [Sync Desktop < > Mobile](guides/sync-desktop-less-than-greater-than-mobile.md)
 * [Self-Hosting AppFlowy](guides/appflowy/README.md)
   * [☁ Self-hosting AppFlowy with AppFlowy Cloud](guides/appflowy/self-hosting-appflowy.md)
   * [🆓 Self-hosting AppFlowy for free Using Supabase](guides/appflowy/self-hosting-appflowy-using-supabase.md)
