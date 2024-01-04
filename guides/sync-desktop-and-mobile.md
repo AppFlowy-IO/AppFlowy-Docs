@@ -1,4 +1,4 @@
-# Sync Desktop < > Mobile
+# Sync Desktop and Mobile
 
 Thank you for helping us test AppFlowy Mobile on either TestFlight or the Play Console. Here is the guide on how to sync data across mobile and desktop devices. Actually, it is part of the AppFlowy Cloud services that we have been working on over the past year.
 
@@ -20,6 +20,8 @@ We currently support three third-party login options:
 
 Please choose one of the above options to log in.&#x20;
 
+[Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.0.1 or above).
+
 Syncing data across devices is easy; simply log in to your desktop app using the same account:
 
 <figure><img src="../.gitbook/assets/image (51).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -27,6 +29,8 @@ Syncing data across devices is easy; simply log in to your desktop app using the
 
 
 ### Section II: Sync from desktop
+
+[Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.0.1 or above).
 
 Begin by backing up the data folder to a safe location.&#x20;
 
