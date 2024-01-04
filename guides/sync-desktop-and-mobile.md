@@ -30,7 +30,7 @@ Syncing data across devices is easy; simply log in to your desktop app using the
 
 ### Section II: Sync from desktop
 
-[Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.0.1 or above).
+[Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.1 or above).
 
 Begin by backing up the data folder to a safe location.&#x20;
 
@@ -68,7 +68,7 @@ Now follow the steps below:
 
 Don't worry; we've got you covered. To move your desktop data to the account used on mobile, please follow the steps below:
 
-1. [Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.0.1 or above)
+1. [Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.1 or above)
 2. Open your AppFlowy Desktop application.
 3. Navigate to 'Settings' -> 'Files'.
 4. Locate your AppFlowy data folder.
