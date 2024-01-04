@@ -20,7 +20,7 @@ We currently support three third-party login options:
 
 Please choose one of the above options to log in.&#x20;
 
-[Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.0.1 or above).
+[Download ](https://github.com/AppFlowy-IO/AppFlowy/releases)the latest desktop app (v0.4.1 or above).
 
 Syncing data across devices is easy; simply log in to your desktop app using the same account:
 
