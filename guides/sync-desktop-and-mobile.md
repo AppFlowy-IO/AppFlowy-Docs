@@ -36,7 +36,9 @@ Begin by backing up the data folder to a safe location.&#x20;
 
 Navigate to 'Settings' -> 'Files', and then click the folder icon next to the 'Change' button.&#x20;
 
-Copy the folder and paste it into a secure local location, or compress it into a zip file and email the zip file to yourself for safekeeping.
+Copy <mark style="color:red;">the folder one level up</mark> (likely called "AppFlowyDoNotRename," as seen in the attached) and paste it into a secure local location, or compress it into a zip file and email the zip file to yourself for safekeeping.
+
+<figure><img src="../.gitbook/assets/Group 1.png" alt=""><figcaption></figcaption></figure>
 
 Now follow the steps below:
 
@@ -79,11 +81,16 @@ For Mac users, click the folder icon next to the 'Change' button to open the dat
 
 <figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-5. Copy the folder and paste it into a location on your local drive (excluding Google Drive). For instance, you could save it in your Desktop folder. Compress it into a zip file and store it in a secure location as an additional backup, such as emailing the zip file to yourself.
-6.  Now, return to the desktop app and navigate to 'Settings' -> 'Cloud Settings':\
+5. Copy <mark style="color:red;">the folder one level up</mark> (likely called "AppFlowyDoNotRename," as seen in the attached) and paste it into a secure local location
+6. Also compress it into a zip file and email the zip file to yourself for safekeeping.&#x20;
+
+<figure><img src="../.gitbook/assets/Group 1 (1).png" alt=""><figcaption></figcaption></figure>
+
+6. Now, return to the desktop app and navigate to 'Settings' -> 'Cloud Settings':\
 
 
-    <figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+
 
 
 7. Select 'AppFlowy Cloud' as your cloud server option.
@@ -94,7 +101,7 @@ For Mac users, click the folder icon next to the 'Change' button to open the dat
 12. Log in using the same account you used for the mobile version.
 13. Go to Settings -> Files
 14. Click on 'Import Data from External AppFlowy Folder'.
-15. Locate the appflowy data folder copied from step 4.1
+15. Locate the appflowy data folder copied from step 5
 16. Click 'Choose' to start the import.
 17. Wait for the process to complete.
 18. Now you're all set!
