@@ -51,7 +51,7 @@ Now follow the steps below:
 
 <figure><img src="../.gitbook/assets/image (49).png" alt="" width="375"><figcaption></figcaption></figure>
 
-4. Fill in Base URL with [`https://beta.appflowy.cloud`](https://beta.appflowy.cloud)
+4. Enter the Base URL as `https://beta.appflowy.cloud`_**`.`**_ Ensure that you do not include a trailing slash; it should be `https://beta.appflowy.cloud` not `https://beta.appflowy.cloud/.`
 
 <figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
