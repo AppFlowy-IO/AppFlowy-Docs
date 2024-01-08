@@ -18,7 +18,7 @@ To self-host AppFlowy Cloud, please refer to our comprehensive [deployment guide
 To get started with the AppFlowy application, follow these steps:
 
 1. **Download the Release Package**:
-   * Access the latest release package from [AppFlowy Releases](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build/releases).
+   * Access the latest release package from [AppFlowy Releases](https://github.com/AppFlowy-IO/AppFlowy/releases).
 2. **Launch and Configure the Application**:
    * After downloading, open the AppFlowy application.
    *   Click on 'Quick Start'.

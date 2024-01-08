@@ -1,12 +1,10 @@
 # ☎ Translate AppFlowy
 
-You can help Appflowy in supporting various languages by contributing. Follow the steps below sequentially to contribute translations.
+We'd like AppFlowy to be usable by people from all over the globe. You can help us reach that goal by contributing to our translation efforts. See below on how to fill out missing translations, modify existing translations, or add a language that isn't supported yet.
 
-## Steps to modify an existing translation
+## Modify an Already-Supported Language
 
-Translation files are located in : `frontend/app_flowy/assets/translations/`
-
-### Modify in the no-code editor (inlang)
+### Using the inlang no-code editor
 
 1. Open the [inlang-editor](https://inlang.com/editor/github.com/AppFlowy-IO/AppFlowy)
 2. Edit translations (filter & search can help)
@@ -14,62 +12,71 @@ Translation files are located in : `frontend/app_flowy/assets/translations/`
 4. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
 5. Verify that the translation has changed appropriately by compiling and running the app.
 
-### Modify in code
+### Directly in the source code
 
-1. Modify the specific translation file.
+1. Modify the specific translation file located at: `frontend/appflowy_flutter/assets/translations/<language-code>-<country_code>.json`
 2. Run `flutter pub run easy_localization:generate -S assets/translations/`
 3. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
 4. Verify that the translation has changed appropriately by compiling and running the app.
 
-## Steps to add new language
+## Add an Unsupported Language
 
 > Adding new languages from within the inlang editor is not supported yet, but you can add the language and then do the translations in inlang. (Adding via inlang is coming soon)
 
-**NOTE: Translation files SHOULD be** `json` **files named in the format** `<lang_code>-<country_code>.json` **or just** `<lang_code>.json`**. eg:**`en.json`**,** `en-UK.json`
+1. Create a JSON file that contains the translation tokens and values. You can simply copy `frontend/appflowy_flutter/assets/translations/en.json` and edit it from there.
+2. The name of the file should be `<language_code>-<country_code>.json`, where `language_code` follows the [ISO-639-1 standard](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes) and the `country_code` is a valid [ISO3166 alpha2 country code](https://www.iso.org/obp/ui/#search/code/). For example, Spanish in Venezuela would be `es-VE.json`. If the language doesn't change much between countries that use it, you can simply use the language code instead, e.g. `pl.json`.
+3.  Run the following commands from `frontend/appflowy_flutter`:\
 
-1. Add language key-value json file to `frontend/app_flowy/assets/translations/`. Refer `en.json` for format and keys.
-2. Run `flutter pub run easy_localization:generate -S assets/translations/`
-3. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
-4. Open the `frontend/app_flowy/lib/startup/tasks/app_widget.dart` file.
-5.  In the `InitAppWidgetTask` class, add the locale of the language you just created (eg: `Locale('en', 'IN')`, `Locale('en')`) to the `supportedLocales` List :
 
-    ```dart
+    ```
+    flutter pub run easy_localization:generate -S assets/translations/
+    flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations -s en.json
+    ```
+4. Alternatively, run the `AF: Generate Language Task` from VSCode by hitting `F1`, selecting `Tasks: Run Task`, then searching for the task.
+5.  In `frontend/appflowy_flutter/lib/startup/tasks/app_widget.dart`, search for the `InitAppWidgetTask` class and add the new language (e.g. `Locale('en', 'IN')`) to the `supportedLocales` list :\
+
+
+    ```
     runApp(
       EasyLocalization(
-        supportedLocales: const [Locale('en'), Locale('zh', 'CN')],  // <---- Add locale to this list
+        supportedLocales: const [
+          Locale('am', 'ET'),
+          Locale('ar', 'SA'),
+          Locale('ca', 'ES'),
+          Locale('de', 'DE'),
+          Locale('en'),
+          ...                // <---- Add locale to this list
+        ],
         path: 'assets/translations',
         fallbackLocale: const Locale('en'),
         child: app),
-    );    
+    );
     ```
-6.  Add the name of your language, in your native tongue, to the list of language names in `AppFlowy/frontend/app_flowy/packages/flowy_infra/lib/language.dart`
+6.  Add the name of the language in that language to the list of language names in `frontend/appflowy_flutter/packages/flowy_infra/lib/language.dart`.\
 
-    ```dart
-    String languageFromLocale(Locale locale) {
-      switch (locale.languageCode) {
-        // Most often used
+
+    <pre class="language-dart"><code class="lang-dart"><strong>String languageFromLocale(Locale locale) {
+    </strong>  switch (locale.languageCode) {
         case "en":
           return "English";
         case "zh":
           return "简体中文";
-
-        // Then in alphabetical order
         case "de":
           return "Deutsch";
         case "es":
           return "Español";
         case "fr":
           return "Français";
-
-                               // <- add your language here.
-
-        // If not found then the language code will be displayed
+        ...                   // &#x3C;- add your language here.
         default:
           return locale.languageCode;
       }
     }
-    ```
+    </code></pre>
 
 ## How to test your changes
 
-Once your language is added to the language picker, you can simply choose it.
+Once you are pleased with your translations, compile AppFlowy, select the language and see your work come to life! If everything is working fine, don't forget to create a PR on Github so that others can also benefit from your effort.
+
+<figure><img src="../../.gitbook/assets/language_dropdown.jpg" alt=""><figcaption><p>Change your language in the settings page of AppFlowy</p></figcaption></figure>
+
