@@ -4,7 +4,7 @@
 These are instructions for an end user.
 {% endhint %}
 
-These are the installation instructions for an end user.  If you wish to contribute to AppFlowy or if you just want to view and run directly from source code please visit the [Broken link](broken-reference "mention") section.
+These are the installation instructions for an end user.  If you wish to contribute to AppFlowy or if you just want to view and run directly from source code please visit the [Install AppFlowy](../readme/install-appflowy.md "mention") section.
 
 You can view the [requirements.md](requirements.md "mention")
 
