@@ -1,6 +1,12 @@
+---
+description: This article covers
+---
+
 # 🆓 Self-hosting AppFlowy for free Using Supabase
 
-<figure><img src="../../.gitbook/assets/image%20(37).png" alt=""><figcaption><p>AppFlowy Self-hosted</p></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption><p>AppFlowy Self-hosted</p></figcaption></figure>
 
 AppFlowy is a privacy-first, open source workspace for your notes, wikis, projects, and more. You are in charge of your data and customizations, with no vendor lock-in.
 
@@ -12,6 +18,12 @@ Over the past year, we've been working hard alongside thousands of community mem
 
 Today, we're pleased to share that AppFlowy can now be self-hosted. This article will delve into what's behind the scenes and guide you on how to self-host AppFlowy using Supabase.
 
+**If you prefer a video tutorial click here:**&#x20;
+
+{% embed url="https://youtu.be/z5OpeJmnwrM?si=WStwO8Vn0OHCWQ42" %}
+video tutorial for hosting appflowy with supabase
+{% endembed %}
+
 ## Introducing Cloud Enabled AppFlowy
 
 In order to implement cloud features such as user sign-ins and data storage, we've partnered with [Supabase](https://supabase.com/), an open-source alternative to [Firebase](https://firebase.google.com/).
@@ -22,18 +34,18 @@ Let's explore how AppFlowy uses Supabase to implement the cloud features.
 
 ## Table of Contents
 
-* [Authentication](self-hosting-appflowy-using-supabase#authentication)
-  * [Auth Code Walkthrough](self-hosting-appflowy-using-supabase#auth-code-walkthrough)
-  * [The Authentication Flow In Action](self-hosting-appflowy-using-supabase#the-authenication-flow-in-action)
-* [Data Storage](self-hosting-appflowy-using-supabase#data-storage)
-  * [Architectural Design](self-hosting-appflowy-using-supabase#architectural-design)
-  * [Supabase Implementation](self-hosting-appflowy-using-supabase#supabase-implementation)
-    * [Database Schema](self-hosting-appflowy-using-supabase#database-schema)
-    * [DB Code Walkthrough](self-hosting-appflowy-using-supabase#db-code-walkthrough)
-  * [Database Monitoring With Realtime](self-hosting-appflowy-using-supabase#database-monitoring-with-realtime)
-    * [Monitoring Code Walkthrough](self-hosting-appflowy-using-supabase#monitoring-code-walkthrough)
-* [File Storage](self-hosting-appflowy-using-supabase#file-storage)
-* [Self-Hosting](self-hosting-appflowy-using-supabase#self-hosting)
+* [Authentication](self-hosting-appflowy-using-supabase/#authentication)
+  * [Auth Code Walkthrough](self-hosting-appflowy-using-supabase/#auth-code-walkthrough)
+  * [The Authentication Flow In Action](self-hosting-appflowy-using-supabase/#the-authenication-flow-in-action)
+* [Data Storage](self-hosting-appflowy-using-supabase/#data-storage)
+  * [Architectural Design](self-hosting-appflowy-using-supabase/#architectural-design)
+  * [Supabase Implementation](self-hosting-appflowy-using-supabase/#supabase-implementation)
+    * [Database Schema](self-hosting-appflowy-using-supabase/#database-schema)
+    * [DB Code Walkthrough](self-hosting-appflowy-using-supabase/#db-code-walkthrough)
+  * [Database Monitoring With Realtime](self-hosting-appflowy-using-supabase/#database-monitoring-with-realtime)
+    * [Monitoring Code Walkthrough](self-hosting-appflowy-using-supabase/#monitoring-code-walkthrough)
+* [File Storage](self-hosting-appflowy-using-supabase/#file-storage)
+* [Self-Hosting](self-hosting-appflowy-using-supabase/#self-hosting)
 
 ## Authentication
 
@@ -71,8 +83,7 @@ dev_dependencies:
 
 #### Config Files
 
-Follow the instructions [here](https://github.com/AppFlowy-IO/AppFlowy/blob/main/frontend/appflowy_flutter/dev.env) to setup
-the `.env` file.
+Follow the instructions [here](https://github.com/AppFlowy-IO/AppFlowy/blob/main/frontend/appflowy\_flutter/dev.env) to setup the `.env` file.
 
 ```dotenv
 CLOUD_TYPE=1
@@ -467,30 +478,33 @@ Once implemented, users will be able to store images, videos, documents, and var
 Self-hosting AppFlowy with Supabase has been made easy and straightforward. Follow this detailed guide:
 
 ### Step 1: Set Up a Supabase Project
-- **Create a Supabase Project**: Start by creating a new project in Supabase. Detailed instructions are available in the [Supabase Getting Started Guide for Flutter](https://supabase.com/docs/guides/getting-started/tutorials/with-flutter).
+
+* **Create a Supabase Project**: Start by creating a new project in Supabase. Detailed instructions are available in the [Supabase Getting Started Guide for Flutter](https://supabase.com/docs/guides/getting-started/tutorials/with-flutter).
 
 ### Step 2: Configure Your Postgres Database
-- **Database Setup**: Configure your Postgres database according to the steps provided in the [Postgres Setup Guide](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
+
+* **Database Setup**: Configure your Postgres database according to the steps provided in the [Postgres Setup Guide](https://github.com/AppFlowy-IO/AppFlowy-Supabase/tree/main/postgres).
 
 ### Step 3: Download and Install AppFlowy
-- **Download AppFlowy**: Get the latest release package from the [AppFlowy Releases](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build/releases) page.
-- **Install and Launch**: Install the downloaded AppFlowy application and open it.
+
+* **Download AppFlowy**: Get the latest release package from the [AppFlowy Releases](https://github.com/AppFlowy-IO/AppFlowy-with-AppFlowy-Cloud-Build/releases) page.
+* **Install and Launch**: Install the downloaded AppFlowy application and open it.
 
 ### Step 4: Configure the AppFlowy Application
-- **Initial Setup**: In the AppFlowy application, click on 'Quick Start'.
 
-  ![Quick Start](../assets/quick_start.png)
+*   **Initial Setup**: In the AppFlowy application, click on 'Quick Start'.
 
-- **Cloud Settings**: Go to the `Settings` page, select `Cloud Setting` from the sidebar, and choose `Supabase` as your cloud provider.
+    ![Quick Start](../assets/quick\_start.png)
+* **Cloud Settings**: Go to the `Settings` page, select `Cloud Setting` from the sidebar, and choose `Supabase` as your cloud provider.
+*   **Enter Details**: Fill in your Supabase server's `url` and `anon key`, then click `Restart` to apply the new settings.
 
-- **Enter Details**: Fill in your Supabase server's `url` and `anon key`, then click `Restart` to apply the new settings.
-
-  ![Fill Supabase Cloud](fill_supabase_cloud.png)
+    ![Fill Supabase Cloud](fill\_supabase\_cloud.png)
 
 ### Step 5: Login to Your Account
-- **User Settings**: Access the `Setting` page in the AppFlowy application and choose `User` from the sidebar.
 
-  ![User Settings](../assets/login_page.png)
+*   **User Settings**: Access the `Setting` page in the AppFlowy application and choose `User` from the sidebar.
+
+    ![User Settings](../assets/login\_page.png)
 
 By following these steps, you'll be able to successfully set up and start using AppFlowy with Supabase as your backend.
 
