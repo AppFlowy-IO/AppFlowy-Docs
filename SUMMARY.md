@@ -103,6 +103,8 @@
   * [💛 Submitting Code](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/README.md)
     * [🏦 Setting Up Your Repositories](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/setting-up-your-repositories.md)
     * [⤴ Submitting your first Pull Request](essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/submitting-your-first-pull-request.md)
+  * [🤟 Coding Standards and Practices](documentation/software-contributions/coding-standards-and-practices/README.md)
+    * [👽 Rust Backend](documentation/software-contributions/coding-standards-and-practices/rust-backend.md)
 * [🚀 AppFlowy](documentation/appflowy/README.md)
   * [👾 How to contribute to AppFlowy](documentation/appflowy/draft-how-to-contribute-to-appflowy.md)
   * [🏗 Building from Source](documentation/appflowy/from-source/README.md)
