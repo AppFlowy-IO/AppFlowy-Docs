@@ -17,7 +17,7 @@ Find the latest version on our [Github Release](https://github.com/AppFlowy-IO/A
 
 Once you've chosen your platform, download the appropriate package from our GitHub repository. Click on the link provided for your operating system to access the download page.
 
-### Step 3: Instal AppFlowy
+### Step 3: Install AppFlowy
 
 If you downloaded an executable, open it up and follow the instructions shown on screen to complete the installation. Depending on your platform, there might be more/less steps.
 
