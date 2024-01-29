@@ -1,0 +1,24 @@
+@startuml Upload image
+title Upload image
+Actor user
+[-> Frontend
+Frontend -> Backend : 1.upload image event
+Backend -> Frontend : 2.return image remote url
+note right
+Because it requires to return the remote url immediately. Let's say the id of the image call file_id.
+ it is calculated by the image content. check the put_blob implementation of the BucketStorage in the appflowy cloud.
+end note
+Frontend -> Frontend: 3.catch the image with specified url
+note left
+Using cache package(like https://pub.dev/packages/cached_network_image)
+to cache the image.
+end note
+Backend -> AppFlowyCloud : 4.compress image and schedule a upload task.
+note left
+It might requires a global task queue to handle the uploading tasks. When AppFlowy
+launch, it will resume the task queue.
+end note
+AppFlowyCloud -> S3: 5.upload image to S3
+S3 -> AppFlowyCloud
+AppFlowyCloud -> Backend : 6.upload success
+@enduml
