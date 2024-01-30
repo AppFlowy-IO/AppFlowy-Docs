@@ -95,19 +95,19 @@ You should fork the code instead if you wish to submit code to AppFlowy. You wil
 {% tabs %}
 {% tab title="Ubuntu" %}
 ```bash
-sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip libkeybinder-3.0-dev
+sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip libkeybinder-3.0-dev git
 ```
 {% endtab %}
 
 {% tab title="Fedora" %}
 ```bash
-sudo dnf install sqlite-devel keybinder3-devel clang cmake ninja-build openssl-devel
+sudo dnf install sqlite-devel keybinder3-devel clang cmake ninja-build openssl-devel git
 ```
 {% endtab %}
 
 {% tab title="Arch" %}
 ```bash
-sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip libkeybinder3 xdg-user-dirs
+sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip libkeybinder3 xdg-user-dirs git
 ```
 {% endtab %}
 {% endtabs %}
