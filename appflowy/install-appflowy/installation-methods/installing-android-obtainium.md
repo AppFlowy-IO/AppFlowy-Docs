@@ -1,29 +1,31 @@
 # Obtainium
 
-Getting the latest AppFlowy releases for Android from the GitHub releases page via [Obtainium](https://github.com/ImranR98/Obtainium)
+Easily access the latest AppFlowy releases for Android directly from GitHub using Obtainium.
 
 ## Install Obtainium
 
-Download and install the latest APK release of Obtainium from the official GitHub page: [Releases](https://github.com/ImranR98/Obtainium/releases). Further updates of Obtainium are done via Obtainium itself.
+1. **Download:** Obtain the latest Obtainium APK from the [official GitHub releases page](https://github.com/ImranR98/Obtainium/releases).
+2. **Installation:** Install the downloaded APK on your Android device. Subsequent updates for Obtainium can be done within the app itself.
 
-{% hint style="info" %}
-If you add multiple apps in Obtainium you might hit the API limits. In this case you can add a GitHub personal access token to Obtainium in the "Settings" menu. 
-{% endhint %}
+> [!NOTE] 
+> Adding multiple apps in Obtainium may lead to hitting the GitHub API limits. To avoid this, you can add a GitHub personal access token in the "Settings" menu.
 
 ## Install AppFlowy
 
-To add AppFlowy to Obtainium copy the official AppFlowy repository URL: `https://github.com/AppFlowy-IO/AppFlowy`. Open Obtainium and select "Add App" and insert the repository URL into the field "App Source URL", keep the default configuration and tap on "Add". 
+Follow these steps to add AppFlowy to Obtainium:
 
-<figure><img src="../../../.gitbook/assets/obtainium_add_app.png" alt=""><figcaption></figcaption></figure>
+1. **Copy Repository URL:** Get the official AppFlowy repository URL: `https://github.com/AppFlowy-IO/AppFlowy`.
+2. **Add in Obtainium:** Open Obtainium, go to "Add App", and paste the URL into "App Source URL". Use the default configuration and tap "Add".
 
-Afterwards you will be redirected to the App information view:
+![Adding App in Obtainium](../../../.gitbook/assets/obtainium_add_app.png)
 
-<figure><img src="../../../.gitbook/assets/obtainium_install_appflowy.png" alt=""><figcaption></figcaption></figure>
+3. **Install AppFlowy:** You will be directed to the App information view. Tap "Install" to initiate the installation of AppFlowy.
 
-There you can tap on "Install" to install AppFlowy. Obtainium will check for new releases every 6 hours by default and offers updating AppFlowy when a new release is present. 
+![AppFlowy Installation Screen](../../../.gitbook/assets/obtainium_install_appflowy.png)
 
-<figure><img src="../../../.gitbook/assets/obtainium_app_info.png" alt=""><figcaption></figcaption></figure>
+Obtainium automatically checks for new releases every 6 hours and notifies you about updates for AppFlowy.
 
-{% hint style="info" %}
-Please check your battery saver settings on Android if it does not check automatically for updates or stops doing so. At any time you can manually refresh by pulling down the App list or the App information view.
-{% endhint %}
+![App Information View in Obtainium](../../../.gitbook/assets/obtainium_app_info.png)
+
+> [!NOTE] 
+> Ensure your Android battery saver settings don't interfere with automatic updates. You can also manually refresh the App list or the App information view to check for updates.
