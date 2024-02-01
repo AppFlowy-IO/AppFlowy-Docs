@@ -2,7 +2,7 @@
 
 This code map introduces the folder hierarchy of AppFlowy.
 
-1. **`app_flowy`** : The flutter working directory, includes all the Dart code of AppFlowy.
+1. **`appflowy_flutter`** : The flutter working directory, includes all the Dart code of AppFlowy.
    1.  **`assets`**:
 
        The directory contains all the resources that AppFlowy uses.
