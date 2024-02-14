@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+'skinparam linetype polyline
+
+abstract class Index
+
+Document --> Observer: Changes
+Folder --> Observer: Changes
+Database --> Observer: Columns,Rows Changes
+
+Observer --> Index
+
+Index <|-- SQLiteIndex
+Index <|-- LocalIndex
+note right
+https://docs.rs/tantivy/latest/tantivy/
+https://github.com/lnx-search/lnx
+end note
+Index <|-- RemoteIndex
+@enduml
