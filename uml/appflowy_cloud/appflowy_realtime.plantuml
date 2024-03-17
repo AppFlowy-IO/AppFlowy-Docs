@@ -1,63 +1,79 @@
-@startuml
-left to right direction
-
-component AppFlowyCloud
-component AppFlowyWebSocket
-
-component CollaborateServer {
-    [Realtime] 
-    [Store]
-}
-
-database Redis {
-}
-
-database PostgresDatabase {
-}
-
-component LoadBalancer{
-}
-
-LoadBalancer --> AppFlowyCloud
-LoadBalancer --> AppFlowyWebSocket
-LoadBalancer --> CollaborateServer
-
-AppFlowyCloud --> Redis
-AppFlowyCloud --> PostgresDatabase
-
-AppFlowyWebSocket --> Redis : message queue
-
-Store <..> Redis : message queue
-Store --> PostgresDatabase
-
-@enduml
 
 @startuml
 left to right direction
-
+component WebSocketServer
 component CollaborateServer1 {
-    [Realtime] as R1
+    [Collab] as R1
     [Store1] as S1
 }
 
 
 component CollaborateServerN {
-    [Realtime] as RN
+    [Collab] as RN
     [Store] as SN
 }
 
-database Redis {
+database "Redis" as Redis {
+    [Stream] as stream
 }
 
-database PostgresDatabase {
+database CollabDatabase {
+    [History]
+    [Postgres] as db
 }
 
-LoadBalancer --> AppFlowyWebSocket
-AppFlowyWebSocket --> Redis : message queue
+LoadBalancer --> WebSocketServer: WebSocket\n(Sticky Session)
+WebSocketServer --> R1
+WebSocketServer --> RN
 
-S1 <..> Redis : message queue1
-S1 --> PostgresDatabase
+R1 <..> S1: persistence
+RN <..> SN: persistence
 
-SN <..> Redis : message queue n
-RN --> PostgresDatabase
+R1 <..> stream :Publish/Ack\nSubscribe
+S1 -d-> CollabDatabase : Persistence
+
+RN <..> stream : Publish/Ack\nSubscribe
+SN -d-> CollabDatabase: Persistence
+@enduml
+
+@startuml
+participant User1
+participant User2
+participant "Load Balancer" as LB
+participant "Collab Server 1 [Collab]" as CS1
+participant "Collab Server 2 [Collab]" as CSN
+participant "Redis [Stream]" as Redis
+participant "CollabDatabase" as Postgres
+participant "WebSocket" as WS
+
+== User Open ==
+User1 -> LB : Open Document
+LB -> CS1 : Forward Open\n(WebSocket, Sticky Session)
+CS1 -> Postgres : Load Document
+activate Postgres
+deactivate Postgres
+
+== User Update ==
+User1 -> WS : 1. Update Document
+WS -> Redis : 2. Publish Update
+
+activate Redis
+Redis -> CS1 : 2.1 Notify Update\n(Subscribe)
+deactivate Redis
+CS1 -> CS1 : Process Update
+CS1 -> Postgres : Persist Update
+activate Postgres
+deactivate Postgres
+
+== Multiple Instance Sync ==
+Redis -> CSN : 2.2 Notify Update\n(Subscribe)
+CSN -> CSN : Process Update
+CSN --> WS: 2.3 Notify Update
+WS --> User2: 2.4 Send Update\n(WebSocket)
+CSN -> Postgres : Persist Update
+activate Postgres
+deactivate Postgres
+
+
+
 @enduml
