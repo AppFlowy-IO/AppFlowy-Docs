@@ -1,0 +1,63 @@
+@startuml
+left to right direction
+
+component AppFlowyCloud
+component AppFlowyWebSocket
+
+component CollaborateServer {
+    [Realtime] 
+    [Store]
+}
+
+database Redis {
+}
+
+database PostgresDatabase {
+}
+
+component LoadBalancer{
+}
+
+LoadBalancer --> AppFlowyCloud
+LoadBalancer --> AppFlowyWebSocket
+LoadBalancer --> CollaborateServer
+
+AppFlowyCloud --> Redis
+AppFlowyCloud --> PostgresDatabase
+
+AppFlowyWebSocket --> Redis : message queue
+
+Store <..> Redis : message queue
+Store --> PostgresDatabase
+
+@enduml
+
+@startuml
+left to right direction
+
+component CollaborateServer1 {
+    [Realtime] as R1
+    [Store1] as S1
+}
+
+
+component CollaborateServerN {
+    [Realtime] as RN
+    [Store] as SN
+}
+
+database Redis {
+}
+
+database PostgresDatabase {
+}
+
+LoadBalancer --> AppFlowyWebSocket
+AppFlowyWebSocket --> Redis : message queue
+
+S1 <..> Redis : message queue1
+S1 --> PostgresDatabase
+
+SN <..> Redis : message queue n
+RN --> PostgresDatabase
+@enduml

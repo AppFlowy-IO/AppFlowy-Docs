@@ -1,0 +1,34 @@
+@startuml
+'left to right direction
+
+package "AppFlowyCloud" {
+    [Index Scheduler] as IndexS
+    [Index Documents] as IndexD
+    node "Embedding Model" {
+        [OpenAI]
+        [HuggingFace]
+    }
+}
+
+database "Vector Database" as vDB
+
+package "Langchain"  {
+    [Retriever] as retriever
+}
+
+IndexD --> IndexS: 1. Indexing content
+IndexS --> "Embedding Model": 2. Generating Embeddings
+IndexS -r-> vDB: 3. Writing Embeddings
+retriever -r-> vDB: Retrieving Embeddings
+@enduml
+
+@startuml
+actor User
+participant "AppFlowyCloud" as App
+participant "Langchain" as Langchain
+
+User -> App: 1. HTTP Request
+App -> Langchain: 2. gRPC
+Langchain -> App: 3. gRPC
+App -> User: 4. HTTP Response
+@enduml
