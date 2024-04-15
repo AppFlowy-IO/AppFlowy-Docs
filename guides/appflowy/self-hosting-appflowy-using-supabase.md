@@ -1,10 +1,6 @@
----
-description: This article covers
----
-
 # 🆓 Self-hosting AppFlowy for free Using Supabase
 
-
+### <mark style="color:red;">**We have sunset Supabase as one of the cloud options since v0.5.3. You can get more context from**</mark> [<mark style="color:red;">**this PR**</mark>](https://github.com/AppFlowy-IO/AppFlowy/pull/5069)<mark style="color:red;">**.**</mark>
 
 <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption><p>AppFlowy Self-hosted</p></figcaption></figure>
 
