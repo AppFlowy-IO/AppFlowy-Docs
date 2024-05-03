@@ -1,4 +1,4 @@
-# ☎ Translate AppFlowy
+# ☎️ Translate AppFlowy
 
 We'd like AppFlowy to be usable by people from all over the globe. You can help us reach that goal by contributing to our translation efforts. See below on how to fill out missing translations, modify existing translations, or add a language that isn't supported yet.
 
@@ -8,30 +8,24 @@ We'd like AppFlowy to be usable by people from all over the globe. You can help 
 
 1. Open the [inlang-editor](https://inlang.com/editor/github.com/AppFlowy-IO/AppFlowy)
 2. Edit translations (filter & search can help)
-3. Run `flutter pub run easy_localization:generate -S assets/translations/`
-4. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
+3. From the `frontend` directory, run `sh ./scripts/code_generation/language_files/generate_language_files.sh` on Linux and macOS, or `.\scripts\code_generation\language_files\generate_language_files.cmd` on Windows to generate.
+4. Alternatively, run the `AF: Generate Language Task` from VSCode by hitting `F1`, selecting `Tasks: Run Task`, then searching for the task.
 5. Verify that the translation has changed appropriately by compiling and running the app.
 
 ### Directly in the source code
 
-1. Modify the specific translation file located at: `frontend/appflowy_flutter/assets/translations/<language-code>-<country_code>.json`
-2. Run `flutter pub run easy_localization:generate -S assets/translations/`
-3. Run `flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations`
+1. Modify the specific translation file located at: `frontend/resources/translations/<language-code>-<country_code>.json`
+2. From the `frontend` directory, run `sh ./scripts/code_generation/language_files/generate_language_files.sh` on Linux and macOS, or `.\scripts\code_generation\language_files\generate_language_files.cmd` on Windows to generate.
+3. Alternatively, run the `AF: Generate Language Task` from VSCode by hitting `F1`, selecting `Tasks: Run Task`, then searching for the task.
 4. Verify that the translation has changed appropriately by compiling and running the app.
 
 ## Add an Unsupported Language
 
 > Adding new languages from within the inlang editor is not supported yet, but you can add the language and then do the translations in inlang. (Adding via inlang is coming soon)
 
-1. Create a JSON file that contains the translation tokens and values. You can simply copy `frontend/appflowy_flutter/assets/translations/en.json` and edit it from there.
+1. Create a JSON file that contains the translation tokens and values. You can simply copy `frontend/resources/translations/en.json` and edit it from there.
 2. The name of the file should be `<language_code>-<country_code>.json`, where `language_code` follows the [ISO-639-1 standard](https://en.wikipedia.org/wiki/List\_of\_ISO\_639-1\_codes) and the `country_code` is a valid [ISO3166 alpha2 country code](https://www.iso.org/obp/ui/#search/code/). For example, Spanish in Venezuela would be `es-VE.json`. If the language doesn't change much between countries that use it, you can simply use the language code instead, e.g. `pl.json`.
-3.  Run the following commands from `frontend/appflowy_flutter`:\
-
-
-    ```
-    flutter pub run easy_localization:generate -S assets/translations/
-    flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations -s en.json
-    ```
+3. From the `frontend` directory, run `sh ./scripts/code_generation/language_files/generate_language_files.sh` on Linux and macOS, or `.\scripts\code_generation\language_files\generate_language_files.cmd` on Windows to generate.
 4. Alternatively, run the `AF: Generate Language Task` from VSCode by hitting `F1`, selecting `Tasks: Run Task`, then searching for the task.
 5.  In `frontend/appflowy_flutter/lib/startup/tasks/app_widget.dart`, search for the `InitAppWidgetTask` class and add the new language (e.g. `Locale('en', 'IN')`) to the `supportedLocales` list :\
 
