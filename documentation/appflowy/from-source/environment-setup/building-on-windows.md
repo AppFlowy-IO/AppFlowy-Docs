@@ -66,6 +66,20 @@ flutter doctor
 .\rustup-init.exe --default-toolchain stable --default-host x86_64-pc-windows-msvc -y
 ```
 
+It is a good idea to check your rustc version after this step, and compare it to the current supported one in AppFlowy. Run the command:
+
+```
+rustup --version
+```
+
+Look for  `rustc 1.77.2` - You can find the supported version [here](https://github.com/AppFlowy-IO/AppFlowy/blob/0.5.6/.github/workflows/flutter\_ci.yaml#L29).
+
+In case you need to checkout/downgrade your version, you can replace the version number in this command:
+
+```
+rustup default 1.77.2
+```
+
 * Install cargo make
 
 {% hint style="info" %}
@@ -95,6 +109,11 @@ Add `C:\Windows\System32` to the PATH to prevent Powershell build commands crash
   * Run installer and install Openssl where you want
   * Add `bin` folder to the PATH (ie: `G:\Compilation\OpenSSL\bin`)
   * Create a new User variable (using the same window as the PATH editor): Name it `OPENSSL_DIR` with same value as bin folder (ie `G:\Compilation\OpenSSL\bin`)
+
+_Note:_ In cse the OpenSSL link resolves to a dead download, you can install OpenSSL from this [alternative source](https://slproweb.com/download/Win64OpenSSL-1\_1\_1w.exe). (From [https://slproweb.com/](https://slproweb.com/products/Win32OpenSSL.html))
+
+
+
 * Install perl
   * Download Perl for Windows (called Strawberry perl) from [https://strawberryperl.com/](https://strawberryperl.com/) (choose x64 installer)
   * Run installer
