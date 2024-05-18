@@ -39,7 +39,7 @@ Now it is time to upload this Dracula theme.
 
 <figure><img src="../.gitbook/assets/upload_theme_dialog.png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Choose the **Dracula.flowy\_plugin** folder and click '**Choose**'
+3. Choose the **Dracula.flowy\_plugin** folder which contains the **Dracula.light.json** & **Dracula.dark.json** and click '**Choose**'
 
 <figure><img src="../.gitbook/assets/choose_theme_file.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -54,6 +54,8 @@ Once you have successfully uploaded the theme file, navigate to the theme option
 <figure><img src="../.gitbook/assets/select_theme.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Requirements for Custom Theme Files <a href="#requirements-for-custom-theme-files" id="requirements-for-custom-theme-files"></a>
+
+> Make sure you have added **all** the colors from `FlowyColorScheme` in your JSON files.
 
 * Name your theme folder ending with `.flowy_plugin`.
 * Include both `.light.json` and `.dark.json` files in the folder for light and dark themes.
@@ -77,7 +79,7 @@ Given the extensive number of color values required in theme file creation, a pr
 
 Here are three sample theme files for you to experiment with. By altering specific values within one of these samples, you can craft your unique custom theme with greater ease.
 
-{% file src="../.gitbook/assets/Base.flowy_plugin.zip" %}
+{% file src="../.gitbook/assets/Base.flowy_plugin (2).zip" %}
 
 {% file src="../.gitbook/assets/Barbie.flowy_plugin.zip" %}
 
