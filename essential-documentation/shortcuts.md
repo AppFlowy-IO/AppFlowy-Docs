@@ -1,4 +1,4 @@
-# ⌨ Shortcuts
+# ⌨️ Shortcuts
 
 ## ⌨ Shortcuts Guide
 
@@ -69,7 +69,25 @@ You may scroll or use `CTRL` (or `⌘`)`+F` to search for what you are looking f
 
 <table><thead><tr><th width="197">Description</th><th width="200">Key#1</th><th width="202">Key#2</th><th>Key #3</th></tr></thead><tbody><tr><td>Show or Hide Sidebar</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>\</code></td><td></td></tr><tr><td>Toggle Theme Mode (Light/Dark)</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>Shift</code></td><td><code>L</code></td></tr></tbody></table>
 
-##
+
+
+## Kanban
+
+Kanban shortcuts can't be personalized through Settings. [Request](https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose) it on GitHub.
+
+| Description                                                         | Key#1         | Key#2      |
+| ------------------------------------------------------------------- | ------------- | ---------- |
+| Navigate cards (Up)                                                 | `↑`           |            |
+| Navigate cards (Down)                                               | `↓`           |            |
+| Expand card selection from one to more                              | `Shift`       | `↑` or `↓` |
+| Deselecting cards                                                   | `Esc`         |            |
+| Delete selected cards                                               | `← Backspace` |            |
+| Open as a page                                                      | `Enter`       |            |
+| Edit the title of the selected card                                 | `E`           |            |
+| Add a new card when one card is selected                            | `N`           |            |
+| Create a new card below the current one when a card is being edited | `Shift`       | `Enter`    |
+| Move the card to the list to the left                               | `,`           |            |
+| Move the card to the list to the right                              | `.`           |            |
 
 ## 🔧 Customizing Shortcuts
 
