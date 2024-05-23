@@ -118,14 +118,14 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 #### **Install flutter (three different methods):**
 
 {% hint style="danger" %}
-Flutter version 3.19.0 is the recent supported stable release used for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
+Flutter version 3.22.0 is the recent supported stable release used for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
 {% endhint %}
 
 * **Method 1:** Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
 * **Method 2:** You can use the code below to install flutter manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git --branch 3.19.0
+git clone https://github.com/flutter/flutter.git --branch 3.22.0
 cd flutter
 echo -e "\nexport PATH=\$PATH:"`pwd`"/bin" >> ~/.bashrc
 source ~/.bashrc
@@ -159,9 +159,9 @@ If you are not using **bash**, check the official [asdf guide](https://asdf-vm.c
 ```bash
 cd AppFlowy
 asdf plugin-add flutter
-asdf install flutter 3.19.0-stable
+asdf install flutter 3.22.0-stable
 rm -rf .tool-versions
-asdf local flutter 3.19.0-stable
+asdf local flutter 3.22.0-stable
 cd ..
 ```
 

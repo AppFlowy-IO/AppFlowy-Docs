@@ -3,7 +3,7 @@
 We have set up instructions for Linux, MacOS, and Windows.
 
 {% hint style="warning" %}
-Flutter version 3.19.0 is the version that AppFlowy is built and tested on. If you installed Flutter before, make sure the version matches AppFlowy's. And don't forget to run the following command to activate the protoc plugin.
+Flutter version 3.22.0 is the version that AppFlowy is built and tested on. If you installed Flutter before, make sure the version matches AppFlowy's. And don't forget to run the following command to activate the protoc plugin.
 
 ```dart
 dart pub global activate protoc_plugin 20.0.1
