@@ -1,6 +1,5 @@
-# 🌐 Web Setup
 
-<h1 align="center" style="margin:0"> AppFlowy Web </h1>
+
 <div align="center">
   <img src="https://img.shields.io/badge/React-v18.2.0-blue"/>
   <img src="https://img.shields.io/badge/TypeScript-v4.9.5-blue"/>
