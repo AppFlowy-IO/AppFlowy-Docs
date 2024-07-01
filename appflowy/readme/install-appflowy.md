@@ -19,7 +19,7 @@ Once you've chosen your platform, download the appropriate package from our GitH
 
 ### Step 3: Install AppFlowy
 
-If you downloaded an executable, open it up and follow the instructions shown on screen to complete the installation. Depending on your platform, there might be more/less steps.
+If you downloaded an executable, open it up and follow the instructions shown on the screen to complete the installation. Depending on your platform, there might be more/less steps.
 
 In the case you chose to download an archive, simply extract the contents and run the executable `AppFlowy`!
 
@@ -29,4 +29,4 @@ After successful installation, launch AppFlowy and start enjoying the benefits o
 
 That's it! You're now ready to experience the productivity and organization that AppFlowy brings to your daily tasks.
 
-If you encounter any issues during installation or have questions, do not hesitate to [reach out for hep](../../essential-documentation/get-started/how-to-get-help.md)!
+If you encounter any issues during installation or have questions, do not hesitate to [reach out for help](../../essential-documentation/get-started/how-to-get-help.md)!
