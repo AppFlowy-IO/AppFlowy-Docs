@@ -72,6 +72,7 @@
       * [Tauri](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend-tauri/README.md)
         * [🗺️ CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend-tauri/codemap.md)
       * [Web](essential-documentation/contribute-to-appflowy/architecture/frontend/web/README.md)
+        * [🌟 Design Philosophy](essential-documentation/contribute-to-appflowy/architecture/frontend/web/README.md)
         * [🗺️ CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/web/codemap.md)
       * [Flutter](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/README.md)
         * [🗺️ Project Structure: CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/frontend/codemap.md)
