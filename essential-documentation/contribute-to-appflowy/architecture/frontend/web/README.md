@@ -50,6 +50,7 @@ AppFlowy Web is architected around three key modules, ensuring efficient data ha
 3. **Data Rendering**: Builds and renders the final user interface. Utilizing React, this module constructs responsive UIs that dynamically update based on user interactions and data changes.
 
 These modules work together to facilitate a smooth data flow from acquisition to presentation, optimizing user experience and system responsiveness.
+
 ![img.png](img.png)
 
 ### 🔄 Data Fetching
@@ -67,7 +68,9 @@ The adoption of WASM, despite its potential to increase bundle sizes, reflects a
 The Data Processing module in AppFlowy Web links the data fetching and rendering stages, focusing on preparing data for use:
 
 1. **Service Layer Connection**: Connects to the fetching module and implements caching strategies to speed up data availability for rendering. The service provides access to the original data (YDoc) for the rendering layer.
-   ![img_1.png](img_1.png)
+   
+![img_1.png](img_1.png)
+
 2. **Data Manipulation Methods**: Raw data obtained from the service is not immediately suitable for rendering and requires processing:
 
     - **Publish Provider**: Manages publishing-related data operations, providing interfaces and hooks for data access.
