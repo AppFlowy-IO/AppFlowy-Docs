@@ -26,11 +26,6 @@ In this project, we implement a three-tier architecture: **Data Fetching Layer**
 
 Our goal with this architecture is to create a development environment that not only meets the current technical demands but also remains manageable and enjoyable for our team. By adhering to these principles, we aim to produce a robust system with fewer bugs and higher overall productivity.
 
-
-## 🏗️ Project Structure
-
-* [🗺️ CodeMap](essential-documentation/contribute-to-appflowy/architecture/frontend/web/codemap.md)
-
 ## 🛠️ Technology Stack
 
 - **React.js**: A JavaScript library for building user interfaces, React.js is the foundation of AppFlowy Web's frontend development. It provides a robust framework for creating interactive and dynamic web applications.
@@ -50,6 +45,7 @@ AppFlowy Web is architected around three key modules, ensuring efficient data ha
 3. **Data Rendering**: Builds and renders the final user interface. Utilizing React, this module constructs responsive UIs that dynamically update based on user interactions and data changes.
 
 These modules work together to facilitate a smooth data flow from acquisition to presentation, optimizing user experience and system responsiveness.
+
 ![img.png](img.png)
 
 ### 🔄 Data Fetching
@@ -67,7 +63,9 @@ The adoption of WASM, despite its potential to increase bundle sizes, reflects a
 The Data Processing module in AppFlowy Web links the data fetching and rendering stages, focusing on preparing data for use:
 
 1. **Service Layer Connection**: Connects to the fetching module and implements caching strategies to speed up data availability for rendering. The service provides access to the original data (YDoc) for the rendering layer.
-   ![img_1.png](img_1.png)
+
+![img_1.png](img_1.png)
+
 2. **Data Manipulation Methods**: Raw data obtained from the service is not immediately suitable for rendering and requires processing:
 
     - **Publish Provider**: Manages publishing-related data operations, providing interfaces and hooks for data access.
