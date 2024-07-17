@@ -67,7 +67,7 @@ You may scroll or use `CTRL` (or `⌘`)`+F` to search for what you are looking f
 
 ## App
 
-<table><thead><tr><th width="197">Description</th><th width="200">Key#1</th><th width="202">Key#2</th><th>Key #3</th></tr></thead><tbody><tr><td>Show or Hide Sidebar</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>\</code></td><td></td></tr><tr><td>Toggle Theme Mode (Light/Dark)</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>Shift</code></td><td><code>L</code></td></tr></tbody></table>
+<table><thead><tr><th width="197">Description</th><th width="200">Key#1</th><th width="202">Key#2</th><th>Key #3</th></tr></thead><tbody><tr><td>Open the Workspace Search</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>P</code></td><td></td></tr><tr><td>Show or Hide Sidebar</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>\</code></td><td></td></tr><tr><td>Toggle Theme Mode (Light/Dark)</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>Shift</code></td><td><code>L</code></td></tr><tr><td>Open Find and Replace dialog (in edit mode doc)</td><td><code>CTRL</code> (or <code>⌘</code> on MacOS)</td><td><code>F</code></td><td></td></tr></tbody></table>
 
 
 
@@ -98,20 +98,20 @@ For customizing shortcut keys, go through the following steps:\
 2.  Click Shortcuts to see a list of current shortcuts and their respective key commands\
 
 
-    <figure><img src="../.gitbook/assets/Screenshot (25).png" alt="" width="563"><figcaption><p>click shortcuts in settings</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Screenshot 2024-07-18 002008.png" alt="Open the Shortcuts tab in AppFlowy Settings" width="563"><figcaption><p>click shortcuts in settings</p></figcaption></figure>
 
 
-3.  Click a keybinding of whichever command you want to update\
+3.  Hover on the command you want to customize and click the edit icon button which appears upon hovering.\
 
 
-    <figure><img src="../.gitbook/assets/Screenshot (26).png" alt="" width="563"><figcaption><p>click the keybinding</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Screenshot (125).png" alt="Hover on any command you want to edit and click the edit button" width="563"><figcaption><p>click the edit button</p></figcaption></figure>
 
 
-4.  Press the desired keys that you want and press Enter for submitting the shortcut\
+4.  Press the desired keys that you want and press `Enter` for submitting the shortcut\
 
 
-    <figure><img src="../.gitbook/assets/image (28).png" alt="" width="563"><figcaption><p>press desired key combination</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Screenshot 2024-07-18 002435.png" alt="Type your desired key command and press the Enter key to customize this shortcut" width="563"><figcaption><p>press desired key combination and hit enter</p></figcaption></figure>
 
 
-5. 🥳 Wo hoo! You have customized a shortcut.
+5. 🥳 Wo hoo! You have customized a shortcut.&#x20;
 
