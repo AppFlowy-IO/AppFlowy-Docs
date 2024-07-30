@@ -17,14 +17,14 @@ One of their well-known projects is "Stable Diffusion," a text-to-image AI model
 * You’ll need an StabilityAI account and an API key. You can sign up [here](https://platform.stability.ai/account/keys). It offers a FREE trial.
 * After creating an account, you can create a secret API key.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 * Copy the secret key --> Go to Settings --> Users --> StabilityAI Key --> Enter your API key
 * Restart AppFlowy
 * Type the slash `/image` command and click the tab "Generate image from Stability AI"
 * Enter your prompt and search
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the image you like&#x20;
 * The image will be automatically inserted into your document

@@ -21,7 +21,7 @@ Every row in a database is a page. You can open a row as a page to edit properti
 
 * Hover over a row and click the `Open as a Page` button
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 * You will see all the properties organized at the top.
   * Click on the property name to edit it or its type.
@@ -74,7 +74,7 @@ View only the rows that fit certain criteria.
 
 * Click `Filter` at the top right of your table.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Choose which property you want to filter by from the dropdown.
 
@@ -82,12 +82,12 @@ View only the rows that fit certain criteria.
 
 * Choose the condition you want to use, i.e. `is`, `is not`, etc.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Define the value of the property you want to see, i.e. a specific tag or contains certain words.
 * You can add multiple filters.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Click `Filter` again to hide or show filters
 

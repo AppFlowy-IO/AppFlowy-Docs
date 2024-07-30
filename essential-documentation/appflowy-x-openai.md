@@ -25,7 +25,7 @@ OpenAI is a research organization, known for developing several cutting-edge AI 
 1. You’ll need an [OpenAI](https://openai.com/) account and an API key. You can sign up [here](https://platform.openai.com/signup). It offers a FREE trial.
 2. After creating an account, you can create a secret API key [here](https://platform.openai.com/account/api-keys).
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Copy the secret key --> Go to Settings --> Users --> OpenAI Key --> Enter your API key
 

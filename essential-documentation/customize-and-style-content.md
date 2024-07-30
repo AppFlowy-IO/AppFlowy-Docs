@@ -34,13 +34,13 @@ Find a full list of [Markdown](customize-and-style-content.md#markdown) styling 
 
 <mark style="color:red;">Color code</mark> your text or <mark style="background-color:purple;">highlight</mark> in your favorite color from the same menu you've used to bold, italic, underline, or strikethrough.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Callout
 
 Use callouts to highlight specific text or include additional information. Maybe you want to add tips or actions. Here is what it looks like:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>AppFlowy Callout</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AppFlowy Callout</p></figcaption></figure>
 
 Add a callout:
 

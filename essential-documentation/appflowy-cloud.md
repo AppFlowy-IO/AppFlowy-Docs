@@ -1,4 +1,4 @@
-# ☁ AppFlowy Cloud
+# ☁️ AppFlowy Cloud
 
 ## It's on a private beta mode. You have the chance to be among the first to experience it. Sign up [here](https://survey.appflowy.io/private-beta).
 
@@ -42,7 +42,7 @@ To enable end-to-end encryption, navigate to Settings -> Sync Settings -> Toggle
 
 As of now, AppFlowy saves the key on your local disk. If you delete AppFlowy's data folder, you will lose the encryption key, making it impossible to decrypt your data
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
