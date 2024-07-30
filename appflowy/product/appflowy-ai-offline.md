@@ -5,7 +5,7 @@ description: >-
   AppFlowy AI.
 ---
 
-# AppFlowy AI Offline
+# 🌈 AppFlowy AI Offline
 
 Currently, AppFlowy AI offline support is available only on macOS. Support for Windows and Linux is still in progress.
 

@@ -62,7 +62,7 @@
     * [Math Equations](essential-documentation/appflowy-plugins/math-equations.md)
     * [Cover](essential-documentation/appflowy-plugins/cover.md)
     * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
-  * [AppFlowy AI Offline](appflowy/product/appflowy-ai-offline.md)
+  * [🌈 AppFlowy AI Offline](appflowy/product/appflowy-ai-offline.md)
 
 ## Documentation
 
