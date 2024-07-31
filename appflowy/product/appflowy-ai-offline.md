@@ -9,6 +9,14 @@ description: >-
 
 Currently, AppFlowy AI offline support is available only on macOS. Support for Windows and Linux is still in progress.
 
+## Step 1: Install
+
+Start downloading AppFlowy AI by clicking "download"
+
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+
+### macOS
+
 1. Open the AppFlowy AI application.
 2. Click on the "Install" button.
 3. Provide administrator access when prompted.
@@ -20,9 +28,17 @@ Currently, AppFlowy AI offline support is available only on macOS. Support for W
 
 
 
+## Step 2: Download Model
 
+Select the model you want to use, then click the "Download" button.
 
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
+After the model is downloaded, you will see this page.
+
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+
+Afterwards, all AI features, including improve writing, AI writer, and chat, will use the local AI model.
 
 
 
