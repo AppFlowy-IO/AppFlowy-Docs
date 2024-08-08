@@ -30,18 +30,18 @@ Let's explore how AppFlowy uses Supabase to implement the cloud features.
 
 ## Table of Contents
 
-* [Authentication](self-hosting-appflowy-using-supabase/#authentication)
-  * [Auth Code Walkthrough](self-hosting-appflowy-using-supabase/#auth-code-walkthrough)
-  * [The Authentication Flow In Action](self-hosting-appflowy-using-supabase/#the-authenication-flow-in-action)
-* [Data Storage](self-hosting-appflowy-using-supabase/#data-storage)
-  * [Architectural Design](self-hosting-appflowy-using-supabase/#architectural-design)
-  * [Supabase Implementation](self-hosting-appflowy-using-supabase/#supabase-implementation)
-    * [Database Schema](self-hosting-appflowy-using-supabase/#database-schema)
-    * [DB Code Walkthrough](self-hosting-appflowy-using-supabase/#db-code-walkthrough)
-  * [Database Monitoring With Realtime](self-hosting-appflowy-using-supabase/#database-monitoring-with-realtime)
-    * [Monitoring Code Walkthrough](self-hosting-appflowy-using-supabase/#monitoring-code-walkthrough)
-* [File Storage](self-hosting-appflowy-using-supabase/#file-storage)
-* [Self-Hosting](self-hosting-appflowy-using-supabase/#self-hosting)
+* [Authentication](#authentication)
+  * [Auth Code Walkthrough](#auth-code-walkthrough)
+  * [The Authentication Flow In Action](#the-authenication-flow-in-action)
+* [Data Storage](#data-storage)
+  * [Architectural Design](#architectural-design)
+  * [Supabase Implementation](#supabase-implementation)
+    * [Database Schema](#database-schema)
+    * [DB Code Walkthrough](#db-code-walkthrough)
+  * [Database Monitoring With Realtime](#database-monitoring-with-realtime)
+    * [Monitoring Code Walkthrough](#monitoring-code-walkthrough)
+* [File Storage](#file-storage)
+* [Self-Hosting](#self-hosting)
 
 ## Authentication
 
