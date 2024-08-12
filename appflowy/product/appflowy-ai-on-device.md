@@ -5,13 +5,21 @@ description: >-
   AppFlowy AI.
 ---
 
-# 🌈 AppFlowy AI Offline
+# 🌈 AppFlowy AI On-device
 
 Currently, AppFlowy AI offline support is available only on macOS. Support for Windows and Linux is still in progress.
 
-## Step 1: Install
+## Install
 
-Start downloading AppFlowy AI by clicking "download"
+### Step 1: Download AppFlowy AI
+
+Start downloading `AppFlowy AI` by clicking 'Download.' `AppFlowy AI` integrates with the AppFlowy application to provide the following features:
+
+* Chat with PDF, Markdown, and TXT files.
+* Chat with AppFlowy documents using the '@' keyword to trigger the mention menu.
+* Enhance writing, fix spelling and grammar, summarize text, and more.
+
+
 
 <figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
@@ -30,15 +38,17 @@ Start downloading AppFlowy AI by clicking "download"
 
 ## Step 2: Download Model
 
-Select the model you want to use, then click the "Download" button.
+If the `AI Settings` page does not reload automatically, exit the page and reopen it. Once on the `AI Settings` page, select the model you want to use, and then click the `Download` button.
 
 <figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-After the model is downloaded, you will see this page.
+After clicking the 'Download' button, it may take about 10 minutes to download the LLM models. Once the download is complete, the model will load automatically. If everything works correctly, you will see the following page
 
 <figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 Afterwards, all AI features, including improve writing, AI writer, and chat, will use the local AI model.
+
+
 
 
 
