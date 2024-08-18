@@ -82,7 +82,7 @@ View only the rows that fit certain criteria.
 
 * Choose the condition you want to use, i.e. `is`, `is not`, etc.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Define the value of the property you want to see, i.e. a specific tag or contains certain words.
 * You can add multiple filters.
