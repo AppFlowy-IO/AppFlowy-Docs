@@ -1,73 +1,67 @@
-# 🪄 AppFlowy + OpenAI
+# 🪄 AppFlowy AI
 
-Bring the power of the next-generation AI into your AppFlowy pages, supercharging productivity!
+### AppFlowy AI is accessible:
 
-OpenAI is a research organization, known for developing several cutting-edge AI systems, such as GPT (Generative Pre-trained Transformer) and DALL-E.
+* Access the most advanced AI models including GPT-4, Claude 3, Mistral 7B, and Llama 3 8B.
+* Allow you to choose your preferred model.
+* Offer local AI models that run directly on your machine for ultimate privacy.
 
-### What are the current functions of OpenAI in AppFlowy?
+### What are the current AI features in AppFlowy?
 
-* **OpenAI Writer**: Ask AI to write anything for you. Let AI draft it for you whenever you're starting something new.
+#### Get answers without tool switching
+
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption><p>AI Chat with PDF, pages, and more</p></figcaption></figure>
+
+* Ask about your pages and uploaded files (in PDF, Markdown, and text formats).
+* Chat about any topic, brainstorm ideas, and find inspiration.
+* Generate summaries across your pages.
+* Analyze meeting notes to generate actionable next steps.
+
+#### Write better, right where you need it.
+
+<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+
+* **AI Writer**: Ask AI to write anything for you. Let AI draft it for you whenever you're starting something new.
 * **Summarize**: Auto-generate a nice summary for an article, your proposal, or anything else.
-* **Fix spelling**: With one click away, catch and fix misspelled words instantly.
+* **Fix spelling & grammar**: With one click away, catch and fix spelling and grammatical errors, enhance the readability and clarity of your text, and provide context-aware suggestions.
 * **Improve Writing**: There is no need to switch between different tools; simply highlight the text and ask AI to quickly transform it into something better and more suitable for the task.
-* **Make longer:** AI will automatically rewrite its response with more copy
+* **Make longer:** AI will automatically rewrite its response with more copy.
 
-### What's coming up next?
 
-* Make a to-do list
-* Make shorter
-* Text-to-image generator
-* Integrate more AI service providers
-* And many more to come!
 
-### How to get started?
+#### Autofill tables, never write a progress update again.
 
-1. You’ll need an [OpenAI](https://openai.com/) account and an API key. You can sign up [here](https://platform.openai.com/signup). It offers a FREE trial.
-2. After creating an account, you can create a secret API key [here](https://platform.openai.com/account/api-keys).
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* AI Summary: Turn overwhelming data into actionable insights.
+*   AI translate: Automatically translate your data into different languages.
 
-3. Copy the secret key --> Go to Settings --> Users --> OpenAI Key --> Enter your API key
+    \
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
-4. Restart AppFlowy
-5. Type the slash `/open` command to use `OpenAI Writer`
+![](<../.gitbook/assets/image (77).png>)
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. Highlight text to trigger the toolbar menu and then click on the 💡 icon to use `Summarize`, `Fix spelling`, and `Improve Writing`.
 
-<figure><img src="../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+### How to switch AI models?
 
-### What are ways I can use OpenAI in AppFlowy?
+Go to Settings -> AI Settings
 
-People who embrace the latest AI technologies will quickly gain an edge.
+<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption><p>choose your preferred AI models</p></figcaption></figure>
 
-1. Get your questions answered instantly within the app
-2. Ask AI to write anything for you and brainstorm ideas
-3. Summarize notes and articles to save time
-4. Fix spelling to polish your writing
 
-<mark style="color:red;">Warning: AI responses can be misleading, inaccurate, or biased.</mark>
 
-### What about privacy?
+### How to enable AI On-device (local AI)?
 
-AppFlowy, the application, sends the encrypted HTTPS requests with data that the user explicitly provided for making OpenAI API calls listed below to only one domain, openai.com. The OpenAI [features](appflowy-x-openai.md#what-are-the-current-functions-of-openai-in-appflowy) only connect to the specified domain: openai.com
+* Require: macOS M1 or newer
+* Go to Settings -> Plan&#x20;
+* Purchase AI On-device add-on\
+  ![](<../.gitbook/assets/image (81).png>)
+* Follow [appflowy-ai-on-device.md](../appflowy/product/appflowy-ai-on-device.md "mention")to enable it.
 
-Here are the OpenAI API calls triggered by our OpenAI [features](appflowy-x-openai.md#what-are-the-current-functions-of-openai-in-appflowy):
 
-* [https://api.openai.com/v1/edits](https://api.openai.com/v1/edits)
-* [https://api.openai.com/v1/completions](https://api.openai.com/v1/completions)
-
-The OpenAI key you provided in `Settings` is stored on your local device where you installed AppFlowy.
-
-Since AppFlowy is 100% open-source, you can confirm our practices via the [codebase.](https://github.com/AppFlowy-IO/AppFlowy)
-
-We encourage AppFlowy users to review how [OpenAI](https://openai.com/) handles their data before using their services.
 
 ### How can I provide feedback or help?
 
 1. You can report bugs and submit feature requests via [GitHub Issues](https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose)
 2. If you would like to get support or create a discussion, please join our [Discord](https://discord.gg/9Q2xaN37tV) server
-3. Please share with us how you benefit from the OpenAI features in AppFlowy on [GitHub Discussions](https://github.com/AppFlowy-IO/AppFlowy/discussions)
