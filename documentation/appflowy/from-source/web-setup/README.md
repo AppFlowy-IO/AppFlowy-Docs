@@ -95,8 +95,6 @@ pnpm run dev
 
 #### Usage
 
-#### Access published views (currently we only support viewing web apps this way)
-
 1. Create a `.env` file in the root of the project and add the following environment variables:
 
 ```bash
@@ -105,12 +103,9 @@ AF_BASE_URL=https://beta.appflowy.cloud
 AF_GOTRUE_URL=https://beta.appflowy.cloud/gotrue
 ```
 
-2. Install CORS Unblock extension in your browser to bypass CORS issues. [Chrome](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino)
-3. Open [http://localhost:3000/854ea6c6-84cc-4710-9779-e704d058f92a/Databases-4443c9c8-1488-45b8-b48a-9ebb459672a2](http://localhost:3000/854ea6c6-84cc-4710-9779-e704d058f92a/Databases-4443c9c8-1488-45b8-b48a-9ebb459672a2) to view the application in your browser.
+2. Install **CORS Unblock** extension in your browser to bypass CORS issues. [Chrome](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino)
+3. Open [http://localhost:3000](http://localhost:3000/) to view the application in your browser.
 
-you can replace the `854ea6c6-84cc-4710-9779-e704d058f92a` with the workspace id and `Databases-4443c9c8-1488-45b8-b48a-9ebb459672a2` with the publish\_name.
-
-> Note: if you use local server, you need to replace the `AF_WS_URL`, `AF_BASE_URL` and `AF_GOTRUE_URL` with your local server url in the `.env` file. And make sure the server is running and you have published the view to your local server.
 
 #### 🚀 Building for Production(Optional)
 
