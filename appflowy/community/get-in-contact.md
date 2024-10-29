@@ -6,7 +6,7 @@ We're thrilled to have you here and can't wait to connect with you. Whether you 
 
 Looking to report a bug, request a feature, or discuss a project in-depth? GitHub is the place to be! Head over to our repository and dive into the issues or discussions. We're always eager to hear your thoughts and collaborate on exciting projects.
 
-[**2. Discord**](https://discord.gg/Hjp2qhS2ZJ)
+[**2. Discord**](https://discord.gg/9Q2xaN37tV)
 
 Fancy some real-time chatting with fellow enthusiasts and our friendly team members? Join our Discord server! It's a vibrant hub for community discussions, troubleshooting, and connecting with like-minded folks.
 
