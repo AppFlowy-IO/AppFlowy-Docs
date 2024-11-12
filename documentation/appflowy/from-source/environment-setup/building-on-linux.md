@@ -2,18 +2,18 @@
 
 **Notes:**
 
-* The following steps are verified on
-  * [x] Lubuntu 20.04 - x86\_64
-  * [x] Linux Mint 20.3 - x86\_64
-  * [ ] Ubuntu 20.04 - aarch64
-  * [x] Ubuntu 22.04 - x86\_64
-  * [ ] Redhat Linux - x86\_64
-  * [x] Fedora 37 - x86\_64
-  * [x] Arch Linux - x86\_64
-  * [ ] Deepin - x86\_64
-  * [ ] Raspberry Pi OS - aarch64
-* You may need to disable hardware 3D acceleration if you are running AppFlowy in a VM. Otherwise, certain GL failures will prevent the app from launching.
-* This guide assumes that you are using the **bash** shell on Linux. You can however, replicate these steps on **zsh** or other alternative Linux terminal shells, with minor alterations.
+- The following steps are verified on
+  - [x] Lubuntu 20.04 - x86_64
+  - [x] Linux Mint 20.3 - x86_64
+  - [ ] Ubuntu 20.04 - aarch64
+  - [x] Ubuntu 22.04 - x86_64
+  - [ ] Redhat Linux - x86_64
+  - [x] Fedora 37 - x86_64
+  - [x] Arch Linux - x86_64
+  - [ ] Deepin - x86_64
+  - [ ] Raspberry Pi OS - aarch64
+- You may need to disable hardware 3D acceleration if you are running AppFlowy in a VM. Otherwise, certain GL failures will prevent the app from launching.
+- This guide assumes that you are using the **bash** shell on Linux. You can however, replicate these steps on **zsh** or other alternative Linux terminal shells, with minor alterations.
 
 {% hint style="warning" %}
 **If you encounter any issues, have a look at** [**Troubleshooting**](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/environment-setup/trouble-shotting) **first. If your issue is not included in the page, please create an** [**issue**](https://github.com/AppFlowy-IO/appflowy/issues/new/choose) **or ask on** [**Discord**](https://discord.gg/9Q2xaN37tV)**.**
@@ -22,7 +22,7 @@
 {% hint style="danger" %}
 **Attention:** There is an issue affecting Ubuntu 22.04, Fedora 37, and PopOS 22.04:
 
-Failed to load dynamic library 'libdart\_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory. The issue can be fixed by installing the required missing libraries:
+Failed to load dynamic library 'libdart_ffi.so': libssl.so.1.1: cannot open shared object file: No such file or directory. The issue can be fixed by installing the required missing libraries:
 
 **For Fedora Workstation:**
 
@@ -53,7 +53,7 @@ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubun
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 ```
 
-If the provided link for Ubuntu & PopOS is expired or returns an error 404, you can search for "libssl1.1\_1.1.1" on the [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
+If the provided link for Ubuntu & PopOS is expired or returns an error 404, you can search for "libssl1.1_1.1.1" on the [page](http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/?C=M;O=D).
 {% endhint %}
 
 ### Step 1: Get the source code
@@ -81,6 +81,7 @@ sudo dnf install git
 # Arch
 sudo pacman -S git
 ```
+
 {% endhint %}
 
 {% hint style="info" %}
@@ -95,21 +96,27 @@ You should fork the code instead if you wish to submit code to AppFlowy. You wil
 
 {% tabs %}
 {% tab title="Ubuntu" %}
+
 ```bash
 sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip libkeybinder-3.0-dev libnotify-dev
 ```
+
 {% endtab %}
 
 {% tab title="Fedora" %}
+
 ```bash
 sudo dnf install sqlite-devel keybinder3-devel clang cmake ninja-build openssl-devel
 ```
+
 {% endtab %}
 
 {% tab title="Arch" %}
+
 ```bash
 sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 unzip libkeybinder3 xdg-user-dirs
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -118,14 +125,14 @@ sudo pacman -S curl base-devel sqlite openssl clang cmake ninja pkg-config gtk3 
 #### **Install flutter (three different methods):**
 
 {% hint style="danger" %}
-Flutter version 3.22.0 is the recent supported stable release used for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
+Flutter version 3.22.3 is the recent supported stable release used for building AppFlowy. Building with the latest stable Flutter release is not tested and might throw errors while building.
 {% endhint %}
 
-* **Method 1:** Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
-* **Method 2:** You can use the code below to install flutter manually on your linux system.
+- **Method 1:** Install flutter according to [https://docs.flutter.dev/get-started/install/linux](https://docs.flutter.dev/get-started/install/linux). Make sure to install flutter in a directory that is appropriate for you.
+- **Method 2:** You can use the code below to install flutter manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git --branch 3.22.0
+git clone https://github.com/flutter/flutter.git --branch 3.22.3
 cd flutter
 echo -e "\nexport PATH=\$PATH:"`pwd`"/bin" >> ~/.bashrc
 source ~/.bashrc
@@ -135,7 +142,7 @@ cd ..
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot%20from%202023-02-27%2013-55-23.png" alt=""><figcaption><p>Image: Installing flutter manually.</p></figcaption></figure>
 
-* **Method 3**: You can also use a runtime version manager like [asdf](https://asdf-vm.com/) or a flutter-specific version manager to install flutter on your system. Assuming you are using the **bash** shell, follow these steps:
+- **Method 3**: You can also use a runtime version manager like [asdf](https://asdf-vm.com/) or a flutter-specific version manager to install flutter on your system. Assuming you are using the **bash** shell, follow these steps:
 
 1. Clone asdf.
 
@@ -159,9 +166,9 @@ If you are not using **bash**, check the official [asdf guide](https://asdf-vm.c
 ```bash
 cd AppFlowy
 asdf plugin-add flutter
-asdf install flutter 3.22.0-stable
+asdf install flutter 3.22.3-stable
 rm -rf .tool-versions
-asdf local flutter 3.22.0-stable
+asdf local flutter 3.22.3-stable
 cd ..
 ```
 
@@ -173,6 +180,7 @@ Some distributions might miss certain packages essential for asdf, such as `jq`,
 ```bash
 sudo apt install jq
 ```
+
 {% endhint %}
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot from 2023-02-27 22-39-23.png" alt=""><figcaption><p>Image: Installing flutter using asdf</p></figcaption></figure>
@@ -192,7 +200,7 @@ source ~/.bashrc
 {% hint style="warning" %}
 **If you get this warning:**
 
-***
+---
 
 `Warning: Pub installs executables into $HOME/.pub-cache/bin, which is not on your path. You can fix that by adding this to your shell's config file (.bashrc, .bash_profile, etc.):`
 
@@ -210,6 +218,7 @@ OR, alternatively run this in your shell every time you build AppFlowy:
 ```bash
 export PATH="$PATH":"$HOME/.pub-cache/bin
 ```
+
 {% endhint %}
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot from 2023-02-27 20-44-39.png" alt=""><figcaption><p>Image: <code>"Warning: Pub installs executables into $HOME/.pub-cache/bin, which is not on your path."</code></p></figcaption></figure>
@@ -226,15 +235,19 @@ cd frontend
 
 {% tabs %}
 {% tab title="Release binary" %}
+
 ```bash
 cargo make --profile production-linux-x86_64 appflowy
 ```
+
 {% endtab %}
 
 {% tab title="Debug binary" %}
+
 ```bash
 cargo make --profile development-linux-x86_64 appflowy-dev
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -282,4 +295,4 @@ If using a virtual machine, run the Linux GUI application through x11 on windows
 1. Open the `frontend` folder located at `xx/AppFlowy/` with VS Code.
 2. Go to the Run and Debug tab and then click AF-desktop: Clean + Rebuild All for the first time running.
 
-![Image: Running the application using VS Code](../../../../../.gitbook/assets/launch\_appflowy.png)
+![Image: Running the application using VS Code](../../../../../.gitbook/assets/launch_appflowy.png)
