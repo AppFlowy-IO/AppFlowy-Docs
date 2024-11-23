@@ -23,7 +23,7 @@ You can also style with shortcuts. For example, `ctrl/cmd` + `b` for **bold** an
 * Type `#` followed by `space` to create an H1 header.
 * Type `##` followed by `space` to create an H2 sub-header.
 * Type `###` followed by `space` to create an H3 sub-header.
-* Type `>` followed by `space` to create a quote block.
+* Type `>` followed by `space` to create a toggle block.
 * Type \` around the text to format it as `code`.
 
 Find a full list of [Markdown](customize-and-style-content.md#markdown) styling for AppFlowy.
