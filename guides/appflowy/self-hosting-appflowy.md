@@ -1,4 +1,4 @@
-# ☁ Self-hosting AppFlowy with AppFlowy Cloud
+# ☁️ Self-hosting AppFlowy with AppFlowy Cloud
 
 AppFlowy is a privacy-first, open-source workspace designed for notes, wikis, projects, and more, giving you full control over your data and customizations. Over the past year, our community-driven approach has focused on delivering a data-privacy-centric, reliable native experience, and extensible platform.
 
@@ -7,7 +7,14 @@ We're thrilled to introduce self-hosting capabilities for AppFlowy, further empo
 1. Setting up AppFlowy Cloud on your server.
 2. Building AppFlowy with a self-hosted server.
 
-🙏If you have any questions, don't hesitate to contact us on [Discord](https://discord.gg/9Q2xaN37tV).
+🙏If you have any questions, don't hesitate to contact us on [Discord](https://discord.gg/9Q2xaN37tV).\
+
+
+If you prefer a video tutorial, check out this video which demonstrates self-hosting Appflowy with AppFlowy Cloud on EC2
+
+{% embed url="https://youtu.be/PiNKI_X_7Eo" %}
+Video tutorial for self-hosting appflowy with appflowy cloud on amazon ec2 instance.
+{% endembed %}
 
 ## Step 1: Setting Up AppFlowy Cloud
 
@@ -23,22 +30,22 @@ To get started with the AppFlowy application, follow these steps:
    * After downloading, open the AppFlowy application.
    *   Click on 'Quick Start'.
 
-       ![Quick Start](../assets/quick\_start.png)
+       ![Quick Start](../assets/quick_start.png)
    * Navigate to the `Settings` page.
    * On the left sidebar, select `Cloud Setting`.
    *   Choose `AppFlowy Cloud` as your cloud provider.
 
-       ![Choose AppFlowy Cloud](../assets/choose\_appflowy\_cloud.png)
+       ![Choose AppFlowy Cloud](../assets/choose_appflowy_cloud.png)
 3. **Set Up Your Server**:
    * Enter your server address in the provided field.
    *   Click `Restart` to apply the changes.
 
-       ![AppFlowy Cloud](../assets/fill\_appflowy\_cloud.png)
+       ![AppFlowy Cloud](../assets/fill_appflowy_cloud.png)
 4. **Login**:
    * Go the `Setting` page
    *   On the left sidebar, select `User`.
 
-       ![login.png](../assets/login\_page.png)
+       ![login.png](../assets/login_page.png)
 
 ## Current Limitations
 
