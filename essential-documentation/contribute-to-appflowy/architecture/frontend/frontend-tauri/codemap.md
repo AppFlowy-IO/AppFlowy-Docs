@@ -18,14 +18,13 @@ Contains all the React source code
 2.  home
 
     > Implements the application skeleton that including the sider, header, and footer.
+3. assets
 
 ### 2. services
 
 1.  backend:
 
     > Contains all the backend bridge files that including the auto-generated events,protobuf, and etc.
-
-### 3. assets
 
 ## [src-tauri](https://tauri.app/v1/guides/getting-started/setup/html-css-js)
 
