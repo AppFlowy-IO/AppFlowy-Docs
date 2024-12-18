@@ -47,6 +47,26 @@ To get started with the AppFlowy application, follow these steps:
 
        ![login.png](../assets/login_page.png)
 
+## FAQ
+### Login with password
+
+**Prerequisites**
+- You need to have a server running AppFlowy Cloud.
+- You need to have AppFlowy App installed on your device.
+
+**Steps**
+1. Open the web browser on your device.
+2. Go to the server address where AppFlowy Cloud is running.
+   * If your host is `myhost.com`, enter `myhost.com` in the browser.
+3. Enter your username and password, and click `Sign In`.
+4. After signing in, click on the `Open AppFlowy` icon to open the App.
+![AppFlowy Cloud Admin Open AppFlowy](../assets/open\_appflowy.png)
+
+### Admin Panel
+1. Same as "Login with password" steps 1-3.
+2. Click on `Admin` in the top right corner.
+3. You may access admin functionalities in the left sidebar.
+
 ## Current Limitations
 
 **Bundle ID Conflict**
