@@ -1,0 +1,9 @@
+type: object
+properties:
+  code:
+    type: integer
+    format: int32
+    description: Numeric code indicating the success or failure of the API call.
+  message:
+    type: string
+    description: A message providing additional information about the API call result.

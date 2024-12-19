@@ -1,0 +1,15 @@
+openapi: "3.0.2"
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+info:
+  title: AppFlowy REST API
+  version: 1.0.0
+servers:
+  - url: https://beta.appflowy.cloud/api
+paths:
+  /workspace:
+    $ref: './paths/workspace.yaml'

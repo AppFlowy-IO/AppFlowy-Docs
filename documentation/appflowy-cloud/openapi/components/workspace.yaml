@@ -1,0 +1,43 @@
+type: object
+properties:
+  workspace_id:
+    type: string
+    format: uuid
+    description: The unique identifier for the workspace.
+  database_storage_id:
+    type: string
+    format: uuid
+    description: Identifier for the database storage associated with this workspace.
+  owner_uid:
+    type: integer
+    format: int64
+    description: The unique identifier of the workspace owner.
+  owner_name:
+    type: string
+    description: The name of the workspace owner.
+  owner_email:
+    type: string
+    description: The email address of the workspace owner.
+  workspace_type:
+    type: integer
+    description: The type of workspace, represented as an integer.
+  workspace_name:
+    type: string
+    description: The human-readable name of the workspace.
+  created_at:
+    type: string
+    format: date-time
+    description: The ISO 8601 date and time when the workspace was created.
+  icon:
+    type: string
+    description: An optional icon represented as a Unicode character or an image URL.
+    nullable: true
+  member_count:
+    type: integer
+    format: int64
+    description: The number of members in the workspace, if available.
+    nullable: true
+  role:
+    $ref: './role.yaml'
+    description: The role of the user requesting the workspace details.
+    nullable: true

@@ -1,0 +1,10 @@
+type: integer
+description: >
+  Role of the user within the workspace. Roles include:
+  1: Owner - Has full control over the workspace.
+  2: Member - Has regular access to the workspace.
+  3: Guest - Has limited access to the workspace.
+enum:
+  - 1
+  - 2
+  - 3
