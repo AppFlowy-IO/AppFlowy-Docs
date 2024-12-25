@@ -53,7 +53,7 @@ You'll need a [GitHub account](https://docs.github.com/en/get-started/signing-up
 
 We recommend getting familiar with GitHub's features, especially [GitHub Workflows](https://docs.github.com/en/actions/using-workflows), before starting with contributions.
 
-Please also familiarize yourself with the AppFlowy [Style Guide](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/style-guides) and [Code Submission Guidelines](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy/software-contributions/submitting-code/code-submission-guidelines) before you submit your code.
+Please also familiarize yourself with the AppFlowy [Code & style conventions](https://docs.appflowy.io/docs/documentation/software-contributions/conventions) and [Code cubmission guidelines](https://docs.appflowy.io/docs/documentation/software-contributions/submitting-code) before you submit your code.
 
 ## How to Connect With the Team
 
