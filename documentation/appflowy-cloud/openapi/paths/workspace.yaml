@@ -1,0 +1,37 @@
+get:
+  summary: Retrieves a list of all workspaces
+  security:
+    - BearerAuth: []
+  description: >
+    This endpoint fetches a list of workspaces along with detailed information about each workspace,
+    such as the workspace ID, owner information, and workspace properties like name, type, and icon.
+  operationId: getWorkspaces
+  tags:
+    - Workspaces
+  parameters:
+    - name: include_member_count
+      in: query
+      description: Include the count of members in each workspace when set to true.
+      required: false
+      schema:
+        type: boolean
+    - name: include_role
+      in: query
+      description: Include the role of the user making the request in the workspace details when set to true.
+      required: false
+      schema:
+        type: boolean
+  responses:
+    '200':
+      description: Successfully retrieved the list of workspaces
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../components/workspace.yaml'

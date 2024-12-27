@@ -1,0 +1,7 @@
+.openapi-generator-ignore
+Apis/WorkspacesApi.md
+Models/GenericApiResponse.md
+Models/Role.md
+Models/Workspace.md
+Models/getWorkspaces_200_response.md
+README.md
