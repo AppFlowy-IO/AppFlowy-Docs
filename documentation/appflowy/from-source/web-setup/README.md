@@ -34,14 +34,6 @@ AppFlowy Web is built with the following technologies:
 * **Nginx**: A high-performance web server.
 * **Docker**: A platform to develop, ship, and run applications in containers.
 
-#### Resource Sharing
-
-To maintain consistency across different platforms, the Web project shares i18n translation files and Icons with the Flutter project. This ensures a unified user experience and reduces duplication of effort in maintaining these resources.
-
-*   **i18n Translation Files**: The translation files are shared to provide a consistent localization experience across both Web and Flutter applications. The path to the translation files is `frontend/resources/translations/`.
-
-    > The translation files are stored in JSON format and contain translations for different languages. The files are named according to the language code (e.g., `en.json` for English, `es.json` for Spanish, etc.).
-
 Let's dive in and get the project up and running! 🚀
 
 ### 🛠 Getting Started
@@ -60,8 +52,7 @@ Before you begin, make sure you have the following installed on your system:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/AppFlowy-IO/AppFlowy.git
-cd frontend/appflowy_web_app
+git clone https://github.com/AppFlowy-IO/AppFlowy-Web.git
 ```
 
 #### Install Dependencies
