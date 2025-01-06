@@ -1,4 +1,4 @@
-# role
+# view_layout
 ## Properties
 
 | Name | Type | Description | Notes |

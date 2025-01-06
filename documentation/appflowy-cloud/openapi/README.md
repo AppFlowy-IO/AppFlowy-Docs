@@ -7,15 +7,22 @@ All URIs are relative to *https://beta.appflowy.cloud/api*
 
 | Class | Method | HTTP request | Description |
 |------------ | ------------- | ------------- | -------------|
+| *DatabasesApi* | [**getDatabases**](Apis/DatabasesApi.md#getdatabases) | **GET** /workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
 | *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /workspace | Retrieves a list of all workspaces |
 
 
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
+ - [database](./Models/database.md)
+ - [folder_view_min](./Models/folder_view_min.md)
+ - [getDatabases_200_response](./Models/getDatabases_200_response.md)
  - [getWorkspaces_200_response](./Models/getWorkspaces_200_response.md)
+ - [icon_type](./Models/icon_type.md)
  - [response](./Models/response.md)
  - [role](./Models/role.md)
+ - [view_icon](./Models/view_icon.md)
+ - [view_layout](./Models/view_layout.md)
  - [workspace](./Models/workspace.md)
 
 

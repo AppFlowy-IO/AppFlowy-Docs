@@ -1,4 +1,4 @@
-# role
+# icon_type
 ## Properties
 
 | Name | Type | Description | Notes |

@@ -13,3 +13,5 @@ servers:
 paths:
   /workspace:
     $ref: './paths/workspace.yaml'
+  /workspace/{workspace_id}/database:
+    $ref: './paths/database.yaml'

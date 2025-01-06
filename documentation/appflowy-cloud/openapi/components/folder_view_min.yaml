@@ -1,0 +1,11 @@
+type: object
+properties:
+  view_id:
+    type: string
+  name:
+    type: string
+  icon:
+    $ref: './view_icon.yaml'
+    nullable: true
+  layout:
+    $ref: './view_layout.yaml'

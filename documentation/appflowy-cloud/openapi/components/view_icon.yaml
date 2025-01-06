@@ -1,0 +1,6 @@
+type: object
+properties:
+  ty:
+    $ref: './icon_type.yaml'
+  value:
+    type: string

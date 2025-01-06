@@ -1,6 +1,13 @@
+Apis/DatabasesApi.md
 Apis/WorkspacesApi.md
+Models/database.md
+Models/folder_view_min.md
+Models/getDatabases_200_response.md
 Models/getWorkspaces_200_response.md
+Models/icon_type.md
 Models/response.md
 Models/role.md
+Models/view_icon.md
+Models/view_layout.md
 Models/workspace.md
 README.md
