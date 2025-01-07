@@ -1,0 +1,48 @@
+get:
+  summary: Retrieves a list of database row ids in a selected database.
+  security:
+    - BearerAuth: []
+  description: >
+    Retrieves a list of database in a selected workspace.
+  operationId: getDatabaseRowIds
+  responses:
+    '200':
+      description: Successfully retrieved the list of database row ids
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../components/database_row.yaml'
+post:
+  summary: Creates a new row in a selected database.
+  security:
+    - BearerAuth: []
+  description: >
+    Creates a new row in a selected database.
+  operationId: createDatabaseRow
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/add_database_row.yaml'
+  responses:
+    '200':
+      description: Successfully created a new row
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: string
+                    format: uuid
+                    description: The unique identifier for the newly created row.

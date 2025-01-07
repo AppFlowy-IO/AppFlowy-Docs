@@ -1,6 +1,8 @@
 Apis/DatabasesApi.md
 Apis/DefaultApi.md
 Apis/WorkspacesApi.md
+Models/add_database_row.md
+Models/createDatabaseRow_200_response.md
 Models/database.md
 Models/database_field.md
 Models/database_row.md
