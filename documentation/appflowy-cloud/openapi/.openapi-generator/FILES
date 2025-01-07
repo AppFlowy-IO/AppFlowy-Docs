@@ -3,8 +3,10 @@ Apis/DefaultApi.md
 Apis/WorkspacesApi.md
 Models/database.md
 Models/database_field.md
+Models/database_row.md
 Models/folder_view_min.md
 Models/getDatabaseFields_200_response.md
+Models/getDatabaseRowIds_200_response.md
 Models/getDatabases_200_response.md
 Models/getWorkspaces_200_response.md
 Models/icon_type.md

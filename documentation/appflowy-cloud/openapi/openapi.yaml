@@ -17,3 +17,5 @@ paths:
     $ref: './paths/database.yaml'
   /workspace/{workspace_id}/database/{database_id}/fields:
     $ref: './paths/database_fields.yaml'
+  /workspace/{workspace_id}/database/{database_id}/row:
+    $ref: './paths/database_row_id.yaml'
