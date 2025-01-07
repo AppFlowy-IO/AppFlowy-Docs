@@ -1,0 +1,21 @@
+get:
+  summary: Retrieves a list of database fields in a selected database.
+  security:
+    - BearerAuth: []
+  description: >
+    Retrieves a list of database in a selected workspace.
+  operationId: getDatabaseFields
+  responses:
+    '200':
+      description: Successfully retrieved the list of database fields
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../components/database_field.yaml'
