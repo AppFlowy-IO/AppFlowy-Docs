@@ -1,0 +1,10 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: The unique identifier for the database row.
+  updated_at:
+    type: string
+    format: date-time
+    description: RFC3339 timestamp when the database row was last updated.

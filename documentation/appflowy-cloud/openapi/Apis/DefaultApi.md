@@ -8,6 +8,7 @@ All URIs are relative to *https://beta.appflowy.cloud/api*
 | [**getDatabaseFields**](DefaultApi.md#getDatabaseFields) | **GET** /workspace/{workspace_id}/database/{database_id}/fields | Retrieves a list of database fields in a selected database. |
 | [**getDatabaseRowDetails**](DefaultApi.md#getDatabaseRowDetails) | **GET** /workspace/{workspace_id}/database/{database_id}/row/detail | Retrieves a list of database row details in a selected database. |
 | [**getDatabaseRowIds**](DefaultApi.md#getDatabaseRowIds) | **GET** /workspace/{workspace_id}/database/{database_id}/row | Retrieves a list of database row ids in a selected database. |
+| [**getDatabaseRowIdsUpdated**](DefaultApi.md#getDatabaseRowIdsUpdated) | **GET** /workspace//{workspace_id}/database/{database_id}/row/updated | Retrieves a list of database row id which are recently updated in a selected database. |
 
 
 <a name="createDatabaseRow"></a>
@@ -103,6 +104,33 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**getDatabaseRowIds_200_response**](../Models/getDatabaseRowIds_200_response.md)
+
+### Authorization
+
+[BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+<a name="getDatabaseRowIdsUpdated"></a>
+# **getDatabaseRowIdsUpdated**
+> getDatabaseRowIdsUpdated_200_response getDatabaseRowIdsUpdated(after)
+
+Retrieves a list of database row id which are recently updated in a selected database.
+
+    Retrieves a list of database in a selected workspace. 
+
+### Parameters
+
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **after** | **Date**| Fetch the list of database row ids updated after the specified date and time. | [optional] [default to null] |
+
+### Return type
+
+[**getDatabaseRowIdsUpdated_200_response**](../Models/getDatabaseRowIdsUpdated_200_response.md)
 
 ### Authorization
 

@@ -12,6 +12,7 @@ All URIs are relative to *https://beta.appflowy.cloud/api*
 *DefaultApi* | [**getDatabaseFields**](Apis/DefaultApi.md#getdatabasefields) | **GET** /workspace/{workspace_id}/database/{database_id}/fields | Retrieves a list of database fields in a selected database. |
 *DefaultApi* | [**getDatabaseRowDetails**](Apis/DefaultApi.md#getdatabaserowdetails) | **GET** /workspace/{workspace_id}/database/{database_id}/row/detail | Retrieves a list of database row details in a selected database. |
 *DefaultApi* | [**getDatabaseRowIds**](Apis/DefaultApi.md#getdatabaserowids) | **GET** /workspace/{workspace_id}/database/{database_id}/row | Retrieves a list of database row ids in a selected database. |
+*DefaultApi* | [**getDatabaseRowIdsUpdated**](Apis/DefaultApi.md#getdatabaserowidsupdated) | **GET** /workspace//{workspace_id}/database/{database_id}/row/updated | Retrieves a list of database row id which are recently updated in a selected database. |
 | *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /workspace | Retrieves a list of all workspaces |
 
 
@@ -24,9 +25,11 @@ All URIs are relative to *https://beta.appflowy.cloud/api*
  - [database_field](./Models/database_field.md)
  - [database_row](./Models/database_row.md)
  - [database_row_detail](./Models/database_row_detail.md)
+ - [database_row_updated](./Models/database_row_updated.md)
  - [folder_view_min](./Models/folder_view_min.md)
  - [getDatabaseFields_200_response](./Models/getDatabaseFields_200_response.md)
  - [getDatabaseRowDetails_200_response](./Models/getDatabaseRowDetails_200_response.md)
+ - [getDatabaseRowIdsUpdated_200_response](./Models/getDatabaseRowIdsUpdated_200_response.md)
  - [getDatabaseRowIds_200_response](./Models/getDatabaseRowIds_200_response.md)
  - [getDatabases_200_response](./Models/getDatabases_200_response.md)
  - [getWorkspaces_200_response](./Models/getWorkspaces_200_response.md)
