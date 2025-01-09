@@ -46,3 +46,30 @@ post:
                     type: string
                     format: uuid
                     description: The unique identifier for the newly created row.
+put:
+  summary: Updates or creates a row in a selected database. (Upsert)
+  security:
+    - BearerAuth: []
+  description: >
+    Given a key, updates a row in a selected database. If the row does not exist, creates a new row.
+  operationId: upsertDatabaseRow
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/upsert_database_row.yaml'
+  responses:
+    '200':
+      description: Successfully created or updated a row
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: string
+                    format: uuid
+                    description: The unique identifier for the newly created or updated row.

@@ -18,6 +18,8 @@ Models/getWorkspaces_200_response.md
 Models/icon_type.md
 Models/response.md
 Models/role.md
+Models/upsertDatabaseRow_200_response.md
+Models/upsert_database_row.md
 Models/view_icon.md
 Models/view_layout.md
 Models/workspace.md

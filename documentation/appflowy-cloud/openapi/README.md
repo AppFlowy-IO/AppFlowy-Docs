@@ -13,6 +13,7 @@ All URIs are relative to *https://beta.appflowy.cloud/api*
 *DefaultApi* | [**getDatabaseRowDetails**](Apis/DefaultApi.md#getdatabaserowdetails) | **GET** /workspace/{workspace_id}/database/{database_id}/row/detail | Retrieves a list of database row details in a selected database. |
 *DefaultApi* | [**getDatabaseRowIds**](Apis/DefaultApi.md#getdatabaserowids) | **GET** /workspace/{workspace_id}/database/{database_id}/row | Retrieves a list of database row ids in a selected database. |
 *DefaultApi* | [**getDatabaseRowIdsUpdated**](Apis/DefaultApi.md#getdatabaserowidsupdated) | **GET** /workspace//{workspace_id}/database/{database_id}/row/updated | Retrieves a list of database row id which are recently updated in a selected database. |
+*DefaultApi* | [**upsertDatabaseRow**](Apis/DefaultApi.md#upsertdatabaserow) | **PUT** /workspace/{workspace_id}/database/{database_id}/row | Updates or creates a row in a selected database. (Upsert) |
 | *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /workspace | Retrieves a list of all workspaces |
 
 
@@ -36,6 +37,8 @@ All URIs are relative to *https://beta.appflowy.cloud/api*
  - [icon_type](./Models/icon_type.md)
  - [response](./Models/response.md)
  - [role](./Models/role.md)
+ - [upsertDatabaseRow_200_response](./Models/upsertDatabaseRow_200_response.md)
+ - [upsert_database_row](./Models/upsert_database_row.md)
  - [view_icon](./Models/view_icon.md)
  - [view_layout](./Models/view_layout.md)
  - [workspace](./Models/workspace.md)
