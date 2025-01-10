@@ -3,18 +3,18 @@
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://beta.appflowy.cloud/api*
+All URIs are relative to *https://beta.appflowy.cloud*
 
 | Class | Method | HTTP request | Description |
 |------------ | ------------- | ------------- | -------------|
-| *DatabasesApi* | [**getDatabases**](Apis/DatabasesApi.md#getdatabases) | **GET** /workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
-| *DefaultApi* | [**createDatabaseRow**](Apis/DefaultApi.md#createdatabaserow) | **POST** /workspace/{workspace_id}/database/{database_id}/row | Creates a new row in a selected database. |
-*DefaultApi* | [**getDatabaseFields**](Apis/DefaultApi.md#getdatabasefields) | **GET** /workspace/{workspace_id}/database/{database_id}/fields | Retrieves a list of database fields in a selected database. |
-*DefaultApi* | [**getDatabaseRowDetails**](Apis/DefaultApi.md#getdatabaserowdetails) | **GET** /workspace/{workspace_id}/database/{database_id}/row/detail | Retrieves a list of database row details in a selected database. |
-*DefaultApi* | [**getDatabaseRowIds**](Apis/DefaultApi.md#getdatabaserowids) | **GET** /workspace/{workspace_id}/database/{database_id}/row | Retrieves a list of database row ids in a selected database. |
-*DefaultApi* | [**getDatabaseRowIdsUpdated**](Apis/DefaultApi.md#getdatabaserowidsupdated) | **GET** /workspace//{workspace_id}/database/{database_id}/row/updated | Retrieves a list of database row id which are recently updated in a selected database. |
-*DefaultApi* | [**upsertDatabaseRow**](Apis/DefaultApi.md#upsertdatabaserow) | **PUT** /workspace/{workspace_id}/database/{database_id}/row | Updates or creates a row in a selected database. (Upsert) |
-| *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /workspace | Retrieves a list of all workspaces |
+| *DatabaseFieldsApi* | [**getDatabaseFields**](Apis/DatabaseFieldsApi.md#getdatabasefields) | **GET** /api/workspace/{workspace_id}/database/{database_id}/fields | Retrieves a list of database fields in a selected database. |
+| *DatabaseRowDetailsApi* | [**getDatabaseRowDetails**](Apis/DatabaseRowDetailsApi.md#getdatabaserowdetails) | **GET** /api/workspace/{workspace_id}/database/{database_id}/row/detail | Retrieves a list of database row details in a selected database. |
+| *DatabaseRowsApi* | [**createDatabaseRow**](Apis/DatabaseRowsApi.md#createdatabaserow) | **POST** /api/workspace/{workspace_id}/database/{database_id}/row | Creates a new row in a selected database. |
+*DatabaseRowsApi* | [**getDatabaseRowIds**](Apis/DatabaseRowsApi.md#getdatabaserowids) | **GET** /api/workspace/{workspace_id}/database/{database_id}/row | Retrieves a list of database row ids in a selected database. |
+*DatabaseRowsApi* | [**upsertDatabaseRow**](Apis/DatabaseRowsApi.md#upsertdatabaserow) | **PUT** /api/workspace/{workspace_id}/database/{database_id}/row | Updates or creates a row in a selected database. (Upsert) |
+| *DatabaseRowsUpdatedApi* | [**getDatabaseRowIdsUpdated**](Apis/DatabaseRowsUpdatedApi.md#getdatabaserowidsupdated) | **GET** /api/workspace/{workspace_id}/database/{database_id}/row/updated | Retrieves a list of database row id which are recently updated in a selected database. |
+| *DatabasesApi* | [**getDatabases**](Apis/DatabasesApi.md#getdatabases) | **GET** /api/workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
+| *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /api/workspace | Retrieves a list of all workspaces |
 
 
 <a name="documentation-for-models"></a>

@@ -5,6 +5,8 @@ get:
   description: >
     Retrieves a list of database in a selected workspace.
   operationId: getDatabaseRowIds
+  tags:
+    - DatabaseRows
   responses:
     '200':
       description: Successfully retrieved the list of database row ids
@@ -26,6 +28,8 @@ post:
   description: >
     Creates a new row in a selected database.
   operationId: createDatabaseRow
+  tags:
+    - DatabaseRows
   requestBody:
     required: true
     content:
@@ -53,6 +57,8 @@ put:
   description: >
     Given a key, updates a row in a selected database. If the row does not exist, creates a new row.
   operationId: upsertDatabaseRow
+  tags:
+    - DatabaseRows
   requestBody:
     required: true
     content:

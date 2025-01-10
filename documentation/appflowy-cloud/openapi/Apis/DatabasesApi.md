@@ -1,10 +1,10 @@
 # DatabasesApi
 
-All URIs are relative to *https://beta.appflowy.cloud/api*
+All URIs are relative to *https://beta.appflowy.cloud*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**getDatabases**](DatabasesApi.md#getDatabases) | **GET** /workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
+| [**getDatabases**](DatabasesApi.md#getDatabases) | **GET** /api/workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
 
 
 <a name="getDatabases"></a>

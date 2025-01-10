@@ -5,6 +5,8 @@ get:
   description: >
     Retrieves a list of database row details in a selected database.
   operationId: getDatabaseRowDetails
+  tags:
+    - DatabaseRowDetails
   parameters:
     - name: ids
       in: query

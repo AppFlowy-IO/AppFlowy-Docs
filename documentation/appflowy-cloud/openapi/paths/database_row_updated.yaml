@@ -5,6 +5,8 @@ get:
   description: >
     Retrieves a list of database in a selected workspace.
   operationId: getDatabaseRowIdsUpdated
+  tags:
+    - DatabaseRowsUpdated
   parameters:
     - name: after
       in: query
