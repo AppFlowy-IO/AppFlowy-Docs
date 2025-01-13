@@ -1,0 +1,35 @@
+get:
+  summary: Retrieves a list of database row details in a selected database.
+  security:
+    - BearerAuth: []
+  description: >
+    Retrieves a list of database row details in a selected database.
+  operationId: getDatabaseRowDetails
+  tags:
+    - DatabaseRowDetails
+  parameters:
+    - name: ids
+      in: query
+      description: A comma-separated list of database row uuids to retrieve. (e.g., ids=uuid1,uuid2,uuid3)
+      required: true
+      schema:
+        type: string
+    - name: with_doc
+      in: query
+      description: Include the document data for each row when set to true.
+      schema:
+        type: boolean
+  responses:
+    '200':
+      description: Successfully retrieved the list of database row details
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../components/database_row_detail.yaml'

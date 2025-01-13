@@ -1,0 +1,24 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: The unique identifier for the database row.
+  cells:
+    type: object
+    description: >
+      A dictionary of cell values for the database row.
+      {
+        "field_id": cell_value,
+        ...
+      }
+      cell_value depends on the field type.
+  has_doc:
+    type: boolean
+    description: >
+      A boolean indicating whether the database row has a document.
+  doc:
+    type: string
+    description: >
+      text or markdown document for the database row.
+      available if rows has doc and client request for it using `with_doc` query parameter.

@@ -1,0 +1,23 @@
+get:
+  summary: Retrieves a list of database in a workspace
+  security:
+    - BearerAuth: []
+  description: >
+    Retrieves a list of database in a selected workspace.
+  operationId: getDatabases
+  tags:
+    - Databases
+  responses:
+    '200':
+      description: Successfully retrieved the list of databases
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../components/database.yaml'

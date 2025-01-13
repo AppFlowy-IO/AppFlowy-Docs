@@ -1,0 +1,16 @@
+type: object
+properties:
+  cells:
+    type: object
+    description: >
+      The cells of the database row.
+      {
+        "key": value,
+        ...
+      }
+      key: field_id or field_name
+      value: depends on the field type (Server will attempt to convert the value to the field type)
+  document:
+    type: string
+    description: >
+      The document content of the database row, in Markdown format.

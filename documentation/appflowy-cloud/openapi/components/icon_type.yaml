@@ -1,0 +1,10 @@
+type: integer
+description: >
+  The icon to display in the view. The value must be one of the following:
+  - 0: Emoji
+  - 1: Url
+  - 2: Icon
+enum:
+  - 0
+  - 1
+  - 2

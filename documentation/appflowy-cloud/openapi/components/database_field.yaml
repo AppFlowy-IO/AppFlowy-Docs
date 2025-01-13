@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: The unique identifier for the database.
+  name:
+    type: string
+  field_type:
+    type: string
+  type_option:
+    type: object
+  is_primary:
+    type: boolean

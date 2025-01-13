@@ -1,0 +1,31 @@
+get:
+  summary: Retrieves a list of database row id which are recently updated in a selected database.
+  security:
+    - BearerAuth: []
+  description: >
+    Retrieves a list of database in a selected workspace.
+  operationId: getDatabaseRowIdsUpdated
+  tags:
+    - DatabaseRowsUpdated
+  parameters:
+    - name: after
+      in: query
+      description: Fetch the list of database row ids updated after the specified date and time.
+      required: false
+      schema:
+        type: string
+        format: date-time
+  responses:
+    '200':
+      description: Successfully retrieved the list of database row ids
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../components/response.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../components/database_row_updated.yaml'

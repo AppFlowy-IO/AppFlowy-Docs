@@ -1,0 +1,13 @@
+type: integer
+description: >
+  Document = 0
+  Grid = 1
+  Board = 2
+  Calendar = 3
+  Chat = 4
+enum:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4

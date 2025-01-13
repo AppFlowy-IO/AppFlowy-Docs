@@ -1,0 +1,10 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: The unique identifier for the database.
+  views:
+    type: array
+    items:
+      $ref: './folder_view_min.yaml'

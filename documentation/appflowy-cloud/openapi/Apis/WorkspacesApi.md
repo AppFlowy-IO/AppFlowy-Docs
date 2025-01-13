@@ -1,10 +1,10 @@
 # WorkspacesApi
 
-All URIs are relative to *https://beta.appflowy.cloud/api*
+All URIs are relative to *https://beta.appflowy.cloud*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**getWorkspaces**](WorkspacesApi.md#getWorkspaces) | **GET** /workspace | Retrieves a list of all workspaces |
+| [**getWorkspaces**](WorkspacesApi.md#getWorkspaces) | **GET** /api/workspace | Retrieves a list of all workspaces |
 
 
 <a name="getWorkspaces"></a>

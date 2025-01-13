@@ -9,7 +9,17 @@ info:
   title: AppFlowy REST API
   version: 1.0.0
 servers:
-  - url: https://beta.appflowy.cloud/api
+  - url: https://beta.appflowy.cloud
 paths:
-  /workspace:
+  /api/workspace:
     $ref: './paths/workspace.yaml'
+  /api/workspace/{workspace_id}/database:
+    $ref: './paths/database.yaml'
+  /api/workspace/{workspace_id}/database/{database_id}/fields:
+    $ref: './paths/database_fields.yaml'
+  /api/workspace/{workspace_id}/database/{database_id}/row:
+    $ref: './paths/database_row.yaml'
+  /api/workspace/{workspace_id}/database/{database_id}/row/updated:
+    $ref: './paths/database_row_updated.yaml'
+  /api/workspace/{workspace_id}/database/{database_id}/row/detail:
+    $ref: './paths/database_row_detail.yaml'
