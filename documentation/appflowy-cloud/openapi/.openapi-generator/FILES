@@ -19,6 +19,7 @@ Models/getDatabaseRowIdsUpdated_200_response.md
 Models/getDatabaseRowIds_200_response.md
 Models/getDatabases_200_response.md
 Models/getWorkspaces_200_response.md
+Models/gotrueToken_request.md
 Models/gotrue_token_response.md
 Models/icon_type.md
 Models/response.md
