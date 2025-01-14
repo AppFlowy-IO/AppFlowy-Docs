@@ -3,6 +3,7 @@ Apis/DatabaseRowDetailsApi.md
 Apis/DatabaseRowsApi.md
 Apis/DatabaseRowsUpdatedApi.md
 Apis/DatabasesApi.md
+Apis/OAuthApi.md
 Apis/WorkspacesApi.md
 Models/add_database_row.md
 Models/createDatabaseRow_200_response.md
@@ -18,6 +19,8 @@ Models/getDatabaseRowIdsUpdated_200_response.md
 Models/getDatabaseRowIds_200_response.md
 Models/getDatabases_200_response.md
 Models/getWorkspaces_200_response.md
+Models/gotrueToken_request.md
+Models/gotrue_token_response.md
 Models/icon_type.md
 Models/response.md
 Models/role.md

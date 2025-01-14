@@ -1,0 +1,54 @@
+get:
+  summary: Sign in with AppFlowy OAuth 2.0
+  description: >
+    This endpoint is used obtain an access token from AppFlowy OAuth 2.0.
+    This is called after user tried to sign in with AppFlowy OAuth (/web-api/oauth-redirect).
+    This is primarily used integration with third-party applications.
+  operationId: oauthRedirectToken
+  tags:
+    - OAuth
+  parameters:
+    - name: code
+      in: query
+      description: The authorization code received from the redirect.
+      required: true
+      schema:
+        type: string
+    - name: client_id
+      in: query
+      description: The client ID of the application
+      required: false
+      schema:
+        type: string
+    - name: client_secret
+      in: query
+      description: The client's secret (if applicable, for confidential clients).
+      required: false
+      schema:
+        type: string
+    - name: grant_type
+      in: query
+      description: Type of OAuth 2.0 flow being used to exchange the authorization code for an access token.
+      required: true
+      schema:
+        type: string
+    - name: redirect_uri
+      in: query
+      description: The redirect URI used in the initial authorization request.
+      required: false
+      schema:
+        type: string
+    - name: code_verifier
+      in: query
+      description: Used in PKCE (Proof Key for Code Exchange) to secure public clients.
+      required: false
+      schema:
+        type: string
+
+  responses:
+    '200':
+      description: Successfully obtained an access token
+      content:
+        application/json:
+          schema:
+            $ref: '../components/gotrue_token_response.yaml'

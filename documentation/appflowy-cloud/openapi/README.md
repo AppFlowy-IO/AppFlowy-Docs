@@ -14,6 +14,8 @@ All URIs are relative to *https://beta.appflowy.cloud*
 *DatabaseRowsApi* | [**upsertDatabaseRow**](Apis/DatabaseRowsApi.md#upsertdatabaserow) | **PUT** /api/workspace/{workspace_id}/database/{database_id}/row | Updates or creates a row in a selected database. (Upsert) |
 | *DatabaseRowsUpdatedApi* | [**getDatabaseRowIdsUpdated**](Apis/DatabaseRowsUpdatedApi.md#getdatabaserowidsupdated) | **GET** /api/workspace/{workspace_id}/database/{database_id}/row/updated | Retrieves a list of database row id which are recently updated in a selected database. |
 | *DatabasesApi* | [**getDatabases**](Apis/DatabasesApi.md#getdatabases) | **GET** /api/workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
+| *OAuthApi* | [**gotrueToken**](Apis/OAuthApi.md#gotruetoken) | **POST** /gotrue/token | Get a new access token and refresh token based on grant type |
+*OAuthApi* | [**oauthRedirectToken**](Apis/OAuthApi.md#oauthredirecttoken) | **GET** /web-api/oauth-redirect/token | Sign in with AppFlowy OAuth 2.0 |
 | *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /api/workspace | Retrieves a list of all workspaces |
 
 
@@ -34,6 +36,8 @@ All URIs are relative to *https://beta.appflowy.cloud*
  - [getDatabaseRowIds_200_response](./Models/getDatabaseRowIds_200_response.md)
  - [getDatabases_200_response](./Models/getDatabases_200_response.md)
  - [getWorkspaces_200_response](./Models/getWorkspaces_200_response.md)
+ - [gotrueToken_request](./Models/gotrueToken_request.md)
+ - [gotrue_token_response](./Models/gotrue_token_response.md)
  - [icon_type](./Models/icon_type.md)
  - [response](./Models/response.md)
  - [role](./Models/role.md)

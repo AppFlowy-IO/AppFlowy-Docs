@@ -11,6 +11,10 @@ info:
 servers:
   - url: https://beta.appflowy.cloud
 paths:
+  /gotrue/token:
+    $ref: './paths/gotrue_token.yaml'
+  /web-api/oauth-redirect/token:
+    $ref: './paths/oauth_redirect_token.yaml'
   /api/workspace:
     $ref: './paths/workspace.yaml'
   /api/workspace/{workspace_id}/database:
