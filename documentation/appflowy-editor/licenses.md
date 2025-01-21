@@ -13,7 +13,7 @@
 
 **Q3:** How does the scope of the MPL’s copyleft compare with the LGPL and GPL’s copyleft?
 
-[**A**](https://www.mozilla.org/en-US/MPL/2.0/FAQ/#copyleft-scope)**:** MPL is less restrictive than LGPL and GPL. MPL’s copyleft applies to any files containing MPLed code. LGPL’s copyleft applies to any library based on LGPLed code. GPL’s copyleft applies to all software based on GPLed code. To better understand how the LGPL and GPL define “based on,” please read the licences and consult with your legal. [Here](https://fossa.com/blog/open-source-software-licenses-101-mozilla-public-license-2-0/) is an article that explains the differences between these weak copyleft licenses.
+[**A**](https://www.mozilla.org/en-US/MPL/2.0/FAQ/#copyleft-scope)**:** MPL is less restrictive than LGPL and GPL. MPL’s copyleft applies to any files containing MPLed code. LGPL’s copyleft applies to any library based on LGPLed code. GPL’s copyleft applies to all software based on GPLed code. To better understand how the LGPL and GPL define “based on,” please read the licenses and consult with your legal team. [Here](https://fossa.com/blog/open-source-software-licenses-101-mozilla-public-license-2-0/) is an article that explains the differences between these weak copyleft licenses.
 
 
 

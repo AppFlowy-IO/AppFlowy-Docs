@@ -1,5 +1,5 @@
 ---
-description: Working in progress
+description: Work in progress...
 ---
 
 # 🗃️ Manage Properties

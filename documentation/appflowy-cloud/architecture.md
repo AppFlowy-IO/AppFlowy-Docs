@@ -1,11 +1,11 @@
 # 🌈 Architecture
 
-* This articles goes through self-host AppFlowy Cloud's architecture after deployment.
+* This article goes through self-hosting AppFlowy Cloud's architecture after deployment.
 * For the rest of the article, we will `myhost` as the hostname/ip of the machine where AppFlowy Cloud is deployed in.
 
 ![img\_1.png](img\_1.png)
 
-From the diagram, there are 5 entrypoints for end user usage, we categorized them into the following
+From the diagram, there are 5 entry points for end user usage, we categorized them into the following
 
 * Client Usage
 * Observability Tools
@@ -33,7 +33,7 @@ This is where regular AppFlowy Cloud users should spend most of their time in.
 
 ## Observability Tools
 
-Strictly speaking, the following are not essentially for cloud functionality, but recommended to have for various reasons including:
+Strictly speaking, the following are not essential for cloud functionality, but recommended to have for various reasons including:
 
 * Resource Usage
 * Database performance
@@ -48,13 +48,13 @@ Usernames and password are generated during the initialization phase. Kindly ref
 
 ### Minio Web UI
 
-* Depdency: None
+* Dependency: None
 * File storage management
 * Accessible at [https://myhost/minio](https://myhost/web)
 
 ### Portainer
 
-* Depdency: None
+* Dependency: None
 * Docker container management
 * Accessible at https://myhost/portainer
 

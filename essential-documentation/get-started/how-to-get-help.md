@@ -12,7 +12,7 @@ What you are looking at - the AppFlowy Essential Documentation - is likely one o
 
 ## Ask The Community
 
-We encourage to join our community to make AppFlowy a world-class open-source project!
+We encourage you to join our community to make AppFlowy a world-class open-source project!
 
 * Get quick help on [Discord](https://discord.gg/9Q2xaN37tV) along with 1000+ hackers and developers
 * Open issues, PRs, feature requests and vote on them on [Github](https://github.com/AppFlowy-IO/appflowy)
