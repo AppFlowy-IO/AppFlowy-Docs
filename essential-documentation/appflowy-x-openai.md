@@ -23,7 +23,7 @@
 
 * **AI Writer**: Ask AI to write anything for you. Let AI draft it for you whenever you're starting something new.
 * **Summarize**: Auto-generate a nice summary for an article, your proposal, or anything else.
-* **Fix spelling & grammar**: With one click away, catch and fix spelling and grammatical errors, enhance the readability and clarity of your text, and provide context-aware suggestions.
+* **Fix spelling & grammar**: With one click, catch and fix spelling and grammatical errors, enhance the readability and clarity of your text, and provide context-aware suggestions.
 * **Improve Writing**: There is no need to switch between different tools; simply highlight the text and ask AI to quickly transform it into something better and more suitable for the task.
 * **Make longer:** AI will automatically rewrite its response with more copy.
 
@@ -57,7 +57,7 @@ Go to Settings -> AI Settings
 * Go to Settings -> Plan&#x20;
 * Purchase AI On-device add-on\
   ![](<../.gitbook/assets/image (81).png>)
-* Follow [appflowy-ai-on-device.md](../appflowy/product/appflowy-ai-on-device.md "mention")to enable it.
+* Follow [appflowy-ai-on-device.md](../appflowy/product/appflowy-ai-on-device.md "mention") to enable it.
 
 
 
