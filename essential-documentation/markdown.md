@@ -39,7 +39,7 @@ You can press `Tab` or `Shift + Tab` to indent or unindent a list item.
 
 ### Checkbox
 
-To create a checkbox item, start with a hyphen `-` and followed by `[]` or `[x]`, `and` press `space`
+To create a checkbox item, start with a hyphen `-` and followed by `[ ]` or `[x]`, `and` press `space`
 
 ```md
 - [x] This is a completed task.
