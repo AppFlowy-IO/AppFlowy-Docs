@@ -16,7 +16,8 @@ All URIs are relative to *https://beta.appflowy.cloud*
 | *DatabasesApi* | [**getDatabases**](Apis/DatabasesApi.md#getdatabases) | **GET** /api/workspace/{workspace_id}/database | Retrieves a list of database in a workspace |
 | *OAuthApi* | [**gotrueToken**](Apis/OAuthApi.md#gotruetoken) | **POST** /gotrue/token | Get a new access token and refresh token based on grant type |
 *OAuthApi* | [**oauthRedirectToken**](Apis/OAuthApi.md#oauthredirecttoken) | **GET** /web-api/oauth-redirect/token | Sign in with AppFlowy OAuth 2.0 |
-| *WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /api/workspace | Retrieves a list of all workspaces |
+| *WorkspacesApi* | [**getWorkspaceFolder**](Apis/WorkspacesApi.md#getworkspacefolder) | **GET** /api/workspace/{workspace_id}/folder | Retrieves workspace folder or subfolder |
+*WorkspacesApi* | [**getWorkspaces**](Apis/WorkspacesApi.md#getworkspaces) | **GET** /api/workspace | Retrieves a list of all workspaces |
 
 
 <a name="documentation-for-models"></a>
@@ -29,12 +30,14 @@ All URIs are relative to *https://beta.appflowy.cloud*
  - [database_row](./Models/database_row.md)
  - [database_row_detail](./Models/database_row_detail.md)
  - [database_row_updated](./Models/database_row_updated.md)
+ - [folder_view](./Models/folder_view.md)
  - [folder_view_min](./Models/folder_view_min.md)
  - [getDatabaseFields_200_response](./Models/getDatabaseFields_200_response.md)
  - [getDatabaseRowDetails_200_response](./Models/getDatabaseRowDetails_200_response.md)
  - [getDatabaseRowIdsUpdated_200_response](./Models/getDatabaseRowIdsUpdated_200_response.md)
  - [getDatabaseRowIds_200_response](./Models/getDatabaseRowIds_200_response.md)
  - [getDatabases_200_response](./Models/getDatabases_200_response.md)
+ - [getWorkspaceFolder_200_response](./Models/getWorkspaceFolder_200_response.md)
  - [getWorkspaces_200_response](./Models/getWorkspaces_200_response.md)
  - [gotrueToken_request](./Models/gotrueToken_request.md)
  - [gotrue_token_response](./Models/gotrue_token_response.md)

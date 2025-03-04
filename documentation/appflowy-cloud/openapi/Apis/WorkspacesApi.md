@@ -4,8 +4,37 @@ All URIs are relative to *https://beta.appflowy.cloud*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
+| [**getWorkspaceFolder**](WorkspacesApi.md#getWorkspaceFolder) | **GET** /api/workspace/{workspace_id}/folder | Retrieves workspace folder or subfolder |
 | [**getWorkspaces**](WorkspacesApi.md#getWorkspaces) | **GET** /api/workspace | Retrieves a list of all workspaces |
 
+
+<a name="getWorkspaceFolder"></a>
+# **getWorkspaceFolder**
+> getWorkspaceFolder_200_response getWorkspaceFolder(depth, root\_view\_id)
+
+Retrieves workspace folder or subfolder
+
+    This endpoint fetches folder structure of a workspace. 
+
+### Parameters
+
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **depth** | **Integer**| Maximum depth of the folder structure to return. Default is 1. | [optional] [default to null] |
+| **root\_view\_id** | **String**| Root view id of the folder structure tree. By default, it is the workspace id. Use a different root view id if you want to retrieve subfolders. | [optional] [default to null] |
+
+### Return type
+
+[**getWorkspaceFolder_200_response**](../Models/getWorkspaceFolder_200_response.md)
+
+### Authorization
+
+[BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 <a name="getWorkspaces"></a>
 # **getWorkspaces**

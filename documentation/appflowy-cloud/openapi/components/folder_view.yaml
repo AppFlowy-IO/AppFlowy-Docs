@@ -1,0 +1,45 @@
+type: object
+properties:
+  view_id:
+    type: string
+    format: uuid
+    description: The unique identifier for a page.
+  name:
+    type: string
+    description: The name of the page.
+  icon:
+    $ref: './view_icon.yaml'
+    nullable: true
+  is_space:
+    type: boolean
+    description: Whether the page is a space.
+  is_private:
+    type: boolean
+    description: Whether the space is private.
+  is_published:
+    type: boolean
+    description: Whether the space is published.
+  layout:
+    $ref: './view_layout.yaml'
+    description: The layout of the page.
+  created_at:
+    type: string
+    format: date-time
+    description: The ISO 8601 date and time when the page was created.
+  last_edited_time:
+    type: string
+    format: date-time
+    description: The ISO 8601 date and time when the page was last edited.
+  is_locked:
+    type: boolean
+    nullable: true
+    description: Whether the page is locked. If not present, the page is not locked.
+  extra:
+    type: object
+    nullable: true
+    description: Document meta data
+  children:
+    type: array
+    items:
+      $ref: './folder_view.yaml'
+    description: The children of the page.
