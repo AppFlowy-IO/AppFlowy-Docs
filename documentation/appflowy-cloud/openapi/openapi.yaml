@@ -19,6 +19,8 @@ paths:
     $ref: './paths/workspace.yaml'
   /api/workspace/{workspace_id}/database:
     $ref: './paths/database.yaml'
+  /api/workspace/{workspace_id}/folder:
+    $ref: './paths/workspace_folder.yaml'
   /api/workspace/{workspace_id}/database/{database_id}/fields:
     $ref: './paths/database_fields.yaml'
   /api/workspace/{workspace_id}/database/{database_id}/row:

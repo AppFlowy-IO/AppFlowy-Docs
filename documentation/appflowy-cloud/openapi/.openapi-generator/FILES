@@ -12,12 +12,14 @@ Models/database_field.md
 Models/database_row.md
 Models/database_row_detail.md
 Models/database_row_updated.md
+Models/folder_view.md
 Models/folder_view_min.md
 Models/getDatabaseFields_200_response.md
 Models/getDatabaseRowDetails_200_response.md
 Models/getDatabaseRowIdsUpdated_200_response.md
 Models/getDatabaseRowIds_200_response.md
 Models/getDatabases_200_response.md
+Models/getWorkspaceFolder_200_response.md
 Models/getWorkspaces_200_response.md
 Models/gotrueToken_request.md
 Models/gotrue_token_response.md

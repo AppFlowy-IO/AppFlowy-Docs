@@ -5,32 +5,32 @@ properties:
     description: >
       The token that clients use to make authenticated requests to the server or API.
       It is a bearer token that provides temporary, secure access to server resources.
-    token_type:
-      type: string
-      description: >
-        The type of token. It is always "Bearer".
-    expires_in:
-      type: integer
-      description: >
-        Seconds until the access_token expires.
-    expires_at:
-      type: integer
-      description: >
-        A timestamp in seconds indicating the exact time at which the access_token will expire.
-    refresh_token:
-      type: string
-      description: >
-        The refresh token is used to obtain a new access_token once the current access_token expires.
-        Refresh tokens are usually long-lived and are stored securely by the client.
-    user:
-      type: object
-      description: >
-        The user object contains information about the user that is currently authenticated.
-    provider_access_token:
-      type: string
-      description: >
-        The access token from the provider.
-    provider_refresh_token:
-      type: string
-      description: >
-        The refresh token from the provider.
+  token_type:
+    type: string
+    description: >
+      The type of token. It is always "Bearer".
+  expires_in:
+    type: integer
+    description: >
+      Seconds until the access_token expires.
+  expires_at:
+    type: integer
+    description: >
+      A timestamp in seconds indicating the exact time at which the access_token will expire.
+  refresh_token:
+    type: string
+    description: >
+      The refresh token is used to obtain a new access_token once the current access_token expires.
+      Refresh tokens are usually long-lived and are stored securely by the client.
+  user:
+    type: object
+    description: >
+      The user object contains information about the user that is currently authenticated.
+  provider_access_token:
+    type: string
+    description: >
+      The access token from the provider.
+  provider_refresh_token:
+    type: string
+    description: >
+      The refresh token from the provider.

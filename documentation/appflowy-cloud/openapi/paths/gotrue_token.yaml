@@ -1,0 +1,36 @@
+post:
+  summary: Get a new access token and refresh token based on grant type 
+  description: >
+    This endpoint is used to obtain a new access token and refresh token based on the grant type. 
+  operationId: gotrueToken
+  tags:
+    - OAuth
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          description: |-
+            For the refresh token flow, `refresh_token` is required.
+            For the password flow, `password` and `email` are required.
+          properties:
+            grant_type:
+              type: string
+              enum:
+                - refresh_token
+                - password
+            refresh_token:
+              type: string
+            password:
+              type: string
+            email:
+              type: string
+              format: email
+  responses:
+    '200':
+      description: Successfully obtained an access token
+      content:
+        application/json:
+          schema:
+            $ref: '../components/gotrue_token_response.yaml'
