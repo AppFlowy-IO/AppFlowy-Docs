@@ -34,14 +34,14 @@ git clone https://github.com/AppFlowy-IO/appflowy.git
     - Choose "Desktop Development with C++"
 - Install vcpkg according to [this page](https://github.com/microsoft/vcpkg#quick-start-windows). Make sure to add vcpkg installation folder to your [PATH environment variable](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/).
 - Install flutter according to [this page](https://docs.flutter.dev/get-started/install/windows).
-- Make sure to use the Flutter 3.22.3 version
+- Make sure to use the Flutter 3.27.4 version
 
 ```shell
 flutter --version
-Flutter 3.22.3 • channel [user-branch] • unknown source
-Framework • revision b0850beeb2 (4 months ago) • 2024-07-16 21:43:41 -0700
-Engine • revision 235db911ba
-Tools • Dart 3.4.4 • DevTools 2.34.3
+Flutter 3.27.4 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision d8a9f9a52e (4 weeks ago) • 2025-01-31 16:07:18 -0500
+Engine • revision 82bd5b7209
+Tools • Dart 3.6.2 • DevTools 2.40.3
 ```
 
 - Enable the specified platform first if you don't enable it before and then select the desktop device.
@@ -157,7 +157,7 @@ cargo make --profile production-windows-x86 appflowy
 
 The scripts are located in the AppFlowy/frontend/Makefile.toml file.
 
-The resulting binary file is located in `AppFlowy/frontend/app_flowy/product/x.x.x/Windows/Release/AppFlowy/`.
+The resulting binary file is located in `AppFlowy/frontend/appflowy/product/x.x.x/Windows/Release/AppFlowy/`.
 
 If using a virtual machine
 
