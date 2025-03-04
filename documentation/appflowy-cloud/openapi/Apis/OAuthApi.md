@@ -20,7 +20,7 @@ Get a new access token and refresh token based on grant type
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **gotrueToken\_request** | [**gotrueToken_request**](../Models/gotrueToken_request.md)|  | [optional] |
+| **gotrueToken\_request** | [**gotrueToken_request**](../Models/gotrueToken_request.md)|  | |
 
 ### Return type
 
