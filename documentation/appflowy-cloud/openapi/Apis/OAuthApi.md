@@ -10,18 +10,17 @@ All URIs are relative to *https://beta.appflowy.cloud*
 
 <a name="gotrueToken"></a>
 # **gotrueToken**
-> gotrue_token_response gotrueToken(grant\_type, gotrueToken\_request)
+> gotrue_token_response gotrueToken(gotrueToken\_request)
 
 Get a new access token and refresh token based on grant type
 
-    This endpoint is used to obtain a new access token and refresh token based on the grant type. 
+    This endpoint is used to obtain a new access token and refresh token based on the grant type.  
 
 ### Parameters
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **grant\_type** | **String**| The grant type of the OAuth 2.0 flow being used to obtain an access token. This can be one of the following: - &#x60;refresh_token&#x60;: Used to exchange a refresh token for an access token. - &#x60;password&#x60;: Used to exchange a username and password for an access token. - &#x60;id_token&#x60;: Used to exchange an ID token for an access token. - &#x60;pkce&#x60;: Used to exchange an authorization code for an access token.  | [default to null] |
-| **gotrueToken\_request** | [**gotrueToken_request**](../Models/gotrueToken_request.md)| The request body for obtaining an access token | |
+| **gotrueToken\_request** | [**gotrueToken_request**](../Models/gotrueToken_request.md)|  | [optional] |
 
 ### Return type
 
