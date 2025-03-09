@@ -49,6 +49,7 @@
   * [Ⓜ️ Markdown](essential-documentation/markdown.md)
   * [⌨️ Shortcuts](essential-documentation/shortcuts.md)
   * [🪄 AppFlowy AI](essential-documentation/appflowy-x-openai.md)
+  * [AppFlowy AI - Ollama](appflowy/product/appflowy-ai-ollama.md)
   * [🎨 Themes](essential-documentation/themes.md)
   * [☁️ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
   * [🧩 AppFlowy Plugins](essential-documentation/appflowy-plugins/README.md)
