@@ -1,47 +1,19 @@
-# AppFlowy AI - Ollama
 
+# AppFlowy LAI with Ollama
 
-### Install Ollama
+AppFlowy supports local AI functionality through Ollama integration. This document guides you through the setup process to enable AI features in AppFlowy without relying on cloud services.
 
-Follow the [instruction](https://ollama.com/) on Ollama to install ollama.
+## Prerequisites
 
+Before starting, ensure your system meets the requirements for running local AI models.
 
+## Setup Process Overview
 
-By default, we use these models
+The setup involves two main components:
 
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+1. Installing and configuring Ollama with required models
 
-So you need to download corresponding models by running
-
-```
-ollama pull llama3.1
-ollama pull nomic-embed-text
-```
-
-
-
-after install these models, then we can start ollama server by running
-
-```
-ollama serve
-```
-
-
-
-
-
-### Install AppFlowy Local AI&#x20;
-
-Go to this [page](https://github.com/AppFlowy-IO/AppFlowy-LocalAI/releases) to download the latest AppFlowy AI application.
-
-
-
-
-
-
-
-# AppFlowy AI - Ollama
-
+2. Installing the AppFlowy AI application
 
 
 ## Install Ollama  
@@ -61,6 +33,8 @@ ollama --version
 
 By default, we use the following models:  
 <figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>  
+
+If you want to use other models, you can pull them and then update the configuration in AppFlowy's setting page.
 
 Run these commands in your terminal to download the models:  
 ```bash
@@ -112,22 +86,23 @@ curl http://localhost:11434/api/generate -d '{
 A successful test will return a JSON response containing the generated text.
 
 
-## Install AppFlowy Local AI Application  
+## Install AppFlowy LAI 
 
-### Step 1: Download the Application  
+### macOS
+#### Step 1: Download the Application  
 1. Visit the [AppFlowy-LocalAI releases page](https://github.com/AppFlowy-IO/AppFlowy-LocalAI/releases).  
 2. Download the **latest**.  
 
 ---
 
-### Step 2: Install on macOS  
+#### Step 2: Install
 1. Unzip the downloaded file.  
-2. Drag the **AppFlowy AI** to your `Applications` folder.  
-3. Launch **AppFlowy AI** from your Applications directory.  
-    Important: Do not move or delete the AppFlowy AI application if you plan to continue using local AI features.
+2. Drag the **AppFlowy LAI** to your `Applications` folder.  
+3. Launch **AppFlowy LAI** from your Applications directory.  
+    Important: Do not move or delete the AppFlowy LAI application if you plan to continue using local AI features.
 ---
 
-### Step 3: Install Application
+#### Step 3: Install Application
 
 <figure>  
   <img src="../../.gitbook/assets/image (7).png" alt="AppFlowy AI macOS download interface">  
@@ -135,7 +110,7 @@ A successful test will return a JSON response containing the generated text.
 </figure>  
 
 
-### Step 4: Verify Installation  
+#### Step 4: Verify Installation  
 
 1. Open a **new terminal window**.  
 2. Run this command to confirm the AI plugin is accessible:  
@@ -145,9 +120,8 @@ command -v ollama_ai_plugin
 ✅ **Expected Output**:  
 ```  
 /usr/local/bin/ollama_ai_plugin  
-```  
+```
 
 
-
-## Windows
+### Windows
 WIP
