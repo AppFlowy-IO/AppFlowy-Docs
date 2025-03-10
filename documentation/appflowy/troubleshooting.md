@@ -165,7 +165,7 @@ xhost + docker run --rm -v $HOME/.Xauthority:/root/.Xauthority:rw -v /tmp/.X11-u
 **A:**
 
 I add the param\
-**--network=host**
+&#xNAN;**--network=host**
 
 and it works
 
