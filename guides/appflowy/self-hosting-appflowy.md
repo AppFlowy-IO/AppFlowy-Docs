@@ -76,7 +76,3 @@ The AppFlowy App built with AppFlowy Cloud currently shares the same bundle ID a
 **Ongoing Development of Stable Branch**
 
 The process of building AppFlowy with AppFlowy Cloud using the stable branch is ongoing. Rapid developments and frequent updates in [AppFlowy Cloud](https://github.com/AppFlowy-IO/AppFlowy-Cloud) mean that new features are constantly being added.
-
-**Collaborative Editing**
-
-Currently, collaborative editing is not yet fully supported in the AppFlowy App when built with AppFlowy Cloud. Although collaborative editing data is synchronized across different devices via the AppFlowy Cloud server, the user interface does not instantly update with these synced changes. To see the latest data, you need to reopen the document or database. This feature is still in development.
