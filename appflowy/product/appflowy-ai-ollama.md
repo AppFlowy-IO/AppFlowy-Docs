@@ -2,7 +2,6 @@
 
 AppFlowy supports local AI functionality through Ollama integration. This document guides you through the setup process to enable AI features in AppFlowy without relying on cloud services.
 
-
 ## Setup Process Overview
 
 The setup involves two main components:
@@ -90,24 +89,23 @@ curl http://localhost:11434/api/generate -d '{
 
 A successful test will return a JSON response containing the generated text.
 
+If you want to use additional models, first download (pull) them and then update the configuration in the settings page of AppFlowy.
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (94).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 If you want to use additional models, first download (pull) them and then update the configuration in the settings page of AppFlowy.
 
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+For instance, I've already installed the `deepseek-r1` model, so I can now use it directly within AppFlowy.
 
+<div align="left"><figure><img src="../../.gitbook/assets/use_deepseek.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-For instance, I've already installed the deepseek-r1 model, so I can now use it directly within AppFlowy.
+If you attempt to use a model that hasn't been downloaded yet, AppFlowy will display a "model not found" message. After downloading the corresponding model via Ollama, reopen the settings in AppFlowy to verify that the model is now available.
 
-<figure><img src="../../.gitbook/assets/use_deepseek.png" alt=""><figcaption></figcaption></figure>
-
-
-If you attempt to use a model that hasn't been downloaded, AppFlowy will display a "model not found" message
-
-
-<figure><img src="../../.gitbook/assets/model_not_found.png" alt=""><figcaption></figcaption></figure>
-
+<div align="left"><figure><img src="../../.gitbook/assets/model_not_found.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## Install AppFlowy LAI (Local AI)
+
+Currently, local AI support is available on macOS and Windows, with Linux support coming soon.
 
 ### macOS
 
@@ -130,7 +128,6 @@ If you attempt to use a model that hasn't been downloaded, AppFlowy will display
 #### Step 3: Install Application
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt="AppFlowy AI macOS download interface"><figcaption><p>Select the macOS .dmg file from the release assets</p></figcaption></figure>
-
 
 #### Step 4: Verify Installation
 
@@ -168,7 +165,7 @@ command -v ollama_ai_plugin
 1. Navigate to the extracted folder (`AppFlowyLAI`).
 2. Double-click the executable file (`AppFlowyLAI.exe`) to launch the application.
 
-*Important:* Do not move or delete the `AppFlowyLAI.exe` file or its containing folder if you intend to keep using local AI features.
+_Important:_ Do not move or delete the `AppFlowyLAI.exe` file or its containing folder if you intend to keep using local AI features.
 
 ***
 
@@ -181,11 +178,16 @@ command -v ollama_ai_plugin
 Get-Command ollama_ai_plugin | Select-Object -ExpandProperty Definition
 ```
 
-**Expected output:**
+✅ **Expected Output**:
 
 ```
-C:\path\to\AppFlowyLAI\ollama_ai_plugin.exe
+C:\path\to\AppFlowyLAI\_internal\ollama_ai_plugin.exe
 ```
 
-Ensure the output matches the location of your extracted `AppFlowyLAI.exe`.
+Ensure the output matches the location of your extracted **`ollama_ai_plugin.exe`**
 
+
+
+### **Linux**
+
+**`WIP`**
