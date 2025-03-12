@@ -6,15 +6,15 @@ Welcome, fellow software engineers! Today, I want to share with you how I use Ap
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-![](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Getting\_Started\_page.png)
+![](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Getting_Started_page.png)
 
 Prior to proceeding with the installation, it is essential to ensure that your machine meets the specified [System Requirements](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/requirements).\
 Here are the [Installation methods](https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods) that provide clear guidance on how to successfully install Appflowy.\
 Should you be interested in contributing to AppFlowy or accessing its source code, we encourage you to explore the dedicated [Contribute to AppFlowy section](https://appflowy.gitbook.io/docs/essential-documentation/contribute-to-appflowy). After installation, users can pick a folder for saving data on the quick start page.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Welcome Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Welcome Page</p></figcaption></figure>
 
 
 
@@ -24,9 +24,9 @@ Once you have AppFlowy installed, simply create a new page for your software eng
 
 "Development Tasks" helps manage project-specific tasks. Use "Bugs and Issues" to log and address problems, and a "Project Completion" section to track final steps for successful delivery. By creating these sections within your page, you can easily navigate through your projects and find the information you need without any confusion. AppFlowy provides a clean and intuitive interface that allows you to stay focused and organized throughout the software engineering process.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting up</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting up</p></figcaption></figure>
 
-![](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Setting\_up\_page.png) ![](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Setting\_up\_grid\_view\_page.png)
+![](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Setting_up_page.png) ![](https://github.com/AppFlowy-IO/AppFlowy-Docs/tree/main/.gitbook/assets/Setting_up_grid_view_page.png)
 
 ## Benefits of using AppFlowy as a Software Engineer
 

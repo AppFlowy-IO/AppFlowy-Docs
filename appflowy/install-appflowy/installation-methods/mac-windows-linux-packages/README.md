@@ -10,7 +10,7 @@ Download AppFlowy and use it right away --> [https://github.com/AppFlowy-IO/appf
 
 On the [release](https://github.com/AppFlowy-IO/appflowy/releases) page, you can find packages for MacOS, Windows, and Linux (see the screenshot below). Click on a suitable package to download. If you'd like to build the application from source, please refer to [from-source](../../../../documentation/appflowy/from-source/ "mention")
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For Linux users, please also refer to [Installing on Linux ](installing-on-linux/)for optional steps.
 
