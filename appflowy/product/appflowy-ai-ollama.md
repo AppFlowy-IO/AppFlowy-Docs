@@ -1,13 +1,24 @@
 # AppFlowy AI - Ollama
 
-AppFlowy supports local AI functionality through Ollama integration. This document guides you through the setup process to enable AI features in AppFlowy without relying on cloud services.
+AppFlowy leverages Ollama integration to provide local AI functionality, allowing you to run AI features without relying on cloud services.
 
+<<<<<<< HEAD
+=======
+Note:
+For optimal performance, ensure your system has the following minimum RAM:
+
+	•	7B models: 8 GB
+	•	13B models: 16 GB
+	•	33B models: 32 GB
+
+>>>>>>> fc4d40f (chore: update docs)
 ## Setup Process Overview
 
 The setup involves two main components:
 
 1. Installing and configuring Ollama with required models
-2. Installing the AppFlowy AI application
+2. Installing the AppFlowy LAI application
+3. Enable AppFlowy LAI on AppFlowy Desktop Application
 
 ## Install Ollama
 
@@ -50,9 +61,9 @@ You should see `llama3.1` and `nomic-embed-text` in the output.
 
 ***
 
-### Start the Ollama Server
+### Start the Ollama Server (Optional)
 
-Run the following command to start the Ollama server:
+After installing Ollama, the server starts automatically. To view its logs, first stop the server and then start a new terminal window and run:
 
 ```bash
 ollama serve
@@ -63,6 +74,7 @@ ollama serve
 * The terminal window where you run `ollama serve` must remain open.
 * For production setups, run Ollama as a background service (e.g., use `systemd` on Linux or `nohup ollama serve &`).
 
+<<<<<<< HEAD
 ***
 
 ### Verify the Setup
@@ -100,6 +112,8 @@ For instance, I've already installed the `deepseek-r1` model, so I can now use i
 <div align="left"><figure><img src="../../.gitbook/assets/use_deepseek.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 If you attempt to use a model that hasn't been downloaded yet, AppFlowy will display a "model not found" message. After downloading the corresponding model via Ollama, reopen the settings in AppFlowy to verify that the model is now available.
+=======
+>>>>>>> fc4d40f (chore: update docs)
 
 <div align="left"><figure><img src="../../.gitbook/assets/model_not_found.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
@@ -112,7 +126,7 @@ Currently, local AI support is available on macOS and Windows, with Linux suppor
 #### Step 1: Download the Application
 
 1. Visit the [AppFlowy-LocalAI releases page](https://github.com/AppFlowy-IO/AppFlowy-LocalAI/releases).
-2. Download the **latest**.
+2. Download the **latest** version of AppFlowy LAI.
 
 ***
 
@@ -169,7 +183,7 @@ _Important:_ Do not move or delete the `AppFlowyLAI.exe` file or its containing 
 
 ***
 
-#### Step 3: Verify Installation
+#### Step 3: Verify Installation (Optional)
 
 1. Open PowerShell.
 2. Verify the installation path of `ollama_ai_plugin.exe`:
@@ -187,7 +201,75 @@ C:\path\to\AppFlowyLAI\_internal\ollama_ai_plugin.exe
 Ensure the output matches the location of your extracted **`ollama_ai_plugin.exe`**
 
 
+<<<<<<< HEAD
 
 ### **Linux**
 
 **`WIP`**
+=======
+## Enable AppFlowy LAI on AppFlowy Desktop Application
+
+By default, AppFlowy LAI is disabled. To enable it, open the settings page in AppFlowy Desktop and toggle the local AI option.
+
+
+<figure><img src="../../.gitbook/assets/enable_local_ai.png" alt=""><figcaption></figcaption></figure>
+
+Once enabled, the application will begin initializing the local AI.
+
+<figure><img src="../../.gitbook/assets/local_ai_init.png" alt=""><figcaption></figcaption></figure>
+
+
+After a few seconds—or minutes, depending on your machine’s performance—you’ll see that the local AI is running.
+
+<figure><img src="../../.gitbook/assets/local_ai_running.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+## Q & A
+
+### 1. How to use other models?
+
+If you want to use additional models, first download (pull) them and then update the configuration in the settings page of AppFlowy.
+
+<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+
+
+To use the deepseek-r1 model, first download it with the following command:
+
+```bash
+ollama pull deepseek-r1
+```
+
+Once the download completes, update the configuration in the AppFlowy settings page by renaming the chat model from llama3.1 to deepseek-r1.
+
+
+<figure><img src="../../.gitbook/assets/use_deepseek.png" alt=""><figcaption></figcaption></figure>
+
+
+If you attempt to use a model that hasn't been downloaded, AppFlowy will display a "model not found" message. You can download the model and then reopen the setting.
+
+
+<figure><img src="../../.gitbook/assets/model_not_found.png" alt=""><figcaption></figcaption></figure>
+
+
+### 2. What features does AppFlowy LAI support?
+
+AppFlowy LAI supports the following features:
+
+* Chat
+* AI writer in document 
+  * summarize
+  * fix grammar
+  * continue writing
+  * improve writing
+  * explain
+
+Upcoming features:
+
+* Chat with PDF
+* Chat with image
+* Chat with local files
+
+
+>>>>>>> fc4d40f (chore: update docs)
