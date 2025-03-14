@@ -1,6 +1,12 @@
 # AppFlowy AI - Ollama
 
-AppFlowy leverages Ollama integration to provide local AI functionality, allowing you to run AI features without relying on cloud services.
+AppFlowy leverages Ollama integration to provide local AI functionality, allowing you to run AI features directly on your device without relying on cloud services. This means you can enjoy the power of AI while keeping your data fully private and secure.
+
+Why use AppFlowy Local AI?
+
+- Maximum privacy and security – Your data is not sent to AI service providers
+- Stay in the flow – Get powerful AI assistance without interruptions
+- All-in-one experience – Enjoy AppFlowy's rich features without switching tools
 
 
 ⚠️ For optimal performance, ensure your system has the following minimum RAM:
@@ -13,18 +19,15 @@ AppFlowy leverages Ollama integration to provide local AI functionality, allowin
 
 The setup involves three main components:
 
-1. Installing and configuring Ollama with required models
-2. Installing the AppFlowy LAI application
-3. Enable AppFlowy LAI on AppFlowy Desktop Application
+- Part I: Installing and configuring Ollama with the required models
+- Part II: Installing the AppFlowy Local AI plugin
+- Part III: Enabling the plugin in the AppFlowy [desktop](https://appflowy.com/download) application (supports macOS, Windows, and Linux)
 
-## Install Ollama
+## Part I: Install Ollama
 
-Follow the [official installation guide](https://ollama.com/) to set up Ollama on your system. Choose instructions for your operating system:
+Simply download and install [Ollama](https://ollama.com/download) on your desktop device. 
 
-* **Linux/macOS**: Use the terminal script provided on the website.
-* **Windows**: Download and run the `.exe` installer.
-
-Verify the installation by running:
+You can verify the installation in the terminal by running 
 
 ```bash
 ollama --version
@@ -45,6 +48,7 @@ Run these commands in your terminal to download the models:
 ollama pull llama3.1  
 ollama pull nomic-embed-text
 ```
+Check out [this video tutorial](https://youtu.be/UtSSMs6ObqY?si=zU_RlrOu-bWWKHTE&t=39) to learn more about how to use Ollama.
 
 **Verify the Download**:
 
@@ -72,7 +76,9 @@ ollama serve
 * For production setups, run Ollama as a background service (e.g., use `systemd` on Linux or `nohup ollama serve &`).
 
 
-## Install AppFlowy LAI (Local AI)
+## Part II: Install AppFlowy Local AI (AppFlowy LAI)
+"LAI is pronounced “lay”
+
 
 ### macOS
 
@@ -85,9 +91,9 @@ ollama serve
 #### Step 2: Install
 
 1. Unzip the downloaded file.
-2. Drag the **AppFlowy LAI** to your `Applications` folder.
+2. Drag **AppFlowy LAI** to your `Applications` folder.
 3. Launch **AppFlowy LAI** from your Applications directory.\
-   Important: Do not move or delete the AppFlowy LAI application if you plan to continue using local AI features.
+   Important: Do not move or delete the AppFlowy LAI application if you plan to continue using local AI features in AppFlowy
 
 
 #### Step 3: Install Application
@@ -137,7 +143,7 @@ command -v ollama_ai_plugin
 
 #### Step 3: Verify Installation (Optional)
 
-1. Open PowerShell.
+1. Open a new PowerShell tab or window.
 2. Verify the installation path of `ollama_ai_plugin.exe`:
 
 ```cmd
@@ -153,24 +159,23 @@ C:\path\to\AppFlowyLAI\ollama_ai_plugin.exe
 Ensure the output matches the location of your extracted `AppFlowyLAI.exe`.
 
 
-## Enable AppFlowy LAI 
+## Part III: Enable AppFlowy LAI 
 
 By default, AppFlowy LAI is disabled. To enable it, open the settings page in AppFlowy Desktop and toggle the local AI option.
 
 
 <figure><img src="../../.gitbook/assets/enable_local_ai.png" alt=""><figcaption></figcaption></figure>
 
-Once enabled, the application will begin initializing the local AI.
+Once enabled, the application will begin initializing AppFlowy LAI. Make sure Ollama is running!
 
 <figure><img src="../../.gitbook/assets/local_ai_init.png" alt=""><figcaption></figcaption></figure>
 
 
-After a few seconds—or minutes, depending on your machine’s performance—you’ll see that the local AI is running.
+After a few seconds—or minutes, depending on your machine’s performance—you’ll see that AppFlowy LAI is running.
 
 <figure><img src="../../.gitbook/assets/local_ai_running.png" alt=""><figcaption></figcaption></figure>
 
-
-
+With Local AI toggled on, all available AI features use local AI models. To use an online model such as GPT-4o, you need to turn off Local AI.
 
 ## Q & A
 
@@ -193,7 +198,7 @@ Once the download completes, update the configuration in the AppFlowy settings p
 <figure><img src="../../.gitbook/assets/use_deepseek.png" alt=""><figcaption></figcaption></figure>
 
 
-If you attempt to use a model that hasn't been downloaded, AppFlowy will display a "model not found" message. You can download the model and then reopen the setting.
+If you attempt to use a model that hasn't been downloaded, AppFlowy will display a "model not found" message. You can download the model and then reopen Settings.
 
 
 <figure><img src="../../.gitbook/assets/model_not_found.png" alt=""><figcaption></figcaption></figure>
@@ -203,13 +208,17 @@ If you attempt to use a model that hasn't been downloaded, AppFlowy will display
 
 AppFlowy LAI supports the following features:
 
-* Chat
-* AI writer in document 
-  * summarize
-  * fix grammar
-  * continue writing
-  * improve writing
-  * explain
+* AI Chat ([refer to this guide for more details](https://appflowy.com/guide/intro-to-appflowy-aI))
+  * Please note text-to-image is not yet available in AppFlowy LAI 
+* AI Writers in Document 
+  * Ask AI anything
+  * Summarize
+  * Fix spelling & grammar
+  * Continue writing
+  * Improve writing
+  * Explain
+  * Make longer
+  * Make shorter
 
 Upcoming features:
 
