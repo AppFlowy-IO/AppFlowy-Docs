@@ -2,19 +2,16 @@
 
 AppFlowy leverages Ollama integration to provide local AI functionality, allowing you to run AI features without relying on cloud services.
 
-<<<<<<< HEAD
-=======
-Note:
-For optimal performance, ensure your system has the following minimum RAM:
+
+⚠️ For optimal performance, ensure your system has the following minimum RAM:
 
 	•	7B models: 8 GB
 	•	13B models: 16 GB
 	•	33B models: 32 GB
 
->>>>>>> fc4d40f (chore: update docs)
 ## Setup Process Overview
 
-The setup involves two main components:
+The setup involves three main components:
 
 1. Installing and configuring Ollama with required models
 2. Installing the AppFlowy LAI application
@@ -74,52 +71,8 @@ ollama serve
 * The terminal window where you run `ollama serve` must remain open.
 * For production setups, run Ollama as a background service (e.g., use `systemd` on Linux or `nohup ollama serve &`).
 
-<<<<<<< HEAD
-***
-
-### Verify the Setup
-
-1. Open a **new terminal window**.
-2. Send a test request to confirm the server is responsive:
-
-```bash
-curl http://localhost:11434
-```
-
-You should receive a JSON response confirming the server is active, e.g., it should include the text "Ollama is running".
-
-3. Run this command to generate a test response from your model:
-
-```bash
-
-curl http://localhost:11434/api/generate -d '{
-  "model": "llama3.1",
-  "prompt": "Hello, why is the sky blue?"
-}'
-
-```
-
-A successful test will return a JSON response containing the generated text.
-
-If you want to use additional models, first download (pull) them and then update the configuration in the settings page of AppFlowy.
-
-<div align="left"><figure><img src="../../.gitbook/assets/image (94).png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-If you want to use additional models, first download (pull) them and then update the configuration in the settings page of AppFlowy.
-
-For instance, I've already installed the `deepseek-r1` model, so I can now use it directly within AppFlowy.
-
-<div align="left"><figure><img src="../../.gitbook/assets/use_deepseek.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-If you attempt to use a model that hasn't been downloaded yet, AppFlowy will display a "model not found" message. After downloading the corresponding model via Ollama, reopen the settings in AppFlowy to verify that the model is now available.
-=======
->>>>>>> fc4d40f (chore: update docs)
-
-<div align="left"><figure><img src="../../.gitbook/assets/model_not_found.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## Install AppFlowy LAI (Local AI)
-
-Currently, local AI support is available on macOS and Windows, with Linux support coming soon.
 
 ### macOS
 
@@ -128,7 +81,6 @@ Currently, local AI support is available on macOS and Windows, with Linux suppor
 1. Visit the [AppFlowy-LocalAI releases page](https://github.com/AppFlowy-IO/AppFlowy-LocalAI/releases).
 2. Download the **latest** version of AppFlowy LAI.
 
-***
 
 #### Step 2: Install
 
@@ -137,13 +89,13 @@ Currently, local AI support is available on macOS and Windows, with Linux suppor
 3. Launch **AppFlowy LAI** from your Applications directory.\
    Important: Do not move or delete the AppFlowy LAI application if you plan to continue using local AI features.
 
-***
 
 #### Step 3: Install Application
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt="AppFlowy AI macOS download interface"><figcaption><p>Select the macOS .dmg file from the release assets</p></figcaption></figure>
 
-#### Step 4: Verify Installation
+
+#### Step 4: Verify Installation (Optional)
 
 1. Open a **new terminal window**.
 2. Run this command to confirm the AI plugin is accessible:
@@ -179,7 +131,7 @@ command -v ollama_ai_plugin
 1. Navigate to the extracted folder (`AppFlowyLAI`).
 2. Double-click the executable file (`AppFlowyLAI.exe`) to launch the application.
 
-_Important:_ Do not move or delete the `AppFlowyLAI.exe` file or its containing folder if you intend to keep using local AI features.
+*Important:* Do not move or delete the `AppFlowyLAI.exe` file or its containing folder if you intend to keep using local AI features.
 
 ***
 
@@ -192,21 +144,15 @@ _Important:_ Do not move or delete the `AppFlowyLAI.exe` file or its containing 
 Get-Command ollama_ai_plugin | Select-Object -ExpandProperty Definition
 ```
 
-✅ **Expected Output**:
+**Expected output:**
 
 ```
-C:\path\to\AppFlowyLAI\_internal\ollama_ai_plugin.exe
+C:\path\to\AppFlowyLAI\ollama_ai_plugin.exe
 ```
 
-Ensure the output matches the location of your extracted **`ollama_ai_plugin.exe`**
+Ensure the output matches the location of your extracted `AppFlowyLAI.exe`.
 
 
-<<<<<<< HEAD
-
-### **Linux**
-
-**`WIP`**
-=======
 ## Enable AppFlowy LAI on AppFlowy Desktop Application
 
 By default, AppFlowy LAI is disabled. To enable it, open the settings page in AppFlowy Desktop and toggle the local AI option.
@@ -272,4 +218,3 @@ Upcoming features:
 * Chat with local files
 
 
->>>>>>> fc4d40f (chore: update docs)
