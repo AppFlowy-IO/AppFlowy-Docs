@@ -49,7 +49,7 @@
   * [Ⓜ️ Markdown](essential-documentation/markdown.md)
   * [⌨️ Shortcuts](essential-documentation/shortcuts.md)
   * [🪄 AppFlowy AI](essential-documentation/appflowy-x-openai.md)
-  * [AppFlowy AI - Ollama](appflowy/product/appflowy-ai-ollama.md)
+  * [🦙 AppFlowy Local AI - Ollama](appflowy/product/appflowy-ai-ollama.md)
   * [🎨 Themes](essential-documentation/themes.md)
   * [☁️ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
   * [🧩 AppFlowy Plugins](essential-documentation/appflowy-plugins/README.md)
@@ -62,7 +62,6 @@
     * [Math Equations](essential-documentation/appflowy-plugins/math-equations.md)
     * [Cover](essential-documentation/appflowy-plugins/cover.md)
     * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
-  * [🌈 AppFlowy AI On-device](appflowy/product/appflowy-ai-on-device.md)
 
 ## Documentation
 

@@ -51,13 +51,9 @@ Go to Settings -> AI Settings
 
 
 
-### How to enable AI On-device (local AI)?
+### How to enable local AI?
 
-* Require: macOS M1 or newer
-* Go to Settings -> Plan&#x20;
-* Purchase AI On-device add-on\
-  ![](<../.gitbook/assets/image (81).png>)
-* Follow [appflowy-ai-on-device.md](../appflowy/product/appflowy-ai-on-device.md "mention")to enable it.
+* [appflowy-ai-ollama.md](../appflowy/product/appflowy-ai-ollama.md "mention")
 
 
 
