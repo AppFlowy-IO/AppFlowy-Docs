@@ -97,7 +97,12 @@ ollama serve
 
 #### Step 3: Install Application
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="AppFlowy AI macOS download interface"><figcaption><p>Select the macOS .dmg file from the release assets</p></figcaption></figure>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 0; margin: 0; padding: 0;">
+  <img src="../../.gitbook/assets/lai_step_1.png" alt="" style="display: block; margin: 0; padding: 0;">
+  <img src="../../.gitbook/assets/lai_step_2.png" alt="" style="display: block; margin: 0; padding: 0;">
+  <img src="../../.gitbook/assets/lai_step_3.png" alt="" style="display: block; margin: 0; padding: 0;">
+  <img src="../../.gitbook/assets/lai_step_4.png" alt="" style="display: block; margin: 0; padding: 0;">
+</div>
 
 #### Step 4: Verify Installation (Optional)
 
