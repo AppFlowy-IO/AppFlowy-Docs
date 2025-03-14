@@ -153,7 +153,7 @@ C:\path\to\AppFlowyLAI\ollama_ai_plugin.exe
 Ensure the output matches the location of your extracted `AppFlowyLAI.exe`.
 
 
-## Enable AppFlowy LAI on AppFlowy Desktop Application
+## Enable AppFlowy LAI 
 
 By default, AppFlowy LAI is disabled. To enable it, open the settings page in AppFlowy Desktop and toggle the local AI option.
 
