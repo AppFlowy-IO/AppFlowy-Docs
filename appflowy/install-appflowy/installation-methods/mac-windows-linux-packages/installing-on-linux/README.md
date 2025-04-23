@@ -23,7 +23,7 @@ Any Linux distribution not listed here has not been tested, and the following st
     **note:** The application will be extracted into a folder named AppFlowy.
 
 ```shell
-tar -xzvf AppFlowy-linux-x86.tar.gz
+tar -xzvf AppFlowy-*-linux-x86_64.tar.gz
 ```
 
 3. Go to the AppFlowy directory.
@@ -35,8 +35,11 @@ cd AppFlowy
 4. Run the application.
 
 ```shell
-./app_flowy
+./AppFlowy
 ```
+
+**NOTE:**
+ _Please run `sudo chmod a+x /opt/AppFlowy/Appflowy` if the app doesn't launch on first try_
 
 ### Emoji Font Installation
 
@@ -85,10 +88,6 @@ AppFlowy will look for the **Noto Color Emoji** font on your system when trying 
 
 ### Optional steps to add AppFlowy to your system menu
 
-{% hint style="danger" %}
-The current documentation may be out of sync with the development.
-{% endhint %}
-
 Adding an application to Linux's system menu requires some extra steps. In the steps below we assume that you have extracted the archive file contents into the `/opt/` directory and that your present working directory is `/opt/AppFlowy`.
 
 #### Add a Linux desktop file to your system
@@ -96,7 +95,7 @@ Adding an application to Linux's system menu requires some extra steps. In the s
 * Rename the icon file.
 
 ```shell
-mv flowylogo.svg app_flowy.svg
+sudo cp /opt/AppFlowy/data/flutter_assets/assets/images/flowy_logo.svg app_flowy.svg
 ```
 
 * Copy the icon file so that the system will pick it up.
@@ -105,28 +104,20 @@ mv flowylogo.svg app_flowy.svg
 cp app_flowy.svg ~/.local/share/icons
 ```
 
-* Copy the temporary desktop file to a usable Linux desktop file. Notice the underscore in `app_flowy`.
+* Create a desktop entry file in `~/.local/share/applications`
 
 ```shell
-cp appflowy.desktop.temp app_flowy.desktop
+[Desktop Entry]
+Name=AppFlowy
+Comment=An Open Source Alternative to Notion
+Icon=~/.local/share/icons/app_flowy.svg
+Exec=/opt/AppFlowy/AppFlowy
+Categories=Office
+Type=Application
+Terminal=false
 ```
 
-* Edit the following lines in the `appflowy.desktop` file so that they point to the correct files.
+* Restart after doing the above
 
-```shell
-Icon=[CHANGE_THIS]/AppFlowy/flowy_logo.svg
-Exec=[CHANGE_THIS]/AppFlowy/app_flowy
-```
-
-For example, if you installed in `/opt`, this becomes:
-
-```shell
-Icon=app_flowy.svg
-Exec=/opt/AppFlowy/app_flowy
-```
-
-* Move the desktop file so that the system will pick it up.
-
-```shell
-mv app_flowy.desktop ~/.local/share/applications
-```
+**NOTE:**
+ _Please run `sudo chmod a+x /opt/AppFlowy/Appflowy` if the app doesn't launch on first try_
