@@ -7,7 +7,7 @@ We're thrilled to introduce self-hosting capabilities for AppFlowy, further empo
 1. Setting up AppFlowy Cloud on your server.
 2. Building AppFlowy with a self-hosted server.
 
-🙏If you have any questions, don't hesitate to contact us on [Discord](https://discord.gg/9Q2xaN37tV).\\
+🙏If you have any questions, don't hesitate to contact us on [Discord](https://discord.gg/9Q2xaN37tV).
 
 If you prefer a video tutorial, check out this video which demonstrates self-hosting Appflowy with AppFlowy Cloud on EC2
 
