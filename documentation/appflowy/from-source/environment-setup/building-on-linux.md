@@ -61,7 +61,7 @@ If the provided link for Ubuntu & PopOS is expired or returns an error 404, you 
 Clone the source code from our Github project.
 
 ```shell
-git clone https://github.com/AppFlowy-IO/AppFlowy.git
+git clone --depth 1 https://github.com/AppFlowy-IO/AppFlowy.git
 ```
 
 {% hint style="warning" %}
@@ -132,7 +132,7 @@ Flutter version 3.27.4 is the recent supported stable release used for building 
 - **Method 2:** You can use the code below to install flutter manually on your linux system.
 
 ```bash
-git clone https://github.com/flutter/flutter.git --branch 3.27.4
+git clone --depth 1 https://github.com/flutter/flutter.git --branch 3.27.4
 cd flutter
 echo -e "\nexport PATH=\$PATH:"`pwd`"/bin" >> ~/.bashrc
 source ~/.bashrc
@@ -147,7 +147,7 @@ cd ..
 1. Clone asdf.
 
 ```bash
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.1
+git clone --depth 1 https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.1
 ```
 
 2. Add the path to asdf and enable asdf auto-completion in your shell.
