@@ -34,7 +34,7 @@ When you launch the application the first time, you will be able to set the dire
 
 <mark style="color:red;">Do not put the folder under your Google Drive.</mark>
 
-If you're unsure about changing the data directory now, just select 'Quick Start' without making any changes. You can always modify the data directory later within the application. For cloud data storage options, see the [Self-Hosting AppFlowy Cloud](../guides/appflowy/self-hosting-appflowy.md) guide.
+If you're unsure about changing the data directory now, just select 'Quick Start' without making any changes. You can always modify the data directory later within the application. For cloud data storage options, see the [Self-Hosting AppFlowy Cloud](broken-reference) guide.
 
 <figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 

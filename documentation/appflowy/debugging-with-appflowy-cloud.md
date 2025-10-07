@@ -26,4 +26,4 @@ During this process, AppFlowy Cloud will generate logs in the console, allowing 
 
 ## Self-Hosted Server
 
-Please refer to this [Self-Hosting AppFlowy Cloud](../../guides/appflowy/self-hosting-appflowy.md) for more information.
+Please refer to this [Self-Hosting AppFlowy Cloud](broken-reference) for more information.

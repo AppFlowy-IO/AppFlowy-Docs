@@ -132,9 +132,7 @@
 ## Guides
 
 * [Sync Desktop and Mobile](guides/sync-desktop-and-mobile.md)
-* [Self-Hosting AppFlowy](guides/appflowy/README.md)
-  * [☁️ Self-hosting AppFlowy with AppFlowy Cloud](guides/appflowy/self-hosting-appflowy.md)
-  * [🆓 Self-hosting AppFlowy for free Using Supabase](guides/appflowy/self-hosting-appflowy-using-supabase.md)
+* [Self-Hosting AppFlowy](guides/appflowy.md)
 * [Import From Notion](guides/import-from-notion.md)
 
 ## Blog Highlights
