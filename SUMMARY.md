@@ -39,29 +39,7 @@
       * [\[Draft\] How to add a new property to appflowy database](essential-documentation/contribute-to-appflowy/write-for-appflowy/drafts/draft-how-to-add-a-new-property-to-appflowy-database.md)
   * [🍂 Hacktoberfest](appflowy/community/hacktoberfest.md)
 * [🛣️ Roadmap](essential-documentation/roadmap.md)
-* [🌋 Product](appflowy/product/README.md)
-  * [💽 Data Storage](essential-documentation/data-storage.md)
-  * [🎨 Customize and Style Content](essential-documentation/customize-and-style-content.md)
-  * [⏮️ Duplicate, Delete, and Restore](essential-documentation/duplicate-delete-and-restore.md)
-  * [💎 Databases](essential-documentation/databases/README.md)
-    * [🔢 Database Properties](essential-documentation/databases/database-properties.md)
-    * [🗃️ Manage Properties](essential-documentation/databases/manage-properties.md)
-  * [Ⓜ️ Markdown](essential-documentation/markdown.md)
-  * [⌨️ Shortcuts](essential-documentation/shortcuts.md)
-  * [🪄 AppFlowy AI](essential-documentation/appflowy-x-openai.md)
-  * [🦙 AppFlowy Local AI - Ollama](appflowy/product/appflowy-ai-ollama.md)
-  * [🎨 Themes](essential-documentation/themes.md)
-  * [☁️ AppFlowy Cloud](essential-documentation/appflowy-cloud.md)
-  * [🧩 AppFlowy Plugins](essential-documentation/appflowy-plugins/README.md)
-    * [Table-view Databases](essential-documentation/appflowy-plugins/table-view-databases.md)
-    * [Kanban Board](essential-documentation/appflowy-plugins/kanban-board.md)
-    * [Calendar](essential-documentation/appflowy-plugins/calendar.md)
-    * [Auto Generator](essential-documentation/appflowy-plugins/auto-generator.md)
-    * [Smart Edit](essential-documentation/appflowy-plugins/smart-edit.md)
-    * [Code Blocks](essential-documentation/appflowy-plugins/code-blocks.md)
-    * [Math Equations](essential-documentation/appflowy-plugins/math-equations.md)
-    * [Cover](essential-documentation/appflowy-plugins/cover.md)
-    * [Emoji](essential-documentation/appflowy-plugins/emoji.md)
+* [🌋 Product](appflowy/product.md)
 
 ## Documentation
 
@@ -131,8 +109,7 @@
 
 ## Guides
 
-* [Sync Desktop and Mobile](guides/sync-desktop-and-mobile.md)
-* [Self-Hosting AppFlowy](guides/appflowy.md)
+* [Self-Hosting AppFlowy](guides/appflowy/README.md)
 * [Import From Notion](guides/import-from-notion.md)
 
 ## Blog Highlights
